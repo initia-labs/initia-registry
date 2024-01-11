@@ -1,0 +1,95 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "minimove",
+  "chain_id": "game-4",
+  "website": "https://initia.xyz",
+  "pretty_name": "Minimove",
+  "status": "live",
+  "network_type": "devnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 1,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "umin",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "umin"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v0.2.0-beta.2",
+    "compatible_versions": [
+      "v0.2.0-beta.2"
+    ],
+    "binaries": {
+      "linux/amd64": "",
+      "linux/arm64": "",
+      "darwin/amd64": "",
+      "darwin/arm64": "",
+      "windows/amd64": "",
+      "windows/arm64": ""
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/game-4/genesis.json"
+    },
+    "versions": []
+  },
+  "logo_URIs": {
+    "png": "https://list.initia.xyz/images/layers/Minimove.webp"
+  },
+  "description": "",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.game-4.initia.xyz",
+        "provider": ""
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.game-4.initia.xyz",
+        "provider": ""
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.initia.xyz/?layer=minimove",
+      "tx_page": "https://explorer.initia.xyz/tx/${txHash}?layer=minimove",
+      "account_page": "https://explorer.initia.xyz/address/${accountAddress}?layer=minimove"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/minimove-1",
+      "tx_page": "https://scan.initia.xyz/minimove-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/minimove-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://list.initia.xyz/images/layers/Minimove.webp"
+    }
+  ]
+}
