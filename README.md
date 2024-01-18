@@ -1,1 +1,1 @@
-# Minitia Registry
+# Initia Registry

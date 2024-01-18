@@ -1,0 +1,28 @@
+{
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "initia",
+  "assets": [
+    {
+      "description": "",
+      "denom_units": [
+        {
+          "denom": "uinit",
+          "exponent": 0
+        }
+      ],
+      "base": "uinit",
+      "name": "Init",
+      "display": "init",
+      "symbol": "INIT",
+      "logo_URIs": {
+        "png": "https://list.initia.xyz/images/0x8e4733bdabcf7d4afc3d14f0dd46c9bf52fb0fce9e4b996c939e195b8bc891d9.webp"
+      },
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://list.initia.xyz/images/0x8e4733bdabcf7d4afc3d14f0dd46c9bf52fb0fce9e4b996c939e195b8bc891d9.webp"
+        }
+      ]
+    }
+  ]
+}

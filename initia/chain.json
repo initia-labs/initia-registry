@@ -1,0 +1,107 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "initia",
+  "chain_id": "stone-13",
+  "website": "https://initia.xyz",
+  "pretty_name": "Initia L1",
+  "status": "live",
+  "network_type": "devnet",
+  "bech32_prefix": "init",
+  "daemon_name": "initiad",
+  "node_home": "$HOME/.initia",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 1,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uinit",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "uinit"
+      },
+      {
+        "denom": "move/8266545287889db3ded9096208c014d67c2ebf64968816d04b5d58344a8fb8bd"
+      },
+      {
+        "denom": "move/b9d795966ffd06125f71307f73b8ca22c5af5026fae64d6110af610735e999df"
+      },
+      {
+        "denom": "move/c9c9cb27844944ed08a8441a2dec30a46366c6f8c0a9b8fed028fcdd8a6ea273"
+      },
+      {
+        "denom": "move/dbf06c48af3984ec6d9ae8a9aa7dbb0bb1e784aa9b8c4a5681af660cf8558d7d"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/initia",
+    "recommended_version": "v0.2.0-beta.4",
+    "compatible_versions": [
+      "v0.2.0-beta.4"
+    ],
+    "binaries": {
+      "linux/amd64": "",
+      "linux/arm64": "",
+      "darwin/amd64": "",
+      "darwin/arm64": "",
+      "windows/amd64": "",
+      "windows/arm64": ""
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-13/genesis.json"
+    },
+    "versions": []
+  },
+  "logo_URIs": {
+    "png": "https://list.initia.xyz/images/layers/Mainnet.webp"
+  },
+  "description": "",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.stone-13.initia.xyz",
+        "provider": ""
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.stone-13.initia.xyz",
+        "provider": ""
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.stone-13.initia.xyz/?layer=l1%2520testnet",
+      "tx_page": "https://explorer.stone-13.initia.xyz/tx/${txHash}?layer=l1%20testnet",
+      "account_page": "https://explorer.stone-13.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/stone-13",
+      "tx_page": "https://scan.initia.xyz/stone-13/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/stone-13/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://list.initia.xyz/images/layers/Mainnet.webp"
+    }
+  ]
+}
