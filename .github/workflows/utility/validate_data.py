@@ -60,7 +60,7 @@ def readSLIP44():
     for line in urllib.request.urlopen(slip44URL):
       line = line.decode('utf-8')
       if(len(line) > 20):
-        if(line[0] != "-" and line[0] != "C" and (line[5] == "|" or line[6] == "|" or line[7] == "|" or line[8] == "|" or line[9] == "|" or line[10] == "|" or line[11] == "|" or line[12] == "|" or line[13] == "|")):
+        if(line[0] == "|" and line[2] != "C" and line[2] != "-"):
           lines.append(line)
     if lines:
       for line in lines:
