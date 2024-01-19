@@ -64,6 +64,7 @@ def readSLIP44():
           lines.append(line)
     if lines:
       for line in lines:
+        print(line)
         coinNumber = int(line[0:line.find(" ")])
         if(line.find("[") > 0):
           pretty = line[line.find("[")+1:line.find("]")]
