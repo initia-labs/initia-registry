@@ -8,9 +8,9 @@ import pytest
 mypathMainnets = join(getcwd(),"_IBC")
 mypathTestnets = join(getcwd(),"testnets","_IBC")
 mypathDevnets = join(getcwd(),"devnets","_IBC")
-ibcData_files_mainnet = [f for f in listdir(mypathMainnets) if isfile(join(mypathMainnets, f))]
-ibcData_files_testnet = [f for f in listdir(mypathTestnets) if isfile(join(mypathTestnets, f))]
-ibcData_files_devnet = [f for f in listdir(mypathDevnets) if isfile(join(mypathDevnets, f))]
+ibcData_files_mainnet = [f for f in listdir(mypathMainnets) if isfile(join(mypathMainnets, f)) and f != ".gitignore"]
+ibcData_files_testnet = [f for f in listdir(mypathTestnets) if isfile(join(mypathTestnets, f)) and f != ".gitignore"]
+ibcData_files_devnet = [f for f in listdir(mypathDevnets) if isfile(join(mypathDevnets, f)) and f != ".gitignore"]
 ibcData_files = ibcData_files_mainnet + ibcData_files_testnet + ibcData_files_devnet
 
 @pytest.mark.parametrize("input", ibcData_files)
