@@ -24,7 +24,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
+      }
     },
     {
       "description": "The fake ETH",
@@ -48,7 +52,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH.svg"
+      }
     },
     {
       "description": "The fake USDC",
@@ -72,7 +80,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC.svg"
+      }
     },
     {
       "description": "The LP token of USDC-INIT",
@@ -96,7 +108,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC-INIT.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC-INIT.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC-INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/USDC-INIT.svg"
+      }
     },
     {
       "description": "The LP token of ETH-INIT",
@@ -120,7 +136,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH-INIT.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH-INIT.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH-INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/ETH-INIT.svg"
+      }
     }
   ]
 }
