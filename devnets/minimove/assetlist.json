@@ -24,7 +24,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.svg"
+      }
     },
     {
       "description": "The fake USDC",
@@ -48,7 +52,11 @@
           "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.png",
           "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.svg"
         }
-      ]
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.svg"
+      }
     }
   ]
 }
