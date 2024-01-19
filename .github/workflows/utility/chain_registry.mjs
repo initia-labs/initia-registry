@@ -16,6 +16,7 @@ export const chainRegistryRoot = "../../..";
 const networkTypeToDirectoryNameMap = new Map();
 networkTypeToDirectoryNameMap.set("mainnet", "");
 networkTypeToDirectoryNameMap.set("testnet", "testnets");
+networkTypeToDirectoryNameMap.set("devnet", "devnets");
 const networkTypes = Array.from(networkTypeToDirectoryNameMap.keys());
 
 const domainToDirectoryNameMap = new Map();
@@ -34,9 +35,9 @@ export const nonChainDirectories = [
   ".vs",
   "_IBC",
   "_memo_keys",
-  "_non-cosmos",
   "_template",
   "testnets",
+  "devnets",
   ".gitignore",
   "assetlist.schema.json",
   "chain.schema.json",
@@ -77,6 +78,7 @@ export const bech32ConfigSuffixMap = new Map([
 const networkTypeToDirectoryMap = new Map();
 networkTypeToDirectoryMap.set("mainnet", "");
 networkTypeToDirectoryMap.set("testnet", "testnets");
+networkTypeToDirectoryMap.set("devnet", "devnets");
 for (const [networkType, directory] of networkTypeToDirectoryMap.entries()) {
   networkTypeToDirectoryMap.set(networkType, path.join(chainRegistryRoot, directory));
 }

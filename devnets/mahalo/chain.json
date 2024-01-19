@@ -1,5 +1,5 @@
 {
-  "$schema": "../chain.schema.json",
+  "$schema": "../../chain.schema.json",
   "chain_name": "initia",
   "chain_id": "mahalo-1",
   "website": "https://initia.xyz",
