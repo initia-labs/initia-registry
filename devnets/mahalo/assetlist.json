@@ -117,8 +117,8 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/wstETH-INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/wstETH-INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/ETH-INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/ETH-INIT.svg"
         }
       ]
     }

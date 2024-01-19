@@ -5,7 +5,7 @@ from os import getcwd
 
 rootdir = getcwd()
 
-checkSlip173 = 1
+checkSlip173 = 0
 slipWebsites = {}
 slipMainnetPrefixes = {}
 slipTestnetPrefixes = {}
