@@ -1,0 +1,90 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "miniwasm",
+  "chain_id": "miniwasm-1",
+  "website": "https://initia.xyz",
+  "pretty_name": "Initia MoveVM L2",
+  "status": "live",
+  "network_type": "devnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      },
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/miniwasm",
+    "recommended_version": "v0.2.0-beta.2",
+    "compatible_versions": ["v0.2.0-beta.2", "main"],
+    "binaries": {
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json"
+    },
+    "versions": []
+  },
+  "description": "miniwasm Closed Devnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.miniwasm-1.initia.xyz/?layer=miniwasm",
+      "tx_page": "https://explorer.miniwasm-1.initia.xyz/tx/${txHash}?layer=miniwasm",
+      "account_page": "https://explorer.miniwasm-1.initia.xyz/address/${accountAddress}?layer=miniwasm"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/miniwasm-1",
+      "tx_page": "https://scan.initia.xyz/miniwasm-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/miniwasm-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia/initia-registry/master/miniwasm/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/miniwasm/images/INIT.svg"
+    }
+  ]
+}

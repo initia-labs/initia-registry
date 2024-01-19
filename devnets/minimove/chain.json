@@ -1,0 +1,90 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "minimove",
+  "chain_id": "minimove-1",
+  "website": "https://initia.xyz",
+  "pretty_name": "Initia MoveVM L2",
+  "status": "live",
+  "network_type": "devnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      },
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v0.2.0-beta.5",
+    "compatible_versions": ["v0.2.0-beta.5", "main"],
+    "binaries": {
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json"
+    },
+    "versions": []
+  },
+  "description": "Minimove Closed Devnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.minimove-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.minimove-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.minimove-1.initia.xyz/?layer=minimove",
+      "tx_page": "https://explorer.minimove-1.initia.xyz/tx/${txHash}?layer=minimove",
+      "account_page": "https://explorer.minimove-1.initia.xyz/address/${accountAddress}?layer=minimove"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/minimove-1",
+      "tx_page": "https://scan.initia.xyz/minimove-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/minimove-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/INIT.svg"
+    }
+  ]
+}
