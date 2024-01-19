@@ -86,8 +86,8 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
     }
   ]
 }

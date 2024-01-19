@@ -41,7 +41,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: update/images
-          target_branch: master
+          target_branch: main
           title: Sync Images
           body: "**Automated pull request**"
           old_string: "**THIS IS AN AUTOMATED UPDATE OF IMAGES**"

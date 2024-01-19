@@ -83,8 +83,8 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia/initia-registry/master/miniwasm/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/miniwasm/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.svg"
     }
   ]
 }

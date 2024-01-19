@@ -21,8 +21,8 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.svg"
         }
       ]
     },
@@ -45,8 +45,8 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/minimove/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/USDC.svg"
         }
       ]
     }

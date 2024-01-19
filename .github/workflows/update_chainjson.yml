@@ -45,7 +45,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: update/chainjsonv2
-          target_branch: master
+          target_branch: main
           title: Chain.json automatic update
           body: "**Automated pull request**"
           old_string: "**THIS IS AN AUTOMATED UPDATE OF CHAIN.JSON**"

@@ -119,12 +119,12 @@
             "png": {
               "type": "string",
               "format": "uri-reference",
-              "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/master/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+              "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
             },
             "svg": {
               "type": "string",
               "format": "uri-reference",
-              "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/master/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+              "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
             }
           },
           "additionalProperties": false
@@ -140,12 +140,12 @@
               "png": {
                 "type": "string",
                 "format": "uri-reference",
-                "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/master/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+                "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
               },
               "svg": {
                 "type": "string",
                 "format": "uri-reference",
-                "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/master/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+                "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
               },
               "theme": {
                 "type": "object",
