@@ -93,8 +93,8 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/USDC-INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/USDC-INIT.svg"
         }
       ]
     },
@@ -117,8 +117,8 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/ETH.png",
-          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/ETH.svg"
+          "png": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/wstETH-INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia/initia-registry/master/mahalo/images/wstETH-INIT.svg"
         }
       ]
     }
