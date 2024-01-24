@@ -9,7 +9,9 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -38,7 +40,10 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
     "recommended_version": "v0.2.0-beta.5",
-    "compatible_versions": ["v0.2.0-beta.5", "main"],
+    "compatible_versions": [
+      "v0.2.0-beta.5",
+      "main"
+    ],
     "binaries": {
       "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_x86_64.tar.gz",
       "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_aarch64.tar.gz",
@@ -89,5 +94,9 @@
       "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
       "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
     }
-  ]
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
+  }
 }
