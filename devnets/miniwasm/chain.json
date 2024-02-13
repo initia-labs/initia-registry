@@ -70,6 +70,12 @@
         "provider": "Foundation"
       }
     ],
+    "api": [
+      {
+        "address": "https://api.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
     "grpc": []
   },
   "explorers": [

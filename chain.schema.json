@@ -533,6 +533,12 @@
             "$ref": "#/$defs/endpoint"
           }
         },
+        "api": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
         "grpc": {
           "type": "array",
           "items": {
