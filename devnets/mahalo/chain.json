@@ -73,6 +73,12 @@
         "provider": "Foundation"
       }
     ],
+    "api": [
+      {
+        "address": "https://api.mahalo-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
     "grpc": []
   },
   "explorers": [
