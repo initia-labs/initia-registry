@@ -37,13 +37,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.2.0-beta.6.1",
-    "compatible_versions": ["v0.2.0-beta.6.1"],
+    "recommended_version": "v0.2.0-beta.6.2",
+    "compatible_versions": ["v0.2.0-beta.6.2"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json"
