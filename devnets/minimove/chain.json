@@ -94,7 +94,12 @@
         "provider": "Foundation"
       }
     ],
-    "grpc": []
+    "grpc": [
+      {
+        "address": "grpc://34.142.143.85:9090",
+        "provider": "Foundation"
+      }
+    ]
   },
   "explorers": [
     {
