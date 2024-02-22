@@ -118,14 +118,35 @@
       "account_page": "https://scan.initia.xyz/mahalo-1/accounts/${accountAddress}"
     }
   ],
+  "faucets": [
+    {
+      "kind": "faucet",
+      "url": "https://faucet.mahalo-1.initia.xyz/"
+    }
+  ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/mahalo/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg"
+  },
+  "metadata": {
+    "is_l1": true,
+    "ibc_channels": {
+      "channel": [
+        {
+          "chain_id": "minimove-1",
+          "transfer": "channel-0"
+        },
+        {
+          "chain_id": "miniwasm-1",
+          "transfer": "channel-1"
+        }
+      ]
+    }
   }
 }

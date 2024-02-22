@@ -425,12 +425,12 @@
           "png": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
           },
           "svg": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
           },
           "theme": {
             "type": "object",
@@ -486,12 +486,12 @@
         "png": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
         },
         "svg": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
         }
       },
       "additionalProperties": false
@@ -572,6 +572,12 @@
         "$ref": "#/$defs/explorer"
       }
     },
+    "faucets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/faucet"
+      }
+    },
     "keywords": {
       "type": "array",
       "maxContains": 20,
@@ -589,6 +595,79 @@
         ],
         "uniqueItems": true
       }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "is_l1": {
+          "type": "boolean",
+          "description": "[Optional] Indicates if the chain is a layer 1 chain."
+        },
+        "op_bridge_id": {
+          "type": "string",
+          "description": "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
+        },
+        "creator": {
+          "type": "string",
+          "description": "[Optional] The creator of the OPinit bridge."
+        },
+        "op_denoms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "[Optional] The list of denoms that are supported by the OPinit bridge."
+        },
+        "free_tx_threshold": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "denom",
+              "amount"
+            ],
+            "properties": {
+              "denom": {
+                "$ref": "#/$defs/denom"
+              },
+              "amount": {
+                "$ref": "#/$defs/amount"
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": "[Optional] A list specifying coin amounts by denomination that exempt users from transaction fees when their balance meets or exceeds these amounts."
+        },
+        "ibc_channels": {
+          "type": "object",
+          "properties": {
+            "channel": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "chain_id"
+                ],
+                "properties": {
+                  "chain_id": {
+                    "type": "string"
+                  },
+                  "transfer": {
+                    "type": "string"
+                  },
+                  "nft-transfer": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false,
+          "description": "[Optional] The list of IBC channels that are supported by the chain."
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,
@@ -649,6 +728,18 @@
       },
       "additionalProperties": false
     },
+    "faucet": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "fee_token": {
       "type": "object",
       "required": [
@@ -656,7 +747,7 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "$ref": "#/$defs/denom"
         },
         "fixed_min_gas_price": {
           "type": "number"
@@ -693,7 +784,7 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "$ref": "#/$defs/denom"
         }
       },
       "additionalProperties": false
@@ -712,6 +803,30 @@
         "base_denom": {
           "type": "string",
           "description": "The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+        }
+      },
+      "additionalProperties": false
+    },
+    "denom": {
+      "type": "string",
+      "pattern": "^[a-zA-Z][a-zA-Z0-9/:._-]{2,127}$"
+    },
+    "amount": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "coin": {
+      "type": "object",
+      "required": [
+        "denom",
+        "amount"
+      ],
+      "properties": {
+        "denom": {
+          "$ref": "#/$defs/denom"
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
         }
       },
       "additionalProperties": false

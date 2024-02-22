@@ -117,12 +117,27 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/minimove/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "1",
+    "creator": "0x723e7894466de983976cc54302f9c436b3291106",
+    "op_denoms": [
+      "uinit"
+    ],
+    "ibc_channels": {
+      "channel": [
+        {
+          "chain_id": "mahalo-1",
+          "transfer": "channel-0"
+        }
+      ]
+    }
   }
 }
