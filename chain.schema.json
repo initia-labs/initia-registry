@@ -589,6 +589,29 @@
         ],
         "uniqueItems": true
       }
+    },
+    "metadata": {
+      "is_l1": {
+        "type": "boolean",
+        "description": "[Optional] Indicates if the chain is a layer 1 chain."
+      },
+      "op_bridge_id": "string",
+      "creator": "string",
+      "op_denoms": [
+        "string"
+      ],
+      "free_tx_threshold": [
+        {
+          "denom": "string",
+          "amount": "number"
+        }
+      ],
+      "ibc_channels": {
+        "chain_id": {
+          "transfer": "string",
+          "nft-transfer": "string"
+        }
+      }
     }
   },
   "additionalProperties": false,
