@@ -591,63 +591,67 @@
       }
     },
     "metadata": {
-      "is_l1": {
-        "type": "boolean",
-        "description": "[Optional] Indicates if the chain is a layer 1 chain."
-      },
-      "op_bridge_id": {
-        "type": "string",
-        "description": "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
-      },
-      "creator": {
-        "type": "string",
-        "description": "[Optional] The creator of the OPinit bridge."
-      },
-      "op_denoms": {
-        "type": "array",
-        "items": {
-          "type": "string"
+      "type": "object",
+      "properties": {
+        "is_l1": {
+          "type": "boolean",
+          "description": "[Optional] Indicates if the chain is a layer 1 chain."
         },
-        "description": "[Optional] The list of denoms that are supported by the OPinit bridge."
-      },
-      "free_tx_threshold": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "required": [
-            "denom",
-            "amount"
-          ],
-          "properties": {
-            "denom": {
-              "type": "string"
-            },
-            "amount": {
-              "type": "number"
-            }
+        "op_bridge_id": {
+          "type": "string",
+          "description": "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
+        },
+        "creator": {
+          "type": "string",
+          "description": "[Optional] The creator of the OPinit bridge."
+        },
+        "op_denoms": {
+          "type": "array",
+          "items": {
+            "type": "string"
           },
-          "additionalProperties": false
+          "description": "[Optional] The list of denoms that are supported by the OPinit bridge."
         },
-        "description": "[Optional] The list of denoms and their respective amounts that are allowed to be transferred without fees."
-      },
-      "ibc_channels": {
-        "type": "object",
-        "properties": {
-          "chain_id": {
+        "free_tx_threshold": {
+          "type": "array",
+          "items": {
             "type": "object",
+            "required": [
+              "denom",
+              "amount"
+            ],
             "properties": {
-              "transfer": {
+              "denom": {
                 "type": "string"
               },
-              "nft-transfer": {
-                "type": "string"
+              "amount": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": "[Optional] The list of denoms and their respective amounts that are allowed to be transferred without fees."
+        },
+        "ibc_channels": {
+          "type": "object",
+          "properties": {
+            "chain_id": {
+              "type": "object",
+              "properties": {
+                "transfer": {
+                  "type": "string"
+                },
+                "nft-transfer": {
+                  "type": "string"
+                }
               }
             }
-          }
-        },
-        "additionalProperties": false,
-        "description": "[Optional] The list of IBC channels that are supported by the chain."
-      }
+          },
+          "additionalProperties": false,
+          "description": "[Optional] The list of IBC channels that are supported by the chain."
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,
