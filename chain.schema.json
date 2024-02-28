@@ -539,7 +539,7 @@
             "$ref": "#/$defs/endpoint"
           }
         },
-        "faucet-api": {
+        "faucet": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
