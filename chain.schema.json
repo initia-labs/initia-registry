@@ -425,12 +425,12 @@
           "png": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
           },
           "svg": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
           },
           "theme": {
             "type": "object",
@@ -486,12 +486,12 @@
         "png": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
         },
         "svg": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
         }
       },
       "additionalProperties": false
@@ -628,10 +628,10 @@
             ],
             "properties": {
               "denom": {
-                "type": "string"
+                "$ref": "#/$defs/denom"
               },
               "amount": {
-                "type": "number"
+                "$ref": "#/$defs/amount"
               }
             },
             "additionalProperties": false
@@ -641,15 +641,25 @@
         "ibc_channels": {
           "type": "object",
           "properties": {
-            "chain_id": {
-              "type": "object",
-              "properties": {
-                "transfer": {
-                  "type": "string"
+            "channel": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "chain_id"
+                ],
+                "properties": {
+                  "chain_id": {
+                    "type": "string"
+                  },
+                  "transfer": {
+                    "type": "string"
+                  },
+                  "nft-transfer": {
+                    "type": "string"
+                  }
                 },
-                "nft-transfer": {
-                  "type": "string"
-                }
+                "additionalProperties": false
               }
             }
           },
@@ -725,7 +735,7 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "$ref": "#/$defs/denom"
         },
         "fixed_min_gas_price": {
           "type": "number"
@@ -762,7 +772,7 @@
       ],
       "properties": {
         "denom": {
-          "type": "string"
+          "$ref": "#/$defs/denom"
         }
       },
       "additionalProperties": false
@@ -781,6 +791,30 @@
         "base_denom": {
           "type": "string",
           "description": "The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+        }
+      },
+      "additionalProperties": false
+    },
+    "denom": {
+      "type": "string",
+      "pattern": "[a-zA-Z][a-zA-Z0-9/:._-]{2,127}"
+    },
+    "amount": {
+      "type": "string",
+      "pattern": "[[:digit:]]+"
+    },
+    "coin": {
+      "type": "object",
+      "required": [
+        "denom",
+        "amount"
+      ],
+      "properties": {
+        "denom": {
+          "$ref": "#/$defs/denom"
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
         }
       },
       "additionalProperties": false

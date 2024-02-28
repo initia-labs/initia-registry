@@ -99,6 +99,12 @@
         "provider": "Foundation"
       }
     ],
+    "faucet": [
+      {
+        "address": "https://faucet-api.miniwasm-1.initia.xyz/",
+        "provider": "Foundation"
+      }
+    ],
     "grpc": [
       {
         "address": "grpc://34.126.113.169:9090",
@@ -122,12 +128,27 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia/initia-registry/main/miniwasm/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "2",
+    "creator": "0xf324bf4f355abec6d49fdfd0d45419ba99d363d9",
+    "op_denoms": [
+      "uinit"
+    ],
+    "ibc_channels": {
+      "channel": [
+        {
+          "chain_id": "mahalo-1",
+          "transfer": "channel-0"
+        }
+      ]
+    }
   }
 }
