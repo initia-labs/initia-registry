@@ -99,12 +99,6 @@
         "provider": "Foundation"
       }
     ],
-    "faucet": [
-      {
-        "address": "https://faucet-api.miniwasm-1.initia.xyz/",
-        "provider": "Foundation"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://34.126.113.169:9090",

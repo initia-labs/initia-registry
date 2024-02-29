@@ -539,12 +539,6 @@
             "$ref": "#/$defs/endpoint"
           }
         },
-        "faucet": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/endpoint"
-          }
-        },
         "grpc": {
           "type": "array",
           "items": {
@@ -576,6 +570,12 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/explorer"
+      }
+    },
+    "faucets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/faucet"
       }
     },
     "keywords": {
@@ -636,7 +636,7 @@
             },
             "additionalProperties": false
           },
-          "description": "[Optional] The list of denoms and their respective amounts that are allowed to be transferred without fees."
+          "description": "[Optional] A list specifying coin amounts by denomination that exempt users from transaction fees when their balance meets or exceeds these amounts."
         },
         "ibc_channels": {
           "type": "object",
@@ -728,6 +728,17 @@
       },
       "additionalProperties": false
     },
+    "faucet": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
     "fee_token": {
       "type": "object",
       "required": [
@@ -801,7 +812,7 @@
     },
     "amount": {
       "type": "string",
-      "pattern": "[[:digit:]]+"
+      "pattern": "[0-9]+"
     },
     "coin": {
       "type": "object",

@@ -97,12 +97,6 @@
         "provider": "Foundation"
       }
     ],
-    "faucet": [
-      {
-        "address": "https://faucet-api.mahalo-1.initia.xyz",
-        "provider": "Foundation"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://34.143.171.2:9090",
@@ -122,6 +116,12 @@
       "url": "https://scan.initia.xyz/mahalo-1",
       "tx_page": "https://scan.initia.xyz/mahalo-1/txs/${txHash}",
       "account_page": "https://scan.initia.xyz/mahalo-1/accounts/${accountAddress}"
+    }
+  ],
+  "faucets": [
+    {
+      "kind": "faucet",
+      "url": "https://faucet.mahalo-1.initia.xyz/"
     }
   ],
   "images": [

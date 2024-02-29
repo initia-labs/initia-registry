@@ -94,12 +94,6 @@
         "provider": "Foundation"
       }
     ],
-    "faucet": [
-      {
-        "address": "https://faucet-api.minimove-1.initia.xyz",
-        "provider": "Foundation"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://34.142.143.85:9090",
