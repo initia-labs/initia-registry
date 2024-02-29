@@ -737,7 +737,8 @@
         "url": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "fee_token": {
       "type": "object",
@@ -808,11 +809,11 @@
     },
     "denom": {
       "type": "string",
-      "pattern": "[a-zA-Z][a-zA-Z0-9/:._-]{2,127}"
+      "pattern": "^[a-zA-Z][a-zA-Z0-9/:._-]{2,127}$"
     },
     "amount": {
       "type": "string",
-      "pattern": "[0-9]+"
+      "pattern": "^[0-9]+$"
     },
     "coin": {
       "type": "object",
