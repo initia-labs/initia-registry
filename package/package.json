@@ -6,7 +6,7 @@
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": "./dist/types/index.js",
-    "./zods": "./zods/index.ts"
+    "./zod": "./zods/index.ts"
   },
   "scripts": {
     "build": "tsc -p tsconfig.prod.json --module commonjs",
