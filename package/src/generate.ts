@@ -1,7 +1,7 @@
 import { compile } from "json-schema-to-typescript";
 import { jsonSchemaToZodDereffed } from "json-schema-to-zod";
 import * as fs from "fs";
-import json5 from "json5";
+import * as json5 from "json5";
 
 const schemata: Record<string, string> = {
   assetlist: "Assetlist",
@@ -10,8 +10,8 @@ const schemata: Record<string, string> = {
 };
 
 async function main() {
-  fs.mkdirSync("./types");
-  fs.mkdirSync("./zods");
+  fs.mkdirSync("./src/types");
+  fs.mkdirSync("./src/zods");
 
   Object.keys(schemata).map((schema) => generateTypeAndZod(schema));
 }
@@ -19,11 +19,11 @@ async function main() {
 main();
 
 async function generateTypeAndZod(key: string) {
-  if (!fs.existsSync("./types/index.ts")) {
-    fs.writeFileSync("./types/index.ts", "");
+  if (!fs.existsSync("./src/types/index.ts")) {
+    fs.writeFileSync("./src/types/index.ts", "");
   }
-  if (!fs.existsSync("./zods/index.ts")) {
-    fs.writeFileSync("./zods/index.ts", "");
+  if (!fs.existsSync("./src/zods/index.ts")) {
+    fs.writeFileSync("./src/zods/index.ts", "");
   }
 
   const assetlistSchema = json5.parse(
@@ -31,17 +31,23 @@ async function generateTypeAndZod(key: string) {
   );
 
   compile(assetlistSchema, schemata[key]).then((ts) =>
-    fs.writeFileSync(`./types/${schemata[key]}.ts`, ts)
+    fs.writeFileSync(`./src/types/${schemata[key]}.ts`, ts)
   );
 
-  fs.appendFileSync("./types/index.ts", `export * from "./${schemata[key]}"\n`);
+  fs.appendFileSync(
+    "./src/types/index.ts",
+    `export * from "./${schemata[key]}"\n`
+  );
 
   const zod = await jsonSchemaToZodDereffed(assetlistSchema, {
     module: "esm",
     name: schemata[key] + "Schema",
   });
 
-  fs.appendFileSync("./zods/index.ts", `export * from "./${schemata[key]}"\n`);
+  fs.appendFileSync(
+    "./src/zods/index.ts",
+    `export * from "./${schemata[key]}"\n`
+  );
 
-  fs.writeFileSync(`./zods/${schemata[key]}.ts`, zod);
+  fs.writeFileSync(`./src/zods/${schemata[key]}.ts`, zod);
 }
