@@ -11,7 +11,7 @@ export type Amount = string;
 /**
  * Cosmos Chain.json is a metadata file that contains information about a cosmos sdk based chain.
  */
-export interface CosmosChain {
+export interface Chain {
   $schema?: string;
   chain_name: string;
   chain_id: string;

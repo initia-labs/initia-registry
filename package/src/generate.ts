@@ -4,8 +4,14 @@ import * as fs from "fs";
 import * as json5 from "json5";
 
 const schemata: Record<string, string> = {
-  assetlist: "Assetlist",
+  assetlist: "AssetList",
   chain: "Chain",
+  ibc_data: "IBCData",
+};
+
+const schemaTitle: Record<string, string> = {
+  assetlist: "AssetLists",
+  chain: "CosmosChain",
   ibc_data: "IBCData",
 };
 
@@ -26,20 +32,21 @@ async function generateTypeAndZod(key: string) {
     fs.writeFileSync("./src/zods/index.ts", "");
   }
 
-  const assetlistSchema = json5.parse(
+  const schema = json5.parse(
     fs.readFileSync(`../${key}.schema.json`).toString()
   );
 
-  compile(assetlistSchema, schemata[key]).then((ts) =>
-    fs.writeFileSync(`./src/types/${schemata[key]}.ts`, ts)
-  );
+  compile(schema, schemata[key]).then((ts) => {
+    ts = ts.replace(schemaTitle[key], schemata[key]);
+    fs.writeFileSync(`./src/types/${schemata[key]}.ts`, ts);
+  });
 
   fs.appendFileSync(
     "./src/types/index.ts",
     `export * from "./${schemata[key]}"\n`
   );
 
-  const zod = await jsonSchemaToZodDereffed(assetlistSchema, {
+  const zod = await jsonSchemaToZodDereffed(schema, {
     module: "esm",
     name: schemata[key] + "Schema",
   });
