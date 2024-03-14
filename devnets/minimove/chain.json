@@ -1,6 +1,6 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "minimove",
+  "chain_name": "Minimove",
   "chain_id": "minimove-1",
   "website": "https://initia.xyz",
   "pretty_name": "Initia MoveVM L2",

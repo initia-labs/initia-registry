@@ -1,6 +1,6 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "initia",
+  "chain_name": "Initia",
   "chain_id": "mahalo-1",
   "website": "https://initia.xyz",
   "pretty_name": "Initia L1",
