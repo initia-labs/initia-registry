@@ -639,35 +639,62 @@
           "description": "[Optional] A list specifying coin amounts by denomination that exempt users from transaction fees when their balance meets or exceeds these amounts."
         },
         "ibc_channels": {
-          "type": "object",
-          "properties": {
-            "channel": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "required": [
-                  "chain_id"
-                ],
-                "properties": {
-                  "chain_id": {
-                    "type": "string"
-                  },
-                  "port-id": {
-                    "type": "string"
-                  },
-                  "channel-id": {
-                    "type": "string"
-                  },
-                  "version": {
-                    "type": "string"
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "channel": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "chain_id"
+                    ],
+                    "properties": {
+                      "chain_id": {
+                        "type": "string"
+                      },
+                      "port_id": {
+                        "type": "string"
+                      },
+                      "channel_id": {
+                        "type": "string"
+                      },
+                      "version": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
                   }
-                },
-                "additionalProperties": false
-              }
+                }
+              },
+              "additionalProperties": false,
+              "description": "[Optional] The list of IBC channels that are supported by the chain."
+            },
+            {
+              "type": "object",
+              "properties": {
+                "channel": {
+                  "type": "object",
+                  "properties": {
+                    "chain_id": {
+                      "type": "string"
+                    },
+                    "transfer": {
+                      "type": "string"
+                    },
+                    "nft-transfer": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": ["chain_id"]
+                }
+              },
+              "additionalProperties": false,
+              "description": "[Optional] The list of IBC channels that are supported by the chain."
             }
-          },
-          "additionalProperties": false,
-          "description": "[Optional] The list of IBC channels that are supported by the chain."
+          ]
         }
       },
       "additionalProperties": false

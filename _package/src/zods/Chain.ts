@@ -496,24 +496,61 @@ export const ChainSchema = z
           )
           .optional(),
         ibc_channels: z
-          .object({
-            channel: z
-              .array(
-                z
-                  .object({
-                    chain_id: z.string(),
-                    "port-id": z.string().optional(),
-                    "channel-id": z.string().optional(),
-                    version: z.string().optional(),
-                  })
-                  .strict()
-              )
-              .optional(),
+          .any()
+          .superRefine((x, ctx) => {
+            const schemas = [
+              z
+                .object({
+                  channel: z
+                    .array(
+                      z
+                        .object({
+                          chain_id: z.string(),
+                          port_id: z.string().optional(),
+                          channel_id: z.string().optional(),
+                          version: z.string().optional(),
+                        })
+                        .strict()
+                    )
+                    .optional(),
+                })
+                .strict()
+                .describe(
+                  "[Optional] The list of IBC channels that are supported by the chain."
+                ),
+              z
+                .object({
+                  channel: z
+                    .object({
+                      chain_id: z.string(),
+                      transfer: z.string().optional(),
+                      "nft-transfer": z.string().optional(),
+                    })
+                    .strict()
+                    .optional(),
+                })
+                .strict()
+                .describe(
+                  "[Optional] The list of IBC channels that are supported by the chain."
+                ),
+            ];
+            const errors = schemas.reduce(
+              (errors: z.ZodError[], schema) =>
+                ((result) =>
+                  "error" in result ? [...errors, result.error] : errors)(
+                  schema.safeParse(x)
+                ),
+              []
+            );
+            if (schemas.length - errors.length !== 1) {
+              ctx.addIssue({
+                path: ctx.path,
+                code: "invalid_union",
+                unionErrors: errors,
+                message: "Invalid input: Should pass single schema",
+              });
+            }
           })
-          .strict()
-          .describe(
-            "[Optional] The list of IBC channels that are supported by the chain."
-          )
           .optional(),
       })
       .strict()
