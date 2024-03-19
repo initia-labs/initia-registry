@@ -506,9 +506,9 @@ export const ChainSchema = z
                       z
                         .object({
                           chain_id: z.string(),
-                          port_id: z.string().optional(),
-                          channel_id: z.string().optional(),
-                          version: z.string().optional(),
+                          port_id: z.string(),
+                          channel_id: z.string(),
+                          version: z.string(),
                         })
                         .strict()
                     )
@@ -518,12 +518,15 @@ export const ChainSchema = z
               z
                 .object({
                   channel: z
-                    .object({
-                      chain_id: z.string(),
-                      transfer: z.string().optional(),
-                      "nft-transfer": z.string().optional(),
-                    })
-                    .strict()
+                    .array(
+                      z
+                        .object({
+                          chain_id: z.string(),
+                          transfer: z.string().optional(),
+                          "nft-transfer": z.string().optional(),
+                        })
+                        .strict()
+                    )
                     .optional(),
                 })
                 .strict(),

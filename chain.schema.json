@@ -648,7 +648,10 @@
                   "items": {
                     "type": "object",
                     "required": [
-                      "chain_id"
+                      "chain_id",
+                      "port_id",
+                      "channel_id",
+                      "version"
                     ],
                     "properties": {
                       "chain_id": {
@@ -674,20 +677,25 @@
               "type": "object",
               "properties": {
                 "channel": {
-                  "type": "object",
-                  "properties": {
-                    "chain_id": {
-                      "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "chain_id"
+                    ],
+                    "properties": {
+                      "chain_id": {
+                        "type": "string"
+                      },
+                      "transfer": {
+                        "type": "string"
+                      },
+                      "nft-transfer": {
+                        "type": "string"
+                      }
                     },
-                    "transfer": {
-                      "type": "string"
-                    },
-                    "nft-transfer": {
-                      "type": "string"
-                    }
-                  },
-                  "additionalProperties": false,
-                  "required": ["chain_id"]
+                    "additionalProperties": false
+                  }
                 }
               },
               "additionalProperties": false

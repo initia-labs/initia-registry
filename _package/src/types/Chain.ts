@@ -230,9 +230,9 @@ export interface Chain {
       | {
           channel?: {
             chain_id: string;
-            port_id?: string;
-            channel_id?: string;
-            version?: string;
+            port_id: string;
+            channel_id: string;
+            version: string;
           }[];
         }
       | {
@@ -240,7 +240,7 @@ export interface Chain {
             chain_id: string;
             transfer?: string;
             "nft-transfer"?: string;
-          };
+          }[];
         };
   };
 }
