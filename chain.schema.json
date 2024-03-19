@@ -652,10 +652,13 @@
                   "chain_id": {
                     "type": "string"
                   },
-                  "transfer": {
+                  "port-id": {
                     "type": "string"
                   },
-                  "nft-transfer": {
+                  "channel-id": {
+                    "type": "string"
+                  },
+                  "version": {
                     "type": "string"
                   }
                 },

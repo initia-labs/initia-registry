@@ -229,8 +229,9 @@ export interface Chain {
     ibc_channels?: {
       channel?: {
         chain_id: string;
-        transfer?: string;
-        "nft-transfer"?: string;
+        "port-id"?: string;
+        "channel-id"?: string;
+        version?: string;
       }[];
     };
   };
