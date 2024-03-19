@@ -514,10 +514,7 @@ export const ChainSchema = z
                     )
                     .optional(),
                 })
-                .strict()
-                .describe(
-                  "[Optional] The list of IBC channels that are supported by the chain."
-                ),
+                .strict(),
               z
                 .object({
                   channel: z
@@ -529,10 +526,7 @@ export const ChainSchema = z
                     .strict()
                     .optional(),
                 })
-                .strict()
-                .describe(
-                  "[Optional] The list of IBC channels that are supported by the chain."
-                ),
+                .strict(),
             ];
             const errors = schemas.reduce(
               (errors: z.ZodError[], schema) =>
@@ -551,6 +545,9 @@ export const ChainSchema = z
               });
             }
           })
+          .describe(
+            "[Optional] The list of IBC channels that are supported by the chain."
+          )
           .optional(),
       })
       .strict()

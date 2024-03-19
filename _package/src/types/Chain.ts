@@ -223,6 +223,9 @@ export interface Chain {
       denom: Denom;
       amount: Amount;
     }[];
+    /**
+     * [Optional] The list of IBC channels that are supported by the chain.
+     */
     ibc_channels?:
       | {
           channel?: {

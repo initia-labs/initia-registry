@@ -668,8 +668,7 @@
                   }
                 }
               },
-              "additionalProperties": false,
-              "description": "[Optional] The list of IBC channels that are supported by the chain."
+              "additionalProperties": false
             },
             {
               "type": "object",
@@ -691,10 +690,10 @@
                   "required": ["chain_id"]
                 }
               },
-              "additionalProperties": false,
-              "description": "[Optional] The list of IBC channels that are supported by the chain."
+              "additionalProperties": false
             }
-          ]
+          ],
+          "description": "[Optional] The list of IBC channels that are supported by the chain."
         }
       },
       "additionalProperties": false
