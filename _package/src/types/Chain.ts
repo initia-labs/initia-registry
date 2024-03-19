@@ -226,13 +226,22 @@ export interface Chain {
     /**
      * [Optional] The list of IBC channels that are supported by the chain.
      */
-    ibc_channels?: {
-      channel?: {
-        chain_id: string;
-        transfer?: string;
-        "nft-transfer"?: string;
-      }[];
-    };
+    ibc_channels?:
+      | {
+          channel?: {
+            chain_id: string;
+            port_id: string;
+            channel_id: string;
+            version: string;
+          }[];
+        }
+      | {
+          channel?: {
+            chain_id: string;
+            transfer?: string;
+            "nft-transfer"?: string;
+          }[];
+        };
   };
 }
 export interface FeeToken {
