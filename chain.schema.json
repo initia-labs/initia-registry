@@ -640,36 +640,31 @@
         },
         "ibc_channels": {
           "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "channel": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "chain_id",
-                      "port_id",
-                      "channel_id",
-                      "version"
-                    ],
-                    "properties": {
-                      "chain_id": {
-                        "type": "string"
-                      },
-                      "port_id": {
-                        "type": "string"
-                      },
-                      "channel_id": {
-                        "type": "string"
-                      },
-                      "version": {
-                        "type": "string"
-                      }
-                    },
-                    "additionalProperties": false
+            { 
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "chain_id",
+                  "port_id",
+                  "channel_id",
+                  "version"
+                ],
+                "properties": {
+                  "chain_id": {
+                    "type": "string"
+                  },
+                  "port_id": {
+                    "type": "string"
+                  },
+                  "channel_id": {
+                    "type": "string"
+                  },
+                  "version": {
+                    "type": "string"
                   }
-                }
+                },
+                "additionalProperties": false
               },
               "additionalProperties": false
             },

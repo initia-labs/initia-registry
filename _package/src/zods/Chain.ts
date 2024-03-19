@@ -499,22 +499,16 @@ export const ChainSchema = z
           .any()
           .superRefine((x, ctx) => {
             const schemas = [
-              z
-                .object({
-                  channel: z
-                    .array(
-                      z
-                        .object({
-                          chain_id: z.string(),
-                          port_id: z.string(),
-                          channel_id: z.string(),
-                          version: z.string(),
-                        })
-                        .strict()
-                    )
-                    .optional(),
-                })
-                .strict(),
+              z.array(
+                z
+                  .object({
+                    chain_id: z.string(),
+                    port_id: z.string(),
+                    channel_id: z.string(),
+                    version: z.string(),
+                  })
+                  .strict()
+              ),
               z
                 .object({
                   channel: z
