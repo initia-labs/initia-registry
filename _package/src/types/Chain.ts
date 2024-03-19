@@ -228,13 +228,11 @@ export interface Chain {
      */
     ibc_channels?:
       | {
-          channel?: {
-            chain_id: string;
-            port_id: string;
-            channel_id: string;
-            version: string;
-          }[];
-        }
+          chain_id: string;
+          port_id: string;
+          channel_id: string;
+          version: string;
+        }[]
       | {
           channel?: {
             chain_id: string;
