@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const AssetlistSchema = z
+export const AssetListSchema = z
   .object({
     $schema: z
       .string()

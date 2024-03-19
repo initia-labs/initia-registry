@@ -1,3 +1,3 @@
 export * from "./IBCData"
-export * from "./Assetlist"
+export * from "./AssetList"
 export * from "./Chain"

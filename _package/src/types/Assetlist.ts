@@ -8,7 +8,7 @@
 /**
  * Asset lists are a similar mechanism to allow frontends and other UIs to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.
  */
-export interface AssetLists {
+export interface AssetList {
   $schema?: string;
   chain_name: string;
   assets: Asset[];
