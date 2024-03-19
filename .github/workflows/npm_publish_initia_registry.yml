@@ -19,7 +19,7 @@ jobs:
       - run: npm ci
         working-directory: ./_package
       - run: npm run build
-        working-directory: ./_package
+        # working-directory: ./_package
       - run: npm publish
         working-directory: ./_package
         env:
