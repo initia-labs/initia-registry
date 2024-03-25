@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
@@ -94,28 +94,34 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.svg"
   },
   "metadata": {
-    "op_bridge_id": "1",
+    "op_bridge_id": "2",
     "creator": "0x723e7894466de983976cc54302f9c436b3291106",
     "op_denoms": [
       "uinit"
     ],
-    "ibc_channels": {
-      "channel": [
-        {
-          "chain_id": "mahalo-1",
-          "transfer": "channel-0"
-        }
-      ]
-    },
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
+    "ibc_channels": [
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/assetlist.json"
   }
 }

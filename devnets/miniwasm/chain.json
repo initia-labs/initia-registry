@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
@@ -94,28 +94,34 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/miniwasm/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/miniwasm/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/miniwasm/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/miniwasm/images/INIT.svg"
   },
   "metadata": {
-    "op_bridge_id": "2",
+    "op_bridge_id": "1",
     "creator": "0xf324bf4f355abec6d49fdfd0d45419ba99d363d9",
     "op_denoms": [
       "uinit"
     ],
-    "ibc_channels": {
-      "channel": [
-        {
-          "chain_id": "mahalo-1",
-          "transfer": "channel-0"
-        }
-      ]
-    },
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json"
+    "ibc_channels": [
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "transfer",
+        "channel_id": "channel-1",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-3",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/miniwasm/assetlist.json"
   }
 }
