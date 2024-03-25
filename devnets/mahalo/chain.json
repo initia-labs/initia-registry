@@ -129,21 +129,21 @@
       {
         "chain_id": "minimove-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-1",
+        "channel_id": "channel-2",
         "version": "ics721-1"
       },
 
       {
         "chain_id": "miniwasm-2",
         "port_id": "transfer",
-        "channel_id": "channel-0",
+        "channel_id": "channel-1",
         "version": "ics20-1"
       },
       
       {
         "chain_id": "miniwasm-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-1",
+        "channel_id": "channel-3",
         "version": "ics721-1"
       }
     ],
