@@ -240,6 +240,10 @@ export interface Chain {
             "nft-transfer"?: string;
           }[];
         };
+    /**
+     * URL pointing to the asset list, which provides metadata associated with Cosmos denoms.
+     */
+    asset_list?: string;
   };
 }
 export interface FeeToken {

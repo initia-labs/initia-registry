@@ -138,6 +138,7 @@
           "transfer": "channel-0"
         }
       ]
-    }
+    },
+    "asset_list": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
   }
 }
