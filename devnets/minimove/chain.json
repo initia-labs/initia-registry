@@ -139,6 +139,6 @@
         }
       ]
     },
-    "asset_list": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
   }
 }

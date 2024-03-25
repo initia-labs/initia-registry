@@ -154,6 +154,6 @@
         }
       ]
     },
-    "asset_list": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json"
   }
 }

@@ -243,7 +243,7 @@ export interface Chain {
     /**
      * URL pointing to the asset list, which provides metadata associated with Cosmos denoms.
      */
-    asset_list?: string;
+    assetlist?: string;
   };
 }
 export interface FeeToken {

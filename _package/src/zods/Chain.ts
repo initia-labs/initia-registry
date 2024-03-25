@@ -546,7 +546,7 @@ export const ChainSchema = z
             "[Optional] The list of IBC channels that are supported by the chain."
           )
           .optional(),
-        asset_list: z
+        assetlist: z
           .string()
           .describe(
             "URL pointing to the asset list, which provides metadata associated with Cosmos denoms."
