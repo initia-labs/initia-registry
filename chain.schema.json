@@ -697,6 +697,10 @@
             }
           ],
           "description": "[Optional] The list of IBC channels that are supported by the chain."
+        },
+        "assetlist": {
+          "type": "string",
+          "description": "URL pointing to the asset list, which provides metadata associated with Cosmos denoms."
         }
       },
       "additionalProperties": false
