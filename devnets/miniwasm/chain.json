@@ -9,9 +9,7 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -37,10 +35,7 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
     "recommended_version": "v0.2.0-beta.2",
-    "compatible_versions": [
-      "v0.2.0-beta.2",
-      "main"
-    ],
+    "compatible_versions": ["v0.2.0-beta.2", "main"],
     "binaries": {
       "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Linux_x86_64.tar.gz",
       "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.2_Linux_aarch64.tar.gz",
@@ -133,17 +128,8 @@
   "metadata": {
     "op_bridge_id": "2",
     "creator": "0xf324bf4f355abec6d49fdfd0d45419ba99d363d9",
-    "op_denoms": [
-      "uinit"
-    ],
-    "ibc_channels": {
-      "channel": [
-        {
-          "chain_id": "mahalo-1",
-          "transfer": "channel-0"
-        }
-      ]
-    },
+    "op_denoms": ["uinit"],
+    "ibc_channels": [],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json"
   }
 }

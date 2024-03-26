@@ -128,17 +128,8 @@
   "metadata": {
     "op_bridge_id": "1",
     "creator": "0x723e7894466de983976cc54302f9c436b3291106",
-    "op_denoms": [
-      "uinit"
-    ],
-    "ibc_channels": {
-      "channel": [
-        {
-          "chain_id": "mahalo-1",
-          "transfer": "channel-0"
-        }
-      ]
-    },
+    "op_denoms": ["uinit"],
+    "ibc_channels": [],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
   }
 }
