@@ -142,18 +142,7 @@
   },
   "metadata": {
     "is_l1": true,
-    "ibc_channels": {
-      "channel": [
-        {
-          "chain_id": "minimove-1",
-          "transfer": "channel-0"
-        },
-        {
-          "chain_id": "miniwasm-1",
-          "transfer": "channel-1"
-        }
-      ]
-    },
+    "ibc_channels": [],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json"
   }
 }

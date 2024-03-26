@@ -226,20 +226,12 @@ export interface Chain {
     /**
      * [Optional] The list of IBC channels that are supported by the chain.
      */
-    ibc_channels?:
-      | {
-          chain_id: string;
-          port_id: string;
-          channel_id: string;
-          version: string;
-        }[]
-      | {
-          channel?: {
-            chain_id: string;
-            transfer?: string;
-            "nft-transfer"?: string;
-          }[];
-        };
+    ibc_channels?: {
+      chain_id: string;
+      port_id: string;
+      channel_id: string;
+      version: string;
+    }[];
     /**
      * URL pointing to the asset list, which provides metadata associated with Cosmos denoms.
      */
