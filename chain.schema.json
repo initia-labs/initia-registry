@@ -425,12 +425,12 @@
           "png": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
           },
           "svg": {
             "type": "string",
             "format": "uri-reference",
-            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+            "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
           },
           "theme": {
             "type": "object",
@@ -486,12 +486,12 @@
         "png": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
         },
         "svg": {
           "type": "string",
           "format": "uri-reference",
-          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+          "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
         }
       },
       "additionalProperties": false
