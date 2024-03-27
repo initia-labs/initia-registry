@@ -618,7 +618,7 @@
           },
           "description": "[Optional] The list of denoms that are supported by the OPinit bridge."
         },
-        "miniwasm_tx_threshold": {
+        "free_tx_threshold": {
           "type": "array",
           "items": {
             "type": "object",

@@ -209,7 +209,7 @@ export const AssetListSchema = z
                 .string()
                 .regex(
                   new RegExp(
-                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
                   )
                 )
                 .optional(),
@@ -217,7 +217,7 @@ export const AssetListSchema = z
                 .string()
                 .regex(
                   new RegExp(
-                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
                   )
                 )
                 .optional(),
@@ -251,7 +251,7 @@ export const AssetListSchema = z
                     .string()
                     .regex(
                       new RegExp(
-                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
                       )
                     )
                     .optional(),
@@ -259,7 +259,7 @@ export const AssetListSchema = z
                     .string()
                     .regex(
                       new RegExp(
-                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
                       )
                     )
                     .optional(),
