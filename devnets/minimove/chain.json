@@ -94,13 +94,13 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/devnets/minimove/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
   },
   "metadata": {
     "op_bridge_id": "2",
