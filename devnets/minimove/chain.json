@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "Minimove",
-  "chain_id": "minimove-1",
+  "chain_id": "minimove-2",
   "website": "https://initia.xyz",
   "pretty_name": "Initia MoveVM L2",
   "status": "live",
@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
@@ -34,41 +34,18 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.2.0-beta.5.2",
-    "compatible_versions": ["v0.2.0-beta.5.2", "main"],
+    "recommended_version": "v0.2.3",
+    "compatible_versions": ["v0.2.3", "main"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.5.2_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json"
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/genesis.json"
     },
-    "versions": [
-      {
-        "name": "0.2.0-beta.6",
-        "tag": "v0.2.0-beta.6.1",
-        "recommended_version": "v0.2.0-beta.6.1",
-        "compatible_versions": ["v0.2.0-beta.6.1"],
-        "binaries": {
-          "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.6.1_Linux_x86_64.tar.gz",
-          "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.6.1_Linux_aarch64.tar.gz",
-          "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.6.1_Darwin_x86_64.tar.gz",
-          "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.0-beta.6.1_Darwin_aarch64.tar.gz"
-        },
-        "consensus": {
-          "type": "cometbft",
-          "version": "v0.38.5"
-        },
-        "cosmos_sdk_version": "v0.50.3",
-        "cosmwasm_enabled": false,
-        "go_version": "1.21.5",
-        "height": 49920,
-        "ibc_go_version": "v8.0.0",
-        "proposal": 1
-      }
-    ]
+    "versions": []
   },
   "description": "Minimove Closed Devnet",
   "peers": {
@@ -78,25 +55,25 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.minimove-1.initia.xyz",
+        "address": "https://rpc.minimove-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.minimove-1.initia.xyz",
+        "address": "https://lcd.minimove-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "api": [
       {
-        "address": "https://api.minimove-1.initia.xyz",
+        "address": "https://api.minimove-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "grpc": [
       {
-        "address": "grpc://34.142.143.85:9090",
+        "address": "grpc://34.124.237.204:9090",
         "provider": "Foundation"
       }
     ]
@@ -104,15 +81,15 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.minimove-1.initia.xyz/?layer=minimove",
-      "tx_page": "https://explorer.minimove-1.initia.xyz/tx/${txHash}?layer=minimove",
-      "account_page": "https://explorer.minimove-1.initia.xyz/address/${accountAddress}?layer=minimove"
+      "url": "https://explorer.minimove-2.initia.xyz/?layer=minimove",
+      "tx_page": "https://explorer.minimove-2.initia.xyz/tx/${txHash}?layer=minimove",
+      "account_page": "https://explorer.minimove-2.initia.xyz/address/${accountAddress}?layer=minimove"
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/minimove-1",
-      "tx_page": "https://scan.initia.xyz/minimove-1/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/minimove-1/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/minimove-2",
+      "tx_page": "https://scan.initia.xyz/minimove-2/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/minimove-2/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -126,10 +103,25 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
   },
   "metadata": {
-    "op_bridge_id": "1",
+    "op_bridge_id": "2",
     "creator": "0x723e7894466de983976cc54302f9c436b3291106",
-    "op_denoms": ["uinit"],
-    "ibc_channels": [],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json"
+    "op_denoms": [
+      "uinit"
+    ],
+    "ibc_channels": [
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "mahalo-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/main/minimove/assetlist.json"
   }
 }

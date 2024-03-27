@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "Initia",
-  "chain_id": "mahalo-1",
+  "chain_id": "mahalo-2",
   "website": "https://initia.xyz",
   "pretty_name": "Initia L1",
   "status": "live",
@@ -43,41 +43,18 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.2.0-beta.6.2",
-    "compatible_versions": ["v0.2.0-beta.6.2"],
+    "recommended_version": "v0.2.3",
+    "compatible_versions": ["v0.2.3"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json"
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/genesis.json"
     },
-    "versions": [
-      {
-        "name": "0.2.0-beta.7",
-        "tag": "v0.2.0-beta.7.1",
-        "recommended_version": "v0.2.0-beta.7.1",
-        "compatible_versions": ["v0.2.0-beta.7.1"],
-        "binaries": {
-          "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.7.1_Linux_x86_64.tar.gz",
-          "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.7.1_Linux_aarch64.tar.gz",
-          "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.7.1_Darwin_x86_64.tar.gz",
-          "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.7.1_Darwin_aarch64.tar.gz"
-        },
-        "consensus": {
-          "type": "cometbft",
-          "version": "v0.38.5"
-        },
-        "cosmos_sdk_version": "v0.50.3",
-        "cosmwasm_enabled": false,
-        "go_version": "1.21.5",
-        "height": 800000,
-        "ibc_go_version": "v8.0.0",
-        "proposal": 19
-      }
-    ]
+    "versions": []
   },
   "description": "Initia Closed Devnet",
   "peers": {
@@ -87,25 +64,25 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.mahalo-1.initia.xyz",
+        "address": "https://rpc.mahalo-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.mahalo-1.initia.xyz",
+        "address": "https://lcd.mahalo-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "api": [
       {
-        "address": "https://api.mahalo-1.initia.xyz",
+        "address": "https://api.mahalo-2.initia.xyz",
         "provider": "Foundation"
       }
     ],
     "grpc": [
       {
-        "address": "grpc://34.143.171.2:9090",
+        "address": "grpc://34.87.121.251:9090",
         "provider": "Foundation"
       }
     ]
@@ -113,21 +90,21 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.mahalo-1.initia.xyz/?layer=l1%2520testnet",
-      "tx_page": "https://explorer.mahalo-1.initia.xyz/tx/${txHash}?layer=l1%20testnet",
-      "account_page": "https://explorer.mahalo-1.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
+      "url": "https://explorer.mahalo-2.initia.xyz/?layer=l1%2520testnet",
+      "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=l1%20testnet",
+      "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/mahalo-1",
-      "tx_page": "https://scan.initia.xyz/mahalo-1/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/mahalo-1/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/mahalo-2",
+      "tx_page": "https://scan.initia.xyz/mahalo-2/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/mahalo-2/accounts/${accountAddress}"
     }
   ],
   "faucets": [
     {
       "kind": "faucet",
-      "url": "https://faucet.mahalo-1.initia.xyz/"
+      "url": "https://faucet.mahalo-2.initia.xyz/"
     }
   ],
   "images": [
@@ -142,7 +119,33 @@
   },
   "metadata": {
     "is_l1": true,
-    "ibc_channels": [],
+    "ibc_channels": [
+      {
+        "chain_id": "minimove-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "minimove-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2",
+        "version": "ics721-1"
+      },
+
+      {
+        "chain_id": "miniwasm-2",
+        "port_id": "transfer",
+        "channel_id": "channel-1",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "miniwasm-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-3",
+        "version": "ics721-1"
+      }
+    ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json"
   }
 }
