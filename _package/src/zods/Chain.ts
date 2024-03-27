@@ -266,7 +266,7 @@ export const ChainSchema = z
               .string()
               .regex(
                 new RegExp(
-                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
                 )
               )
               .optional(),
@@ -274,7 +274,7 @@ export const ChainSchema = z
               .string()
               .regex(
                 new RegExp(
-                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
                 )
               )
               .optional(),
@@ -312,7 +312,7 @@ export const ChainSchema = z
           .string()
           .regex(
             new RegExp(
-              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.png$"
+              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
             )
           )
           .optional(),
@@ -320,7 +320,7 @@ export const ChainSchema = z
           .string()
           .regex(
             new RegExp(
-              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/main/(|testnets/|devnets/)[a-z0-9]+/images/.+\\.svg$"
+              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
             )
           )
           .optional(),
@@ -496,52 +496,16 @@ export const ChainSchema = z
           )
           .optional(),
         ibc_channels: z
-          .any()
-          .superRefine((x, ctx) => {
-            const schemas = [
-              z.array(
-                z
-                  .object({
-                    chain_id: z.string(),
-                    port_id: z.string(),
-                    channel_id: z.string(),
-                    version: z.string(),
-                  })
-                  .strict()
-              ),
-              z
-                .object({
-                  channel: z
-                    .array(
-                      z
-                        .object({
-                          chain_id: z.string(),
-                          transfer: z.string().optional(),
-                          "nft-transfer": z.string().optional(),
-                        })
-                        .strict()
-                    )
-                    .optional(),
-                })
-                .strict(),
-            ];
-            const errors = schemas.reduce(
-              (errors: z.ZodError[], schema) =>
-                ((result) =>
-                  "error" in result ? [...errors, result.error] : errors)(
-                  schema.safeParse(x)
-                ),
-              []
-            );
-            if (schemas.length - errors.length !== 1) {
-              ctx.addIssue({
-                path: ctx.path,
-                code: "invalid_union",
-                unionErrors: errors,
-                message: "Invalid input: Should pass single schema",
-              });
-            }
-          })
+          .array(
+            z
+              .object({
+                chain_id: z.string(),
+                port_id: z.string(),
+                channel_id: z.string(),
+                version: z.string(),
+              })
+              .strict()
+          )
           .describe(
             "[Optional] The list of IBC channels that are supported by the chain."
           )
