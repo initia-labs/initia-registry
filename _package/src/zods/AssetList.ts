@@ -207,19 +207,11 @@ export const AssetListSchema = z
             .object({
               png: z
                 .string()
-                .regex(
-                  new RegExp(
-                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
-                  )
-                )
+                .regex(new RegExp("^https://.+\\.png$"))
                 .optional(),
               svg: z
                 .string()
-                .regex(
-                  new RegExp(
-                    "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
-                  )
-                )
+                .regex(new RegExp("^https://.+\\.svg$"))
                 .optional(),
             })
             .strict()
@@ -249,19 +241,11 @@ export const AssetListSchema = z
                     .optional(),
                   png: z
                     .string()
-                    .regex(
-                      new RegExp(
-                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
-                      )
-                    )
+                    .regex(new RegExp("^https://.+\\.png$"))
                     .optional(),
                   svg: z
                     .string()
-                    .regex(
-                      new RegExp(
-                        "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
-                      )
-                    )
+                    .regex(new RegExp("^https://.+\\.svg$"))
                     .optional(),
                   theme: z
                     .object({

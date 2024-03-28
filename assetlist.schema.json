@@ -1,5 +1,4 @@
 {
-  "$id": "https://osmosis.zone/assetlists.schema.json",
   "$schema": "https://json-schema.org/draft-07/schema",
   "title": "Asset Lists",
   "description": "Asset lists are a similar mechanism to allow frontends and other UIs to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.",
@@ -106,12 +105,12 @@
             "png": {
               "type": "string",
               "format": "uri-reference",
-              "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
+              "pattern": "^https://.+\\.png$"
             },
             "svg": {
               "type": "string",
               "format": "uri-reference",
-              "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
+              "pattern": "^https://.+\\.svg$"
             }
           },
           "additionalProperties": false
@@ -127,12 +126,12 @@
               "png": {
                 "type": "string",
                 "format": "uri-reference",
-                "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
+                "pattern": "^https://.+\\.png$"
               },
               "svg": {
                 "type": "string",
                 "format": "uri-reference",
-                "pattern": "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
+                "pattern": "^https://.+\\.svg$"
               },
               "theme": {
                 "type": "object",
