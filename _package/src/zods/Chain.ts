@@ -262,22 +262,8 @@ export const ChainSchema = z
                 "The (primary) key used to identify an object within the Chain Registry."
               )
               .optional(),
-            png: z
-              .string()
-              .regex(
-                new RegExp(
-                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
-                )
-              )
-              .optional(),
-            svg: z
-              .string()
-              .regex(
-                new RegExp(
-                  "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
-                )
-              )
-              .optional(),
+            png: z.string().regex(new RegExp("^https://.+\\.png$")).optional(),
+            svg: z.string().regex(new RegExp("^https://.+\\.svg$")).optional(),
             theme: z
               .object({
                 primary_color_hex: z
@@ -308,22 +294,8 @@ export const ChainSchema = z
       .optional(),
     logo_URIs: z
       .object({
-        png: z
-          .string()
-          .regex(
-            new RegExp(
-              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.png$"
-            )
-          )
-          .optional(),
-        svg: z
-          .string()
-          .regex(
-            new RegExp(
-              "^https://raw\\.githubusercontent\\.com/initia-labs/initia-registry/.+\\.svg$"
-            )
-          )
-          .optional(),
+        png: z.string().regex(new RegExp("^https://.+\\.png$")).optional(),
+        svg: z.string().regex(new RegExp("^https://.+\\.svg$")).optional(),
       })
       .strict()
       .optional(),
