@@ -402,15 +402,20 @@ const initIBC = (obj, ibcFieldName) => {
 
 const NON_INFO_DIRS = ["_packages", "_scripts", "_template", ".github"];
 
-const chainPaths = glob(`${__dirname}/../../../**/chain.json`).filter((a) => {
-  const splitedDirs = a.split("chain-registry/chain-registry");
+const chainPaths = glob(`${__dirname}/../../../*/*/chain.json`).filter((a) => {
+  const spliter = "initia-registry";
+  const index = a.indexOf(spliter);
+  const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
   let dir = splitedDirs.pop();
   dir = path.basename(path.dirname(dir));
   return !NON_INFO_DIRS.includes(dir);
 });
 
-const paths = glob(`${__dirname}/../../../**/*.json`).filter((a) => {
-  const splitedDirs = a.split("chain-registry/chain-registry");
+const paths = glob(`${__dirname}/../../../*/*/*.json`).filter((a) => {
+  const spliter = "initia-registry";
+  const index = a.indexOf(spliter);
+  const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
+  console.log(splitedDirs);
   const filePath = splitedDirs.pop();
   const dir = path.basename(path.dirname(filePath));
   return (

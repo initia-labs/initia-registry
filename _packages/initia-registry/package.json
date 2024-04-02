@@ -20,7 +20,8 @@
     "clean:main": "rimraf main",
     "clean:esm": "rimraf esm",
     "clean": "npm run clean:main && npm run clean:esm",
-    "build": "npm run clean && npm run build:mjs && npm run build:cjs"
+    "build": "npm run clean && npm run build:mjs && npm run build:cjs",
+    "build:pkg": "node ./scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,6 @@
     "rimraf": "^5.0.5"
   },
   "dependencies": {
-    "@initia/initia-registry-types": "^0.0.11"
+    "@initia/initia-registry-types": "^0.0.12"
   }
 }

@@ -7,7 +7,7 @@ const info: AssetList = {
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+          "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
           "exponent": 0
         },
         {
@@ -15,7 +15,7 @@ const info: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+      "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",

@@ -1,5 +1,5 @@
-import { IBCData } from '@initia/initia-registry-types';
-const info: IBCData[] = [
+import { IBCInfo } from '@initia/initia-registry-types';
+const info: IBCInfo[] = [
   {
     "$schema": "../../ibc_data.schema.json",
     "chain_1": {
