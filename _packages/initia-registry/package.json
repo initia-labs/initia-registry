@@ -21,7 +21,8 @@
     "clean:esm": "rimraf esm",
     "clean": "npm run clean:main && npm run clean:esm",
     "build": "npm run clean && npm run build:mjs && npm run build:cjs",
-    "build:pkg": "node ./scripts/build.js"
+    "build:pkg": "node ./scripts/build.js",
+    "format:fix": "prettier --write \"./src/**/*.ts\""
   },
   "repository": {
     "type": "git",
