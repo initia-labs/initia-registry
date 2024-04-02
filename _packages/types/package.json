@@ -1,0 +1,38 @@
+{
+  "name": "@initia/initia-registry-types",
+  "version": "0.0.12",
+  "description": "The package provides TypeScript type definitions and Zod integration for initia-registry.",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": "./dist/types/index.js",
+    "./zod": "./dist/zods/index.js"
+  },
+  "files": [
+    "dist/types/*",
+    "dist/zods/*"
+  ],
+  "scripts": {
+    "build": "tsc --module commonjs",
+    "generate": "rm -rf ./src/types && rm -rf ./src/zods && ts-node src/generate.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initia-labs/initia-registry.git"
+  },
+  "author": "InitiaLabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/initia-labs/initia-registry/issues"
+  },
+  "homepage": "https://github.com/initia-labs/initia-registry#readme",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "^13.1.2",
+    "json-schema-to-zod": "^1.2.0",
+    "json5": "^2.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,9 @@
+dist
+node_modules
+
+# MacOS
+.DS_Store
+
+# dist
+main
+esm

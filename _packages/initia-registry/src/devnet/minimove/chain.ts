@@ -1,4 +1,5 @@
-{
+import { Chain } from '@initia/initia-registry-types';
+const info: Chain = {
   "$schema": "../../chain.schema.json",
   "chain_name": "minimove",
   "chain_id": "minimove-2",
@@ -9,7 +10,9 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -32,26 +35,8 @@
   "staking": {
     "staking_tokens": []
   },
-  "codebase": {
-    "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.2.3",
-    "compatible_versions": ["v0.2.3", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/genesis.json"
-    },
-    "versions": []
-  },
+  "codebase": {},
   "description": "Minimove Closed Devnet",
-  "peers": {
-    "seeds": [],
-    "persistent_peers": []
-  },
   "apis": {
     "rpc": [
       {
@@ -105,7 +90,9 @@
   "metadata": {
     "op_bridge_id": "2",
     "creator": "0x723e7894466de983976cc54302f9c436b3291106",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",
@@ -122,4 +109,5 @@
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/main/minimove/assetlist.json"
   }
-}
+};
+export default info;

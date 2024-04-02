@@ -1,4 +1,5 @@
-{
+import { Chain } from '@initia/initia-registry-types';
+const info: Chain = {
   "$schema": "../../chain.schema.json",
   "chain_name": "initia",
   "chain_id": "mahalo-2",
@@ -9,7 +10,9 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -41,26 +44,8 @@
       }
     ]
   },
-  "codebase": {
-    "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.2.3",
-    "compatible_versions": ["v0.2.3"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/genesis.json"
-    },
-    "versions": []
-  },
+  "codebase": {},
   "description": "Initia Closed Devnet",
-  "peers": {
-    "seeds": [],
-    "persistent_peers": []
-  },
   "apis": {
     "rpc": [
       {
@@ -132,7 +117,6 @@
         "channel_id": "channel-2",
         "version": "ics721-1"
       },
-
       {
         "chain_id": "miniwasm-2",
         "port_id": "transfer",
@@ -148,4 +132,5 @@
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json"
   }
-}
+};
+export default info;

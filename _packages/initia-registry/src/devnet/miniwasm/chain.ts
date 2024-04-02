@@ -1,4 +1,5 @@
-{
+import { Chain } from '@initia/initia-registry-types';
+const info: Chain = {
   "$schema": "../../chain.schema.json",
   "chain_name": "miniwasm",
   "chain_id": "miniwasm-2",
@@ -9,7 +10,9 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -32,26 +35,8 @@
   "staking": {
     "staking_tokens": []
   },
-  "codebase": {
-    "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.2.2",
-    "compatible_versions": ["v0.2.2", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/genesis.json"
-    },
-    "versions": []
-  },
+  "codebase": {},
   "description": "miniwasm Closed Devnet",
-  "peers": {
-    "seeds": [],
-    "persistent_peers": []
-  },
   "apis": {
     "rpc": [
       {
@@ -105,7 +90,9 @@
   "metadata": {
     "op_bridge_id": "1",
     "creator": "0xf324bf4f355abec6d49fdfd0d45419ba99d363d9",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",
@@ -122,4 +109,5 @@
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json"
   }
-}
+};
+export default info;
