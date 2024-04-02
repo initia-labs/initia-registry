@@ -1,9 +1,9 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "Minimove",
+  "chain_name": "minimove",
   "chain_id": "minimove-2",
   "website": "https://initia.xyz",
-  "pretty_name": "Initia MoveVM L2",
+  "pretty_name": "Minimove",
   "status": "live",
   "network_type": "devnet",
   "bech32_prefix": "init",
@@ -105,9 +105,7 @@
   "metadata": {
     "op_bridge_id": "2",
     "creator": "0x723e7894466de983976cc54302f9c436b3291106",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",

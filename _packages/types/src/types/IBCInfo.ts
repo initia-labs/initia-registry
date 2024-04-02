@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface IBCData {
+export interface IBCInfo {
   $schema?: string;
   chain_1: ChainInfo;
   chain_2: ChainInfo1;

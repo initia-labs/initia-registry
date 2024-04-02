@@ -1,0 +1,45 @@
+{
+  "name": "@initia/initia-registry",
+  "version": "0.1.1",
+  "description": "Initia chain registry",
+  "main": "main/index.js",
+  "module": "esm/index.js",
+  "typings": "types/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "types",
+    "esm",
+    "main"
+  ],
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.json --outDir main --module commonjs --declaration false || true",
+    "build:mjs": "tsc -p tsconfig.json --outDir esm --module es2022 --declaration false || true",
+    "clean:main": "rimraf main",
+    "clean:esm": "rimraf esm",
+    "clean": "npm run clean:main && npm run clean:esm",
+    "build": "npm run clean && npm run build:mjs && npm run build:cjs",
+    "build:pkg": "node ./scripts/build.js",
+    "format:fix": "prettier --write \"./src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initia-labs/initia-registry.git"
+  },
+  "author": "InitiaLabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/initia-labs/initia-registry/issues"
+  },
+  "homepage": "https://github.com/initia-labs/initia-registry#readme",
+  "devDependencies": {
+    "glob": "^10.3.12",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "@initia/initia-registry-types": "^0.0.12"
+  }
+}

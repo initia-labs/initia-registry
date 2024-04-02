@@ -1,9 +1,9 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "Miniwasm",
+  "chain_name": "miniwasm",
   "chain_id": "miniwasm-2",
   "website": "https://initia.xyz",
-  "pretty_name": "Initia WasmVM L2",
+  "pretty_name": "Miniwasm",
   "status": "live",
   "network_type": "devnet",
   "bech32_prefix": "init",

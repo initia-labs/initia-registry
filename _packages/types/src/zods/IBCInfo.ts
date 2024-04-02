@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const IBCDataSchema = z
+export const IBCInfoSchema = z
   .object({
     $schema: z
       .string()

@@ -1,9 +1,9 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "Initia",
+  "chain_name": "initia",
   "chain_id": "mahalo-2",
   "website": "https://initia.xyz",
-  "pretty_name": "Initia L1",
+  "pretty_name": "Initia",
   "status": "live",
   "network_type": "devnet",
   "bech32_prefix": "init",

@@ -6,13 +6,13 @@ import * as json5 from "json5";
 const schemata: Record<string, string> = {
   assetlist: "AssetList",
   chain: "Chain",
-  ibc_data: "IBCData",
+  ibc_data: "IBCInfo",
 };
 
 const schemaTitle: Record<string, string> = {
   assetlist: "AssetLists",
   chain: "CosmosChain",
-  ibc_data: "IBCData",
+  ibc_data: "IBCInfo",
 };
 
 async function main() {
@@ -33,7 +33,7 @@ async function generateTypeAndZod(key: string) {
   }
 
   const schema = json5.parse(
-    fs.readFileSync(`../${key}.schema.json`).toString()
+    fs.readFileSync(`../../${key}.schema.json`).toString()
   );
 
   compile(schema, schemata[key]).then((ts) => {
