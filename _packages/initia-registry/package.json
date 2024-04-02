@@ -15,7 +15,7 @@
     "main"
   ],
   "scripts": {
-    "build:cjs": "tsc -p tsconfig.json --outDir main --module commonjs --declaration --declarationDir types || true",
+    "build:cjs": "tsc -p tsconfig.json --outDir main --module commonjs --declaration false || true",
     "build:mjs": "tsc -p tsconfig.json --outDir esm --module es2022 --declaration false || true",
     "clean:main": "rimraf main",
     "clean:esm": "rimraf esm",
