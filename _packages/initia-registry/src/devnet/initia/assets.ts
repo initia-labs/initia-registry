@@ -22,13 +22,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
       },
     },
     {
@@ -50,13 +50,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
       },
     },
     {
@@ -78,13 +78,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC.svg",
       },
     },
     {
@@ -107,13 +107,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC-INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC-INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC-INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC-INIT.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC-INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/USDC-INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC-INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/USDC-INIT.svg",
       },
     },
     {
@@ -136,13 +136,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH-INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH-INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH-INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/ETH-INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.svg",
       },
     },
   ],

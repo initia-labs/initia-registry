@@ -97,13 +97,13 @@ const info: Chain = {
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
+      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/images/INIT.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
+    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
   },
   metadata: {
     is_l1: true,
@@ -134,7 +134,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/mahalo/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/assetlist.json",
   },
 };
 export default info;
