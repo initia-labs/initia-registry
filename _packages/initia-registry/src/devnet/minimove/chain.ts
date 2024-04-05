@@ -109,7 +109,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/main/minimove/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/main/devnets/minimove/assetlist.json",
   },
 };
 export default info;
