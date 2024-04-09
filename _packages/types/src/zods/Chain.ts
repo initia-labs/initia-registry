@@ -7,7 +7,7 @@ export const ChainSchema = z
       .regex(new RegExp("^(\\.\\./)+chain\\.schema\\.json$"))
       .optional(),
     chain_name: z.string().regex(new RegExp("[a-z0-9]+")),
-    chain_id: z.string(),
+    chain_id: z.string().regex(new RegExp("[a-z0-9]+")),
     pre_fork_chain_name: z.string().regex(new RegExp("[a-z0-9]+")).optional(),
     pretty_name: z.string().optional(),
     website: z.string().url().optional(),
@@ -333,7 +333,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -344,7 +344,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -355,7 +355,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -366,7 +366,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -377,7 +377,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -388,7 +388,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -399,7 +399,7 @@ export const ChainSchema = z
           .array(
             z
               .object({
-                address: z.string(),
+                address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
               })
@@ -414,7 +414,7 @@ export const ChainSchema = z
         z
           .object({
             kind: z.string().optional(),
-            url: z.string().optional(),
+            url: z.string().url().optional(),
             tx_page: z.string().optional(),
             account_page: z.string().optional(),
           })
@@ -424,7 +424,10 @@ export const ChainSchema = z
     faucets: z
       .array(
         z
-          .object({ kind: z.string().optional(), url: z.string().optional() })
+          .object({
+            kind: z.string().optional(),
+            url: z.string().url().optional(),
+          })
           .strict()
       )
       .optional(),
