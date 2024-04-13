@@ -104,7 +104,6 @@
   },
   "metadata": {
     "op_bridge_id": "2",
-    "creator": "0x723e7894466de983976cc54302f9c436b3291106",
     "op_denoms": ["uinit"],
     "ibc_channels": [
       {

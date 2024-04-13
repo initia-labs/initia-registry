@@ -607,10 +607,6 @@
           "type": "string",
           "description": "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
         },
-        "creator": {
-          "type": "string",
-          "description": "[Optional] The creator of the OPinit bridge."
-        },
         "op_denoms": {
           "type": "array",
           "items": {

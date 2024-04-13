@@ -445,10 +445,6 @@ export const ChainSchema = z
             "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
           )
           .optional(),
-        creator: z
-          .string()
-          .describe("[Optional] The creator of the OPinit bridge.")
-          .optional(),
         op_denoms: z
           .array(z.string())
           .describe(
