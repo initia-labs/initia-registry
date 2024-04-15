@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+        "denom": "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
@@ -31,21 +31,6 @@
   },
   "staking": {
     "staking_tokens": []
-  },
-  "codebase": {
-    "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.2.3",
-    "compatible_versions": ["v0.2.3", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/genesis.json"
-    },
-    "versions": []
   },
   "description": "Blackwing Testnet",
   "peers": {
@@ -67,9 +52,9 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.tomcat-1.initia.xyz/?layer=minimove",
-      "tx_page": "https://explorer.tomcat-1.initia.xyz/tx/${txHash}?layer=minimove",
-      "account_page": "https://explorer.tomcat-1.initia.xyz/address/${accountAddress}?layer=minimove"
+      "url": "https://explorer.tomcat-1.initia.xyz/?layer=tomcat-1",
+      "tx_page": "https://explorer.tomcat-1.initia.xyz/tx/${txHash}?layer=tomcat-1",
+      "account_page": "https://explorer.tomcat-1.initia.xyz/address/${accountAddress}?layer=tomcat-1"
     },
     {
       "kind": "initia scan",
@@ -89,6 +74,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
   },
   "metadata": {
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json",
     "op_bridge_id": "108",
     "op_denoms": [
       "uinit"
@@ -101,6 +87,5 @@
         "version": "ics20-1"
       }
     ]
-  },
-  "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json"
+  }  
 }

@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          "denom": "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
           "exponent": 0
         },
         {
@@ -14,7 +14,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+      "base": "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",
