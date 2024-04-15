@@ -52,9 +52,9 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.tomcat-1.initia.xyz/?layer=tomcat-1",
-      "tx_page": "https://explorer.tomcat-1.initia.xyz/tx/${txHash}?layer=tomcat-1",
-      "account_page": "https://explorer.tomcat-1.initia.xyz/address/${accountAddress}?layer=tomcat-1"
+      "url": "https://explorer.mahalo-2.initia.xyz/?layer=tomcat-1",
+      "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=tomcat-1",
+      "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=tomcat-1"
     },
     {
       "kind": "initia scan",
