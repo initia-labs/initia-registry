@@ -209,10 +209,6 @@ export interface Chain {
      */
     op_bridge_id?: string;
     /**
-     * [Optional] The creator of the OPinit bridge.
-     */
-    creator?: string;
-    /**
      * [Optional] The list of denoms that are supported by the OPinit bridge.
      */
     op_denoms?: string[];

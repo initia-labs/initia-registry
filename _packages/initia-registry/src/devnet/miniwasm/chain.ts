@@ -92,7 +92,6 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "1",
-    creator: "0xf324bf4f355abec6d49fdfd0d45419ba99d363d9",
     op_denoms: ["uinit"],
     ibc_channels: [
       {

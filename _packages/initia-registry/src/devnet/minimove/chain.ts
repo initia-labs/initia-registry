@@ -92,7 +92,6 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "2",
-    creator: "0x723e7894466de983976cc54302f9c436b3291106",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
@@ -109,7 +108,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/mahalo-2/main/devnets/minimove/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json",
   },
 };
 export default info;
