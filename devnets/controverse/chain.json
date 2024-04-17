@@ -1,9 +1,9 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "miniwasm",
+  "chain_name": "controverse",
   "chain_id": "contro-test-1",
-  "website": "https://initia.xyz",
-  "pretty_name": "Miniwasm",
+  "website": "https://contro.tech",
+  "pretty_name": "The Controverse",
   "status": "live",
   "network_type": "devnet",
   "bech32_prefix": "init",
@@ -32,22 +32,7 @@
   "staking": {
     "staking_tokens": []
   },
-  "codebase": {
-    "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.2.2",
-    "compatible_versions": ["v0.2.2", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/miniwasm_v0.2.2_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/genesis.json"
-    },
-    "versions": []
-  },
-  "description": "miniwasm Closed Devnet",
+  "description": "Controverse Closed Devnet",
   "peers": {
     "seeds": [],
     "persistent_peers": []
@@ -55,41 +40,32 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.miniwasm-2.initia.xyz",
-        "provider": "Foundation"
+        "address": "https://maze-rpc-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.miniwasm-2.initia.xyz",
-        "provider": "Foundation"
+        "address": "https://maze-rest-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
       }
     ],
     "api": [
       {
-        "address": "https://api.miniwasm-2.initia.xyz",
-        "provider": "Foundation"
+        "address": "http://34.124.191.239:3001/v1/blocks",
       }
     ],
-    "grpc": [
-      {
-        "address": "grpc://34.87.100.162:9090",
-        "provider": "Foundation"
-      }
-    ]
   },
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.miniwasm-2.initia.xyz/?layer=miniwasm",
-      "tx_page": "https://explorer.miniwasm-2.initia.xyz/tx/${txHash}?layer=miniwasm",
-      "account_page": "https://explorer.miniwasm-2.initia.xyz/address/${accountAddress}?layer=miniwasm"
+      "url": "https://explorer.mahalo-2.initia.xyz/?layer=controverse",
+      "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=controverse",
+      "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=controverse"
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/miniwasm-2",
-      "tx_page": "https://scan.initia.xyz/miniwasm-2/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/miniwasm-2/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/contro-test-1",
+      "tx_page": "https://scan.initia.xyz/contro-test-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/contro-test-1/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -119,6 +95,6 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/assetlist.json"
   }
 }
