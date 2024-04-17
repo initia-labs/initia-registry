@@ -1,22 +1,22 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "minimove",
-  chain_id: "minimove-2",
-  website: "https://initia.xyz",
-  pretty_name: "Minimove",
+  website: "https://blackwing.fi",
+  pretty_name: "Blackwing",
   status: "live",
   network_type: "devnet",
-  bech32_prefix: "init",
   daemon_name: "minitiad",
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
   slip44: 118,
+  chain_name: "blackwing",
+  chain_id: "tomcat-1",
+  bech32_prefix: "init",
   fees: {
     fee_tokens: [
       {
         denom:
-          "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
         fixed_min_gas_price: 0.15,
         low_gas_price: 0.15,
         average_gas_price: 0.15,
@@ -35,49 +35,41 @@ const info: Chain = {
   staking: {
     staking_tokens: [],
   },
-  codebase: {},
-  description: "Minimove Closed Devnet",
+  description: "Blackwing Testnet",
   apis: {
     rpc: [
       {
-        address: "https://rpc.minimove-2.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://maze-rpc-c64ef367-a391-4e71-901e-87951e5e9030.ue1-prod.newmetric.xyz",
       },
     ],
     rest: [
       {
-        address: "https://lcd.minimove-2.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://maze-rest-c64ef367-a391-4e71-901e-87951e5e9030.ue1-prod.newmetric.xyz",
       },
     ],
     api: [
       {
-        address: "https://api.minimove-2.initia.xyz",
-        provider: "Foundation",
-      },
-    ],
-    grpc: [
-      {
-        address: "grpc://34.124.237.204:9090",
-        provider: "Foundation",
+        address: "https://api.blackwing.initia.xyz",
       },
     ],
   },
   explorers: [
     {
       kind: "explorer",
-      url: "https://explorer.minimove-2.initia.xyz/?layer=minimove",
+      url: "https://explorer.mahalo-2.initia.xyz/?layer=tomcat-1",
       tx_page:
-        "https://explorer.minimove-2.initia.xyz/tx/${txHash}?layer=minimove",
+        "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=tomcat-1",
       account_page:
-        "https://explorer.minimove-2.initia.xyz/address/${accountAddress}?layer=minimove",
+        "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=tomcat-1",
     },
     {
       kind: "initia scan",
-      url: "https://scan.initia.xyz/minimove-2",
-      tx_page: "https://scan.initia.xyz/minimove-2/txs/${txHash}",
+      url: "https://scan.initia.xyz/tomcat-1",
+      tx_page: "https://scan.initia.xyz/tomcat-1/txs/${txHash}",
       account_page:
-        "https://scan.initia.xyz/minimove-2/accounts/${accountAddress}",
+        "https://scan.initia.xyz/tomcat-1/accounts/${accountAddress}",
     },
   ],
   images: [
@@ -91,7 +83,9 @@ const info: Chain = {
     svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
   },
   metadata: {
-    op_bridge_id: "2",
+    assetlist:
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json",
+    op_bridge_id: "108",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
@@ -100,15 +94,7 @@ const info: Chain = {
         channel_id: "channel-0",
         version: "ics20-1",
       },
-      {
-        chain_id: "mahalo-2",
-        port_id: "nft-transfer",
-        channel_id: "channel-1",
-        version: "ics721-1",
-      },
     ],
-    assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json",
     minitia: {
       type: "minimove",
       version: "0.2.3",

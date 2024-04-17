@@ -119,6 +119,10 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "0.2.2"
+    }
   }
 }
