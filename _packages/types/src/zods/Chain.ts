@@ -495,7 +495,7 @@ export const ChainSchema = z
           .describe("[Optional] The type of minitia and the version of it ")
           .optional(),
       })
-      .strict()
+      .catchall(z.any())
       .optional(),
   })
   .strict()
