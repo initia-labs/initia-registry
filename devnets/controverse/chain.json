@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+        "denom": "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
