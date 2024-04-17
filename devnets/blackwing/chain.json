@@ -47,6 +47,11 @@
       {
         "address": "https://maze-rest-c64ef367-a391-4e71-901e-87951e5e9030.ue1-prod.newmetric.xyz"
       }
+    ],
+    "api": [
+      {
+        "address": "https://api.blackwing.initia.xyz"
+      }
     ]
   },
   "explorers": [
