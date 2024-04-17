@@ -132,6 +132,12 @@ const info: Chain = {
         channel_id: "channel-3",
         version: "ics721-1",
       },
+      {
+        chain_id: "tomcat-1",
+        port_id: "transfer",
+        channel_id: "channel-65",
+        version: "ics20-1",
+      },
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/assetlist.json",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "tomcat-1",
+  "chain_name": "blackwing",
   "assets": [
     {
       "description": "The native token of Initia",

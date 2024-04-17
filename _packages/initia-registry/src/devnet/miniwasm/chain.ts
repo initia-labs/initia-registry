@@ -110,6 +110,10 @@ const info: Chain = {
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json",
+    minitia: {
+      type: "miniwasm",
+      version: "0.2.2",
+    },
   },
 };
 export default info;

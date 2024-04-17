@@ -232,6 +232,17 @@ export interface Chain {
      * URL pointing to the asset list, which provides metadata associated with Cosmos denoms.
      */
     assetlist?: string;
+    /**
+     * [Optional] The type of minitia and the version of it
+     */
+    minitia?: {
+      type: "minimove" | "miniwasm" | "minievm" | "custom";
+      /**
+       * Version of minitia
+       */
+      version: string;
+      [k: string]: unknown;
+    };
   };
 }
 export interface FeeToken {

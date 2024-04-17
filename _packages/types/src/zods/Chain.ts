@@ -487,6 +487,13 @@ export const ChainSchema = z
             "URL pointing to the asset list, which provides metadata associated with Cosmos denoms."
           )
           .optional(),
+        minitia: z
+          .object({
+            type: z.enum(["minimove", "miniwasm", "minievm", "custom"]),
+            version: z.string().describe("Version of minitia"),
+          })
+          .describe("[Optional] The type of minitia and the version of it ")
+          .optional(),
       })
       .strict()
       .optional(),
