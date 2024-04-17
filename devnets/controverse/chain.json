@@ -79,7 +79,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
   },
   "metadata": {
-    "op_bridge_id": "1",
+    "op_bridge_id": "116",
     "op_denoms": ["uinit"],
     "ibc_channels": [
       {
