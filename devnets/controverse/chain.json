@@ -50,7 +50,7 @@
     ],
     "api": [
       {
-        "address": "http://34.124.191.239:3001/v1/blocks"
+        "address": "https://api.contro.initia.xyz"
       }
     ]
   },
@@ -89,6 +89,9 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/assetlist.json",
+    "minitia": {
+      "type": "custom"
+    }
   }
 }
