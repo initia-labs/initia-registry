@@ -40,19 +40,19 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://maze-rpc-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
+        "address": "https://maze-rpc-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz"
       }
     ],
     "rest": [
       {
-        "address": "https://maze-rest-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
+        "address": "https://maze-rest-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz"
       }
     ],
     "api": [
       {
-        "address": "http://34.124.191.239:3001/v1/blocks",
+        "address": "http://34.124.191.239:3001/v1/blocks"
       }
-    ],
+    ]
   },
   "explorers": [
     {
