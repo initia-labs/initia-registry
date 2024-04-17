@@ -91,7 +91,8 @@
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/assetlist.json",
     "minitia": {
-      "type": "custom"
+      "type": "miniwasm",
+      "version": "v2.2.0"
     }
   }
 }
