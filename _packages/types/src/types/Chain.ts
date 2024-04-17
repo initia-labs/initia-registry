@@ -243,6 +243,7 @@ export interface Chain {
       version: string;
       [k: string]: unknown;
     };
+    [k: string]: unknown;
   };
 }
 export interface FeeToken {

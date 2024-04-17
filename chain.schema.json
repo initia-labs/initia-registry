@@ -624,7 +624,7 @@
           "description": "[Optional] The type of minitia and the version of it "
         }
       },
-      "additionalProperties": false
+      "additionalProperties": true
     }
   },
   "additionalProperties": false,
