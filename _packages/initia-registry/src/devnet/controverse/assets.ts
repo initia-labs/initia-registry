@@ -1,14 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "miniwasm",
+  chain_name: "controverse",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+            "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
           exponent: 0,
         },
         {
@@ -16,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+      base: "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
