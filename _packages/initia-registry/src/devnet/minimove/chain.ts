@@ -111,7 +111,7 @@ const info: Chain = {
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json",
     minitia: {
       type: "minimove",
-      version: "0.2.3",
+      version: "v0.2.3",
     },
   },
 };

@@ -1,10 +1,10 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "miniwasm",
-  chain_id: "miniwasm-2",
-  website: "https://initia.xyz",
-  pretty_name: "Miniwasm",
+  chain_name: "controverse",
+  chain_id: "contro-test-1",
+  website: "https://contro.tech",
+  pretty_name: "The Controverse",
   status: "live",
   network_type: "devnet",
   bech32_prefix: "init",
@@ -16,7 +16,7 @@ const info: Chain = {
     fee_tokens: [
       {
         denom:
-          "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+          "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
         fixed_min_gas_price: 0.15,
         low_gas_price: 0.15,
         average_gas_price: 0.15,
@@ -35,49 +35,41 @@ const info: Chain = {
   staking: {
     staking_tokens: [],
   },
-  codebase: {},
-  description: "miniwasm Closed Devnet",
+  description: "Controverse Closed Devnet",
   apis: {
     rpc: [
       {
-        address: "https://rpc.miniwasm-2.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://maze-rpc-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
       },
     ],
     rest: [
       {
-        address: "https://lcd.miniwasm-2.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://maze-rest-493360ba-cd86-4627-aca3-8b61635eb2bf.ue1-prod.newmetric.xyz",
       },
     ],
     api: [
       {
-        address: "https://api.miniwasm-2.initia.xyz",
-        provider: "Foundation",
-      },
-    ],
-    grpc: [
-      {
-        address: "grpc://34.87.100.162:9090",
-        provider: "Foundation",
+        address: "https://api.contro.initia.xyz",
       },
     ],
   },
   explorers: [
     {
       kind: "explorer",
-      url: "https://explorer.miniwasm-2.initia.xyz/?layer=miniwasm",
+      url: "https://explorer.mahalo-2.initia.xyz/?layer=controverse",
       tx_page:
-        "https://explorer.miniwasm-2.initia.xyz/tx/${txHash}?layer=miniwasm",
+        "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=controverse",
       account_page:
-        "https://explorer.miniwasm-2.initia.xyz/address/${accountAddress}?layer=miniwasm",
+        "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=controverse",
     },
     {
       kind: "initia scan",
-      url: "https://scan.initia.xyz/miniwasm-2",
-      tx_page: "https://scan.initia.xyz/miniwasm-2/txs/${txHash}",
+      url: "https://scan.initia.xyz/contro-test-1",
+      tx_page: "https://scan.initia.xyz/contro-test-1/txs/${txHash}",
       account_page:
-        "https://scan.initia.xyz/miniwasm-2/accounts/${accountAddress}",
+        "https://scan.initia.xyz/contro-test-1/accounts/${accountAddress}",
     },
   ],
   images: [
@@ -91,7 +83,7 @@ const info: Chain = {
     svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg",
   },
   metadata: {
-    op_bridge_id: "1",
+    op_bridge_id: "116",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
@@ -100,19 +92,12 @@ const info: Chain = {
         channel_id: "channel-0",
         version: "ics20-1",
       },
-      {
-        chain_id: "mahalo-2",
-        port_id:
-          "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
-        channel_id: "channel-1",
-        version: "ics721-1",
-      },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/assetlist.json",
     minitia: {
       type: "miniwasm",
-      version: "v0.2.2",
+      version: "v2.2.0",
     },
   },
 };
