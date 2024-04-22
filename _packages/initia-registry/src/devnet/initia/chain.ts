@@ -133,6 +133,12 @@ const info: Chain = {
         version: "ics721-1",
       },
       {
+        chain_id: "contro-test-1",
+        port_id: "transfer",
+        channel_id: "channel-64",
+        version: "ics20-1",
+      },
+      {
         chain_id: "tomcat-1",
         port_id: "transfer",
         channel_id: "channel-65",
