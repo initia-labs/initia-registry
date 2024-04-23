@@ -59,13 +59,13 @@
     ],
     "images": [
       {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.svg"
       }
     ],
     "logo_URIs": {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.svg"
     },
     "metadata": {
       "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/lunch/assetlist.json",
