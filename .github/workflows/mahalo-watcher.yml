@@ -27,6 +27,7 @@ jobs:
         uses: tj-actions/changed-files@v44
         with:
           files: devnets/**
+          files_ignore: devnets/initia/**
 
       - name: Get current time
         uses: josStorer/get-current-time@v2
