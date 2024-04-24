@@ -3,12 +3,12 @@
     "website": "https://lunchlunch.xyz",
     "pretty_name": "Noon",
     "status": "live",
-    "network_type": "testnet",
+    "network_type": "devnet",
     "daemon_name": "minitiad",
     "node_home": "$HOME/.minitia",
     "key_algos": ["secp256k1"],
     "slip44": 118,
-    "chain_name": "avocado-1",
+    "chain_name": "noon",
     "chain_id": "avocado-1",
     "bech32_prefix": "init",
     "fees": {
@@ -46,9 +46,9 @@
     "explorers": [
       {
         "kind": "explorer",
-        "url": "https://explorer.mahalo-2.initia.xyz/?layer=avocado-1",
-        "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=avocado-1",
-        "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=avocado-1"
+        "url": "https://explorer.mahalo-2.initia.xyz/?layer=noon",
+        "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=noon",
+        "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=noon"
       },
       {
         "kind": "initia scan",
