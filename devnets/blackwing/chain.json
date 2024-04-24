@@ -79,7 +79,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg"
   },
   "metadata": {
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/assetlist.json",
     "op_bridge_id": "108",
     "op_denoms": ["uinit"],
     "ibc_channels": [
