@@ -70,13 +70,13 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/images/CO.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/images/CO.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/miniwasm/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/images/CO.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/controverse/images/CO.svg"
   },
   "metadata": {
     "op_bridge_id": "116",
