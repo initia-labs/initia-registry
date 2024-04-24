@@ -102,5 +102,4 @@ def validateRawGithubContent(uri: str):
   path = uri[len(prefix):]
   if not os.path.exists(path):
     raise Exception("file(" + path + ") doesn't exists")
-  else:
-    print(path)
+
