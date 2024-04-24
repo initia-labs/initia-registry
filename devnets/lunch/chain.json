@@ -69,7 +69,7 @@
     },
     "metadata": {
       "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/lunch/assetlist.json",
-      "op_bridge_id": "5",
+      "op_bridge_id": "139",
       "op_denoms": [
         "uinit"
       ],
