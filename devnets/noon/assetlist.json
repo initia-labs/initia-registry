@@ -1,6 +1,6 @@
 {
     "$schema": "../../assetlist.schema.json",
-    "chain_name": "avocado-1",
+    "chain_name": "noon",
     "assets": [
       {
         "description": "The native token of Initia",
