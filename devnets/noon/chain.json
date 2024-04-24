@@ -1,0 +1,87 @@
+{
+    "$schema": "../../chain.schema.json",
+    "website": "https://lunchlunch.xyz",
+    "pretty_name": "Noon",
+    "status": "live",
+    "network_type": "devnet",
+    "daemon_name": "minitiad",
+    "node_home": "$HOME/.minitia",
+    "key_algos": ["secp256k1"],
+    "slip44": 118,
+    "chain_name": "noon",
+    "chain_id": "avocado-1",
+    "bech32_prefix": "init",
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "ulunch",
+          "fixed_min_gas_price": 0.15,
+          "low_gas_price": 0.15,
+          "average_gas_price": 0.15,
+          "high_gas_price": 0.4
+        }
+      ]
+    },
+    "staking": {
+      "staking_tokens": []
+    },
+    "description": "Noon Testnet",
+    "peers": {
+      "seeds": [],
+      "persistent_peers": []
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://avocado-1-rpc.dev.lunchlunch.xyz"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://avocado-1-lcd.dev.lunchlunch.xyz"
+        }
+      ],
+      "api": []
+    },
+    "explorers": [
+      {
+        "kind": "explorer",
+        "url": "https://explorer.mahalo-2.initia.xyz/?layer=noon",
+        "tx_page": "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=noon",
+        "account_page": "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=noon"
+      },
+      {
+        "kind": "initia scan",
+        "url": "https://scan.initia.xyz/avocado-1",
+        "tx_page": "https://scan.initia.xyz/avocado-1/txs/${txHash}",
+        "account_page": "https://scan.initia.xyz/avocado-1/accounts/${accountAddress}"
+      }
+    ],
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/LUNCH.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/LUNCH.svg"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/LUNCH.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/LUNCH.svg"
+    },
+    "metadata": {
+      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/assetlist.json",
+      "op_bridge_id": "139",
+      "op_denoms": [
+        "uinit",
+        "uusdc"
+      ],
+      "ibc_channels": [
+        {
+          "chain_id": "mahalo-2",
+          "port_id": "transfer",
+          "channel_id": "channel-0",
+          "version": "ics20-1"
+        }
+      ]
+    }  
+  }
+  

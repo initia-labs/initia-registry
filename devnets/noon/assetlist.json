@@ -1,0 +1,62 @@
+{
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "noon",
+    "assets": [
+      {
+        "description": "The native token of Initia",
+        "denom_units": [
+          {
+            "denom": "l2/3520c4287d748e8de2d7fc623867cabd957a4e19fbe1b8be92a14cc9684ae8fc",
+            "exponent": 0
+          },
+          {
+            "denom": "INIT",
+            "exponent": 6
+          }
+        ],
+        "base": "l2/3520c4287d748e8de2d7fc623867cabd957a4e19fbe1b8be92a14cc9684ae8fc",
+        "display": "INIT",
+        "name": "Initia Native Token",
+        "symbol": "INIT",
+        "coingecko_id": "",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/INIT.png",
+            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/INIT.svg"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/INIT.svg"
+        }
+      },
+      {
+        "description": "The fake USDC",
+        "denom_units": [
+          {
+            "denom": "l2/c0fa7d24067e72e4c0766c74d1054984ce6ca23fcfd57c62f1c1ca168ddfc052",
+            "exponent": 0
+          },
+          {
+            "denom": "USDC",
+            "exponent": 6
+          }
+        ],
+        "base": "l2/c0fa7d24067e72e4c0766c74d1054984ce6ca23fcfd57c62f1c1ca168ddfc052",
+        "display": "USDC",
+        "name": "USDC",
+        "symbol": "USDC",
+        "coingecko_id": "",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/USDC.png",
+            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/USDC.svg"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/noon/images/USDC.svg"
+        }
+      }
+    ]
+}
