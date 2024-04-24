@@ -6,7 +6,9 @@
   "network_type": "devnet",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "chain_name": "blackwing",
   "chain_id": "tomcat-1",
@@ -81,7 +83,9 @@
   "metadata": {
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/assetlist.json",
     "op_bridge_id": "108",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",
@@ -96,4 +100,3 @@
     }
   }
 }
-

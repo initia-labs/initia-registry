@@ -9,7 +9,9 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -80,7 +82,9 @@
   },
   "metadata": {
     "op_bridge_id": "116",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",

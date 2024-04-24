@@ -9,7 +9,9 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -35,7 +37,10 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
     "recommended_version": "v0.2.3",
-    "compatible_versions": ["v0.2.3", "main"],
+    "compatible_versions": [
+      "v0.2.3",
+      "main"
+    ],
     "binaries": {
       "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_x86_64.tar.gz",
       "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/minimove_v0.2.3_Linux_aarch64.tar.gz",
@@ -104,7 +109,9 @@
   },
   "metadata": {
     "op_bridge_id": "2",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "ibc_channels": [
       {
         "chain_id": "mahalo-2",

@@ -9,7 +9,9 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -44,7 +46,9 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
     "recommended_version": "v0.2.3",
-    "compatible_versions": ["v0.2.3"],
+    "compatible_versions": [
+      "v0.2.3"
+    ],
     "binaries": {
       "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_x86_64.tar.gz",
       "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_aarch64.tar.gz",
@@ -132,7 +136,6 @@
         "channel_id": "channel-2",
         "version": "ics721-1"
       },
-
       {
         "chain_id": "miniwasm-2",
         "port_id": "transfer",
