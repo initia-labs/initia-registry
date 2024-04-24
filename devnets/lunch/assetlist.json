@@ -3,38 +3,10 @@
     "chain_name": "avocado-1",
     "assets": [
       {
-        "description": "The native token of Noon",
-        "denom_units": [
-          {
-            "denom": "ibc/5211221CD7D1FF0CB3C537281E238625B3C000483408B874110039AD0A6F4F85",
-            "exponent": 0
-          },
-          {
-            "denom": "LUNCH",
-            "exponent": 6
-          }
-        ],
-        "base": "ibc/5211221CD7D1FF0CB3C537281E238625B3C000483408B874110039AD0A6F4F85",
-        "display": "LUNCH",
-        "name": "Noon Native Token",
-        "symbol": "LUNCH",
-        "coingecko_id": "",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.png",
-            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.svg"
-          }
-        ],
-        "logo_URIs": {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/LUNCH.svg"
-        }
-      },
-      {
         "description": "The native token of Initia",
         "denom_units": [
           {
-            "denom": "l2/1a518a264b58213e41fe36d0453b345c23f5f228f8ab9789ffa5763031a183ae",
+            "denom": "l2/3520c4287d748e8de2d7fc623867cabd957a4e19fbe1b8be92a14cc9684ae8fc",
             "exponent": 0
           },
           {
@@ -42,7 +14,7 @@
             "exponent": 6
           }
         ],
-        "base": "l2/1a518a264b58213e41fe36d0453b345c23f5f228f8ab9789ffa5763031a183ae",
+        "base": "l2/3520c4287d748e8de2d7fc623867cabd957a4e19fbe1b8be92a14cc9684ae8fc",
         "display": "INIT",
         "name": "Initia Native Token",
         "symbol": "INIT",
@@ -56,6 +28,34 @@
         "logo_URIs": {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.png",
           "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/INIT.svg"
+        }
+      },
+      {
+        "description": "The fake USDC",
+        "denom_units": [
+          {
+            "denom": "l2/c0fa7d24067e72e4c0766c74d1054984ce6ca23fcfd57c62f1c1ca168ddfc052",
+            "exponent": 0
+          },
+          {
+            "denom": "USDC",
+            "exponent": 6
+          }
+        ],
+        "base": "l2/c0fa7d24067e72e4c0766c74d1054984ce6ca23fcfd57c62f1c1ca168ddfc052",
+        "display": "USDC",
+        "name": "USDC",
+        "symbol": "USDC",
+        "coingecko_id": "",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/USDC.png",
+            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/USDC.svg"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/lunch/images/USDC.svg"
         }
       }
     ]
