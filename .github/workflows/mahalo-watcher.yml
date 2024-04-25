@@ -34,7 +34,6 @@ jobs:
         id: current-time
         with:
           format: YYYY-MM-DDTHH-mm-ss
-          utcOffset: "+09:00"
 
       - name: Copy changed files to GCS
         env:
