@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "tucana",
-  "chain_id": "tucana-69",
+  "chain_id": "birdee-1",
   "website": "https://tucana.zone",
   "pretty_name": "Tucana",
   "status": "live",
@@ -33,13 +33,13 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://tucana-rpc.testnet.mesoops.net",
+        "address": "https://rpc.birdee-1.tucana.zone",
         "provider": "Foundation"
       }
     ],
     "rest": [
       {
-        "address": "https://tucana-lcd.testnet.mesoops.net",
+        "address": "https://lcd.birdee-1.tucana.zone",
         "provider": "Foundation"
       }
     ],
@@ -59,26 +59,26 @@
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/tucana-69",
-      "tx_page": "https://scan.initia.xyz/tucana-69/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/tucana-69/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/birdee-1",
+      "tx_page": "https://scan.initia.xyz/birdee-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/birdee-1/accounts/${accountAddress}"
     }
   ],
   "faucets": [
     {
       "kind": "faucet",
-      "url": "https://faucet.testnet.mesoops.net/"
+      "url": "https://faucet.birdee-1.tucana.zone"
     }
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/tucana/images/TUCANA.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/tucana/images/TUCANA.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/tucana/images/TUCANA.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/tucana/images/TUCANA.svg"
   },
   "metadata": {
     "ibc_channels": []
