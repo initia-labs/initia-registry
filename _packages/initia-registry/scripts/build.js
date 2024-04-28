@@ -110,39 +110,31 @@ export default assets;
 };
 
 const writeNetworkChains = (filePath, networkObj) => {
-  const validChain = [];
+  const validChains = Object.keys(networkObj)
+    .filter(chainName => networkObj[chainName].chain)
+    .map(chainName => {
+      return `import * as _${chainName} from './${chainName}';`;
+    });
 
-  const importStat = Object.keys(networkObj)
-    .map((chain_name) => {
-      if (!networkObj[chain_name].chain) {
-        return null;
-      }
-
-      validChain.push(chain_name);
-      return `import * as _${chain_name} from './${chain_name}'`;
-    })
-    .filter(Boolean)
-    .join(";\n");
-
-  if (!validChain.length) {
+  if (validChains.length === 0) {
     return false;
   }
 
-  fs.writeFileSync(
-    filePath,
-    `import { Chain } from '@initia/initia-registry-types';
+  const importStatements = validChains.join('\n');
 
-${importStat}
+  const chains = validChains.map(chainName => `_${chainName}.chain`);
 
-const chains: Chain[] = [${validChain
-      .map((chain_name) => {
-        return `_${chain_name}.chain`;
-      })
-      .join(",")}];
+  const fileContent = `
+import { Chain } from '@initia/initia-registry-types';
+
+${importStatements}
+
+const chains: Chain[] = [${chains.join(', ')}];
 
 export default chains;
-`
-  );
+`;
+
+  fs.writeFileSync(filePath, fileContent);
 
   return true;
 };
