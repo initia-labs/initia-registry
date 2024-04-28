@@ -11,10 +11,22 @@ jobs:
       - name: Install JSON-Schema-Validator
         run: npm install -g jsonschema
 
-      - name: Validate Chain.json schema
+      - name: Validate chain.json schema
         run: |
-          for file in $(find . -name 'chain.json' | grep -v '_template/'); do
-            if ! jsonschema -i "$file" ./chain.schema.json; then
+          json_files=($(find . -name 'chain.json' | grep -v '_template/'))
+          all_names=()
+          for json_file in "${json_files[@]}"; do
+            # Validate schema
+            if ! jsonschema -i "$json_file" ./chain.schema.json; then
+              echo "Schema validation failed for $json_file"
               exit 1
             fi
+            # Check for duplicate chain names
+            chain_name=$(jq -r '.chain_name' "$json_file")
+            if [[ " ${all_names[@]} " =~ " ${chain_name} " ]]; then
+              echo "Duplicate chain_name found: ${chain_name} in file ${json_file}"
+              exit 1
+            fi
+            all_names+=("$chain_name")
           done
+          echo "No duplicates found. All chain.json files are valid."
