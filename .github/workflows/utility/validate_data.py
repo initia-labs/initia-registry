@@ -6,6 +6,7 @@ rootdir = getcwd()
 
 # -----FOR EACH CHAIN-----
 def checkChains():
+    chain_names = set()
     for networkfolder in os.listdir(rootdir):
         if not os.path.isdir(networkfolder):
           continue
@@ -20,6 +21,13 @@ def checkChains():
           if not os.path.exists(assetlistjson):
               continue
           assetlistSchema = json.load(open(os.path.join(rootdir, assetlistjson)))
+
+          if  assetlistSchema["chain_name"] != chainSchema["chain_name"]:
+            raise Exception("chain_name in assetlist.json and chain.json are not same")
+          chain_name = chainSchema["chain_name"]
+          if chain_name in chain_names:
+              raise Exception(f"Duplicate chain_name found: {chain_name}")
+          chain_names.add(chain_name)
           bases = []
           if "assets" in assetlistSchema:
             if assetlistSchema["assets"]:
