@@ -14,7 +14,7 @@
     "fees": {
       "fee_tokens": [
         {
-          "denom": "ulunch",
+          "denom": "l2/3520c4287d748e8de2d7fc623867cabd957a4e19fbe1b8be92a14cc9684ae8fc",
           "fixed_min_gas_price": 0.15,
           "low_gas_price": 0.15,
           "average_gas_price": 0.15,
