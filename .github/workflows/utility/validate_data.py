@@ -53,28 +53,11 @@ def checkChains():
               raise Exception("'assets' array doesn't contain any tokens")
           else:
             raise Exception("assetlist schema doesn't contain 'assets' array")
-          if "fees" in chainSchema:
-            if "fee_tokens" in chainSchema["fees"]:
-              if chainSchema["fees"]["fee_tokens"]:
-                for token in chainSchema["fees"]["fee_tokens"]:
-                  if "denom" in token:
-                    if token["denom"] not in bases:
-                      raise Exception(token["denom"] + " is not in bases")
-              else:
-                raise Exception("'fee_tokens' array doesn't contain any tokens")
-          if "staking" in chainSchema:
-            if "staking_tokens" in chainSchema["staking"]:
-              if chainSchema["staking"]["staking_tokens"]:
-                for token in chainSchema["staking"]["staking_tokens"]:
-                  if "denom" in token:
-                    if token["denom"] not in bases:
-                      raise Exception(token["denom"] + " is not in bases")
-                  else:
-                    raise Exception("token doesn't contain 'denom' string")
-            else:
-              raise Exception("'fees' object doesn't contain 'staking_tokens' array")
-          else:
-            print("[OPTIONAL - Keplr Compliance] chain schema doesn't contain 'staking' object")
+
+          # force chain_name to be same with folder name for uniqueness 
+          if chainfolder != chainSchema["chain_name"]:
+            raise Exception("folder name must be same with chain name (" + chainfolder +")")
+
           # raw.githubusercontent uri check
           if "images" in chainSchema:
             for image in chainSchema["images"]:
