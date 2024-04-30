@@ -54,6 +54,7 @@ def checkChains():
           else:
             raise Exception("assetlist schema doesn't contain 'assets' array")
 
+          # force chain_name to be same with folder name for uniqueness 
           if chainfolder != chainSchema["chain_name"]:
             raise Exception("folder name must be same with chain name (" + chainfolder +")")
 
