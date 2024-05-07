@@ -23,6 +23,13 @@
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
         "high_gas_price": 0.4
+      },
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
       }
     ]
   },
