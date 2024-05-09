@@ -1,0 +1,128 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "miniwasm",
+  "chain_id": "miniwasm-1",
+  "website": "https://initia.xyz",
+  "pretty_name": "Miniwasm",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      },
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/miniwasm",
+    "recommended_version": "v0.2.13",
+    "compatible_versions": ["v0.2.13", "main"],
+    "binaries": {
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json"
+    },
+    "versions": []
+  },
+  "description": "Miniwasm Testnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "api": [
+      {
+        "address": "https://api.miniwasm-1.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc://34.124.190.216:9090",
+        "provider": "Foundation"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.initiation-1.initia.xyz/?layer=miniwasm",
+      "tx_page": "https://explorer.initiation-1.initia.xyz/tx/${txHash}?layer=miniwasm",
+      "account_page": "https://explorer.initiation-1.initia.xyz/address/${accountAddress}?layer=miniwasm"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/miniwasm-1",
+      "tx_page": "https://scan.initia.xyz/miniwasm-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/miniwasm-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "3",
+    "op_denoms": ["uinit"],
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-1",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "v0.2.13"
+    }
+  }
+}
