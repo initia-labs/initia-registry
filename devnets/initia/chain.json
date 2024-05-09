@@ -149,13 +149,13 @@
       {
         "chain_id": "tomcat-1",
         "port_id": "transfer",
-        "channel_id": "channel-106",
+        "channel_id": "channel-135",
         "version": "ics20-1"
       },
       {
         "chain_id": "tomcat-1",
         "port_id": "nft-transfer",
-        "channel_id": "channel-107",
+        "channel_id": "channel-136",
         "version": "ics721-1"
       }
     ],
