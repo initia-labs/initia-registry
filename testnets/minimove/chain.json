@@ -65,12 +65,6 @@
         "provider": "Foundation"
       }
     ],
-    "api": [
-      {
-        "address": "https://api.minimove-1.initia.xyz",
-        "provider": "Foundation"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://35.198.215.41:9090",
@@ -80,16 +74,10 @@
   },
   "explorers": [
     {
-      "kind": "explorer",
-      "url": "https://explorer.initiation-1.initia.xyz/?layer=minimove",
-      "tx_page": "https://explorer.initiation-1.initia.xyz/tx/${txHash}?layer=minimove",
-      "account_page": "https://explorer.initiation-1.initia.xyz/address/${accountAddress}?layer=minimove"
-    },
-    {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/minimove-1",
-      "tx_page": "https://scan.initia.xyz/minimove-1/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/minimove-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/minimove-1",
+      "tx_page": "https://scan.testnet.initia.xyz/minimove-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/minimove-1/accounts/${accountAddress}"
     }
   ],
   "images": [

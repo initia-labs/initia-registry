@@ -95,22 +95,16 @@
   },
   "explorers": [
     {
-      "kind": "explorer",
-      "url": "https://explorer.initiation-1.initia.xyz/?layer=l1%2520testnet",
-      "tx_page": "https://explorer.initiation-1.initia.xyz/tx/${txHash}?layer=l1%20testnet",
-      "account_page": "https://explorer.initiation-1.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
-    },
-    {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/initiation-1",
-      "tx_page": "https://scan.initia.xyz/initiation-1/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/initiation-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/initiation-1",
+      "tx_page": "https://scan.testnet.initia.xyz/initiation-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/initiation-1/accounts/${accountAddress}"
     }
   ],
   "faucets": [
     {
       "kind": "faucet",
-      "url": "https://faucet.initiation-1.initia.xyz/"
+      "url": "https://faucet.testnet.initia.xyz/"
     }
   ],
   "images": [
