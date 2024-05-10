@@ -17,7 +17,7 @@ It houses configuration files such as ```chain.json``` and ```assetlist.json```,
 ##  ```chain.json```
 A sample chain.json includes the following information.
 ``` {
-  "$schema": "../../chain.schema.json",
+  "$schema": "testnets/initia/chain.json",
   "chain_name": "initia",
   "chain_id": "mahalo-2",
   "website": "<https://initia.xyz>",
@@ -175,7 +175,7 @@ Asset lists are a similar mechanism to allow frontends and other UIs to fetch me
 This standard is a work in progress. You'll notice that the format of assets in the ```assetlist.json``` structure is a strict superset json representation of the banktypes.DenomMetadata from the Cosmos SDK. This is purposefully done so that this standard may eventually be migrated into a Cosmos SDK module in the future, so it can be easily maintained on chain instead of on Github.
 An example assetlist json contains the following structure:
 ```{
-  "$schema": "../../assetlist.schema.json",
+  "$schema": "testnets/initia/assetlist.json",
   "chain_name": "initia",
   "assets": [
     {
