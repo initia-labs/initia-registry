@@ -19,7 +19,7 @@ A sample chain.json includes the following information.
 ``` {
   "$schema": "testnets/initia/chain.json",
   "chain_name": "initia",
-  "chain_id": "mahalo-2",
+  "chain_id": "initiation-1",
   "website": "<https://initia.xyz>",
   "pretty_name": "Initia",
   "status": "live",
@@ -64,13 +64,13 @@ A sample chain.json includes the following information.
     "recommended_version": "v0.2.3",
     "compatible_versions": ["v0.2.3"],
     "binaries": {
-      "linux/amd64": "<https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_x86_64.tar.gz>",
-      "linux/arm64": "<https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_aarch64.tar.gz>",
-      "darwin/amd64": "<https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_x86_64.tar.gz>",
-      "darwin/arm64": "<https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_aarch64.tar.gz>"
+      "linux/amd64": "<https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.3_Linux_x86_64.tar.gz>",
+      "linux/arm64": "<https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.3_Linux_aarch64.tar.gz>",
+      "darwin/amd64": "<https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.3_Darwin_x86_64.tar.gz>",
+      "darwin/arm64": "<https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.3_Darwin_aarch64.tar.gz>"
     },
     "genesis": {
-      "genesis_url": "<https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/genesis.json>"
+      "genesis_url": "<https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json>"
     },
     "versions": []
   },
@@ -82,19 +82,19 @@ A sample chain.json includes the following information.
   "apis": {
     "rpc": [
       {
-        "address": "<https://rpc.mahalo-2.initia.xyz>",
+        "address": "<https://rpc.initiation-1.initia.xyz>",
         "provider": "Foundation"
       }
     ],
     "rest": [
       {
-        "address": "<https://lcd.mahalo-2.initia.xyz>",
+        "address": "<https://lcd.initiation-1.initia.xyz>",
         "provider": "Foundation"
       }
     ],
     "api": [
       {
-        "address": "<https://api.mahalo-2.initia.xyz>",
+        "address": "<https://api.initiation-1.initia.xyz>",
         "provider": "Foundation"
       }
     ],
@@ -108,21 +108,21 @@ A sample chain.json includes the following information.
   "explorers": [
     {
       "kind": "explorer",
-      "url": "<https://explorer.mahalo-2.initia.xyz/?layer=l1%2520testnet>",
-      "tx_page": "<https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=l1%20testnet>",
-      "account_page": "<https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=l1%20testnet>"
+      "url": "<https://explorer.initiation-1.initia.xyz/?layer=l1%2520testnet>",
+      "tx_page": "<https://explorer.initiation-1.initia.xyz/tx/${txHash}?layer=l1%20testnet>",
+      "account_page": "<https://explorer.initiation-1.initia.xyz/address/${accountAddress}?layer=l1%20testnet>"
     },
     {
       "kind": "initia scan",
-      "url": "<https://scan.initia.xyz/mahalo-2>",
-      "tx_page": "<https://scan.initia.xyz/mahalo-2/txs/${txHash}>",
-      "account_page": "<https://scan.initia.xyz/mahalo-2/accounts/${accountAddress}>"
+      "url": "<https://scan.initia.xyz/initiation-1>",
+      "tx_page": "<https://scan.initia.xyz/initiation-1/txs/${txHash}>",
+      "account_page": "<https://scan.initia.xyz/initiation-1/accounts/${accountAddress}>"
     }
   ],
   "faucets": [
     {
       "kind": "faucet",
-      "url": "<https://faucet.mahalo-2.initia.xyz/>"
+      "url": "<https://faucet.initiation-1.initia.xyz/>"
     }
   ],
   "images": [
