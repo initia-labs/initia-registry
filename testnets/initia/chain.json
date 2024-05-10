@@ -49,13 +49,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.2.8",
-    "compatible_versions": ["v0.2.8"],
+    "recommended_version": "v0.2.9",
+    "compatible_versions": ["v0.2.9"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.9_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.9_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.9_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.9_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json"
@@ -135,13 +135,13 @@
       {
         "chain_id": "miniwasm-1",
         "port_id": "transfer",
-        "channel_id": "channel-4",
+        "channel_id": "channel-2",
         "version": "ics20-1"
       },
       {
         "chain_id": "miniwasm-1",
         "port_id": "nft-transfer",
-        "channel_id": "channel-5",
+        "channel_id": "channel-3",
         "version": "ics721-1"
       }
     ],

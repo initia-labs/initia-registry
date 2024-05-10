@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
+        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
@@ -34,13 +34,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.2.13",
-    "compatible_versions": ["v0.2.13", "main"],
+    "recommended_version": "v0.2.14",
+    "compatible_versions": ["v0.2.14", "main"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json"
@@ -91,7 +91,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
   },
   "metadata": {
-    "op_bridge_id": "3",
+    "op_bridge_id": "2",
     "op_denoms": ["uinit"],
     "ibc_channels": [
       {
@@ -110,7 +110,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
     "minitia": {
       "type": "miniwasm",
-      "version": "v0.2.13"
+      "version": "v0.2.14"
     }
   }
 }
