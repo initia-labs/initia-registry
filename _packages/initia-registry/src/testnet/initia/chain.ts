@@ -52,7 +52,7 @@ const info: Chain = {
     ],
   },
   codebase: {},
-  description: "Initia Testnet",
+  description: "Initia Public Testnet",
   apis: {
     rpc: [
       {

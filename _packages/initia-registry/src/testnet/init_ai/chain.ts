@@ -28,7 +28,7 @@ const info: Chain = {
     staking_tokens: [],
   },
   codebase: {},
-  description: "INIT AI Testnet",
+  description: "INIT AI Public Testnet",
   apis: {
     rpc: [
       {
