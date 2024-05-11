@@ -1,7 +1,7 @@
 {
   "chain_name": "Tucana",
   "chain_id": "birdee-1",
-  "pretty_name": "Minimove",
+  "pretty_name": "Tucana",
   "status": "live",
   "network_type": "testnet",
   "bech32_prefix": "init",
