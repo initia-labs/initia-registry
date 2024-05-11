@@ -8,7 +8,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
+            "l2/f23a6c45066bbb0fbee02d3505cc83671717d375baabc44769225752267f0d31",
           exponent: 0,
         },
         {
@@ -16,20 +16,20 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
+      base: "l2/f23a6c45066bbb0fbee02d3505cc83671717d375baabc44769225752267f0d31",
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/INIT.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/INIT.svg",
       },
     },
     {

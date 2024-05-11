@@ -1,3 +1,4 @@
+export * from "./testnet";
 export * from "./devnet";
 import all from "./all";
 
