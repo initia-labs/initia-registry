@@ -2,11 +2,11 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "initia",
-  chain_id: "mahalo-3",
+  chain_id: "initiation-1",
   website: "https://initia.xyz",
   pretty_name: "Initia",
   status: "live",
-  network_type: "devnet",
+  network_type: "testnet",
   bech32_prefix: "init",
   daemon_name: "initiad",
   node_home: "$HOME/.initia",
@@ -27,6 +27,9 @@ const info: Chain = {
       {
         denom: "uusdc",
       },
+      {
+        denom: "utia",
+      },
     ],
   },
   staking: {
@@ -42,26 +45,30 @@ const info: Chain = {
         denom:
           "move/a2b0d3c8e53e379ede31f3a361ff02716d50ec53c6b65b8c48a81d5b06548200",
       },
+      {
+        denom:
+          "move/b134ae6786f10ef74294e627d2519b63b7c742a6735f98682929fea9a84744d2",
+      },
     ],
   },
   codebase: {},
-  description: "Initia Closed Devnet",
+  description: "Initia Testnet",
   apis: {
     rpc: [
       {
-        address: "https://rpc.mahalo-3.initia.xyz",
+        address: "https://rpc.initiation-1.initia.xyz",
         provider: "Foundation",
       },
     ],
     rest: [
       {
-        address: "https://lcd.mahalo-3.initia.xyz",
+        address: "https://lcd.initiation-1.initia.xyz",
         provider: "Foundation",
       },
     ],
     api: [
       {
-        address: "https://api.mahalo-3.initia.xyz",
+        address: "https://api.initiation-1.initia.xyz",
         provider: "Foundation",
       },
     ],
@@ -74,79 +81,71 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: "explorer",
-      url: "https://explorer.mahalo-3.initia.xyz/?layer=l1%2520testnet",
-      tx_page:
-        "https://explorer.mahalo-3.initia.xyz/tx/${txHash}?layer=l1%20testnet",
-      account_page:
-        "https://explorer.mahalo-3.initia.xyz/address/${accountAddress}?layer=l1%20testnet",
-    },
-    {
       kind: "initia scan",
-      url: "https://scan.initia.xyz/mahalo-3",
-      tx_page: "https://scan.initia.xyz/mahalo-3/txs/${txHash}",
+      url: "https://scan.testnet.initia.xyz/initiation-1",
+      tx_page: "https://scan.testnet.initia.xyz/initiation-1/txs/${txHash}",
       account_page:
-        "https://scan.initia.xyz/mahalo-3/accounts/${accountAddress}",
+        "https://scan.testnet.initia.xyz/initiation-1/accounts/${accountAddress}",
     },
   ],
   faucets: [
     {
       kind: "faucet",
-      url: "https://faucet.mahalo-3.initia.xyz/",
+      url: "https://faucet.testnet.initia.xyz/",
     },
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
   },
   metadata: {
     is_l1: true,
     ibc_channels: [
       {
-        chain_id: "minimove-3",
+        chain_id: "minimove-1",
         port_id: "transfer",
         channel_id: "channel-0",
         version: "ics20-1",
       },
       {
-        chain_id: "minimove-3",
+        chain_id: "minimove-1",
         port_id: "nft-transfer",
-        channel_id: "channel-2",
+        channel_id: "channel-1",
         version: "ics721-1",
       },
       {
-        chain_id: "miniwasm-3",
+        chain_id: "miniwasm-1",
         port_id: "transfer",
-        channel_id: "channel-1",
+        channel_id: "channel-2",
         version: "ics20-1",
       },
       {
-        chain_id: "miniwasm-3",
+        chain_id: "miniwasm-1",
         port_id: "nft-transfer",
         channel_id: "channel-3",
         version: "ics721-1",
       },
       {
-        chain_id: "tomcat-1",
+        chain_id: "init-ai-1",
         port_id: "transfer",
-        channel_id: "channel-135",
+        channel_id: "channel-9",
         version: "ics20-1",
       },
       {
-        chain_id: "tomcat-1",
+        chain_id: "init-ai-1",
         port_id: "nft-transfer",
-        channel_id: "channel-136",
+        channel_id: "channel-10",
         version: "ics721-1",
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json",
   },
 };
 export default info;

@@ -2,11 +2,11 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "minimove",
-  chain_id: "minimove-3",
+  chain_id: "minimove-1",
   website: "https://initia.xyz",
   pretty_name: "Minimove",
   status: "live",
-  network_type: "devnet",
+  network_type: "testnet",
   bech32_prefix: "init",
   daemon_name: "minitiad",
   node_home: "$HOME/.minitia",
@@ -36,23 +36,17 @@ const info: Chain = {
     staking_tokens: [],
   },
   codebase: {},
-  description: "Minimove Closed Devnet",
+  description: "Minimove Testnet",
   apis: {
     rpc: [
       {
-        address: "https://rpc.minimove-3.initia.xyz",
+        address: "https://rpc.minimove-1.initia.xyz",
         provider: "Foundation",
       },
     ],
     rest: [
       {
-        address: "https://lcd.minimove-3.initia.xyz",
-        provider: "Foundation",
-      },
-    ],
-    api: [
-      {
-        address: "https://api.minimove-3.initia.xyz",
+        address: "https://lcd.minimove-1.initia.xyz",
         provider: "Foundation",
       },
     ],
@@ -65,53 +59,45 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: "explorer",
-      url: "https://explorer.mahalo-3.initia.xyz/?layer=minimove",
-      tx_page:
-        "https://explorer.mahalo-3.initia.xyz/tx/${txHash}?layer=minimove",
-      account_page:
-        "https://explorer.mahalo-3.initia.xyz/address/${accountAddress}?layer=minimove",
-    },
-    {
       kind: "initia scan",
-      url: "https://scan.initia.xyz/minimove-3",
-      tx_page: "https://scan.initia.xyz/minimove-3/txs/${txHash}",
+      url: "https://scan.testnet.initia.xyz/minimove-1",
+      tx_page: "https://scan.testnet.initia.xyz/minimove-1/txs/${txHash}",
       account_page:
-        "https://scan.initia.xyz/minimove-3/accounts/${accountAddress}",
+        "https://scan.testnet.initia.xyz/minimove-1/accounts/${accountAddress}",
     },
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.png",
+      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.svg",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.png",
+    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.svg",
   },
   metadata: {
     op_bridge_id: "1",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
-        chain_id: "mahalo-3",
+        chain_id: "initiation-1",
         port_id: "transfer",
         channel_id: "channel-0",
         version: "ics20-1",
       },
       {
-        chain_id: "mahalo-3",
+        chain_id: "initiation-1",
         port_id: "nft-transfer",
         channel_id: "channel-1",
         version: "ics721-1",
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/assetlist.json",
     minitia: {
       type: "minimove",
-      version: "v0.2.7",
+      version: "v0.2.11",
     },
   },
 };

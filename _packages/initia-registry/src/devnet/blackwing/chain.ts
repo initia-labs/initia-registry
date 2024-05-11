@@ -1,6 +1,8 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
+  chain_name: "blackwing",
+  chain_id: "tomcat-1",
   website: "https://blackwing.fi",
   pretty_name: "Blackwing",
   status: "live",
@@ -9,14 +11,16 @@ const info: Chain = {
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
   slip44: 118,
-  chain_name: "blackwing",
-  chain_id: "tomcat-1",
   bech32_prefix: "init",
   fees: {
     fee_tokens: [
       {
+        denom: "umin",
+        fixed_min_gas_price: 0.15,
+      },
+      {
         denom:
-          "l2/ad2344d0c17127cc6bce67e360f43cd6c5fa09a7b5f6f9b7b80f9dc3e0c4876e",
+          "l2/f23a6c45066bbb0fbee02d3505cc83671717d375baabc44769225752267f0d31",
         fixed_min_gas_price: 0.15,
         low_gas_price: 0.15,
         average_gas_price: 0.15,
@@ -40,29 +44,24 @@ const info: Chain = {
     rpc: [
       {
         address:
-          "https://maze-rpc-c64ef367-a391-4e71-901e-87951e5e9030.ue1-prod.newmetric.xyz",
+          "https://maze-rpc-6a424cc4-117e-46db-ae81-640edd796868.ue1-prod.newmetric.xyz",
       },
     ],
     rest: [
       {
         address:
-          "https://maze-rest-c64ef367-a391-4e71-901e-87951e5e9030.ue1-prod.newmetric.xyz",
-      },
-    ],
-    api: [
-      {
-        address: "https://api.blackwing.initia.xyz",
+          "https://maze-rest-6a424cc4-117e-46db-ae81-640edd796868.ue1-prod.newmetric.xyz",
       },
     ],
   },
   explorers: [
     {
       kind: "explorer",
-      url: "https://explorer.mahalo-2.initia.xyz/?layer=tomcat-1",
+      url: "https://explorer.mahalo-3.initia.xyz/?layer=tomcat-1",
       tx_page:
-        "https://explorer.mahalo-2.initia.xyz/tx/${txHash}?layer=tomcat-1",
+        "https://explorer.mahalo-3.initia.xyz/tx/${txHash}?layer=tomcat-1",
       account_page:
-        "https://explorer.mahalo-2.initia.xyz/address/${accountAddress}?layer=tomcat-1",
+        "https://explorer.mahalo-3.initia.xyz/address/${accountAddress}?layer=tomcat-1",
     },
     {
       kind: "initia scan",
@@ -74,22 +73,28 @@ const info: Chain = {
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/BLACKWING.png",
+      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/BLACKWING.svg",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/minimove/images/INIT.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/BLACKWING.png",
+    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/images/BLACKWING.svg",
   },
   metadata: {
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json",
-    op_bridge_id: "108",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/blackwing/assetlist.json",
+    op_bridge_id: "54",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
-        chain_id: "mahalo-2",
+        chain_id: "mahalo-3",
+        port_id: "nft-transfer",
+        channel_id: "channel-1",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "mahalo-3",
         port_id: "transfer",
         channel_id: "channel-0",
         version: "ics20-1",
@@ -97,7 +102,7 @@ const info: Chain = {
     ],
     minitia: {
       type: "minimove",
-      version: "v0.2.3",
+      version: "v0.2.9",
     },
   },
 };
