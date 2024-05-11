@@ -1,7 +1,24 @@
 {
   "chain_name": "Tucana",
   "chain_id": "birdee-1",
+  "pretty_name": "Minimove",
+  "status": "live",
+  "network_type": "testnet",
   "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "utuc",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
+      }
+    ]
+  },
   "apis": {
     "rpc": [
       {
@@ -50,6 +67,10 @@
         "channel_id": "channel-0",
         "version": "ics20-1"
       }
-    ]
+    ],
+    "minitia": {
+      "type": "minimove",
+      "version": "v0.2.11"
+    }
   }
 }
