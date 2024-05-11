@@ -63,7 +63,7 @@ const info: Chain = {
     svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/images/init_ai.svg",
   },
   metadata: {
-    op_bridge_id: "1",
+    op_bridge_id: "6",
     op_denoms: ["uinit"],
     ibc_channels: [
       {
