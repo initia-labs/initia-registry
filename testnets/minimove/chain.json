@@ -47,7 +47,7 @@
     },
     "versions": []
   },
-  "description": "Minimove Testnet",
+  "description": "Minimove Public Testnet",
   "peers": {
     "seeds": [],
     "persistent_peers": []

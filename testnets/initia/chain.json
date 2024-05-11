@@ -62,7 +62,7 @@
     },
     "versions": []
   },
-  "description": "Initia Testnet",
+  "description": "Initia Public Testnet",
   "peers": {
     "seeds": [],
     "persistent_peers": []
