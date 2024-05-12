@@ -1,6 +1,6 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "Tucana",
+  "chain_name": "tucana",
   "assets": [
     {
       "description": "The native token of Initia",
@@ -34,17 +34,17 @@
       "description": "The native token of Tucana",
       "denom_units": [
         {
-          "denom": "UTUC",
+          "denom": "utuc",
           "exponent": 0
         },
         {
-          "denom": "TUC",
+          "denom": "tuc",
           "exponent": 6
         }
       ],
-      "base": "UTUC",
-      "display": "TUC",
-      "name": "Tucana Native Token",
+      "base": "utuc",
+      "display": "tuc",
+      "name": "Tucana",
       "symbol": "TUC",
       "coingecko_id": "",
       "images": [
