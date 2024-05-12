@@ -51,9 +51,7 @@
   },
   "metadata": {
     "op_bridge_id": "14",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "ibc_channels": [
       {
         "chain_id": "initiation-1",
@@ -68,6 +66,7 @@
         "version": "ics20-1"
       }
     ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/assetlist.json",
     "minitia": {
       "type": "minimove",
       "version": "v0.2.11"
