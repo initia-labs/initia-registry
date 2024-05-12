@@ -19,6 +19,7 @@
       }
     ]
   },
+  "description": "Tucana Public Testnet",
   "apis": {
     "rpc": [
       {
