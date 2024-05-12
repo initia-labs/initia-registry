@@ -55,16 +55,10 @@
   },
   "explorers": [
     {
-      "kind": "explorer",
-      "url": "https://explorer.initiation-1.initia.xyz/?layer=tomcat-1",
-      "tx_page": "https://explorer.initiation-1.initia.xyz/tx/${txHash}?layer=tomcat-1",
-      "account_page": "https://explorer.initiation-1.initia.xyz/address/${accountAddress}?layer=tomcat-1"
-    },
-    {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/tomcat-1",
-      "tx_page": "https://scan.initia.xyz/tomcat-1/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/tomcat-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/tomcat-1",
+      "tx_page": "https://scan.testnet.initia.xyz/tomcat-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/tomcat-1/accounts/${accountAddress}"
     }
   ],
   "images": [
