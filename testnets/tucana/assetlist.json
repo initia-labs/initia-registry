@@ -1,12 +1,40 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "tucana",
+  "chain_name": "Tucana",
   "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/INIT.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/INIT.svg"
+      }
+    },
     {
       "description": "The native token of Tucana",
       "denom_units": [
         {
-          "denom": "l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+          "denom": "UTUC",
           "exponent": 0
         },
         {
@@ -14,7 +42,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+      "base": "UTUC",
       "display": "TUC",
       "name": "Tucana Native Token",
       "symbol": "TUC",
