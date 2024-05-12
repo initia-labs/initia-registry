@@ -36,7 +36,7 @@ const info: Chain = {
     staking_tokens: [],
   },
   codebase: {},
-  description: "Minimove Testnet",
+  description: "Minimove Public Testnet",
   apis: {
     rpc: [
       {
