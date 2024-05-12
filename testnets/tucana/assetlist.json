@@ -38,13 +38,13 @@
           "exponent": 0
         },
         {
-          "denom": "tuc",
+          "denom": "TUC",
           "exponent": 6
         }
       ],
       "base": "utuc",
-      "display": "tuc",
-      "name": "Tucana",
+      "display": "TUC",
+      "name": "Tucana native token",
       "symbol": "TUC",
       "coingecko_id": "",
       "images": [
