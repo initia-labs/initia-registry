@@ -40,7 +40,7 @@
     },
     "versions": []
   },
-  "description": "INIT AI Testnet",
+  "description": "INIT AI Public Testnet",
   "peers": {
     "seeds": [],
     "persistent_peers": []

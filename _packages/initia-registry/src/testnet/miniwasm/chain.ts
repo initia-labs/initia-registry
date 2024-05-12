@@ -36,7 +36,7 @@ const info: Chain = {
     staking_tokens: [],
   },
   codebase: {},
-  description: "Miniwasm Testnet",
+  description: "Miniwasm Public Testnet",
   apis: {
     rpc: [
       {
