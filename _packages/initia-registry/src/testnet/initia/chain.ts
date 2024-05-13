@@ -143,6 +143,30 @@ const info: Chain = {
         channel_id: "channel-10",
         version: "ics721-1",
       },
+      {
+        chain_id: "birdee-1",
+        port_id: "transfer",
+        channel_id: "channel-25",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "birdee-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-26",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "tomcat-1",
+        port_id: "transfer",
+        channel_id: "channel-13",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "tomcat-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-14",
+        version: "ics721-1",
+      },
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json",
