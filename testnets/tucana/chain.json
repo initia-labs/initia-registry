@@ -40,6 +40,12 @@
       "account_page": "https://scan.testnet.initia.xyz/birdee-1/accounts/${accountAddress}"
     }
   ],
+  "faucets": [
+    {
+      "kind": "faucet",
+      "url": "https://faucet.birdee-1.tucana.zone/"
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
