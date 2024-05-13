@@ -27,13 +27,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.2.11",
-    "compatible_versions": ["v0.2.11", "main"],
+    "recommended_version": "v0.2.12",
+    "compatible_versions": ["v0.2.12", "main"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://maze-rpc-617bacff-7d34-4eb8-87f4-ee16fb4e0ac7.ue1-prod.newmetric.xyz/genesis"
@@ -95,7 +95,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.2.11"
+      "version": "v0.2.12"
     }
   }
 }
