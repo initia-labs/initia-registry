@@ -145,6 +145,12 @@
         "version": "ics721-1"
       },
       {
+        "chain_id": "burrito-1",
+        "port_id": "transfer",
+        "channel_id": "channel-4",
+        "version": "ics20-1"
+      },
+      {
         "chain_id": "init-ai-1",
         "port_id": "transfer",
         "channel_id": "channel-9",
