@@ -167,6 +167,12 @@ const info: Chain = {
         channel_id: "channel-14",
         version: "ics721-1",
       },
+      {
+        chain_id: "burrito-1",
+        port_id: "transfer",
+        channel_id: "channel-31",
+        version: "ics20-1",
+      },
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json",

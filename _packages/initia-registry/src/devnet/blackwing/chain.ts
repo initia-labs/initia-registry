@@ -102,7 +102,7 @@ const info: Chain = {
     ],
     minitia: {
       type: "minimove",
-      version: "v0.2.9",
+      version: "v0.2.10",
     },
   },
 };

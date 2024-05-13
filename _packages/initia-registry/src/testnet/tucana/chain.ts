@@ -45,6 +45,12 @@ const info: Chain = {
         "https://scan.testnet.initia.xyz/birdee-1/accounts/${accountAddress}",
     },
   ],
+  faucets: [
+    {
+      kind: "faucet",
+      url: "https://faucet.birdee-1.tucana.zone/",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
@@ -76,7 +82,7 @@ const info: Chain = {
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/assetlist.json",
     minitia: {
       type: "minimove",
-      version: "v0.2.11",
+      version: "v0.2.12",
     },
   },
 };
