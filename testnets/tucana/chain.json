@@ -1,4 +1,5 @@
 {
+  "$schema": "../../chain.schema.json",
   "chain_name": "tucana",
   "chain_id": "birdee-1",
   "pretty_name": "Tucana",

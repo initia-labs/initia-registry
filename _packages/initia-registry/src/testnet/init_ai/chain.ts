@@ -83,7 +83,7 @@ const info: Chain = {
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/assetlist.json",
     minitia: {
       type: "minimove",
-      version: "v0.2.11",
+      version: "v0.2.12",
     },
   },
 };
