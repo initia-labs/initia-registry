@@ -171,6 +171,34 @@
       }
     },
     {
+      "description": "The native token of Tucana",
+      "denom_units": [
+        {
+          "denom": "ibc/276C63284D960E3E4D76AEFC9A8BA338BAD24E30530C7C95E7EFC4D250D4E23D",
+          "exponent": 0
+        },
+        {
+          "denom": "TUC",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/276C63284D960E3E4D76AEFC9A8BA338BAD24E30530C7C95E7EFC4D250D4E23D",
+      "display": "TUC",
+      "name": "Tucana Native Token",
+      "symbol": "TUC",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
+      }
+    },
+    {
       "description": "The LP token of TIA-INIT",
       "denom_units": [
         {
