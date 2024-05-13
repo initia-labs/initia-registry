@@ -76,7 +76,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.2.11"
+      "version": "v0.2.12"
     }
   }
 }
