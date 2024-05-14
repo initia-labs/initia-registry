@@ -227,7 +227,7 @@
       }
     },
     {
-      "description": "The lp token of Tucana",
+      "description": "The LP token of Tucana",
       "denom_units": [
         {
           "denom": "ibc/FCB6BF5BF36FDB1FF8624BF4D8E9ADC096663AE50215BC2B4EF3FE0F1E0FF672",

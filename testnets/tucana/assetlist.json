@@ -86,7 +86,7 @@
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg"
       }
     },{
-      "description": "The lp token of Tucana",
+      "description": "The LP token of Tucana",
       "denom_units": [
         {
           "denom": "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
@@ -97,7 +97,7 @@
           "exponent": 8
         }
       ],
-      "base": "utlp",
+      "base": "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
       "display": "TLP",
       "name": "Tucana Perps LP",
       "symbol": "TLP",
