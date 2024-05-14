@@ -225,6 +225,34 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA-INIT.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA-INIT.svg"
       }
+    },
+    {
+      "description": "The lp token of Tucana",
+      "denom_units": [
+        {
+          "denom": "ibc/FCB6BF5BF36FDB1FF8624BF4D8E9ADC096663AE50215BC2B4EF3FE0F1E0FF672",
+          "exponent": 0
+        },
+        {
+          "denom": "TLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/FCB6BF5BF36FDB1FF8624BF4D8E9ADC096663AE50215BC2B4EF3FE0F1E0FF672",
+      "display": "TLP",
+      "name": "Tucana Perps LP",
+      "symbol": "TLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.svg"
+      }
     }
   ]
 }
