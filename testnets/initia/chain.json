@@ -70,14 +70,14 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "address": "https://19873f3c-3d34-406a-b715-d0270e3cd3cd.initiation-1.mesa-rpc.ue1-prod.newmetric.xyz",
+        "provider": "newmetric"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "address": "https://19873f3c-3d34-406a-b715-d0270e3cd3cd.initiation-1.mesa-rest.ue1-prod.newmetric.xyz",
+        "provider": "newmetric"
       }
     ],
     "api": [
