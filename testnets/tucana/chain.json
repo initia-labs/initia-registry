@@ -1,4 +1,5 @@
 {
+  "$schema": "../../chain.schema.json",
   "chain_name": "tucana",
   "chain_id": "birdee-1",
   "pretty_name": "Tucana",
@@ -40,6 +41,12 @@
       "account_page": "https://scan.testnet.initia.xyz/birdee-1/accounts/${accountAddress}"
     }
   ],
+  "faucets": [
+    {
+      "kind": "faucet",
+      "url": "https://faucet.birdee-1.tucana.zone/"
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
@@ -70,7 +77,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.2.11"
+      "version": "v0.2.12"
     }
   }
 }
