@@ -1,14 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "noon",
+  chain_name: "blackwing",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+            "l2/aee375e9d0b181f0d9d3a49f9a3d1d6b05d62b0ac81f8c92b9282afa4213d884",
           exponent: 0,
         },
         {
@@ -16,20 +16,20 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+      base: "l2/aee375e9d0b181f0d9d3a49f9a3d1d6b05d62b0ac81f8c92b9282afa4213d884",
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/images/INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/images/INIT.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/images/INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/images/INIT.svg",
       },
     },
     {

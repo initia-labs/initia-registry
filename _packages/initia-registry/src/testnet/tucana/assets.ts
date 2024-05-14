@@ -61,6 +61,64 @@ const info: AssetList = {
       },
     },
     {
+      description: "The LP token of Tucana",
+      denom_units: [
+        {
+          denom:
+            "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
+          exponent: 0,
+        },
+        {
+          denom: "TLP",
+          exponent: 6,
+        },
+      ],
+      base: "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
+      display: "TLP",
+      name: "Tucana Perps LP",
+      symbol: "TLP",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.svg",
+      },
+    },
+    {
+      description: "The fake ETH",
+      denom_units: [
+        {
+          denom:
+            "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
+          exponent: 0,
+        },
+        {
+          denom: "ETH",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
+      display: "ETH",
+      name: "Fake ETH Token",
+      symbol: "ETH",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+      },
+    },
+    {
       description: "The fake USDC",
       denom_units: [
         {
@@ -87,6 +145,35 @@ const info: AssetList = {
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg",
+      },
+    },
+    {
+      description: "The fake TIA",
+      denom_units: [
+        {
+          denom:
+            "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
+          exponent: 0,
+        },
+        {
+          denom: "TIA",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
+      display: "TIA",
+      name: "Fake TIA Token",
+      symbol: "TIA",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg",
       },
     },
   ],
