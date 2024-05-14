@@ -230,7 +230,7 @@
       "description": "The LP token of Tucana",
       "denom_units": [
         {
-          "denom": "ibc/FCB6BF5BF36FDB1FF8624BF4D8E9ADC096663AE50215BC2B4EF3FE0F1E0FF672",
+          "denom": "ibc/73D13E2708E021B78521AE9EE6159EFABCBA892EF39E68A08F969955B025E3B1",
           "exponent": 0
         },
         {
@@ -238,7 +238,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/FCB6BF5BF36FDB1FF8624BF4D8E9ADC096663AE50215BC2B4EF3FE0F1E0FF672",
+      "base": "ibc/73D13E2708E021B78521AE9EE6159EFABCBA892EF39E68A08F969955B025E3B1",
       "display": "TLP",
       "name": "Tucana Perps LP",
       "symbol": "TLP",
