@@ -94,7 +94,7 @@
         },
         {
           "denom": "TLP",
-          "exponent": 8
+          "exponent": 6
         }
       ],
       "base": "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
