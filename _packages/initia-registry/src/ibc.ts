@@ -1,7 +1,7 @@
 import { IBCInfo } from "@initia/initia-registry-types";
 
-import * as _devnet from "./devnet/all";
+import * as _testnet from "./testnet/all";
 
-const ibc: IBCInfo[] = [..._devnet.ibc];
+const ibc: IBCInfo[] = [..._testnet.ibc];
 
 export default ibc;
