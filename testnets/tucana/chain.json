@@ -31,6 +31,11 @@
       {
         "address": "https://maze-rest-c9796789-107d-49ab-b6de-059724d2a91d.ue1-prod.newmetric.xyz"
       }
+    ],
+    "grpc": [
+      {
+        "address": "grpc://34.228.6.88:31002"
+      }
     ]
   },
   "explorers": [
