@@ -40,6 +40,11 @@
         {
           "address": "https://burrito-1-lcd.lunchlunch.xyz"
         }
+      ],
+      "grpc": [
+        {
+          "address": "grpc://23.20.67.10:9090"
+        }
       ]
     },
     "explorers": [
