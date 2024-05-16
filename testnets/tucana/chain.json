@@ -4,6 +4,7 @@
   "chain_id": "birdee-1",
   "pretty_name": "Tucana",
   "status": "live",
+  "website": "https://tucana.zone/",
   "network_type": "testnet",
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
