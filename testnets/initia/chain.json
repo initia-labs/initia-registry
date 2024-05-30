@@ -14,20 +14,11 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "uinit",
+        "denom": "move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
         "high_gas_price": 0.4
-      },
-      {
-        "denom": "ueth"
-      },
-      {
-        "denom": "uusdc"
-      },
-      {
-        "denom": "utia"
       }
     ]
   },
