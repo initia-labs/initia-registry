@@ -1,0 +1,55 @@
+{
+  "testnet": {
+    "assets": [
+      {
+        "name": "INIT Token",
+        "symbol": "INIT",
+        "address": "0x1234567890abcdef1234567890abcdef12345678",
+        "decimals": 18,
+        "totalSupply": "1000000000"
+      },
+      {
+        "name": "Fake Ether",
+        "symbol": "fETH",
+        "address": "0xabcdef1234567890abcdef1234567890abcdef12",
+        "decimals": 18,
+        "totalSupply": "300000000"
+      },
+      {
+        "name": "Fake USDC",
+        "symbol": "fUSDC",
+        "address": "0x456789abcdef123456789abcdef123456789abcdef",
+        "decimals": 6,
+        "totalSupply": "100000000000"
+      },
+      {
+        "name": "Fake USDT",
+        "symbol": "fUSDT",
+        "address": "0x789abcdef123456789abcdef123456789abcdef123",
+        "decimals": 6,
+        "totalSupply": "100000000000"
+      },
+      {
+        "name": "Fake TUCANA",
+        "symbol": "fTUCANA",
+        "address": "0x987654abcdef987654abcdef987654abcdef987654",
+        "decimals": 18,
+        "totalSupply": "10000000"
+      },
+      {
+        "name": "Fake INITAI",
+        "symbol": "fINITAI",
+        "address": "0x654321abcdef654321abcdef654321abcdef654321",
+        "decimals": 18,
+        "totalSupply": "1000000000"
+      }
+    ]
+  },
+  "contributors": [
+    {
+      "name": "generisx.init",
+      "github": "Generis2001",
+      "walletAddress": "init12dz40g8tjtngtyr6atlrtaqknt5jdfu8xavqpt"
+    }
+  ]
+}
