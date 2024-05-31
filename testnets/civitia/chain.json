@@ -62,9 +62,9 @@
     "explorers": [
       {
         "kind": "initia scan",
-        "url": "https://scan.testnet.initia.xyz/landlord-1",
-        "tx_page": "https://scan.testnet.initia.xyz/landlord-1/txs/${txHash}",
-        "account_page": "https://scan.testnet.initia.xyz/landlord-1/accounts/${accountAddress}"
+        "url": "https://explorer.testnet.initia.xyz/landlord-1",
+        "tx_page": "https://explorer.testnet.initia.xyz/landlord-1/txs/${txHash}",
+        "account_page": "https://explorer.testnet.initia.xyz/landlord-1/accounts/${accountAddress}"
       }
     ],
     "images": [
