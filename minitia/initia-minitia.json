@@ -1,52 +1,46 @@
 {
-  "project": "Initia-Minitia",
-  "description": "A lightweight version of the Initia blockchain for testing and experimentation purposes.",
-  "version": "0.1.0",
-  "chainId": "initia-minitia",
+  "chainId": "initia",
   "network": "testnet",
-  "consensus": {
-    "type": "Proof of Authority (PoA)",
-    "validators": [
+  "ibc": {
+    "connections": [
       {
-        "address": "0x1234567890abcdef1234567890abcdef12345678",
-        "name": "Validator 1"
+        "id": "connection-1",
+        "clientID": "client-1",
+        "counterpartyChainID": "celestia-chain-id",
+        "counterpartyClientID": "CelestiaClientID",
+        "version": "1.0",
+        "state": "active"
       },
       {
-        "address": "0xabcdef1234567890abcdef1234567890abcdef12",
-        "name": "Validator 2"
-      }
-    ]
-  },
-  "genesis": {
-    "timestamp": "2024-06-01T00:00:00Z",
-    "initiaBalances": [
-      {
-        "address": "0x1111111111111111111111111111111111111111",
-        "balance": 10000000
-      },
-      {
-        "address": "0x2222222222222222222222222222222222222222",
-        "balance": 5000000
+        "id": "connection-2",
+        "clientID": "client-2",
+        "counterpartyChainID": "another-celestia-chain-id",
+        "counterpartyClientID": "CelestiaTestnetChainID",
+        "version": "1.0",
+        "state": "active"
       }
     ],
-    "initiaContracts": [
+    "channels": [
       {
-        "address": "0x3333333333333333333333333333333333333333",
-        "code": "0x600160005260206000f3"
+        "id": "channel-1",
+        "connectionID": "connection-1",
+        "order": "ordered",
+        "version": "1.0",
+        "state": "active"
+      },
+      {
+        "id": "channel-2",
+        "connectionID": "connection-2",
+        "order": "unordered",
+        "version": "1.0",
+        "state": "active"
       }
     ]
-  },
-  "parameters": {
-    "blockTime": "5s",
-    "gasLimit": 5000000,
-    "chainName": "Initia Testnet",
-    "symbol": "INIT"
   },
   "contributors": [
     {
       "name": "generisx.init",
-      "github": "Generis2001",
-      "walletAddress": "init12dz40g8tjtngtyr6atlrtaqknt5jdfu8xavqpt"
+      "github": "Generis2001"
     }
   ]
 }
