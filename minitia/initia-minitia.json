@@ -1,0 +1,52 @@
+{
+  "project": "Initia-Minitia",
+  "description": "A lightweight version of the Initia blockchain for testing and experimentation purposes.",
+  "version": "0.1.0",
+  "chainId": "initia-minitia",
+  "network": "testnet",
+  "consensus": {
+    "type": "Proof of Authority (PoA)",
+    "validators": [
+      {
+        "address": "0x1234567890abcdef1234567890abcdef12345678",
+        "name": "Validator 1"
+      },
+      {
+        "address": "0xabcdef1234567890abcdef1234567890abcdef12",
+        "name": "Validator 2"
+      }
+    ]
+  },
+  "genesis": {
+    "timestamp": "2024-06-01T00:00:00Z",
+    "initiaBalances": [
+      {
+        "address": "0x1111111111111111111111111111111111111111",
+        "balance": 10000000
+      },
+      {
+        "address": "0x2222222222222222222222222222222222222222",
+        "balance": 5000000
+      }
+    ],
+    "initiaContracts": [
+      {
+        "address": "0x3333333333333333333333333333333333333333",
+        "code": "0x600160005260206000f3"
+      }
+    ]
+  },
+  "parameters": {
+    "blockTime": "5s",
+    "gasLimit": 5000000,
+    "chainName": "Initia Testnet",
+    "symbol": "INIT"
+  },
+  "contributors": [
+    {
+      "name": "generisx.init",
+      "github": "Generis2001",
+      "walletAddress": "init12dz40g8tjtngtyr6atlrtaqknt5jdfu8xavqpt"
+    }
+  ]
+}
