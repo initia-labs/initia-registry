@@ -1,0 +1,68 @@
+{
+  "chainId": "initia-chain-testnet",
+  "network": "testnet",
+  "consensus": {
+    "type": "PoS",  // Proof of Stake
+    "validators": [
+      {
+        "address": "0x1234567890abcdef1234567890abcdef12345678",
+        "stake": 1000000,
+        "commission": 0.02
+      },
+      {
+        "address": "0xabcdef1234567890abcdef1234567890abcdef12",
+        "stake": 500000,
+        "commission": 0.03
+      }
+    ]
+  },
+  "genesis": {
+    "timestamp": "2024-01-01T00:00:00Z",
+    "initialBalances": [
+      {
+        "address": "0x1111111111111111111111111111111111111111",
+        "balance": 10000000
+      },
+      {
+        "address": "0x2222222222222222222222222222222222222222",
+        "balance": 5000000
+      }
+    ],
+    "initialContracts": [
+      {
+        "address": "0x3333333333333333333333333333333333333333",
+        "code": "0x600160005260206000f3"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "url": "http://node1.initia.io:30303",
+      "publicKey": "0x123abc..."
+    },
+    {
+      "url": "http://node2.initia.io:30303",
+      "publicKey": "0x456def..."
+    }
+  ],
+  "parameters": {
+    "blockTime": "10s",
+    "gasLimit": 8000000,
+    "chainName": "Initia Testnet",
+    "symbol": "INIT"
+  },
+  "upgrades": {
+    "hardForks": [
+      {
+        "name": "Fork1",
+        "block": 100000,
+        "description": "Initial protocol upgrade to enhance transaction processing."
+      }
+    ]
+  },
+  "incentives": {
+    "contributors": [
+      {
+        "name": "generisx.init",
+        "github": "Generis2001",
+        "walletAddress": "init12dz40g8tjtngtyr6atlrtaqknt5jdfu8xavqpt"
