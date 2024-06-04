@@ -15,20 +15,12 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: "uinit",
+        denom:
+          "move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff",
         fixed_min_gas_price: 0.15,
         low_gas_price: 0.15,
         average_gas_price: 0.15,
         high_gas_price: 0.4,
-      },
-      {
-        denom: "ueth",
-      },
-      {
-        denom: "uusdc",
-      },
-      {
-        denom: "utia",
       },
     ],
   },
@@ -56,14 +48,16 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: "https://rpc.initiation-1.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rpc.ue1-prod.newmetric.xyz",
+        provider: "newmetric",
       },
     ],
     rest: [
       {
-        address: "https://lcd.initiation-1.initia.xyz",
-        provider: "Foundation",
+        address:
+          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rest.ue1-prod.newmetric.xyz",
+        provider: "newmetric",
       },
     ],
     api: [
@@ -172,6 +166,18 @@ const info: Chain = {
         port_id: "transfer",
         channel_id: "channel-31",
         version: "ics20-1",
+      },
+      {
+        chain_id: "landlord-1",
+        port_id: "transfer",
+        channel_id: "channel-48",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "landlord-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-49",
+        version: "ics721-1",
       },
     ],
     assetlist:

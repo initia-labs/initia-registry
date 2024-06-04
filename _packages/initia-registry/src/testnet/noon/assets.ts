@@ -52,13 +52,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
       },
     },
     {
@@ -146,6 +146,34 @@ const info: AssetList = {
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg",
+      },
+    },
+    {
+      description: "The native token of Noon",
+      denom_units: [
+        {
+          denom: "unoon",
+          exponent: 0,
+        },
+        {
+          denom: "NOON",
+          exponent: 6,
+        },
+      ],
+      base: "unoon",
+      display: "NOON",
+      name: "Noon Native Token",
+      symbol: "NOON",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.svg",
       },
     },
   ],

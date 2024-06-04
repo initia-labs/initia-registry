@@ -52,13 +52,13 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
       },
     },
     {

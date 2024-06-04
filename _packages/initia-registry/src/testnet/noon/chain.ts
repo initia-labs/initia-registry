@@ -21,6 +21,14 @@ const info: Chain = {
         average_gas_price: 0.15,
         high_gas_price: 0.4,
       },
+      {
+        denom:
+          "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+        fixed_min_gas_price: 0.15,
+        low_gas_price: 0.15,
+        average_gas_price: 0.15,
+        high_gas_price: 0.4,
+      },
     ],
   },
   staking: {
@@ -36,6 +44,11 @@ const info: Chain = {
     rest: [
       {
         address: "https://burrito-1-lcd.lunchlunch.xyz",
+      },
+    ],
+    grpc: [
+      {
+        address: "grpc://23.20.67.10:9090",
       },
     ],
   },

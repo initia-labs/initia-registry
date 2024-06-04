@@ -6,6 +6,7 @@ import * as _miniwasm from "./miniwasm";
 import * as _minimove from "./minimove";
 import * as _initia from "./initia";
 import * as _init_ai from "./init_ai";
+import * as _civitia from "./civitia";
 import * as _blackwing from "./blackwing";
 
 const assets: AssetList[] = [
@@ -15,6 +16,7 @@ const assets: AssetList[] = [
   _minimove.assets,
   _initia.assets,
   _init_ai.assets,
+  _civitia.assets,
   _blackwing.assets,
 ];
 
