@@ -42,6 +42,11 @@ const info: Chain = {
           "https://maze-rest-617bacff-7d34-4eb8-87f4-ee16fb4e0ac7.ue1-prod.newmetric.xyz",
       },
     ],
+    grpc: [
+      {
+        address: "grpc://54.147.50.234:31001",
+      },
+    ],
   },
   explorers: [
     {

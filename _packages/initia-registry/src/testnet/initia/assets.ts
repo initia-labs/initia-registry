@@ -260,6 +260,93 @@ const info: AssetList = {
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.svg",
       },
     },
+    {
+      description: "The fake wBTC",
+      denom_units: [
+        {
+          denom:
+            "move/ff11e7d22c7bd2177b1c721441e795c1df48a10a9638dda68505152f6a646b18",
+          exponent: 0,
+        },
+        {
+          denom: "wBTC",
+          exponent: 9,
+        },
+      ],
+      base: "move/ff11e7d22c7bd2177b1c721441e795c1df48a10a9638dda68505152f6a646b18",
+      display: "wBTC",
+      name: "Fake wBTC Token",
+      symbol: "wBTC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/wBTC.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/wBTC.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/wBTC.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/wBTC.svg",
+      },
+    },
+    {
+      description: "The fake USDT",
+      denom_units: [
+        {
+          denom:
+            "move/eb0f5927508f1d866dddc1ad3fe67c9d39c9149a80b75a5f4f4aa8f2e73a54a8",
+          exponent: 0,
+        },
+        {
+          denom: "USDT",
+          exponent: 9,
+        },
+      ],
+      base: "move/eb0f5927508f1d866dddc1ad3fe67c9d39c9149a80b75a5f4f4aa8f2e73a54a8",
+      display: "USDT",
+      name: "Fake USDT Token",
+      symbol: "USDT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDT.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDT.svg",
+      },
+    },
+    {
+      description: "Testnet Gas Token",
+      denom_units: [
+        {
+          denom:
+            "move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff",
+          exponent: 0,
+        },
+        {
+          denom: "GAS",
+          exponent: 6,
+        },
+      ],
+      base: "move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff",
+      display: "GAS",
+      name: "GAS Token",
+      symbol: "GAS",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.svg",
+      },
+    },
   ],
 };
 export default info;

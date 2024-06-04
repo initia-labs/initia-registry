@@ -6,6 +6,7 @@ import * as _miniwasm from "./miniwasm";
 import * as _minimove from "./minimove";
 import * as _initia from "./initia";
 import * as _init_ai from "./init_ai";
+import * as _civitia from "./civitia";
 import * as _blackwing from "./blackwing";
 
 const chains: Chain[] = [
@@ -15,6 +16,7 @@ const chains: Chain[] = [
   _minimove.chain,
   _initia.chain,
   _init_ai.chain,
+  _civitia.chain,
   _blackwing.chain,
 ];
 

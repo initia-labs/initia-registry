@@ -5,6 +5,7 @@ const info: Chain = {
   chain_id: "birdee-1",
   pretty_name: "Tucana",
   status: "live",
+  website: "https://tucana.zone/",
   network_type: "testnet",
   bech32_prefix: "init",
   daemon_name: "minitiad",
@@ -33,6 +34,11 @@ const info: Chain = {
       {
         address:
           "https://maze-rest-c9796789-107d-49ab-b6de-059724d2a91d.ue1-prod.newmetric.xyz",
+      },
+    ],
+    grpc: [
+      {
+        address: "grpc://34.228.6.88:31002",
       },
     ],
   },
