@@ -624,7 +624,16 @@
           "description": "[Optional] The type of minitia and the version of it "
         }
       },
-      "additionalProperties": true
+      "additionalProperties": true,
+      "if": {
+        "not": {
+          "properties": {
+            "is_l1": { "const": true }
+          },
+          "required": ["is_l1"]
+        }
+      },
+      "then": { "required": ["op_bridge_id", "op_denoms"] }
     }
   },
   "additionalProperties": false,
