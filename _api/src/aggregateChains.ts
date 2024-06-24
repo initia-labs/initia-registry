@@ -9,6 +9,7 @@ const selectedChainProperties: (keyof Chain)[] = [
   "pretty_name",
   "description",
   "website",
+  "fees",
   "apis",
   "faucets",
   "metadata",
