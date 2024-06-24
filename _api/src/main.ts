@@ -16,7 +16,7 @@ import { aggregateChainData } from "./aggregateChains"
 
 const rootDir = process.env.ROOT_DIR || ""
 const srcDir = path.resolve(__dirname, "../..", rootDir)
-const distDir = path.resolve(__dirname, "dist")
+const distDir = path.resolve(__dirname, "../dist")
 
 deleteDirectory(distDir)
 copyDirectory(srcDir, distDir, { excludes: ["testnets", "devnets", new RegExp("\\."), new RegExp("^_")] })
