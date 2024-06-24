@@ -13,6 +13,7 @@ const selectedChainProperties: (keyof Chain)[] = [
   "apis",
   "faucets",
   "metadata",
+  "logo_URIs",
   "bech32_prefix",
 ]
 
