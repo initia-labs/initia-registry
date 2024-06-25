@@ -1,6 +1,7 @@
 {
   "$schema": "../../assetlist.schema.json",
   "chain_name": "initia",
+  "chain_id": "stone-16",
   "assets": [
     {
       "description": "The native token of Initia",

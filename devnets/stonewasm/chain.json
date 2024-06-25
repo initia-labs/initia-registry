@@ -1,0 +1,128 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "stonewasm",
+  "chain_id": "stonewasm-16",
+  "website": "https://initia.xyz",
+  "pretty_name": "Miniwasm",
+  "status": "live",
+  "network_type": "devnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      },
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/miniwasm",
+    "recommended_version": "v0.2.16",
+    "compatible_versions": ["v0.2.16", "main"],
+    "binaries": {
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonewasm-16/stonewasm_v0.2.16_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonewasm-16/stonewasm_v0.2.16_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonewasm-16/stonewasm_v0.2.16_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonewasm-16/stonewasm_v0.2.16_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stonewasm-16/genesis.json"
+    },
+    "versions": []
+  },
+  "description": "Miniwasm Closed Devnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.stonewasm-16.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.stonewasm-16.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "api": [
+      {
+        "address": "https://api.stonewasm-16.initia.xyz",
+        "provider": "Foundation"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc://35.185.189.100:9090",
+        "provider": "Foundation"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "explorer",
+      "url": "https://explorer.stone-16.initia.xyz/?layer=stonewasm",
+      "tx_page": "https://explorer.stone-16.initia.xyz/tx/${txHash}?layer=stonewasm",
+      "account_page": "https://explorer.stone-16.initia.xyz/address/${accountAddress}?layer=stonewasm"
+    },
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/stonewasm-16",
+      "tx_page": "https://scan.initia.xyz/stonewasm-16/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/stonewasm-16/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "2",
+    "op_denoms": ["uinit"],
+    "ibc_channels": [
+      {
+        "chain_id": "stone-16",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "stone-16",
+        "port_id": "nft-transfer",
+        "channel_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "v0.2.16"
+    }
+  }
+}
