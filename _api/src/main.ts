@@ -7,12 +7,15 @@
  *
  * Step 2: Aggregate all chains into a single chains.json file
  * Only specific properties are included in the aggregation.
+ *
+ * Step 3: Optimize images in the directory
  */
 
 import * as path from "path"
 import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils"
 import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls"
 import { aggregateChainData } from "./aggregateChains"
+import { optimizeImages } from "./optimizeImages"
 
 const rootDir = process.env.ROOT_DIR || ""
 const srcDir = path.resolve(__dirname, "../..", rootDir)
@@ -25,3 +28,4 @@ const dirs = getFilePathsInDirectory(distDir)
 
 /* Step 1 */ updateUrlsInDirectory(dirs, createUrlReplacer(rootDir))
 /* Step 2 */ aggregateChainData(dirs, path.join(distDir, "chains.json"))
+/* Step 3 */ optimizeImages(distDir)

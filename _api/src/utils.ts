@@ -1,6 +1,11 @@
 import * as fs from "fs"
 import * as path from "path"
 
+// Get file size in bytes
+export function getFileSize(filePath: string): number {
+  return fs.statSync(filePath).size
+}
+
 // Create a folder
 export function createDirectory(dir: string) {
   if (!fs.existsSync(dir)) {
