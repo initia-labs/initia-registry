@@ -114,8 +114,8 @@
       },
       {
         "chain_id": "stone-16",
-        "port_id": "nft-transfer",
-        "channel_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-1",
         "version": "ics721-1"
       }
     ],
