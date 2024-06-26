@@ -9,7 +9,9 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -41,7 +43,9 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
     "recommended_version": "v0.2.12",
-    "compatible_versions": ["v0.2.12"],
+    "compatible_versions": [
+      "v0.2.12"
+    ],
     "binaries": {
       "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_x86_64.tar.gz",
       "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_aarch64.tar.gz",
@@ -61,26 +65,126 @@
   "apis": {
     "rpc": [
       {
+        "address": "https://rpc.initiation-1.initia.xyz",
+        "provider": "initia"
+      },
+      {
         "address": "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rpc.ue1-prod.newmetric.xyz",
         "provider": "newmetric"
+      },
+      {
+        "address": "https://rpc.initiation-1.initia.xyz",
+        "provider": "initia"
+      },
+      {
+        "address": "https://initia-testnet-rpc.polkachu.com",
+        "provider": "polkachu"
+      },
+      {
+        "address": "https://testnet-initia-rpc.lavenderfive.com",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "https://rpc-initia-testnet.whispernode.com",
+        "provider": "whispernode"
+      },
+      {
+        "address": "https://rpc.initiation.test.pfc.zone",
+        "provider": "pfc"
+      },
+      {
+        "address": "https://rpc-initia.01node.com",
+        "provider": "01node"
+      },
+      {
+        "address": "https://initia-testnet-rpc.bwarelabs.com",
+        "provider": "bwarelabs"
+      },
+      {
+        "address": "https://api.t.initia.bh.rocks",
+        "provider": "blockhunters"
+      },
+      {
+        "address": "https://initia-testnet-rpc.kanosei.xyz",
+        "provider": "kanosei"
+      },
+      {
+        "address": "https://rpc-initia-testnet.trusted-point.com:443",
+        "provider": "trustedpoint"
       }
     ],
     "rest": [
       {
+        "address": "https://lcd.initiation-1.initia.xyz",
+        "provider": "initia"
+      },
+      {
         "address": "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rest.ue1-prod.newmetric.xyz",
         "provider": "newmetric"
+      },
+      {
+        "address": "https://lcd.initiation-1.initia.xyz",
+        "provider": "initiation-1"
+      },
+      {
+        "address": "https://initia-testnet-rpc.polkachu.com",
+        "provider": "polkachu"
+      },
+      {
+        "address": "https://testnet-initia-api.lavenderfive.com",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "https://api-initia-testnet.whispernode.com",
+        "provider": "whispernode"
+      },
+      {
+        "address": "https://api.initiation.test.pfc.zone",
+        "provider": "pfc"
+      },
+      {
+        "address": "https://initia-testnet-lcd.bwarelabs.com",
+        "provider": "bwarelabs"
+      },
+      {
+        "address": "https://rpc.t.initia.bh.rocks",
+        "provider": "blockhunters"
+      },
+      {
+        "address": "https://initia-testnet-api.kanosei.xyz",
+        "provider": "kanosei"
+      },
+      {
+        "address": "https://api-initia-testnet.trusted-point.com",
+        "provider": "trustedpoint"
       }
     ],
     "api": [
       {
         "address": "https://api.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "initia"
       }
     ],
     "grpc": [
       {
         "address": "grpc.initiation-1.initia.xyz:9090",
-        "provider": "Foundation"
+        "provider": "initia"
+      },
+      {
+        "address": "grpc.initiation-1.initia.xyz:9090",
+        "provider": "initiation-1"
+      },
+      {
+        "address": "initia-testnet-grpc.polkachu.com:25790",
+        "provider": "polkachu"
+      },
+      {
+        "address": "testnet-initia-grpc.lavenderfive.com:443",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "grpc-initia.01node.com:9090",
+        "provider": "01node"
       }
     ]
   },
