@@ -407,6 +407,11 @@ const chainPaths = glob(`${__dirname}/../../../*/*/chain.json`).filter((a) => {
   const index = a.indexOf(spliter);
   const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
   let dir = splitedDirs.pop();
+
+  if (dir.includes("devnets")) {
+    return false;
+  }
+
   dir = path.basename(path.dirname(dir));
   return !NON_INFO_DIRS.includes(dir);
 });
@@ -417,6 +422,9 @@ const paths = glob(`${__dirname}/../../../*/*/*.json`).filter((a) => {
   const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
   console.log(splitedDirs);
   const filePath = splitedDirs.pop();
+  if (filePath.includes("devnets")) {
+    return false;
+  }
   const dir = path.basename(path.dirname(filePath));
   return (
     !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== "chain.json"

@@ -3,7 +3,7 @@ const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "civitia",
   chain_id: "landlord-1",
-  website: "https://www.civitia.xyz/",
+  website: "https://civitia.org/",
   pretty_name: "Civitia",
   status: "live",
   network_type: "testnet",
