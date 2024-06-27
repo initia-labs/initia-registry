@@ -68,7 +68,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: "grpc://35.247.153.122:9090",
+        address: "grpc.initiation-1.initia.xyz:9090",
         provider: "Foundation",
       },
     ],

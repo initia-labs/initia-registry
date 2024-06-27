@@ -44,13 +44,13 @@ const info: Chain = {
     rpc: [
       {
         address:
-          "https://maze-rpc-18bdff44-3aa4-425e-9bc0-06a2afa40af8.ue1-prod.newmetric.xyz",
+          "https://maze-rpc-18bdff44-3aa4-425e-9bc0-06a2afa40af8.ase1-prod.newmetric.xyz",
       },
     ],
     rest: [
       {
         address:
-          "https://maze-rest-18bdff44-3aa4-425e-9bc0-06a2afa40af8.ue1-prod.newmetric.xyz",
+          "https://maze-rest-18bdff44-3aa4-425e-9bc0-06a2afa40af8.ase1-prod.newmetric.xyz",
       },
     ],
     grpc: [
