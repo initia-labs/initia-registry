@@ -13,11 +13,11 @@ export const ChainSchema = z
     website: z.string().url().optional(),
     update_link: z.string().url().optional(),
     status: z.enum(["live", "upcoming", "killed"]).optional(),
-    network_type: z.enum(["mainnet", "testnet", "devnet"]).optional(),
+    network_type: z.enum(["mainnet", "testnet", "devnet"]),
     bech32_prefix: z
-      .string()
+      .literal("init")
       .describe(
-        "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
+        "The default prefix for the human-readable part of addresses that identifies the coin type."
       ),
     bech32_config: z
       .object({
