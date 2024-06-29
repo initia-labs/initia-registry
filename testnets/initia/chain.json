@@ -107,6 +107,10 @@
       {
         "address": "https://rpc-initia-testnet.trusted-point.com:443",
         "provider": "trustedpoint"
+      },
+      {
+        "address": "https://initia-testnet-rpc.itrocket.net",
+        "provider": "ITRocket"
       }
     ],
     "rest": [
@@ -153,6 +157,10 @@
       {
         "address": "https://api-initia-testnet.trusted-point.com",
         "provider": "trustedpoint"
+      },
+      {
+        "address": "https://initia-testnet-api.itrocket.net",
+        "provider": "ITRocket"
       }
     ],
     "api": [
@@ -181,6 +189,10 @@
       {
         "address": "grpc-initia.01node.com:9090",
         "provider": "01node"
+      },
+      {
+        "address": "initia-testnet-grpc.itrocket.net:443",
+        "provider": "ITRocket"
       }
     ]
   },
