@@ -141,6 +141,110 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/ETH-INIT.svg"
       }
+    },
+    {
+      "description": "The omni INIT",
+      "denom_units": [
+        {
+          "denom": "move/a3d32a5debc43f0eea2da91e18c614ae83630cce2da04f9f4558e5a1cdd84578",
+          "exponent": 0
+        },
+        {
+          "denom": "oINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "move/a3d32a5debc43f0eea2da91e18c614ae83630cce2da04f9f4558e5a1cdd84578",
+      "display": "oINIT",
+      "name": "Omni INIT",
+      "symbol": "oINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
+      }
+    },
+    {
+      "description": "The minimove IBC OP INIT",
+      "denom_units": [
+        {
+          "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+          "exponent": 0
+        },
+        {
+          "denom": "minimoveINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+      "display": "minimoveINIT",
+      "name": "minimove IBC OP INIT",
+      "symbol": "minimoveINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT.png"
+      }
+    },
+    {
+      "description": "The miniwasm IBC OP INIT",
+      "denom_units": [
+        {
+          "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+          "exponent": 0
+        },
+        {
+          "denom": "miniwasmINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/AD8D520BF2D981113B652A3BCD55368EF146FCB9E016F8B1DAECAA5D570BC8A1",
+      "display": "miniwasmINIT",
+      "name": "miniwasm IBC OP INIT",
+      "symbol": "miniwasmINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT.png"
+      }
+    },
+    {
+      "description": "The LP token of minitswap's minimove IBC OP INIT - INIT pool",
+      "denom_units": [
+        {
+          "denom": "move/9727cb19302fce9157d759ad703a2ad5a4947d2400fdc1c439c98e3468620597",
+          "exponent": 0
+        },
+        {
+          "denom": "minimoveINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/9727cb19302fce9157d759ad703a2ad5a4947d2400fdc1c439c98e3468620597",
+      "display": "minimoveINIT-INIT LP",
+      "name": "minimoveINIT-INIT LP Token",
+      "symbol": "minimoveINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT-INIT.png"
+      }
     }
   ]
 }
