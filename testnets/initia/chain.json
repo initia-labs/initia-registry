@@ -74,13 +74,13 @@
     "api": [
       {
         "address": "https://api.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "grpc": [
       {
         "address": "grpc.initiation-1.initia.xyz:9090",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ]
   },

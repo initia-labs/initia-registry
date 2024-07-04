@@ -56,19 +56,19 @@
     "rpc": [
       {
         "address": "https://rpc.miniwasm-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "rest": [
       {
         "address": "https://lcd.miniwasm-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "grpc": [
       {
         "address": "grpc://34.124.190.216:9090",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ]
   },

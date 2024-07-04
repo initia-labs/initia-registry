@@ -90,25 +90,25 @@ A sample chain.json includes the following information.
     "rpc": [
       {
         "address": "https://rpc.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "rest": [
       {
         "address": "https://lcd.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "api": [
       {
         "address": "https://api.initiation-1.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "grpc": [
       {
         "address": "grpc://35.247.153.122:9090",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ]
   },

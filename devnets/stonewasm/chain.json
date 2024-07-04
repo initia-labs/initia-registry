@@ -56,25 +56,25 @@
     "rpc": [
       {
         "address": "https://rpc.stonewasm-16.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "rest": [
       {
         "address": "https://lcd.stonewasm-16.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "api": [
       {
         "address": "https://api.stonewasm-16.initia.xyz",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ],
     "grpc": [
       {
         "address": "grpc://35.185.189.100:9090",
-        "provider": "Foundation"
+        "provider": "Initia Labs"
       }
     ]
   },
