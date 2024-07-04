@@ -146,7 +146,7 @@
       "description": "The omni INIT",
       "denom_units": [
         {
-          "denom": "move/a3d32a5debc43f0eea2da91e18c614ae83630cce2da04f9f4558e5a1cdd84578",
+          "denom": "uoinit",
           "exponent": 0
         },
         {
@@ -224,7 +224,7 @@
       "description": "The LP token of minitswap's minimove IBC OP INIT - INIT pool",
       "denom_units": [
         {
-          "denom": "move/9727cb19302fce9157d759ad703a2ad5a4947d2400fdc1c439c98e3468620597",
+          "denom": "move/e8ff49e574990e63682d93c2e804bc7249d672cc43bd66ee6c1ad2db2f49f933",
           "exponent": 0
         },
         {
@@ -232,7 +232,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/9727cb19302fce9157d759ad703a2ad5a4947d2400fdc1c439c98e3468620597",
+      "base": "move/e8ff49e574990e63682d93c2e804bc7249d672cc43bd66ee6c1ad2db2f49f933",
       "display": "minimoveINIT-INIT LP",
       "name": "minimoveINIT-INIT LP Token",
       "symbol": "minimoveINIT-INIT LP",
