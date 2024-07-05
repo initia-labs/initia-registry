@@ -161,11 +161,13 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.svg"
       }
     },
     {
