@@ -65,12 +65,6 @@
         "provider": "Initia Labs"
       }
     ],
-    "api": [
-      {
-        "address": "https://api.stonewasm-16.initia.xyz",
-        "provider": "Initia Labs"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://35.185.189.100:9090",
