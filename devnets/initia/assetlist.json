@@ -143,7 +143,7 @@
       }
     },
     {
-      "description": "The omni INIT",
+      "description": "Minitswap staked INIT",
       "denom_units": [
         {
           "denom": "uoinit",
@@ -156,7 +156,7 @@
       ],
       "base": "uoinit",
       "display": "oINIT",
-      "name": "Omni INIT",
+      "name": "omniINIT",
       "symbol": "oINIT",
       "coingecko_id": "",
       "images": [
@@ -171,7 +171,7 @@
       }
     },
     {
-      "description": "The minimove IBC OP INIT",
+      "description": "Minimove IBC bridged INIT",
       "denom_units": [
         {
           "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
@@ -184,7 +184,7 @@
       ],
       "base": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
       "display": "minimoveINIT",
-      "name": "minimove IBC OP INIT",
+      "name": "Minimove IBC INIT",
       "symbol": "minimoveINIT",
       "coingecko_id": "",
       "images": [
@@ -197,7 +197,7 @@
       }
     },
     {
-      "description": "The miniwasm IBC OP INIT",
+      "description": "Miniwasm IBC bridged INIT",
       "denom_units": [
         {
           "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
@@ -210,7 +210,7 @@
       ],
       "base": "ibc/AD8D520BF2D981113B652A3BCD55368EF146FCB9E016F8B1DAECAA5D570BC8A1",
       "display": "miniwasmINIT",
-      "name": "miniwasm IBC OP INIT",
+      "name": "Miniwasm IBC INIT",
       "symbol": "miniwasmINIT",
       "coingecko_id": "",
       "images": [
@@ -223,7 +223,7 @@
       }
     },
     {
-      "description": "The LP token of minitswap's minimove IBC OP INIT - INIT pool",
+      "description": "Minitswap Minimove IBC INIT Pool Token",
       "denom_units": [
         {
           "denom": "move/e8ff49e574990e63682d93c2e804bc7249d672cc43bd66ee6c1ad2db2f49f933",
