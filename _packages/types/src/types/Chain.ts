@@ -20,11 +20,11 @@ export interface Chain {
   website?: string;
   update_link?: string;
   status?: "live" | "upcoming" | "killed";
-  network_type?: "mainnet" | "testnet" | "devnet";
+  network_type: "mainnet" | "testnet" | "devnet";
   /**
-   * The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'
+   * The default prefix for the human-readable part of addresses that identifies the coin type.
    */
-  bech32_prefix: string;
+  bech32_prefix: "init";
   /**
    * Used to override the bech32_prefix for specific uses.
    */

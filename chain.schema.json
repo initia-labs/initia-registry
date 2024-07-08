@@ -39,8 +39,8 @@
       "enum": ["mainnet", "testnet", "devnet"]
     },
     "bech32_prefix": {
-      "type": "string",
-      "description": "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
+      "const": "init",
+      "description": "The default prefix for the human-readable part of addresses that identifies the coin type."
     },
     "bech32_config": {
       "type": "object",

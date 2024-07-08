@@ -63,13 +63,13 @@ const info: Chain = {
     api: [
       {
         address: "https://api.initiation-1.initia.xyz",
-        provider: "Foundation",
+        provider: "Initia Labs",
       },
     ],
     grpc: [
       {
-        address: "grpc://35.247.153.122:9090",
-        provider: "Foundation",
+        address: "grpc.initiation-1.initia.xyz:9090",
+        provider: "Initia Labs",
       },
     ],
   },

@@ -41,19 +41,19 @@ const info: Chain = {
     rpc: [
       {
         address: "https://rpc.minimove-1.initia.xyz",
-        provider: "Foundation",
+        provider: "Initia Labs",
       },
     ],
     rest: [
       {
         address: "https://lcd.minimove-1.initia.xyz",
-        provider: "Foundation",
+        provider: "Initia Labs",
       },
     ],
     grpc: [
       {
         address: "grpc://35.198.215.41:9090",
-        provider: "Foundation",
+        provider: "Initia Labs",
       },
     ],
   },
