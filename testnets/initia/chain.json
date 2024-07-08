@@ -63,12 +63,96 @@
       {
         "address": "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rpc.ue1-prod.newmetric.xyz",
         "provider": "newmetric"
+      },
+      {
+        "address": "https://rpc.initiation-1.initia.xyz",
+        "provider": "Initia Labs"
+      },
+      {
+        "address": "https://initia-testnet-rpc.polkachu.com",
+        "provider": "polkachu"
+      },
+      {
+        "address": "https://testnet-initia-rpc.lavenderfive.com",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "https://rpc-initia-testnet.whispernode.com",
+        "provider": "whispernode"
+      },
+      {
+        "address": "https://rpc.initiation.test.pfc.zone",
+        "provider": "pfc"
+      },
+      {
+        "address": "https://rpc-initia.01node.com",
+        "provider": "01node"
+      },
+      {
+        "address": "https://initia-testnet-rpc.bwarelabs.com",
+        "provider": "bwarelabs"
+      },
+      {
+        "address": "https://api.t.initia.bh.rocks",
+        "provider": "blockhunters"
+      },
+      {
+        "address": "https://initia-testnet-rpc.kanosei.xyz",
+        "provider": "kanosei"
+      },
+      {
+        "address": "https://rpc-initia-testnet.trusted-point.com:443",
+        "provider": "trustedpoint"
+      },
+      {
+        "address": "https://initia-testnet-rpc.itrocket.net",
+        "provider": "ITRocket"
       }
     ],
     "rest": [
       {
         "address": "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rest.ue1-prod.newmetric.xyz",
         "provider": "newmetric"
+      },
+      {
+        "address": "https://lcd.initiation-1.initia.xyz",
+        "provider": "Initia Labs"
+      },
+      {
+        "address": "https://initia-testnet-rpc.polkachu.com",
+        "provider": "polkachu"
+      },
+      {
+        "address": "https://testnet-initia-api.lavenderfive.com",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "https://api-initia-testnet.whispernode.com",
+        "provider": "whispernode"
+      },
+      {
+        "address": "https://api.initiation.test.pfc.zone",
+        "provider": "pfc"
+      },
+      {
+        "address": "https://initia-testnet-lcd.bwarelabs.com",
+        "provider": "bwarelabs"
+      },
+      {
+        "address": "https://rpc.t.initia.bh.rocks",
+        "provider": "blockhunters"
+      },
+      {
+        "address": "https://initia-testnet-api.kanosei.xyz",
+        "provider": "kanosei"
+      },
+      {
+        "address": "https://api-initia-testnet.trusted-point.com",
+        "provider": "trustedpoint"
+      },
+      {
+        "address": "https://initia-testnet-api.itrocket.net",
+        "provider": "ITRocket"
       }
     ],
     "api": [
@@ -81,6 +165,22 @@
       {
         "address": "grpc.initiation-1.initia.xyz:9090",
         "provider": "Initia Labs"
+      },
+      {
+        "address": "initia-testnet-grpc.polkachu.com:25790",
+        "provider": "polkachu"
+      },
+      {
+        "address": "testnet-initia-grpc.lavenderfive.com:443",
+        "provider": "lavenderfive"
+      },
+      {
+        "address": "grpc-initia.01node.com:9090",
+        "provider": "01node"
+      },
+      {
+        "address": "initia-testnet-grpc.itrocket.net:443",
+        "provider": "ITRocket"
       }
     ]
   },
