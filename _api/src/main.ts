@@ -12,12 +12,16 @@
  */
 
 import * as path from "path"
+import * as url from "url"
 import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils"
 import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls"
 import { aggregateChainData } from "./aggregateChains"
 import { optimizeImages } from "./optimizeImages"
 
-const rootDir = process.env.ROOT_DIR || ""
+const __filename = url.fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const rootDir = process.env.NETWORK_DIR || ""
 const srcDir = path.resolve(__dirname, "../..", rootDir)
 const distDir = path.resolve(__dirname, "../dist")
 
