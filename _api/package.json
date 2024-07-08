@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "build": "tsx src/main.ts"
   },
