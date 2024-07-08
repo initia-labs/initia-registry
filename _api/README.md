@@ -10,7 +10,7 @@ This repository contains scripts to deploy static files from the `_api/dist` dir
 
 ### Usage
 
-Set the `ROOT_DIR` environment variable to specify the network type (e.g., `testnets`, `devnets`).
+Set the `NETWORK_DIR` environment variable to specify the network type (e.g., `testnets`, `devnets`).
 
 Run the script:
 
@@ -21,5 +21,5 @@ pnpm build
 or
 
 ```sh
-ROOT_DIR=testnets pnpm build
+NETWORK_DIR=testnets pnpm build
 ```
