@@ -65,12 +65,6 @@
         "provider": "Initia Labs"
       }
     ],
-    "api": [
-      {
-        "address": "https://api.stonemove-16.initia.xyz",
-        "provider": "Initia Labs"
-      }
-    ],
     "grpc": [
       {
         "address": "grpc://34.87.127.93:9090",
