@@ -347,6 +347,195 @@ const info: AssetList = {
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.svg",
       },
     },
+    {
+      description: "Blackwing IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/424623885F261A9307BB124412F75BDCD422B3355FB1C463218F27189B13413F",
+          exponent: 0,
+        },
+        {
+          denom: "blackwingINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/424623885F261A9307BB124412F75BDCD422B3355FB1C463218F27189B13413F",
+      display: "blackwingINIT",
+      name: "Blackwing IBC INIT",
+      symbol: "blackwingINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT.png",
+      },
+    },
+    {
+      description: "Civitia IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/528D3C0840595B1CBD498E68E10243C07E39E0945F3ABA94548550B315BA3C0F",
+          exponent: 0,
+        },
+        {
+          denom: "civitiaINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/528D3C0840595B1CBD498E68E10243C07E39E0945F3ABA94548550B315BA3C0F",
+      display: "civitiaINIT",
+      name: "Civitia IBC INIT",
+      symbol: "civitiaINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT.png",
+      },
+    },
+    {
+      description: "Init AI IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/1F100D516D47D9CD47867494E71BFECF16C332A1EEAE488AF5E3F9FD38E68953",
+          exponent: 0,
+        },
+        {
+          denom: "initaiINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/1F100D516D47D9CD47867494E71BFECF16C332A1EEAE488AF5E3F9FD38E68953",
+      display: "initaiINIT",
+      name: "Init AI IBC INIT",
+      symbol: "initaiINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT.png",
+      },
+    },
+    {
+      description: "Minimove IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+          exponent: 0,
+        },
+        {
+          denom: "minimoveINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+      display: "minimoveINIT",
+      name: "Minimove IBC INIT",
+      symbol: "minimoveINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT.png",
+      },
+    },
+    {
+      description: "Miniwasm IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/AD8D520BF2D981113B652A3BCD55368EF146FCB9E016F8B1DAECAA5D570BC8A1",
+          exponent: 0,
+        },
+        {
+          denom: "miniwasmINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/AD8D520BF2D981113B652A3BCD55368EF146FCB9E016F8B1DAECAA5D570BC8A1",
+      display: "miniwasmINIT",
+      name: "Miniwasm IBC INIT",
+      symbol: "miniwasmINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT.png",
+      },
+    },
+    {
+      description: "Noon IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/A345E027F3A8C797ABBF558244637DDD9A5C2C869433FE4C4B9273FAE9EE4683",
+          exponent: 0,
+        },
+        {
+          denom: "noonINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/A345E027F3A8C797ABBF558244637DDD9A5C2C869433FE4C4B9273FAE9EE4683",
+      display: "noonINIT",
+      name: "Noon IBC INIT",
+      symbol: "noonINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT.png",
+      },
+    },
+    {
+      description: "Tucana IBC bridged INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/7421E86E848DCE5B75BD67AE7039A4B289A76F8B1BE5625E699C441B7BA1CC73",
+          exponent: 0,
+        },
+        {
+          denom: "tucanaINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/7421E86E848DCE5B75BD67AE7039A4B289A76F8B1BE5625E699C441B7BA1CC73",
+      display: "tucanaINIT",
+      name: "Tucana IBC INIT",
+      symbol: "tucanaINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT.png",
+      },
+    },
   ],
 };
 export default info;

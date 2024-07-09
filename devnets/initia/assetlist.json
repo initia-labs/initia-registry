@@ -200,7 +200,7 @@
       "description": "Miniwasm IBC bridged INIT",
       "denom_units": [
         {
-          "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+          "denom": "ibc/AD8D520BF2D981113B652A3BCD55368EF146FCB9E016F8B1DAECAA5D570BC8A1",
           "exponent": 0
         },
         {
