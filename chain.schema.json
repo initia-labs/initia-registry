@@ -668,6 +668,9 @@
         "archive": {
           "type": "boolean",
           "default": false
+        },
+        "authorizedUser": {
+          "type": "string"
         }
       },
       "additionalProperties": false
