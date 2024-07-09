@@ -367,11 +367,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/blackwingINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/blackwingINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT.png",
       },
     },
     {
@@ -394,11 +394,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/civitiaINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/civitiaINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT.png",
       },
     },
     {
@@ -421,11 +421,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/initaiINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/initaiINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT.png",
       },
     },
     {
@@ -448,11 +448,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT.png",
       },
     },
     {
@@ -475,11 +475,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT.png",
       },
     },
     {
@@ -502,11 +502,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/noonINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/noonINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT.png",
       },
     },
     {
@@ -529,11 +529,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/tucanaINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/tucanaINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT.png",
       },
     },
   ],
