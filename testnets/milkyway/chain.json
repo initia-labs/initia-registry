@@ -121,10 +121,6 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/assetlist.json",
-    "minitia": {
-      "type": "miniwasm",
-      "version": "v0.2.14"
-    }
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/assetlist.json"
   }
 }
