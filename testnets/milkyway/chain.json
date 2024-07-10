@@ -86,12 +86,6 @@
       },
       {
         "chain_id": "initiation-1",
-        "port_id": "icacontroller-initiation-1.DELEGATION",
-        "channel_id": "channel-2",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "initiation-1",
         "port_id": "icacontroller-initiation-1.FEE,",
         "channel_id": "channel-3",
         "version": "ics20-1"
@@ -118,6 +112,12 @@
         "chain_id": "initiation-1",
         "port_id": "icacontroller-initiation-1.COMMUNITY_POOL_RETURN",
         "channel_id": "channel-7",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-1",
+        "port_id": "icacontroller-initiation-1.DELEGATION",
+        "channel_id": "channel-8",
         "version": "ics20-1"
       }
     ],
