@@ -17,10 +17,24 @@
     "fee_tokens": [
       {
         "denom": "umilk",
-        "fixed_min_gas_price": 0.01,
-        "low_gas_price": 0.02,
-        "average_gas_price": 0.03,
-        "high_gas_price": 0.04
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.20,
+        "average_gas_price": 0.30,
+        "high_gas_price": 0.40
+      },
+      {
+        "denom": "l2/4ed1f7db7e3c5fe13c517d61a0041a021fa82ad44ef7703d80ffa64e54f06055",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.20,
+        "average_gas_price": 0.30,
+        "high_gas_price": 0.40
+      },
+      {
+        "denom": "l2/dd02a4b1413f9b9474584d7abde4a99143adb9535f30b6e94302dbb05ee47b87",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.20,
+        "average_gas_price": 0.30,
+        "high_gas_price": 0.40
       }
     ]
   },
