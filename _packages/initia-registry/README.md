@@ -11,7 +11,7 @@ npm install @initia/initia-registry
 Fetch data from initia-registry:
 
 ```typescript
-import { assets, chains, ibc } from "@intiia/initia-registry";
+import { assets, chains, ibc } from "@initia/initia-registry";
 import { Chain } from "@initia/initia-registry-types";
 
 const assetList: Chain = assets.find(
