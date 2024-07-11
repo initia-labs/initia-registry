@@ -1,0 +1,90 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "ms-demo",
+  "chain_id": "ms-4",
+  "pretty_name": "Modular Summit Demo",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "umin",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v0.2.12",
+    "compatible_versions": ["v0.2.12", "main"],
+    "binaries": {
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json"
+    },
+    "versions": []
+  },
+  "description": "Modular Summit Demo",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://maze-rpc-sequencer-0966daac-2c9e-40f9-8bc7-8128c72982e7.ue1-prod.newmetric.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://maze-rest-sequencer-0966daac-2c9e-40f9-8bc7-8128c72982e7.ue1-prod.newmetric.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/ms-4",
+      "tx_page": "https://scan.testnet.initia.xyz/ms-4/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/ms-4/accounts/${accountAddress}"
+    }
+  ],
+  "metadata": {
+    "op_bridge_id": "116",
+    "op_denoms": ["uinit"],
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-4/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v0.2.12"
+    }
+  }
+}
