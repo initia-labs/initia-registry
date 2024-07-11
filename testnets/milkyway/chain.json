@@ -68,9 +68,7 @@
   },
   "metadata": {
     "op_bridge_id": "98",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": [],
     "ibc_channels": [
       {
         "chain_id": "initiation-1",
