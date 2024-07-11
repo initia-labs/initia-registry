@@ -1,12 +1,12 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "miniwasm",
+  "chain_name": "ms-demo",
   "assets": [
     {
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          "denom": "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
           "exponent": 0
         },
         {
@@ -14,20 +14,20 @@
           "exponent": 6
         }
       ],
-      "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+      "base": "l2/2716295e82bab3b0308dc1e35837fe471657ea07ee71aebb6129739fb0f1278a",
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/INIT.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/INIT.svg"
       }
     },
     {
@@ -49,13 +49,13 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/USDC.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ms-demo/images/USDC.svg"
       }
     },
     {
