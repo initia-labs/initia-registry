@@ -1,0 +1,37 @@
+{
+  "chain_name": "ms-4",
+  "chain_id": "ms-4",
+  "bech32_prefix": "init",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://maze-rpc-sequencer-0966daac-2c9e-40f9-8bc7-8128c72982e7.ue1-prod.newmetric.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://maze-rest-sequencer-0966daac-2c9e-40f9-8bc7-8128c72982e7.ue1-prod.newmetric.xyz"
+      }
+    ]
+  },
+  "metadata": {
+    "op_bridge_id": "116",
+    "op_denoms": [
+      "uinit"
+    ],
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ]
+  }
+}
