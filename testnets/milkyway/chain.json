@@ -23,14 +23,7 @@
         "high_gas_price": 0.40
       },
       {
-        "denom": "l2/4ed1f7db7e3c5fe13c517d61a0041a021fa82ad44ef7703d80ffa64e54f06055",
-        "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.20,
-        "average_gas_price": 0.30,
-        "high_gas_price": 0.40
-      },
-      {
-        "denom": "l2/dd02a4b1413f9b9474584d7abde4a99143adb9535f30b6e94302dbb05ee47b87",
+        "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
         "fixed_min_gas_price": 0.15,
         "low_gas_price": 0.20,
         "average_gas_price": 0.30,
@@ -64,12 +57,7 @@
       "account_page": "https://scan.testnet.initia.xyz/glados-1/accounts/${accountAddress}"
     }
   ],
-  "faucets": [
-    {
-      "kind": "faucet",
-      "url": "https://faucet.milkyway.zone"
-    }
-  ],
+  "faucets": [],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MilkyWay.png",
