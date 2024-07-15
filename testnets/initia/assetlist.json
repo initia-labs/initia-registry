@@ -547,6 +547,194 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg"
       }
+    },
+    {
+      "description": "Minitswap staked INIT",
+      "denom_units": [
+        {
+          "denom": "move/8d9c9cb5eac53eef597d309a55089f6f2c7932cc2a88d041155adb27aa93d809",
+          "exponent": 0
+        },
+        {
+          "denom": "oINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "move/8d9c9cb5eac53eef597d309a55089f6f2c7932cc2a88d041155adb27aa93d809",
+      "display": "oINIT",
+      "name": "omniINIT",
+      "symbol": "oINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/omniINIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/omniINIT.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/omniINIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/omniINIT.svg"
+      }
+    },
+    {
+      "description": "Minitswap Minimove IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/47804fcaa89c941d3969be6e9eef545eb4476ec4c102ca576729ad93b3524b56",
+          "exponent": 0
+        },
+        {
+          "denom": "minimoveINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/47804fcaa89c941d3969be6e9eef545eb4476ec4c102ca576729ad93b3524b56",
+      "display": "minimoveINIT-INIT LP",
+      "name": "minimoveINIT-INIT LP Token",
+      "symbol": "minimoveINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT-INIT.png"
+      }
+    },
+    {
+      "description": "Minitswap Miniwasm IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/cd623bbbeda203118dcb0ecee6885950b0f22375db2b135a2205284fdbad03e6",
+          "exponent": 0
+        },
+        {
+          "denom": "miniwasmINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/cd623bbbeda203118dcb0ecee6885950b0f22375db2b135a2205284fdbad03e6",
+      "display": "miniwasmINIT-INIT LP",
+      "name": "miniwasmINIT-INIT LP Token",
+      "symbol": "miniwasmINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT-INIT.png"
+      }
+    },
+
+    {
+      "description": "Minitswap Civitia IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/a0739176807862684bfb051cce84bc2751447649bd30c00f6c76fb6b85093f1c",
+          "exponent": 0
+        },
+        {
+          "denom": "civitiaINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/a0739176807862684bfb051cce84bc2751447649bd30c00f6c76fb6b85093f1c",
+      "display": "civitiaINIT-INIT LP",
+      "name": "civitiaINIT-INIT LP Token",
+      "symbol": "civitiaINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT-INIT.png"
+      }
+    },
+
+    {
+      "description": "Minitswap Init AI IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/669d7f76d36a929fa1e9447e0b3a62d47d598d23b4c57ba366c5b39e8dbd4ae0",
+          "exponent": 0
+        },
+        {
+          "denom": "initaiINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/669d7f76d36a929fa1e9447e0b3a62d47d598d23b4c57ba366c5b39e8dbd4ae0",
+      "display": "initaiINIT-INIT LP",
+      "name": "initaiINIT-INIT LP Token",
+      "symbol": "initaiINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT-INIT.png"
+      }
+    },
+
+    {
+      "description": "Minitswap Noon IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/4b315e6bc5d34f8b1f7f0a7deadce9435c05d4f9e7d91d337f982f9753251efd",
+          "exponent": 0
+        },
+        {
+          "denom": "noonINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/4b315e6bc5d34f8b1f7f0a7deadce9435c05d4f9e7d91d337f982f9753251efd",
+      "display": "noonINIT-INIT LP",
+      "name": "noonINIT-INIT LP Token",
+      "symbol": "noonINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT-INIT.png"
+      }
+    },
+
+    {
+      "description": "Minitswap Tucana IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/d419ed4d39e541119bb1b88d638050784449be56bb5b9acc8e204a700d94e165",
+          "exponent": 0
+        },
+        {
+          "denom": "noonINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/d419ed4d39e541119bb1b88d638050784449be56bb5b9acc8e204a700d94e165",
+      "display": "tucanaINIT-INIT LP",
+      "name": "tucanaINIT-INIT LP Token",
+      "symbol": "tucanaINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT-INIT.png"
+      }
     }
   ]
 }
