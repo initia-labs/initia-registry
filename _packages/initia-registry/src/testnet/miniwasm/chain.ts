@@ -79,6 +79,7 @@ const info: Chain = {
   metadata: {
     op_bridge_id: "2",
     op_denoms: ["uinit"],
+    executor_uri: "https://executor.miniwasm-1.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-1",

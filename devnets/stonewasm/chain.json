@@ -97,6 +97,7 @@
   "metadata": {
     "op_bridge_id": "2",
     "op_denoms": ["uinit"],
+    "executor_uri": "https://executor.stonewasm-16.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "stone-16",
