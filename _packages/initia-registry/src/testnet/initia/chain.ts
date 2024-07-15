@@ -96,6 +96,11 @@ const info: Chain = {
         address: "https://initia-testnet-rpc.itrocket.net",
         provider: "ITRocket",
       },
+      {
+        address: "https://rpc-skip.initiation-1.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+      },
     ],
     rest: [
       {
@@ -143,6 +148,11 @@ const info: Chain = {
         address: "https://initia-testnet-api.itrocket.net",
         provider: "ITRocket",
       },
+      {
+        address: "https://lcd-skip.initiation-1.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+      },
     ],
     api: [
       {
@@ -170,6 +180,11 @@ const info: Chain = {
       {
         address: "initia-testnet-grpc.itrocket.net:443",
         provider: "ITRocket",
+      },
+      {
+        address: "35.240.231.235:9090",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
       },
     ],
   },
@@ -278,6 +293,24 @@ const info: Chain = {
         port_id: "nft-transfer",
         channel_id: "channel-49",
         version: "ics721-1",
+      },
+      {
+        chain_id: "ms-4",
+        port_id: "transfer",
+        channel_id: "channel-417",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "ms-4",
+        port_id: "nft-transfer",
+        channel_id: "channel-418",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "glados-1",
+        port_id: "transfer",
+        channel_id: "channel-310",
+        version: "ics20-1",
       },
     ],
     assetlist:

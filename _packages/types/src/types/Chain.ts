@@ -209,6 +209,10 @@ export interface Chain {
      */
     op_bridge_id?: string;
     /**
+     * [Optional] The OPInit executor api endpoint
+     */
+    executor_uri?: string;
+    /**
      * [Optional] The list of denoms that are supported by the OPinit bridge.
      */
     op_denoms?: string[];
@@ -269,6 +273,7 @@ export interface Endpoint {
   address: string;
   provider?: string;
   archive?: boolean;
+  authorizedUser?: string;
 }
 export interface Explorer {
   kind?: string;

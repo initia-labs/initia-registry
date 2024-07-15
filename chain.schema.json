@@ -558,6 +558,11 @@
           "type": "string",
           "description": "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
         },
+        "executor_uri": {
+          "type": "string",
+          "format": "uri",
+          "description": "[Optional] The OPInit executor api endpoint"
+        },
         "op_denoms": {
           "type": "array",
           "items": {
