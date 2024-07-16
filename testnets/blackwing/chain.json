@@ -79,9 +79,8 @@
   "metadata": {
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/blackwing/assetlist.json",
     "op_bridge_id": "8",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://maze-executor-18bdff44-3aa4-425e-9bc0-06a2afa40af8.ase1-prod.newmetric.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-1",
