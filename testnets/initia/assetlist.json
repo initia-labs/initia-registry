@@ -735,6 +735,34 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT-INIT.png"
       }
+    },
+    {
+      "description": "MilkyWay IBC bridged milkINIT",
+      "denom_units": [
+        {
+          "denom": "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
+          "exponent": 0
+        },
+        {
+          "denom": "milkINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
+      "display": "milkINIT",
+      "name": "MilkyWay IBC milkINIT",
+      "symbol": "milkINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+      }
     }
   ]
 }
