@@ -74,7 +74,7 @@ const info: AssetList = {
       ],
       base: "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
       display: "INIT",
-      name: "Initia Native Token (IBC)",
+      name: "Initia IBC INIT",
       symbol: "INIT",
       coingecko_id: "",
       images: [

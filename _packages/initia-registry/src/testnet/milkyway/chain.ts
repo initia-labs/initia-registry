@@ -3,7 +3,7 @@ const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "milkyway",
   chain_id: "glados-1",
-  website: "https://miilkyway.zone",
+  website: "https://milkyway.zone",
   pretty_name: "MilkyWay",
   status: "live",
   network_type: "testnet",

@@ -33,11 +33,11 @@ const info: AssetList = {
       },
     },
     {
-      description: "The INIT Liquid Staking Token",
+      description: "MilkyWay IBC bridged milkINIT",
       denom_units: [
         {
           denom:
-            "ibc/7F4EE5B281CD4EEF975BD4A892A275D9AB4987BDB70974763A438524631347E5",
+            "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
           exponent: 0,
         },
         {
@@ -45,9 +45,9 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/7F4EE5B281CD4EEF975BD4A892A275D9AB4987BDB70974763A438524631347E5",
+      base: "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
       display: "milkINIT",
-      name: "INIT Liquid Staking Token",
+      name: "MilkyWay IBC milkINIT",
       symbol: "milkINIT",
       coingecko_id: "",
       images: [
