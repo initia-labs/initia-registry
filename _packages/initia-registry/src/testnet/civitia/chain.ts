@@ -67,6 +67,8 @@ const info: Chain = {
   metadata: {
     op_bridge_id: "24",
     op_denoms: ["uinit"],
+    executor_uri:
+      "https://maze-executor-beab9b6f-d96d-435e-9caf-5679296d8172.ue1-prod.newmetric.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-1",

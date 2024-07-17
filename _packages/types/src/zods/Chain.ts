@@ -336,6 +336,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -347,6 +348,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -358,6 +360,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -369,6 +372,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -380,6 +384,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -391,6 +396,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -402,6 +408,7 @@ export const ChainSchema = z
                 address: z.string().url(),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
               })
               .strict()
           )
@@ -444,6 +451,11 @@ export const ChainSchema = z
           .describe(
             "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
           )
+          .optional(),
+        executor_uri: z
+          .string()
+          .url()
+          .describe("[Optional] The OPInit executor api endpoint")
           .optional(),
         op_denoms: z
           .array(z.string())

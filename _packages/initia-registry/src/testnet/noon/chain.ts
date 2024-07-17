@@ -76,6 +76,7 @@ const info: Chain = {
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/assetlist.json",
     op_bridge_id: "17",
     op_denoms: ["uinit"],
+    executor_uri: "https://burrito-1-executor.lunchlunch.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-1",
