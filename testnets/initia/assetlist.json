@@ -718,7 +718,7 @@
           "exponent": 0
         },
         {
-          "denom": "noonINIT-INIT LP",
+          "denom": "tucanaINIT-INIT LP",
           "exponent": 6
         }
       ],
@@ -734,6 +734,32 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT-INIT.png"
+      }
+    },
+    {
+      "description": "Minitswap Blackwing IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/4360457169ced76577ba18d5e7816b2fe45737e1c8a8bb6e2154758b1ec6545c",
+          "exponent": 0
+        },
+        {
+          "denom": "blackwingINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/4360457169ced76577ba18d5e7816b2fe45737e1c8a8bb6e2154758b1ec6545c",
+      "display": "blackwingINIT-INIT LP",
+      "name": "blackwingINIT-INIT LP Token",
+      "symbol": "blackwingINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT-INIT.png"
       }
     }
   ]
