@@ -52,9 +52,6 @@
 //
 // write changes to chain_reg
 
-
-import * as fs from 'fs';
-import * as path from 'path';
 import * as chain_reg from './chain_registry.mjs';
 
 function createImagesArray(){
@@ -63,7 +60,6 @@ function createImagesArray(){
 //     get list of assets, iterate each asset
 //       record the logo_URIs and images properties
 
-  let chainFiles = [];
   let newImageContainingObject;
 
   let chains = chain_reg.getChains();
@@ -80,7 +76,7 @@ function createImagesArray(){
       logo_URIs: logo_URIs,
       images: images,
       hasUpdated: false
-    }
+    };
 
     //console.log(imageContainingObject);
     newImageContainingObject = compareImages(imageContainingObject);
@@ -107,7 +103,7 @@ function createImagesArray(){
       logo_URIs: logo_URIs,
       images: images,
       hasUpdated: false
-    }
+    };
 
     //console.log(imageContainingObject);
     newImageContainingObject = compareImages(imageContainingObject);
@@ -260,7 +256,7 @@ function overwriteLogoURIs(chain_name, base_denom){
     let logo_URIs = {
       png: images?.[0]?.png,
       svg: images?.[0]?.svg
-    }
+    };
     if(images) {
       if(images[0].png || images[0].svg) {
         chain_reg.setFileProperty(chainName, "chain", "logo_URIs", logo_URIs);
@@ -274,7 +270,7 @@ function overwriteLogoURIs(chain_name, base_denom){
     let logo_URIs = {
       png: images?.[0]?.png,
       svg: images?.[0]?.svg
-    }
+    };
     if(images) {
       if(images[0].png || images[0].svg) {
         chain_reg.setAssetProperty(assetPointer.chain_name, assetPointer.base_denom, "logo_URIs", logo_URIs);
@@ -290,4 +286,4 @@ function main(){
   overwriteLogoURIs();
 }
 
-main()
+main();
