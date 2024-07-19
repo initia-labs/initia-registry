@@ -761,6 +761,34 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT-INIT.png"
       }
+    },
+    {
+      "description": "The LP token of milkINIT-INIT",
+      "denom_units": [
+        {
+          "denom": "move/b3f4d22a7373948d1afce1023a2e875425ccc182d823b714e19a7a897fdb17d5",
+          "exponent": 0
+        },
+        {
+          "denom": "milkINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/b3f4d22a7373948d1afce1023a2e875425ccc182d823b714e19a7a897fdb17d5",
+      "display": "milkINIT-INIT LP",
+      "name": "milkINIT-INIT LP Token",
+      "symbol": "milkINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.svg"
+      }
     }
   ]
 }
