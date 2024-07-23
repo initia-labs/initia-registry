@@ -305,18 +305,6 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "ms-4",
-        "port_id": "transfer",
-        "channel_id": "channel-417",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "ms-4",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-418",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "glados-1",
         "port_id": "transfer",
         "channel_id": "channel-310",

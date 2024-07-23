@@ -1,5 +1,6 @@
 import json
 import os
+import hashlib
 from os import getcwd
 
 rootdir = getcwd()
@@ -49,6 +50,9 @@ def checkChains():
                     validateRawGithubContent(asset["logo_URIs"]["png"])
                   if "svg" in asset["logo_URIs"]:
                     validateRawGithubContent(asset["logo_URIs"]["svg"])
+
+                if "base" in asset and "traces" in asset:
+                  validateTraces(asset["traces"], asset["base"])
             else:
               raise Exception("'assets' array doesn't contain any tokens")
           else:
@@ -86,3 +90,47 @@ def validateRawGithubContent(uri: str):
   if not os.path.exists(path):
     raise Exception("file(" + path + ") doesn't exists")
 
+# check trace
+def validateTraces(traces, denom: str):
+  denomBefore = None
+  for trace in traces:
+    baseDenom = trace["counterparty"]["base_denom"]
+    if denomBefore != None and baseDenom != denomBefore:
+      raise Exception("mislink denom traces")
+    denomBefore = validateTrace(trace)
+
+  if denomBefore != None and denomBefore != denom:
+    print(denomBefore, denom)
+    raise Exception("denom is not match with denom traces")
+    
+
+# check trace and return estimate denom
+def validateTrace(trace) -> str | None:
+  if trace["type"] == "op":
+    baseDenom = trace["counterparty"]["base_denom"]
+    bridgeId = int(trace["chain"]["bridge_id"])
+    array = bytearray(bridgeId.to_bytes(8, byteorder='big'))
+    array.extend(bytearray(baseDenom, 'utf-8'))
+    sha3_256 = hashlib.sha3_256()
+    sha3_256.update(array)
+    hash = sha3_256.digest().hex()
+    return 'l2/' + hash
+  if trace["type"] == "ibc":
+    # check counterparty
+    baseDenom = trace["counterparty"]["base_denom"]
+    path = trace["chain"]["path"]
+    pathBefore = '/'.join(path.split('/')[2:])
+    if getIBCDenom(pathBefore) != baseDenom:
+      raise Exception("counterparty's base denom is not match with current path")
+    return getIBCDenom(path)
+  return None
+
+
+def getIBCDenom(path: str) -> str :
+  if len(path.split('transfer/')) == 1:
+    return path
+
+  sha256 = hashlib.sha256()
+  sha256.update(bytes(path, 'utf-8'))
+  hash = sha256.digest().hex().upper()
+  return 'ibc/' + hash

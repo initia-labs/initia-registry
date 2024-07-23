@@ -46,7 +46,7 @@ export interface Asset {
   /**
    * The origin of the asset, starting with the index, and capturing all transitions in form and location.
    */
-  traces?: (IbcTransition | IbcCw20Transition | NonIbcTransition)[];
+  traces?: (IbcTransition | IbcCw20Transition | NonIbcTransition | OpTransition)[];
   /**
    * [OPTIONAL] IBC Channel between src and dst between chain
    */
@@ -180,6 +180,25 @@ export interface NonIbcTransition {
    * The entity offering the service. E.g., 'Gravity Bridge' [Network] or 'Tether' [Company].
    */
   provider: string;
+}
+export interface OpTransition {
+  type: "op";
+  counterparty: {
+    /**
+     * The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)
+     */
+    chain_name: string;
+    /**
+     * The base unit of the asset on its source platform. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform.
+     */
+    base_denom: string;
+  };
+  chain: {
+    /**
+     * The identifier of the OPinit bridge used to transfer assets between L1 and L2.
+     */
+    bridge_id: string;
+  };
 }
 /**
  * The (primary) key used to identify an object within the Chain Registry.
