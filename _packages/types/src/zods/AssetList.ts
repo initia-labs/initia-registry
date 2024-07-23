@@ -186,6 +186,34 @@ export const AssetListSchema = z
                       ),
                   })
                   .strict(),
+                z
+                  .object({
+                    type: z.literal("op"),
+                    counterparty: z
+                      .object({
+                        chain_name: z
+                          .string()
+                          .describe(
+                            "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
+                          ),
+                        base_denom: z
+                          .string()
+                          .describe(
+                            "The base unit of the asset on its source platform. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+                          ),
+                      })
+                      .strict(),
+                    chain: z
+                      .object({
+                        bridge_id: z
+                          .string()
+                          .describe(
+                            "The identifier of the OPinit bridge used to transfer assets between L1 and L2."
+                          ),
+                      })
+                      .strict(),
+                  })
+                  .strict(),
               ])
             )
             .describe(

@@ -77,6 +77,9 @@
               },
               {
                 "$ref": "#/$defs/non_ibc_transition"
+              },
+              {
+                "$ref": "#/$defs/op_transition"
               }
             ]
           },
@@ -312,6 +315,43 @@
             "path": {
               "type": "string",
               "description": "The port/channel/denom input string that generates the 'ibc/...' denom."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "op_transition": {
+      "type": "object",
+      "required": ["type", "counterparty", "chain"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["op"]
+        },
+        "counterparty": {
+          "type": "object",
+          "required": ["chain_name", "base_denom"],
+          "properties": {
+            "chain_name": {
+              "type": "string",
+              "description": "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
+            },
+            "base_denom": {
+              "type": "string",
+              "description": "The base unit of the asset on its source platform. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+            }
+          },
+          "additionalProperties": false
+        },
+        "chain": {
+          "type": "object",
+          "required": ["bridge_id"],
+          "properties": {
+            "bridge_id": {
+              "type": "string",
+              "description": "The identifier of the OPinit bridge used to transfer assets between L1 and L2."
             }
           },
           "additionalProperties": false
