@@ -192,7 +192,6 @@ export function setFileProperty(chainName, file, property, value) {
       let json = readJsonFile(filePath);
       json[property] = value;
       writeJsonFile(filePath, json);
-      return;
     }
   }
 }
@@ -218,13 +217,8 @@ export function getIBCFileProperty(chainName1, chainName2, property) {
 export function getAssetProperty(chainName, baseDenom, property) {
   const assets = getFileProperty(chainName, "assetlist", "assets");
   if(assets) {
-    let selectedAsset;
-    assets.forEach((asset) => {
-      if(asset.base == baseDenom) {
-        selectedAsset = asset;
-        return;
-      }
-    });
+    const selectedAsset = assets.find(asset => asset.base === baseDenom);
+    
     if(selectedAsset) {
       return selectedAsset[property];
     }
@@ -234,13 +228,11 @@ export function getAssetProperty(chainName, baseDenom, property) {
 export function setAssetProperty(chainName, baseDenom, property, value) {
   const assets = getFileProperty(chainName, "assetlist", "assets");
   if(assets) {
-    assets.forEach((asset) => {
-      if(asset.base == baseDenom) {
-        asset[property] = value;
-        setFileProperty(chainName, "assetlist", "assets", assets);
-        return;
-      }
-    });
+    const asset = assets.find(asset => asset.base === baseDenom);
+    if (asset) {
+      asset[property] = value;
+      setFileProperty(chainName, "assetlist", "assets", assets);
+    }
   }
 }
 

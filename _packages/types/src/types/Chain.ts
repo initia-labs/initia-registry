@@ -170,12 +170,9 @@ export interface Chain {
     }[];
   };
   images?: (
-    | {
+    {
         [k: string]: unknown;
-      }
-    | {
-        [k: string]: unknown;
-      }
+    }
   )[];
   logo_URIs?: {
     png?: string;
