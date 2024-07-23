@@ -120,6 +120,7 @@ def validateTrace(trace) -> str | None:
     baseDenom = trace["counterparty"]["base_denom"]
     path = trace["chain"]["path"]
     pathBefore = '/'.join(path.split('/')[2:])
+    print(pathBefore, baseDenom)
     if getIBCDenom(pathBefore) != baseDenom:
       raise Exception("counterparty's base denom is not match with current path")
     return getIBCDenom(path)

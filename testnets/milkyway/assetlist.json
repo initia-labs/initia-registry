@@ -80,7 +80,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
-            "base_denom": "utia",
+            "base_denom": "uinit",
             "channel_id": "channel-310"
           },
           "chain": {
