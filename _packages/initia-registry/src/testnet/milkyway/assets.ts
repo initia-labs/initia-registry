@@ -77,6 +77,20 @@ const info: AssetList = {
       name: "Initia IBC INIT",
       symbol: "INIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom: "uinit",
+            channel_id: "channel-310",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/uinit",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",

@@ -191,6 +191,20 @@ const info: AssetList = {
       name: "Tucana Native Token",
       symbol: "TUC",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "tucana",
+            base_denom: "utuc",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-25",
+            path: "transfer/channel-25/utuc",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
@@ -249,6 +263,21 @@ const info: AssetList = {
       name: "Tucana Perps LP",
       symbol: "TLP",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "tucana",
+            base_denom:
+              "move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-25",
+            path: "transfer/channel-25/move/17bf475fe65c54864db2ba45883b8d3fa198d80e4edd31088fd41d505075080b",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA-PERP.png",
@@ -365,6 +394,31 @@ const info: AssetList = {
       name: "Blackwing IBC INIT",
       symbol: "blackwingINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "8",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "balckwing",
+            base_denom:
+              "l2/aee375e9d0b181f0d9d3a49f9a3d1d6b05d62b0ac81f8c92b9282afa4213d884",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-13",
+            path: "transfer/channel-13/l2/aee375e9d0b181f0d9d3a49f9a3d1d6b05d62b0ac81f8c92b9282afa4213d884",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT.png",
@@ -392,6 +446,31 @@ const info: AssetList = {
       name: "Civitia IBC INIT",
       symbol: "civitiaINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "24",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "civitia",
+            base_denom:
+              "l2/afaa3f4e1717c75712f8e8073e41f051a4e516cd25daa82d948c4729388edefd",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-48",
+            path: "transfer/channel-48/l2/afaa3f4e1717c75712f8e8073e41f051a4e516cd25daa82d948c4729388edefd",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/civitiaINIT.png",
@@ -419,6 +498,31 @@ const info: AssetList = {
       name: "Init AI IBC INIT",
       symbol: "initaiINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "6",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "init_ai",
+            base_denom:
+              "l2/aadf1a9da6a38b7e7e11839364ee42002260eff1657f403b9ce608337bcb986b",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-9",
+            path: "transfer/channel-9/l2/aadf1a9da6a38b7e7e11839364ee42002260eff1657f403b9ce608337bcb986b",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/initaiINIT.png",
@@ -446,6 +550,31 @@ const info: AssetList = {
       name: "Minimove IBC INIT",
       symbol: "minimoveINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "1",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "minimove",
+            base_denom:
+              "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT.png",
@@ -473,6 +602,31 @@ const info: AssetList = {
       name: "Miniwasm IBC INIT",
       symbol: "miniwasmINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "2",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "miniwasm",
+            base_denom:
+              "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-2",
+            path: "transfer/channel-2/l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/miniwasmINIT.png",
@@ -500,6 +654,31 @@ const info: AssetList = {
       name: "Noon IBC INIT",
       symbol: "noonINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "17",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "noon",
+            base_denom:
+              "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-31",
+            path: "transfer/channel-31/l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/noonINIT.png",
@@ -527,6 +706,31 @@ const info: AssetList = {
       name: "Tucana IBC INIT",
       symbol: "tucanaINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "14",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "tucana",
+            base_denom:
+              "l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-25",
+            path: "transfer/channel-25/l2/333f8e6ae6855338f99d451126bfefc1b920763c16681d55fbc7df68ccb36972",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT.png",
@@ -554,6 +758,20 @@ const info: AssetList = {
       name: "INIT Liquid Staking Token",
       symbol: "milkINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "milkyway",
+            base_denom: "milkuinit",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-310",
+            path: "transfer/channel-310/milkuinit",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
@@ -738,7 +956,7 @@ const info: AssetList = {
           exponent: 0,
         },
         {
-          denom: "noonINIT-INIT LP",
+          denom: "tucanaINIT-INIT LP",
           exponent: 6,
         },
       ],
@@ -754,6 +972,62 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/tucanaINIT-INIT.png",
+      },
+    },
+    {
+      description: "Minitswap Blackwing IBC INIT Pool Token",
+      denom_units: [
+        {
+          denom:
+            "move/4360457169ced76577ba18d5e7816b2fe45737e1c8a8bb6e2154758b1ec6545c",
+          exponent: 0,
+        },
+        {
+          denom: "blackwingINIT-INIT LP",
+          exponent: 6,
+        },
+      ],
+      base: "move/4360457169ced76577ba18d5e7816b2fe45737e1c8a8bb6e2154758b1ec6545c",
+      display: "blackwingINIT-INIT LP",
+      name: "blackwingINIT-INIT LP Token",
+      symbol: "blackwingINIT-INIT LP",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT-INIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/blackwingINIT-INIT.png",
+      },
+    },
+    {
+      description: "The LP token of milkINIT-INIT",
+      denom_units: [
+        {
+          denom:
+            "move/b3f4d22a7373948d1afce1023a2e875425ccc182d823b714e19a7a897fdb17d5",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT-INIT LP",
+          exponent: 6,
+        },
+      ],
+      base: "move/b3f4d22a7373948d1afce1023a2e875425ccc182d823b714e19a7a897fdb17d5",
+      display: "milkINIT-INIT LP",
+      name: "milkINIT-INIT LP Token",
+      symbol: "milkINIT-INIT LP",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.svg",
       },
     },
   ],

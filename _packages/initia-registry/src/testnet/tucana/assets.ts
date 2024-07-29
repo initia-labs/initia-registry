@@ -21,6 +21,18 @@ const info: AssetList = {
       name: "Initia Native Token",
       symbol: "INIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "14",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
@@ -107,6 +119,20 @@ const info: AssetList = {
       name: "Fake ETH Token",
       symbol: "ETH",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom: "ueth",
+            channel_id: "channel-25",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/ueth",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
@@ -136,6 +162,20 @@ const info: AssetList = {
       name: "USDC",
       symbol: "USDC",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom: "uusdc",
+            channel_id: "channel-25",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/uusdc",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
@@ -165,6 +205,20 @@ const info: AssetList = {
       name: "Fake TIA Token",
       symbol: "TIA",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom: "utia",
+            channel_id: "channel-25",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/utia",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
@@ -194,6 +248,33 @@ const info: AssetList = {
       name: "MilkyWay IBC milkINIT",
       symbol: "milkINIT",
       coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "milkyway",
+            base_denom: "milkuinit",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-310",
+            path: "transfer/channel-310/milkuinit",
+          },
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom:
+              "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
+            channel_id: "channel-25",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/transfer/channel-310/milkuinit",
+          },
+        },
+      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",

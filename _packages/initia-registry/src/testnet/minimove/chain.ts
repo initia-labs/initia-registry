@@ -43,17 +43,32 @@ const info: Chain = {
         address: "https://rpc.minimove-1.initia.xyz",
         provider: "Initia Labs",
       },
+      {
+        address: "https://rpc-skip.minimove-1.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+      },
     ],
     rest: [
       {
         address: "https://lcd.minimove-1.initia.xyz",
         provider: "Initia Labs",
       },
+      {
+        address: "https://lcd-skip.minimove-1.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+      },
     ],
     grpc: [
       {
         address: "grpc://35.198.215.41:9090",
         provider: "Initia Labs",
+      },
+      {
+        address: "34.124.136.240:9090",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
       },
     ],
   },
