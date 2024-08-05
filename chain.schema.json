@@ -676,6 +676,9 @@
         },
         "authorizedUser": {
           "type": "string"
+        },
+        "index": {
+          "type": "number"
         }
       },
       "additionalProperties": false
