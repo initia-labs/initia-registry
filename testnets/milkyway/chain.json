@@ -45,7 +45,7 @@
         "address": " https://rpc-skip.testnet.milkyway.zone",
         "provider": "MilkyWay Labs",
         "authorizedUser": "skip",
-        "index": 0
+        "indexForSkip": 0
       }
     ],
     "rest": [
@@ -57,7 +57,7 @@
         "address": "https://lcd-skip.testnet.milkyway.zone",
         "provider": "MilkyWay Labs",
         "authorizedUser": "skip",
-        "index": 0
+        "indexForSkip": 0
       }
     ],
     "grpc": [
@@ -65,7 +65,7 @@
         "address": "grpc-skip.testnet.milkyway.zone:443",
         "provider": "MilkyWay Labs",
         "authorizedUser": "skip",
-        "index": 0
+        "indexForSkip": 0
       }
     ]
   },

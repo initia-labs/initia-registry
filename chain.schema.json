@@ -677,7 +677,7 @@
         "authorizedUser": {
           "type": "string"
         },
-        "index": {
+        "indexForSkip": {
           "type": "number"
         }
       },
