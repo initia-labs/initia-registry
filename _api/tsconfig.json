@@ -1,4 +1,4 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
-  "compilerOptions": { "module": "ESNext" }
+  "compilerOptions": { "moduleResolution": "Bundler", "module": "ESNext" }
 }
