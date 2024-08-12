@@ -32,7 +32,7 @@ export function aggregateChainData(dirs: string[], outputFilePath: string) {
   // Sort chains: layer 1 first, then by op bridge id
   const sortChains = sortWith<Chain>([
     descend((chain) => chain.metadata?.is_l1 || false),
-    ascend((chain) => Number(chain.metadata?.op_bridge_id) || Number.MAX_SAFE_INTEGER),
+    ascend((chain) => chain.pretty_name ?? chain.chain_name),
   ])
 
   writeJsonFile(outputFilePath, sortChains(chains))
