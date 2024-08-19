@@ -337,6 +337,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -349,6 +350,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -361,6 +363,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -373,6 +376,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -385,6 +389,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -397,6 +402,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )
@@ -409,6 +415,7 @@ export const ChainSchema = z
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
               })
               .strict()
           )

@@ -170,9 +170,12 @@ export interface Chain {
     }[];
   };
   images?: (
-    {
+    | {
         [k: string]: unknown;
-    }
+      }
+    | {
+        [k: string]: unknown;
+      }
   )[];
   logo_URIs?: {
     png?: string;
@@ -271,6 +274,7 @@ export interface Endpoint {
   provider?: string;
   archive?: boolean;
   authorizedUser?: string;
+  indexForSkip?: number;
 }
 export interface Explorer {
   kind?: string;

@@ -49,7 +49,7 @@ const info: Chain = {
     rpc: [
       {
         address:
-          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rpc.ue1-prod.newmetric.xyz",
+          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rpc.newmetric.xyz",
         provider: "newmetric",
       },
       {
@@ -105,7 +105,7 @@ const info: Chain = {
     rest: [
       {
         address:
-          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rest.ue1-prod.newmetric.xyz",
+          "https://b545809c-5562-4e60-b5a1-22e83df57748.initiation-1.mesa-rest.newmetric.xyz",
         provider: "newmetric",
       },
       {
@@ -113,7 +113,7 @@ const info: Chain = {
         provider: "Initia Labs",
       },
       {
-        address: "https://initia-testnet-rpc.polkachu.com",
+        address: "https://initia-testnet-api.polkachu.com",
         provider: "polkachu",
       },
       {
