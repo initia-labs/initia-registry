@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "initia",
-  "chain_id": "stone-16",
+  "chain_id": "stone-17",
   "website": "https://initia.xyz",
   "pretty_name": "Initia L1",
   "status": "live",
@@ -43,13 +43,13 @@
     "recommended_version": "v0.3.0",
     "compatible_versions": ["v0.3.0"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-16/initia_v0.3.0_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-16/initia_v0.3.0_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-16/initia_v0.3.0_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-16/initia_v0.3.0_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-17/initia_v0.3.0_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-17/initia_v0.3.0_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-17/initia_v0.3.0_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-17/initia_v0.3.0_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-16/genesis.json"
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stone-17/genesis.json"
     },
     "versions": []
   },
@@ -61,19 +61,19 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.stone-16.initia.xyz",
+        "address": "https://rpc.stone-17.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.stone-16.initia.xyz",
+        "address": "https://lcd.stone-17.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
     "api": [
       {
-        "address": "https://api.stone-16.initia.xyz",
+        "address": "https://api.stone-17.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
@@ -87,21 +87,21 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.stone-16.initia.xyz/?layer=l1%2520testnet",
-      "tx_page": "https://explorer.stone-16.initia.xyz/tx/${txHash}?layer=l1%20testnet",
-      "account_page": "https://explorer.stone-16.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
+      "url": "https://explorer.devnet.initia.xyz/?layer=l1%2520testnet",
+      "tx_page": "https://explorer.devnet.initia.xyz/tx/${txHash}?layer=l1%20testnet",
+      "account_page": "https://explorer.devnet.initia.xyz/address/${accountAddress}?layer=l1%20testnet"
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/stone-16",
-      "tx_page": "https://scan.initia.xyz/stone-16/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/stone-16/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/stone-17",
+      "tx_page": "https://scan.initia.xyz/stone-17/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/stone-17/accounts/${accountAddress}"
     }
   ],
   "faucets": [
     {
       "kind": "faucet",
-      "url": "https://faucet.stone-16.initia.xyz/"
+      "url": "https://faucet.stone-17.initia.xyz/"
     }
   ],
   "images": [
@@ -118,13 +118,13 @@
     "is_l1": true,
     "ibc_channels": [
       {
-        "chain_id": "stonemove-16",
+        "chain_id": "stonemove-17",
         "port_id": "transfer",
         "channel_id": "channel-0",
         "version": "ics20-1"
       },
       {
-        "chain_id": "stonemove-16",
+        "chain_id": "stonemove-17",
         "port_id": "nft-transfer",
         "channel_id": "channel-1",
         "version": "ics721-1"
@@ -136,7 +136,7 @@
         "version": "ics20-1"
       },
       {
-        "chain_id": "stonewasm-16",
+        "chain_id": "stonewasm-17",
         "port_id": "nft-transfer",
         "channel_id": "channel-3",
         "version": "ics721-1"
