@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "stonemove",
-  "chain_id": "stonemove-16",
+  "chain_id": "stonemove-17",
   "website": "https://initia.xyz",
   "pretty_name": "Minimove",
   "status": "live",
@@ -37,13 +37,13 @@
     "recommended_version": "v0.3.0",
     "compatible_versions": ["v0.3.0", "main"],
     "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-16/stonemove_v0.3.0_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-16/stonemove_v0.3.0_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-16/stonemove_v0.3.0_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-16/stonemove_v0.3.0_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-17/stonemove_v0.3.0_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-17/stonemove_v0.3.0_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-17/stonemove_v0.3.0_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-17/stonemove_v0.3.0_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-16/genesis.json"
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/stonemove-17/genesis.json"
     },
     "versions": []
   },
@@ -55,13 +55,13 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.stonemove-16.initia.xyz",
+        "address": "https://rpc.stonemove-17.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.stonemove-16.initia.xyz",
+        "address": "https://lcd.stonemove-17.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
@@ -75,15 +75,15 @@
   "explorers": [
     {
       "kind": "explorer",
-      "url": "https://explorer.stone-16.initia.xyz/?layer=stonemove",
-      "tx_page": "https://explorer.stone-16.initia.xyz/tx/${txHash}?layer=stonemove",
-      "account_page": "https://explorer.stone-16.initia.xyz/address/${accountAddress}?layer=stonemove"
+      "url": "https://explorer.devnet.initia.xyz/?layer=stonemove",
+      "tx_page": "https://explorer.devnet.initia.xyz/tx/${txHash}?layer=stonemove",
+      "account_page": "https://explorer.devnet.initia.xyz/address/${accountAddress}?layer=stonemove"
     },
     {
       "kind": "initia scan",
-      "url": "https://scan.initia.xyz/stonemove-16",
-      "tx_page": "https://scan.initia.xyz/stonemove-16/txs/${txHash}",
-      "account_page": "https://scan.initia.xyz/stonemove-16/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/stonemove-17",
+      "tx_page": "https://scan.initia.xyz/stonemove-17/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/stonemove-17/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -97,16 +97,16 @@
   "metadata": {
     "op_bridge_id": "1",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://executor.stonemove-16.initia.xyz",
+    "executor_uri": "https://executor.stonemove-17.initia.xyz",
     "ibc_channels": [
       {
-        "chain_id": "stone-16",
+        "chain_id": "stone-17",
         "port_id": "transfer",
         "channel_id": "channel-0",
         "version": "ics20-1"
       },
       {
-        "chain_id": "stone-16",
+        "chain_id": "stone-17",
         "port_id": "nft-transfer",
         "channel_id": "channel-1",
         "version": "ics721-1"
