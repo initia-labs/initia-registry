@@ -999,6 +999,48 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/milkINIT-INIT.svg"
       }
+    },
+    {
+      "description": "NobleUSDC",
+      "denom_units": [
+        {
+          "denom": "ibc/4804F8F0A7DC0AC9B4274E684BC382B5FF469D230CBB59A45073031EE5B38948",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDC",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/4804F8F0A7DC0AC9B4274E684BC382B5FF469D230CBB59A45073031EE5B38948",
+      "display": "nUSDC",
+      "name": "Noble USDC Token",
+      "symbol": "nUSDC",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "base_denom": "uusdc",
+            "channel_id": "channel-214"
+          },
+          "chain": {
+            "channel_id": "channel-494",
+            "path": "transfer/channel-494/uusdc"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+      }
     }
   ]
 }
