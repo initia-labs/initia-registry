@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "minimove",
-  "chain_id": "minimove-1",
+  "chain_id": "minimove-2",
   "website": "https://initia.xyz",
   "pretty_name": "Minimove",
   "status": "live",
@@ -14,18 +14,11 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
-        "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.15,
-        "average_gas_price": 0.15,
-        "high_gas_price": 0.4
-      },
-      {
-        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-        "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.15,
-        "average_gas_price": 0.15,
-        "high_gas_price": 0.4
+        "denom": "umin",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
       }
     ]
   },
@@ -34,17 +27,8 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.2.12",
-    "compatible_versions": ["v0.2.12", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json"
-    },
+    "recommended_version": "v0.4.4",
+    "compatible_versions": ["v0.4.4"],
     "versions": []
   },
   "description": "Minimove Public Testnet",
@@ -55,44 +39,29 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.minimove-1.initia.xyz",
+        "address": "https://rpc.minimove-2.initia.xyz",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "https://rpc-skip.minimove-1.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.minimove-1.initia.xyz",
+        "address": "https://lcd.minimove-2.initia.xyz",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "https://lcd-skip.minimove-1.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ],
     "grpc": [
       {
-        "address": "grpc://35.198.215.41:9090",
+        "address": "grpc://35.247.132.75:9090",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "grpc://34.124.136.240:9090",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ]
   },
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/minimove-1",
-      "tx_page": "https://scan.testnet.initia.xyz/minimove-1/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/minimove-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/minimove-2",
+      "tx_page": "https://scan.testnet.initia.xyz/minimove-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/minimove-2/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -106,9 +75,9 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.svg"
   },
   "metadata": {
-    "op_bridge_id": "1",
+    "op_bridge_id": "4",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://executor.minimove-1.initia.xyz",
+    "executor_uri": "https://executor.minimove-2.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-1",
@@ -126,7 +95,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.2.12"
+      "version": "v0.4.4"
     }
   }
 }

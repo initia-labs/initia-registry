@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+          "denom": "l2/926dab95dc14918344374867b8576adee2c6cfca69b968fdb08c5280390cd1a7",
           "exponent": 0
         },
         {
@@ -14,7 +14,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+      "base": "l2/926dab95dc14918344374867b8576adee2c6cfca69b968fdb08c5280390cd1a7",
       "display": "INIT",
       "traces": [
         {
@@ -166,114 +166,6 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg"
-      }
-    },
-    {
-      "description": "The native token of Tucana",
-      "denom_units": [
-        {
-          "denom": "ibc/F04D40D5C3F283DD816EFA276B11D4804A2ECAB45F654D7355C0209760CCD051",
-          "exponent": 0
-        },
-        {
-          "denom": "TUC",
-          "exponent": 6
-        }
-      ],
-      "base": "ibc/F04D40D5C3F283DD816EFA276B11D4804A2ECAB45F654D7355C0209760CCD051",
-      "display": "TUC",
-      "name": "Tucana Native Token",
-      "symbol": "TUC",
-      "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "tucana",
-            "base_denom": "utuc",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-25",
-            "path": "transfer/channel-25/utuc"
-          }
-        },
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/276C63284D960E3E4D76AEFC9A8BA338BAD24E30530C7C95E7EFC4D250D4E23D",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/transfer/channel-25/utuc"
-          }
-        }
-      ],
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
-      }
-    },
-    {
-      "description": "MilkyWay IBC bridged milkINIT",
-      "denom_units": [
-        {
-          "denom": "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-          "exponent": 0
-        },
-        {
-          "denom": "milkINIT",
-          "exponent": 6
-        }
-      ],
-      "base": "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-      "display": "milkINIT",
-      "name": "MilkyWay IBC milkINIT",
-      "symbol": "milkINIT",
-      "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "milkyway",
-            "base_denom": "milkuinit",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-310",
-            "path": "transfer/channel-310/milkuinit"
-          }
-        },
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/transfer/channel-310/milkuinit"
-          }
-        }
-      ],
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg"
       }
     }
   ]

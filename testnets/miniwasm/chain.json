@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "miniwasm",
-  "chain_id": "miniwasm-1",
+  "chain_id": "miniwasm-2",
   "website": "https://initia.xyz",
   "pretty_name": "Miniwasm",
   "status": "live",
@@ -14,18 +14,11 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
-        "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.15,
-        "average_gas_price": 0.15,
-        "high_gas_price": 0.4
-      },
-      {
-        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-        "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.15,
-        "average_gas_price": 0.15,
-        "high_gas_price": 0.4
+        "denom": "umin",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
       }
     ]
   },
@@ -34,17 +27,8 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.2.14",
-    "compatible_versions": ["v0.2.14", "main"],
-    "binaries": {
-      "linux/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_aarch64.tar.gz"
-    },
-    "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json"
-    },
+    "recommended_version": "v0.4.3",
+    "compatible_versions": ["v0.4.3"],
     "versions": []
   },
   "description": "Miniwasm Public Testnet",
@@ -55,44 +39,29 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.miniwasm-1.initia.xyz",
+        "address": "https://rpc.miniwasm-2.initia.xyz",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "https://rpc-skip.miniwasm-1.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.miniwasm-1.initia.xyz",
+        "address": "https://lcd.miniwasm-2.initia.xyz",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "https://lcd-skip.miniwasm-1.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ],
     "grpc": [
       {
-        "address": "grpc://34.124.190.216:9090",
+        "address": "grpc://35.240.141.79:9090",
         "provider": "Initia Labs"
-      },
-      {
-        "address": "grpc://34.124.147.66:9090",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip"
       }
     ]
   },
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/miniwasm-1",
-      "tx_page": "https://scan.testnet.initia.xyz/miniwasm-1/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/miniwasm-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/miniwasm-2",
+      "tx_page": "https://scan.testnet.initia.xyz/miniwasm-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/miniwasm-2/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -106,18 +75,18 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
   },
   "metadata": {
-    "op_bridge_id": "2",
+    "op_bridge_id": "5",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://executor.miniwasm-1.initia.xyz",
+    "executor_uri": "https://executor.miniwasm-2.initia.xyz",
     "ibc_channels": [
       {
-        "chain_id": "initiation-1",
+        "chain_id": "initiation-2",
         "port_id": "transfer",
         "channel_id": "channel-0",
         "version": "ics20-1"
       },
       {
-        "chain_id": "initiation-1",
+        "chain_id": "initiation-2",
         "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
         "channel_id": "channel-1",
         "version": "ics721-1"
@@ -126,7 +95,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
     "minitia": {
       "type": "miniwasm",
-      "version": "v0.2.14"
+      "version": "v0.4.3"
     }
   }
 }
