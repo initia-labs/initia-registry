@@ -27,8 +27,17 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
-    "recommended_version": "v0.4.1",
-    "compatible_versions": ["v0.4.1"],
+    "recommended_version": "v0.4.2",
+    "compatible_versions": ["v0.4.2"],
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.4.2/minievm_v0.4.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.4.2/minievm_v0.4.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.4.2/minievm_v0.4.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.4.2/minievm_v0.4.2_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minievm-2/genesis.json"
+    },
     "versions": []
   },
   "description": "Minievm Public Testnet",
