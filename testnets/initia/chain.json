@@ -31,16 +31,16 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.4.10",
-    "compatible_versions": ["v0.4.10"],
+    "recommended_version": "v0.5.2",
+    "compatible_versions": ["v0.5.2"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.4.10/initia_v0.4.10_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.4.10/initia_v0.4.10_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.4.10/initia_v0.4.10_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.4.10/initia_v0.4.10_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.2/initia_v0.5.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.2/initia_v0.5.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.2/initia_v0.5.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.2/initia_v0.5.2_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/initiation-2/genesis.json"
+      "genesis_url": "https://storage.googleapis.com/init-common-genesis/initiation-2/genesis.json"
     },
     "versions": []
   },
@@ -58,7 +58,7 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.initiation-2.initia.xyz",
+        "address": "https://rest.initiation-2.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
@@ -78,9 +78,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/initiation-2",
-      "tx_page": "https://scan.testnet.initia.xyz/initiation-2/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/initiation-2/accounts/${accountAddress}"
+      "url": "https://scan.initiation-2.initia.xyz/initiation-2",
+      "tx_page": "https://scan.initiation-2.initia.xyz/initiation-2/txs/${txHash}",
+      "account_page": "https://scan.initiation-2.initia.xyz/initiation-2/accounts/${accountAddress}"
     }
   ],
   "faucets": [],

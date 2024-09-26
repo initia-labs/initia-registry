@@ -27,16 +27,16 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v0.4.4",
-    "compatible_versions": ["v0.4.4"],
+    "recommended_version": "v0.5.2",
+    "compatible_versions": ["v0.5.2"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.4.4/minimove_v0.4.4_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.4.4/minimove_v0.4.4_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.4.4/minimove_v0.4.4_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.4.4/minimove_v0.4.4_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.5.2/minimove_v0.5.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.5.2/minimove_v0.5.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.5.2/minimove_v0.5.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.5.2/minimove_v0.5.2_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/genesis.json"
+      "genesis_url": "https://storage.googleapis.com/init-common-genesis/minimove-2/genesis.json"
     },
     "versions": []
   },
@@ -54,7 +54,7 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.minimove-2.initia.xyz",
+        "address": "https://rest.minimove-2.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
@@ -68,9 +68,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/minimove-2",
-      "tx_page": "https://scan.testnet.initia.xyz/minimove-2/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/minimove-2/accounts/${accountAddress}"
+      "url": "https://scan.initiation-2.initia.xyz/minimove-2",
+      "tx_page": "https://scan.initiation-2.initia.xyz/minimove-2/txs/${txHash}",
+      "account_page": "https://scan.initiation-2.initia.xyz/minimove-2/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -104,7 +104,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.4.4"
+      "version": "v0.5.2"
     }
   }
 }

@@ -27,16 +27,16 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.4.3",
-    "compatible_versions": ["v0.4.3"],
+    "recommended_version": "v0.5.2",
+    "compatible_versions": ["v0.5.2"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.4.3/miniwasm_v0.4.3_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.4.3/miniwasm_v0.4.3_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.4.3/miniwasm_v0.4.3_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.4.3/miniwasm_v0.4.3_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Darwin_aarch64.tar.gz"
     },
     "genesis": {
-      "genesis_url": "https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-2/genesis.json"
+      "genesis_url": "https://storage.googleapis.com/init-common-genesis/miniwasm-2/genesis.json"
     },
     "versions": []
   },
@@ -54,7 +54,7 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.miniwasm-2.initia.xyz",
+        "address": "https://rest.miniwasm-2.initia.xyz",
         "provider": "Initia Labs"
       }
     ],
@@ -68,9 +68,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/miniwasm-2",
-      "tx_page": "https://scan.testnet.initia.xyz/miniwasm-2/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/miniwasm-2/accounts/${accountAddress}"
+      "url": "https://scan.initiation-2.initia.xyz/miniwasm-2",
+      "tx_page": "https://scan.initiation-2.initia.xyz/miniwasm-2/txs/${txHash}",
+      "account_page": "https://scan.initiation-2.initia.xyz/miniwasm-2/accounts/${accountAddress}"
     }
   ],
   "images": [
@@ -104,7 +104,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
     "minitia": {
       "type": "miniwasm",
-      "version": "v0.4.3"
+      "version": "v0.5.2"
     }
   }
 }
