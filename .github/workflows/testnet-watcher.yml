@@ -30,7 +30,7 @@ jobs:
           files_ignore: testnets/initia/**
 
       - name: Get current time
-        uses: josStorer/get-current-time@v2
+        uses: initia-labs/actions/get-current-time@main
         id: current-time
         with:
           format: YYYY-MM-DDTHH-mm-ss
