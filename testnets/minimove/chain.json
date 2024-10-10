@@ -38,7 +38,19 @@
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/minimove-2/genesis.json"
     },
-    "versions": []
+    "versions": [
+      {
+        "name": "0.5.4",
+        "recommended_version": "v0.5.5",
+        "compatible_versions": ["v0.5.5"],
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.5.5/minimove_v0.5.5_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.5.5/minimove_v0.5.5_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.5.5/minimove_v0.5.5_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.5.5/minimove_v0.5.5_Darwin_aarch64.tar.gz"
+        }
+      }
+    ]
   },
   "description": "Minimove Public Testnet",
   "peers": {
@@ -104,7 +116,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/assetlist.json",
     "minitia": {
       "type": "minimove",
-      "version": "v0.5.3"
+      "version": "v0.5.5"
     }
   }
 }
