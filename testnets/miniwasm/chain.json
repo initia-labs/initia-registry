@@ -27,13 +27,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.5.2",
-    "compatible_versions": ["v0.5.2"],
+    "recommended_version": "v0.5.4",
+    "compatible_versions": ["v0.5.4"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.2/miniwasm_v0.5.2_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/miniwasm-2/genesis.json"
@@ -104,7 +104,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
     "minitia": {
       "type": "miniwasm",
-      "version": "v0.5.2"
+      "version": "v0.5.4"
     }
   }
 }

@@ -38,7 +38,19 @@
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/minievm-2/genesis.json"
     },
-    "versions": []
+    "versions": [
+      {
+        "name": "0.5.3",
+        "recommended_version": "v0.5.5",
+        "compatible_versions": ["v0.5.5"],
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Darwin_aarch64.tar.gz"
+        }
+      }
+    ]
   },
   "description": "Minievm Public Testnet",
   "peers": {
@@ -104,7 +116,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/assetlist.json",
     "minitia": {
       "type": "minievm",
-      "version": "v0.4.1"
+      "version": "v0.5.5"
     }
   }
 }
