@@ -45,13 +45,13 @@
     "versions": [
       {
         "name": "0.5.6",
-        "recommended_version": "v0.5.6",
-        "compatible_versions": ["v0.5.6", "v0.5.6-gas.0"],
+        "recommended_version": "v0.5.7",
+        "compatible_versions": ["v0.5.7"],
         "binaries": {
-          "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.6/initia_v0.5.6_Linux_x86_64.tar.gz",
-          "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.6/initia_v0.5.6_Linux_aarch64.tar.gz",
-          "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.6/initia_v0.5.6_Darwin_x86_64.tar.gz",
-          "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.6/initia_v0.5.6_Darwin_aarch64.tar.gz"
+          "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Darwin_aarch64.tar.gz"
         }
       }
     ]
