@@ -112,37 +112,37 @@
       {
         "chain_id": "minimove-2",
         "port_id": "transfer",
-        "channel_id": "channel-6",
+        "channel_id": "channel-4",
         "version": "ics20-1"
       },
       {
         "chain_id": "minimove-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-7",
+        "channel_id": "channel-5",
         "version": "ics721-1"
       },
       {
         "chain_id": "miniwasm-2",
         "port_id": "transfer",
-        "channel_id": "channel-7",
+        "channel_id": "channel-2",
         "version": "ics20-1"
       },
       {
         "chain_id": "minimove-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-8",
+        "channel_id": "channel-3",
         "version": "ics721-1"
       },
       {
         "chain_id": "minievm-2",
         "port_id": "transfer",
-        "channel_id": "channel-9",
+        "channel_id": "channel-0",
         "version": "ics20-1"
       },
       {
-        "chain_id": "minimove-2",
+        "chain_id": "minievm-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-10",
+        "channel_id": "channel-1",
         "version": "ics721-1"
       }
     ],
