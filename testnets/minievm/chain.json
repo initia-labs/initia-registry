@@ -96,7 +96,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg"
   },
   "metadata": {
-    "op_bridge_id": "5",
+    "op_bridge_id": "1",
     "op_denoms": ["uinit"],
     "executor_uri": "https://executor.minievm-2.initia.xyz",
     "ibc_channels": [

@@ -96,7 +96,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/minimove.svg"
   },
   "metadata": {
-    "op_bridge_id": "4",
+    "op_bridge_id": "3",
     "op_denoms": ["uinit"],
     "executor_uri": "https://executor.minimove-2.initia.xyz",
     "ibc_channels": [
