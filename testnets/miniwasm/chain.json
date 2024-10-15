@@ -68,9 +68,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.initiation-2.initia.xyz/miniwasm-2",
-      "tx_page": "https://scan.initiation-2.initia.xyz/miniwasm-2/txs/${txHash}",
-      "account_page": "https://scan.initiation-2.initia.xyz/miniwasm-2/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/miniwasm-2",
+      "tx_page": "https://scan.testnet.initia.xyz/miniwasm-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/miniwasm-2/accounts/${accountAddress}"
     }
   ],
   "images": [
