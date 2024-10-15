@@ -44,11 +44,15 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.testnet.milkyway.zone",
+        "address": "https://lcd.glados-2.milkyway.zone",
         "provider": "MilkyWay Labs"
       }
     ],
     "grpc": [
+      {
+        "address": "grpc.glados-2.milkyway.zone:443",
+        "provider": "MilkyWay Labs"
+      }
     ]
   },
   "explorers": [
