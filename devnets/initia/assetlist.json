@@ -161,13 +161,11 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/omniINIT.png"
       }
     },
     {
@@ -246,6 +244,32 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/minimoveINIT-INIT.png"
+      }
+    },
+    {
+      "description": "Minitswap Miniwasm IBC INIT Pool Token",
+      "denom_units": [
+        {
+          "denom": "move/320cafeee2e3f801f1ab4d2996570e583a8da0c329f2bda30576ca6a4f65ea23",
+          "exponent": 0
+        },
+        {
+          "denom": "miniwasmINIT-INIT LP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/320cafeee2e3f801f1ab4d2996570e583a8da0c329f2bda30576ca6a4f65ea23",
+      "display": "miniwasmINIT-INIT LP",
+      "name": "miniwasmINIT-INIT LP Token",
+      "symbol": "miniwasmINIT-INIT LP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/miniwasmINIT-INIT.png"
       }
     }
   ]
