@@ -38,19 +38,19 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.glados-2.milkyway.zone",
+        "address": "https://rpc.testnet.milkyway.zone",
         "provider": "MilkyWay Labs"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.glados-2.milkyway.zone",
+        "address": "https://lcd.testnet.milkyway.zone",
         "provider": "MilkyWay Labs"
       }
     ],
     "grpc": [
       {
-        "address": "grpc.glados-2.milkyway.zone:443",
+        "address": "grpc.testnet.milkyway.zone:443",
         "provider": "MilkyWay Labs"
       }
     ]
