@@ -1,0 +1,122 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "minievm",
+  "chain_id": "minievm-2",
+  "website": "https://initia.xyz",
+  "pretty_name": "Minievm",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "umin",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v0.5.2",
+    "compatible_versions": ["v0.5.2"],
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://storage.googleapis.com/init-common-genesis/minievm-2/genesis.json"
+    },
+    "versions": [
+      {
+        "name": "0.5.3",
+        "recommended_version": "v0.5.5",
+        "compatible_versions": ["v0.5.5"],
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Darwin_aarch64.tar.gz"
+        }
+      }
+    ]
+  },
+  "description": "Minievm Public Testnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.minievm-2.initia.xyz",
+        "provider": "Initia Labs"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest.minievm-2.initia.xyz",
+        "provider": "Initia Labs"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc://35.186.157.168:9090",
+        "provider": "Initia Labs"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initiation-2.initia.xyz/minievm-2",
+      "tx_page": "https://scan.initiation-2.initia.xyz/minievm-2/txs/${txHash}",
+      "account_page": "https://scan.initiation-2.initia.xyz/minievm-2/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "1",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://executor.minievm-2.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v0.5.5"
+    }
+  }
+}
