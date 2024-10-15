@@ -3,7 +3,7 @@ name: Watcher - testnet
 on:
   push:
     branches:
-      - initiation-2
+      - main
 
 jobs:
   changed_files:
