@@ -75,7 +75,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MilkyWay.svg"
   },
   "metadata": {
-    "op_bridge_id": "98",
+    "op_bridge_id": "64",
     "op_denoms": [],
     "ibc_channels": [
       {
