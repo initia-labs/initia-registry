@@ -81,7 +81,7 @@
     ],
     "rest": [
       {
-        "address": "https://rest.testnet.initia.xyz",
+        "address": "https://lcd.testnet.initia.xyz",
         "provider": "Initia Labs"
       },
       {
