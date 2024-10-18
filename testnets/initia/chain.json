@@ -165,6 +165,48 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-1",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "transfer",
+        "channel_id": "channel-132",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-134",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "icahost",
+        "channel_id": "channel-139",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "icahost",
+        "channel_id": "channel-140",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "icahost",
+        "channel_id": "channel-137",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "icahost",
+        "channel_id": "channel-141",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "glados-2.1",
+        "port_id": "icahost",
+        "channel_id": "channel-138",
+        "version": "ics20-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
