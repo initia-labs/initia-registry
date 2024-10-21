@@ -40,9 +40,24 @@
     },
     "versions": [
       {
+        "name": "0.5.2",
+        "recommended_version": "v0.5.2",
+        "compatible_versions": [
+          "v0.5.2"
+        ],
+        "height": 1,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
         "name": "0.5.3",
         "recommended_version": "v0.5.5",
         "compatible_versions": ["v0.5.5"],
+        "height": 238760,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_aarch64.tar.gz",
