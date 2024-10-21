@@ -9,9 +9,7 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -34,9 +32,7 @@
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
     "recommended_version": "v0.5.3",
-    "compatible_versions": [
-      "v0.5.3"
-    ],
+    "compatible_versions": ["v0.5.3"],
     "binaries": {
       "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.3/initia_v0.5.3_Linux_x86_64.tar.gz",
       "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.3/initia_v0.5.3_Linux_aarch64.tar.gz",
@@ -50,9 +46,7 @@
       {
         "name": "0.5.6",
         "recommended_version": "v0.5.7",
-        "compatible_versions": [
-          "v0.5.7"
-        ],
+        "compatible_versions": ["v0.5.7"],
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.5.7/initia_v0.5.7_Linux_aarch64.tar.gz",
@@ -64,8 +58,18 @@
   },
   "description": "Initia Public Testnet",
   "peers": {
-    "seeds": [],
-    "persistent_peers": []
+    "seeds": [
+      {
+        "id": "3715cdb41efb45714eb534c3943c5947f4894787",
+        "address": "34.143.179.242:26656"
+      }
+    ],
+    "persistent_peers": [
+      {
+        "id": "3715cdb41efb45714eb534c3943c5947f4894787",
+        "address": "34.143.179.242:26656"
+      }
+    ]
   },
   "apis": {
     "rpc": [
