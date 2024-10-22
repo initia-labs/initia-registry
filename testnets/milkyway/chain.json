@@ -32,7 +32,12 @@
     ]
   },
   "staking": {
-    "staking_tokens": []
+    "staking_tokens": [
+     {
+        "denom": "umilk",
+        "description": "Main staking token for the MilkyWay testnet"
+      }
+    ]  // Added a staking token definition as it becomes more crucial in future implementations
   },
   "description": "MilkyWay Public Testnet",
   "apis": {
@@ -81,7 +86,12 @@
       "account_page": "https://scan.testnet.initia.xyz/glados-1/accounts/${accountAddress}"
     }
   ],
-  "faucets": [],
+  "faucets": [
+    {
+      "address": "https://faucet.milkyway.zone",
+      "description": "Official testnet faucet for MilkyWay"  // Added faucet for easier access to tokens
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MilkyWay.png",
@@ -145,10 +155,9 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/assetlist.json",
-    "minitia": {
-      "type": "miniwasm",
-      "version": "v0.5.4"
-    }
+    "additional_resources": {
+      "governance_params": "https://docs.milkyway.zone/governance",
+      "economic_model": "https://docs.milkyway.zone/economics"
+    }  // Added extra metadata links to improve accessibility
   }
 }
