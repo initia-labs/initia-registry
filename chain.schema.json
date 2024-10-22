@@ -3,7 +3,14 @@
   "title": "Cosmos Chain",
   "description": "Cosmos Chain.json is a metadata file that contains information about a cosmos sdk based chain.",
   "type": "object",
-  "required": ["chain_name", "chain_id", "bech32_prefix", "network_type"],
+  "required": [
+    "chain_name",
+    "chain_id",
+    "bech32_prefix",
+    "network_type",
+    "apis",
+    "fees"
+  ],
   "properties": {
     "$schema": {
       "type": "string",
@@ -105,7 +112,8 @@
           "type": "array",
           "items": {
             "$ref": "#/$defs/fee_token"
-          }
+          },
+          "minContains": "1"
         }
       },
       "additionalProperties": false
@@ -474,18 +482,21 @@
     },
     "apis": {
       "type": "object",
+      "required": ["rpc", "rest"],
       "properties": {
         "rpc": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
-          }
+          },
+          "minContains": "1"
         },
         "rest": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
-          }
+          },
+          "minContains": "1"
         },
         "api": {
           "type": "array",
