@@ -9,23 +9,25 @@
   "bech32_prefix": "init",
   "daemon_name": "milkywayd",
   "node_home": "$HOME/.milkywayd",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
       {
         "denom": "umilk",
         "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.2,
-        "average_gas_price": 0.3,
-        "high_gas_price": 0.4
+        "low_gas_price": 0.20,
+        "average_gas_price": 0.30,
+        "high_gas_price": 0.40
       },
       {
         "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
         "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.2,
-        "average_gas_price": 0.3,
-        "high_gas_price": 0.4
+        "low_gas_price": 0.20,
+        "average_gas_price": 0.30,
+        "high_gas_price": 0.40
       }
     ]
   },
