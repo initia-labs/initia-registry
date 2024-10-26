@@ -1,0 +1,53 @@
+{
+  "chain_name": "PreYominet",
+  "chain_id": "preyominet-1",
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://maze-rpc-sequencer-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz/"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://maze-rest-sequencer-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz/"
+      }
+    ]
+  },
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "evm/9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
+        "fixed_min_gas_price": 1000000000,
+        "low_gas_price": 1000000000,
+        "average_gas_price": 1500000000,
+        "high_gas_price": 2000000000
+      }
+    ]
+  },
+  "metadata": {
+    "op_bridge_id": "80",
+    "op_denoms": [
+      "uinit"
+    ],
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ]
+  }
+}
