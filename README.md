@@ -1,4 +1,4 @@
-# Initia Registry
+A# Initia Registry
 
 The Initia Registry serves as a central repository containing crucial metadata for chains within the Initia ecosystem. 
 
