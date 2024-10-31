@@ -42,7 +42,7 @@
         "provider": "MilkyWay Labs"
       },
       {
-        "address": " https://rpc-skip.testnet.milkyway.zone",
+        "address": "https://rpc-skip.testnet.milkyway.zone",
         "provider": "MilkyWay Labs",
         "authorizedUser": "skip",
         "indexForSkip": 0
@@ -77,8 +77,8 @@
     {
       "kind": "initia scan",
       "url": "https://scan.testnet.initia.xyz/glados-2.1",
-      "tx_page": "https://scan.testnet.initia.xyz/glados-1/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/glados-1/accounts/${accountAddress}"
+      "tx_page": "https://scan.testnet.initia.xyz/glados-2.1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/glados-2.1/accounts/${accountAddress}"
     }
   ],
   "faucets": [],
