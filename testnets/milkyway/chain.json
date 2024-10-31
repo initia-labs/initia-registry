@@ -42,7 +42,7 @@
         "provider": "MilkyWay Labs"
       },
       {
-        "address": " https://rpc-skip.testnet.milkyway.zone",
+        "address": "https://rpc-skip.testnet.milkyway.zone",
         "provider": "MilkyWay Labs",
         "authorizedUser": "skip",
         "indexForSkip": 0
