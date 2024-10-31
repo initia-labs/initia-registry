@@ -487,21 +487,21 @@
         "rpc": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/endpoint"
+            "$ref": "#/$defs/secureEndpoint"
           },
           "minContains": "1"
         },
         "rest": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/endpoint"
+            "$ref": "#/$defs/secureEndpoint"
           },
           "minContains": "1"
         },
         "api": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/endpoint"
+            "$ref": "#/$defs/secureEndpoint"
           }
         },
         "grpc": {
@@ -677,6 +677,31 @@
         "address": {
           "type": "string",
           "format": "uri"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "archive": {
+          "type": "boolean",
+          "default": false
+        },
+        "authorizedUser": {
+          "type": "string"
+        },
+        "indexForSkip": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "secureEndpoint": {
+      "type": "object",
+      "required": ["address"],
+      "properties": {
+        "address": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://."
         },
         "provider": {
           "type": "string"
