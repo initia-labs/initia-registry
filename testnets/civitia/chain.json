@@ -40,6 +40,12 @@
         "address": "https://maze-rest-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz",
         "provider": "Civitia"
       }
+    ],
+    "grpc": [
+      {
+        "address": "maze-grpc-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz:443",
+        "provider": "Civitia"
+      }
     ]
   },
   "explorers": [
