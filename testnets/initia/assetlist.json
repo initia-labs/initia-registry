@@ -275,6 +275,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/minimoveINIT-INIT.png"
       }
+    },
+    {
+      "description": "BSC LayerZero Test Token",
+      "denom_units": [
+        {
+          "denom": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
+          "exponent": 0
+        },
+        {
+          "denom": "TEST LZ",
+          "exponent": 6
+        }
+      ],
+      "base": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
+      "display": "BSC LZ Test",
+      "name": "BSC LayerZero Test Token",
+      "symbol": "TEST LZ",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png"
+      }
     }
   ]
 }
