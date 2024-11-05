@@ -14,7 +14,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "umin",
+        "denom": "GAS",
         "fixed_min_gas_price": 0,
         "low_gas_price": 0,
         "average_gas_price": 0,
