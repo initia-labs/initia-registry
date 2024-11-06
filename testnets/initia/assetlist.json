@@ -285,11 +285,11 @@
         },
         {
           "denom": "TEST LZ",
-          "exponent": 6
+          "exponent": 8
         }
       ],
       "base": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
-      "display": "BSC LZ Test",
+      "display": "TEST LZ",
       "name": "BSC LayerZero Test Token",
       "symbol": "TEST LZ",
       "coingecko_id": "",
