@@ -75,8 +75,7 @@ export const ChainSchema = z
             .strict()
         ),
       })
-      .strict()
-      .optional(),
+      .strict(),
     staking: z
       .object({
         staking_tokens: z.array(
@@ -329,37 +328,33 @@ export const ChainSchema = z
       .optional(),
     apis: z
       .object({
-        rpc: z
-          .array(
-            z
-              .object({
-                address: z.string().url(),
-                provider: z.string().optional(),
-                archive: z.boolean().default(false),
-                authorizedUser: z.string().optional(),
-                indexForSkip: z.number().optional(),
-              })
-              .strict()
-          )
-          .optional(),
-        rest: z
-          .array(
-            z
-              .object({
-                address: z.string().url(),
-                provider: z.string().optional(),
-                archive: z.boolean().default(false),
-                authorizedUser: z.string().optional(),
-                indexForSkip: z.number().optional(),
-              })
-              .strict()
-          )
-          .optional(),
+        rpc: z.array(
+          z
+            .object({
+              address: z.string().url().regex(new RegExp("^https://.")),
+              provider: z.string().optional(),
+              archive: z.boolean().default(false),
+              authorizedUser: z.string().optional(),
+              indexForSkip: z.number().optional(),
+            })
+            .strict()
+        ),
+        rest: z.array(
+          z
+            .object({
+              address: z.string().url().regex(new RegExp("^https://.")),
+              provider: z.string().optional(),
+              archive: z.boolean().default(false),
+              authorizedUser: z.string().optional(),
+              indexForSkip: z.number().optional(),
+            })
+            .strict()
+        ),
         api: z
           .array(
             z
               .object({
-                address: z.string().url(),
+                address: z.string().url().regex(new RegExp("^https://.")),
                 provider: z.string().optional(),
                 archive: z.boolean().default(false),
                 authorizedUser: z.string().optional(),
@@ -421,8 +416,7 @@ export const ChainSchema = z
           )
           .optional(),
       })
-      .strict()
-      .optional(),
+      .strict(),
     explorers: z
       .array(
         z
