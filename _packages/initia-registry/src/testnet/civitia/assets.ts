@@ -8,7 +8,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/afaa3f4e1717c75712f8e8073e41f051a4e516cd25daa82d948c4729388edefd",
+            "l2/1666ede2bf1985307a86de36a6b78411cbf1edeffc2ac569e6a7b2f8753db4bb",
           exponent: 0,
         },
         {
@@ -16,11 +16,8 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/afaa3f4e1717c75712f8e8073e41f051a4e516cd25daa82d948c4729388edefd",
+      base: "l2/1666ede2bf1985307a86de36a6b78411cbf1edeffc2ac569e6a7b2f8753db4bb",
       display: "INIT",
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
       traces: [
         {
           type: "op",
@@ -29,10 +26,13 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "24",
+            bridge_id: "100",
           },
         },
       ],
+      name: "Initia Native Token",
+      symbol: "INIT",
+      coingecko_id: "",
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.png",
@@ -42,62 +42,6 @@ const info: AssetList = {
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.png",
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.svg",
-      },
-    },
-    {
-      description: "MilkyWay IBC bridged milkINIT",
-      denom_units: [
-        {
-          denom:
-            "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-          exponent: 0,
-        },
-        {
-          denom: "milkINIT",
-          exponent: 6,
-        },
-      ],
-      base: "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-      display: "milkINIT",
-      name: "MilkyWay IBC milkINIT",
-      symbol: "milkINIT",
-      coingecko_id: "",
-      traces: [
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "milkyway",
-            base_denom: "milkuinit",
-            channel_id: "channel-0",
-          },
-          chain: {
-            channel_id: "channel-310",
-            path: "transfer/channel-310/milkuinit",
-          },
-        },
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom:
-              "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
-            channel_id: "channel-48",
-          },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/transfer/channel-310/milkuinit",
-          },
-        },
-      ],
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
       },
     },
   ],

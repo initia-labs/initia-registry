@@ -1,10 +1,10 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "miniwasm",
-  chain_id: "miniwasm-2",
+  chain_name: "minievm",
+  chain_id: "minievm-2",
   website: "https://initia.xyz",
-  pretty_name: "Miniwasm",
+  pretty_name: "Minievm",
   status: "live",
   network_type: "testnet",
   bech32_prefix: "init",
@@ -15,7 +15,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: "umin",
+        denom: "GAS",
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
@@ -27,15 +27,15 @@ const info: Chain = {
     staking_tokens: [],
   },
   codebase: {},
-  description: "Miniwasm Public Testnet",
+  description: "Minievm Public Testnet",
   apis: {
     rpc: [
       {
-        address: "https://rpc.miniwasm-2.initia.xyz",
+        address: "https://rpc.minievm-2.initia.xyz",
         provider: "Initia Labs",
       },
       {
-        address: "https://rpc-skip.miniwasm-2.initia.xyz",
+        address: "https://rpc-skip.minievm-2.initia.xyz",
         provider: "Initia Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -43,11 +43,11 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: "https://rest.miniwasm-2.initia.xyz",
+        address: "https://rest.minievm-2.initia.xyz",
         provider: "Initia Labs",
       },
       {
-        address: "https://rpc-skip.miniwasm-2.initia.xyz",
+        address: "https://rest-skip.minievm-2.initia.xyz",
         provider: "Initia Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -55,11 +55,11 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: "grpc://35.240.141.79:9090",
+        address: "grpc://35.186.157.168:9090",
         provider: "Initia Labs",
       },
       {
-        address: "grpc-skip.miniwasm-2.initia.xyz:443",
+        address: "grpc-skip.minievm-2.initia.xyz:443",
         provider: "Initia Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -69,26 +69,26 @@ const info: Chain = {
   explorers: [
     {
       kind: "initia scan",
-      url: "https://scan.testnet.initia.xyz/miniwasm-2",
-      tx_page: "https://scan.testnet.initia.xyz/miniwasm-2/txs/${txHash}",
+      url: "https://scan.testnet.initia.xyz/minievm-2",
+      tx_page: "https://scan.testnet.initia.xyz/minievm-2/txs/${txHash}",
       account_page:
-        "https://scan.testnet.initia.xyz/miniwasm-2/accounts/${accountAddress}",
+        "https://scan.testnet.initia.xyz/minievm-2/accounts/${accountAddress}",
     },
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
+      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
+    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg",
   },
   metadata: {
-    op_bridge_id: "2",
+    op_bridge_id: "1",
     op_denoms: ["uinit"],
-    executor_uri: "https://executor.miniwasm-2.initia.xyz",
+    executor_uri: "https://executor.minievm-2.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-2",
@@ -98,17 +98,16 @@ const info: Chain = {
       },
       {
         chain_id: "initiation-2",
-        port_id:
-          "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        port_id: "nft-transfer",
         channel_id: "channel-1",
         version: "ics721-1",
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/assetlist.json",
     minitia: {
-      type: "miniwasm",
-      version: "v0.5.4",
+      type: "minievm",
+      version: "v0.5.5",
     },
   },
 };

@@ -2,7 +2,7 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "milkyway",
-  chain_id: "glados-1",
+  chain_id: "glados-2.1",
   website: "https://milkyway.zone",
   pretty_name: "MilkyWay",
   status: "live",
@@ -42,7 +42,7 @@ const info: Chain = {
         provider: "MilkyWay Labs",
       },
       {
-        address: " https://rpc-skip.testnet.milkyway.zone",
+        address: "https://rpc-skip.testnet.milkyway.zone",
         provider: "MilkyWay Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -62,6 +62,10 @@ const info: Chain = {
     ],
     grpc: [
       {
+        address: "grpc.testnet.milkyway.zone:443",
+        provider: "MilkyWay Labs",
+      },
+      {
         address: "grpc-skip.testnet.milkyway.zone:443",
         provider: "MilkyWay Labs",
         authorizedUser: "skip",
@@ -72,10 +76,10 @@ const info: Chain = {
   explorers: [
     {
       kind: "initia scan",
-      url: "https://scan.testnet.initia.xyz/glados-1",
-      tx_page: "https://scan.testnet.initia.xyz/glados-1/txs/${txHash}",
+      url: "https://scan.testnet.initia.xyz/glados-2.1",
+      tx_page: "https://scan.testnet.initia.xyz/glados-2.1/txs/${txHash}",
       account_page:
-        "https://scan.testnet.initia.xyz/glados-1/accounts/${accountAddress}",
+        "https://scan.testnet.initia.xyz/glados-2.1/accounts/${accountAddress}",
     },
   ],
   faucets: [],
@@ -90,61 +94,65 @@ const info: Chain = {
     svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MilkyWay.svg",
   },
   metadata: {
-    op_bridge_id: "98",
+    op_bridge_id: "64",
     op_denoms: [],
     ibc_channels: [
       {
-        chain_id: "initiation-1",
+        chain_id: "initiation-2",
         port_id: "transfer",
         channel_id: "channel-0",
         version: "ics20-1",
       },
       {
-        chain_id: "initiation-1",
+        chain_id: "initiation-2",
         port_id:
           "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
         channel_id: "channel-1",
         version: "ics721-1",
       },
       {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.FEE,",
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.DELEGATION",
+        channel_id: "channel-2",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.FEE",
         channel_id: "channel-3",
         version: "ics20-1",
       },
       {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.WITHDRAWAL",
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.WITHDRAWAL",
         channel_id: "channel-4",
         version: "ics20-1",
       },
       {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.REDEMPTION",
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.REDEMPTION",
         channel_id: "channel-5",
         version: "ics20-1",
       },
       {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.COMMUNITY_POOL_DEPOSIT",
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.COMMUNITY_POOL_DEPOSIT",
         channel_id: "channel-6",
         version: "ics20-1",
       },
       {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.COMMUNITY_POOL_RETURN",
+        chain_id: "initiation-2",
+        port_id: "icacontroller-initiation-2.COMMUNITY_POOL_RETURN",
         channel_id: "channel-7",
-        version: "ics20-1",
-      },
-      {
-        chain_id: "initiation-1",
-        port_id: "icacontroller-initiation-1.DELEGATION",
-        channel_id: "channel-8",
         version: "ics20-1",
       },
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/assetlist.json",
+    minitia: {
+      type: "miniwasm",
+      version: "v0.5.4",
+    },
   },
 };
 export default info;
