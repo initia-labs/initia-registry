@@ -59,7 +59,7 @@ export interface Chain {
   key_algos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
   slip44?: number;
   alternative_slip44s?: number[];
-  fees?: {
+  fees: {
     fee_tokens: FeeToken[];
   };
   staking?: {
@@ -186,10 +186,10 @@ export interface Chain {
     seeds?: Peer[];
     persistent_peers?: Peer[];
   };
-  apis?: {
-    rpc?: Endpoint[];
-    rest?: Endpoint[];
-    api?: Endpoint[];
+  apis: {
+    rpc: SecureEndpoint[];
+    rest: SecureEndpoint[];
+    api?: SecureEndpoint[];
     grpc?: Endpoint[];
     wss?: Endpoint[];
     "grpc-web"?: Endpoint[];
@@ -268,6 +268,13 @@ export interface Peer {
   id: string;
   address: string;
   provider?: string;
+}
+export interface SecureEndpoint {
+  address: string;
+  provider?: string;
+  archive?: boolean;
+  authorizedUser?: string;
+  indexForSkip?: number;
 }
 export interface Endpoint {
   address: string;
