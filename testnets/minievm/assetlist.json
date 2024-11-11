@@ -45,6 +45,32 @@
       }
     },
     {
+      "description": "The gas token of minievm",
+      "denom_units": [
+        {
+          "denom": "GAS",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x8fA4Be7466a9261d8847663adf5e34a271F8aE17",
+      "base": "GAS",
+      "display": "GAS",
+      "name": "Minievm Gas Token",
+      "symbol": "GAS",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+      }
+    },
+    {
       "description": "The fake ETH",
       "denom_units": [
         {
