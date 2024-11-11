@@ -24,6 +24,9 @@
       "type": "string",
       "pattern": "[a-z0-9]+"
     },
+    "evm_chain_id": {
+      "type": "number"
+    },
     "pre_fork_chain_name": {
       "type": "string",
       "pattern": "[a-z0-9]+"
@@ -522,11 +525,21 @@
             "$ref": "#/$defs/endpoint"
           }
         },
-        "evm-http-jsonrpc": {
+        "json-rpc": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/secureEndpoint"
+          },
+          "minContains": "1",
+          "description": "Evm json rpc uri"
+        },
+        "json-rpc-websocket": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/endpoint"
-          }
+          },
+          "minContains": "1",
+          "description": "Evm json rpc websocket uri"
         }
       },
       "additionalProperties": false
@@ -653,6 +666,31 @@
     }
   },
   "additionalProperties": false,
+  "if": {
+    "properties": {
+      "metadata": {
+        "properties": {
+          "minitia": {
+            "properties": {
+              "type": {
+                "const": "minievm"
+              }
+            },
+            "required": ["type"]
+          }
+        },
+        "required": ["minitia"]
+      }
+    }
+  },
+  "then": {
+    "required": ["evm_chain_id"],
+    "properties": {
+      "apis": {
+        "required": ["json-rpc", "json-rpc-websocket"]
+      }
+    }
+  },
   "$defs": {
     "peer": {
       "type": "object",
