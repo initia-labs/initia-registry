@@ -2,6 +2,7 @@
   "$schema": "../../chain.schema.json",
   "chain_name": "minievm",
   "chain_id": "minievm-2",
+  "evm_chain_id": 4303131403034904,
   "website": "https://initia.xyz",
   "pretty_name": "Minievm",
   "status": "live",
@@ -42,9 +43,7 @@
       {
         "name": "0.5.2",
         "recommended_version": "v0.5.2",
-        "compatible_versions": [
-          "v0.5.2"
-        ],
+        "compatible_versions": ["v0.5.2"],
         "height": 1,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_x86_64.tar.gz",
@@ -143,6 +142,18 @@
         "provider": "Initia Labs",
         "authorizedUser": "skip",
         "indexForSkip": 0
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://json-rpc.minievm-2.initia.xyz",
+        "provider": "Initia Labs"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "https://json-rpc-websocket.minievm-2.initia.xyz",
+        "provider": "Initia Labs"
       }
     ]
   },
