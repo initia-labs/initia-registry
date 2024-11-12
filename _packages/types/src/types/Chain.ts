@@ -15,6 +15,7 @@ export interface Chain {
   $schema?: string;
   chain_name: string;
   chain_id: string;
+  evm_chain_id?: number;
   pre_fork_chain_name?: string;
   pretty_name?: string;
   website?: string;
@@ -193,7 +194,14 @@ export interface Chain {
     grpc?: Endpoint[];
     wss?: Endpoint[];
     "grpc-web"?: Endpoint[];
-    "evm-http-jsonrpc"?: Endpoint[];
+    /**
+     * Evm json rpc uri
+     */
+    "json-rpc"?: SecureEndpoint[];
+    /**
+     * Evm json rpc websocket uri
+     */
+    "json-rpc-websocket"?: Endpoint[];
   };
   explorers?: Explorer[];
   faucets?: Faucet[];
