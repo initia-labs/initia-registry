@@ -8,6 +8,7 @@ export const ChainSchema = z
       .optional(),
     chain_name: z.string().regex(new RegExp("[a-z0-9]+")),
     chain_id: z.string().regex(new RegExp("[a-z0-9]+")),
+    evm_chain_id: z.number().optional(),
     pre_fork_chain_name: z.string().regex(new RegExp("[a-z0-9]+")).optional(),
     pretty_name: z.string().optional(),
     website: z.string().url().optional(),
@@ -402,7 +403,21 @@ export const ChainSchema = z
               .strict()
           )
           .optional(),
-        "evm-http-jsonrpc": z
+        "json-rpc": z
+          .array(
+            z
+              .object({
+                address: z.string().url().regex(new RegExp("^https://.")),
+                provider: z.string().optional(),
+                archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
+              })
+              .strict()
+          )
+          .describe("Evm json rpc uri")
+          .optional(),
+        "json-rpc-websocket": z
           .array(
             z
               .object({
@@ -414,6 +429,7 @@ export const ChainSchema = z
               })
               .strict()
           )
+          .describe("Evm json rpc websocket uri")
           .optional(),
       })
       .strict(),
