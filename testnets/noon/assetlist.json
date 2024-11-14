@@ -33,13 +33,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/INIT.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/INIT.svg"
       }
     },
     {
@@ -75,13 +75,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/ETH.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/ETH.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/ETH.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/ETH.svg"
       }
     },
     {
@@ -117,13 +117,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/minimove/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/minimove/images/USDC.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/minimove/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/minimove/images/USDC.svg"
       }
     },
     {
@@ -159,13 +159,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/TIA.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/TIA.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/TIA.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/initia/images/TIA.svg"
       }
     },
     {
@@ -213,13 +213,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/tucana/images/TUCANA.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/tucana/images/TUCANA.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/tucana/images/TUCANA.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/tucana/images/TUCANA.svg"
       }
     },
     {
@@ -241,13 +241,13 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/NOON.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/NOON.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/noon/images/NOON.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/NOON.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/noon/images/NOON.svg"
       }
     },
     {
@@ -295,13 +295,13 @@
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/milkyway/images/milkINIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/milkyway/images/milkINIT.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/milkyway/images/milkINIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/milkyway/images/milkINIT.svg"
       }
     }
   ]

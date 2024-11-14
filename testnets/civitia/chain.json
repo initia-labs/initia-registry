@@ -69,13 +69,13 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/civitia/images/civitia.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/civitia/images/civitia.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/civitia/images/civitia.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/civitia/images/civitia.svg"
   },
   "metadata": {
     "op_bridge_id": "24",
@@ -95,7 +95,7 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/civitia/assetlist.json",
     "minitia": {
       "type": "minimove",
       "version": "v0.2.12"

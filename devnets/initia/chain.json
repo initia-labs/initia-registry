@@ -106,13 +106,13 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/initia/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/initia/images/INIT.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/initia/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/initia/images/INIT.svg"
   },
   "metadata": {
     "is_l1": true,
@@ -142,6 +142,6 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/initia/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/initia/assetlist.json"
   }
 }

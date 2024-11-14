@@ -88,11 +88,11 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/images/stonemove.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/stonemove/images/stonemove.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/images/stonemove.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/stonemove/images/stonemove.png"
   },
   "metadata": {
     "op_bridge_id": "1",
@@ -112,7 +112,7 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/devnets/stonemove/assetlist.json",
     "minitia": {
       "type": "minimove",
       "version": "v0.3.0"

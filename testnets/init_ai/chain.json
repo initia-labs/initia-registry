@@ -72,13 +72,13 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/images/init_ai.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/images/init_ai.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/init_ai/images/init_ai.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/init_ai/images/init_ai.svg"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/images/init_ai.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/images/init_ai.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/init_ai/images/init_ai.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/init_ai/images/init_ai.svg"
   },
   "metadata": {
     "op_bridge_id": "6",
@@ -98,7 +98,7 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/init_ai/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/initiation-1/testnets/init_ai/assetlist.json",
     "minitia": {
       "type": "minimove",
       "version": "v0.2.12"
