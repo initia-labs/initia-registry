@@ -38,11 +38,11 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: "https://rpc.testnet.milkyway.zone",
+        address: "https://rpc.rollup-testnet.milkyway.zone",
         provider: "MilkyWay Labs",
       },
       {
-        address: "https://rpc-skip.testnet.milkyway.zone",
+        address: "https://rpc-skip.rollup-testnet.milkyway.zone",
         provider: "MilkyWay Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -50,11 +50,11 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: "https://lcd.testnet.milkyway.zone",
+        address: "https://lcd.rollup-testnet.milkyway.zone",
         provider: "MilkyWay Labs",
       },
       {
-        address: "https://lcd-skip.testnet.milkyway.zone",
+        address: "https://lcd-skip.rollup-testnet.milkyway.zone",
         provider: "MilkyWay Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
@@ -62,11 +62,11 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: "grpc.testnet.milkyway.zone:443",
+        address: "grpc.rollup-testnet.milkyway.zone:443",
         provider: "MilkyWay Labs",
       },
       {
-        address: "grpc-skip.testnet.milkyway.zone:443",
+        address: "grpc-skip.rollup-testnet.milkyway.zone:443",
         provider: "MilkyWay Labs",
         authorizedUser: "skip",
         indexForSkip: 0,

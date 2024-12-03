@@ -3,6 +3,7 @@ const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "minievm",
   chain_id: "minievm-2",
+  evm_chain_id: 4303131403034904,
   website: "https://initia.xyz",
   pretty_name: "Minievm",
   status: "live",
@@ -16,10 +17,10 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: "GAS",
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0,
+        fixed_min_gas_price: 15000000000,
+        low_gas_price: 15000000000,
+        average_gas_price: 15000000000,
+        high_gas_price: 40000000000,
       },
     ],
   },
@@ -63,6 +64,18 @@ const info: Chain = {
         provider: "Initia Labs",
         authorizedUser: "skip",
         indexForSkip: 0,
+      },
+    ],
+    "json-rpc": [
+      {
+        address: "https://json-rpc.minievm-2.initia.xyz",
+        provider: "Initia Labs",
+      },
+    ],
+    "json-rpc-websocket": [
+      {
+        address: "https://json-rpc-websocket.minievm-2.initia.xyz",
+        provider: "Initia Labs",
       },
     ],
   },
