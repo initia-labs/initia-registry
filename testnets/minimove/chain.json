@@ -105,7 +105,7 @@
         "compatible_versions": [
           "v0.6.5"
         ],
-        "height": 3544900,
+        "height": 4062800,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v0.6.5/minimove_v0.6.5_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v0.6.5/minimove_v0.6.5_Linux_aarch64.tar.gz",
