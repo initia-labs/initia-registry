@@ -1,6 +1,6 @@
 // Purpose:
 //   to synchronize the `logo_URIs` and `images` proprties, 
-//   and to synchronize linked iamges, where an image for one chain or asset is to be the same as another
+//   and to synchronize linked images, where an image for one chain or asset is to be the same as another
 
 
 // -- THE PLAN --
