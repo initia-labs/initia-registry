@@ -191,7 +191,7 @@
       {
         "chain_id": "miniwasm-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-1",
+        "channel_id": "channel-3",
         "version": "ics721-1"
       },
       {
