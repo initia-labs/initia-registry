@@ -1,0 +1,30 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "YomiTestNet",
+  "assets": [
+    {
+      "description": "The Kamigotchi world currency",
+      "denom_units": [
+        {
+          "denom": "evm/9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
+          "exponent": 18
+        }
+      ],
+      "base": "onyx",
+      "display": "ONYX",
+      "name": "ONYX",
+      "symbol": "ONYX",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.svg"
+      }
+    }
+  ]
+}
