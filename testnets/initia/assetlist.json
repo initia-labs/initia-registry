@@ -301,6 +301,34 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png"
       }
+    },
+    {
+      "description": "Noble USDC",
+      "denom_units": [
+        {
+          "denom": "ibc/185206FF8521AE7DA181D954EB6CBE20998E010CE0C6ED9E375BB3F35D90C0DF",
+          "exponent": 0
+        },
+        {
+          "denom": "nUSDC",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/185206FF8521AE7DA181D954EB6CBE20998E010CE0C6ED9E375BB3F35D90C0DF",
+      "display": "nUSDC",
+      "name": "Noble USDC",
+      "symbol": "nUSDC",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+      }
     }
   ]
 }
