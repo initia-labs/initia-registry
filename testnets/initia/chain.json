@@ -269,6 +269,19 @@
         "version": "ics20-1"
       },
       {
+
+        "chain_id": "preyominet-1",
+        "port_id":"transfer",
+        "channel_id":"channel-177",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "preyominet-1",
+        "port_id":"nft-transfer",
+        "channel_id":"channel-178",
+        "version": "ics721-1" 
+      },
+      {
         "chain_id": "landlord-2",
         "port_id": "transfer",
         "channel_id": "channel-222",
