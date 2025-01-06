@@ -19,13 +19,13 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
       }
     }
   ]
