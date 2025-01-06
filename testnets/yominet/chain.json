@@ -1,4 +1,5 @@
 {
+  "$schema": "../../chain.schema.json",
   "chain_name": "yominet",
   "pretty_name": "PreYominet",
   "chain_id": "preyominet-1",
@@ -36,19 +37,8 @@
     "op_denoms": [
       "uinit"
     ],
+    "executor_uri": "https://maze-api-opinit-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz",
     "ibc_channels": [
-      {
-        "chain_id": "preyominet-1",
-        "port_id":"transfer",
-        "channel_id":"channel-177",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "preyominet-1",
-        "port_id":"nft-transfer",
-        "channel_id":"channel-178",
-        "version": "ics721-1" 
-      },
       {
         "chain_id": "initiation-2",
         "port_id": "transfer",
@@ -61,6 +51,11 @@
         "channel_id": "channel-1",
         "version": "ics721-1"
       }
-    ]
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominetassetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v0.5.5"
+    }
   }
 }

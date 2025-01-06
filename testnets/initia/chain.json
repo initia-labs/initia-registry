@@ -233,6 +233,18 @@
         "port_id": "icahost",
         "channel_id": "channel-138",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "preyominet-1",
+        "port_id":"transfer",
+        "channel_id":"channel-177",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "preyominet-1",
+        "port_id":"nft-transfer",
+        "channel_id":"channel-178",
+        "version": "ics721-1" 
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
