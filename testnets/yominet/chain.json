@@ -3,6 +3,7 @@
   "chain_name": "yominet",
   "pretty_name": "PreYominet",
   "chain_id": "preyominet-1",
+  "evm_chain_id": 4471190363524365,
   "bech32_prefix": "init",
   "network_type": "testnet",
   "apis": {
@@ -14,6 +15,16 @@
     "rest": [
       {
         "address": "https://maze-rest-sequencer-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz/"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://json-rpc.preyominet.initia.tech"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://json-rpc-websocket.preyominet.initia.tech"
       }
     ]
   },
