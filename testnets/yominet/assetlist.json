@@ -10,7 +10,9 @@
           "exponent": 18
         }
       ],
-      "base": "onyx",
+      "type_asset": "erc20",
+      "address": "0x9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
+      "base": "evm/9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
       "display": "ONYX",
       "name": "ONYX",
       "symbol": "ONYX",
