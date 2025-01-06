@@ -329,6 +329,59 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
       }
+    },
+    {
+      "description": "Wrapped Minievm GAS",
+      "denom_units": [
+        {
+          "denom": "ibc/F7E89DFCD9DA084DA719198EA4C47005EE6B27F69EA742F6BA77E34141970F76",
+          "exponent": 0
+        },
+        {
+          "denom": "wGAS",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/F7E89DFCD9DA084DA719198EA4C47005EE6B27F69EA742F6BA77E34141970F76",
+      "display": "wGAS",
+      "name": "Wrapped Minievm GAS",
+      "symbol": "wGAS",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "minievm",
+            "base_denom": "GAS"
+          },
+          "chain": {
+            "contract": "0x4b96Cd1F1fD63f925B06e06BA9EF4051072b781a"
+          },
+          "provider": "Decimal Wrapper"
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "minievm",
+            "base_denom": "evm/6f3790E91caf7B020f178aaB4482a2B1B5E9f45C",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/evm/6f3790E91caf7B020f178aaB4482a2B1B5E9f45C"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+      }
     }
   ]
 }
