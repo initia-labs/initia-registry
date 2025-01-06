@@ -1,5 +1,6 @@
 {
-  "chain_name": "PreYominet",
+  "chain_name": "yominet",
+  "pretty_name": "PreYominet",
   "chain_id": "preyominet-1",
   "bech32_prefix": "init",
   "network_type": "testnet",
@@ -36,6 +37,18 @@
       "uinit"
     ],
     "ibc_channels": [
+      {
+        "chain_id": "preyominet-1",
+        "port_id":"transfer",
+        "channel_id":"channel-177",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "preyominet-1",
+        "port_id":"nft-transfer",
+        "channel_id":"channel-178",
+        "version": "ics721-1" 
+      },
       {
         "chain_id": "initiation-2",
         "port_id": "transfer",

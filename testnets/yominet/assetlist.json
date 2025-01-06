@@ -1,6 +1,6 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "YomiTestNet",
+  "chain_name": "yominet",
   "assets": [
     {
       "description": "The Kamigotchi world currency",
@@ -17,13 +17,13 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.svg"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/kamigotchi/images/ONYX.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/ONYX.svg"
       }
     }
   ]
