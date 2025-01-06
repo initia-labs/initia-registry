@@ -8,7 +8,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+            "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
           exponent: 0,
         },
         {
@@ -16,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd",
+      base: "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
       display: "INIT",
       traces: [
         {
@@ -26,7 +26,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "1",
+            bridge_id: "3",
           },
         },
       ],
@@ -174,115 +174,45 @@ const info: AssetList = {
       },
     },
     {
-      description: "The native token of Tucana",
+      description: "BSC LayerZero Test Token",
       denom_units: [
         {
           denom:
-            "ibc/F04D40D5C3F283DD816EFA276B11D4804A2ECAB45F654D7355C0209760CCD051",
+            "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
           exponent: 0,
         },
         {
-          denom: "TUC",
-          exponent: 6,
+          denom: "TEST LZ",
+          exponent: 8,
         },
       ],
-      base: "ibc/F04D40D5C3F283DD816EFA276B11D4804A2ECAB45F654D7355C0209760CCD051",
-      display: "TUC",
-      name: "Tucana Native Token",
-      symbol: "TUC",
+      base: "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
+      display: "TEST LZ",
+      name: "BSC LayerZero Test Token",
+      symbol: "TEST LZ",
       coingecko_id: "",
       traces: [
         {
           type: "ibc",
           counterparty: {
-            chain_name: "tucana",
-            base_denom: "utuc",
-            channel_id: "channel-0",
-          },
-          chain: {
-            channel_id: "channel-25",
-            path: "transfer/channel-25/utuc",
-          },
-        },
-        {
-          type: "ibc",
-          counterparty: {
             chain_name: "initia",
             base_denom:
-              "ibc/276C63284D960E3E4D76AEFC9A8BA338BAD24E30530C7C95E7EFC4D250D4E23D",
+              "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
             channel_id: "channel-0",
           },
           chain: {
             channel_id: "channel-0",
-            path: "transfer/channel-0/transfer/channel-25/utuc",
+            path: "transfer/channel-0/move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
           },
         },
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/tucana/images/TUCANA.svg",
-      },
-    },
-    {
-      description: "MilkyWay IBC bridged milkINIT",
-      denom_units: [
-        {
-          denom:
-            "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-          exponent: 0,
-        },
-        {
-          denom: "milkINIT",
-          exponent: 6,
-        },
-      ],
-      base: "ibc/22D8C3F45607B466D8691E308F9CF86729DAFCBE94BB1FC89F3511FE24E848E2",
-      display: "milkINIT",
-      name: "MilkyWay IBC milkINIT",
-      symbol: "milkINIT",
-      coingecko_id: "",
-      traces: [
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "milkyway",
-            base_denom: "milkuinit",
-            channel_id: "channel-0",
-          },
-          chain: {
-            channel_id: "channel-310",
-            path: "transfer/channel-310/milkuinit",
-          },
-        },
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom:
-              "ibc/26939E676F967B14E319631A9A42233148BBC7F7CEFDCBD347447AF0AE37B1AD",
-            channel_id: "channel-0",
-          },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/transfer/channel-310/milkuinit",
-          },
-        },
-      ],
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
       },
     },
   ],

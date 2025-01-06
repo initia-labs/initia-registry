@@ -16,6 +16,7 @@ const selectedChainProperties: (keyof Chain)[] = [
   "logo_URIs",
   "bech32_prefix",
   "network_type",
+  "evm_chain_id",
 ]
 
 // Aggregates chain data from all chain.json files in the given directory

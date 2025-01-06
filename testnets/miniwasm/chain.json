@@ -27,13 +27,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
-    "recommended_version": "v0.5.4",
-    "compatible_versions": ["v0.5.4"],
+    "recommended_version": "v0.6.4",
+    "compatible_versions": ["v0.6.4"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/miniwasm-2/genesis.json"
@@ -52,6 +52,34 @@
           "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_x86_64.tar.gz",
           "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Darwin_aarch64.tar.gz"
         }
+      },
+      {
+        "name": "0.6.0",
+        "recommended_version": "v0.6.1",
+        "compatible_versions": [
+          "v0.6.1"
+        ],
+        "height": 2842600,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.1/miniwasm_v0.6.1_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.1/miniwasm_v0.6.1_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.1/miniwasm_v0.6.1_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.1/miniwasm_v0.6.1_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "0.6.4",
+        "recommended_version": "v0.6.4",
+        "compatible_versions": [
+          "v0.6.4"
+        ],
+        "height": 3618900,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Darwin_aarch64.tar.gz"
+        }
       }
     ]
   },
@@ -65,18 +93,36 @@
       {
         "address": "https://rpc.miniwasm-2.initia.xyz",
         "provider": "Initia Labs"
+      },
+      {
+        "address": "https://rpc-skip.miniwasm-2.initia.xyz",
+        "provider": "Initia Labs",
+        "authorizedUser": "skip",
+        "indexForSkip": 0
       }
     ],
     "rest": [
       {
         "address": "https://rest.miniwasm-2.initia.xyz",
         "provider": "Initia Labs"
+      },
+      {
+        "address": "https://rpc-skip.miniwasm-2.initia.xyz",
+        "provider": "Initia Labs",
+        "authorizedUser": "skip",
+        "indexForSkip": 0
       }
     ],
     "grpc": [
       {
         "address": "grpc://35.240.141.79:9090",
         "provider": "Initia Labs"
+      },
+      {
+        "address": "grpc-skip.miniwasm-2.initia.xyz:443",
+        "provider": "Initia Labs",
+        "authorizedUser": "skip",
+        "indexForSkip": 0
       }
     ]
   },

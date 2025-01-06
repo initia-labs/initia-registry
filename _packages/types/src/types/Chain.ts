@@ -15,6 +15,7 @@ export interface Chain {
   $schema?: string;
   chain_name: string;
   chain_id: string;
+  evm_chain_id?: number;
   pre_fork_chain_name?: string;
   pretty_name?: string;
   website?: string;
@@ -59,7 +60,7 @@ export interface Chain {
   key_algos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
   slip44?: number;
   alternative_slip44s?: number[];
-  fees?: {
+  fees: {
     fee_tokens: FeeToken[];
   };
   staking?: {
@@ -186,14 +187,21 @@ export interface Chain {
     seeds?: Peer[];
     persistent_peers?: Peer[];
   };
-  apis?: {
-    rpc?: Endpoint[];
-    rest?: Endpoint[];
-    api?: Endpoint[];
+  apis: {
+    rpc: SecureEndpoint[];
+    rest: SecureEndpoint[];
+    api?: SecureEndpoint[];
     grpc?: Endpoint[];
     wss?: Endpoint[];
     "grpc-web"?: Endpoint[];
-    "evm-http-jsonrpc"?: Endpoint[];
+    /**
+     * Evm json rpc uri
+     */
+    "json-rpc"?: SecureEndpoint[];
+    /**
+     * Evm json rpc websocket uri
+     */
+    "json-rpc-websocket"?: Endpoint[];
   };
   explorers?: Explorer[];
   faucets?: Faucet[];
@@ -268,6 +276,13 @@ export interface Peer {
   id: string;
   address: string;
   provider?: string;
+}
+export interface SecureEndpoint {
+  address: string;
+  provider?: string;
+  archive?: boolean;
+  authorizedUser?: string;
+  indexForSkip?: number;
 }
 export interface Endpoint {
   address: string;
