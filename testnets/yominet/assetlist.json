@@ -7,6 +7,10 @@
       "denom_units": [
         {
           "denom": "evm/9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
+          "exponent": 0
+        },
+        {
+          "denom": "ONYX",
           "exponent": 18
         }
       ],
