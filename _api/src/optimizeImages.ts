@@ -1,9 +1,9 @@
-import * as fs from "fs"
-import * as path from "path"
-import chalk from "chalk"
-import { v4 as uuidv4 } from "uuid"
-import sharp from "sharp"
-import { optimize } from "svgo"
+import { readFileSync, writeFileSync, unlinkSync, renameSync } from 'node:fs'
+import { extname, relative } from 'node:path'
+import chalk from 'chalk'
+import { v4 as uuidv4 } from 'uuid'
+import sharp from 'sharp'
+import { optimize } from 'svgo'
 import { getFilePathsInDirectory, getFileSize, isDirectory } from "./utils"
 
 // Constants for image size limits
@@ -12,10 +12,10 @@ const PNG_SIZE_LIMIT = 50 * 1024 // 50KB
 const PNG_MAX_HEIGHT = 256 // 256px
 
 // Image file extensions to optimize
-const imageExtensions = [".png", ".svg"]
+const imageExtensions: readonly string[] = [".png", ".svg"] as const
 
 // Optimize images in the directory
-export async function optimizeImages(dir: string) {
+export async function optimizeImages(dir: string): Promise<void> {
   const files = getFilePathsInDirectory(dir)
 
   for (const file of files) {
@@ -24,7 +24,7 @@ export async function optimizeImages(dir: string) {
       continue
     }
 
-    const ext = path.extname(file).toLowerCase()
+    const ext = extname(file).toLowerCase()
     if (!imageExtensions.includes(ext)) {
       continue
     }
@@ -42,23 +42,23 @@ export async function optimizeImages(dir: string) {
     }
 
     const newSize = getFileSize(file)
-    const relativePath = path.relative(dir, file)
+    const relativePath = relative(dir, file)
     console.log(`Optimized ${relativePath}: ${originalSize} bytes -> ${newSize} bytes`)
 
     if (ext === ".svg" && newSize > SVG_SIZE_LIMIT) {
       console.warn(chalk.yellow(`Deleting oversized SVG: ${relativePath}`))
-      fs.unlinkSync(file)
+      unlinkSync(file)
     }
 
     if (ext === ".png" && newSize > PNG_SIZE_LIMIT) {
       console.warn(chalk.yellow(`Deleting oversized PNG: ${relativePath}`))
-      fs.unlinkSync(file)
+      unlinkSync(file)
     }
   }
 }
 
 // Optimize PNG file
-async function optimizePng(filePath: string) {
+async function optimizePng(filePath: string): Promise<void> {
   const image = sharp(filePath)
   const metadata = await image.metadata()
 
@@ -73,12 +73,12 @@ async function optimizePng(filePath: string) {
   }
 
   // Replace the original file with the optimized file
-  fs.renameSync(tempFilePath, filePath)
+  renameSync(tempFilePath, filePath)
 }
 
 // Optimize SVG file
-function optimizeSvg(filePath: string) {
-  const data = fs.readFileSync(filePath, "utf8")
+function optimizeSvg(filePath: string): void {
+  const data = readFileSync(filePath, "utf8")
   const result = optimize(data, { path: filePath })
-  fs.writeFileSync(filePath, result.data)
+  writeFileSync(filePath, result.data)
 }
