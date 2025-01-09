@@ -9,12 +9,12 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://maze-rpc-sequencer-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz/"
+        "address": "https://rpc.preyominet.initia.tech"
       }
     ],
     "rest": [
       {
-        "address": "https://maze-rest-sequencer-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz/"
+        "address": "https://lcd.preyominet-1.initia.tech"
       }
     ],
     "json-rpc": [
