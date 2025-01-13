@@ -116,7 +116,7 @@
           "items": {
             "$ref": "#/$defs/fee_token"
           },
-          "minContains": "1"
+          "minContains": 1
         }
       },
       "additionalProperties": false
@@ -492,14 +492,14 @@
           "items": {
             "$ref": "#/$defs/secureEndpoint"
           },
-          "minContains": "1"
+          "minContains": 1
         },
         "rest": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/secureEndpoint"
           },
-          "minContains": "1"
+          "minContains": 1
         },
         "api": {
           "type": "array",
@@ -530,7 +530,7 @@
           "items": {
             "$ref": "#/$defs/secureEndpoint"
           },
-          "minContains": "1",
+          "minContains": 1,
           "description": "Evm json rpc uri"
         },
         "json-rpc-websocket": {
@@ -538,7 +538,7 @@
           "items": {
             "$ref": "#/$defs/endpoint"
           },
-          "minContains": "1",
+          "minContains": 1,
           "description": "Evm json rpc websocket uri"
         }
       },
