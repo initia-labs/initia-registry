@@ -1,6 +1,6 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "culinaris",
+  "chain_name": "zaar",
   "assets": [
     {
       "description": "Fake ZAAR Token",
