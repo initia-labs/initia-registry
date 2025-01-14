@@ -79,6 +79,7 @@
   "metadata": {
     "op_bridge_id": "314",
     "op_denoms": ["uinit"],
+    "executor_uri": "https://maze-api-opinit-b53886e8-ebca-41a5-8dd7-64884b25fb2c.ane1-prod-nocsm.newmetric.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",

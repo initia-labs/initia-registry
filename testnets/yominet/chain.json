@@ -63,7 +63,7 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominetassetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/assetlist.json",
     "minitia": {
       "type": "minievm",
       "version": "v0.5.5"
