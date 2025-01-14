@@ -1,4 +1,5 @@
 {
+  "$schema": "../../chain.schema.json",
   "chain_name": "zaar",
   "chain_id": "zaar-testnet-1",
   "evm_chain_id": 2906125577721809,
@@ -48,6 +49,16 @@
       }
     ]
   },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
+  },
   "metadata": {
     "op_bridge_id": "99",
     "op_denoms": ["uinit"],
@@ -65,21 +76,11 @@
         "channel_id": "channel-0",
         "version": "ics20-1"
       }
-    ]
-  },
-  "images": [
-    {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v0.6.9"
     }
-  ],
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
-  },
-  "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/assetlist.json",
-  "minitia": {
-    "type": "minievm",
-    "version": "v0.6.9"
   }
 }
