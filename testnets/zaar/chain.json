@@ -2,7 +2,7 @@
   "$schema": "../../chain.schema.json",
   "chain_name": "zaar",
   "chain_id": "zaar-testnet-1",
-  "evm_chain_id": 2906125577721809,
+  "evm_chain_id": 3814270102388757,
   "pretty_name": "Zaar",
   "status": "live",
   "network_type": "testnet",
