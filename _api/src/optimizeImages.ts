@@ -59,22 +59,30 @@ export async function optimizeImages(dir: string) {
 
 // Optimize PNG file
 async function optimizePng(filePath: string) {
-  const image = sharp(filePath)
-  const metadata = await image.metadata()
+  try {
+    const image = sharp(filePath);
+    const metadata = await image.metadata();
+    const tempFilePath = `${filePath}.${uuidv4()}.tmp`;
 
-  // Use a temporary file for the output
-  const tempFilePath = `${filePath}.${uuidv4()}.tmp`
+    if (metadata.height && metadata.height > PNG_MAX_HEIGHT) {
+      await image.resize({ height: PNG_MAX_HEIGHT }).toFile(tempFilePath);
+    } else {
+      const data = await image.toBuffer();
+      await sharp(data).toFile(tempFilePath);
+    }
 
-  if (metadata.height && metadata.height > PNG_MAX_HEIGHT) {
-    await image.resize({ height: PNG_MAX_HEIGHT }).toFile(tempFilePath)
-  } else {
-    const data = await image.toBuffer()
-    await sharp(data).toFile(tempFilePath)
+    // Replace original file with the optimized file
+    fs.renameSync(tempFilePath, filePath);
+  } catch (error) {
+    console.error(chalk.red(`Error optimizing PNG: ${filePath}`), error);
+
+    // Cleanup temporary file in case of errors
+    if (fs.existsSync(tempFilePath)) {
+      fs.unlinkSync(tempFilePath);
+    }
   }
-
-  // Replace the original file with the optimized file
-  fs.renameSync(tempFilePath, filePath)
 }
+
 
 // Optimize SVG file
 function optimizeSvg(filePath: string) {
