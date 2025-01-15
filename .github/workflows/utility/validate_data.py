@@ -42,14 +42,14 @@ def checkChains():
                 if "images" in asset:
                   for image in asset["images"]:
                     if "png" in image:
-                      validateRawGithubContent(image["png"])
+                      validateRawGithubContent(image["png"], True)
                     if "svg" in image:
-                      validateRawGithubContent(image["svg"])
+                      validateRawGithubContent(image["svg"], True)
                 if "logo_URIs" in asset:
                   if "png" in asset["logo_URIs"]:
-                    validateRawGithubContent(asset["logo_URIs"]["png"])
+                    validateRawGithubContent(asset["logo_URIs"]["png"], True)
                   if "svg" in asset["logo_URIs"]:
-                    validateRawGithubContent(asset["logo_URIs"]["svg"])
+                    validateRawGithubContent(asset["logo_URIs"]["svg"], True)
 
                 if "base" in asset and "traces" in asset:
                   validateTraces(asset["traces"], asset["base"])
@@ -66,22 +66,22 @@ def checkChains():
           if "images" in chainSchema:
             for image in chainSchema["images"]:
               if "png" in image:
-                validateRawGithubContent(image["png"])
+                validateRawGithubContent(image["png"], True)
               if "svg" in image:
-                validateRawGithubContent(image["svg"])
+                validateRawGithubContent(image["svg"], True)
 
           if "logo_URIs" in chainSchema:
             if "png" in chainSchema["logo_URIs"]:
-              validateRawGithubContent(chainSchema["logo_URIs"]["png"])
+              validateRawGithubContent(chainSchema["logo_URIs"]["png"], True)
             if "svg" in chainSchema["logo_URIs"]:
-              validateRawGithubContent(chainSchema["logo_URIs"]["svg"])
+              validateRawGithubContent(chainSchema["logo_URIs"]["svg"], True)
 
           
 
     print("Done")
 
 # check the file exists
-def validateRawGithubContent(uri: str):
+def validateRawGithubContent(uri: str, isImage: bool):
   prefix = "https://raw.githubusercontent.com/initia-labs/initia-registry/main/"
   # check only if initia-registry main branch
   if not uri.startswith(prefix):
@@ -89,6 +89,13 @@ def validateRawGithubContent(uri: str):
   path = uri[len(prefix):]
   if not os.path.exists(path):
     raise Exception("file(" + path + ") doesn't exists")
+  # check imgae size
+  if isImage:
+    sizeLimit = 20 * 1024 if uri.endswith('.svg') else 100 * 1024
+    size = os.path.getsize(path)
+    if size > sizeLimit:
+      raise Exception("image(" + path + ") size exceeds limit")
+
 
 # check trace
 def validateTraces(traces, denom: str):
