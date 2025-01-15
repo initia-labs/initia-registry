@@ -7,7 +7,7 @@ import { optimize } from "svgo"
 import { getFilePathsInDirectory, getFileSize, isDirectory } from "./utils"
 
 // Constants for image size limits
-const SVG_SIZE_LIMIT = 10 * 1024 // 10KB
+const SVG_SIZE_LIMIT = 20 * 1024 // 10KB
 const PNG_SIZE_LIMIT = 100 * 1024 // 100KB
 const PNG_MAX_HEIGHT = 256 // 256px
 

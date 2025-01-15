@@ -91,7 +91,7 @@ def validateRawGithubContent(uri: str, isImage: bool):
     raise Exception("file(" + path + ") doesn't exists")
   # check imgae size
   if isImage:
-    sizeLimit = 10 * 1024 if uri.endswith('.svg') else 100 * 1024
+    sizeLimit = 20 * 1024 if uri.endswith('.svg') else 100 * 1024
     size = os.path.getsize(path)
     if size > sizeLimit:
       raise Exception("image(" + path + ") size exceeds limit")
