@@ -13,6 +13,7 @@
 
 import * as path from "path"
 import * as url from "url"
+import { existsSync } from "fs";
 import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils"
 import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls"
 import { aggregateChainData } from "./aggregateChains"
@@ -24,7 +25,13 @@ const __dirname = path.dirname(__filename)
 const rootDir = process.env.NETWORK_DIR || ""
 const srcDir = path.resolve(__dirname, "../..", rootDir)
 const distDir = path.resolve(__dirname, "../dist")
-
+/**
+ * Validate source directory existence.
+ */
+if (!existsSync(srcDir)) {
+    console.error(`Source directory does not exist: ${srcDir}`);
+    process.exit(1);
+}
 deleteDirectory(distDir)
 copyDirectory(srcDir, distDir, { excludes: ["testnets", "devnets", new RegExp("\\."), new RegExp("^_")] })
 
