@@ -28,9 +28,7 @@
       }
     ]
   },
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -43,11 +41,19 @@
       }
     ]
   },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+  },
   "metadata": {
     "op_bridge_id": "80",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://maze-api-opinit-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz",
     "ibc_channels": [
       {
