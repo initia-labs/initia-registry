@@ -1,35 +1,51 @@
 /**
- * Step 1: Update URLs in chain.json and assetlist.json files
- * Example:
- * "https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png"
- * will be replaced with
- * "https://registry.initia.xyz/initia/images/INIT.png"
+ * Main script for processing network registry files.
+ * 
+ * The process consists of three steps:
+ * 1. Updating URLs in chain.json and assetlist.json files.
+ *    Example transformation:
+ *    - From: https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png
+ *    - To: https://registry.initia.xyz/initia/images/INIT.png
  *
- * Step 2: Aggregate all chains into a single chains.json file
- * Only specific properties are included in the aggregation.
+ * 2. Aggregating all chain.json files into a single chains.json file.
+ *    Only specific properties from each chain are included.
  *
- * Step 3: Optimize images in the directory
+ * 3. Optimizing images in the directory.
  */
 
-import * as path from "path"
-import * as url from "url"
-import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils"
-import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls"
-import { aggregateChainData } from "./aggregateChains"
-import { optimizeImages } from "./optimizeImages"
+import * as path from "path";
+import * as url from "url";
+import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils";
+import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls";
+import { aggregateChainData } from "./aggregateChains";
+import { optimizeImages } from "./optimizeImages";
 
-const __filename = url.fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const rootDir = process.env.NETWORK_DIR || ""
-const srcDir = path.resolve(__dirname, "../..", rootDir)
-const distDir = path.resolve(__dirname, "../dist")
+// Root network directory, can be overridden via an environment variable
+const rootDir: string = process.env.NETWORK_DIR || "";
+const srcDir: string = path.resolve(__dirname, "../..", rootDir);
+const distDir: string = path.resolve(__dirname, "../dist");
 
-deleteDirectory(distDir)
-copyDirectory(srcDir, distDir, { excludes: ["testnets", "devnets", new RegExp("\\."), new RegExp("^_")] })
+// Cleaning and copying the directory, excluding test and service files
+deleteDirectory(distDir);
+copyDirectory(srcDir, distDir, { 
+  excludes: [
+    "testnets",
+    "devnets",
+    new RegExp("\\."),
+    new RegExp("^_")
+  ] 
+});
 
-const dirs = getFilePathsInDirectory(distDir)
+const dirs = getFilePathsInDirectory(distDir);
 
-/* Step 1 */ updateUrlsInDirectory(dirs, createUrlReplacer(rootDir))
-/* Step 2 */ aggregateChainData(dirs, path.join(distDir, "chains.json"))
-/* Step 3 */ optimizeImages(distDir)
+/* Step 1: Updating URLs */ 
+updateUrlsInDirectory(dirs, createUrlReplacer(rootDir));
+
+/* Step 2: Aggregating chain data */ 
+aggregateChainData(dirs, path.join(distDir, "chains.json"));
+
+/* Step 3: Optimizing images */ 
+optimizeImages(distDir);

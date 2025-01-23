@@ -13,7 +13,7 @@ const selectedChainProperties: (keyof Chain)[] = [
   "apis",
   "faucets",
   "metadata",
-  "logo_URIs",
+  "logo_uris",
   "bech32_prefix",
   "network_type",
   "evm_chain_id",
@@ -33,7 +33,9 @@ export function aggregateChainData(dirs: string[], outputFilePath: string) {
   // Sort chains: layer 1 first, then by op bridge id
   const sortChains = sortWith<Chain>([
     descend((chain) => chain.metadata?.is_l1 || false),
-    ascend((chain) => chain.pretty_name ?? chain.chain_name),
+    ascend((chain) => {
+      return chain.pretty_name || chain.chain_name || ''
+    }),
   ])
 
   writeJsonFile(outputFilePath, sortChains(chains))
