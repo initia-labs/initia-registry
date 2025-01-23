@@ -152,7 +152,7 @@
     ],
     "grpc": [
       {
-        "address": "grpc.testnet.initia.xyz:9090",
+        "address": "grpc.testnet.initia.xyz:443",
         "provider": "Initia Labs"
       },
       {
