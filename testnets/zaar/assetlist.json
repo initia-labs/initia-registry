@@ -6,7 +6,7 @@
       "description": "Fake ZAAR Token",
       "denom_units": [
         {
-          "denom": "evm/0x48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
+          "denom": "evm/48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
           "exponent": 0
         },
         {
@@ -16,7 +16,7 @@
       ],
       "type_asset": "erc20",
       "address": "0x48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
-      "base": "evm/0x48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
+      "base": "evm/48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
       "display": "fZAAR",
       "name": "Fake Zaar",
       "symbol": "fZAAR",
