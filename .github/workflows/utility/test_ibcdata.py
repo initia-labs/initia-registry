@@ -70,7 +70,7 @@ def test_chainNameMatchFileNameDevnets(input):
 
 @pytest.mark.parametrize("input", ibcData_files)
     # validates that the chain-name's used exist as root folders on the chain-registry
-def test_existstsOnChainReg(input):
+def test_existsOnChainReg(input):
     pattern = re.compile(r'(.*)-(.*).json$')
     m = pattern.match(input)
     chain1 = m.group(1).lower()
