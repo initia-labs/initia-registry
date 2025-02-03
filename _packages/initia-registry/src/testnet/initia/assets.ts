@@ -309,6 +309,89 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
       },
     },
+    {
+      description: "Noble USDC",
+      denom_units: [
+        {
+          denom:
+            "ibc/185206FF8521AE7DA181D954EB6CBE20998E010CE0C6ED9E375BB3F35D90C0DF",
+          exponent: 0,
+        },
+        {
+          denom: "nUSDC",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/185206FF8521AE7DA181D954EB6CBE20998E010CE0C6ED9E375BB3F35D90C0DF",
+      display: "nUSDC",
+      name: "Noble USDC",
+      symbol: "nUSDC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+      },
+    },
+    {
+      description: "Wrapped Minievm GAS",
+      denom_units: [
+        {
+          denom:
+            "ibc/7685130E02E904D3B78447B4E98A1D8F9E6C0CEA77A89B8330BE10CA3A188BD6",
+          exponent: 0,
+        },
+        {
+          denom: "wGAS",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/7685130E02E904D3B78447B4E98A1D8F9E6C0CEA77A89B8330BE10CA3A188BD6",
+      display: "wGAS",
+      name: "Wrapped Minievm GAS",
+      symbol: "wGAS",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "wrapped",
+          counterparty: {
+            chain_name: "minievm",
+            base_denom: "GAS",
+          },
+          chain: {
+            contract: "0xA1860787c26B42113acc64b68ec650EDfFb686e0",
+          },
+          provider: "Decimal Wrapper",
+        },
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "minievm",
+            base_denom: "evm/137fDE729e22c911331EA5B3ACaaf476B93E93cA",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/evm/137fDE729e22c911331EA5B3ACaaf476B93E93cA",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg",
+      },
+    },
   ],
 };
 export default info;

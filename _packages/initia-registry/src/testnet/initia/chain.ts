@@ -63,7 +63,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: "grpc.testnet.initia.xyz:9090",
+        address: "grpc.testnet.initia.xyz:443",
         provider: "Initia Labs",
       },
       {
@@ -113,6 +113,12 @@ const info: Chain = {
         port_id: "transfer",
         channel_id: "channel-2",
         version: "ics20-1",
+      },
+      {
+        chain_id: "miniwasm-2",
+        port_id: "nft-transfer",
+        channel_id: "channel-3",
+        version: "ics721-1",
       },
       {
         chain_id: "minimove-2",
@@ -175,6 +181,18 @@ const info: Chain = {
         version: "ics20-1",
       },
       {
+        chain_id: "preyominet-1",
+        port_id: "transfer",
+        channel_id: "channel-177",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "preyominet-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-178",
+        version: "ics721-1",
+      },
+      {
         chain_id: "landlord-2",
         port_id: "transfer",
         channel_id: "channel-222",
@@ -184,6 +202,30 @@ const info: Chain = {
         chain_id: "landlord-2",
         port_id: "nft-transfer",
         channel_id: "channel-223",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "culinaris-2",
+        port_id: "transfer",
+        channel_id: "channel-713",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "culinaris-2",
+        port_id: "nft-transfer",
+        channel_id: "channel-714",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "zaar-testnet-1",
+        port_id: "transfer",
+        channel_id: "channel-218",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "zaar-testnet-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-219",
         version: "ics721-1",
       },
     ],
