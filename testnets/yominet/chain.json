@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "yominet",
-  "pretty_name": "PreYominet",
+  "pretty_name": "Kamigotchi",
   "chain_id": "preyominet-1",
   "evm_chain_id": 4471190363524365,
   "bech32_prefix": "init",
