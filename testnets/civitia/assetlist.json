@@ -64,7 +64,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
-            "base_denom": "ibc/CBB9B3DD892704F8D0162F358EF2919517D2B060FE338974014FA1550D9A5CE4",
+            "base_denom": "ibc/A2F87E21B3D8E13E4342EAA3000D7CAD16497C9F22FF75440ADD9053F5DEF201",
             "channel_id": "channel-222"
           },
           "chain": {
