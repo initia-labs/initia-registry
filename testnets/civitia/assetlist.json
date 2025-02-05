@@ -46,7 +46,7 @@
       "description": "Wrapped Minievm GAS",
       "denom_units": [
         {
-          "denom": "ibc/42851A23693D404BCF4297445ED4CFF365FF1D5C16C06DFC0647EB4E325338E7",
+          "denom": "ibc/CBB9B3DD892704F8D0162F358EF2919517D2B060FE338974014FA1550D9A5CE4",
           "exponent": 0
         },
         {
@@ -54,7 +54,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/42851A23693D404BCF4297445ED4CFF365FF1D5C16C06DFC0647EB4E325338E7",
+      "base": "ibc/CBB9B3DD892704F8D0162F358EF2919517D2B060FE338974014FA1550D9A5CE4",
       "display": "wGAS",
       "name": "Wrapped Minievm GAS",
       "symbol": "wGAS",
@@ -63,13 +63,13 @@
         {
           "type": "ibc",
           "counterparty": {
-            "chain_name": "minievm",
-            "base_denom": "ibc/7685130E02E904D3B78447B4E98A1D8F9E6C0CEA77A89B8330BE10CA3A188BD6",
+            "chain_name": "initia",
+            "base_denom": "ibc/CBB9B3DD892704F8D0162F358EF2919517D2B060FE338974014FA1550D9A5CE4",
             "channel_id": "channel-222"
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "transfer/channel-0/transfer/channel-0/evm/137fDE729e22c911331EA5B3ACaaf476B93E93cA"
+            "path": "transfer/channel-0/transfer/channel-0/evm/D0763d5Bb4751F84e2FeB12Aaf3D42867e66350d"
           }
         }
       ],
