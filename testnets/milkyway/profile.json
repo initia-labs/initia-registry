@@ -1,0 +1,25 @@
+{
+  "category": "DeFi",
+  "tags": ["L2"],
+
+  "description": "The Modular Staking Portal",
+
+  "summary": "The Modular Staking Portal",
+
+  "color": "#1E1B47",
+
+  "status": "live",
+
+  "vip": {
+    "actions": [
+      {
+        "title": "Liquid stake",
+        "description": "Bridging INIT from Initia to MilkyWay, and liquid staking those INIT tokens."
+      }
+    ]
+  },
+
+  "social": {
+    "website": "https://www.milkyway.zone"
+  }
+}

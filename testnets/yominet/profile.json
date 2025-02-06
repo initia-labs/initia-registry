@@ -1,0 +1,25 @@
+{
+  "category": "Gaming",
+  "tags": ["L2"],
+
+  "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",
+
+  "summary": "Economically independent, onchain virtual world",
+
+  "color": "#0A2311",
+
+  "status": "live",
+
+  "vip": {
+    "actions": [
+      {
+        "title": "Complete Quest",
+        "description": "Completing VIP quests in-game for each epoch."
+      }
+    ]
+  },
+
+  "social": {
+    "website": "https://playtest.kamigotchi.io"
+  }
+}

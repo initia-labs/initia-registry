@@ -1,0 +1,14 @@
+{
+  "category": "DeFi",
+  "tags": ["AI", "TEE", "Infra"],
+
+  "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
+
+  "color": "#190F13",
+
+  "status": "upcoming",
+
+  "social": {
+    "website": "https://renalabs.xyz"
+  }
+}
