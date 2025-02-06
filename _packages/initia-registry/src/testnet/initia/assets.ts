@@ -343,7 +343,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "ibc/7685130E02E904D3B78447B4E98A1D8F9E6C0CEA77A89B8330BE10CA3A188BD6",
+            "ibc/A2F87E21B3D8E13E4342EAA3000D7CAD16497C9F22FF75440ADD9053F5DEF201",
           exponent: 0,
         },
         {
@@ -351,7 +351,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/7685130E02E904D3B78447B4E98A1D8F9E6C0CEA77A89B8330BE10CA3A188BD6",
+      base: "ibc/A2F87E21B3D8E13E4342EAA3000D7CAD16497C9F22FF75440ADD9053F5DEF201",
       display: "wGAS",
       name: "Wrapped Minievm GAS",
       symbol: "wGAS",
@@ -364,7 +364,7 @@ const info: AssetList = {
             base_denom: "GAS",
           },
           chain: {
-            contract: "0xA1860787c26B42113acc64b68ec650EDfFb686e0",
+            contract: "0x86387FB0437E80722293aEa703446dB9314C599a",
           },
           provider: "Decimal Wrapper",
         },
@@ -372,12 +372,12 @@ const info: AssetList = {
           type: "ibc",
           counterparty: {
             chain_name: "minievm",
-            base_denom: "evm/137fDE729e22c911331EA5B3ACaaf476B93E93cA",
+            base_denom: "evm/D0763d5Bb4751F84e2FeB12Aaf3D42867e66350d",
             channel_id: "channel-0",
           },
           chain: {
             channel_id: "channel-0",
-            path: "transfer/channel-0/evm/137fDE729e22c911331EA5B3ACaaf476B93E93cA",
+            path: "transfer/channel-0/evm/D0763d5Bb4751F84e2FeB12Aaf3D42867e66350d",
           },
         },
       ],

@@ -6,7 +6,7 @@
       "description": "Fake ZAAR Token",
       "denom_units": [
         {
-          "denom": "evm/48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
+          "denom": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
           "exponent": 0
         },
         {
@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
-      "base": "evm/48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
+      "address": "0x6ed1637781269560b204c27Cd42d95e057C4BE44",
+      "base": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
       "display": "fZAAR",
       "name": "Fake Zaar",
       "symbol": "fZAAR",
@@ -36,7 +36,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/edd2c6e0e85b271e6fcc9f34cfbc4748e4908e3290b5891d8c1df62cc515e437",
+          "denom": "l2/a7add6c5aed49e3f4afa45e63f6fdba01fa5be2d1bf6a5b225d0bec9e9e34988",
           "exponent": 0
         },
         {
@@ -44,7 +44,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/edd2c6e0e85b271e6fcc9f34cfbc4748e4908e3290b5891d8c1df62cc515e437",
+      "base": "l2/a7add6c5aed49e3f4afa45e63f6fdba01fa5be2d1bf6a5b225d0bec9e9e34988",
       "display": "INIT",
       "traces": [
         {
@@ -54,7 +54,7 @@
             "chain_name": "initia"
           },
           "chain": {
-            "bridge_id": "99"
+            "bridge_id": "612"
           }
         }
       ],

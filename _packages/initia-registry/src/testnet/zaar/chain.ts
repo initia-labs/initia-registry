@@ -2,8 +2,8 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "zaar",
-  chain_id: "zaar-testnet-1",
-  evm_chain_id: 3814270102388757,
+  chain_id: "zaar-testnet-2",
+  evm_chain_id: 113765719155157,
   pretty_name: "Zaar",
   status: "live",
   network_type: "testnet",
@@ -15,7 +15,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: "evm/48e68Bed35e199927FF94ECDC34A125C7bfc87e8",
+        denom: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
         fixed_min_gas_price: 15000000000,
         low_gas_price: 15000000000,
         average_gas_price: 15000000000,
@@ -26,32 +26,27 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address:
-          "https://maze-rpc-sequencer-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz",
+        address: "https://rpc-zaar-testnet-2.anvil.testnet.initia.xyz",
       },
     ],
     rest: [
       {
-        address:
-          "https://maze-rest-sequencer-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz",
+        address: "https://rest-zaar-testnet-2.anvil.testnet.initia.xyz",
       },
     ],
     grpc: [
       {
-        address:
-          "maze-grpc-sequencer-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz:443",
+        address: "grpc-zaar-testnet-2.anvil.testnet.initia.xyz:443",
       },
     ],
     "json-rpc": [
       {
-        address:
-          "https://maze-jsonrpc-sequencer-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz",
+        address: "https://jsonrpc-zaar-testnet-2.anvil.testnet.initia.xyz",
       },
     ],
     "json-rpc-websocket": [
       {
-        address:
-          "https://maze-ws-sequencer-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz",
+        address: "wss://jsonrpc-ws-zaar-testnet-2.anvil.testnet.initia.xyz",
       },
     ],
   },
@@ -66,10 +61,9 @@ const info: Chain = {
     svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg",
   },
   metadata: {
-    op_bridge_id: "99",
+    op_bridge_id: "612",
     op_denoms: ["uinit"],
-    executor_uri:
-      "https://maze-api-opinit-fd70c395-4cfc-4624-ab8a-8e025af6a140.ane1-prod-nocsm.newmetric.xyz",
+    executor_uri: "https://opinit-api-zaar-testnet-2.anvil.testnet.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-2",
