@@ -1,6 +1,6 @@
 {
   "category": "DeFi",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The Modular Blockchain for Margin Trading",
   "summary": "The Modular Blockchain for Margin Trading",
   "color": "#161717",

@@ -1,6 +1,6 @@
 {
   "category": "DeFi",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The interwoven lending protocol for the modular ecosystem.",
   "color": "#3E231A",
   "status": "upcoming",

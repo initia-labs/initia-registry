@@ -1,6 +1,7 @@
 {
   "category": "Gaming",
-  "tags": ["AI", "L2"],
+  "tags": ["AI"],
+  "l2": true,
   "description": "Enabling everyone to create interactive entertainment.",
   "summary": "Enabling everyone to create using AI & blockchain",
   "color": "#161717",

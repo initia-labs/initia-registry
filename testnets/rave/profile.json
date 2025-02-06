@@ -1,6 +1,6 @@
 {
   "category": "DeFi",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
   "color": "#161717",
   "status": "upcoming",

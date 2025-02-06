@@ -1,6 +1,7 @@
 {
   "category": "DeFi",
   "tags": ["AI", "TEE", "Infra"],
+  "l2": true,
   "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
   "color": "#190F13",
   "status": "upcoming",

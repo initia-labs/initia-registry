@@ -1,6 +1,6 @@
 {
   "category": "NFT",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The Fun Network, where NFTs and Degeneracy come to play.",
   "summary": "The Fun Network of NFTs and Degeneracy",
   "color": "#382F16",

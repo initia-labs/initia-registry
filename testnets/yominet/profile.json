@@ -1,6 +1,6 @@
 {
   "category": "Gaming",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",
   "summary": "Economically independent, onchain virtual world",
   "color": "#0A2311",

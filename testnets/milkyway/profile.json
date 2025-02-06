@@ -1,6 +1,6 @@
 {
   "category": "DeFi",
-  "tags": ["L2"],
+  "l2": true,
   "description": "The Modular Staking Portal",
   "summary": "The Modular Staking Portal",
   "color": "#1E1B47",
