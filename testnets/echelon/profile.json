@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "echelon",
+  "pretty_name": "Echelon",
   "category": "DeFi",
   "l2": true,
   "description": "A highly efficient money market connecting liquidity and supercharging yields with LST, RWA, and stablecoin backed lending strategies.",

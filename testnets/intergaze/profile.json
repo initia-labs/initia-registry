@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "intergaze",
+  "pretty_name": "Intergaze",
   "category": "NFT",
   "tags": ["DeFi"],
   "l2": true,

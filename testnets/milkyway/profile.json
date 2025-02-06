@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "milkyway",
+  "pretty_name": "MilkyWay",
   "category": "DeFi",
   "l2": true,
   "description": "The Modular Staking Portal",

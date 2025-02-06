@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "rena",
+  "pretty_name": "Rena",
   "category": "DeFi",
   "tags": ["AI", "TEE", "Infra"],
   "l2": true,

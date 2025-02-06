@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "infinity-ground",
+  "pretty_name": "Infinity Ground",
   "category": "Gaming",
   "tags": ["AI"],
   "l2": true,

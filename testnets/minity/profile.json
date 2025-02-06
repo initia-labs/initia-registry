@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "minity",
+  "pretty_name": "Minity",
   "category": "Manage Portfolio",
   "tags": ["Tooling"],
   "l2": false,
