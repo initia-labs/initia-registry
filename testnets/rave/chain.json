@@ -33,7 +33,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "evm/19D38E8db1f18B1afece985BB011aaB6C855F5dB",
+        "denom": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
         "fixed_min_gas_price": 1000000000,
         "low_gas_price": 1000000000,
         "average_gas_price": 1500000000,
@@ -54,7 +54,7 @@
   "metadata": {
     "op_bridge_id": "610",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://maze-api-opinit-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz",
+    "executor_uri": "https://executor-uri-test-initia.rave.trade",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",

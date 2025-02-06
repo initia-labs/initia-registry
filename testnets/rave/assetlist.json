@@ -6,7 +6,7 @@
       "description": "RAVE",
       "denom_units": [
         {
-          "denom": "evm/19D38E8db1f18B1afece985BB011aaB6C855F5dB",
+          "denom": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
           "exponent": 0
         },
         {
@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x19D38E8db1f18B1afece985BB011aaB6C855F5dB",
-      "base": "evm/19D38E8db1f18B1afece985BB011aaB6C855F5dB",
+      "address": "0xBdb128Cf29d40738875297E90aa42772D354c137",
+      "base": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
       "display": "RAVE",
       "name": "RAVE",
       "symbol": "RAVE",
