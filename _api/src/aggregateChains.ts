@@ -38,3 +38,13 @@ export function aggregateChainData(dirs: string[], outputFilePath: string) {
 
   writeJsonFile(outputFilePath, sortChains(chains))
 }
+
+export function aggregateProfiles(dirs: string[], outputFilePath: string) {
+  // Collect all profile.json paths
+  const profileJsonPaths = dirs.map((dir) => path.join(dir, "profile.json")).filter(isJsonFile)
+
+  // Read all profile.json files
+  const profiles = profileJsonPaths.map((profilePath) => readJsonFile(profilePath))
+
+  writeJsonFile(outputFilePath, profiles)
+}
