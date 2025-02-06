@@ -62,3 +62,13 @@ export function readJsonFile(filePath: string): any {
 export function writeJsonFile(filePath: string, data: any) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
 }
+
+// Checks if the given file is a JSON file
+export function isJsonFile(filePath: string): boolean {
+  try {
+    readJsonFile(filePath)
+    return true
+  } catch {
+    return false
+  }
+}

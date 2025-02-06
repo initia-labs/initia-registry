@@ -1,7 +1,7 @@
 import * as path from "path"
 import { ascend, descend, pick, sortWith } from "ramda"
 import { Chain } from "@initia/initia-registry-types"
-import { readJsonFile, writeJsonFile } from "./utils"
+import { isJsonFile, readJsonFile, writeJsonFile } from "./utils"
 
 const selectedChainProperties: (keyof Chain)[] = [
   "chain_id",
@@ -22,7 +22,7 @@ const selectedChainProperties: (keyof Chain)[] = [
 // Aggregates chain data from all chain.json files in the given directory
 export function aggregateChainData(dirs: string[], outputFilePath: string) {
   // Collect all chain.json paths
-  const chainJsonPaths = dirs.map((dir) => path.join(dir, "chain.json"))
+  const chainJsonPaths = dirs.map((dir) => path.join(dir, "chain.json")).filter(isJsonFile)
 
   // Pick specific properties from each chain.json file
   const chains: Chain[] = chainJsonPaths.map((chainPath) => {
