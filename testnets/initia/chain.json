@@ -306,15 +306,15 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "zaar-testnet-1",
+        "chain_id": "zaar-testnet-2",
         "port_id": "transfer",
-        "channel_id": "channel-218",
+        "channel_id": "channel-1321",
         "version": "ics20-1"
       },
       {
-        "chain_id": "zaar-testnet-1",
+        "chain_id": "zaar-testnet-2",
         "port_id": "nft-transfer",
-        "channel_id": "channel-219",
+        "channel_id": "channel-1322",
         "version": "ics721-1"
       }
     ],

@@ -74,6 +74,49 @@ const info: AssetList = {
         svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/BFB.svg",
       },
     },
+    {
+      description: "The fake USDC",
+      denom_units: [
+        {
+          denom:
+            "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+          exponent: 0,
+        },
+        {
+          denom: "USDC",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      display: "USDC",
+      name: "USDC",
+      symbol: "USDC",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "initia",
+            base_denom: "uusdc",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-0",
+            path: "transfer/channel-0/uusdc",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+      },
+    },
   ],
 };
 export default info;
