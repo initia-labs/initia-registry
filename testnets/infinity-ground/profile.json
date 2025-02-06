@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "Gaming",
   "tags": ["AI"],
   "l2": true,

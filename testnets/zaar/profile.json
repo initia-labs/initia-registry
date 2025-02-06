@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "NFT",
   "l2": true,
   "description": "The Fun Network, where NFTs and Degeneracy come to play.",

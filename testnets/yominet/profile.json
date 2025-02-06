@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "Gaming",
   "l2": true,
   "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",

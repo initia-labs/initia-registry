@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "Gaming",
   "l2": true,
   "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",

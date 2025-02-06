@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "DeFi",
   "tags": ["AI", "TEE", "Infra"],
   "l2": true,

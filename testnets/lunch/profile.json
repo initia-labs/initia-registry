@@ -1,4 +1,5 @@
 {
+  "$schema": "../../profile.schema.json",
   "category": "Manage Portfolio",
   "l2": true,
   "description": "The first all-in-one Web3 Consumer Mobile App on the Noon Minitia, for all Initia related activities & quests, payments, and more.",
