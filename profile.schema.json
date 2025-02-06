@@ -3,6 +3,12 @@
   "title": "Chain Profile",
   "type": "object",
   "properties": {
+    "name": {
+      "type": "string"
+    },
+    "pretty_name": {
+      "type": "string"
+    },
     "type": {
       "type": "string",
       "enum": ["DeFi", "NFT", "Gaming", "Manage Portfolio"]

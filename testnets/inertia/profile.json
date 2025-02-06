@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "inertia",
+  "pretty_name": "Inertia",
   "category": "DeFi",
   "l2": true,
   "description": "The interwoven lending protocol for the modular ecosystem.",

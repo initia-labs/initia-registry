@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "rave",
+  "pretty_name": "Rave",
   "category": "DeFi",
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",

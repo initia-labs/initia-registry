@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "blackwing",
+  "pretty_name": "Blackwing",
   "category": "DeFi",
   "l2": true,
   "description": "The Modular Blockchain for Margin Trading",

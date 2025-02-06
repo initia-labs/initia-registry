@@ -1,5 +1,7 @@
 {
   "$schema": "../../profile.schema.json",
+  "name": "zaar",
+  "pretty_name": "Zaar",
   "category": "NFT",
   "l2": true,
   "description": "The Fun Network, where NFTs and Degeneracy come to play.",
