@@ -1,0 +1,13 @@
+{
+  "$schema": "../../profile.schema.json",
+  "category": "Manage Portfolio",
+  "tags": ["Tooling"],
+  "l2": false,
+  "description": "Track your assets, DeFi Positions, and NFTs across every interwoven rollup.",
+  "summary": "Track your assets and positions across L1 and L2s",
+  "color": "#1F1F1F",
+  "status": "live",
+  "social": {
+    "website": "https://minity.xyz"
+  }
+}

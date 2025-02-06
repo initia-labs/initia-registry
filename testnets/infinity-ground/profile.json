@@ -1,0 +1,13 @@
+{
+  "$schema": "../../profile.schema.json",
+  "category": "Gaming",
+  "tags": ["AI"],
+  "l2": true,
+  "description": "Enabling everyone to create interactive entertainment.",
+  "summary": "Enabling everyone to create using AI & blockchain",
+  "color": "#161717",
+  "status": "upcoming",
+  "social": {
+    "website": "https://www.infinityg.ai"
+  }
+}

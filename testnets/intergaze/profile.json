@@ -1,0 +1,13 @@
+{
+  "$schema": "../../profile.schema.json",
+  "category": "NFT",
+  "tags": ["DeFi"],
+  "l2": true,
+  "description": "The Launchpad for Interwoven NFTs",
+  "summary": "Purpose-built chain optimized for creators & NFTs",
+  "color": "#161717",
+  "status": "upcoming",
+  "social": {
+    "website": "https://www.stargaze.zone"
+  }
+}

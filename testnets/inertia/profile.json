@@ -1,0 +1,11 @@
+{
+  "$schema": "../../profile.schema.json",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The interwoven lending protocol for the modular ecosystem.",
+  "color": "#3E231A",
+  "status": "upcoming",
+  "social": {
+    "website": "https://inrt.fi"
+  }
+}

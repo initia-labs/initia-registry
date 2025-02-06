@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Chain Profile",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["DeFi", "NFT", "Gaming", "Manage Portfolio"]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "A longer description for the landing page"
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short description for the onboarding page (less than 50 characters)"
+    },
+    "color": {
+      "$ref": "#/$defs/color",
+      "description": "Modify saturation and luminance for the ecosystem or the vip"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["live", "upcoming"]
+    },
+    "vip": {
+      "type": "object",
+      "properties": {
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "social": {
+      "type": "object",
+      "properties": {
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://."
+        },
+        "twitter": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://x.com/."
+        }
+      }
+    },
+    "l2": {
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "color": {
+      "description": "RGB color",
+      "format": "rgbcolor",
+      "pattern": "^#([a-fA-F0-9]{6})$",
+      "type": "string"
+    }
+  }
+}
