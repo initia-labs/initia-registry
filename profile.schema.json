@@ -9,7 +9,7 @@
     "pretty_name": {
       "type": "string"
     },
-    "type": {
+    "category": {
       "type": "string",
       "enum": ["DeFi", "NFT", "Gaming", "Manage Portfolio"]
     },
