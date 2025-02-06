@@ -1,15 +1,10 @@
 {
   "category": "DeFi",
   "tags": ["L2"],
-
   "description": "The Modular Staking Portal",
-
   "summary": "The Modular Staking Portal",
-
   "color": "#1E1B47",
-
   "status": "live",
-
   "vip": {
     "actions": [
       {
@@ -18,7 +13,6 @@
       }
     ]
   },
-
   "social": {
     "website": "https://www.milkyway.zone"
   }
