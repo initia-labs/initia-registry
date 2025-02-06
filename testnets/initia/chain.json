@@ -316,6 +316,18 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-219",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "rave-test4",
+        "port_id": "transfer",
+        "channel_id": "channel-1317",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rave-test4",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1318",
+        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
