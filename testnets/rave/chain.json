@@ -52,7 +52,7 @@
     "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/images/rave.svg"
   },
   "metadata": {
-    "op_bridge_id": "80",
+    "op_bridge_id": "610",
     "op_denoms": ["uinit"],
     "executor_uri": "https://maze-api-opinit-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz",
     "ibc_channels": [
@@ -66,6 +66,18 @@
         "chain_id": "initiation-2",
         "port_id": "nft-transfer",
         "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rave-test4",
+        "port_id": "transfer",
+        "channel_id": "channel-1317",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rave-test4",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1318",
         "version": "ics721-1"
       }
     ],
