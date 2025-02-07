@@ -27,7 +27,8 @@
     },
     "summary": {
       "type": "string",
-      "description": "A short description for the onboarding page (less than 50 characters)"
+      "description": "A short description for the onboarding page (less than or equal to 50 characters)",
+      "maxLength": 50
     },
     "color": {
       "$ref": "#/$defs/color",
