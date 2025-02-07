@@ -13,8 +13,9 @@ export const ProfileSchema = z.object({
     .optional(),
   summary: z
     .string()
+    .max(50)
     .describe(
-      "A short description for the onboarding page (less than 50 characters)"
+      "A short description for the onboarding page (less than or equal to 50 characters)"
     )
     .optional(),
   color: z

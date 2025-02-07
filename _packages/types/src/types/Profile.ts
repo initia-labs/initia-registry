@@ -18,7 +18,7 @@ export interface ChainProfile {
    */
   description?: string;
   /**
-   * A short description for the onboarding page (less than 50 characters)
+   * A short description for the onboarding page (less than or equal to 50 characters)
    */
   summary?: string;
   /**
