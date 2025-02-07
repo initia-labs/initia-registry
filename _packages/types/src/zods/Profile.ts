@@ -4,26 +4,18 @@ export const ProfileSchema = z.object({
   name: z.string().optional(),
   pretty_name: z.string().optional(),
   category: z
-    .enum([
-      "DeFi",
-      "Social",
-      "NFT",
-      "Gaming",
-      "Portfolio",
-      "AI",
-      "DeFAI",
-      "Other",
-    ])
+    .enum(["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Other"])
     .optional(),
-  tags: z.array(z.string()).optional(),
+  tags: z.array(z.string().max(10)).max(3).optional(),
   description: z
     .string()
     .describe("A longer description for the landing page")
     .optional(),
   summary: z
     .string()
+    .max(50)
     .describe(
-      "A short description for the onboarding page (less than 50 characters)"
+      "A short description for the onboarding page (less than or equal to 50 characters)"
     )
     .optional(),
   color: z
