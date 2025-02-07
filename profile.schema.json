@@ -11,21 +11,13 @@
     },
     "category": {
       "type": "string",
-      "enum": [
-        "DeFi",
-        "Social",
-        "NFT",
-        "Gaming",
-        "Portfolio",
-        "AI",
-        "DeFAI",
-        "Other"
-      ]
+      "enum": ["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Other"]
     },
     "tags": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "maxLength": 10
       },
       "maxItems": 3
     },

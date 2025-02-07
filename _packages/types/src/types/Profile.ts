@@ -8,8 +8,11 @@
 export interface ChainProfile {
   name?: string;
   pretty_name?: string;
-  category?: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "DeFAI" | "Other";
-  tags?: string[];
+  category?: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "Other";
+  /**
+   * @maxItems 3
+   */
+  tags?: [] | [string] | [string, string] | [string, string, string];
   /**
    * A longer description for the landing page
    */
