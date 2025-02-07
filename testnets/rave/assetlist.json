@@ -1,0 +1,36 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "rave",
+  "assets": [
+    {
+      "description": "RAVE",
+      "denom_units": [
+        {
+          "denom": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
+          "exponent": 0
+        },
+        {
+          "denom": "RAVE",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xBdb128Cf29d40738875297E90aa42772D354c137",
+      "base": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
+      "display": "RAVE",
+      "name": "RAVE",
+      "symbol": "RAVE",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/images/rave.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/images/rave.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/images/rave.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/images/rave.svg"
+      }
+    }
+  ]
+}
