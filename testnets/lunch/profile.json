@@ -2,11 +2,11 @@
   "$schema": "../../profile.schema.json",
   "name": "lunch",
   "pretty_name": "Lunch",
-  "category": "Manage Portfolio",
+  "category": "Portfolio",
   "l2": true,
   "description": "The first all-in-one Web3 Consumer Mobile App on the Noon Minitia, for all Initia related activities & quests, payments, and more.",
   "summary": "The first all-in-one Web3 consumer mobile app",
-  "color": "#05194F",
+  "color": "#0050C9",
   "status": "live",
   "social": {
     "website": "https://www.lunchlunch.xyz"

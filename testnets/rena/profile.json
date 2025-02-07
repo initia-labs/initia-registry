@@ -2,11 +2,11 @@
   "$schema": "../../profile.schema.json",
   "name": "rena",
   "pretty_name": "Rena",
-  "category": "DeFi",
-  "tags": ["AI", "TEE", "Infra"],
+  "category": "DeFAI",
+  "tags": ["TEE", "Infra"],
   "l2": true,
   "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
-  "color": "#190F13",
+  "color": "#FB408D",
   "status": "upcoming",
   "social": {
     "website": "https://renalabs.xyz"

@@ -3,7 +3,18 @@ import { z } from "zod";
 export const ProfileSchema = z.object({
   name: z.string().optional(),
   pretty_name: z.string().optional(),
-  category: z.enum(["DeFi", "NFT", "Gaming", "Manage Portfolio"]).optional(),
+  category: z
+    .enum([
+      "DeFi",
+      "Social",
+      "NFT",
+      "Gaming",
+      "Portfolio",
+      "AI",
+      "DeFAI",
+      "Other",
+    ])
+    .optional(),
   tags: z.array(z.string()).optional(),
   description: z
     .string()
