@@ -1,12 +1,12 @@
 {
   "$schema": "../../profile.schema.json",
-  "name": "#FFFFFF",
+  "name": "blackwing",
   "pretty_name": "Blackwing",
   "category": "DeFi",
   "l2": true,
   "description": "The Modular Blockchain for Margin Trading",
   "summary": "The Modular Blockchain for Margin Trading",
-  "color": "#161717",
+  "color": "#FFFFFF",
   "status": "live",
   "social": {
     "website": "https://blackwing.fi"
