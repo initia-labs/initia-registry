@@ -382,6 +382,59 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
       }
+    },
+    {
+      "description": "Wrapped fZAAR",
+      "denom_units": [
+        {
+          "denom": "ibc/34399C231320A53AFF481739FDC85428728853CB18D3264E2CE0C839FEE65304",
+          "exponent": 0
+        },
+        {
+          "denom": "wfZAAR",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/34399C231320A53AFF481739FDC85428728853CB18D3264E2CE0C839FEE65304",
+      "display": "wfZAAR",
+      "name": "Wrapped fZAAR",
+      "symbol": "wfZAAR",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "zaar",
+            "base_denom": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44"
+          },
+          "chain": {
+            "contract": "0x57C520E5b5f0D22e4E1702FF06Eb0056886F3a27"
+          },
+          "provider": "Decimal Wrapper"
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "zaar",
+            "base_denom": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg"
+      }
     }
   ]
 }
