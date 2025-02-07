@@ -11,7 +11,16 @@
     },
     "category": {
       "type": "string",
-      "enum": ["DeFi", "NFT", "Gaming", "Manage Portfolio"]
+      "enum": [
+        "DeFi",
+        "Social",
+        "NFT",
+        "Gaming",
+        "Portfolio",
+        "AI",
+        "DeFAI",
+        "Other"
+      ]
     },
     "tags": {
       "type": "array",
