@@ -6,6 +6,7 @@
   "evm_chain_id": 4471190363524365,
   "bech32_prefix": "init",
   "network_type": "testnet",
+  "website": "https://playtest.kamigotchi.io",
   "apis": {
     "rpc": [
       {
