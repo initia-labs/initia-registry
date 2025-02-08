@@ -11,6 +11,7 @@
   "node_home": "$HOME/.minitia",
   "key_algos": ["secp256k1"],
   "slip44": 118,
+  "website": "https://battleforblockchain.com",
   "fees": {
     "fee_tokens": [
       {
