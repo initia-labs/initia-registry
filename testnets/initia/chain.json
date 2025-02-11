@@ -123,7 +123,7 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.testnet.initia.xyz",
+        "address": "https://rest.testnet.initia.xyz",
         "provider": "Initia Labs"
       },
       {
