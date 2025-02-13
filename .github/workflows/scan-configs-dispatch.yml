@@ -1,0 +1,27 @@
+name: Initia Scan Chain Configs Dispatch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/scan-configs-dispatch.yml"
+      - "devnets/**"
+      - "testnets/**"
+      - "mainnets/**"
+
+jobs:
+  trigger-initia-scan-configs:
+    runs-on: ubuntu-latest
+    steps:
+      - id: dispatch-initia-scan-configs
+        name: "Dispatch to Initia Scan"
+        uses: indiesdev/curl@v1.1
+        with:
+          url: https://api.github.com/repos/alleslabs/celatone-core/dispatches
+          method: "POST"
+          headers: '{ "Accept": "application/vnd.github+json", "Authorization": "Bearer ${{ secrets.INITIA_SCAN_GITHUB_TOKEN }}", "X-GitHub-Api-Version": "2022-11-28" }'
+          body: '{ "event_type": "initia-scan-configs" }'
+          timeout: 10000
+          log-response: true
+          retries: 3
