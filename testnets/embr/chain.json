@@ -1,6 +1,46 @@
 {
+  "$schema": "../../chain.schema.json",
   "chain_name": "embr",
   "chain_id": "embr-1",
+  "evm_chain_id": 930997494890041,
+  "pretty_name": "Embr.fun",
+  "status": "upcoming",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "website": "https://embr.fun",
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/9e99a4d82d63d49da0b88f67c3b862408be7a3df02f5061766b7e0f12d5b49b1",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v0.6.9",
+    "compatible_versions": ["v0.6.9"],
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Darwin_aarch64.tar.gz"
+    }
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {
@@ -58,9 +98,31 @@
       }
     ]
   },
-  "fees": {
-    "fee_tokens": []
+  "explorers": [],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/embr/images/logo.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/embr/images/logo-full.png"
   },
-  "bech32_prefix": "init",
-  "network_type": "testnet"
+  "metadata": {
+    "op_bridge_id": "648",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-embr-1.anvil.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/embr/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v0.6.9"
+    }
+  }
 }
