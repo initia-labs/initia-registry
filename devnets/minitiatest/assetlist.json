@@ -1,0 +1,24 @@
+{
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "igminitia",
+    "assets": [
+        {
+            "description": "The native token of Initia",
+            "denom_units": [
+              {
+                "denom": "uinit",
+                "exponent": 0
+              },
+              {
+                "denom": "GAS",
+                "exponent": 6
+              }
+            ],
+            "base": "uinit",
+            "display": "GAS",
+            "name": "Initia Native Token",
+            "symbol": "GAS",
+            "coingecko_id": ""
+        }
+    ]
+}
