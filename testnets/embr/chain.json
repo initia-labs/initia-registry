@@ -1,0 +1,66 @@
+{
+  "chain_name": "embr",
+  "chain_id": "embr-1",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-0-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://rpc-1-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://rpc-embr-1.anvil.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-0-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://rest-1-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://rest-embr-1.anvil.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc://grpc-0-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "grpc://grpc-1-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "grpc://grpc-embr-1.anvil.initia.xyz"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://jsonrpc-0-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://jsonrpc-1-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "https://jsonrpc-embr-1.anvil.initia.xyz"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://jsonrpc-ws-0-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "wss://jsonrpc-ws-1-embr-1.anvil.initia.xyz"
+      },
+      {
+        "address": "wss://jsonrpc-ws-embr-1.anvil.initia.xyz"
+      }
+    ]
+  },
+  "fees": {
+    "fee_tokens": []
+  },
+  "bech32_prefix": "init",
+  "network_type": "testnet"
+}
