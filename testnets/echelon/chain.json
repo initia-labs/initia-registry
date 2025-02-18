@@ -1,0 +1,66 @@
+{
+    "chain_name": "Echelon",
+    "chain_id": "echelon-test-1",
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "json-rpc": [
+        {
+          "address": "https://jsonrpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://jsonrpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://jsonrpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "json-rpc-websocket": [
+        {
+          "address": "wss://jsonrpc-ws-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "wss://jsonrpc-ws-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "wss://jsonrpc-ws-echelon-test-1.anvil.initia.xyz"
+        }
+      ]
+    },
+    "fees": {
+      "fee_tokens": []
+    },
+    "bech32_prefix": "init",
+    "network_type": "testnet"
+  }

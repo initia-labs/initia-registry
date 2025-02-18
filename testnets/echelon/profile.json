@@ -7,7 +7,15 @@
   "description": "A highly efficient money market connecting liquidity and supercharging yields with LST, RWA, and stablecoin backed lending strategies.",
   "summary": "Money market connecting liquidity with strategies.",
   "color": "#9AF8FB",
-  "status": "upcoming",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Use Echelon",
+        "description": "Supply and borrow on Echelon with boosted esINIT emissions."
+      }
+    ]
+  },
   "social": {
     "website": "https://echelon.market"
   }
