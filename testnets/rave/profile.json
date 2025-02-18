@@ -7,6 +7,14 @@
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
   "color": "#FFFFFF",
   "status": "upcoming",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn Points",
+        "description": "Earn Points by betting on BTC, ETH and SOL."
+      }
+    ]
+  },
   "social": {
     "website": "https://www.rave.trade"
   }
