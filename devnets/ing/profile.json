@@ -1,7 +1,7 @@
 {
     "$schema": "../../profile.schema.json",
-    "name": "igminitia",
-    "pretty_name": "igminitia",
+    "name": "ing",
+    "pretty_name": "infinity group ",
     "category": "Other",
     "l2": true,
     "description": "infinity group testnet",

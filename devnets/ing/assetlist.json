@@ -1,6 +1,6 @@
 {
     "$schema": "../../assetlist.schema.json",
-    "chain_name": "igminitia",
+    "chain_name": "ing",
     "assets": [
         {
             "description": "The native token of Initia",

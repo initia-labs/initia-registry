@@ -1,9 +1,9 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "igminitia",
-  "chain_id": "minitiatest-1",
+  "chain_name": "ing",
+  "chain_id": "ing-1",
   "evm_chain_id": 930997494890041,
-  "pretty_name": "igminitia",
+  "pretty_name": "infinity group",
   "status": "upcoming",
   "network_type": "testnet",
   "bech32_prefix": "init",
@@ -36,73 +36,73 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc-0-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rpc-0-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://rpc-1-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rpc-1-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://rpc-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rpc-ing-1.anvil.initia.xyz"
       }
     ],
     "rest": [
       {
-        "address": "https://rest-0-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rest-0-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://rest-1-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rest-1-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://rest-minitiatest-1.anvil.initia.xyz"
+        "address": "https://rest-ing-1.anvil.initia.xyz"
       }
     ],
     "grpc": [
       {
-        "address": "grpc://grpc-0-minitiatest-1.anvil.initia.xyz"
+        "address": "grpc://grpc-0-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "grpc://grpc-1-minitiatest-1.anvil.initia.xyz"
+        "address": "grpc://grpc-1-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "grpc://grpc-minitiatest-1.anvil.initia.xyz"
+        "address": "grpc://grpc-ing-1.anvil.initia.xyz"
       }
     ],
     "json-rpc": [
       {
-        "address": "https://jsonrpc-0-minitiatest-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-0-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://jsonrpc-1-minitiatest-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-1-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "https://jsonrpc-minitiatest-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-ing-1.anvil.initia.xyz"
       }
     ],
     "json-rpc-websocket": [
       {
-        "address": "wss://jsonrpc-ws-0-minitiatest-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-0-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "wss://jsonrpc-ws-1-minitiatest-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-1-ing-1.anvil.initia.xyz"
       },
       {
-        "address": "wss://jsonrpc-ws-minitiatest-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-ing-1.anvil.initia.xyz"
       }
     ]
   },
   "explorers": [],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minitiatest/images/logo.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ing/images/logo.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minitiatest/images/logo.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ing/images/logo.png"
   },
   "metadata": {
     "op_bridge_id": "648",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://opinit-api-minitiatest-1.anvil.initia.xyz",
+    "executor_uri": "https://opinit-api-ing-1.anvil.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
@@ -111,7 +111,7 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minitiatest/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ing/assetlist.json",
     "minitia": {
       "type": "minievm",
       "version": "v0.7.1-1"
