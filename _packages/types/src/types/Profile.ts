@@ -40,5 +40,6 @@ export interface ChainProfile {
     [k: string]: unknown;
   };
   l2?: boolean;
+  hidden?: boolean;
   [k: string]: unknown;
 }

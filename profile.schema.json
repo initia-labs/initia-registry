@@ -74,6 +74,9 @@
     },
     "l2": {
       "type": "boolean"
+    },
+    "hidden": {
+      "type": "boolean"
     }
   },
   "$defs": {

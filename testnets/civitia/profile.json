@@ -7,6 +7,7 @@
   "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",
   "summary": "Mint cities, collect yield, and control the planet",
   "color": "#FFFFFF",
+  "hidden": false,
   "status": "live",
   "vip": {
     "actions": [
