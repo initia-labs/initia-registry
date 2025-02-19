@@ -6,7 +6,6 @@
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
   "color": "#FFFFFF",
-  "hidden": false,
   "status": "upcoming",
   "vip": {
     "actions": [
