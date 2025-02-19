@@ -47,4 +47,5 @@ export const ProfileSchema = z.object({
     })
     .optional(),
   l2: z.boolean().optional(),
+  hidden: z.boolean().optional(),
 });

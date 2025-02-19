@@ -9,6 +9,7 @@
   "summary": "Track your assets and positions across L1 and L2s",
   "color": "#FFFFFF",
   "status": "live",
+  "hidden": false,
   "social": {
     "website": "https://minity.xyz"
   }

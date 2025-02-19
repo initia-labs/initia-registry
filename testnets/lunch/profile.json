@@ -8,6 +8,7 @@
   "summary": "The first all-in-one Web3 consumer mobile app",
   "color": "#0050C9",
   "status": "live",
+  "hidden": false,
   "social": {
     "website": "https://www.lunchlunch.xyz"
   }

@@ -8,6 +8,7 @@
   "summary": "The Modular Staking Portal",
   "color": "#FFFFFF",
   "status": "live",
+  "hidden": false,
   "vip": {
     "actions": [
       {

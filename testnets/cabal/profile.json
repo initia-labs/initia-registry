@@ -7,6 +7,7 @@
   "description": "The Very Important Protocol for Initia's VIP.",
   "color": "#54EEE7",
   "status": "upcoming",
+  "hidden": false,
   "social": {
     "website": "https://thecabal.xyz"
   }

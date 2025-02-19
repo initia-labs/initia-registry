@@ -7,6 +7,7 @@
   "description": "The interwoven lending protocol for the modular ecosystem.",
   "color": "#E10144",
   "status": "upcoming",
+  "hidden": false,
   "social": {
     "website": "https://inrt.fi"
   }

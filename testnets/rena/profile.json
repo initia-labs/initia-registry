@@ -8,6 +8,7 @@
   "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
   "color": "#FB408D",
   "status": "upcoming",
+  "hidden": false,
   "social": {
     "website": "https://renalabs.xyz"
   }

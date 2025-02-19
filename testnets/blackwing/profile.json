@@ -8,6 +8,7 @@
   "summary": "The Modular Blockchain for Margin Trading",
   "color": "#FFFFFF",
   "status": "live",
+  "hidden": false,
   "social": {
     "website": "https://blackwing.fi"
   }

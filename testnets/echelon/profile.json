@@ -8,6 +8,7 @@
   "summary": "Money market connecting liquidity with strategies.",
   "color": "#9AF8FB",
   "status": "upcoming",
+  "hidden": false,
   "social": {
     "website": "https://echelon.market"
   }

@@ -8,6 +8,7 @@
   "summary": "Mint cities, collect yield, and control the planet",
   "color": "#FFFFFF",
   "status": "live",
+  "hidden": false,
   "vip": {
     "actions": [
       {
