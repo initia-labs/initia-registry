@@ -7,14 +7,14 @@
     "status": "live",
     "network_type": "testnet",
     "bech32_prefix": "init",
-    "daemon_name": "initiad",
-    "node_home": "$HOME/.initia",
+    "daemon_name": "minitiad",
+    "node_home": "$HOME/.minitia",
     "key_algos": ["secp256k1"],
     "slip44": 118,
     "fees": {
       "fee_tokens": [
         {
-          "denom": "uinit",
+          "denom": "l2/1240d977f00007155a9a23ed14dfc3c33bcca3b932904a515b8d0f119e96e087",
           "fixed_min_gas_price": 0.15,
           "low_gas_price": 0.15,
           "average_gas_price": 0.15,
