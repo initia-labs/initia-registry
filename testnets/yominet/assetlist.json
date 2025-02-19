@@ -55,7 +55,7 @@
           "counterparty": {
             "chain_name": "initia",
             "base_denom": "uusdc",
-            "channel_id": "channel-0"
+            "channel_id": "channel-1629"
           },
           "chain": {
             "channel_id": "channel-2",
