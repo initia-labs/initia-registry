@@ -7,7 +7,6 @@
   "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",
   "summary": "Economically independent, onchain virtual world",
   "color": "#42F771",
-  "hidden": false,
   "status": "live",
   "vip": {
     "actions": [
