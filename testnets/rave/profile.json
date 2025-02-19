@@ -8,6 +8,14 @@
   "color": "#FFFFFF",
   "hidden": false,
   "status": "upcoming",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn Points",
+        "description": "Earn Points by betting on BTC, ETH and SOL."
+      }
+    ]
+  },
   "social": {
     "website": "https://www.rave.trade"
   }
