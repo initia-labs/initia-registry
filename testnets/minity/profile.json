@@ -8,8 +8,8 @@
   "description": "Track your assets, DeFi Positions, and NFTs across every interwoven rollup.",
   "summary": "Track your assets and positions across L1 and L2s",
   "color": "#FFFFFF",
-  "status": "live",
   "hidden": false,
+  "status": "live",
   "social": {
     "website": "https://minity.xyz"
   }

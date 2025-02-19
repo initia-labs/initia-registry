@@ -6,8 +6,8 @@
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
   "color": "#FFFFFF",
-  "status": "upcoming",
   "hidden": false,
+  "status": "upcoming",
   "social": {
     "website": "https://www.rave.trade"
   }

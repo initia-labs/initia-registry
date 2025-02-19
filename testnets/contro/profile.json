@@ -6,8 +6,8 @@
   "l2": true,
   "description": "The chain for ultrafair DEXes powered by revolutionary GLOB p2p markets.",
   "color": "#FFFFFF",
-  "status": "upcoming",
   "hidden": false,
+  "status": "upcoming",
   "social": {
     "website": "https://contro.tech"
   }
