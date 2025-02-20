@@ -1,119 +1,95 @@
 {
     "$schema": "../../chain.schema.json",
     "chain_name": "echelon",
-    "chain_id": "echelon-test-1",
-    "website": "https://echelon.market",
     "pretty_name": "Echelon",
-    "status": "live",
-    "network_type": "testnet",
+    "chain_id": "echelon-test-1",
     "bech32_prefix": "init",
-    "daemon_name": "minitiad",
-    "node_home": "$HOME/.minitia",
-    "key_algos": ["secp256k1"],
+    "network_type": "testnet",
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ]
+    },
+    "key_algos": [
+      "secp256k1"
+    ],
     "slip44": 118,
     "fees": {
       "fee_tokens": [
         {
-          "denom": "l2/1240d977f00007155a9a23ed14dfc3c33bcca3b932904a515b8d0f119e96e087",
-          "fixed_min_gas_price": 0.15,
-          "low_gas_price": 0.15,
-          "average_gas_price": 0.15,
-          "high_gas_price": 0.4
+          "denom": "GAS",
+          "fixed_min_gas_price": 0.1995
         },
         {
-            "denom": "GAS",
-            "fixed_min_gas_price": 0.15,
-            "low_gas_price": 0.15,
-            "average_gas_price": 0.15,
-            "high_gas_price": 0.4
+          "denom": "uinit",
+          "fixed_min_gas_price": 0.15
         }
-      ]
-    },
-    "staking": {
-      "staking_tokens": [
-        {
-          "denom": "uinit"
-        }
-      ]
-    },
-    "description": "Echelon Testnet",
-    "peers": {
-      "seeds": [],
-      "persistent_peers": []
-    },
-    "apis": {
-      "rpc": [
-        {
-            "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
-          }
-      ],
-      "rest": [
-        {
-            "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "https://rest-echelon-test-1.anvil.initia.xyz"
-          }
-      ],
-      "api": [
-      ],
-      "grpc": [
-        {
-            "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
-          },
-          {
-            "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
-          }
       ]
     },
     "images": [
       {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo-full.png"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
       }
     ],
     "logo_URIs": {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
     },
     "metadata": {
-      "is_l1": true,
+      "op_bridge_id": "629",
+      "op_denoms": [
+        "uinit"
+      ],
+      "executor_uri": "https://opinit-api-echelon-test-1.anvil.initia.xyz",
       "ibc_channels": [
         {
-          "chain_id": "minimove-1",
-          "port_id": "transfer",
-          "channel_id": "channel-0",
-          "version": "ics20-1"
-        },
-        {
-          "chain_id": "minimove-1",
+          "chain_id": "initiation-2",
           "port_id": "nft-transfer",
           "channel_id": "channel-1",
           "version": "ics721-1"
         },
         {
-          "chain_id": "miniwasm-1",
+          "chain_id": "initiation-2",
           "port_id": "transfer",
-          "channel_id": "channel-4",
+          "channel_id": "channel-0",
           "version": "ics20-1"
-        },
-        {
-          "chain_id": "miniwasm-1",
-          "port_id": "nft-transfer",
-          "channel_id": "channel-5",
-          "version": "ics721-1"
         }
       ],
-      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/assetlist.json"
+      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/assetlist.json",
+      "minitia": {
+        "type": "minimove",
+        "version": "v0.7.0"
+      }
     }
   }

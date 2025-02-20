@@ -1,88 +1,95 @@
 {
-    "$schema": "../../assetlist.schema.json",
+    "$schema": "../../chain.schema.json",
     "chain_name": "echelon",
-    "assets": [
+    "pretty_name": "Echelon",
+    "chain_id": "echelon-test-1",
+    "bech32_prefix": "init",
+    "network_type": "testnet",
+    "apis": {
+      "rpc": [
         {
-            "description": "The native token of Initia (IBC-Bridged)",
-            "denom_units": [
-              {
-                "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
-                "exponent": 0
-              },
-              {
-                "denom": "INIT",
-                "exponent": 6
-              }
-            ],
-            "base": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
-            "display": "INIT",
-            "name": "Initia IBC INIT",
-            "symbol": "INIT",
-            "coingecko_id": "",
-            "traces": [
-              {
-                "type": "ibc",
-                "counterparty": {
-                  "chain_name": "initia",
-                  "base_denom": "uinit",
-                  "channel_id": "channel-310"
-                },
-                "chain": {
-                  "channel_id": "channel-0",
-                  "path": "transfer/channel-0/uinit"
-                }
-              }
-            ],
-            "images": [
-              {
-                "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-                "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
-              }
-            ],
-            "logo_URIs": {
-              "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-              "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
-            }
-          },
-          {
-            "description": "BSC LayerZero Test Token",
-            "denom_units": [
-              {
-                "denom": "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
-                "exponent": 0
-              },
-              {
-                "denom": "TEST LZ",
-                "exponent": 8
-              }
-            ],
-            "base": "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
-            "display": "TEST LZ",
-            "name": "BSC LayerZero Test Token",
-            "symbol": "TEST LZ",
-            "coingecko_id": "",
-            "traces": [
-              {
-                "type": "ibc",
-                "counterparty": {
-                  "chain_name": "initia",
-                  "base_denom": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
-                  "channel_id": "channel-0"
-                },
-                "chain": {
-                  "channel_id": "channel-0",
-                  "path": "transfer/channel-0/move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01"
-                }
-              }
-            ],
-            "images": [
-              {
-                "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png"
-              }
-            ],
-            "logo_URIs": {
-              "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png"
-            }
-          }
-    ]
+          "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "https://rest-echelon-test-1.anvil.initia.xyz"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
+        },
+        {
+          "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
+        }
+      ]
+    },
+    "key_algos": [
+      "secp256k1"
+    ],
+    "slip44": 118,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "GAS",
+          "fixed_min_gas_price": 0.1995
+        },
+        {
+          "denom": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
+          "fixed_min_gas_price": 0.15
+        }
+      ]
+    },
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
+    },
+    "metadata": {
+      "op_bridge_id": "629",
+      "op_denoms": [
+        "uinit"
+      ],
+      "executor_uri": "https://opinit-api-echelon-test-1.anvil.initia.xyz",
+      "ibc_channels": [
+        {
+          "chain_id": "initiation-2",
+          "port_id": "nft-transfer",
+          "channel_id": "channel-1",
+          "version": "ics721-1"
+        },
+        {
+          "chain_id": "initiation-2",
+          "port_id": "transfer",
+          "channel_id": "channel-0",
+          "version": "ics20-1"
+        }
+      ],
+      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/assetlist.json",
+      "minitia": {
+        "type": "minimove",
+        "version": "v0.7.0"
+      }
+    }
   }
