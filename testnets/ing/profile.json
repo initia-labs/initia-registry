@@ -1,6 +1,6 @@
 {
   "$schema": "../../profile.schema.json",
-  "name": "infinity-ground",
+  "name": "ing",
   "pretty_name": "Infinity Ground",
   "category": "Gaming",
   "tags": ["AI"],
@@ -8,7 +8,15 @@
   "description": "Enabling everyone to create interactive entertainment.",
   "summary": "Enabling everyone to create using AI & blockchain",
   "color": "#FFFFFF",
-  "status": "upcoming",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "To be Infinity",
+        "description": "Create a better future."
+      }
+    ]
+  },
   "social": {
     "website": "https://www.infinityg.ai"
   }
