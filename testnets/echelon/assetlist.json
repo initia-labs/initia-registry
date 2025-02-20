@@ -1,95 +1,88 @@
 {
-    "$schema": "../../chain.schema.json",
-    "chain_name": "echelon",
-    "pretty_name": "Echelon",
-    "chain_id": "echelon-test-1",
-    "bech32_prefix": "init",
-    "network_type": "testnet",
-    "apis": {
-      "rpc": [
-        {
-          "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
-        }
-      ],
-      "rest": [
-        {
-          "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "https://rest-echelon-test-1.anvil.initia.xyz"
-        }
-      ],
-      "grpc": [
-        {
-          "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
-        },
-        {
-          "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
-        }
-      ]
-    },
-    "key_algos": [
-      "secp256k1"
-    ],
-    "slip44": 118,
-    "fees": {
-      "fee_tokens": [
-        {
-          "denom": "GAS",
-          "fixed_min_gas_price": 0.1995
-        },
-        {
-          "denom": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
-          "fixed_min_gas_price": 0.15
-        }
-      ]
-    },
-    "images": [
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "YOUR_CHAIN_NAME",
+    "assets": [
       {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
-      }
-    ],
-    "logo_URIs": {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
-    },
-    "metadata": {
-      "op_bridge_id": "629",
-      "op_denoms": [
-        "uinit"
-      ],
-      "executor_uri": "https://opinit-api-echelon-test-1.anvil.initia.xyz",
-      "ibc_channels": [
-        {
-          "chain_id": "initiation-2",
-          "port_id": "nft-transfer",
-          "channel_id": "channel-1",
-          "version": "ics721-1"
-        },
-        {
-          "chain_id": "initiation-2",
-          "port_id": "transfer",
-          "channel_id": "channel-0",
-          "version": "ics20-1"
+        "description": "The native token of Initia",
+        "denom_units": [
+          {
+            "denom": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
+            "exponent": 0
+          },
+          {
+            "denom": "INIT",
+            "exponent": 6
+          }
+        ],
+        "base": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
+        "display": "INIT",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "629"
+            }
+          }
+        ],
+        "name": "Initia Native Token",
+        "symbol": "INIT",
+        "coingecko_id": "",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
         }
-      ],
-      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/assetlist.json",
-      "minitia": {
-        "type": "minimove",
-        "version": "v0.7.0"
+      },
+      {
+        "description": "USD Coin on Initia",
+        "denom_units": [
+          {
+            "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+            "exponent": 0
+          },
+          {
+            "denom": "USDC",
+            "exponent": 6
+          }
+        ],
+        "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "display": "USDC",
+        "name": "USDC",
+        "symbol": "USDC",
+        "coingecko_id": "",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "uusdc",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/uusdc"
+            }
+          }
+        ],
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+            "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+        }
       }
-    }
+    ]
   }
