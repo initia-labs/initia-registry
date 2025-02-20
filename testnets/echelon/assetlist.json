@@ -1,6 +1,6 @@
 {
     "$schema": "../../assetlist.schema.json",
-    "chain_name": "YOUR_CHAIN_NAME",
+    "chain_name": "echelon",
     "assets": [
       {
         "description": "The native token of Initia",
