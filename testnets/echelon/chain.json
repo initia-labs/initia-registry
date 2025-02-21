@@ -59,12 +59,12 @@
     "images": [
       {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.svg"
       }
     ],
     "logo_URIs": {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/YOUR_CHAIN_NAME/images/YOUR_CHAIN_NAME.svg"
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.svg"
     },
     "metadata": {
       "op_bridge_id": "629",
