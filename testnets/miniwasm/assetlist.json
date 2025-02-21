@@ -43,6 +43,46 @@
       }
     },
     {
+      "description": "Op bridged fake USDC",
+      "denom_units": [
+        {
+          "denom": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
+          "exponent": 0
+        },
+        {
+          "denom": "opUSDC",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
+      "display": "opUSDC",
+      "name": "op bridged USDC",
+      "symbol": "opUSDC",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uusdc",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "2"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/USDC.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/USDC.svg"
+      }
+    },
+    {
       "description": "The fake ETH",
       "denom_units": [
         {
@@ -85,21 +125,21 @@
       }
     },
     {
-      "description": "The fake USDC",
+      "description": "IBC brdiged fake USDC",
       "denom_units": [
         {
           "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
           "exponent": 0
         },
         {
-          "denom": "USDC",
+          "denom": "ibcUSDC",
           "exponent": 6
         }
       ],
       "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-      "display": "USDC",
-      "name": "USDC",
-      "symbol": "USDC",
+      "display": "ibcUSDC",
+      "name": "IBC bridged USDC",
+      "symbol": "ibcUSDC",
       "coingecko_id": "",
       "traces": [
         {
