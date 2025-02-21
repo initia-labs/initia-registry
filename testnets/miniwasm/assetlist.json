@@ -46,7 +46,7 @@
       "description": "Op bridged fake USDC",
       "denom_units": [
         {
-          "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          "denom": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
           "exponent": 0
         },
         {
@@ -54,7 +54,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+      "base": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
       "display": "opUSDC",
       "name": "op bridged USDC",
       "symbol": "opUSDC",
