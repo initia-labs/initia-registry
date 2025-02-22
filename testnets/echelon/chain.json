@@ -51,7 +51,7 @@
           "fixed_min_gas_price": 0.1995
         },
         {
-          "denom": "uinit",
+          "denom": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
           "fixed_min_gas_price": 0.15
         }
       ]
