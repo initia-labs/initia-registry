@@ -1,6 +1,6 @@
 	{
 		"$schema": "../../chain.schema.json",
-		"chain_name": "Intergaze Testnet",
+		"chain_name": "intergaze",
 		"chain_id": "virgaze-1",
 		"website": "https://intergaze.xyz",
 		"pretty_name": "Intergaze",
@@ -75,7 +75,7 @@
 		"metadata": {
 			"op_bridge_id": "735",
 			"op_denoms": [
-				"ugaze"
+				"uinit"
 			],
 			"executor_uri": "https://executor.virgaze-1.intergaze-apis.com",
 			"ibc_channels": [
