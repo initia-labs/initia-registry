@@ -26,8 +26,8 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
-          files: rehearsal/**
-          files_ignore: rehearsal/initia/**
+          files: rehearsals/**
+          files_ignore: rehearsals/initia/**
 
       - name: Get current time
         uses: initia-labs/actions/get-current-time@main
