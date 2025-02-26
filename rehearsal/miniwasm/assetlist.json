@@ -46,7 +46,7 @@
       "description": "USD Coin on Initia",
       "denom_units": [
         {
-          "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+          "denom": "ibc/BEA3F792843398AD687C6490BAEE4C87958A78F61747F9081E8D6D28F787129A",
           "exponent": 0
         },
         {
@@ -54,7 +54,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      "base": "ibc/BEA3F792843398AD687C6490BAEE4C87958A78F61747F9081E8D6D28F787129A",
       "display": "USDC",
       "name": "USDC",
       "symbol": "USDC",
@@ -63,13 +63,25 @@
         {
           "type": "ibc",
           "counterparty": {
-            "chain_name": "initia",
+            "chain_name": "noble",
             "base_denom": "uusdc",
             "channel_id": "channel-0"
           },
           "chain": {
             "channel_id": "channel-0",
             "path": "transfer/channel-0/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+            "channel_id": "channel-8"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-0/uusdc"
           }
         }
       ],

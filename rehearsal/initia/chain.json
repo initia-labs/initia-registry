@@ -92,6 +92,44 @@
   },
   "metadata": {
     "is_l1": true,
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/assetlist.json",
+    "ibc_channels": [
+      {
+        "chain_id": "rehearsal-minimove-1",
+        "port_id": "transfer",
+        "channel_id": "channel-6",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rehearsal-minimove-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-7",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rehearsal-miniwasm-1",
+        "port_id": "transfer",
+        "channel_id": "channel-8",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rehearsal-miniwasm-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-9",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rehearsal-minievm-1",
+        "port_id": "transfer",
+        "channel_id": "channel-10",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rehearsal-minievm-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-11",
+        "version": "ics721-1"
+      }
+    ]
   }
 }
