@@ -1,0 +1,19 @@
+{
+  "$schema": "../../profile.schema.json",
+  "name": "minimove",
+  "pretty_name": "Minimove",
+  "category": "Gaming",
+  "l2": true,
+  "description": "description",
+  "summary": "summary",
+  "color": "#42F771",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn Score",
+        "description": "Scores will be randomly distributed to whitelisted addresses"
+      }
+    ]
+  }
+}
