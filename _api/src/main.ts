@@ -13,7 +13,9 @@ const srcDir = path.resolve(__dirname, "../..", rootDir)
 const distDir = path.resolve(__dirname, "../dist")
 
 deleteDirectory(distDir)
-copyDirectory(srcDir, distDir, { excludes: ["testnets", "devnets", new RegExp("\\."), new RegExp("^_")] })
+copyDirectory(srcDir, distDir, {
+  excludes: ["mainnets", "testnets", "devnets", "rehearsal", new RegExp("\\."), new RegExp("^_")],
+})
 
 const dirs = getFilePathsInDirectory(distDir)
 
