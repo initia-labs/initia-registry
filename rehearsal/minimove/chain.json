@@ -47,6 +47,14 @@
       {
         "denom": "umove",
         "fixed_min_gas_price": 0.015
+      },
+      {
+        "denom": "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
+        "fixed_min_gas_price": 0.015
+      },
+      {
+        "denom": "ibc/BEA3F792843398AD687C6490BAEE4C87958A78F61747F9081E8D6D28F787129A",
+        "fixed_min_gas_price": 0.015
       }
     ]
   },
