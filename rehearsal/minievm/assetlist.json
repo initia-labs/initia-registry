@@ -95,6 +95,32 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.svg"
       }
+    },
+    {
+      "description": "MiniEVM Native Token",
+      "denom_units": [
+        {
+          "denom": "GAS",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x9989cFca23e97B2AEd8EA21d9CF244A03Cc89f02",
+      "base": "GAS",
+      "display": "GAS",
+      "name": "Minievm Native Token",
+      "symbol": "GAS",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+      }
     }
   ]
 }
