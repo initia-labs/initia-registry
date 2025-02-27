@@ -4,7 +4,7 @@
 
 This repository contains scripts to deploy static files from the `_api/dist` directory. The scripts perform the following tasks:
 
-1. Copy original files to the `dist` directory.
+1. Copy the original files to the `dist` directory.
 2. Update URLs in `chain.json` and `assetlist.json` files.
 3. Aggregate `chain.json` files into a single `chains.json` file by extracting specific properties.
 
