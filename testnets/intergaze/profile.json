@@ -3,9 +3,7 @@
   "name": "intergaze",
   "pretty_name": "Intergaze",
   "category": "NFT",
-  "tags": [
-    "NFT"
-  ],
+  "tags": ["NFT"],
   "l2": true,
   "description": "The Launchpad for Interwoven NFTs",
   "summary": "Purpose-built chain optimized for creators & NFTs",
