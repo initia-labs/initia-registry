@@ -435,6 +435,32 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg"
       }
+    },
+    {
+      "description": "Drop IBC bridged deINIT",
+      "denom_units": [
+        {
+          "denom": "ibc/CF1C349647193CB0BBB686A28BBA0A13E7E17DE2BB39AFD1DF547C96B82FC133",
+          "exponent": 0
+        },
+        {
+          "denom": "deINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/CF1C349647193CB0BBB686A28BBA0A13E7E17DE2BB39AFD1DF547C96B82FC133",
+      "display": "deINIT",
+      "name": "drop IBC INIT",
+      "symbol": "deINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/deINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/deINIT.png"
+      }
     }
   ]
 }
