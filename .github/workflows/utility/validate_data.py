@@ -35,7 +35,7 @@ def checkChains():
                         for alias in unit["aliases"]:
                           assetDenoms.append(alias)
                   else:
-                    raise Exception("'denon_units' array doesn't contain any units")
+                    raise Exception("'denom_units' array doesn't contain any units")
                 if "base" in asset:
                   if asset["base"] in assetDenoms:
                     bases.append(asset["base"])
