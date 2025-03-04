@@ -437,7 +437,7 @@
       }
     },
     {
-      "description": "Drop IBC bridged deINIT",
+      "description": "Drop Staked INIT-USDC",
       "denom_units": [
         {
           "denom": "ibc/CF1C349647193CB0BBB686A28BBA0A13E7E17DE2BB39AFD1DF547C96B82FC133",
@@ -450,7 +450,7 @@
       ],
       "base": "ibc/CF1C349647193CB0BBB686A28BBA0A13E7E17DE2BB39AFD1DF547C96B82FC133",
       "display": "deINIT",
-      "name": "drop IBC INIT",
+      "name": "Drop Staked INIT-USDC",
       "symbol": "deINIT",
       "coingecko_id": "",
       "images": [
