@@ -14,7 +14,7 @@ Fetch data from initia-registry:
 import { assets, chains, ibc } from "@initia/initia-registry";
 import { Chain } from "@initia/initia-registry-types";
 
-const assetList: Chain = assets.find(
+const assetList: Chain | undefined = assets.find(
   ({ chain_name }) => chain_name === "initia"
 );
 ```
