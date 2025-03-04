@@ -59,7 +59,7 @@
       }
     },
     {
-      "description": "The fake USDC",
+      "description": "USD Coin on Initia",
       "denom_units": [
         {
           "denom": "uusdc",
