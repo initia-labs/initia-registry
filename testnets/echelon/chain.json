@@ -30,13 +30,13 @@
       ],
       "grpc": [
         {
-          "address": "grpc://grpc-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
+          "address": "grpc-echelon-testnet-1.anvil.asia-southeast.initia.xyz:443"
         },
         {
-          "address": "grpc://grpc-0-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
+          "address": "grpc-0-echelon-testnet-1.anvil.asia-southeast.initia.xyz:443"
         },
         {
-          "address": "grpc://grpc-1-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
+          "address": "grpc-1-echelon-testnet-1.anvil.asia-southeast.initia.xyz:443"
         }
       ]
     },
