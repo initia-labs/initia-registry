@@ -2,41 +2,41 @@
     "$schema": "../../chain.schema.json",
     "chain_name": "echelon",
     "pretty_name": "Echelon",
-    "chain_id": "echelon-test-1",
+    "chain_id": "echelon-testnet-1",
     "bech32_prefix": "init",
     "network_type": "testnet",
     "apis": {
       "rpc": [
         {
-          "address": "https://rpc-0-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rpc-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "https://rpc-1-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rpc-0-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "https://rpc-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rpc-1-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         }
       ],
       "rest": [
         {
-          "address": "https://rest-0-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rest-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "https://rest-1-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rest-0-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "https://rest-echelon-test-1.anvil.initia.xyz"
+          "address": "https://rest-1-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         }
       ],
       "grpc": [
         {
-          "address": "grpc://grpc-0-echelon-test-1.anvil.initia.xyz"
+          "address": "grpc://grpc-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "grpc://grpc-1-echelon-test-1.anvil.initia.xyz"
+          "address": "grpc://grpc-0-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         },
         {
-          "address": "grpc://grpc-echelon-test-1.anvil.initia.xyz"
+          "address": "grpc://grpc-1-echelon-testnet-1.anvil.asia-southeast.initia.xyz"
         }
       ]
     },
@@ -47,12 +47,8 @@
     "fees": {
       "fee_tokens": [
         {
-          "denom": "GAS",
+          "denom": "CUSTOM",
           "fixed_min_gas_price": 0.1995
-        },
-        {
-          "denom": "l2/8cd4658ce4fcc513ca202047fafe27cc440d8c65540b437424a6d01bc7caf841",
-          "fixed_min_gas_price": 0.15
         }
       ]
     },
@@ -67,11 +63,11 @@
       "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/images/logo.svg"
     },
     "metadata": {
-      "op_bridge_id": "629",
+      "op_bridge_id": "833",
       "op_denoms": [
         "uinit"
       ],
-      "executor_uri": "https://opinit-api-echelon-test-1.anvil.initia.xyz",
+      "executor_uri": "https://opinit-api-echelon-testnet-1.anvil.asia-southeast.initia.xyz",
       "ibc_channels": [
         {
           "chain_id": "initiation-2",
@@ -89,7 +85,7 @@
       "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/echelon/assetlist.json",
       "minitia": {
         "type": "minimove",
-        "version": "v0.7.0"
+        "version": "v0.7.0-1"
       }
     }
   }
