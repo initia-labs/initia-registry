@@ -1,0 +1,86 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "inertia",
+  "chain_id": "inertiation-10",
+  "website": "https://testnet.inrt.fi",
+  "pretty_name": "Inertia",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "inertiad",
+  "node_home": "$HOME/.inertiad",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uinrt",
+        "fixed_min_gas_price": 0.15
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": []
+  },
+  "description": "The interwoven lending protocol for the modular ecosystem.",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.inertia.testnet.inrt.fi",
+        "provider": "Inertia"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest.inertia.testnet.inrt.fi",
+        "provider": "Inertia"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc.inertia.testnet.inrt.fi:443",
+        "provider": "Inertia"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/inertiation-10",
+      "tx_page": "https://scan.testnet.initia.xyz/inertiation-10/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/inertiation-10/accounts/${accountAddress}"
+    }
+  ],
+  "faucets": [],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/logo.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/logo.png"
+  },
+  "metadata": {
+    "op_bridge_id": "938",
+    "op_denoms": ["uinit", "uusdc", "utia", "ueth"],
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "{\"fee_version\":\"ics29-1\",\"app_version\":\"ics20-1\"}"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-1",
+        "version": "{\"fee_version\":\"ics29-1\",\"app_version\":\"ics721-1\"}"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "v0.7.0-1"
+    }
+  }
+}
