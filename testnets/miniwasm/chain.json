@@ -109,7 +109,7 @@
     ],
     "grpc": [
       {
-        "address": "grpc://35.240.141.79:9090",
+        "address": "35.240.141.79:9090",
         "provider": "Initia Labs"
       },
       {

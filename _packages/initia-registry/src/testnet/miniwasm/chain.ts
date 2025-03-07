@@ -1,4 +1,4 @@
-import { Chain } from "@initia/initia-registry-types";
+import { Chain } from "@initia/initia-registry-types"
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "miniwasm",
@@ -55,7 +55,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: "grpc://35.240.141.79:9090",
+        address: "35.240.141.79:9090",
         provider: "Initia Labs",
       },
       {
@@ -111,5 +111,5 @@ const info: Chain = {
       version: "v0.5.4",
     },
   },
-};
-export default info;
+}
+export default info

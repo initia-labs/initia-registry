@@ -66,13 +66,13 @@
     ],
     "grpc": [
       {
-        "address": "grpc://grpc-0-embr-1.anvil.initia.xyz"
+        "address": "grpc-0-embr-1.anvil.initia.xyz:443"
       },
       {
-        "address": "grpc://grpc-1-embr-1.anvil.initia.xyz"
+        "address": "grpc-1-embr-1.anvil.initia.xyz:443"
       },
       {
-        "address": "grpc://grpc-embr-1.anvil.initia.xyz"
+        "address": "grpc-embr-1.anvil.initia.xyz:443"
       }
     ],
     "json-rpc": [
