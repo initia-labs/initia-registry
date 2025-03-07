@@ -30,13 +30,13 @@
     ],
     "grpc": [
       {
-        "address": "grpc://grpc-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz"
+        "address": "grpc-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz:443"
       },
       {
-        "address": "grpc://grpc-0-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz"
+        "address": "grpc-0-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz:443"
       },
       {
-        "address": "grpc://grpc-1-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz"
+        "address": "grpc-1-rehearsal-minimove-1.anvil.asia-southeast.staging.initia.xyz:443"
       }
     ]
   },
