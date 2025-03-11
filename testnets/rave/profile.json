@@ -5,8 +5,16 @@
   "category": "DeFi",
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
-  "color": "#FFFFFF",
-  "status": "upcoming",
+  "color": "#2962ff",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn Points",
+        "description": "Earn Points by betting on BTC, ETH and SOL."
+      }
+    ]
+  },
   "social": {
     "website": "https://www.rave.trade"
   }

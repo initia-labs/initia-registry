@@ -44,12 +44,12 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://maze-rpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz"
+        "address": "https://rpc.culinaris-2.initia.tech"
       }
     ],
     "rest": [
       {
-        "address": "https://maze-rest-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz"
+        "address": "https://rest.culinaris-2.initia.tech"
       }
     ],
     "grpc": [
@@ -59,12 +59,12 @@
     ],
     "json-rpc": [
       {
-        "address": "https://maze-jsonrpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz"
+        "address": "https://json-rpc.culinaris-2.initia.tech"
       }
     ],
     "json-rpc-websocket": [
       {
-        "address": "https://maze-ws-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz"
+        "address": "https://json-rpc-websocket.culinaris-2.initia.tech"
       }
     ]
   },

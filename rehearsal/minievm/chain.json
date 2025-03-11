@@ -1,0 +1,110 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "minievm",
+  "pretty_name": "Minievm",
+  "chain_id": "rehearsal-minievm-1",
+  "evm_chain_id": 4072803343219155,
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://rpc-0-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://rpc-1-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://rest-0-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://rest-1-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz:443"
+      },
+      {
+        "address": "grpc-0-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz:443"
+      },
+      {
+        "address": "grpc-1-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz:443"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://jsonrpc-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://jsonrpc-0-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "https://jsonrpc-1-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://jsonrpc-ws-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "wss://jsonrpc-ws-0-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      },
+      {
+        "address": "wss://jsonrpc-ws-1-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz"
+      }
+    ]
+  },
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 1000000000
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.png",
+      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.svg"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.png",
+    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.svg"
+  },
+  "metadata": {
+    "op_bridge_id": "5",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-rehearsal-minievm-1.anvil.asia-southeast.staging.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "rehearsal-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rehearsal-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/minievm/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v0.7.2-1"
+    }
+  }
+}

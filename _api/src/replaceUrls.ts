@@ -8,6 +8,7 @@ export function createUrlReplacer(rootDir: string) {
     mainnets: "https://registry.initia.xyz",
     testnets: "https://registry.testnet.initia.xyz",
     devnets: "https://registry.devnet.initia.xyz",
+    rehearsal: "https://registry.rehearsal.initia.xyz",
   }
 
   const regex = new RegExp(`https:\/\/raw\.githubusercontent\.com\/initia-labs\/initia-registry\/main\/${rootDir}`)

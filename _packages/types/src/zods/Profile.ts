@@ -23,7 +23,7 @@ export const ProfileSchema = z.object({
     .regex(new RegExp("^#([a-fA-F0-9]{6})$"))
     .describe("RGB color")
     .optional(),
-  status: z.enum(["live", "upcoming"]).optional(),
+  status: z.enum(["live", "upcoming", "hidden"]).optional(),
   vip: z
     .object({
       actions: z

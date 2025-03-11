@@ -1,0 +1,128 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "minimove",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/4b66eb60bf9f503ea97fe4dc96d5c604c1dca14ee988e21510ac4b087bf72671",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "3"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/INIT.svg"
+      }
+    },
+    {
+      "description": "USD Coin on Initia",
+      "denom_units": [
+        {
+          "denom": "ibc/BEA3F792843398AD687C6490BAEE4C87958A78F61747F9081E8D6D28F787129A",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/BEA3F792843398AD687C6490BAEE4C87958A78F61747F9081E8D6D28F787129A",
+      "display": "USDC",
+      "name": "USDC",
+      "symbol": "USDC",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "base_denom": "uusdc",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+            "channel_id": "channel-6"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-0/uusdc"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/rehearsal/initia/images/USDC.svg"
+      }
+    },
+    {
+      "description": "Minimove Native Token",
+      "denom_units": [
+        {
+          "denom": "umove",
+          "exponent": 0
+        },
+        {
+          "denom": "MOVE",
+          "exponent": 6
+        }
+      ],
+      "base": "umove",
+      "display": "MOVE",
+      "name": "Minimove Native Token",
+      "symbol": "MOVE",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg"
+      }
+    }
+  ]
+}

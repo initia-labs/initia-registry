@@ -42,9 +42,7 @@
       {
         "name": "0.5.4",
         "recommended_version": "v0.5.4",
-        "compatible_versions": [
-          "v0.5.4"
-        ],
+        "compatible_versions": ["v0.5.4"],
         "height": 1,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.5.4/miniwasm_v0.5.4_Linux_x86_64.tar.gz",
@@ -56,9 +54,7 @@
       {
         "name": "0.6.0",
         "recommended_version": "v0.6.1",
-        "compatible_versions": [
-          "v0.6.1"
-        ],
+        "compatible_versions": ["v0.6.1"],
         "height": 2842600,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.1/miniwasm_v0.6.1_Linux_x86_64.tar.gz",
@@ -70,9 +66,7 @@
       {
         "name": "0.6.4",
         "recommended_version": "v0.6.4",
-        "compatible_versions": [
-          "v0.6.4"
-        ],
+        "compatible_versions": ["v0.6.4"],
         "height": 3618900,
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v0.6.4/miniwasm_v0.6.4_Linux_x86_64.tar.gz",
@@ -115,7 +109,7 @@
     ],
     "grpc": [
       {
-        "address": "grpc://35.240.141.79:9090",
+        "address": "35.240.141.79:9090",
         "provider": "Initia Labs"
       },
       {
@@ -146,7 +140,7 @@
   },
   "metadata": {
     "op_bridge_id": "2",
-    "op_denoms": ["uinit"],
+    "op_denoms": ["uinit", "uusdc"],
     "executor_uri": "https://executor.miniwasm-2.initia.xyz",
     "ibc_channels": [
       {

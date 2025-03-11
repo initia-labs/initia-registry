@@ -36,7 +36,7 @@
     },
     "status": {
       "type": "string",
-      "enum": ["live", "upcoming"]
+      "enum": ["live", "upcoming", "hidden"]
     },
     "vip": {
       "type": "object",

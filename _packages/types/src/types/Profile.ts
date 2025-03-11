@@ -25,7 +25,7 @@ export interface ChainProfile {
    * Modify saturation and luminance for the ecosystem or the vip
    */
   color?: string;
-  status?: "live" | "upcoming";
+  status?: "live" | "upcoming" | "hidden";
   vip?: {
     actions?: {
       title?: string;
