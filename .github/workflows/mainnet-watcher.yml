@@ -16,7 +16,7 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v1
         with:
-          credentials_json: ${{ secrets.MAINNET_GCP_CREDENTIALS }}
+          credentials_json: ${{ secrets.APPS_PROD_GCP_CREDENTIALS }}
 
       - name: Setup GCP SDK
         id: setup-sdk

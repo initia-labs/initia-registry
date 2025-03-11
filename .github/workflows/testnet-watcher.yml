@@ -16,7 +16,7 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v1
         with:
-          credentials_json: ${{ secrets.TESTNET_GCP_CREDENTIALS }}
+          credentials_json: ${{ secrets.APPS_PROD_GCP_CREDENTIALS }}
 
       - name: Setup GCP SDK
         id: setup-sdk
@@ -47,7 +47,7 @@ jobs:
             for add in ${ALL_ADDED_FILES}; do
               echo "Copying $add to GCS..."
               path=$(dirname "$add") 
-              gsutil -m cp "$add" gs://testnet-initia-registry/v1/"$CURRENT_TIME"/added/"$path"/
+              gsutil -m cp "$add" gs://initia-testnet-registry/v1/"$CURRENT_TIME"/added/"$path"/
             done
           fi
 
@@ -55,7 +55,7 @@ jobs:
             for mod in ${ALL_MODIFIED_FILES}; do
               echo "Copying $mod to GCS..."
               path=$(dirname "$mod") 
-              gsutil -m cp "$mod" gs://testnet-initia-registry/v1/"$CURRENT_TIME"/modified/"$path"/
+              gsutil -m cp "$mod" gs://initia-testnet-registry/v1/"$CURRENT_TIME"/modified/"$path"/
             done
           fi
 
@@ -65,5 +65,5 @@ jobs:
               echo "Writing $del to file..."
               echo "$del" >> deleted_files
             done
-            gsutil -m cp deleted_files gs://testnet-initia-registry/v1/"$CURRENT_TIME"/deleted/
+            gsutil -m cp deleted_files gs://initia-testnet-registry/v1/"$CURRENT_TIME"/deleted/
           fi
