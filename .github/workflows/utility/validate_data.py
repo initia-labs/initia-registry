@@ -80,6 +80,9 @@ def checkChains():
             profileSchema = json.load(open(os.path.join(rootdir, profilejson)))
             if chainfolder != profileSchema["name"]:
               raise Exception("folder name must be same with name of profile.json (" + chainfolder +")")
+            logopng = os.path.join(networkfolder, chainfolder,"images", "logo.png")
+            if not os.path.exists(logopng):
+              raise Exception("logo.png must provide.")
 
           
 
