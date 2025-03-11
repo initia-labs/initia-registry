@@ -75,7 +75,7 @@ def checkChains():
                 raise Exception("assetlist schema doesn't contain 'assets' array")
 
           profilejson = os.path.join(networkfolder, chainfolder, "profilelist.json")
-          print(assetlistjson + "  - " + str(os.path.exists(profilejson)))
+          print(profilejson + "  - " + str(os.path.exists(profilejson)))
           if os.path.exists(profilejson):
             profileSchema = json.load(open(os.path.join(rootdir, profilejson)))
             if chainfolder != profileSchema["name"]:
