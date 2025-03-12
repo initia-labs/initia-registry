@@ -1,4 +1,4 @@
-name: Watcher - testnet
+name: Watcher - mainnet
 
 on:
   push:
@@ -26,8 +26,8 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v44
         with:
-          files: testnets/**
-          files_ignore: testnets/initia/**
+          files: mainnets/**
+          files_ignore: mainnets/initia/**
 
       - name: Get current time
         uses: initia-labs/actions/get-current-time@main
@@ -47,7 +47,7 @@ jobs:
             for add in ${ALL_ADDED_FILES}; do
               echo "Copying $add to GCS..."
               path=$(dirname "$add") 
-              gsutil -m cp "$add" gs://initia-testnet-registry/v1/"$CURRENT_TIME"/added/"$path"/
+              gsutil -m cp "$add" gs://initia-mainnet-registry/v1/"$CURRENT_TIME"/added/"$path"/
             done
           fi
 
@@ -55,7 +55,7 @@ jobs:
             for mod in ${ALL_MODIFIED_FILES}; do
               echo "Copying $mod to GCS..."
               path=$(dirname "$mod") 
-              gsutil -m cp "$mod" gs://initia-testnet-registry/v1/"$CURRENT_TIME"/modified/"$path"/
+              gsutil -m cp "$mod" gs://initia-mainnet-registry/v1/"$CURRENT_TIME"/modified/"$path"/
             done
           fi
 
@@ -65,5 +65,5 @@ jobs:
               echo "Writing $del to file..."
               echo "$del" >> deleted_files
             done
-            gsutil -m cp deleted_files gs://initia-testnet-registry/v1/"$CURRENT_TIME"/deleted/
+            gsutil -m cp deleted_files gs://initia-mainnet-registry/v1/"$CURRENT_TIME"/deleted/
           fi
