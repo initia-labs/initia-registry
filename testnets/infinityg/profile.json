@@ -8,7 +8,15 @@
   "description": "Enabling everyone to create interactive entertainment.",
   "summary": "Enabling everyone to create using AI & blockchain",
   "color": "#b387eb",
-  "status": "upcoming",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Complete Quest",
+        "description": "Completing VIP quests in-game for each epoch."
+      }
+    ]
+  },
   "social": {
     "website": "https://www.infinityg.ai"
   }
