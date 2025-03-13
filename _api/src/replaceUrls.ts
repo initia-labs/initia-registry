@@ -13,7 +13,7 @@ export function createUrlReplacer(rootDir: string) {
   }
 
   const regex = new RegExp(
-    `https:\/\/raw\.githubusercontent\.com\/initia-labs\/initia-registry\/main\/${escapeRegExp(rootDir)}`
+    escapeRegExp(`https:\/\/raw\.githubusercontent\.com\/initia-labs\/initia-registry\/main\/${rootDir}`)
   )
   const baseUrl = baseUrls[rootDir || "mainnets"]
   return replace(regex, baseUrl)
