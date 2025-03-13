@@ -119,6 +119,20 @@
   },
   "metadata": {
     "is_l1": true,
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/assetlist.json",
+    "ibc_channels": [
+      {
+        "chain_id": "osmosis-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "noble-1",
+        "port_id": "transfer",
+        "channel_id": "channel-3",
+        "version": "ics20-1"
+      }
+    ]
   }
 }
