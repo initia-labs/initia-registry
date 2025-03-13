@@ -109,13 +109,11 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/INIT.png"
   },
   "metadata": {
     "is_l1": true,
