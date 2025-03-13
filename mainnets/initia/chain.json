@@ -31,13 +31,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v1.0.0-beta.4",
-    "compatible_versions": ["v1.0.0-beta.3", "v1.0.0-beta.4"],
+    "recommended_version": "v1.0.0-beta.5",
+    "compatible_versions": ["v1.0.0-beta.5"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.4/initia_v1.0.0-beta.4_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.4/initia_v1.0.0-beta.4_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.4/initia_v1.0.0-beta.4_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.4/initia_v1.0.0-beta.4_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.5/initia_v1.0.0-beta.5_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.5/initia_v1.0.0-beta.5_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.5/initia_v1.0.0-beta.5_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.5/initia_v1.0.0-beta.5_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://rpc.initia.xyz/genesis"
