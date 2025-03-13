@@ -16,6 +16,14 @@
       {
         "denom": "uinrt",
         "fixed_min_gas_price": 0.15
+      },
+      {
+        "denom": "l2/b913cb24b9b6748e81809b0889740cb5787986bb3442648a785598f8d0f9e150",
+        "fixed_min_gas_price": 0.15
+      },
+      {
+        "denom": "l2/674eeb7eef9e880d6276248fed0e51a10edab5456ba5d580e3040ac545e6103f",
+        "fixed_min_gas_price": 0.015
       }
     ]
   },
@@ -62,7 +70,8 @@
   },
   "metadata": {
     "op_bridge_id": "938",
-    "op_denoms": ["uinit", "uusdc", "utia", "ueth"],
+    "op_denoms": ["uinit", "uusdc", "utia", "ueth", "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484", "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0"],
+    "executor_uri": "https://op-executor.inertia.testnet.inrt.fi",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
