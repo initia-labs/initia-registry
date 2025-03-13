@@ -14,6 +14,9 @@ importers:
       '@tsconfig/recommended':
         specifier: ^1.0.8
         version: 1.0.8
+      '@types/lodash':
+        specifier: ^4.17.16
+        version: 4.17.16
       '@types/node':
         specifier: ^22.13.1
         version: 22.13.1
@@ -26,6 +29,9 @@ importers:
       chalk:
         specifier: ^5.4.1
         version: 5.4.1
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       ramda:
         specifier: ^0.30.1
         version: 0.30.1
@@ -306,6 +312,9 @@ packages:
   '@tsconfig/recommended@1.0.8':
     resolution: {integrity: sha512-TotjFaaXveVUdsrXCdalyF6E5RyG6+7hHHQVZonQtdlk1rJZ1myDIvPUUKPhoYv+JAzThb2lQJh9+9ZfF46hsA==}
 
+  '@types/lodash@4.17.16':
+    resolution: {integrity: sha512-HX7Em5NYQAXKW+1T+FiuG27NGwzJfCX3s1GjOa7ujxZa52kjJLOr4FUxT+giF6Tgxv1e+/czV/iTtBw27WTU9g==}
+
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
 
@@ -395,6 +404,9 @@ packages:
 
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
@@ -621,6 +633,8 @@ snapshots:
 
   '@tsconfig/recommended@1.0.8': {}
 
+  '@types/lodash@4.17.16': {}
+
   '@types/node@22.13.1':
     dependencies:
       undici-types: 6.20.0
@@ -734,6 +748,8 @@ snapshots:
       resolve-pkg-maps: 1.0.0
 
   is-arrayish@0.3.2: {}
+
+  lodash@4.17.21: {}
 
   mdn-data@2.0.28: {}
 
