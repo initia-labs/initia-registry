@@ -14,6 +14,7 @@ const selectedChainProperties: (keyof Chain)[] = [
   "faucets",
   "metadata",
   "logo_URIs",
+  "slip44",
   "bech32_prefix",
   "network_type",
   "evm_chain_id",
