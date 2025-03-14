@@ -107,6 +107,46 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/milkTIA.png"
       }
+    },
+    {
+      "description": "The native token of Celestia on Initia via IBC",
+      "denom_units": [
+        {
+          "denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+          "exponent": 0
+        },
+        {
+          "denom": "TIA",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+      "display": "TIA",
+      "name": "Celestia",
+      "symbol": "TIA",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "celestia",
+            "base_denom": "utia",
+            "channel_id": "channel-78"
+          },
+          "chain": {
+            "channel_id": "channel-10",
+            "path": "transfer/channel-10/utia"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/TIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/initia/images/TIA.png"
+      }
     }
   ]
 }
