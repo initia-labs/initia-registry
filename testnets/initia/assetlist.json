@@ -461,6 +461,58 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/deINIT.png"
       }
+    },
+    {
+      "description": "The native token of Inertia",
+      "denom_units": [
+        {
+          "denom": "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+          "exponent": 0
+        },
+        {
+          "denom": "INRT",
+          "exponent": 6
+        }
+      ],
+      "base": "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+      "display": "INRT",
+      "name": "INRT",
+      "symbol": "INRT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/INRT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/INRT.png"
+      }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
+          "exponent": 0
+        },
+        {
+          "denom": "SINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
+      "display": "SINIT",
+      "name": "SINIT",
+      "symbol": "SINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/sINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/sINIT.png"
+      }
     }
   ]
 }
