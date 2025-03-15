@@ -1,4 +1,5 @@
 import { mapObjIndexed, replace } from "ramda"
+import escapeRegExp from "lodash/fp/escapeRegExp"
 import { getFilePathsInDirectory, isDirectory, readJsonFile, writeJsonFile } from "./utils"
 
 // Creates a URL replacer function based on the given network type
@@ -11,7 +12,9 @@ export function createUrlReplacer(rootDir: string) {
     rehearsal: "https://registry.rehearsal.initia.xyz",
   }
 
-  const regex = new RegExp(`https:\/\/raw\.githubusercontent\.com\/initia-labs\/initia-registry\/main\/${rootDir}`)
+  const regex = new RegExp(
+    escapeRegExp(`https:\/\/raw\.githubusercontent\.com\/initia-labs\/initia-registry\/main\/${rootDir}`)
+  )
   const baseUrl = baseUrls[rootDir || "mainnets"]
   return replace(regex, baseUrl)
 }
