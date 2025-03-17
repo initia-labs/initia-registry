@@ -496,14 +496,14 @@
           "exponent": 0
         },
         {
-          "denom": "SINIT",
+          "denom": "sINIT",
           "exponent": 6
         }
       ],
       "base": "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
-      "display": "SINIT",
-      "name": "SINIT",
-      "symbol": "SINIT",
+      "display": "sINIT",
+      "name": "sINIT",
+      "symbol": "sINIT",
       "coingecko_id": "",
       "images": [
         {
