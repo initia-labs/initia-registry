@@ -83,6 +83,32 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
         "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
       }
+    },
+    {
+      "description": "GAS Coin on Ing",
+      "denom_units": [
+        {
+          "denom": "GAS",
+          "exponent": 18
+        }
+      ],
+      "base": "GAS",
+      "display": "GAS",
+      "name": "GAS",
+      "symbol": "GAS",
+      "coingecko_id": "",
+      "traces": [
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.png",
+          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.svg"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.png",
+        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/GAS.svg"
+      }
     }
   ]
 }
