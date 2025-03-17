@@ -208,12 +208,12 @@
           "exponent": 0
         },
         {
-          "denom": "SINIT",
+          "denom": "sINIT",
           "exponent": 6
         }
       ],
       "base": "l2/a06fa07dcca34e84b22d9ac7f7de08eb73aaef85a2aff5a1e87674722d4b6372",
-      "display": "SINIT",
+      "display": "sINIT",
       "traces": [
         {
           "type": "op",
@@ -226,8 +226,8 @@
           }
         }
       ],
-      "name": "SINIT",
-      "symbol": "SINIT",
+      "name": "sINIT",
+      "symbol": "sINIT",
       "coingecko_id": "",
       "images": [
         {
