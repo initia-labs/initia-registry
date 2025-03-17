@@ -31,13 +31,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v1.0.0-beta.7",
-    "compatible_versions": ["v1.0.0-beta.7"],
+    "recommended_version": "v1.0.0-beta.8",
+    "compatible_versions": ["v1.0.0-beta.8"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.7/initia_v1.0.0-beta.7_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.7/initia_v1.0.0-beta.7_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.7/initia_v1.0.0-beta.7_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.7/initia_v1.0.0-beta.7_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.8/initia_v1.0.0-beta.8_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.8/initia_v1.0.0-beta.8_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.8/initia_v1.0.0-beta.8_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-beta.8/initia_v1.0.0-beta.8_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://rpc.initia.xyz/genesis"
