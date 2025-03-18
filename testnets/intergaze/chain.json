@@ -9,10 +9,19 @@
   "bech32_prefix": "init",
   "daemon_name": "intergazed",
   "node_home": "$HOME/.intergaze",
-  "key_algos": ["secp256k1"],
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
+      {
+        "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.15,
+        "average_gas_price": 0.15,
+        "high_gas_price": 0.4
+      },
       {
         "denom": "ugaze",
         "fixed_min_gas_price": 0.15,
@@ -65,7 +74,9 @@
   },
   "metadata": {
     "op_bridge_id": "735",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit"
+    ],
     "executor_uri": "https://executor.virgaze-1.intergaze-apis.com",
     "ibc_channels": [
       {
