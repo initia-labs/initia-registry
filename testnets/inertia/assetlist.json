@@ -237,6 +237,44 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/sINIT.png"
       }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "l2/237dd87de991c42e7342cca2e8436571778d71d65ae0b5832adcff5515a340d2",
+          "exponent": 0
+        },
+        {
+          "denom": "nINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/237dd87de991c42e7342cca2e8436571778d71d65ae0b5832adcff5515a340d2",
+      "display": "nINIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/9017f312a3df7e612d3ca453bee0bbc6c93b040861d235b8ad0406d3674e1abe",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "938"
+          }
+        }
+      ],
+      "name": "nINIT",
+      "symbol": "nINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/nINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/nINIT.png"
+      }
     }
   ]
 }
