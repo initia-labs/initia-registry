@@ -34,7 +34,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/384e4bf58c05381f9d1892b1795a71a77b47fdc90e5578de2c7203e3cd2cca70",
+          "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
           "exponent": 0
         },
         {
@@ -42,17 +42,19 @@
           "exponent": 6
         }
       ],
-      "base": "l2/384e4bf58c05381f9d1892b1795a71a77b47fdc90e5578de2c7203e3cd2cca70",
+      "base": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
       "display": "INIT",
       "traces": [
         {
-          "type": "op",
+          "type": "ibc",
           "counterparty": {
+            "chain_name": "initia",
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "channel_id": "channel-1585"
           },
           "chain": {
-            "bridge_id": "735"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uinit"
           }
         }
       ],
