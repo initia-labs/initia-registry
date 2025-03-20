@@ -1,0 +1,24 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "civitia",
+  "pretty_name": "Civitia",
+  "category": "Gaming",
+  "l2": true,
+  "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",
+  "summary": "Mint cities, collect yield, and control the planet",
+  "color": "#FFFFFF",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia-logo.png",
+  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia-logo-pixelated.png",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn SILVER",
+        "description": "Earn SILVER by playing Civitia seasons with an active residence."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.civitia.org"
+  }
+}

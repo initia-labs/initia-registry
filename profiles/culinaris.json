@@ -1,0 +1,24 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "culinaris",
+  "pretty_name": "Battle for Blockchain",
+  "category": "Gaming",
+  "l2": true,
+  "description": "Fully onchain battle world, where value gets redistributed based on players performance.",
+  "summary": "Battle world, with value redistribution protocols.",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris-logo.png",
+  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris-logo-pixelated.png",
+  "color": "#46BEFF",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Conquer Culinaris",
+        "description": "Winning as much $BFB in-game for each war."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://battleforblockchain.com"
+  }
+}

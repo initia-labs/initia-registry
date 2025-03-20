@@ -18,6 +18,11 @@ export const ProfileSchema = z.object({
       "A short description for the onboarding page (less than or equal to 50 characters)"
     )
     .optional(),
+  logo: z.string().regex(new RegExp("^https://.+\\.png$")).optional(),
+  "logo-pixelated": z
+    .string()
+    .regex(new RegExp("^https://.+\\.png$"))
+    .optional(),
   color: z
     .string()
     .regex(new RegExp("^#([a-fA-F0-9]{6})$"))

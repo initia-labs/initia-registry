@@ -30,6 +30,16 @@
       "description": "A short description for the onboarding page (less than or equal to 50 characters)",
       "maxLength": 50
     },
+    "logo": {
+      "type": "string",
+      "format": "uri-reference",
+      "pattern": "^https://.+\\.png$"
+    },
+    "logo-pixelated": {
+      "type": "string",
+      "format": "uri-reference",
+      "pattern": "^https://.+\\.png$"
+    },
     "color": {
       "$ref": "#/$defs/color",
       "description": "Modify saturation and luminance for the ecosystem or the vip"

@@ -63,9 +63,7 @@
       }
     ]
   },
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -77,17 +75,15 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/infinityg/images/logo.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/infinityg-logo.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/infinityg/images/logo.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/infinityg-logo.png"
   },
   "metadata": {
     "op_bridge_id": "958",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-infinityg-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {

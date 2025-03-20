@@ -130,13 +130,11 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
   },
   "metadata": {
     "op_bridge_id": "2",

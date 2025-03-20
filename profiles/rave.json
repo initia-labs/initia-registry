@@ -1,0 +1,23 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "rave",
+  "pretty_name": "Rave",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave-logo.png",
+  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave-logo-pixelated.png",
+  "color": "#2962ff",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Earn Points",
+        "description": "Earn Points by betting on BTC, ETH and SOL."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.rave.trade"
+  }
+}

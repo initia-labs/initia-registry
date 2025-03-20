@@ -237,10 +237,6 @@ export const AssetListSchema = z
                 .string()
                 .regex(new RegExp("^https://.+\\.png$"))
                 .optional(),
-              svg: z
-                .string()
-                .regex(new RegExp("^https://.+\\.svg$"))
-                .optional(),
             })
             .strict()
             .optional(),
@@ -270,10 +266,6 @@ export const AssetListSchema = z
                   png: z
                     .string()
                     .regex(new RegExp("^https://.+\\.png$"))
-                    .optional(),
-                  svg: z
-                    .string()
-                    .regex(new RegExp("^https://.+\\.svg$"))
                     .optional(),
                   theme: z
                     .object({

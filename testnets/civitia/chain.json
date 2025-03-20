@@ -9,18 +9,16 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
       {
         "denom": "l2/1666ede2bf1985307a86de36a6b78411cbf1edeffc2ac569e6a7b2f8753db4bb",
         "fixed_min_gas_price": 0.15,
-        "low_gas_price": 0.20,
-        "average_gas_price": 0.30,
-        "high_gas_price": 0.40
+        "low_gas_price": 0.2,
+        "average_gas_price": 0.3,
+        "high_gas_price": 0.4
       }
     ]
   },
@@ -58,19 +56,15 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
   },
   "metadata": {
     "op_bridge_id": "100",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://maze-api-opinit-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz/",
     "ibc_channels": [
       {

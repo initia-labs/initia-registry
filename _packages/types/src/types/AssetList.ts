@@ -57,7 +57,6 @@ export interface Asset {
   };
   logo_URIs?: {
     png?: string;
-    svg?: string;
   };
   /**
    * @minItems 1
@@ -66,7 +65,6 @@ export interface Asset {
     {
       image_sync?: Pointer;
       png?: string;
-      svg?: string;
       theme?: {
         primary_color_hex?: string;
         circle?: boolean;
@@ -76,7 +74,6 @@ export interface Asset {
     ...{
       image_sync?: Pointer;
       png?: string;
-      svg?: string;
       theme?: {
         primary_color_hex?: string;
         circle?: boolean;

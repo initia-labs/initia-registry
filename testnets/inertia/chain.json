@@ -58,15 +58,22 @@
   "faucets": [],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/logo.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/images/logo.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo.png"
   },
   "metadata": {
     "op_bridge_id": "938",
-    "op_denoms": ["uinit", "uusdc", "utia", "ueth", "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484", "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0"],
+    "op_denoms": [
+      "uinit",
+      "uusdc",
+      "utia",
+      "ueth",
+      "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+      "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0"
+    ],
     "executor_uri": "https://op-executor.inertia.testnet.inrt.fi",
     "ibc_channels": [
       {

@@ -1,0 +1,15 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "inertia",
+  "pretty_name": "Inertia",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The interwoven lending protocol for the modular ecosystem.",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo.png",
+  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo-pixelated.png",
+  "color": "#E10144",
+  "status": "upcoming",
+  "social": {
+    "website": "https://inrt.fi"
+  }
+}

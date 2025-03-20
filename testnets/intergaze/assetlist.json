@@ -21,13 +21,11 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/intergaze/images/logo.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/intergaze/images/logo.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze-logo.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/intergaze/images/logo.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/intergaze/images/logo.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze-logo.png"
       }
     },
     {
@@ -63,13 +61,11 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
       }
     }
   ]

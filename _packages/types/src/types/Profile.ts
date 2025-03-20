@@ -21,6 +21,8 @@ export interface ChainProfile {
    * A short description for the onboarding page (less than or equal to 50 characters)
    */
   summary?: string;
+  logo?: string;
+  "logo-pixelated"?: string;
   /**
    * Modify saturation and luminance for the ecosystem or the vip
    */
