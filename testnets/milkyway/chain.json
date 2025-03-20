@@ -57,11 +57,11 @@
   "faucets": [],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MilkyWay.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MilkyWay.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
   },
   "metadata": {
     "op_bridge_id": "64",
