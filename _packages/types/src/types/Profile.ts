@@ -22,7 +22,6 @@ export interface ChainProfile {
    */
   summary?: string;
   logo: string;
-  "logo-pixelated"?: string;
   /**
    * Modify saturation and luminance for the ecosystem or the vip
    */

@@ -22,10 +22,6 @@ export const ProfileSchema = z.object({
     )
     .optional(),
   logo: z.string().regex(new RegExp("^https://.+\\.png$")),
-  "logo-pixelated": z
-    .string()
-    .regex(new RegExp("^https://.+\\.png$"))
-    .optional(),
   color: z
     .string()
     .regex(new RegExp("^#([a-fA-F0-9]{6})$"))

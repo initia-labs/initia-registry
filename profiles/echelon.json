@@ -7,8 +7,7 @@
   "description": "A highly efficient money market connecting liquidity and supercharging yields with LST, RWA, and stablecoin backed lending strategies.",
   "summary": "Money market connecting liquidity with strategies.",
   "color": "#9AF8FB",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",
   "status": "live",
   "vip": {
     "actions": [

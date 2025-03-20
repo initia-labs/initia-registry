@@ -6,8 +6,7 @@
   "l2": true,
   "description": "The Leading DeFAI protocol specialized for Automated Farming via personalized AI agents.",
   "summary": "The Leading DeFAI protocol for Automated Farming",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lunch-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lunch-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lunch.png",
   "color": "#1898FF",
   "status": "live",
   "social": {

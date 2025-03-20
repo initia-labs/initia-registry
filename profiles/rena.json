@@ -6,8 +6,7 @@
   "tags": ["TEE", "Infra"],
   "l2": true,
   "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.png",
   "color": "#FB408D",
   "status": "upcoming",
   "social": {

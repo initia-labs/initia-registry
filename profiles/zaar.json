@@ -6,8 +6,7 @@
   "l2": true,
   "description": "The Fun Network, where NFTs and Degeneracy come to play.",
   "summary": "The Fun Network of NFTs and Degeneracy",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar.png",
   "color": "#DDBA00",
   "status": "live",
   "social": {

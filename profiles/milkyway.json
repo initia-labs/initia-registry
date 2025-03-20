@@ -7,8 +7,7 @@
   "description": "The Modular Staking Portal",
   "summary": "The Modular Staking Portal",
   "color": "#6550fc",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
   "status": "live",
   "vip": {
     "actions": [

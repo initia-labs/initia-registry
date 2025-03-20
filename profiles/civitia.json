@@ -7,8 +7,7 @@
   "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",
   "summary": "Mint cities, collect yield, and control the planet",
   "color": "#FFFFFF",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
   "status": "live",
   "vip": {
     "actions": [

@@ -6,8 +6,7 @@
   "l2": true,
   "description": "Fully onchain battle world, where value gets redistributed based on players performance.",
   "summary": "Battle world, with value redistribution protocols.",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",
   "color": "#46BEFF",
   "status": "live",
   "vip": {

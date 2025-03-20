@@ -58,11 +58,11 @@
   "faucets": [],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia-logo.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png"
   },
   "metadata": {
     "op_bridge_id": "938",

@@ -5,8 +5,7 @@
   "category": "DeFi",
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
   "color": "#2962ff",
   "status": "live",
   "vip": {

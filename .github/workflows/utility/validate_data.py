@@ -18,8 +18,6 @@ def checkChains():
             # raw.githubusercontent uri check
             if "logo" in profileSchema:
               validateRawGithubContent(profileSchema["logo"], True)
-            if "logo-pixelated" in profileSchema:
-              validateRawGithubContent(profileSchema["logo-pixelated"], True)
 
         if not os.path.isdir(networkfolder):
           continue
@@ -28,7 +26,7 @@ def checkChains():
           print(chainjson + "  - " + str(os.path.exists(chainjson)))
           if os.path.exists(chainjson):
             chainSchema = json.load(open(os.path.join(rootdir, chainjson)))
-            # force chain_name to be same with folder name for uniqueness 
+            # force chain_name to be same with folder name for uniqueness
             if chainfolder != chainSchema["chain_name"]:
               raise Exception("folder name must be same with chain name (" + chainfolder +")")
 
@@ -110,7 +108,7 @@ def validateTraces(traces, denom: str):
   if denomBefore != None and denomBefore != denom:
     print(denomBefore, denom)
     raise Exception("denom is not match with denom traces")
-    
+
 
 # check trace and return estimate denom
 def validateTrace(trace) -> str | None:

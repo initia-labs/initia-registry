@@ -43,11 +43,6 @@
       "format": "uri-reference",
       "pattern": "^https://.+\\.png$"
     },
-    "logo-pixelated": {
-      "type": "string",
-      "format": "uri-reference",
-      "pattern": "^https://.+\\.png$"
-    },
     "color": {
       "$ref": "#/$defs/color",
       "description": "Modify saturation and luminance for the ecosystem or the vip"

@@ -6,8 +6,7 @@
   "l2": true,
   "description": "The Modular Blockchain for Margin Trading",
   "summary": "The Modular Blockchain for Margin Trading",
-  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/blackwing-logo.png",
-  "logo-pixelated": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/blackwing-logo-pixelated.png",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/blackwing.png",
   "color": "#FFFFFF",
   "status": "live",
   "social": {
