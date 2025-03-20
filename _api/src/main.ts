@@ -1,42 +1,57 @@
-import * as path from "path"
-import * as url from "url"
-import { copyDirectory, deleteDirectory, getFilePathsInDirectory } from "./utils"
-import { updateUrlsInDirectory, createUrlReplacer } from "./replaceUrls"
+import path from "path"
+import url from "url"
+import fs from "fs-extra"
+import { updateUrls, replaceUrl } from "./replaceUrls"
 import { aggregateChainData, aggregateProfiles } from "./aggregateChains"
+import { traverseFiles } from "./traverseFiles"
 import { optimizeImages } from "./optimizeImages"
 
 const __filename = url.fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const rootDir = process.env.NETWORK_DIR || "mainnets"
-const srcDir = path.resolve(__dirname, "../..", rootDir)
+const srcDir = path.resolve(__dirname, "../..")
 const distDir = path.resolve(__dirname, "../dist")
 
-deleteDirectory(distDir)
-copyDirectory(srcDir, distDir, {
-  excludes: ["mainnets", "testnets", "devnets", "rehearsal", new RegExp("\\."), new RegExp("^_")],
+// Delete the dist directory
+fs.removeSync(distDir)
+
+// Copy all files from the network directory to the dist directory
+const networkDir = (process.env.NETWORK_DIR || "mainnets") as "mainnets" | "testnets" | "devnets"
+const srcChainsDir = path.resolve(srcDir, networkDir)
+const distChainsDir = path.resolve(distDir, "chains")
+fs.copySync(srcChainsDir, distChainsDir, {
+  // Do not copy files starting with an underscore
+  filter: (src) => !path.basename(src).startsWith("_"),
 })
 
-const dirs = getFilePathsInDirectory(distDir)
+// Copy the images directory to the dist directory
+const srcImagesDir = path.resolve(srcDir, "images")
+const distImagesDir = path.resolve(distDir, "images")
+fs.copySync(srcImagesDir, distImagesDir)
 
-/**
- * Update URLs in chain.json and assetlist.json files
- *
- * Example:
- * "https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png"
- * will be replaced with
- * "https://registry.initia.xyz/initia/images/INIT.png"
- */
-updateUrlsInDirectory(dirs, createUrlReplacer(rootDir))
+// Copy the profiles directory to the dist directory
+const srcProfilesDir = path.resolve(srcDir, "profiles")
+const distProfilesDir = path.resolve(distDir, "profiles")
+fs.copySync(srcProfilesDir, distProfilesDir)
 
-/**
- * Aggregate all chains into a single chains.json file
- * Only specific properties are included in the aggregation.
- */
-aggregateChainData(dirs, path.join(distDir, "chains.json"))
+// Update URLs in chain.json, assetlist.json and profile.json files
+// Example:
+// "https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png"
+// will be replaced with
+// "https://registry.initia.xyz/initia/images/INIT.png"
+traverseFiles(distChainsDir, (file) => updateUrls(file, (url) => replaceUrl(url, networkDir)))
+traverseFiles(distProfilesDir, (file) => updateUrls(file, (url) => replaceUrl(url, networkDir)))
 
-/** Aggregate all profiles into a single profiles.json file */
-aggregateProfiles(dirs, path.join(distDir, "profiles.json"))
+// Aggregate all chains into a single chains.json file
+// Only specific properties are included in the aggregation.
+// const chainJsonPaths = fs.readdirSync(distChainsDir).map((file) => path.join(dir, file))
+// dirs.map((dir) => path.join(dir, "chain.json")).filter(isJsonFile)
+const chainJsonPaths = fs.readdirSync(distChainsDir).map((chainDir) => path.join(distChainsDir, chainDir, "chain.json"))
+aggregateChainData(chainJsonPaths, path.join(distDir, "chains.json"))
 
-/** Optimize images in the directory */
-optimizeImages(distDir)
+// Aggregate all profiles into a single profiles.json file
+const profileJsonPaths = fs.readdirSync(distProfilesDir).map((file) => path.join(distProfilesDir, file))
+aggregateProfiles(profileJsonPaths, path.join(distDir, "profiles.json"))
+
+// Optimize images in the directory
+optimizeImages(distImagesDir)
