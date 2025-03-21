@@ -2,14 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "title": "Chain Profile",
   "type": "object",
-  "required": [
-    "name",
-    "pretty_name",
-    "category",
-    "description",
-    "logo",
-    "status"
-  ],
+  "required": ["name", "pretty_name", "category", "description", "logo", "status"],
   "properties": {
     "name": {
       "type": "string"
@@ -19,7 +12,7 @@
     },
     "category": {
       "type": "string",
-      "enum": ["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Other"]
+      "enum": ["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Others"]
     },
     "tags": {
       "type": "array",
