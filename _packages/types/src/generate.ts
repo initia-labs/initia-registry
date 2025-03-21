@@ -6,14 +6,12 @@ import * as json5 from "json5";
 const schemata: Record<string, string> = {
   assetlist: "AssetList",
   chain: "Chain",
-  ibc_data: "IBCInfo",
   profile: "Profile",
 };
 
 const schemaTitle: Record<string, string> = {
   assetlist: "AssetLists",
   chain: "CosmosChain",
-  ibc_data: "IBCInfo",
   profile: "Profile",
 };
 

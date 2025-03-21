@@ -8,6 +8,17 @@ rootdir = getcwd()
 # -----FOR EACH CHAIN-----
 def checkChains():
     for networkfolder in os.listdir(rootdir):
+        if networkfolder == 'images': continue
+        if networkfolder == 'profiles':
+          for profile in os.listdir(networkfolder):
+            profilejson = os.path.join(networkfolder, profile)
+            profileSchema = json.load(open(os.path.join(rootdir, profilejson)))
+            if profile != profileSchema["name"] + '.json':
+              raise Exception("file name must be same with name.json (" + profile +")")
+            # raw.githubusercontent uri check
+            if "logo" in profileSchema:
+              validateRawGithubContent(profileSchema["logo"], True)
+
         if not os.path.isdir(networkfolder):
           continue
         for chainfolder in os.listdir(networkfolder):
@@ -15,7 +26,7 @@ def checkChains():
           print(chainjson + "  - " + str(os.path.exists(chainjson)))
           if os.path.exists(chainjson):
             chainSchema = json.load(open(os.path.join(rootdir, chainjson)))
-            # force chain_name to be same with folder name for uniqueness 
+            # force chain_name to be same with folder name for uniqueness
             if chainfolder != chainSchema["chain_name"]:
               raise Exception("folder name must be same with chain name (" + chainfolder +")")
 
@@ -24,14 +35,10 @@ def checkChains():
               for image in chainSchema["images"]:
                 if "png" in image:
                   validateRawGithubContent(image["png"], True)
-                if "svg" in image:
-                  validateRawGithubContent(image["svg"], True)
 
             if "logo_URIs" in chainSchema:
               if "png" in chainSchema["logo_URIs"]:
                 validateRawGithubContent(chainSchema["logo_URIs"]["png"], True)
-              if "svg" in chainSchema["logo_URIs"]:
-                validateRawGithubContent(chainSchema["logo_URIs"]["svg"], True)
 
           assetlistjson = os.path.join(networkfolder, chainfolder, "assetlist.json")
           print(assetlistjson + "  - " + str(os.path.exists(assetlistjson)))
@@ -59,13 +66,9 @@ def checkChains():
                     for image in asset["images"]:
                       if "png" in image:
                         validateRawGithubContent(image["png"], True)
-                      if "svg" in image:
-                        validateRawGithubContent(image["svg"], True)
                   if "logo_URIs" in asset:
                     if "png" in asset["logo_URIs"]:
                       validateRawGithubContent(asset["logo_URIs"]["png"], True)
-                    if "svg" in asset["logo_URIs"]:
-                      validateRawGithubContent(asset["logo_URIs"]["svg"], True)
 
                   if "base" in asset and "traces" in asset:
                     validateTraces(asset["traces"], asset["base"])
@@ -73,18 +76,6 @@ def checkChains():
                 raise Exception("'assets' array doesn't contain any tokens")
             else:
                 raise Exception("assetlist schema doesn't contain 'assets' array")
-
-          profilejson = os.path.join(networkfolder, chainfolder, "profilelist.json")
-          print(profilejson + "  - " + str(os.path.exists(profilejson)))
-          if os.path.exists(profilejson):
-            profileSchema = json.load(open(os.path.join(rootdir, profilejson)))
-            if chainfolder != profileSchema["name"]:
-              raise Exception("folder name must be same with name of profile.json (" + chainfolder +")")
-            logopng = os.path.join(networkfolder, chainfolder,"images", "logo.png")
-            if not os.path.exists(logopng):
-              raise Exception("logo.png must provide.")
-
-          
 
     print("Done")
 
@@ -117,7 +108,7 @@ def validateTraces(traces, denom: str):
   if denomBefore != None and denomBefore != denom:
     print(denomBefore, denom)
     raise Exception("denom is not match with denom traces")
-    
+
 
 # check trace and return estimate denom
 def validateTrace(trace) -> str | None:

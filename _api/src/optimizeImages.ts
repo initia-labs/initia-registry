@@ -1,10 +1,10 @@
-import * as fs from "fs"
+import fs from "fs-extra"
 import * as path from "path"
 import chalk from "chalk"
 import { v4 as uuidv4 } from "uuid"
 import sharp from "sharp"
 import { optimize } from "svgo"
-import { getFilePathsInDirectory, getFileSize, isDirectory } from "./utils"
+import { getFileSize, isDirectory } from "./utils"
 
 // Constants for image size limits
 const SVG_SIZE_LIMIT = 50 * 1024 // 50KB
@@ -16,7 +16,7 @@ const imageExtensions = [".png", ".svg"]
 
 // Optimize images in the directory
 export async function optimizeImages(dir: string) {
-  const files = getFilePathsInDirectory(dir)
+  const files = fs.readdirSync(dir).map((file) => path.join(dir, file))
 
   for (const file of files) {
     if (isDirectory(file)) {

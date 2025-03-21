@@ -392,11 +392,6 @@
             "format": "uri-reference",
             "pattern": "^https://.+\\.png$"
           },
-          "svg": {
-            "type": "string",
-            "format": "uri-reference",
-            "pattern": "^https://.+\\.svg$"
-          },
           "theme": {
             "type": "object",
             "properties": {
@@ -437,9 +432,6 @@
         "anyOf": [
           {
             "required": ["png"]
-          },
-          {
-            "required": ["svg"]
           }
         ],
         "additionalProperties": false
@@ -452,11 +444,6 @@
           "type": "string",
           "format": "uri-reference",
           "pattern": "^https://.+\\.png$"
-        },
-        "svg": {
-          "type": "string",
-          "format": "uri-reference",
-          "pattern": "^https://.+\\.svg$"
         }
       },
       "additionalProperties": false

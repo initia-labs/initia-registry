@@ -2,6 +2,14 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "title": "Chain Profile",
   "type": "object",
+  "required": [
+    "name",
+    "pretty_name",
+    "category",
+    "description",
+    "logo",
+    "status"
+  ],
   "properties": {
     "name": {
       "type": "string"
@@ -29,6 +37,11 @@
       "type": "string",
       "description": "A short description for the onboarding page (less than or equal to 50 characters)",
       "maxLength": 50
+    },
+    "logo": {
+      "type": "string",
+      "format": "uri-reference",
+      "pattern": "^https://.+\\.png$"
     },
     "color": {
       "$ref": "#/$defs/color",

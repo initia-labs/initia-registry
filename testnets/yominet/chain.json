@@ -44,13 +44,11 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png"
   },
   "metadata": {
     "op_bridge_id": "80",

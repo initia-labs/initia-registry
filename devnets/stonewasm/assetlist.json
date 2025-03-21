@@ -21,13 +21,11 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png"
       }
     },
     {
@@ -49,13 +47,11 @@
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.png"
       }
     }
   ]

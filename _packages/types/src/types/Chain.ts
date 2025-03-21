@@ -100,7 +100,7 @@ export interface Chain {
     cosmwasm_version?: string;
     cosmwasm_enabled?: boolean;
     /**
-     * Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm
+     * Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm
      */
     cosmwasm_path?: string;
     ibc_go_version?: string;
@@ -152,7 +152,7 @@ export interface Chain {
       cosmwasm_version?: string;
       cosmwasm_enabled?: boolean;
       /**
-       * Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm
+       * Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm
        */
       cosmwasm_path?: string;
       ibc_go_version?: string;
@@ -170,17 +170,11 @@ export interface Chain {
       };
     }[];
   };
-  images?: (
-    | {
-        [k: string]: unknown;
-      }
-    | {
-        [k: string]: unknown;
-      }
-  )[];
+  images?: {
+    [k: string]: unknown;
+  }[];
   logo_URIs?: {
     png?: string;
-    svg?: string;
   };
   description?: string;
   peers?: {

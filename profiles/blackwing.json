@@ -1,0 +1,15 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "blackwing",
+  "pretty_name": "Blackwing",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The Modular Blockchain for Margin Trading",
+  "summary": "The Modular Blockchain for Margin Trading",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/blackwing.png",
+  "color": "#FFFFFF",
+  "status": "live",
+  "social": {
+    "website": "https://blackwing.fi"
+  }
+}

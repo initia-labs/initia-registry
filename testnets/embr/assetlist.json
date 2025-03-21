@@ -30,7 +30,15 @@
       ],
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": ""
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
     }
   ]
 }

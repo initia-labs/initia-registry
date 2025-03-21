@@ -36,10 +36,9 @@ Additionally, the registry includes ```*.schema.json``` files in the root direct
 | `slip44`           | `number`             | Optional      | The SLIP-0044 coin type is used for generating HD wallet paths (commonly `118` for Cosmos chains).                                                                                                                                                                          |
 | `fees`             | `object`             | Optional      | Contains `fee_tokens`, detailing denominations and gas price information for transaction fees.                                                                                                                                                                          |
 | `fees.fee_tokens`  | `object[]`           | Optional      | An array of fee token objects, each with `denom`, `fixed_min_gas_price`, `low_gas_price`, `average_gas_price`, `high_gas_price`.                                                                                                                                         |
-| `images`           | `object[]`           | Optional      | An array of image objects for chain logos or branding. Often includes `png` and `svg` URLs.                                                                                                                                                                              |
+| `images`           | `object[]`           | Optional      | An array of image objects for chain logos or branding. Often includes `png` URLs.                                                                                                                                                                              |
 | `images[].png`     | `string (URL)`       | Optional      | Direct link to a PNG version of the chain’s image/logo.                                                                                                                                                                                                                  |
-| `images[].svg`     | `string (URL)`       | Optional      | Direct link to an SVG version of the chain’s image/logo.                                                                                                                                                                                                                 |
-| `logo_URIs`        | `object`             | Optional      | Alternative or simplified object to store image URIs (`png`, `svg`) for the chain’s logo.                                                                                                                                                                                |
+| `logo_URIs`        | `object`             | Optional      | Alternative or simplified object to store image URIs (`png`) for the chain’s logo.                                                                                                                                                                                |
 | `metadata`         | `object`             | Optional      | Additional chain metadata. May contain fields like `op_bridge_id`, `op_denoms`, `executor_uri`, `ibc_channels`, `assetlist`, etc.                                                                                                                                        |
 | `metadata.op_bridge_id` | `string`        | Yes (L2)    | The OP bridge identifier, if the chain is connected via OP bridging.                                                                                                                                                                                                      |
 | `metadata.op_denoms`    | `string[]`      | Yes (L2)      | One or more denoms used in OP bridging.                                                                                                                                                                                                                                  |
@@ -99,13 +98,11 @@ A sample `chain.json` includes the following information.
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/kamigochi.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png"
   },
   "metadata": {
     "op_bridge_id": "80",
@@ -376,10 +373,9 @@ main().catch((error) => {
 | `assets[].symbol`        | `string`                 | Yes           | The short symbol for the asset (e.g., `INIT`, `USDC`, “ONYX”).                                                                                                                                                                      |
 | `assets[].coingecko_id`  | `string`                 | Optional      | Reference ID for CoinGecko, if the asset is or will be listed.                                                                                                                                                                      |
 | `assets[].traces`        | `object[]`               | Optional      | IBC or OP bridging info. Contains nested fields like `type` (`ibc`, `op`), a `counterparty` object (chain_name, base_denom, channel_id), and a `chain` object (channel_id, path, bridge_id).                                       |
-| `assets[].images`        | `object[]`               | Optional      | Array of image objects with links to PNG/SVG for the asset’s logo.                                                                                                                                                                 |
+| `assets[].images`        | `object[]`               | Optional      | Array of image objects with links to PNG for the asset’s logo.                                                                                                                                                                 |
 | `assets[].images[].png`  | `string (URL)`           | Optional      | PNG logo URL.                                                                                                                                                                                                                       |
-| `assets[].images[].svg`  | `string (URL)`           | Optional      | SVG logo URL.                                                                                                                                                                                                                       |
-| `assets[].logo_URIs`     | `object`                 | Optional      | Simplified or alternative object containing the `png` and `svg` fields for direct image references.      
+| `assets[].logo_URIs`     | `object`                 | Optional      | Simplified or alternative object containing the `png` fields for direct image references.      
 
 An example assetlist json contains the following structure:
 ```json
@@ -408,13 +404,11 @@ An example assetlist json contains the following structure:
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/images/onyx.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
       }
     },
     {
@@ -450,13 +444,11 @@ An example assetlist json contains the following structure:
       ],
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
       }
     },
     {
@@ -490,13 +482,11 @@ An example assetlist json contains the following structure:
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-          "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-        "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
       }
     }
   ]
@@ -531,7 +521,7 @@ An example assetlist json contains the following structure:
 
 ```json
 {
-  "$schema": "../../profile.schema.json",
+  "$schema": "../profile.schema.json",
   "name": "yominet",
   "pretty_name": "Kamigotchi",
   "category": "Gaming",
