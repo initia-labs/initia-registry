@@ -13,7 +13,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,10 +32,7 @@ jobs:
         run: npm ci
         working-directory: ./_packages/types
       - name: Generate files
-        run: npm run build:pkg
-        working-directory: ./_packages/types
-      - name: Format fix
-        run: npm run format:fix
+        run: npm run generate
         working-directory: ./_packages/types
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
