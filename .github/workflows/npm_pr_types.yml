@@ -28,7 +28,7 @@ jobs:
           NEW_VERSION=$(npx semver $CURRENT_VERSION -i patch)
           echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
           COMMIT=$(git rev-parse --short HEAD)
-          echo "commit=COMMIT" >> $GITHUB_OUTPUT
+          echo "commit=$COMMIT" >> $GITHUB_OUTPUT
           npm version $NEW_VERSION --no-git-tag-version
         working-directory: ./_packages/types
       - name: Install dependencies
