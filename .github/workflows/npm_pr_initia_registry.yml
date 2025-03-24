@@ -5,7 +5,7 @@ on:
     branches: ['main']
     paths:
       - '*/*/assetlist.json'
-      - '*/*/chain.json.json'
+      - '*/*/chain.json'
 
 permissions:
   contents: write
