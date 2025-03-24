@@ -5,7 +5,7 @@ on:
     branches: ['main']
     paths:
       - '*/*/assetlist.json'
-      - '*/*/chain.json.json'
+      - '*/*/chain.json'
 
 permissions:
   contents: write
@@ -30,10 +30,15 @@ jobs:
           CURRENT_VERSION=$(node -p "require('./package.json').version") 
           NEW_VERSION=$(npx semver $CURRENT_VERSION -i patch)
           echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          COMMIT=$(git rev-parse --short HEAD)
+          echo "commit=$COMMIT" >> $GITHUB_OUTPUT
           npm version $NEW_VERSION --no-git-tag-version
         working-directory: ./_packages/initia-registry
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies and update initia-registry-types
+        run: |
+          npm ci
+          npm uninstall @initia/initia-registry-types
+          npm install @initia/initia-registry-types
         working-directory: ./_packages/initia-registry
       - name: Generate files
         run: npm run build:pkg
@@ -48,3 +53,4 @@ jobs:
           title: '[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}'
           commit-message: '[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}'
           body: 'Update initia-registry to ${{ steps.version.outputs.new_version }}'
+          branch: 'bump/initia-registry-${{steps.version.outputs.commit}}'
