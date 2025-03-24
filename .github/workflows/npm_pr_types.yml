@@ -27,6 +27,8 @@ jobs:
           CURRENT_VERSION=$(node -p "require('./package.json').version") 
           NEW_VERSION=$(npx semver $CURRENT_VERSION -i patch)
           echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          COMMIT=$(git rev-parse --short HEAD)
+          echo "commit=COMMIT" >> $GITHUB_OUTPUT
           npm version $NEW_VERSION --no-git-tag-version
         working-directory: ./_packages/types
       - name: Install dependencies
@@ -42,3 +44,4 @@ jobs:
           title: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
           commit-message: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
           body: 'Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
+          branch: 'bump/initia-registry-v${{steps.version.outputs.new_version}}'
