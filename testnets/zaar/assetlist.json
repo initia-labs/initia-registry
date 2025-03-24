@@ -6,7 +6,7 @@
       "description": "Testnet ZAAR Token",
       "denom_units": [
         {
-          "denom": "evm/6f3790E91caf7B020f178aaB4482a2B1B5E9f45C",
+          "denom": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
           "exponent": 0
         },
         {
@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x6f3790E91caf7B020f178aaB4482a2B1B5E9f45C",
-      "base": "evm/6f3790E91caf7B020f178aaB4482a2B1B5E9f45C",
+      "address": "0xBdb128Cf29d40738875297E90aa42772D354c137",
+      "base": "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
       "display": "tZAAR",
       "name": "Test Zaar",
       "symbol": "tZAAR",
@@ -34,7 +34,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/ccb9e298628aa5166d5350728d51fbd055c1308c58b5e9d6a3e80951333cbb22",
+          "denom": "l2/b5146ab36c54aa4d1feba770591798e4ae27a846613edc841236ebf954120b09",
           "exponent": 0
         },
         {
@@ -42,7 +42,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/ccb9e298628aa5166d5350728d51fbd055c1308c58b5e9d6a3e80951333cbb22",
+      "base": "l2/b5146ab36c54aa4d1feba770591798e4ae27a846613edc841236ebf954120b09",
       "display": "INIT",
       "traces": [
         {
@@ -52,7 +52,7 @@
             "chain_name": "initia"
           },
           "chain": {
-            "bridge_id": "824"
+            "bridge_id": "1048"
           }
         }
       ],
