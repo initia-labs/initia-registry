@@ -1,0 +1,44 @@
+name: NPM create initia-registry-types pull request
+
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'assetlist.schema.json'
+      - 'chain.schema.json'
+      - 'profile.schema.json'
+
+jobs:
+  create_types_pr:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: Install semver
+        run: npm install -g semver
+      - name: Update version
+        id: version
+        run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version") 
+          NEW_VERSION=$(npx semver $CURRENT_VERSION -i patch)
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          npm version $NEW_VERSION --no-git-tag-version
+        working-directory: ./_packages/types
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./_packages/types
+      - name: Generate files
+        run: npm run generate
+        working-directory: ./_packages/types
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          title: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
+          commit-message: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
+          body: 'Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
