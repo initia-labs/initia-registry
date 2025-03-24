@@ -44,4 +44,4 @@ jobs:
           title: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
           commit-message: '[BOT] Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
           body: 'Update initia-registry-types to ${{ steps.version.outputs.new_version }}'
-          branch: 'bump/initia-registry-v${{steps.version.outputs.new_version}}'
+          branch: 'bump/initia-registry-${{steps.version.outputs.commit}}'
