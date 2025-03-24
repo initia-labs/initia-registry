@@ -37,6 +37,7 @@
   "devDependencies": {
     "glob": "^10.3.12",
     "mkdirp": "^3.0.1",
+    "prettier": "^3.5.3",
     "rimraf": "^5.0.5"
   },
   "dependencies": {
