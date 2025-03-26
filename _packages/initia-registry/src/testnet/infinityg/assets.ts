@@ -1,62 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "milkyway",
+  chain_name: "infinityg",
   assets: [
-    {
-      description: "Gas token of MilkyWay",
-      denom_units: [
-        {
-          denom: "GAS",
-          exponent: 0,
-        },
-      ],
-      base: "GAS",
-      display: "GAS",
-      name: "MilkyWay Gas Token",
-      symbol: "GAS",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
-      },
-    },
-    {
-      description: "The INIT Liquid Staking Token",
-      denom_units: [
-        {
-          denom: "umilkinit",
-          exponent: 0,
-        },
-        {
-          denom: "milkINIT",
-          exponent: 6,
-        },
-      ],
-      base: "umilkinit",
-      display: "milkINIT",
-      name: "INIT Liquid Staking Token",
-      symbol: "milkINIT",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
-      },
-    },
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
+            "l2/461e4561c847e5af5f90e093aea828d9a5d376b72ad40c7d81972ad7447f81b1",
           exponent: 0,
         },
         {
@@ -64,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
+      base: "l2/461e4561c847e5af5f90e093aea828d9a5d376b72ad40c7d81972ad7447f81b1",
       display: "INIT",
       traces: [
         {
@@ -74,7 +26,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "822",
+            bridge_id: "958",
           },
         },
       ],
@@ -129,6 +81,29 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+      },
+    },
+    {
+      description: "GAS Coin on Ing",
+      denom_units: [
+        {
+          denom: "GAS",
+          exponent: 18,
+        },
+      ],
+      base: "GAS",
+      display: "GAS",
+      name: "GAS",
+      symbol: "GAS",
+      coingecko_id: "",
+      traces: [],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png",
       },
     },
   ],

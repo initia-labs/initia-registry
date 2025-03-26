@@ -35,13 +35,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
       },
     },
     {
@@ -65,17 +63,15 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/BFB.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/BFB.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/BFB.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/BFB.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png",
       },
     },
     {
-      description: "The fake USDC",
+      description: "USD Coin on Initia",
       denom_units: [
         {
           denom:
@@ -108,13 +104,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
       },
     },
   ],

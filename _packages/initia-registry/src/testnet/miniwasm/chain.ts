@@ -1,4 +1,4 @@
-import { Chain } from "@initia/initia-registry-types"
+import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "miniwasm",
@@ -77,17 +77,15 @@ const info: Chain = {
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/miniwasm/images/miniwasm.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png",
   },
   metadata: {
     op_bridge_id: "2",
-    op_denoms: ["uinit"],
+    op_denoms: ["uinit", "uusdc"],
     executor_uri: "https://executor.miniwasm-2.initia.xyz",
     ibc_channels: [
       {
@@ -111,5 +109,5 @@ const info: Chain = {
       version: "v0.5.4",
     },
   },
-}
-export default info
+};
+export default info;

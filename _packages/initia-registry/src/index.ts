@@ -1,4 +1,5 @@
 export * from "./testnet";
+export * from "./mainnet";
 import all from "./all";
 
 export default all;

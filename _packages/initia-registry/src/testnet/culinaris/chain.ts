@@ -12,6 +12,7 @@ const info: Chain = {
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
   slip44: 118,
+  website: "https://battleforblockchain.com",
   fees: {
     fee_tokens: [
       {
@@ -30,14 +31,12 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address:
-          "https://maze-rpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz",
+        address: "https://rpc.culinaris-2.initia.tech",
       },
     ],
     rest: [
       {
-        address:
-          "https://maze-rest-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz",
+        address: "https://rest.culinaris-2.initia.tech",
       },
     ],
     grpc: [
@@ -48,25 +47,23 @@ const info: Chain = {
     ],
     "json-rpc": [
       {
-        address:
-          "https://maze-jsonrpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz",
+        address: "https://json-rpc.culinaris-2.initia.tech",
       },
     ],
     "json-rpc-websocket": [
       {
-        address:
-          "https://maze-ws-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz",
+        address: "https://json-rpc-websocket.culinaris-2.initia.tech",
       },
     ],
   },
   explorers: [],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/logo.png",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/images/logo.png",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",
   },
   metadata: {
     op_bridge_id: "314",

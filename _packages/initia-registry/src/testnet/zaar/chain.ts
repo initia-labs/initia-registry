@@ -2,8 +2,8 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "zaar",
-  chain_id: "zaar-testnet-2",
-  evm_chain_id: 113765719155157,
+  chain_id: "zaar-testnet-5",
+  evm_chain_id: 1330587941640993,
   pretty_name: "Zaar",
   status: "live",
   network_type: "testnet",
@@ -11,59 +11,61 @@ const info: Chain = {
   daemon_name: "minitiad",
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
+  website: "https://www.zaar.market",
   slip44: 118,
   fees: {
     fee_tokens: [
       {
-        denom: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
-        fixed_min_gas_price: 15000000000,
-        low_gas_price: 15000000000,
-        average_gas_price: 15000000000,
-        high_gas_price: 15000000000,
+        denom: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
+        fixed_min_gas_price: 1000000000,
+        low_gas_price: 1000000000,
+        average_gas_price: 1000000000,
+        high_gas_price: 1000000000,
       },
     ],
   },
   apis: {
     rpc: [
       {
-        address: "https://rpc-zaar-testnet-2.anvil.testnet.initia.xyz",
+        address: "https://rpc-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
       },
     ],
     rest: [
       {
-        address: "https://rest-zaar-testnet-2.anvil.testnet.initia.xyz",
+        address: "https://rest-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
       },
     ],
     grpc: [
       {
-        address: "grpc-zaar-testnet-2.anvil.testnet.initia.xyz:443",
+        address: "grpc-zaar-testnet-5.anvil.asia-southeast.initia.xyz:443",
       },
     ],
     "json-rpc": [
       {
-        address: "https://jsonrpc-zaar-testnet-2.anvil.testnet.initia.xyz",
+        address:
+          "https://jsonrpc-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
       },
     ],
     "json-rpc-websocket": [
       {
-        address: "wss://jsonrpc-ws-zaar-testnet-2.anvil.testnet.initia.xyz",
+        address:
+          "wss://jsonrpc-ws-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
       },
     ],
   },
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
   },
   metadata: {
-    op_bridge_id: "612",
+    op_bridge_id: "1048",
     op_denoms: ["uinit"],
-    executor_uri: "https://opinit-api-zaar-testnet-2.anvil.testnet.initia.xyz",
+    executor_uri:
+      "https://opinit-api-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-2",

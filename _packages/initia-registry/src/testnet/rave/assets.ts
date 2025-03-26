@@ -1,54 +1,34 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "milkyway",
+  chain_name: "rave",
   assets: [
     {
-      description: "Gas token of MilkyWay",
+      description: "RAVE",
       denom_units: [
         {
-          denom: "GAS",
-          exponent: 0,
-        },
-      ],
-      base: "GAS",
-      display: "GAS",
-      name: "MilkyWay Gas Token",
-      symbol: "GAS",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
-      },
-    },
-    {
-      description: "The INIT Liquid Staking Token",
-      denom_units: [
-        {
-          denom: "umilkinit",
+          denom: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
           exponent: 0,
         },
         {
-          denom: "milkINIT",
-          exponent: 6,
+          denom: "RAVE",
+          exponent: 18,
         },
       ],
-      base: "umilkinit",
-      display: "milkINIT",
-      name: "INIT Liquid Staking Token",
-      symbol: "milkINIT",
+      type_asset: "erc20",
+      address: "0xBdb128Cf29d40738875297E90aa42772D354c137",
+      base: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
+      display: "RAVE",
+      name: "RAVE",
+      symbol: "RAVE",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
       },
     },
     {
@@ -56,7 +36,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
+            "l2/edae1fc3a500ebf17be462b0d899d385fec7fbff99f2ca3f1250bdbee675b2ea",
           exponent: 0,
         },
         {
@@ -64,7 +44,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
+      base: "l2/edae1fc3a500ebf17be462b0d899d385fec7fbff99f2ca3f1250bdbee675b2ea",
       display: "INIT",
       traces: [
         {
@@ -74,7 +54,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "822",
+            bridge_id: "610",
           },
         },
       ],

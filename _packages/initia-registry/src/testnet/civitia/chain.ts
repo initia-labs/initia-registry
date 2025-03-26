@@ -62,13 +62,11 @@ const info: Chain = {
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/civitia.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
   },
   metadata: {
     op_bridge_id: "100",

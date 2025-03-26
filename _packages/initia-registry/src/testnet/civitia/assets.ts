@@ -35,13 +35,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
       },
     },
     {
@@ -79,13 +77,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/GAS.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png",
       },
     },
     {
@@ -108,13 +104,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
       },
     },
   ],

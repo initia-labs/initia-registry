@@ -35,13 +35,11 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
       },
     },
     {
@@ -78,17 +76,15 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/ETH.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
       },
     },
     {
-      description: "The fake USDC",
+      description: "USD Coin on Initia",
       denom_units: [
         {
           denom:
@@ -121,13 +117,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minimove/images/USDC.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
       },
     },
     {
@@ -164,13 +158,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/TIA.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
       },
     },
     {
@@ -208,11 +200,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png",
       },
     },
   ],

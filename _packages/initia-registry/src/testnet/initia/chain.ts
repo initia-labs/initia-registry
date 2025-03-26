@@ -46,7 +46,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: "https://lcd.testnet.initia.xyz",
+        address: "https://rest.testnet.initia.xyz",
         provider: "Initia Labs",
       },
       {
@@ -85,13 +85,11 @@ const info: Chain = {
   faucets: [],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
   },
   metadata: {
     is_l1: true,
@@ -183,7 +181,7 @@ const info: Chain = {
       {
         chain_id: "preyominet-1",
         port_id: "transfer",
-        channel_id: "channel-177",
+        channel_id: "channel-1629",
         version: "ics20-1",
       },
       {
@@ -217,15 +215,27 @@ const info: Chain = {
         version: "ics721-1",
       },
       {
-        chain_id: "zaar-testnet-2",
+        chain_id: "zaar-testnet-4",
         port_id: "transfer",
-        channel_id: "channel-1321",
+        channel_id: "channel-1781",
         version: "ics20-1",
       },
       {
-        chain_id: "zaar-testnet-2",
+        chain_id: "zaar-testnet-4",
         port_id: "nft-transfer",
-        channel_id: "channel-1322",
+        channel_id: "channel-1782",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "rave-test4",
+        port_id: "transfer",
+        channel_id: "channel-1317",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "rave-test4",
+        port_id: "nft-transfer",
+        channel_id: "channel-1318",
         version: "ics721-1",
       },
     ],

@@ -1,4 +1,4 @@
-import { Chain } from "@initia/initia-registry-types"
+import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "minievm",
@@ -90,13 +90,11 @@ const info: Chain = {
   ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
-      svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.png",
-    svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/images/minievm.svg",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png",
   },
   metadata: {
     op_bridge_id: "1",
@@ -123,5 +121,5 @@ const info: Chain = {
       version: "v0.5.5",
     },
   },
-}
-export default info
+};
+export default info;

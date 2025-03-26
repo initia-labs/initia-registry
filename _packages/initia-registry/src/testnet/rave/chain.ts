@@ -1,32 +1,31 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "yominet",
-  pretty_name: "Kamigotchi",
-  chain_id: "preyominet-1",
-  evm_chain_id: 4471190363524365,
+  chain_name: "rave",
+  pretty_name: "Rave",
+  chain_id: "rave-test4",
+  evm_chain_id: 1858718473518386,
   bech32_prefix: "init",
   network_type: "testnet",
-  website: "https://playtest.kamigotchi.io",
   apis: {
     rpc: [
       {
-        address: "https://rpc.preyominet.initia.tech",
+        address: "https://rpc-test-initia.rave.trade",
       },
     ],
     rest: [
       {
-        address: "https://lcd.preyominet-1.initia.tech",
+        address: "https://rest-test-initia.rave.trade",
       },
     ],
     "json-rpc": [
       {
-        address: "https://json-rpc.preyominet.initia.tech",
+        address: "https://json-rpc-test-initia.rave.trade",
       },
     ],
     "json-rpc-websocket": [
       {
-        address: "wss://json-rpc-websocket.preyominet.initia.tech",
+        address: "wss://json-rpc-ws-test-initia.rave.trade",
       },
     ],
   },
@@ -35,7 +34,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: "evm/9D9c32921575Fd98e67E27C0189ED4b750Cb17C5",
+        denom: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
         fixed_min_gas_price: 1000000000,
         low_gas_price: 1000000000,
         average_gas_price: 1500000000,
@@ -45,22 +44,21 @@ const info: Chain = {
   },
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
   },
   metadata: {
-    op_bridge_id: "80",
+    op_bridge_id: "610",
     op_denoms: ["uinit"],
-    executor_uri:
-      "https://maze-api-opinit-9ce4b2ff-e329-459d-8baa-ae49f95f33b2.ane1-prod-nocsm.newmetric.xyz",
+    executor_uri: "https://executor-uri-test-initia.rave.trade",
     ibc_channels: [
       {
         chain_id: "initiation-2",
         port_id: "transfer",
-        channel_id: "channel-2",
+        channel_id: "channel-0",
         version: "ics20-1",
       },
       {
@@ -71,7 +69,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/yominet/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/rave/assetlist.json",
     minitia: {
       type: "minievm",
       version: "v0.5.5",
