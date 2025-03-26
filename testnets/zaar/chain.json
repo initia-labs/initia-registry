@@ -65,7 +65,7 @@
     "op_denoms": [
       "uinit"
     ],
-    "executor_uri": "https://opinit-api-zaar-testnet-5.anvil.asia-southeast.testnet.initia.xyz",
+    "executor_uri": "https://opinit-api-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
