@@ -4,33 +4,31 @@ const info: AssetList = {
   chain_name: "zaar",
   assets: [
     {
-      description: "Fake ZAAR Token",
+      description: "Testnet ZAAR Token",
       denom_units: [
         {
-          denom: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+          denom: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
           exponent: 0,
         },
         {
-          denom: "fZAAR",
+          denom: "tZAAR",
           exponent: 18,
         },
       ],
       type_asset: "erc20",
-      address: "0x6ed1637781269560b204c27Cd42d95e057C4BE44",
-      base: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
-      display: "fZAAR",
-      name: "Fake Zaar",
-      symbol: "fZAAR",
+      address: "0xBdb128Cf29d40738875297E90aa42772D354c137",
+      base: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
+      display: "tZAAR",
+      name: "Test Zaar",
+      symbol: "tZAAR",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/zaar/images/ZAAR.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
       },
     },
     {
@@ -38,7 +36,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/a7add6c5aed49e3f4afa45e63f6fdba01fa5be2d1bf6a5b225d0bec9e9e34988",
+            "l2/b5146ab36c54aa4d1feba770591798e4ae27a846613edc841236ebf954120b09",
           exponent: 0,
         },
         {
@@ -46,7 +44,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/a7add6c5aed49e3f4afa45e63f6fdba01fa5be2d1bf6a5b225d0bec9e9e34988",
+      base: "l2/b5146ab36c54aa4d1feba770591798e4ae27a846613edc841236ebf954120b09",
       display: "INIT",
       traces: [
         {
@@ -56,7 +54,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "612",
+            bridge_id: "1048",
           },
         },
       ],
@@ -65,17 +63,15 @@ const info: AssetList = {
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
       },
     },
     {
-      description: "The fake USDC",
+      description: "USD Coin on Initia",
       denom_units: [
         {
           denom:
@@ -108,13 +104,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/USDC.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
       },
     },
   ],
