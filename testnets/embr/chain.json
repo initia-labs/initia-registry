@@ -44,57 +44,57 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc-0-embr-1.anvil.initia.xyz"
+        "address": "https://rpc-0-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://rpc-1-embr-1.anvil.initia.xyz"
+        "address": "https://rpc-1-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://rpc-embr-1.anvil.initia.xyz"
+        "address": "https://rpc-embr-1.anvil.asia-southeast.initia.xyz"
       }
     ],
     "rest": [
       {
-        "address": "https://rest-0-embr-1.anvil.initia.xyz"
+        "address": "https://rest-0-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://rest-1-embr-1.anvil.initia.xyz"
+        "address": "https://rest-1-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://rest-embr-1.anvil.initia.xyz"
+        "address": "https://rest-embr-1.anvil.asia-southeast.initia.xyz"
       }
     ],
     "grpc": [
       {
-        "address": "grpc-0-embr-1.anvil.initia.xyz:443"
+        "address": "grpc-0-embr-1.anvil.asia-southeast.initia.xyz:443"
       },
       {
-        "address": "grpc-1-embr-1.anvil.initia.xyz:443"
+        "address": "grpc-1-embr-1.anvil.asia-southeast.initia.xyz:443"
       },
       {
-        "address": "grpc-embr-1.anvil.initia.xyz:443"
+        "address": "grpc-embr-1.anvil.asia-southeast.initia.xyz:443"
       }
     ],
     "json-rpc": [
       {
-        "address": "https://jsonrpc-0-embr-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-0-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://jsonrpc-1-embr-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-1-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "https://jsonrpc-embr-1.anvil.initia.xyz"
+        "address": "https://jsonrpc-embr-1.anvil.asia-southeast.initia.xyz"
       }
     ],
     "json-rpc-websocket": [
       {
-        "address": "wss://jsonrpc-ws-0-embr-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-0-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "wss://jsonrpc-ws-1-embr-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-1-embr-1.anvil.asia-southeast.initia.xyz"
       },
       {
-        "address": "wss://jsonrpc-ws-embr-1.anvil.initia.xyz"
+        "address": "wss://jsonrpc-ws-embr-1.anvil.asia-southeast.initia.xyz"
       }
     ]
   },
@@ -110,7 +110,7 @@
   "metadata": {
     "op_bridge_id": "648",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://opinit-api-embr-1.anvil.initia.xyz",
+    "executor_uri": "https://opinit-api-embr-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
