@@ -107,6 +107,18 @@ const info: Chain = {
         channel_id: "channel-3",
         version: "ics20-1",
       },
+      {
+        chain_id: "echelon-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-36",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "echelon-1",
+        port_id: "transfer",
+        channel_id: "channel-35",
+        version: "ics20-1",
+      },
     ],
   },
 };

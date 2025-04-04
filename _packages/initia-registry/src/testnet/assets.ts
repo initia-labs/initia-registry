@@ -11,7 +11,6 @@ import * as _intergaze from "./intergaze";
 import * as _infinityg from "./infinityg";
 import * as _inertia from "./inertia";
 import * as _embr from "./embr";
-import * as _echelon from "./echelon";
 import * as _culinaris from "./culinaris";
 import * as _civitia from "./civitia";
 
@@ -27,7 +26,6 @@ const assets: AssetList[] = [
   _infinityg.assets,
   _inertia.assets,
   _embr.assets,
-  _echelon.assets,
   _culinaris.assets,
   _civitia.assets,
 ];

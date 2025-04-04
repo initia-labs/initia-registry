@@ -41,8 +41,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address:
-          "maze-grpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz:443",
+        address: "grpc.culinaris-2.initia.tech:443",
       },
     ],
     "json-rpc": [
