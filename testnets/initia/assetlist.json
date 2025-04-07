@@ -546,8 +546,8 @@
             "channel_id": "channel-0"
           },
           "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
+            "channel_id": "channel-713",
+            "path": "transfer/channel-713/evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
           }
         }
       ],
