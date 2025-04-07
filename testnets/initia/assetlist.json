@@ -519,6 +519,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
       }
+    },
+    {
+      "description": "Battle for Blockchain currency",
+      "denom_units": [
+        {
+          "denom": "ibc/63fa6f15581d44af4bb86eddc0ed0cc3f36c0ddc37cdf3f5ac3fc0e175ba364f",
+          "exponent": 0
+        },
+        {
+          "denom": "BFB",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/63fa6f15581d44af4bb86eddc0ed0cc3f36c0ddc37cdf3f5ac3fc0e175ba364f",
+      "display": "BFB",
+      "name": "BFB",
+      "symbol": "BFB",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+      }
     }
   ]
 }
