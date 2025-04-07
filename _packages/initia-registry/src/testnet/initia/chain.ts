@@ -205,14 +205,8 @@ const info: Chain = {
       {
         chain_id: "culinaris-2",
         port_id: "transfer",
-        channel_id: "channel-713",
+        channel_id: "channel-2415",
         version: "ics20-1",
-      },
-      {
-        chain_id: "culinaris-2",
-        port_id: "nft-transfer",
-        channel_id: "channel-714",
-        version: "ics721-1",
       },
       {
         chain_id: "zaar-testnet-4",
