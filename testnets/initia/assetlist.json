@@ -524,7 +524,7 @@
       "description": "Battle for Blockchain currency",
       "denom_units": [
         {
-          "denom": "ibc/63fa6f15581d44af4bb86eddc0ed0cc3f36c0ddc37cdf3f5ac3fc0e175ba364f",
+          "denom": "ibc/63FA6F15581D44AF4BB86EDDC0ED0CC3F36C0DDC37CDF3F5AC3FC0E175BA364F",
           "exponent": 0
         },
         {
@@ -532,7 +532,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/63fa6f15581d44af4bb86eddc0ed0cc3f36c0ddc37cdf3f5ac3fc0e175ba364f",
+      "base": "ibc/63FA6F15581D44AF4BB86EDDC0ED0CC3F36C0DDC37CDF3F5AC3FC0E175BA364F",
       "display": "BFB",
       "name": "BFB",
       "symbol": "BFB",
