@@ -519,6 +519,46 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
       }
+    },
+    {
+      "description": "Battle for Blockchain currency",
+      "denom_units": [
+        {
+          "denom": "ibc/63FA6F15581D44AF4BB86EDDC0ED0CC3F36C0DDC37CDF3F5AC3FC0E175BA364F",
+          "exponent": 0
+        },
+        {
+          "denom": "BFB",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/63FA6F15581D44AF4BB86EDDC0ED0CC3F36C0DDC37CDF3F5AC3FC0E175BA364F",
+      "display": "BFB",
+      "name": "BFB",
+      "symbol": "BFB",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "culinaris",
+            "base_denom": "evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-713",
+            "path": "transfer/channel-713/evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+      }
     }
   ]
 }
