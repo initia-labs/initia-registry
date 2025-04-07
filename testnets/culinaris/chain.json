@@ -85,14 +85,8 @@
       {
         "chain_id": "initiation-2",
         "port_id": "transfer",
-        "channel_id": "channel-0",
+        "channel_id": "channel-2",
         "version": "ics20-1"
-      },
-      {
-        "chain_id": "initiation-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1",
-        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/culinaris/assetlist.json",
