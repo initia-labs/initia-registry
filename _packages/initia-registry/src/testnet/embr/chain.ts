@@ -17,7 +17,7 @@ const info: Chain = {
     fee_tokens: [
       {
         denom:
-          "l2/9e99a4d82d63d49da0b88f67c3b862408be7a3df02f5061766b7e0f12d5b49b1",
+          "l2/025e02154bf24211cdceb46a81e37cdc9d3c0d5dca472f69354621d3b3169b0f",
         fixed_min_gas_price: 0,
         low_gas_price: 0,
         average_gas_price: 0,
@@ -96,7 +96,7 @@ const info: Chain = {
     png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png",
   },
   metadata: {
-    op_bridge_id: "648",
+    op_bridge_id: "823",
     op_denoms: ["uinit"],
     executor_uri: "https://opinit-api-embr-1.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
