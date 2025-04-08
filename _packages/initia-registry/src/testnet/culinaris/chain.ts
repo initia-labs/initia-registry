@@ -41,8 +41,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address:
-          "maze-grpc-s2-b53886e8-ebca-41a5-8dd7-64884b25fb2c.public-think-factory.newmetric.xyz:443",
+        address: "grpc.culinaris-2.initia.tech:443",
       },
     ],
     "json-rpc": [
@@ -74,14 +73,8 @@ const info: Chain = {
       {
         chain_id: "initiation-2",
         port_id: "transfer",
-        channel_id: "channel-0",
+        channel_id: "channel-2",
         version: "ics20-1",
-      },
-      {
-        chain_id: "initiation-2",
-        port_id: "nft-transfer",
-        channel_id: "channel-1",
-        version: "ics721-1",
       },
     ],
     assetlist:

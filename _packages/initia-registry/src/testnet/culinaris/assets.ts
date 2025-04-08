@@ -75,7 +75,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+            "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349",
           exponent: 0,
         },
         {
@@ -83,7 +83,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      base: "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349",
       display: "USDC",
       name: "USDC",
       symbol: "USDC",
@@ -94,11 +94,11 @@ const info: AssetList = {
           counterparty: {
             chain_name: "initia",
             base_denom: "uusdc",
-            channel_id: "channel-0",
+            channel_id: "channel-2",
           },
           chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/uusdc",
+            channel_id: "channel-2",
+            path: "transfer/channel-2/uusdc",
           },
         },
       ],
