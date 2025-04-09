@@ -16,16 +16,14 @@ const info: Chain = {
   fees: {
     fee_tokens: [
       {
-        denom: "umin",
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0,
+        denom:
+          "l2/83db4af0de8965c851672915eaa857f0911385f7d71f9da1decb2504d3d3ffdd",
+        fixed_min_gas_price: 0.015,
+        low_gas_price: 0.015,
+        average_gas_price: 0.015,
+        high_gas_price: 0.04,
       },
     ],
-  },
-  staking: {
-    staking_tokens: [],
   },
   codebase: {},
   apis: {
@@ -55,7 +53,15 @@ const info: Chain = {
       },
     ],
   },
-  explorers: [],
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/culinaris-2",
+      tx_page: "https://scan.testnet.initia.xyz/culinaris-2/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/culinaris-2/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",

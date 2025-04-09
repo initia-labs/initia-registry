@@ -24,9 +24,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   description: "Civitia Public Testnet",
   apis: {
     rpc: [
