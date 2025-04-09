@@ -5,6 +5,10 @@
   "chain_id": "echelon-testnet-1",
   "bech32_prefix": "init",
   "network_type": "testnet",
+  "peers": {
+      "seeds": [],
+      "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {
@@ -50,6 +54,14 @@
       }
     ]
   },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/echelon-testnet-1",
+      "tx_page": "https://scan.testnet.initia.xyz/echelon-testnet-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/echelon-testnet-1/accounts/${accountAddress}"
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png"

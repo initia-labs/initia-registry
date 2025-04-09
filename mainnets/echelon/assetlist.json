@@ -189,6 +189,44 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
       }
+    },
+    {
+      "description": "ETH token",
+      "denom_units": [
+        {
+          "denom": "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
+          "exponent": 0
+        },
+        {
+          "denom": "ETH",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
+      "display": "ETH",
+      "name": "ETH Token",
+      "symbol": "ETH",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "16"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
     }
   ]
 }

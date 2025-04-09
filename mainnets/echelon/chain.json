@@ -18,6 +18,10 @@
         "genesis_url": "https://rpc-echelon-1.anvil.asia-southeast.initia.xyz/genesis"
       }
     },
+    "peers": {
+      "seeds": [],
+      "persistent_peers": []
+    },
     "apis": {
       "rpc": [
         {

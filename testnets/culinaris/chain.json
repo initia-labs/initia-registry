@@ -23,9 +23,6 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
     "recommended_version": "v0.6.9",
@@ -68,7 +65,14 @@
       }
     ]
   },
-  "explorers": [],
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/culinaris-2",
+      "tx_page": "https://scan.testnet.initia.xyz/culinaris-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/culinaris-2/accounts/${accountAddress}"
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png"

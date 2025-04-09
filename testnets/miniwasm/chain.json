@@ -22,9 +22,6 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/miniwasm",
     "recommended_version": "v1.0.0-rc.0",
