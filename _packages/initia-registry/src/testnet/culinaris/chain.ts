@@ -24,9 +24,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   codebase: {},
   apis: {
     rpc: [
@@ -55,7 +52,15 @@ const info: Chain = {
       },
     ],
   },
-  explorers: [],
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/culinaris-2",
+      tx_page: "https://scan.testnet.initia.xyz/culinaris-2/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/culinaris-2/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",

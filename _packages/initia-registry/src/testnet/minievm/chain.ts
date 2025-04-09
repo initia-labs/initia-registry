@@ -24,9 +24,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   codebase: {},
   description: "Minievm Public Testnet",
   apis: {

@@ -78,6 +78,15 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/infinityg-1",
+      tx_page: "https://scan.testnet.initia.xyz/infinityg-1/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/infinityg-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/infinityg.png",

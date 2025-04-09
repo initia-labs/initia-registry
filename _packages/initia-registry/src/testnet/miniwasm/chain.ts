@@ -23,9 +23,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   codebase: {},
   description: "Miniwasm Public Testnet",
   apis: {

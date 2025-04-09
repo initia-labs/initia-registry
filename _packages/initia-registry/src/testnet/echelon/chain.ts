@@ -57,6 +57,16 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/echelon-testnet-1",
+      tx_page:
+        "https://scan.testnet.initia.xyz/echelon-testnet-1/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/echelon-testnet-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",
