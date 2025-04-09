@@ -55,7 +55,7 @@ A sample `chain.json` includes the following information.
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "yominet",
-  "pretty_name": "Kamigotchi",
+  "pretty_name": "Yominet",
   "chain_id": "preyominet-1",
   "evm_chain_id": 4471190363524365,
   "bech32_prefix": "init",
