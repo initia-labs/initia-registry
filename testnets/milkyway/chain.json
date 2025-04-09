@@ -54,7 +54,6 @@
       "account_page": "https://scan.testnet.initia.xyz/glados-4/accounts/${accountAddress}"
     }
   ],
-  "faucets": [],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
