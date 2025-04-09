@@ -64,8 +64,9 @@
     "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
   },
   "metadata": {
-    "op_bridge_id": "64",
-    "op_denoms": [],
+    "op_bridge_id": "822",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-glados-4.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
