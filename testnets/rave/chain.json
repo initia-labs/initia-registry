@@ -6,6 +6,10 @@
   "evm_chain_id": 1858718473518386,
   "bech32_prefix": "init",
   "network_type": "testnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {

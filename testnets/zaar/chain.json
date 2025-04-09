@@ -25,6 +25,10 @@
       }
     ]
   },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {

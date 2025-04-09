@@ -23,10 +23,11 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "description": "The interwoven lending protocol for the modular ecosystem.",
+  "peers": {
+      "seeds": [],
+      "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {

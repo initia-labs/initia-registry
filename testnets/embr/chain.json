@@ -23,9 +23,6 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
     "recommended_version": "v0.6.9",

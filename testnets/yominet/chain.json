@@ -7,6 +7,10 @@
   "bech32_prefix": "init",
   "network_type": "testnet",
   "website": "https://playtest.kamigotchi.io",
+  "peers": {
+      "seeds": [],
+      "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {

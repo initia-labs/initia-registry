@@ -22,10 +22,11 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "description": "Civitia Public Testnet",
+  "peers": {
+      "seeds": [],
+      "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {
