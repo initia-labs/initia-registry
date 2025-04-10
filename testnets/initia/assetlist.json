@@ -532,7 +532,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/94091D334699EB30DA7EB1D3096B72AA74FDE741EC8EB69BDB1135E441EBB33A",
+      "base": "ibc/F240C2700DCF5C57F126BF39423CFB8F4059D6344E6C39FCA123C781486B7608",
       "display": "BFB",
       "name": "BFB",
       "symbol": "BFB",
@@ -545,7 +545,7 @@
             "base_denom": "evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
           },
           "chain": {
-            "contract": "0x5745acb7b9Ac3D1B77e8a9AD99879b505Bbd1Ebb"
+            "contract": "0x0A0BD28E0C6Bfa78dB27Bb3CC4618E1B0DDBBFCd"
           },
           "provider": "Decimal Wrapper"
         },
@@ -553,12 +553,12 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "culinaris",
-            "base_denom": "evm/Fe4Ea442b7a7982551409B1d17C940C1Cf2204D7",
+            "base_denom": "evm/9989cFca23e97B2AEd8EA21d9CF244A03Cc89f02",
             "channel_id": "channel-2"
           },
           "chain": {
             "channel_id": "channel-2415",
-            "path": "transfer/channel-2415/evm/Fe4Ea442b7a7982551409B1d17C940C1Cf2204D7"
+            "path": "transfer/channel-2415/evm/9989cFca23e97B2AEd8EA21d9CF244A03Cc89f02"
           }
         }
       ],
