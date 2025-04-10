@@ -23,9 +23,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   description: "MilkyWay milkINIT Testnet",
   apis: {
     rpc: [
@@ -56,7 +53,6 @@ const info: Chain = {
         "https://scan.testnet.initia.xyz/glados-4/accounts/${accountAddress}",
     },
   ],
-  faucets: [],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
@@ -66,8 +62,9 @@ const info: Chain = {
     png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
   },
   metadata: {
-    op_bridge_id: "64",
-    op_denoms: [],
+    op_bridge_id: "822",
+    op_denoms: ["uinit"],
+    executor_uri: "https://opinit-api-glados-4.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-2",

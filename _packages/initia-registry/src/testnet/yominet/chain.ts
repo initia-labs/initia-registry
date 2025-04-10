@@ -43,13 +43,22 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/preyominet-1",
+      tx_page: "https://scan.testnet.initia.xyz/preyominet-1/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/preyominet-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/kamigochi.png",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png",
   },
   metadata: {
     op_bridge_id: "80",
