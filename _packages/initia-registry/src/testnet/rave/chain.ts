@@ -42,6 +42,15 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/rave-test4",
+      tx_page: "https://scan.testnet.initia.xyz/rave-test4/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/rave-test4/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",

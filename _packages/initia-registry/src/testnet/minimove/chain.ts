@@ -23,9 +23,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   codebase: {},
   description: "Minimove Public Testnet",
   apis: {

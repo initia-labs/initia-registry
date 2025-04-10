@@ -153,6 +153,34 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
       },
     },
+    {
+      description: "ETH token",
+      denom_units: [
+        {
+          denom:
+            "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
+          exponent: 0,
+        },
+        {
+          denom: "ETH",
+          exponent: 6,
+        },
+      ],
+      base: "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
+      display: "ETH",
+      name: "ETH Token",
+      symbol: "ETH",
+      coingecko_id: "",
+      traces: [],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
+      },
+    },
   ],
 };
 export default info;
