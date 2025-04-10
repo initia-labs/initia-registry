@@ -26,9 +26,6 @@ const info: Chain = {
       },
     ],
   },
-  staking: {
-    staking_tokens: [],
-  },
   description: "The interwoven lending protocol for the modular ecosystem.",
   apis: {
     rpc: [
@@ -59,7 +56,6 @@ const info: Chain = {
         "https://scan.testnet.initia.xyz/inertiation-10/accounts/${accountAddress}",
     },
   ],
-  faucets: [],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png",
