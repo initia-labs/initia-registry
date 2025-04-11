@@ -14,12 +14,17 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.preyominet.initia.tech"
+        "address": "https://rpc.preyominet-1.initia.tech"
       }
     ],
     "rest": [
       {
-        "address": "https://lcd.preyominet-1.initia.tech"
+        "address": "https://rest.preyominet-1.initia.tech"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc.preyominet-1.initia.tech:443"
       }
     ],
     "json-rpc": [
