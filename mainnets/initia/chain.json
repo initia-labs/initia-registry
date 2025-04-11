@@ -150,6 +150,12 @@
         "port_id": "transfer",
         "channel_id": "channel-35",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "neutron-1",
+        "port_id": "transfer",
+        "channel_id": "channel-37",
+        "version": "ics20-1"
       }
     ]
   }
