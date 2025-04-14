@@ -13,15 +13,7 @@ const info: Chain = {
   key_algos: ["secp256k1"],
   slip44: 118,
   fees: {
-    fee_tokens: [
-      {
-        denom: "umin",
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0,
-      },
-    ],
+    fee_tokens: [],
   },
   codebase: {},
   description: "Minimove Public Testnet",

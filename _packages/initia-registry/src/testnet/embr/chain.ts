@@ -18,10 +18,10 @@ const info: Chain = {
       {
         denom:
           "l2/025e02154bf24211cdceb46a81e37cdc9d3c0d5dca472f69354621d3b3169b0f",
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0,
-        high_gas_price: 0,
+        fixed_min_gas_price: 1e-9,
+        low_gas_price: 1e-9,
+        average_gas_price: 1e-9,
+        high_gas_price: 1e-9,
       },
     ],
   },
