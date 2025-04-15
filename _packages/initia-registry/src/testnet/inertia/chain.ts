@@ -3,7 +3,7 @@ const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "inertia",
   chain_id: "inertiation-10",
-  website: "https://testnet.inrt.fi",
+  website: "https://app.testnet.inrt.fi",
   pretty_name: "Inertia",
   status: "live",
   network_type: "testnet",
