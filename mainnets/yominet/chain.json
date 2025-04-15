@@ -3,6 +3,7 @@
     "chain_name": "yominet",
     "pretty_name": "Yominet",
     "chain_id": "yominet-1",
+    "evm_chain_id": 428962654539583,
     "bech32_prefix": "init",
     "network_type": "mainnet",
     "codebase": {
