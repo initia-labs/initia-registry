@@ -31,7 +31,7 @@ const info: Chain = {
       {
         denom:
           "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
-        fixed_min_gas_price: 0.015,
+        fixed_min_gas_price: 0,
       },
     ],
   },
