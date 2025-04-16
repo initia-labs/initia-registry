@@ -318,6 +318,18 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-1318",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "nuwa-rollup-1",
+        "port_id": "transfer",
+        "channel_id": "channel-2453",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "nuwa-rollup-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2454",
+        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
