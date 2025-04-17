@@ -2,6 +2,7 @@ import { AssetList } from "@initia/initia-registry-types";
 
 import * as _zaar from "./zaar";
 import * as _rave from "./rave";
+import * as _nuwarollup from "./nuwarollup";
 import * as _miniwasm from "./miniwasm";
 import * as _minimove from "./minimove";
 import * as _minievm from "./minievm";
@@ -16,6 +17,7 @@ import * as _civitia from "./civitia";
 const assets: AssetList[] = [
   _zaar.assets,
   _rave.assets,
+  _nuwarollup.assets,
   _miniwasm.assets,
   _minimove.assets,
   _minievm.assets,

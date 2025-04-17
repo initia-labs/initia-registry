@@ -1,6 +1,7 @@
 export * as zaar from "./zaar";
 export * as yominet from "./yominet";
 export * as rave from "./rave";
+export * as nuwarollup from "./nuwarollup";
 export * as miniwasm from "./miniwasm";
 export * as minimove from "./minimove";
 export * as minievm from "./minievm";
