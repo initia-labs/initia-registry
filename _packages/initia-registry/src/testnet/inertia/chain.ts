@@ -1,7 +1,7 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "inertia",
+  chain_name: "inertia-legacy",
   chain_id: "inertiation-10",
   website: "https://app.testnet.inrt.fi",
   pretty_name: "Inertia",
