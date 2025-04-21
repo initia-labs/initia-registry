@@ -152,7 +152,7 @@
       "description": "ETH token",
       "denom_units": [
         {
-          "denom": "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
+          "denom": "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
           "exponent": 0
         },
         {
@@ -160,7 +160,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
+      "base": "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
       "display": "ETH",
       "name": "ETH Token",
       "symbol": "ETH",
