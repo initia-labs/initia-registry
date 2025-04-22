@@ -105,7 +105,7 @@
       },
       {
         "address": "https://initia-rpc.cosmosspaces.zone",
-        "provider": "Cosmos Spaces"
+        "provider": "CosmosSpaces"
       }
     ],
     "rest": [
@@ -117,6 +117,10 @@
         "address": "https://rest-skip.initia.xyz",
         "provider": "Initia Labs",
         "authorizedUser": "skip"
+      },
+      {
+        "address": "https://initia-rest.cosmosspaces.zone",
+        "provider": "CosmosSpaces"
       }
     ],
     "api": [
@@ -134,6 +138,10 @@
         "address": "grpc-skip.initia.xyz:443",
         "provider": "Initia Labs",
         "authorizedUser": "skip"
+      },
+      {
+        "address": "https://initia-grpc.cosmosspaces.zone",
+        "provider": "CosmosSpaces"
       }
     ]
   },
