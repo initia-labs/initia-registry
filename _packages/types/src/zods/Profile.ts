@@ -10,7 +10,7 @@ export const ProfileSchema = z.object({
     "Gaming",
     "Portfolio",
     "AI",
-    "Other",
+    "Others",
   ]),
   tags: z.array(z.string().max(10)).max(3).optional(),
   description: z.string().describe("A longer description for the landing page"),
@@ -38,6 +38,7 @@ export const ProfileSchema = z.object({
           })
         )
         .optional(),
+      forum_url: z.string().url().regex(new RegExp("^https://.")).optional(),
     })
     .optional(),
   social: z

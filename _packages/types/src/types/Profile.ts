@@ -8,7 +8,7 @@
 export interface ChainProfile {
   name: string;
   pretty_name: string;
-  category: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "Other";
+  category: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "Others";
   /**
    * @maxItems 3
    */
@@ -33,6 +33,7 @@ export interface ChainProfile {
       description?: string;
       [k: string]: unknown;
     }[];
+    forum_url?: string;
     [k: string]: unknown;
   };
   social?: {
