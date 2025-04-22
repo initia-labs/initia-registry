@@ -102,6 +102,10 @@
         "address": "https://rpc-skip.initia.xyz",
         "provider": "Initia Labs",
         "authorizedUser": "skip"
+      },
+      {
+        "address": "https://initia-rpc.cosmosspaces.zone",
+        "provider": "Cosmos Spaces"
       }
     ],
     "rest": [
