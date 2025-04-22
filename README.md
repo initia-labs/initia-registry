@@ -515,6 +515,7 @@ An example assetlist json contains the following structure:
 | `vip.actions`   | `object[]`           | Optional      | An array of VIP-related actions (e.g., “Complete Quest”).                                                                                                               |
 | `vip.actions[].title`       | `string` | Optional      | Action title (e.g., “Complete Quest”).                                                                                                                                 |
 | `vip.actions[].description` | `string` | Optional      | Description of that action (e.g., “Completing VIP quests in-game for each epoch.”).                                                                                     |
+| `vip.forum_url` | `string (URL)` | Optional      | The URL linking to the forum of the VIP registration proposal. |
 | `social`        | `object`             | Optional      | Contains links or handles for the chain’s social media or website.                                                                                                      |
 | `social.website`| `string (URL)`       | Optional      | Official website link.                                                                                                                                                 |
 
