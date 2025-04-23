@@ -49,11 +49,11 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/civitia/images/civitia.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/civitia/images/civitia.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
   },
   "metadata": {
     "op_bridge_id": "12",
