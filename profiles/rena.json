@@ -8,7 +8,15 @@
   "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.png",
   "color": "#FB408D",
-  "status": "upcoming",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Upload TEE Attestation",
+        "description": "Validate data privacy and confirm the integrity of execution within a secure environment"
+      }
+    ]
+  },
   "social": {
     "website": "https://renalabs.xyz",
     "twitter": "https://x.com/Rena_labs"
