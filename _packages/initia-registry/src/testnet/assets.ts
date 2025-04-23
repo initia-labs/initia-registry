@@ -12,7 +12,6 @@ import * as _infinityg from "./infinityg";
 import * as _inertia_legacy from "./inertia_legacy";
 import * as _embr from "./embr";
 import * as _culinaris from "./culinaris";
-import * as _civitia from "./civitia";
 
 const assets: AssetList[] = [
   _zaar.assets,
@@ -27,7 +26,6 @@ const assets: AssetList[] = [
   _inertia_legacy.assets,
   _embr.assets,
   _culinaris.assets,
-  _civitia.assets,
 ];
 
 export default assets;
