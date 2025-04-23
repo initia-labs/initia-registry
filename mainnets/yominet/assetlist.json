@@ -14,20 +14,10 @@
           "exponent": 18
         }
       ],
+      "type_asset": "erc20",
+      "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
       "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
       "display": "INIT",
-      "traces": [
-        {
-          "type": "op",
-          "counterparty": {
-            "base_denom": "uinit",
-            "chain_name": "initia"
-          },
-          "chain": {
-            "bridge_id": "11"
-          }
-        }
-      ],
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "",
