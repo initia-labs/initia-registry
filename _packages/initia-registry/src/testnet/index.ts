@@ -1,6 +1,7 @@
 export * as zaar from "./zaar";
 export * as yominet from "./yominet";
 export * as rave from "./rave";
+export * as nuwarollup from "./nuwarollup";
 export * as miniwasm from "./miniwasm";
 export * as minimove from "./minimove";
 export * as minievm from "./minievm";
@@ -8,6 +9,7 @@ export * as milkyway from "./milkyway";
 export * as intergaze from "./intergaze";
 export * as initia from "./initia";
 export * as infinityg from "./infinityg";
+export * as inertia_legacy from "./inertia_legacy";
 export * as inertia from "./inertia";
 export * as embr from "./embr";
 export * as echelon from "./echelon";
