@@ -1,23 +1,28 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "inertia",
-  chain_id: "inertiation-12",
-  website: "https://app.inertiation-12.inrt.fi",
-  pretty_name: "Inertia",
+  chain_name: "inertia_legacy",
+  chain_id: "inertiation-10",
+  website: "https://app.testnet.inrt.fi",
+  pretty_name: "Inertia legacy",
   status: "live",
   network_type: "testnet",
   bech32_prefix: "init",
   daemon_name: "inertiad",
   node_home: "$HOME/.inertiad",
   key_algos: ["secp256k1"],
-  slip44: 60,
+  slip44: 118,
   fees: {
     fee_tokens: [
       {
         denom:
-          "l2/01a7a1ea004c23bad7ff1772ab739c0818c881faa1e11383ed8d549d0069f617",
+          "l2/674eeb7eef9e880d6276248fed0e51a10edab5456ba5d580e3040ac545e6103f",
         fixed_min_gas_price: 0.015,
+      },
+      {
+        denom:
+          "l2/b913cb24b9b6748e81809b0889740cb5787986bb3442648a785598f8d0f9e150",
+        fixed_min_gas_price: 0.15,
       },
     ],
   },
@@ -25,19 +30,19 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: "https://rpc.inertiation-12.inrt.fi",
+        address: "https://rpc.inertia.testnet.inrt.fi",
         provider: "Inertia",
       },
     ],
     rest: [
       {
-        address: "https://rest.inertiation-12.inrt.fi",
+        address: "https://rest.inertia.testnet.inrt.fi",
         provider: "Inertia",
       },
     ],
     grpc: [
       {
-        address: "grpc.inertiation-12.inrt.fi:443",
+        address: "grpc.inertia.testnet.inrt.fi:443",
         provider: "Inertia",
       },
     ],
@@ -45,10 +50,10 @@ const info: Chain = {
   explorers: [
     {
       kind: "initia scan",
-      url: "https://scan.testnet.initia.xyz/inertiation-12",
-      tx_page: "https://scan.testnet.initia.xyz/inertiation-12/txs/${txHash}",
+      url: "https://scan.testnet.initia.xyz/inertiation-10",
+      tx_page: "https://scan.testnet.initia.xyz/inertiation-10/txs/${txHash}",
       account_page:
-        "https://scan.testnet.initia.xyz/inertiation-12/accounts/${accountAddress}",
+        "https://scan.testnet.initia.xyz/inertiation-10/accounts/${accountAddress}",
     },
   ],
   images: [
@@ -60,16 +65,16 @@ const info: Chain = {
     png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png",
   },
   metadata: {
-    op_bridge_id: "1171",
+    op_bridge_id: "938",
     op_denoms: [
       "uinit",
       "uusdc",
       "utia",
       "ueth",
-      "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
-      "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
+      "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+      "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
     ],
-    executor_uri: "https://op-executor.inertiation-12.inrt.fi",
+    executor_uri: "https://op-executor.inertia.testnet.inrt.fi",
     ibc_channels: [
       {
         chain_id: "initiation-2",
@@ -86,10 +91,10 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/inertia-legacy/assetlist.json",
     minitia: {
       type: "miniwasm",
-      version: "v1.0.0-rc.1",
+      version: "v0.7.0-1",
     },
   },
 };
