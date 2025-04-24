@@ -9,6 +9,9 @@
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
   "color": "#DDBA00",
   "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-zaar-on-vip/59"
+  },
   "social": {
     "website": "https://www.zaar.market",
     "twitter": "https://x.com/zaar_gg"
