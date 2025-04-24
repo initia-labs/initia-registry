@@ -113,6 +113,48 @@ const info: AssetList = {
       },
     },
     {
+      description: "The INIT Liquid Staking Token",
+      denom_units: [
+        {
+          denom:
+            "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+      display: "milkINIT",
+      name: "INIT Liquid Staking Token",
+      symbol: "milkINIT",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "moo",
+            base_denom:
+              "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-29",
+            path: "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+      },
+    },
+    {
       description: "The native token of Celestia on Initia via IBC",
       denom_units: [
         {
@@ -158,7 +200,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
+            "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
           exponent: 0,
         },
         {
@@ -166,7 +208,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
+      base: "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
       display: "ETH",
       name: "ETH Token",
       symbol: "ETH",
