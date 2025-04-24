@@ -53,7 +53,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "evm/7fb2a94a13186e3c338f0da9728b4835d86b1a7b",
+        "denom": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
         "fixed_min_gas_price": 15000000000
       }
     ]

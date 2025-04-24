@@ -34,7 +34,7 @@
       "description": "ETH token via LayerZero",
       "denom_units": [
         {
-          "denom": "evm/e1ff7038eaaaf027031688e1535a055b2bac2546",
+          "denom": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
           "exponent": 0
         },
         {
@@ -43,8 +43,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0xe1ff7038eaaaf027031688e1535a055b2bac2546",
-      "base": "evm/e1ff7038eaaaf027031688e1535a055b2bac2546",
+      "address": "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546",
+      "base": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
       "display": "ETH",
       "name": "Ethereum Native Token",
       "symbol": "ETH",
@@ -62,7 +62,7 @@
       "description": "The native token of Celestia on Initia via IBC",
       "denom_units": [
         {
-          "denom": "evm/f0c644d9636b83e7491404d8d826321e44e23d15",
+          "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
           "exponent": 0
         },
         {
@@ -71,8 +71,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0xf0c644d9636b83e7491404d8d826321e44e23d15",
-      "base": "evm/f0c644d9636b83e7491404d8d826321e44e23d15",
+      "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15",
+      "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
       "display": "TIA",
       "name": "Celestia TIA",
       "symbol": "TIA",

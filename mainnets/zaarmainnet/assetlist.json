@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "evm/7fb2a94a13186e3c338f0da9728b4835d86b1a7b",
+          "denom": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
           "exponent": 0
         },
         {
@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x7fb2a94a13186e3c338f0da9728b4835d86b1a7b",
-      "base": "evm/7fb2a94a13186e3c338f0da9728b4835d86b1a7b",
+      "address": "0x7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
+      "base": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",
@@ -34,7 +34,7 @@
       "description": "USDC on Initia",
       "denom_units": [
         {
-          "denom": "evm/856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
+          "denom": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
           "exponent": 0
         },
         {
@@ -43,8 +43,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
-      "base": "evm/856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
+      "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
