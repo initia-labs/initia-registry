@@ -1,0 +1,84 @@
+{
+    "$schema": "../../chain.schema.json",
+    "chain_name": "moo",
+    "pretty_name": "MilkyWay",
+    "chain_id": "moo-1",
+    "bech32_prefix": "init",
+    "network_type": "mainnet",
+    "codebase": {
+      "git_repo": "https://github.com/initia-labs/miniwasm",
+      "recommended_version": "v1.0.2",
+      "binaries": {
+        "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v1.0.2/miniwasm_v1.0.2_Linux_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v1.0.2/miniwasm_v1.0.2_Linux_aarch64.tar.gz",
+        "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v1.0.2/miniwasm_v1.0.2_Darwin_x86_64.tar.gz",
+        "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v1.0.2/miniwasm_v1.0.2_Darwin_aarch64.tar.gz"
+      },
+      "genesis": {
+        "genesis_url": "https://rpc-moo-1.anvil.asia-southeast.initia.xyz/genesis"
+      }
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc-moo-1.anvil.asia-southeast.initia.xyz"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://rest-moo-1.anvil.asia-southeast.initia.xyz"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "grpc-moo-1.anvil.asia-southeast.initia.xyz:443"
+        }
+      ]
+    },
+    "key_algos": [
+      "ethsecp256k1"
+    ],
+    "slip44": 60,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
+          "fixed_min_gas_price": 0.015
+        }
+      ]
+    },
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
+    },
+    "metadata": {
+      "op_bridge_id": "13",
+      "op_denoms": [
+        "uinit"
+      ],
+      "executor_uri": "https://opinit-api-moo-1.anvil.asia-southeast.initia.xyz",
+      "ibc_channels": [
+        {
+          "chain_id": "interwoven-1",
+          "port_id": "transfer",
+          "channel_id": "channel-0",
+          "version": "ics20-1"
+        },
+        {
+          "chain_id": "interwoven-1",
+          "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+          "channel_id": "channel-1",
+          "version": "ics721-1"
+        }
+      ],
+      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/moo/assetlist.json",
+      "minitia": {
+        "type": "miniwasm",
+        "version": "v1.0.2"
+      }
+    }
+  }

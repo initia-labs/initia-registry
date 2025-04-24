@@ -236,6 +236,30 @@
         "port_id": "transfer",
         "channel_id": "channel-48",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "zaar-mainnet-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-34",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "zaar-mainnet-1",
+        "port_id": "transfer",
+        "channel_id": "channel-33",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "ingnetwork-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-59",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "ingnetwork-1",
+        "port_id": "transfer",
+        "channel_id": "channel-58",
+        "version": "ics20-1"
       }
     ]
   }
