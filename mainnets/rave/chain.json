@@ -46,9 +46,7 @@
       }
     ]
   },
-  "key_algos": [
-    "ethsecp256k1"
-  ],
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
   "slip44": 60,
   "fees": {
     "fee_tokens": [
@@ -68,9 +66,7 @@
   },
   "metadata": {
     "op_bridge_id": "17",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-rave-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
