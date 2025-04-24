@@ -14,7 +14,7 @@
     "actions": [
       {
         "title": "Earn SILVER",
-        "description": "Earn SILVER by playing Civitia seasons with an active residence."
+        "description": "The VIP score in each epoch is equal to the SILVER accrued during the epoch, except referral earnings"
       }
     ]
   },
