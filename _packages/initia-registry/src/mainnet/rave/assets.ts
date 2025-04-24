@@ -1,36 +1,36 @@
-import { AssetList } from '@initia/initia-registry-types';
+import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
-  "$schema": "../../assetlist.schema.json",
-  "chain_name": "rave",
-  "assets": [
+  $schema: "../../assetlist.schema.json",
+  chain_name: "rave",
+  assets: [
     {
-      "description": "The native token of Initia",
-      "denom_units": [
+      description: "The native token of Initia",
+      denom_units: [
         {
-          "denom": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
-          "exponent": 0
+          denom: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+          exponent: 0,
         },
         {
-          "denom": "INIT",
-          "exponent": 18
-        }
+          denom: "INIT",
+          exponent: 18,
+        },
       ],
-      "type_asset": "erc20",
-      "address": "0x4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
-      "base": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
-      "display": "INIT",
-      "name": "Initia Native Token",
-      "symbol": "INIT",
-      "coingecko_id": "",
-      "images": [
+      type_asset: "erc20",
+      address: "0x4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+      base: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+      display: "INIT",
+      name: "Initia Native Token",
+      symbol: "INIT",
+      coingecko_id: "",
+      images: [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
-        }
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+        },
       ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
-      }
-    }
-  ]
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+      },
+    },
+  ],
 };
 export default info;
