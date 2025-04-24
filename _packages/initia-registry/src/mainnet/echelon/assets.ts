@@ -43,63 +43,11 @@ const info: AssetList = {
       },
     },
     {
-      description: "USDC on Initia",
-      denom_units: [
-        {
-          denom:
-            "l2/de17c24216dbf72c28330b352762a7b13e86b0cbc65c005ead58f15ba85d7258",
-          exponent: 0,
-        },
-        {
-          denom: "USDC",
-          exponent: 6,
-        },
-      ],
-      base: "l2/de17c24216dbf72c28330b352762a7b13e86b0cbc65c005ead58f15ba85d7258",
-      display: "USDC",
-      name: "USD Coin",
-      symbol: "USDC",
-      coingecko_id: "",
-      traces: [
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "noble",
-            base_denom: "uusdc",
-            channel_id: "channel-129",
-          },
-          chain: {
-            channel_id: "channel-3",
-            path: "transfer/channel-3/uusdc",
-          },
-        },
-        {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
-            chain_name: "initia",
-          },
-          chain: {
-            bridge_id: "16",
-          },
-        },
-      ],
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-      },
-    },
-    {
       description: "MilkyWay's Liquid Staked TIA",
       denom_units: [
         {
           denom:
-            "l2/f74e7d10d0b1142ff883a60aa629b74bceb434e2ccccc0051bdbaa05e2e255ef",
+            "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
           exponent: 0,
         },
         {
@@ -107,37 +55,11 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/f74e7d10d0b1142ff883a60aa629b74bceb434e2ccccc0051bdbaa05e2e255ef",
+      base: "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
       display: "milkTIA",
       name: "milkTIA",
       symbol: "milkTIA",
       coingecko_id: "",
-      traces: [
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "osmosis",
-            base_denom:
-              "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
-            channel_id: "channel-100108",
-          },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
-          },
-        },
-        {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F",
-            chain_name: "initia",
-          },
-          chain: {
-            bridge_id: "16",
-          },
-        },
-      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
@@ -148,11 +70,38 @@ const info: AssetList = {
       },
     },
     {
+      description: "USDC on Initia",
+      denom_units: [
+        {
+          denom:
+            "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE",
+          exponent: 0,
+        },
+        {
+          denom: "USDC",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE",
+      display: "USDC",
+      name: "USD Coin",
+      symbol: "USDC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+      },
+    },
+    {
       description: "The native token of Celestia on Initia via IBC",
       denom_units: [
         {
           denom:
-            "l2/4407c4c43437bacb779fa1aa9cb38b76dd8dce8bf28fb68dbf2242cc92b71ba6",
+            "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E",
           exponent: 0,
         },
         {
@@ -160,36 +109,11 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/4407c4c43437bacb779fa1aa9cb38b76dd8dce8bf28fb68dbf2242cc92b71ba6",
+      base: "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E",
       display: "TIA",
       name: "Celestia Native Token",
       symbol: "TIA",
       coingecko_id: "",
-      traces: [
-        {
-          type: "ibc",
-          counterparty: {
-            chain_name: "celestia",
-            base_denom: "utia",
-            channel_id: "channel-78",
-          },
-          chain: {
-            channel_id: "channel-10",
-            path: "transfer/channel-10/utia",
-          },
-        },
-        {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
-            chain_name: "initia",
-          },
-          chain: {
-            bridge_id: "16",
-          },
-        },
-      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
@@ -204,7 +128,7 @@ const info: AssetList = {
       denom_units: [
         {
           denom:
-            "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
+            "ibc/39026A3BC5B3135CAC7FA5551C286A05E215FDA2C3C79195EB73F6699696F4FF",
           exponent: 0,
         },
         {
@@ -212,24 +136,11 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
+      base: "ibc/39026A3BC5B3135CAC7FA5551C286A05E215FDA2C3C79195EB73F6699696F4FF",
       display: "ETH",
       name: "Ethereum Native Token",
       symbol: "ETH",
       coingecko_id: "",
-      traces: [
-        {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "move/c3b42c557c243205835971567f9516c78208f342023cf1c0c15ed8f3d3a6a271",
-            chain_name: "initia",
-          },
-          chain: {
-            bridge_id: "16",
-          },
-        },
-      ],
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
@@ -237,33 +148,6 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-      },
-    },
-    {
-      description: "Ether.Fi's Wrapped eETH LRT",
-      denom_units: [
-        {
-          denom:
-            "ibc/1650C368ECC224CE50126C340BDC54F4119095341783E110C8E389BA2A9774EB",
-          exponent: 0,
-        },
-        {
-          denom: "WEETH",
-          exponent: 6,
-        },
-      ],
-      base: "ibc/1650C368ECC224CE50126C340BDC54F4119095341783E110C8E389BA2A9774EB",
-      display: "WEETH",
-      name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
       },
     },
   ],
