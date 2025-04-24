@@ -131,6 +131,42 @@ const info: Chain = {
         channel_id: "channel-25",
         version: "ics20-1",
       },
+      {
+        chain_id: "civitia-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-28",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "civitia-1",
+        port_id: "transfer",
+        channel_id: "channel-27",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "intergaze-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-67",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "intergaze-1",
+        port_id: "transfer",
+        channel_id: "channel-66",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "inertia-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-49",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "inertia-1",
+        port_id: "transfer",
+        channel_id: "channel-48",
+        version: "ics20-1",
+      },
     ],
   },
 };
