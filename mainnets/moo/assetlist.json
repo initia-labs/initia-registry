@@ -29,7 +29,7 @@
       }
     },
     {
-      "description": "The INIT Liquid Staking Token",
+      "description": "MilkyWay's Liquid Staked INIT",
       "denom_units": [
         {
           "denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
@@ -42,7 +42,7 @@
       ],
       "base": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
       "display": "milkINIT",
-      "name": "INIT Liquid Staking Token",
+      "name": "MilkyWay's INIT LST",
       "symbol": "milkINIT",
       "coingecko_id": "",
       "images": [

@@ -29,7 +29,7 @@
       }
     },
     {
-      "description": "Circle’s USD Coin on Initia",
+      "description": "USDC on Initia",
       "denom_units": [
         {
           "denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "description": "Milkyway’s liquid staked TIA on Initia",
+      "description": "MilkyWay's Liquid Staked TIA",
       "denom_units": [
         {
           "denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
@@ -109,7 +109,7 @@
       }
     },
     {
-      "description": "The INIT Liquid Staking Token",
+      "description": "MilkyWay's Liquid Staked INIT",
       "denom_units": [
         {
           "denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
@@ -122,7 +122,7 @@
       ],
       "base": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
       "display": "milkINIT",
-      "name": "INIT Liquid Staking Token",
+      "name": "MilkyWay's INIT LST",
       "symbol": "milkINIT",
       "coingecko_id": "",
       "traces": [
@@ -162,7 +162,7 @@
       ],
       "base": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
       "display": "TIA",
-      "name": "Celestia",
+      "name": "Celestia Native Token",
       "symbol": "TIA",
       "coingecko_id": "",
       "traces": [
@@ -189,7 +189,7 @@
       }
     },
     {
-      "description": "ETH token",
+      "description": "ETH token via LayerZero",
       "denom_units": [
         {
           "denom": "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
@@ -202,7 +202,7 @@
       ],
       "base": "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
       "display": "ETH",
-      "name": "ETH Token",
+      "name": "Ethereum Native Token",
       "symbol": "ETH",
       "coingecko_id": "",
       "traces": [],
@@ -213,6 +213,33 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
+    },
+    {
+      "description": "Ether.Fi's Wrapped eETH LRT",
+      "denom_units": [
+        {
+          "denom": "move/bcf6c17467320f8aec451165823d73af3049f9c9dfbeaff98b92ec0165a58bf8",
+          "exponent": 0
+        },
+        {
+          "denom": "WEETH",
+          "exponent": 6
+        }
+      ],
+      "base": "move/bcf6c17467320f8aec451165823d73af3049f9c9dfbeaff98b92ec0165a58bf8",
+      "display": "WEETH",
+      "name": "Ether.Fi Wrapped eETH LRT",
+      "symbol": "WEETH",
+      "coingecko_id": "",
+      "traces": [],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png"
       }
     }
   ]
