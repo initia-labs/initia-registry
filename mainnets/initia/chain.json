@@ -168,7 +168,7 @@
       {
         "chain_id": "osmosis-1",
         "port_id": "transfer",
-        "channel_id": "channel-0",
+        "channel_id": "channel-71",
         "version": "ics20-1"
       },
       {
