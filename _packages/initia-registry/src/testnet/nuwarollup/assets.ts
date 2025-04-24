@@ -1,47 +1,46 @@
-import { AssetList } from "@initia/initia-registry-types";
+import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
-  $schema: "../../assetlist.schema.json",
-  chain_name: "nuwarollup",
-  assets: [
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "nuwarollup",
+  "assets": [
     {
-      description: "The native token of Initia",
-      denom_units: [
+      "description": "The native token of Initia",
+      "denom_units": [
         {
-          denom:
-            "l2/6df67ba2b8890ef45c525bdccac4d69e48502e9ee482fac8cc6eb9036c2fb364",
-          exponent: 0,
+          "denom": "l2/6df67ba2b8890ef45c525bdccac4d69e48502e9ee482fac8cc6eb9036c2fb364",
+          "exponent": 0
         },
         {
-          denom: "INIT",
-          exponent: 6,
-        },
+          "denom": "INIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/6df67ba2b8890ef45c525bdccac4d69e48502e9ee482fac8cc6eb9036c2fb364",
-      display: "INIT",
-      traces: [
+      "base": "l2/6df67ba2b8890ef45c525bdccac4d69e48502e9ee482fac8cc6eb9036c2fb364",
+      "display": "INIT",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom: "uinit",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
           },
-          chain: {
-            bridge_id: "1152",
-          },
-        },
+          "chain": {
+            "bridge_id": "1152"
+          }
+        }
       ],
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
-      images: [
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-      },
-    },
-  ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    }
+  ]
 };
 export default info;

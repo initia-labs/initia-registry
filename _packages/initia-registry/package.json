@@ -1,6 +1,6 @@
 {
   "name": "@initia/initia-registry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Initia chain registry",
   "main": "main/index.js",
   "module": "esm/index.js",

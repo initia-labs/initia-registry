@@ -1,95 +1,93 @@
-import { Chain } from "@initia/initia-registry-types";
+import { Chain } from '@initia/initia-registry-types';
 const info: Chain = {
-  $schema: "../../chain.schema.json",
-  chain_name: "civitia",
-  chain_id: "landlord-2",
-  website: "https://civitia.org",
-  pretty_name: "Civitia",
-  status: "live",
-  network_type: "testnet",
-  bech32_prefix: "init",
-  daemon_name: "minitiad",
-  node_home: "$HOME/.minitia",
-  key_algos: ["secp256k1"],
-  slip44: 118,
-  fees: {
-    fee_tokens: [
-      {
-        denom:
-          "l2/1666ede2bf1985307a86de36a6b78411cbf1edeffc2ac569e6a7b2f8753db4bb",
-        fixed_min_gas_price: 0.15,
-        low_gas_price: 0.2,
-        average_gas_price: 0.3,
-        high_gas_price: 0.4,
-      },
-    ],
-  },
-  description: "Civitia Public Testnet",
-  apis: {
-    rpc: [
-      {
-        address:
-          "https://maze-rpc-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz",
-        provider: "Civitia",
-      },
-    ],
-    rest: [
-      {
-        address:
-          "https://maze-rest-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz",
-        provider: "Civitia",
-      },
-    ],
-    grpc: [
-      {
-        address:
-          "maze-grpc-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz:443",
-        provider: "Civitia",
-      },
-    ],
-  },
-  explorers: [
-    {
-      kind: "initia scan",
-      url: "https://scan.testnet.initia.xyz/landlord-2",
-      tx_page: "https://scan.testnet.initia.xyz/landlord-2/txs/${txHash}",
-      account_page:
-        "https://scan.testnet.initia.xyz/landlord-2/accounts/${accountAddress}",
-    },
+  "$schema": "../../chain.schema.json",
+  "chain_name": "civitia",
+  "chain_id": "landlord-2",
+  "website": "https://civitia.org",
+  "pretty_name": "Civitia",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": [
+    "initia_ethsecp256k1",
+    "secp256k1"
   ],
-  images: [
-    {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
-    },
-  ],
-  logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/1666ede2bf1985307a86de36a6b78411cbf1edeffc2ac569e6a7b2f8753db4bb",
+        "fixed_min_gas_price": 0.15,
+        "low_gas_price": 0.2,
+        "average_gas_price": 0.3,
+        "high_gas_price": 0.4
+      }
+    ]
   },
-  metadata: {
-    op_bridge_id: "100",
-    op_denoms: ["uinit"],
-    executor_uri:
-      "https://maze-api-opinit-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz/",
-    ibc_channels: [
+  "description": "Civitia Public Testnet",
+  "apis": {
+    "rpc": [
       {
-        chain_id: "initiation-2",
-        port_id: "nft-transfer",
-        channel_id: "channel-1",
-        version: "ics721-1",
-      },
-      {
-        chain_id: "initiation-2",
-        port_id: "transfer",
-        channel_id: "channel-0",
-        version: "ics20-1",
-      },
+        "address": "https://maze-rpc-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz",
+        "provider": "Civitia"
+      }
     ],
-    assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/assetlist.json",
-    minitia: {
-      type: "minimove",
-      version: "v0.5.7",
-    },
+    "rest": [
+      {
+        "address": "https://maze-rest-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz",
+        "provider": "Civitia"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "maze-grpc-sequencer-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz:443",
+        "provider": "Civitia"
+      }
+    ]
   },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/landlord-2",
+      "tx_page": "https://scan.testnet.initia.xyz/landlord-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/landlord-2/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
+  },
+  "metadata": {
+    "op_bridge_id": "100",
+    "op_denoms": [
+      "uinit"
+    ],
+    "executor_uri": "https://maze-api-opinit-53ecf1d6-4fa1-4103-827f-a9430df97cef.ane1-prod-nocsm.newmetric.xyz/",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/civitia/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v0.5.7"
+    }
+  }
 };
 export default info;
