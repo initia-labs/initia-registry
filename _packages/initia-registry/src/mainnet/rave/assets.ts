@@ -32,31 +32,115 @@ const info: AssetList = {
       },
     },
     {
-      description: "Ether.Fi's Wrapped eETH LRT",
+      description: "MilkyWay's Liquid Staked TIA",
       denom_units: [
         {
-          denom: "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
+          denom: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
           exponent: 0,
         },
         {
-          denom: "WEETH",
+          denom: "milkTIA",
           exponent: 18,
         },
       ],
       type_asset: "erc20",
-      address: "0x9b51c105b768dF44d78bE80B53aD45579b7ee103",
-      base: "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
-      display: "WEETH",
-      name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
+      address: "0xf0c644D9636b83E7491404d8D826321e44E23d15",
+      base: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+      display: "milkTIA",
+      name: "milkTIA",
+      symbol: "milkTIA",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+      },
+    },
+    {
+      description: "USDC on Initia",
+      denom_units: [
+        {
+          denom: "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+          exponent: 0,
+        },
+        {
+          denom: "USDC",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0x4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+      base: "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+      display: "USDC",
+      name: "USD Coin",
+      symbol: "USDC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+      },
+    },
+    {
+      description: "The native token of Celestia on Initia via IBC",
+      denom_units: [
+        {
+          denom: "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+          exponent: 0,
+        },
+        {
+          denom: "TIA",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0x44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+      base: "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+      display: "TIA",
+      name: "Celestia Native Token",
+      symbol: "TIA",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
+      },
+    },
+    {
+      description: "ETH token via LayerZero",
+      denom_units: [
+        {
+          denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+          exponent: 0,
+        },
+        {
+          denom: "ETH",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546",
+      base: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+      display: "ETH",
+      name: "Ethereum Native Token",
+      symbol: "ETH",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
       },
     },
   ],
