@@ -72,7 +72,7 @@
       "description": "Milkyway’s liquid staked TIA on Initia",
       "denom_units": [
         {
-          "denom": "ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F",
+          "denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
           "exponent": 0
         },
         {
@@ -80,7 +80,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F",
+      "base": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
       "display": "milkTIA",
       "name": "milkTIA",
       "symbol": "milkTIA",
@@ -91,11 +91,11 @@
           "counterparty": {
             "chain_name": "osmosis",
             "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
-            "channel_id": "channel-100108"
+            "channel_id": "channel-102129"
           },
           "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+            "channel_id": "channel-71",
+            "path": "transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
           }
         }
       ],
