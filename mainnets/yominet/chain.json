@@ -1,96 +1,92 @@
 {
-    "$schema": "../../chain.schema.json",
-    "chain_name": "yominet",
-    "pretty_name": "Yominet",
-    "chain_id": "yominet-1",
-    "evm_chain_id": 428962654539583,
-    "bech32_prefix": "init",
-    "network_type": "mainnet",
-    "codebase": {
-      "git_repo": "https://github.com/initia-labs/minievm",
-      "recommended_version": "v1.0.0-rc.0-kami.1",
-      "binaries": {
-        "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0-kami.1/minievm_v1.0.0-rc.0-kami.1_Linux_aarch64.tar.gz"
-      },
-      "genesis": {
-        "genesis_url": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz/genesis"
-      }
+  "$schema": "../../chain.schema.json",
+  "chain_name": "yominet",
+  "pretty_name": "Yominet",
+  "chain_id": "yominet-1",
+  "evm_chain_id": 428962654539583,
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.0.0-rc.0-kami.1",
+    "binaries": {
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0-kami.1/minievm_v1.0.0-rc.0-kami.1_Linux_aarch64.tar.gz"
     },
-    "peers": {
-      "seeds": [],
-      "persistent_peers": []
-    },
-    "apis": {
-      "rpc": [
-        {
-          "address": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz"
-        }
-      ],
-      "rest": [
-        {
-          "address": "https://rest-yominet-1.anvil.asia-southeast.initia.xyz"
-        }
-      ],
-      "grpc": [
-        {
-          "address": "grpc-yominet-1.anvil.asia-southeast.initia.xyz:443"
-        }
-      ],
-      "json-rpc": [
-        {
-          "address": "https://jsonrpc-yominet-1.anvil.asia-southeast.initia.xyz"
-        }
-      ],
-      "json-rpc-websocket": [
-        {
-          "address": "wss://jsonrpc-ws-yominet-1.anvil.asia-southeast.initia.xyz"
-        }
-      ]
-    },
-    "key_algos": [
-      "ethsecp256k1"
-    ],
-    "slip44": 60,
-    "fees": {
-      "fee_tokens": [
-        {
-          "denom": "GAS",
-          "fixed_min_gas_price": 30000000
-        }
-      ]
-    },
-    "images": [
-      {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png"
-      }
-    ],
-    "logo_URIs": {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png"
-    },
-    "metadata": {
-      "op_bridge_id": "11",
-      "op_denoms": [
-        "uinit"
-      ],
-      "executor_uri": "https://opinit-api-yominet-1.anvil.asia-southeast.initia.xyz",
-      "ibc_channels": [
-        {
-          "chain_id": "interwoven-1",
-          "port_id": "nft-transfer",
-          "channel_id": "channel-1",
-          "version": "ics721-1"
-        },
-        {
-          "chain_id": "interwoven-1",
-          "port_id": "transfer",
-          "channel_id": "channel-0",
-          "version": "ics20-1"
-        }
-      ],
-      "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/yominet/assetlist.json",
-      "minitia": {
-        "type": "minievm",
-        "version": "v1.0.0-rc.0-kami.1"
-      }
+    "genesis": {
+      "genesis_url": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz/genesis"
     }
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-yominet-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-yominet-1.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://jsonrpc-yominet-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://jsonrpc-ws-yominet-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 30000000
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png"
+  },
+  "metadata": {
+    "op_bridge_id": "11",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-yominet-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/yominet/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v1.0.0-rc.0-kami.1"
+    }
+  }
 }

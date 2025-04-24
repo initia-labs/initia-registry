@@ -83,7 +83,7 @@ A sample `chain.json` includes the following information.
       }
     ]
   },
-  "key_algos": ["secp256k1"],
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [

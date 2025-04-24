@@ -9,7 +9,7 @@
   "bech32_prefix": "init",
   "daemon_name": "inertiad",
   "node_home": "$HOME/.inertiad",
-  "key_algos": ["ethsecp256k1"],
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
   "slip44": 60,
   "fees": {
     "fee_tokens": [
@@ -21,8 +21,8 @@
   },
   "description": "The interwoven lending protocol for the modular ecosystem.",
   "peers": {
-      "seeds": [],
-      "persistent_peers": []
+    "seeds": [],
+    "persistent_peers": []
   },
   "apis": {
     "rpc": [
@@ -62,9 +62,7 @@
   },
   "metadata": {
     "op_bridge_id": "22",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://op-executor.inrt.fi",
     "ibc_channels": [
       {
