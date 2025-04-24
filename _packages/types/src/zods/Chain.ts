@@ -48,7 +48,13 @@ export const ChainSchema = z
     node_home: z.string().optional(),
     key_algos: z
       .array(
-        z.enum(["secp256k1", "ethsecp256k1", "ed25519", "sr25519", "bn254"])
+        z.enum([
+          "secp256k1",
+          "initia_ethsecp256k1",
+          "ed25519",
+          "sr25519",
+          "bn254",
+        ])
       )
       .optional(),
     slip44: z.number().optional(),
