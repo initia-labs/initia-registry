@@ -1,14 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "inertia",
+  chain_name: "intergaze",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+            "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
           exponent: 0,
         },
         {
@@ -16,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+      base: "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
       display: "INIT",
       traces: [
         {
@@ -26,7 +26,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "32",
+            bridge_id: "31",
           },
         },
       ],
