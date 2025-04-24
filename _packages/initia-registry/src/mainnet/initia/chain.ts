@@ -157,15 +157,16 @@ const info: Chain = {
       },
       {
         chain_id: "inertia-2",
-        port_id: "nft-transfer",
+        port_id:
+          "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
         channel_id: "channel-70",
-        version: "ics721-1",
+        version: '{"fee_version":"ics29-1","app_version":"ics721-1"}',
       },
       {
         chain_id: "inertia-2",
         port_id: "transfer",
         channel_id: "channel-69",
-        version: "ics20-1",
+        version: '{"fee_version":"ics29-1","app_version":"ics20-1"}',
       },
       {
         chain_id: "zaar-mainnet-1",
