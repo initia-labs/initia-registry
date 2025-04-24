@@ -1,125 +1,122 @@
-import { Chain } from '@initia/initia-registry-types';
+import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
-  "$schema": "../../chain.schema.json",
-  "chain_name": "minievm",
-  "chain_id": "minievm-2",
-  "evm_chain_id": 4303131403034904,
-  "website": "https://initia.xyz",
-  "pretty_name": "Minievm",
-  "status": "live",
-  "network_type": "testnet",
-  "bech32_prefix": "init",
-  "daemon_name": "minitiad",
-  "node_home": "$HOME/.minitia",
-  "key_algos": [
-    "initia_ethsecp256k1",
-    "secp256k1"
-  ],
-  "slip44": 60,
-  "fees": {
-    "fee_tokens": [
+  $schema: "../../chain.schema.json",
+  chain_name: "minievm",
+  chain_id: "minievm-2",
+  evm_chain_id: 4303131403034904,
+  website: "https://initia.xyz",
+  pretty_name: "Minievm",
+  status: "live",
+  network_type: "testnet",
+  bech32_prefix: "init",
+  daemon_name: "minitiad",
+  node_home: "$HOME/.minitia",
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
+  fees: {
+    fee_tokens: [
       {
-        "denom": "GAS",
-        "fixed_min_gas_price": 15000000000,
-        "low_gas_price": 15000000000,
-        "average_gas_price": 15000000000,
-        "high_gas_price": 40000000000
-      }
-    ]
+        denom: "GAS",
+        fixed_min_gas_price: 15000000000,
+        low_gas_price: 15000000000,
+        average_gas_price: 15000000000,
+        high_gas_price: 40000000000,
+      },
+    ],
   },
-  "codebase": {},
-  "description": "Minievm Public Testnet",
-  "apis": {
-    "rpc": [
+  codebase: {},
+  description: "Minievm Public Testnet",
+  apis: {
+    rpc: [
       {
-        "address": "https://rpc.minievm-2.initia.xyz",
-        "provider": "Initia Labs"
+        address: "https://rpc.minievm-2.initia.xyz",
+        provider: "Initia Labs",
       },
       {
-        "address": "https://rpc-skip.minievm-2.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip",
-        "indexForSkip": 0
-      }
+        address: "https://rpc-skip.minievm-2.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+        indexForSkip: 0,
+      },
     ],
-    "rest": [
+    rest: [
       {
-        "address": "https://rest.minievm-2.initia.xyz",
-        "provider": "Initia Labs"
+        address: "https://rest.minievm-2.initia.xyz",
+        provider: "Initia Labs",
       },
       {
-        "address": "https://rest-skip.minievm-2.initia.xyz",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip",
-        "indexForSkip": 0
-      }
+        address: "https://rest-skip.minievm-2.initia.xyz",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+        indexForSkip: 0,
+      },
     ],
-    "grpc": [
+    grpc: [
       {
-        "address": "35.186.157.168:9090",
-        "provider": "Initia Labs"
+        address: "35.186.157.168:9090",
+        provider: "Initia Labs",
       },
       {
-        "address": "grpc-skip.minievm-2.initia.xyz:443",
-        "provider": "Initia Labs",
-        "authorizedUser": "skip",
-        "indexForSkip": 0
-      }
+        address: "grpc-skip.minievm-2.initia.xyz:443",
+        provider: "Initia Labs",
+        authorizedUser: "skip",
+        indexForSkip: 0,
+      },
     ],
     "json-rpc": [
       {
-        "address": "https://json-rpc.minievm-2.initia.xyz",
-        "provider": "Initia Labs"
-      }
+        address: "https://json-rpc.minievm-2.initia.xyz",
+        provider: "Initia Labs",
+      },
     ],
     "json-rpc-websocket": [
       {
-        "address": "https://json-rpc-websocket.minievm-2.initia.xyz",
-        "provider": "Initia Labs"
-      }
-    ]
-  },
-  "explorers": [
-    {
-      "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/minievm-2",
-      "tx_page": "https://scan.testnet.initia.xyz/minievm-2/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/minievm-2/accounts/${accountAddress}"
-    }
-  ],
-  "images": [
-    {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png"
-    }
-  ],
-  "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png"
-  },
-  "metadata": {
-    "op_bridge_id": "1",
-    "op_denoms": [
-      "uinit"
+        address: "https://json-rpc-websocket.minievm-2.initia.xyz",
+        provider: "Initia Labs",
+      },
     ],
-    "executor_uri": "https://executor.minievm-2.initia.xyz",
-    "ibc_channels": [
+  },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/minievm-2",
+      tx_page: "https://scan.testnet.initia.xyz/minievm-2/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/minievm-2/accounts/${accountAddress}",
+    },
+  ],
+  images: [
+    {
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png",
+    },
+  ],
+  logo_URIs: {
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png",
+  },
+  metadata: {
+    op_bridge_id: "1",
+    op_denoms: ["uinit"],
+    executor_uri: "https://executor.minievm-2.initia.xyz",
+    ibc_channels: [
       {
-        "chain_id": "initiation-2",
-        "port_id": "transfer",
-        "channel_id": "channel-0",
-        "version": "ics20-1"
+        chain_id: "initiation-2",
+        port_id: "transfer",
+        channel_id: "channel-0",
+        version: "ics20-1",
       },
       {
-        "chain_id": "initiation-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1",
-        "version": "ics721-1"
-      }
+        chain_id: "initiation-2",
+        port_id: "nft-transfer",
+        channel_id: "channel-1",
+        version: "ics721-1",
+      },
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/assetlist.json",
-    "minitia": {
-      "type": "minievm",
-      "version": "v0.5.5"
-    }
-  }
+    assetlist:
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/minievm/assetlist.json",
+    minitia: {
+      type: "minievm",
+      version: "v0.5.5",
+    },
+  },
 };
 export default info;
