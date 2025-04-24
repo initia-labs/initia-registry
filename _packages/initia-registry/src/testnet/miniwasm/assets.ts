@@ -1,251 +1,244 @@
-import { AssetList } from "@initia/initia-registry-types";
+import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
-  $schema: "../../assetlist.schema.json",
-  chain_name: "miniwasm",
-  assets: [
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "miniwasm",
+  "assets": [
     {
-      description: "The native token of Initia",
-      denom_units: [
+      "description": "The native token of Initia",
+      "denom_units": [
         {
-          denom:
-            "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
-          exponent: 0,
+          "denom": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+          "exponent": 0
         },
         {
-          denom: "INIT",
-          exponent: 6,
-        },
+          "denom": "INIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
-      display: "INIT",
-      traces: [
+      "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0",
+      "display": "INIT",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom: "uinit",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
           },
-          chain: {
-            bridge_id: "2",
-          },
-        },
+          "chain": {
+            "bridge_id": "2"
+          }
+        }
       ],
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
-      images: [
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
     },
     {
-      description: "Op bridged fake USDC",
-      denom_units: [
+      "description": "Op bridged fake USDC",
+      "denom_units": [
         {
-          denom:
-            "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
-          exponent: 0,
+          "denom": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
+          "exponent": 0
         },
         {
-          denom: "opUSDC",
-          exponent: 6,
-        },
+          "denom": "opUSDC",
+          "exponent": 6
+        }
       ],
-      base: "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
-      display: "opUSDC",
-      name: "op bridged USDC",
-      symbol: "opUSDC",
-      coingecko_id: "",
-      traces: [
+      "base": "l2/3e127bc6b25822332fb3d6a240ad5157cf4b4f80049df137a8c12c5b66a39525",
+      "display": "opUSDC",
+      "name": "op bridged USDC",
+      "symbol": "opUSDC",
+      "coingecko_id": "",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom: "uusdc",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uusdc",
+            "chain_name": "initia"
           },
-          chain: {
-            bridge_id: "2",
-          },
-        },
+          "chain": {
+            "bridge_id": "2"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
     },
     {
-      description: "The fake ETH",
-      denom_units: [
+      "description": "The fake ETH",
+      "denom_units": [
         {
-          denom:
-            "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
-          exponent: 0,
+          "denom": "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
+          "exponent": 0
         },
         {
-          denom: "ETH",
-          exponent: 6,
-        },
+          "denom": "ETH",
+          "exponent": 6
+        }
       ],
-      base: "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
-      display: "ETH",
-      name: "Fake ETH Token",
-      symbol: "ETH",
-      coingecko_id: "",
-      traces: [
+      "base": "ibc/0E98D4D1D907597448FD3A7C33DDAE10A90FA86FC8A9F5A0B175393783F249CD",
+      "display": "ETH",
+      "name": "Fake ETH Token",
+      "symbol": "ETH",
+      "coingecko_id": "",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom: "ueth",
-            channel_id: "channel-0",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ueth",
+            "channel_id": "channel-0"
           },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/ueth",
-          },
-        },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/ueth"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
     },
     {
-      description: "IBC brdiged fake USDC",
-      denom_units: [
+      "description": "IBC brdiged fake USDC",
+      "denom_units": [
         {
-          denom:
-            "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-          exponent: 0,
+          "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+          "exponent": 0
         },
         {
-          denom: "ibcUSDC",
-          exponent: 6,
-        },
+          "denom": "ibcUSDC",
+          "exponent": 6
+        }
       ],
-      base: "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-      display: "ibcUSDC",
-      name: "IBC bridged USDC",
-      symbol: "ibcUSDC",
-      coingecko_id: "",
-      traces: [
+      "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      "display": "ibcUSDC",
+      "name": "IBC bridged USDC",
+      "symbol": "ibcUSDC",
+      "coingecko_id": "",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom: "uusdc",
-            channel_id: "channel-0",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "uusdc",
+            "channel_id": "channel-0"
           },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/uusdc",
-          },
-        },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uusdc"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
     },
     {
-      description: "The fake TIA",
-      denom_units: [
+      "description": "The fake TIA",
+      "denom_units": [
         {
-          denom:
-            "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
-          exponent: 0,
+          "denom": "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
+          "exponent": 0
         },
         {
-          denom: "TIA",
-          exponent: 6,
-        },
+          "denom": "TIA",
+          "exponent": 6
+        }
       ],
-      base: "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
-      display: "TIA",
-      name: "Fake TIA Token",
-      symbol: "TIA",
-      coingecko_id: "",
-      traces: [
+      "base": "ibc/C3E53D20BC7A4CC993B17C7971F8ECD06A433C10B6A96F4C4C3714F0624C56DA",
+      "display": "TIA",
+      "name": "Fake TIA Token",
+      "symbol": "TIA",
+      "coingecko_id": "",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom: "utia",
-            channel_id: "channel-0",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "utia",
+            "channel_id": "channel-0"
           },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/utia",
-          },
-        },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/utia"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
     },
     {
-      description: "BSC LayerZero Test Token",
-      denom_units: [
+      "description": "BSC LayerZero Test Token",
+      "denom_units": [
         {
-          denom:
-            "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
-          exponent: 0,
+          "denom": "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
+          "exponent": 0
         },
         {
-          denom: "TEST LZ",
-          exponent: 8,
-        },
+          "denom": "TEST LZ",
+          "exponent": 8
+        }
       ],
-      base: "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
-      display: "TEST LZ",
-      name: "BSC LayerZero Test Token",
-      symbol: "TEST LZ",
-      coingecko_id: "",
-      traces: [
+      "base": "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
+      "display": "TEST LZ",
+      "name": "BSC LayerZero Test Token",
+      "symbol": "TEST LZ",
+      "coingecko_id": "",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "initia",
-            base_denom:
-              "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
-            channel_id: "channel-0",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
+            "channel_id": "channel-0"
           },
-          chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
-          },
-        },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png",
-      },
-    },
-  ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bsc-test-lz.png"
+      }
+    }
+  ]
 };
 export default info;
