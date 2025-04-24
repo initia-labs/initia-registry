@@ -2,10 +2,10 @@
   "$schema": "../profile.schema.json",
   "name": "zaarmainnet",
   "pretty_name": "Zaar",
-  "category": "NFT",
+  "category": "Gaming",
   "l2": true,
-  "description": "The Fun Network, where NFTs and Degeneracy come to play.",
-  "summary": "The Fun Network of NFTs and Degeneracy",
+  "description": "The Fun Network, where Degeneracy comes to play.",
+  "summary": "The Fun Network of Degeneracy",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
   "color": "#DDBA00",
   "status": "live",
@@ -23,7 +23,7 @@
     ]
   },
   "social": {
-    "website": "https://www.zaar.market",
+    "website": "https://flip.zaar.gg/",
     "twitter": "https://x.com/zaar_gg"
   }
 }
