@@ -57,7 +57,7 @@ export interface Chain {
   };
   daemon_name?: string;
   node_home?: string;
-  key_algos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
+  key_algos?: ("secp256k1" | "initia_ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
   slip44?: number;
   alternative_slip44s?: number[];
   fees: {
