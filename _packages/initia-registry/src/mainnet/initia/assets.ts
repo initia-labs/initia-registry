@@ -305,6 +305,32 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
       },
     },
+    {
+      description: "Minitswap staked INIT",
+      denom_units: [
+        {
+          denom: "uoinit",
+          exponent: 0,
+        },
+        {
+          denom: "oINIT",
+          exponent: 6,
+        },
+      ],
+      base: "uoinit",
+      display: "oINIT",
+      name: "omniINIT",
+      symbol: "oINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
+      },
+    },
   ],
 };
 export default info;
