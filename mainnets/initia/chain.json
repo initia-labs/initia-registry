@@ -260,6 +260,18 @@
         "port_id": "transfer",
         "channel_id": "channel-58",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "rave-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-39",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rave-1",
+        "port_id": "transfer",
+        "channel_id": "channel-38",
+        "version": "ics20-1"
       }
     ]
   }
