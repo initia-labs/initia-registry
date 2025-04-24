@@ -125,6 +125,20 @@
       "name": "INIT Liquid Staking Token",
       "symbol": "milkINIT",
       "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "moo",
+            "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-29",
+            "path": "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+          }
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
