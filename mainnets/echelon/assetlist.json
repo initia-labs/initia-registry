@@ -41,7 +41,7 @@
       }
     },
     {
-      "description": "Circle’s USD Coin on Initia",
+      "description": "USDC on Initia",
       "denom_units": [
         {
           "denom": "l2/de17c24216dbf72c28330b352762a7b13e86b0cbc65c005ead58f15ba85d7258",
@@ -91,7 +91,7 @@
       }
     },
     {
-      "description": "Milkyway’s liquid staked TIA on Initia",
+      "description": "MilkyWay's Liquid Staked TIA",
       "denom_units": [
         {
           "denom": "l2/f74e7d10d0b1142ff883a60aa629b74bceb434e2ccccc0051bdbaa05e2e255ef",
@@ -154,7 +154,7 @@
       ],
       "base": "l2/4407c4c43437bacb779fa1aa9cb38b76dd8dce8bf28fb68dbf2242cc92b71ba6",
       "display": "TIA",
-      "name": "Celestia",
+      "name": "Celestia Native Token",
       "symbol": "TIA",
       "coingecko_id": "",
       "traces": [
@@ -191,7 +191,7 @@
       }
     },
     {
-      "description": "ETH token",
+      "description": "ETH token via LayerZero",
       "denom_units": [
         {
           "denom": "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
@@ -204,7 +204,7 @@
       ],
       "base": "l2/1881ea6c1ddf69a110cdd0b04cd024e12cc55e462a1e5e22dfa5d87473c8061e",
       "display": "ETH",
-      "name": "ETH Token",
+      "name": "Ethereum Native Token",
       "symbol": "ETH",
       "coingecko_id": "",
       "traces": [

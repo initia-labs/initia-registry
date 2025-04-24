@@ -31,7 +31,7 @@
       }
     },
     {
-      "description": "ETH token",
+      "description": "ETH token via LayerZero",
       "denom_units": [
         {
           "denom": "evm/e1ff7038eaaaf027031688e1535a055b2bac2546",
@@ -46,7 +46,7 @@
       "address": "0xe1ff7038eaaaf027031688e1535a055b2bac2546",
       "base": "evm/e1ff7038eaaaf027031688e1535a055b2bac2546",
       "display": "ETH",
-      "name": "ETH Token",
+      "name": "Ethereum Native Token",
       "symbol": "ETH",
       "coingecko_id": "",
       "images": [

@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/f8c3e39d364efd457858d873518c0898a10933852e4ccb09c683ca67cadd0cf6",
+          "denom": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
           "exponent": 0
         },
         {
@@ -14,7 +14,7 @@
           "exponent": 6
         }
       ],
-      "base": "l2/f8c3e39d364efd457858d873518c0898a10933852e4ccb09c683ca67cadd0cf6",
+      "base": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
       "display": "INIT",
       "traces": [
         {
@@ -24,7 +24,7 @@
             "chain_name": "initia"
           },
           "chain": {
-            "bridge_id": "22"
+            "bridge_id": "32"
           }
         }
       ],

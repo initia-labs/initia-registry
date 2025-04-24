@@ -31,7 +31,7 @@
       }
     },
     {
-      "description": "Circle’s USD Coin on Initia",
+      "description": "USDC on Initia",
       "denom_units": [
         {
           "denom": "evm/856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
