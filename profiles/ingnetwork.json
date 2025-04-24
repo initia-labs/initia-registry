@@ -14,8 +14,8 @@
     "forum_url": "https://forum.initia.xyz/t/whitelist-infinity-ground-on-vip/65",
     "actions": [
       {
-        "title": "Complete Quest",
-        "description": "Completing VIP quests in-game for each epoch."
+        "title": "Onchain Play",
+        "description": "Measured by how many times the user pays the $INIT entry fee to play."
       }
     ]
   },
