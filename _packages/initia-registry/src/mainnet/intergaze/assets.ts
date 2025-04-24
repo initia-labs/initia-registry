@@ -1,24 +1,35 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "yominet",
+  chain_name: "intergaze",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
-          denom: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          denom:
+            "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
           exponent: 0,
         },
         {
           denom: "INIT",
-          exponent: 18,
+          exponent: 6,
         },
       ],
-      type_asset: "erc20",
-      address: "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-      base: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      base: "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
       display: "INIT",
+      traces: [
+        {
+          type: "op",
+          counterparty: {
+            base_denom: "uinit",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "31",
+          },
+        },
+      ],
       name: "Initia Native Token",
       symbol: "INIT",
       coingecko_id: "",
