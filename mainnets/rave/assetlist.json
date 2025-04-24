@@ -31,38 +31,10 @@
       }
     },
     {
-      "description": "MilkyWay's Liquid Staked TIA",
-      "denom_units": [
-        {
-          "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
-          "exponent": 0
-        },
-        {
-          "denom": "milkTIA",
-          "exponent": 18
-        }
-      ],
-      "type_asset": "erc20",
-      "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15",
-      "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
-      "display": "milkTIA",
-      "name": "milkTIA",
-      "symbol": "milkTIA",
-      "coingecko_id": "",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
-      }
-    },
-    {
       "description": "USDC on Initia",
       "denom_units": [
         {
-          "denom": "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+          "denom": "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
           "exponent": 0
         },
         {
@@ -71,8 +43,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x4E5f559ff873D84834e4338950d4Bb05121f8EFc",
-      "base": "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+      "address": "0x7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+      "base": "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
@@ -87,10 +59,38 @@
       }
     },
     {
+      "description": "MilkyWay's Liquid Staked TIA",
+      "denom_units": [
+        {
+          "denom": "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
+          "exponent": 0
+        },
+        {
+          "denom": "milkTIA",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x76B459D863B31E8b0Cc8175dacfC451061114E14",
+      "base": "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
+      "display": "milkTIA",
+      "name": "milkTIA",
+      "symbol": "milkTIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+      }
+    },
+    {
       "description": "The native token of Celestia on Initia via IBC",
       "denom_units": [
         {
-          "denom": "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+          "denom": "evm/6AB7373EdA7F9CDbab4993124d373eD09d48A545",
           "exponent": 0
         },
         {
@@ -99,8 +99,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
-      "base": "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+      "address": "0x6AB7373EdA7F9CDbab4993124d373eD09d48A545",
+      "base": "evm/6AB7373EdA7F9CDbab4993124d373eD09d48A545",
       "display": "TIA",
       "name": "Celestia Native Token",
       "symbol": "TIA",
