@@ -13,13 +13,13 @@
     "forum_url": "https://forum.initia.xyz/t/whitelist-kamigotchi-on-vip/64",
     "actions": [
       {
-        "title": "Complete Quest",
-        "description": "Completing VIP quests in-game for each epoch."
+        "title": "Burn VIP Paper.",
+        "description": "Players can gather VIPP ingame in the VIP zone. VIPP tickets can be burned in order to claim VIP points."
       }
     ]
   },
   "social": {
-    "website": "https://playtest.kamigotchi.io",
+    "website": "https://kamigotchi.io",
     "twitter": "https://x.com/kamigotchiworld"
   }
 }
