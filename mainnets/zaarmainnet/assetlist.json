@@ -34,7 +34,7 @@
       "description": "Circle’s USD Coin on Initia",
       "denom_units": [
         {
-          "denom": "evm/bb4d87cb72e9a515d0846a8801f07d887eef1c13",
+          "denom": "evm/856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
           "exponent": 0
         },
         {
@@ -43,8 +43,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0xbb4d87cb72e9a515d0846a8801f07d887eef1c13",
-      "base": "evm/bb4d87cb72e9a515d0846a8801f07d887eef1c13",
+      "address": "0x856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
+      "base": "evm/856ab2c9f35b9187ab3eb0fcd11dcc6160427e96",
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
