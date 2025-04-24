@@ -1,13 +1,13 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "yominet",
+  chain_name: "rave",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
-          denom: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          denom: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
           exponent: 0,
         },
         {
@@ -16,8 +16,8 @@ const info: AssetList = {
         },
       ],
       type_asset: "erc20",
-      address: "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-      base: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      address: "0x4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
+      base: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04fca1",
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
