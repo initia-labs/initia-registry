@@ -1,6 +1,6 @@
 {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "embr",
+  "chain_name": "embr_old",
   "assets": [
     {
       "description": "The native token of Initia",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "embrtestnet",
+  "chain_name": "embr",
   "pretty_name": "Embr.fun",
   "chain_id": "embr-testnet-2",
   "evm_chain_id": 3698193502869237,
@@ -60,11 +60,11 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embrtestnet.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embrtestnet.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png"
   },
   "metadata": {
     "op_bridge_id": "1175",
