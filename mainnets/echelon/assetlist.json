@@ -44,7 +44,7 @@
       "description": "MilkyWay's Liquid Staked TIA",
       "denom_units": [
         {
-          "denom": "ibc/9BC51D80E55DA9CDA11876EA5A56708C3C25BBF876BC26952F7A756E47FF3E3B",
+          "denom": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
           "exponent": 0
         },
         {
@@ -52,7 +52,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/9BC51D80E55DA9CDA11876EA5A56708C3C25BBF876BC26952F7A756E47FF3E3B",
+      "base": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
       "display": "milkTIA",
       "name": "milkTIA",
       "symbol": "milkTIA",
