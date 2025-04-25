@@ -292,6 +292,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png"
       }
+    },
+    {
+      "description": "Ether.Fi's Wrapped eETH LRT",
+      "denom_units": [
+        {
+          "denom": "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
+          "exponent": 0
+        },
+        {
+          "denom": "WEETH",
+          "exponent": 6
+        }
+      ],
+      "base": "WEETH",
+      "display": "WEETH",
+      "name": "Ether.Fi Wrapped eETH LRT",
+      "symbol": "WEETH",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png"
+      }
     }
   ]
 }

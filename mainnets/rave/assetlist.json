@@ -59,7 +59,7 @@
       }
     },
     {
-      "description": "MilkyWay's Liquid Staked TIA",
+      "description": "MilkyWay's Liquid Staked milkINIT",
       "denom_units": [
         {
           "denom": "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
