@@ -224,34 +224,6 @@ const info: AssetList = {
       },
     },
     {
-      description: "Ether.Fi's Wrapped eETH LRT",
-      denom_units: [
-        {
-          denom:
-            "move/bcf6c17467320f8aec451165823d73af3049f9c9dfbeaff98b92ec0165a58bf8",
-          exponent: 0,
-        },
-        {
-          denom: "WEETH",
-          exponent: 6,
-        },
-      ],
-      base: "move/bcf6c17467320f8aec451165823d73af3049f9c9dfbeaff98b92ec0165a58bf8",
-      display: "WEETH",
-      name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
-      coingecko_id: "",
-      traces: [],
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
-      },
-    },
-    {
       description: "The LST of INIT by Inertia",
       denom_units: [
         {
@@ -303,6 +275,32 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
+      },
+    },
+    {
+      description: "Minitswap staked INIT",
+      denom_units: [
+        {
+          denom: "uoinit",
+          exponent: 0,
+        },
+        {
+          denom: "oINIT",
+          exponent: 6,
+        },
+      ],
+      base: "uoinit",
+      display: "oINIT",
+      name: "omniINIT",
+      symbol: "oINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
       },
     },
   ],
