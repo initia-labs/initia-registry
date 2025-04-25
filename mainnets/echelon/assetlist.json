@@ -57,20 +57,6 @@
       "name": "milkINIT",
       "symbol": "milkINIT",
       "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
-            "channel_id": "channel-35"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA"
-          }
-        }
-      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
@@ -97,20 +83,6 @@
       "name": "milkTIA",
       "symbol": "milkTIA",
       "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
-            "channel_id": "channel-35"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D"
-          }
-        }
-      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
@@ -137,20 +109,6 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
-            "channel_id": "channel-35"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4"
-          }
-        }
-      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
@@ -177,20 +135,6 @@
       "name": "Celestia Native Token",
       "symbol": "TIA",
       "coingecko_id": "",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
-            "channel_id": "channel-35"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3"
-          }
-        }
-      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
