@@ -1,7 +1,7 @@
 {
   "$schema": "../profile.schema.json",
   "name": "ingnetwork",
-  "pretty_name": "Infinity Ground",
+  "pretty_name": "ING Network",
   "category": "AI",
   "tags": [],
   "l2": true,
