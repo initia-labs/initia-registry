@@ -320,7 +320,7 @@
       }
     },
     {
-      "description": "Drop staked INIT-USDC LP",
+      "description": "Drop staked INIT-USDC LPT",
       "denom_units": [
         {
           "denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
@@ -333,7 +333,7 @@
       ],
       "base": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
       "display": "deINIT",
-      "name": "Drop staked INIT-USDC LP token",
+      "name": "Drop staked INIT-USDC LPT token",
       "symbol": "deINIT",
       "coingecko_id": "",
       "traces": [
