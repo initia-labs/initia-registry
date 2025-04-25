@@ -48,22 +48,22 @@
           "exponent": 0
         },
         {
-          "denom": "milkTIA",
+          "denom": "milkINIT",
           "exponent": 6
         }
       ],
       "base": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
-      "display": "milkTIA",
-      "name": "milkTIA",
-      "symbol": "milkTIA",
+      "display": "milkINIT",
+      "name": "milkINIT",
+      "symbol": "milkINIT",
       "coingecko_id": "",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
       }
     },
     {
@@ -142,6 +142,32 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
+    },
+    {
+      "description": "MilkyWay's Liquid Staked TIA",
+      "denom_units": [
+        {
+          "denom": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206",
+          "exponent": 0
+        },
+        {
+          "denom": "milkTIA",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206",
+      "display": "milkTIA",
+      "name": "milkTIA",
+      "symbol": "milkTIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
       }
     }
   ]

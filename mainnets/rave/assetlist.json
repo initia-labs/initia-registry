@@ -66,13 +66,41 @@
           "exponent": 0
         },
         {
-          "denom": "milkTIA",
+          "denom": "milkINIT",
           "exponent": 18
         }
       ],
       "type_asset": "erc20",
       "address": "0x76B459D863B31E8b0Cc8175dacfC451061114E14",
       "base": "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
+      "display": "milkINIT",
+      "name": "milkINIT",
+      "symbol": "milkINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+      }
+    },
+    {
+      "description": "MilkyWay's Liquid Staked TIA",
+      "denom_units": [
+        {
+          "denom": "evm/7Add4070C2530481BC74C667067DcD0BCD56eEd2",
+          "exponent": 0
+        },
+        {
+          "denom": "milkTIA",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x7Add4070C2530481BC74C667067DcD0BCD56eEd2",
+      "base": "evm/7Add4070C2530481BC74C667067DcD0BCD56eEd2",
       "display": "milkTIA",
       "name": "milkTIA",
       "symbol": "milkTIA",
