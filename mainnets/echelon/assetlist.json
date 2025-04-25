@@ -227,7 +227,7 @@
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "transfer/channel-0/transfer//"
+            "path": "transfer/channel-0}"
           }
         }
       ],
@@ -267,7 +267,7 @@
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "transfer/channel-0/transfer//"
+            "path": "transfer/channel-0}"
           }
         }
       ],
