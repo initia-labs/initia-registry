@@ -272,6 +272,18 @@
         "port_id": "transfer",
         "channel_id": "channel-38",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "rena-nuwa-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-65",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rena-nuwa-1",
+        "port_id": "transfer",
+        "channel_id": "channel-64",
+        "version": "ics20-1"
       }
     ]
   }
