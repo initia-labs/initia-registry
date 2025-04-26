@@ -2,7 +2,7 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "ingnetwork",
-  pretty_name: "Ingnetwork",
+  pretty_name: "ING Network",
   chain_id: "ingnetwork-1",
   evm_chain_id: 2780922216980457,
   bech32_prefix: "init",
