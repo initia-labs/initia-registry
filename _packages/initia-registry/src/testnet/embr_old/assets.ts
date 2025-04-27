@@ -1,14 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "embr",
+  chain_name: "embr_old",
   assets: [
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/d783cfbe601b8be3a12a90a0d4d2869b3e88a9e98c27e89e146890664e051bf2",
+            "l2/025e02154bf24211cdceb46a81e37cdc9d3c0d5dca472f69354621d3b3169b0f",
           exponent: 0,
         },
         {
@@ -16,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/d783cfbe601b8be3a12a90a0d4d2869b3e88a9e98c27e89e146890664e051bf2",
+      base: "l2/025e02154bf24211cdceb46a81e37cdc9d3c0d5dca472f69354621d3b3169b0f",
       display: "INIT",
       traces: [
         {
@@ -26,7 +26,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "1175",
+            bridge_id: "823",
           },
         },
       ],
@@ -46,7 +46,7 @@ const info: AssetList = {
       description: "mock embrINIT",
       denom_units: [
         {
-          denom: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+          denom: "evm/6ed1637781269560b204c27cd42d95e057c4be44",
           exponent: 0,
         },
         {
@@ -55,8 +55,8 @@ const info: AssetList = {
         },
       ],
       type_asset: "erc20",
-      address: "0x6ed1637781269560b204c27Cd42d95e057C4BE44",
-      base: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+      address: "0x6ed1637781269560b204c27cd42d95e057c4be44",
+      base: "evm/6ed1637781269560b204c27cd42d95e057c4be44",
       display: "EMBR INIT",
       name: "EMBR INIT",
       symbol: "EMBRINIT",
