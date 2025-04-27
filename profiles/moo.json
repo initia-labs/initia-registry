@@ -1,6 +1,6 @@
 {
   "$schema": "../profile.schema.json",
-  "name": "milkyway",
+  "name": "moo",
   "pretty_name": "MilkyWay",
   "category": "DeFi",
   "l2": true,
@@ -10,6 +10,7 @@
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
   "status": "live",
   "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-milkyway-on-vip/56",
     "actions": [
       {
         "title": "Liquid stake",

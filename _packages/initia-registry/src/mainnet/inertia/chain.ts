@@ -2,7 +2,7 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "inertia",
-  chain_id: "inertia-1",
+  chain_id: "inertia-2",
   website: "https://app.inrt.fi",
   pretty_name: "Inertia",
   status: "live",
@@ -10,13 +10,13 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "inertiad",
   node_home: "$HOME/.inertiad",
-  key_algos: ["ethsecp256k1"],
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
   slip44: 60,
   fees: {
     fee_tokens: [
       {
         denom:
-          "l2/f8c3e39d364efd457858d873518c0898a10933852e4ccb09c683ca67cadd0cf6",
+          "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
         fixed_min_gas_price: 0.015,
       },
     ],
@@ -45,10 +45,10 @@ const info: Chain = {
   explorers: [
     {
       kind: "initia scan",
-      url: "https://scan.initia.xyz/inertia-1",
-      tx_page: "https://scan.initia.xyz/inertia-1/txs/${txHash}",
+      url: "https://scan.initia.xyz/inertia-2",
+      tx_page: "https://scan.initia.xyz/inertia-2/txs/${txHash}",
       account_page:
-        "https://scan.initia.xyz/inertia-1/accounts/${accountAddress}",
+        "https://scan.initia.xyz/inertia-2/accounts/${accountAddress}",
     },
   ],
   images: [
@@ -60,7 +60,7 @@ const info: Chain = {
     png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png",
   },
   metadata: {
-    op_bridge_id: "22",
+    op_bridge_id: "32",
     op_denoms: ["uinit"],
     executor_uri: "https://op-executor.inrt.fi",
     ibc_channels: [

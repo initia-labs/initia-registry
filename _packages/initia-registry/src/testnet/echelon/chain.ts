@@ -47,8 +47,8 @@ const info: Chain = {
       },
     ],
   },
-  key_algos: ["secp256k1"],
-  slip44: 118,
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
   fees: {
     fee_tokens: [
       {

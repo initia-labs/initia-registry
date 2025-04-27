@@ -1,42 +1,14 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "rave",
+  chain_name: "intergaze",
   assets: [
-    {
-      description: "RAVE",
-      denom_units: [
-        {
-          denom: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
-          exponent: 0,
-        },
-        {
-          denom: "RAVE",
-          exponent: 18,
-        },
-      ],
-      type_asset: "erc20",
-      address: "0xBdb128Cf29d40738875297E90aa42772D354c137",
-      base: "evm/Bdb128Cf29d40738875297E90aa42772D354c137",
-      display: "RAVE",
-      name: "RAVE",
-      symbol: "RAVE",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
-      },
-    },
     {
       description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "l2/edae1fc3a500ebf17be462b0d899d385fec7fbff99f2ca3f1250bdbee675b2ea",
+            "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
           exponent: 0,
         },
         {
@@ -44,7 +16,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "l2/edae1fc3a500ebf17be462b0d899d385fec7fbff99f2ca3f1250bdbee675b2ea",
+      base: "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
       display: "INIT",
       traces: [
         {
@@ -54,7 +26,7 @@ const info: AssetList = {
             chain_name: "initia",
           },
           chain: {
-            bridge_id: "610",
+            bridge_id: "31",
           },
         },
       ],
@@ -71,11 +43,11 @@ const info: AssetList = {
       },
     },
     {
-      description: "USD Coin on Initia",
+      description: "USDC on Initia",
       denom_units: [
         {
           denom:
-            "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+            "l2/db147f1ded7ffcc336f5f8d1eff83c4feb95fcfff5c84f1b9c135444b816e48e",
           exponent: 0,
         },
         {
@@ -83,22 +55,33 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      base: "l2/db147f1ded7ffcc336f5f8d1eff83c4feb95fcfff5c84f1b9c135444b816e48e",
       display: "USDC",
-      name: "USDC",
+      name: "USD Coin",
       symbol: "USDC",
       coingecko_id: "",
       traces: [
         {
           type: "ibc",
           counterparty: {
-            chain_name: "initia",
+            chain_name: "noble",
             base_denom: "uusdc",
-            channel_id: "channel-0",
+            channel_id: "channel-129",
           },
           chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/uusdc",
+            channel_id: "channel-3",
+            path: "transfer/channel-3/uusdc",
+          },
+        },
+        {
+          type: "op",
+          counterparty: {
+            base_denom:
+              "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+            chain_name: "initia",
+          },
+          chain: {
+            bridge_id: "31",
           },
         },
       ],

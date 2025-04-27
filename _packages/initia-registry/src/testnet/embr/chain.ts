@@ -10,8 +10,8 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "minitiad",
   node_home: "$HOME/.minitia",
-  key_algos: ["secp256k1"],
-  slip44: 118,
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
   website: "https://embr.fun",
   fees: {
     fee_tokens: [

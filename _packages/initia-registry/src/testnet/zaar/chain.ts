@@ -12,7 +12,7 @@ const info: Chain = {
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
   website: "https://www.zaar.market",
-  slip44: 118,
+  slip44: 60,
   fees: {
     fee_tokens: [
       {

@@ -35,13 +35,13 @@ const info: Chain = {
       },
     ],
   },
-  key_algos: ["ethsecp256k1"],
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
   slip44: 60,
   fees: {
     fee_tokens: [
       {
-        denom: "GAS",
-        fixed_min_gas_price: 30000000,
+        denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+        fixed_min_gas_price: 300000,
       },
     ],
   },

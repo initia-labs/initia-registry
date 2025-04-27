@@ -30,7 +30,7 @@ const info: AssetList = {
       },
     },
     {
-      description: "Circle’s USD Coin on Initia",
+      description: "USDC on Initia",
       denom_units: [
         {
           denom:
@@ -71,11 +71,11 @@ const info: AssetList = {
       },
     },
     {
-      description: "Milkyway’s liquid staked TIA on Initia",
+      description: "MilkyWay's Liquid Staked TIA",
       denom_units: [
         {
           denom:
-            "ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F",
+            "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
           exponent: 0,
         },
         {
@@ -83,7 +83,7 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F",
+      base: "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
       display: "milkTIA",
       name: "milkTIA",
       symbol: "milkTIA",
@@ -95,11 +95,11 @@ const info: AssetList = {
             chain_name: "osmosis",
             base_denom:
               "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
-            channel_id: "channel-100108",
+            channel_id: "channel-102129",
           },
           chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+            channel_id: "channel-71",
+            path: "transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
           },
         },
       ],
@@ -110,6 +110,48 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked INIT",
+      denom_units: [
+        {
+          denom:
+            "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+      display: "milkINIT",
+      name: "MilkyWay's INIT LST",
+      symbol: "milkINIT",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "moo",
+            base_denom:
+              "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-29",
+            path: "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
       },
     },
     {
@@ -127,7 +169,7 @@ const info: AssetList = {
       ],
       base: "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
       display: "TIA",
-      name: "Celestia",
+      name: "Celestia Native Token",
       symbol: "TIA",
       coingecko_id: "",
       traces: [
@@ -154,11 +196,11 @@ const info: AssetList = {
       },
     },
     {
-      description: "ETH token",
+      description: "ETH token via LayerZero",
       denom_units: [
         {
           denom:
-            "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
+            "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
           exponent: 0,
         },
         {
@@ -166,9 +208,9 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "move/8e263c29f0e30feb33bae5b284a601f8fe7f94965ef2d2662abf773fc851aa83",
+      base: "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
       display: "ETH",
-      name: "ETH Token",
+      name: "Ethereum Native Token",
       symbol: "ETH",
       coingecko_id: "",
       traces: [],
@@ -179,6 +221,86 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
+      },
+    },
+    {
+      description: "The LST of INIT by Inertia",
+      denom_units: [
+        {
+          denom:
+            "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+          exponent: 0,
+        },
+        {
+          denom: "sINIT",
+          exponent: 6,
+        },
+      ],
+      base: "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+      display: "sINIT",
+      name: "sINIT",
+      symbol: "sINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+      },
+    },
+    {
+      description: "The LST of INIT by Inertia",
+      denom_units: [
+        {
+          denom:
+            "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
+          exponent: 0,
+        },
+        {
+          denom: "nINIT",
+          exponent: 6,
+        },
+      ],
+      base: "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
+      display: "nINIT",
+      name: "nINIT",
+      symbol: "nINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
+      },
+    },
+    {
+      description: "Minitswap staked INIT",
+      denom_units: [
+        {
+          denom: "uoinit",
+          exponent: 0,
+        },
+        {
+          denom: "oINIT",
+          exponent: 6,
+        },
+      ],
+      base: "uoinit",
+      display: "oINIT",
+      name: "omniINIT",
+      symbol: "oINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
       },
     },
   ],

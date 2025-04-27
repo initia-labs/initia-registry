@@ -26,7 +26,7 @@ const info: AssetList = {
       },
     },
     {
-      description: "The INIT Liquid Staking Token",
+      description: "MilkyWay's Liquid Staked INIT",
       denom_units: [
         {
           denom: "umilkinit",
@@ -39,7 +39,7 @@ const info: AssetList = {
       ],
       base: "umilkinit",
       display: "milkINIT",
-      name: "INIT Liquid Staking Token",
+      name: "MilkyWay's INIT LST",
       symbol: "milkINIT",
       coingecko_id: "",
       images: [
