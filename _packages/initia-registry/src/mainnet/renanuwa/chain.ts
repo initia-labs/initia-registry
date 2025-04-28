@@ -1,26 +1,26 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "echelon",
-  pretty_name: "Echelon",
-  chain_id: "echelon-1",
+  chain_name: "renanuwa",
+  pretty_name: "Rena",
+  chain_id: "rena-nuwa-1",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},
   apis: {
     rpc: [
       {
-        address: "https://rpc-echelon-1.anvil.asia-southeast.initia.xyz",
+        address: "https://rpc-rena-nuwa-1.anvil.asia-southeast.initia.xyz",
       },
     ],
     rest: [
       {
-        address: "https://rest-echelon-1.anvil.asia-southeast.initia.xyz",
+        address: "https://rest-rena-nuwa-1.anvil.asia-southeast.initia.xyz",
       },
     ],
     grpc: [
       {
-        address: "grpc-echelon-1.anvil.asia-southeast.initia.xyz:443",
+        address: "grpc-rena-nuwa-1.anvil.asia-southeast.initia.xyz:443",
       },
     ],
   },
@@ -30,24 +30,24 @@ const info: Chain = {
     fee_tokens: [
       {
         denom:
-          "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
+          "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
         fixed_min_gas_price: 0.015,
       },
     ],
   },
   images: [
     {
-      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.png",
     },
   ],
   logo_URIs: {
-    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.png",
   },
   metadata: {
-    op_bridge_id: "16",
+    op_bridge_id: "30",
     op_denoms: ["uinit"],
     executor_uri:
-      "https://opinit-api-echelon-1.anvil.asia-southeast.initia.xyz",
+      "https://opinit-api-rena-nuwa-1.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
         chain_id: "interwoven-1",
@@ -63,10 +63,10 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/echelon/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/renanuwa/assetlist.json",
     minitia: {
       type: "minimove",
-      version: "v1.0.0-beta.14",
+      version: "v1.0.2",
     },
   },
 };
