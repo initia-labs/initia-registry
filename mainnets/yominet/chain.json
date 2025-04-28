@@ -8,9 +8,9 @@
   "network_type": "mainnet",
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
-    "recommended_version": "v1.0.0-rc.0-kami.1",
+    "recommended_version": "v1.0.3",
     "binaries": {
-      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0-kami.1/minievm_v1.0.0-rc.0-kami.1_Linux_aarch64.tar.gz"
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.3/minievm_v1.0.3_Linux_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz/genesis"
@@ -53,7 +53,7 @@
     "fee_tokens": [
       {
         "denom": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-        "fixed_min_gas_price": 300000
+        "fixed_min_gas_price": 3000000
       }
     ]
   },
