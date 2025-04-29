@@ -19,7 +19,7 @@ const info: AssetList = {
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
-      coingecko_id: "",
+      coingecko_id: "initia",
       images: [
         {
           png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
@@ -46,7 +46,7 @@ const info: AssetList = {
       display: "USDC",
       name: "USD Coin",
       symbol: "USDC",
-      coingecko_id: "",
+      coingecko_id: "usd-coin",
       traces: [
         {
           type: "ibc",
@@ -87,7 +87,7 @@ const info: AssetList = {
       display: "milkTIA",
       name: "milkTIA",
       symbol: "milkTIA",
-      coingecko_id: "",
+      coingecko_id: "milkyway-staked-tia",
       traces: [
         {
           type: "ibc",
@@ -171,7 +171,7 @@ const info: AssetList = {
       display: "TIA",
       name: "Celestia Native Token",
       symbol: "TIA",
-      coingecko_id: "",
+      coingecko_id: "celestia",
       traces: [
         {
           type: "ibc",
@@ -212,7 +212,7 @@ const info: AssetList = {
       display: "ETH",
       name: "Ethereum Native Token",
       symbol: "ETH",
-      coingecko_id: "",
+      coingecko_id: "ethereum",
       traces: [],
       images: [
         {
@@ -301,6 +301,75 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png",
+      },
+    },
+    {
+      description: "Ether.Fi's Wrapped eETH LRT",
+      denom_units: [
+        {
+          denom:
+            "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
+          exponent: 0,
+        },
+        {
+          denom: "WEETH",
+          exponent: 6,
+        },
+      ],
+      base: "WEETH",
+      display: "WEETH",
+      name: "Ether.Fi Wrapped eETH LRT",
+      symbol: "WEETH",
+      coingecko_id: "wrapped-eeth",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+      },
+    },
+    {
+      description: "Drop staked INIT-USDC LPT",
+      denom_units: [
+        {
+          denom:
+            "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+          exponent: 0,
+        },
+        {
+          denom: "deINIT",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+      display: "deINIT",
+      name: "Drop Staked INIT-USDC LPT",
+      symbol: "deINIT",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "neutron",
+            base_denom:
+              "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
+            channel_id: "channel-6885",
+          },
+          chain: {
+            channel_id: "channel-37",
+            path: "transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png",
       },
     },
   ],

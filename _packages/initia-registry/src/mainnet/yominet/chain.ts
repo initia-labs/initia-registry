@@ -41,7 +41,7 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-        fixed_min_gas_price: 300000,
+        fixed_min_gas_price: 3000000,
       },
     ],
   },
