@@ -305,7 +305,7 @@
           "exponent": 6
         }
       ],
-      "base": "WEETH",
+      "base": "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
       "display": "WEETH",
       "name": "Ether.Fi Wrapped eETH LRT",
       "symbol": "WEETH",
