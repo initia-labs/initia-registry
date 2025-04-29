@@ -21,6 +21,10 @@ const info: Chain = {
         average_gas_price: 0.015,
         high_gas_price: 0.04,
       },
+      {
+        denom:
+          "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+      },
     ],
   },
   staking: {

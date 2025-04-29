@@ -13,6 +13,7 @@ import * as _initia from "./initia";
 import * as _infinityg from "./infinityg";
 import * as _inertia_legacy from "./inertia_legacy";
 import * as _inertia from "./inertia";
+import * as _embr_old from "./embr_old";
 import * as _embr from "./embr";
 import * as _echelon from "./echelon";
 import * as _culinaris from "./culinaris";
@@ -32,6 +33,7 @@ const chains: Chain[] = [
   _infinityg.chain,
   _inertia_legacy.chain,
   _inertia.chain,
+  _embr_old.chain,
   _embr.chain,
   _echelon.chain,
   _culinaris.chain,
