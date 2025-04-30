@@ -372,6 +372,47 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png",
       },
     },
+    {
+      description: "ONYX",
+      denom_units: [
+        {
+          denom:
+            "ibc/11C266D6BC1B59843A4B807531138C0548C6FC95FF91B654D26A469AE637A887",
+          exponent: 0,
+        },
+        {
+          denom: "ONYX",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/11C266D6BC1B59843A4B807531138C0548C6FC95FF91B654D26A469AE637A887",
+      display: "ONYX",
+      name: "ONYX",
+      symbol: "ONYX",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "yominet",
+            base_denom: "evm/D99842DcDA02E35c4f88d290a9fFcAD2f647CDeA",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-25",
+            path: "transfer/channel-25/evm/D99842DcDA02E35c4f88d290a9fFcAD2f647CDeA",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+      },
+    },
   ],
 };
 export default info;
