@@ -1,5 +1,6 @@
 export * as zaarmainnet from "./zaarmainnet";
 export * as yominet from "./yominet";
+export * as renanuwa from "./renanuwa";
 export * as rave from "./rave";
 export * as moo from "./moo";
 export * as intergaze from "./intergaze";

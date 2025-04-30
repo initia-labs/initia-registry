@@ -32,6 +32,34 @@ const info: AssetList = {
       },
     },
     {
+      description: "ONYX",
+      denom_units: [
+        {
+          denom: "evm/41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
+          exponent: 0,
+        },
+        {
+          denom: "ONYX",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0x41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
+      base: "evm/41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
+      display: "ONYX",
+      name: "ONYX",
+      symbol: "ONYX",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+      },
+    },
+    {
       description: "ETH token via LayerZero",
       denom_units: [
         {
