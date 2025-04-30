@@ -363,7 +363,7 @@
       "description": "ONYX",
       "denom_units": [
         {
-          "denom": "ibc/11C266D6BC1B59843A4B807531138C0548C6FC95FF91B654D26A469AE637A887",
+          "denom": "ibc/0449FC5420CBF7B36DB51AE5DCA10E010275F186BE6CA129DAE9CEA67E6A69A1",
           "exponent": 0
         },
         {
@@ -371,7 +371,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/11C266D6BC1B59843A4B807531138C0548C6FC95FF91B654D26A469AE637A887",
+      "base": "ibc/0449FC5420CBF7B36DB51AE5DCA10E010275F186BE6CA129DAE9CEA67E6A69A1",
       "display": "ONYX",
       "name": "ONYX",
       "symbol": "ONYX",
