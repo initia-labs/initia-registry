@@ -244,6 +244,12 @@ const info: Chain = {
         channel_id: "channel-2454",
         version: "ics721-1",
       },
+      {
+        chain_id: "virgaze-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-1586",
+        version: "ics721-1",
+      },
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json",
