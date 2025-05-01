@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "6ed1637781269560b204c27Cd42d95e057C4BE44",
+          "denom": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
           "exponent": 0
         },
         {
@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "6ed1637781269560b204c27Cd42d95e057C4BE44",
-      "base": "6ed1637781269560b204c27Cd42d95e057C4BE44",
+      "address": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+      "base": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
       "display": "INIT",
       "traces": [
         {
