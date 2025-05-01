@@ -15,7 +15,7 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+      "address": "0x6ed1637781269560b204c27Cd42d95e057C4BE44",
       "base": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
       "display": "INIT",
       "traces": [
