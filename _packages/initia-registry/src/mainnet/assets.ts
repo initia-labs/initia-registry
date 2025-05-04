@@ -11,6 +11,7 @@ import * as _ingnetwork from "./ingnetwork";
 import * as _inertia from "./inertia";
 import * as _echelon from "./echelon";
 import * as _civitia from "./civitia";
+import * as _bfb from "./bfb";
 
 const assets: AssetList[] = [
   _zaarmainnet.assets,
@@ -24,6 +25,7 @@ const assets: AssetList[] = [
   _inertia.assets,
   _echelon.assets,
   _civitia.assets,
+  _bfb.assets,
 ];
 
 export default assets;
