@@ -11,6 +11,7 @@ import * as _ingnetwork from "./ingnetwork";
 import * as _inertia from "./inertia";
 import * as _echelon from "./echelon";
 import * as _civitia from "./civitia";
+import * as _bfb from "./bfb";
 
 const chains: Chain[] = [
   _zaarmainnet.chain,
@@ -24,6 +25,7 @@ const chains: Chain[] = [
   _inertia.chain,
   _echelon.chain,
   _civitia.chain,
+  _bfb.chain,
 ];
 
 export default chains;

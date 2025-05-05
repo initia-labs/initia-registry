@@ -41,10 +41,19 @@ const info: Chain = {
     fee_tokens: [
       {
         denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-        fixed_min_gas_price: 3000000,
+        fixed_min_gas_price: 5000000,
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.initia.xyz/yominet-1",
+      tx_page: "https://scan.initia.xyz/yominet-1/txs/${txHash}",
+      account_page:
+        "https://scan.initia.xyz/yominet-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png",
