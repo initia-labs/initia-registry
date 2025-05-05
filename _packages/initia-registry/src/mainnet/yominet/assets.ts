@@ -35,7 +35,7 @@ const info: AssetList = {
       description: "ONYX",
       denom_units: [
         {
-          denom: "evm/41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
+          denom: "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
           exponent: 0,
         },
         {
@@ -44,8 +44,8 @@ const info: AssetList = {
         },
       ],
       type_asset: "erc20",
-      address: "0x41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
-      base: "evm/41A6d357957F6cEA659cD21CC0C98a43Ec9304Bb",
+      address: "0x4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
+      base: "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
       display: "ONYX",
       name: "ONYX",
       symbol: "ONYX",

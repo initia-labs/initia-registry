@@ -199,6 +199,84 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
       },
     },
+    {
+      description: "The LST of INIT by Inertia",
+      denom_units: [
+        {
+          denom: "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
+          exponent: 0,
+        },
+        {
+          denom: "sINIT",
+          exponent: 18,
+        },
+      ],
+      base: "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
+      display: "sINIT",
+      name: "sINIT",
+      symbol: "sINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked INIT",
+      denom_units: [
+        {
+          denom: "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT",
+          exponent: 18,
+        },
+      ],
+      base: "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
+      display: "milkINIT",
+      name: "MilkyWay's INIT LST",
+      symbol: "milkINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked TIA",
+      denom_units: [
+        {
+          denom: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          exponent: 0,
+        },
+        {
+          denom: "milkTIA",
+          exponent: 18,
+        },
+      ],
+      base: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      display: "milkTIA",
+      name: "milkTIA",
+      symbol: "milkTIA",
+      coingecko_id: "milkyway-staked-tia",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+      },
+    },
   ],
 };
 export default info;
