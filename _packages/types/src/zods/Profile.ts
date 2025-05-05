@@ -44,6 +44,7 @@ export const ProfileSchema = z.object({
   social: z
     .object({
       website: z.string().url().regex(new RegExp("^https://.")).optional(),
+      webapp: z.string().url().regex(new RegExp("^https://.")).optional(),
       twitter: z
         .string()
         .url()
