@@ -435,7 +435,7 @@
         },
         {
           "denom": "BFB",
-          "exponent": 18
+          "exponent": 6
         }
       ],
       "base": "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
