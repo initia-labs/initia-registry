@@ -83,11 +83,6 @@
           "format": "uri",
           "pattern": "^https://."
         },
-        "webapp": {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https://."
-        },
         "twitter": {
           "type": "string",
           "format": "uri",
