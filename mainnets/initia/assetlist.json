@@ -448,12 +448,12 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "bfb",
-            "base_denom": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a",
+            "base_denom": "evm/6922eF1A57aA7F4475dc2E03604923faC4001661",
             "channel_id": "channel-0"
           },
           "chain": {
             "channel_id": "channel-60",
-            "path": "transfer/channel-60/evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a"
+            "path": "transfer/channel-60/evm/6922eF1A57aA7F4475dc2E03604923faC4001661"
           }
         }
       ],
