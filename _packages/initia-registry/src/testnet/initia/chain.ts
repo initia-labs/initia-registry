@@ -10,8 +10,8 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "initiad",
   node_home: "$HOME/.initia",
-  key_algos: ["secp256k1"],
-  slip44: 118,
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
   fees: {
     fee_tokens: [
       {
@@ -230,6 +230,24 @@ const info: Chain = {
         chain_id: "rave-test4",
         port_id: "nft-transfer",
         channel_id: "channel-1318",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "nuwa-rollup-1",
+        port_id: "transfer",
+        channel_id: "channel-2453",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "nuwa-rollup-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-2454",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "virgaze-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-1586",
         version: "ics721-1",
       },
     ],

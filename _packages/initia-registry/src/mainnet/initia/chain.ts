@@ -10,7 +10,7 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "initiad",
   node_home: "$HOME/.initia",
-  key_algos: ["ethsecp256k1"],
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
   slip44: 60,
   fees: {
     fee_tokens: [
@@ -20,6 +20,10 @@ const info: Chain = {
         low_gas_price: 0.015,
         average_gas_price: 0.015,
         high_gas_price: 0.04,
+      },
+      {
+        denom:
+          "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
       },
     ],
   },
@@ -98,7 +102,7 @@ const info: Chain = {
       {
         chain_id: "osmosis-1",
         port_id: "transfer",
-        channel_id: "channel-0",
+        channel_id: "channel-71",
         version: "ics20-1",
       },
       {
@@ -117,6 +121,91 @@ const info: Chain = {
         chain_id: "echelon-1",
         port_id: "transfer",
         channel_id: "channel-35",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "yominet-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-26",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "yominet-1",
+        port_id: "transfer",
+        channel_id: "channel-25",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "civitia-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-28",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "civitia-1",
+        port_id: "transfer",
+        channel_id: "channel-27",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "intergaze-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-67",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "intergaze-1",
+        port_id: "transfer",
+        channel_id: "channel-66",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "inertia-2",
+        port_id:
+          "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        channel_id: "channel-70",
+        version: '{"fee_version":"ics29-1","app_version":"ics721-1"}',
+      },
+      {
+        chain_id: "inertia-2",
+        port_id: "transfer",
+        channel_id: "channel-69",
+        version: '{"fee_version":"ics29-1","app_version":"ics20-1"}',
+      },
+      {
+        chain_id: "zaar-mainnet-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-34",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "zaar-mainnet-1",
+        port_id: "transfer",
+        channel_id: "channel-33",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "ingnetwork-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-59",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "ingnetwork-1",
+        port_id: "transfer",
+        channel_id: "channel-58",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "rave-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-39",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "rave-1",
+        port_id: "transfer",
+        channel_id: "channel-38",
         version: "ics20-1",
       },
     ],

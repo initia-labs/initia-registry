@@ -1,0 +1,25 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "moo",
+  "pretty_name": "MilkyWay",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The Modular Staking Portal",
+  "summary": "The Modular Staking Portal",
+  "color": "#6550fc",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-milkyway-on-vip/56",
+    "actions": [
+      {
+        "title": "Liquid stake",
+        "description": "Bridging INIT from Initia to MilkyWay, and liquid staking those INIT tokens."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.milkyway.zone",
+    "twitter": "https://x.com/milky_way_zone"
+  }
+}

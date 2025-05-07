@@ -10,8 +10,8 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "intergazed",
   node_home: "$HOME/.intergaze",
-  key_algos: ["secp256k1"],
-  slip44: 118,
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
   fees: {
     fee_tokens: [
       {
@@ -46,8 +46,15 @@ const info: Chain = {
       },
     ],
   },
-  explorers: [],
-  faucets: [],
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/virgaze-1",
+      tx_page: "https://scan.testnet.initia.xyz/virgaze-1/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/virgaze-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.png",

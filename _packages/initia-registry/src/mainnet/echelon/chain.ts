@@ -24,7 +24,7 @@ const info: Chain = {
       },
     ],
   },
-  key_algos: ["ethsecp256k1"],
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
   slip44: 60,
   fees: {
     fee_tokens: [
@@ -35,6 +35,15 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.initia.xyz/echelon-1",
+      tx_page: "https://scan.initia.xyz/echelon-1/txs/${txHash}",
+      account_page:
+        "https://scan.initia.xyz/echelon-1/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",

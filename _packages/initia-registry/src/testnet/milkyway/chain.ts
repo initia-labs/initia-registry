@@ -10,8 +10,8 @@ const info: Chain = {
   bech32_prefix: "init",
   daemon_name: "minitiad",
   node_home: "$HOME/.milkywayd",
-  key_algos: ["secp256k1"],
-  slip44: 118,
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
   fees: {
     fee_tokens: [
       {
@@ -22,9 +22,6 @@ const info: Chain = {
         high_gas_price: 0.4,
       },
     ],
-  },
-  staking: {
-    staking_tokens: [],
   },
   description: "MilkyWay milkINIT Testnet",
   apis: {
@@ -56,7 +53,6 @@ const info: Chain = {
         "https://scan.testnet.initia.xyz/glados-4/accounts/${accountAddress}",
     },
   ],
-  faucets: [],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
@@ -66,8 +62,9 @@ const info: Chain = {
     png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
   },
   metadata: {
-    op_bridge_id: "64",
-    op_denoms: [],
+    op_bridge_id: "822",
+    op_denoms: ["uinit"],
+    executor_uri: "https://opinit-api-glados-4.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
         chain_id: "initiation-2",

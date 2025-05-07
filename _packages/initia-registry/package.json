@@ -1,6 +1,6 @@
 {
   "name": "@initia/initia-registry",
-  "version": "0.2.5",
+  "version": "1.0.5",
   "description": "Initia chain registry",
   "main": "main/index.js",
   "module": "esm/index.js",
@@ -41,6 +41,6 @@
     "rimraf": "^5.0.5"
   },
   "dependencies": {
-    "@initia/initia-registry-types": "^1.0.1"
+    "@initia/initia-registry-types": "^1.0.4"
   }
 }

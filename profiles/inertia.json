@@ -7,7 +7,16 @@
   "description": "The interwoven lending protocol for the modular ecosystem.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.png",
   "color": "#E10144",
-  "status": "upcoming",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-inertia-on-vip/63",
+    "actions": [
+      {
+        "title": "Supply & Borrow",
+        "description": "Supply and borrow INIT and sINIT on Inertia Lending to earn VIP points."
+      }
+    ]
+  },
   "social": {
     "website": "https://inrt.fi",
     "twitter": "https://x.com/inertia_fi"

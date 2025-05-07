@@ -10,10 +10,11 @@
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
   "status": "live",
   "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-civitia-on-vip/58",
     "actions": [
       {
         "title": "Earn SILVER",
-        "description": "Earn SILVER by playing Civitia seasons with an active residence."
+        "description": "The VIP score in each epoch is equal to the SILVER accrued during the epoch, except referral earnings"
       }
     ]
   },

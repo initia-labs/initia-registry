@@ -532,22 +532,33 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/87165C8526AE45D00629D6F783117765AA03E7A89A48B8608090753F3900C240",
+      "base": "ibc/F240C2700DCF5C57F126BF39423CFB8F4059D6344E6C39FCA123C781486B7608",
       "display": "BFB",
       "name": "BFB",
       "symbol": "BFB",
       "coingecko_id": "",
       "traces": [
         {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "minievm",
+            "base_denom": "evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
+          },
+          "chain": {
+            "contract": "0x0A0BD28E0C6Bfa78dB27Bb3CC4618E1B0DDBBFCd"
+          },
+          "provider": "Decimal Wrapper"
+        },
+        {
           "type": "ibc",
           "counterparty": {
             "chain_name": "culinaris",
-            "base_denom": "evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8",
-            "channel_id": "channel-0"
+            "base_denom": "evm/9989cFca23e97B2AEd8EA21d9CF244A03Cc89f02",
+            "channel_id": "channel-2"
           },
           "chain": {
             "channel_id": "channel-2415",
-            "path": "transfer/channel-2415/evm/09d1a05C3770653c1eF6e1230F6022714d4b41e8"
+            "path": "transfer/channel-2415/evm/9989cFca23e97B2AEd8EA21d9CF244A03Cc89f02"
           }
         }
       ],

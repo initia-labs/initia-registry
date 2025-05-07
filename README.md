@@ -5,7 +5,7 @@ The Initia Registry serves as a central repository containing crucial metadata f
 It houses configuration files such as ```chain.json``` and ```assetlist.json```, which are vital for initiating and interacting with nodes, as well as understanding the available assets on each chain. The registry also includes ```profile.json``` files, which provide users with a comprehensive overview of each chain, including its category, description, and status.
 Additionally, the registry includes ```*.schema.json``` files in the root directory, outlining the recommended metadata structure. These schemas are dynamic, subject to revisions based on evolving user needs, and may include optional fields beyond the current schema specifications.
 
-## Adding Minitia to Initia Registry
+## Adding a Rollup to Initia Registry
 
 1. **Fork the Repository**: Begin by forking the repository where the Initia Registry is hosted.
 2. **Add a New Directory**: Create a directory named after the chain you intend to add.
@@ -83,8 +83,8 @@ A sample `chain.json` includes the following information.
       }
     ]
   },
-  "key_algos": ["secp256k1"],
-  "slip44": 118,
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
   "fees": {
     "fee_tokens": [
       {
@@ -515,6 +515,7 @@ An example assetlist json contains the following structure:
 | `vip.actions`   | `object[]`           | Optional      | An array of VIP-related actions (e.g., “Complete Quest”).                                                                                                               |
 | `vip.actions[].title`       | `string` | Optional      | Action title (e.g., “Complete Quest”).                                                                                                                                 |
 | `vip.actions[].description` | `string` | Optional      | Description of that action (e.g., “Completing VIP quests in-game for each epoch.”).                                                                                     |
+| `vip.forum_url` | `string (URL)` | Optional      | The URL linking to the forum of the VIP registration proposal. |
 | `social`        | `object`             | Optional      | Contains links or handles for the chain’s social media or website.                                                                                                      |
 | `social.website`| `string (URL)`       | Optional      | Official website link.                                                                                                                                                 |
 

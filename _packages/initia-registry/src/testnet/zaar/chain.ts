@@ -12,7 +12,7 @@ const info: Chain = {
   node_home: "$HOME/.minitia",
   key_algos: ["secp256k1"],
   website: "https://www.zaar.market",
-  slip44: 118,
+  slip44: 60,
   fees: {
     fee_tokens: [
       {
@@ -53,6 +53,15 @@ const info: Chain = {
       },
     ],
   },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.testnet.initia.xyz/zaar-testnet-5",
+      tx_page: "https://scan.testnet.initia.xyz/zaar-testnet-5/txs/${txHash}",
+      account_page:
+        "https://scan.testnet.initia.xyz/zaar-testnet-5/accounts/${accountAddress}",
+    },
+  ],
   images: [
     {
       png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",

@@ -9,8 +9,8 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.milkywayd",
-  "key_algos": ["secp256k1"],
-  "slip44": 118,
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
   "fees": {
     "fee_tokens": [
       {
@@ -22,10 +22,11 @@
       }
     ]
   },
-  "staking": {
-    "staking_tokens": []
-  },
   "description": "MilkyWay milkINIT Testnet",
+  "peers": {
+      "seeds": [],
+      "persistent_peers": []
+  },
   "apis": {
     "rpc": [
       {
@@ -54,7 +55,6 @@
       "account_page": "https://scan.testnet.initia.xyz/glados-4/accounts/${accountAddress}"
     }
   ],
-  "faucets": [],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
@@ -64,8 +64,9 @@
     "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png"
   },
   "metadata": {
-    "op_bridge_id": "64",
-    "op_denoms": [],
+    "op_bridge_id": "822",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-glados-4.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
