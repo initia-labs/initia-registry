@@ -398,6 +398,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
       }
+    },
+    {
+      "description": "Ethena USDe",
+      "denom_units": [
+        {
+          "denom": "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294",
+          "exponent": 0
+        },
+        {
+          "denom": "USDe",
+          "exponent": 6
+        }
+      ],
+      "base": "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294",
+      "display": "USDe",
+      "name": "Ethena USDe",
+      "symbol": "USDe",
+      "coingecko_id": "ethena-usde",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png"
+      }
     }
   ]
 }
