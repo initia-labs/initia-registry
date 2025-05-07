@@ -38,7 +38,6 @@ export interface ChainProfile {
   };
   social?: {
     website?: string;
-    webapp?: string;
     twitter?: string;
     [k: string]: unknown;
   };
