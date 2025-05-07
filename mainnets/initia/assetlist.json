@@ -424,6 +424,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png"
       }
+    },
+    
+    {
+      "description": "In-game currency of Battle for Blockchain",
+      "denom_units": [
+        {
+          "denom": "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
+          "exponent": 0
+        },
+        {
+          "denom": "BFB",
+          "exponent": 18
+        }
+      ],
+      "base": "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
+      "display": "BFB",
+      "name": "BFB",
+      "symbol": "BFB",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "bfb",
+            "base_denom": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-25",
+            "path": "transfer/channel-25/evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+      }
     }
   ]
 }
