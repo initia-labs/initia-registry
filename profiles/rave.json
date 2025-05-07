@@ -12,8 +12,12 @@
     "forum_url": "https://forum.initia.xyz/t/whitelist-rave-on-vip/61",
     "actions": [
       {
-        "title": "Earn Points",
-        "description": "Earn Points by betting on BTC, ETH and SOL."
+        "title": "RAVE Trade",
+        "description": "Earn esINIT by trading volume with VIP collateral, and earn multiplier boosts for using leverage."
+      },
+      {
+        "title": "RAVE Cave",
+        "description": "Earn esINIT by depositing whitelisted tokens into a Rave Cave."
       }
     ]
   },
