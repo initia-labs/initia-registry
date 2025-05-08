@@ -1,8 +1,8 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "embr",
-  "pretty_name": "Zaar",
-  "chain_id": "Embr.fun",
+  "pretty_name": "Embr.fun",
+  "chain_id": "embrmainnet-1",
   "evm_chain_id": 2598901095158506,
   "bech32_prefix": "init",
   "network_type": "mainnet",
