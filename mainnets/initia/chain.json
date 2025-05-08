@@ -106,6 +106,10 @@
       {
         "address": "https://initia-rpc.cosmosspaces.zone",
         "provider": "CosmosSpaces"
+      },
+      {
+        "address": "https://initia-archive.cosmosspaces.zone",
+        "provider": "CosmosSpaces"
       }
     ],
     "rest": [
