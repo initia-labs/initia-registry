@@ -7,7 +7,7 @@ const info: AssetList = {
       description: "The native token of Initia",
       denom_units: [
         {
-          denom: "evm/6ed1637781269560b204c27cd42d95e057c4be44",
+          denom: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
           exponent: 0,
         },
         {
@@ -17,7 +17,7 @@ const info: AssetList = {
       ],
       type_asset: "erc20",
       address: "0x6ed1637781269560b204c27cd42d95e057c4be44",
-      base: "evm/6ed1637781269560b204c27cd42d95e057c4be44",
+      base: "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
       display: "INIT",
       name: "Initia Native Token",
       symbol: "INIT",
