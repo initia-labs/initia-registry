@@ -1,0 +1,94 @@
+import { Chain } from "@initia/initia-registry-types";
+const info: Chain = {
+  $schema: "../../chain.schema.json",
+  chain_name: "embr",
+  pretty_name: "Embr.fun",
+  chain_id: "embrmainnet-1",
+  evm_chain_id: 2598901095158506,
+  bech32_prefix: "init",
+  network_type: "mainnet",
+  codebase: {},
+  apis: {
+    rpc: [
+      {
+        address: "https://rpc-embrmainnet-1.anvil.asia-southeast.initia.xyz",
+      },
+    ],
+    rest: [
+      {
+        address: "https://rest-embrmainnet-1.anvil.asia-southeast.initia.xyz",
+      },
+    ],
+    grpc: [
+      {
+        address: "grpc-embrmainnet-1.anvil.asia-southeast.initia.xyz:443",
+      },
+    ],
+    "json-rpc": [
+      {
+        address:
+          "https://jsonrpc-embrmainnet-1.anvil.asia-southeast.initia.xyz",
+      },
+    ],
+    "json-rpc-websocket": [
+      {
+        address:
+          "wss://jsonrpc-ws-embrmainnet-1.anvil.asia-southeast.initia.xyz",
+      },
+    ],
+  },
+  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  slip44: 60,
+  fees: {
+    fee_tokens: [
+      {
+        denom: "GAS",
+        fixed_min_gas_price: 0,
+      },
+    ],
+  },
+  explorers: [
+    {
+      kind: "initia scan",
+      url: "https://scan.initia.xyz/embrmainnet-1",
+      tx_page: "https://scan.initia.xyz/embrmainnet-1/txs/${txHash}",
+      account_page:
+        "https://scan.initia.xyz/embrmainnet-1/accounts/${accountAddress}",
+    },
+  ],
+  images: [
+    {
+      png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png",
+    },
+  ],
+  logo_URIs: {
+    png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png",
+  },
+  metadata: {
+    op_bridge_id: "29",
+    op_denoms: ["uinit"],
+    executor_uri:
+      "https://opinit-api-embrmainnet-1.anvil.asia-southeast.initia.xyz",
+    ibc_channels: [
+      {
+        chain_id: "interwoven-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-1",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "interwoven-1",
+        port_id: "transfer",
+        channel_id: "channel-0",
+        version: "ics20-1",
+      },
+    ],
+    assetlist:
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/embr/assetlist.json",
+    minitia: {
+      type: "minievm",
+      version: "v1.0.3",
+    },
+  },
+};
+export default info;
