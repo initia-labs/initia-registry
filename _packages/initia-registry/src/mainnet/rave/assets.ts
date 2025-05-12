@@ -63,7 +63,7 @@ const info: AssetList = {
       description: "MilkyWay's Liquid Staked milkINIT",
       denom_units: [
         {
-          denom: "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
+          denom: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
           exponent: 0,
         },
         {
@@ -72,8 +72,8 @@ const info: AssetList = {
         },
       ],
       type_asset: "erc20",
-      address: "0x76B459D863B31E8b0Cc8175dacfC451061114E14",
-      base: "evm/76B459D863B31E8b0Cc8175dacfC451061114E14",
+      address: "0xf0c644D9636b83E7491404d8D826321e44E23d15",
+      base: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
       display: "milkINIT",
       name: "milkINIT",
       symbol: "milkINIT",
@@ -91,7 +91,7 @@ const info: AssetList = {
       description: "MilkyWay's Liquid Staked TIA",
       denom_units: [
         {
-          denom: "evm/7Add4070C2530481BC74C667067DcD0BCD56eEd2",
+          denom: "evm/c8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
           exponent: 0,
         },
         {
@@ -100,8 +100,8 @@ const info: AssetList = {
         },
       ],
       type_asset: "erc20",
-      address: "0x7Add4070C2530481BC74C667067DcD0BCD56eEd2",
-      base: "evm/7Add4070C2530481BC74C667067DcD0BCD56eEd2",
+      address: "0xc8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
+      base: "evm/c8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
       display: "milkTIA",
       name: "milkTIA",
       symbol: "milkTIA",
@@ -113,90 +113,6 @@ const info: AssetList = {
       ],
       logo_URIs: {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
-      },
-    },
-    {
-      description: "The native token of Celestia on Initia via IBC",
-      denom_units: [
-        {
-          denom: "evm/6AB7373EdA7F9CDbab4993124d373eD09d48A545",
-          exponent: 0,
-        },
-        {
-          denom: "TIA",
-          exponent: 18,
-        },
-      ],
-      type_asset: "erc20",
-      address: "0x6AB7373EdA7F9CDbab4993124d373eD09d48A545",
-      base: "evm/6AB7373EdA7F9CDbab4993124d373eD09d48A545",
-      display: "TIA",
-      name: "Celestia Native Token",
-      symbol: "TIA",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-      },
-    },
-    {
-      description: "ETH token via LayerZero",
-      denom_units: [
-        {
-          denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-          exponent: 0,
-        },
-        {
-          denom: "ETH",
-          exponent: 18,
-        },
-      ],
-      type_asset: "erc20",
-      address: "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546",
-      base: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-      display: "ETH",
-      name: "Ethereum Native Token",
-      symbol: "ETH",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-      },
-    },
-    {
-      description: "Ether.Fi's Wrapped eETH LRT",
-      denom_units: [
-        {
-          denom: "evm/6C90DcB74d30fE14fd55393499537cd9b7d02FaC",
-          exponent: 0,
-        },
-        {
-          denom: "WEETH",
-          exponent: 18,
-        },
-      ],
-      type_asset: "erc20",
-      address: "0x6C90DcB74d30fE14fd55393499537cd9b7d02FaC",
-      base: "evm/6C90DcB74d30fE14fd55393499537cd9b7d02FaC",
-      display: "WEETH",
-      name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
-      coingecko_id: "",
-      images: [
-        {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
-        },
-      ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
       },
     },
     {
