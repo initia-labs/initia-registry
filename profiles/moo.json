@@ -14,7 +14,7 @@
     "actions": [
       {
         "title": "Liquid stake",
-        "description": "Bridging INIT from Initia to MilkyWay, and liquid staking those INIT tokens."
+        "description": "Hold milkINIT inside your wallet on either the MilkyWay Rollup (moo-1) or Initia mainnet (interwoven-1) chains."
       }
     ]
   },
