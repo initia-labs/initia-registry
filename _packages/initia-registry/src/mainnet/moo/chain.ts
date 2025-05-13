@@ -53,7 +53,7 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "13",
-    op_denoms: ["uinit"],
+    op_denoms: [],
     executor_uri: "https://opinit-api-moo-1.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
