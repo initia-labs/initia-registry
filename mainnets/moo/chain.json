@@ -3,6 +3,7 @@
   "chain_name": "moo",
   "pretty_name": "MilkyWay",
   "chain_id": "moo-1",
+  "website": "https://www.milkyway.zone",
   "bech32_prefix": "init",
   "network_type": "mainnet",
   "codebase": {

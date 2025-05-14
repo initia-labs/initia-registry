@@ -3,6 +3,7 @@
   "chain_name": "embr",
   "pretty_name": "Embr.fun",
   "chain_id": "embrmainnet-1",
+  "website": "https://embr.fun",
   "evm_chain_id": 2598901095158506,
   "bech32_prefix": "init",
   "network_type": "mainnet",
