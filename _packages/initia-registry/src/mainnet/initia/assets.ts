@@ -413,6 +413,115 @@ const info: AssetList = {
         png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
       },
     },
+    {
+      description: "Ethena USDe",
+      denom_units: [
+        {
+          denom:
+            "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294",
+          exponent: 0,
+        },
+        {
+          denom: "USDe",
+          exponent: 6,
+        },
+      ],
+      base: "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294",
+      display: "USDe",
+      name: "Ethena USDe",
+      symbol: "USDe",
+      coingecko_id: "ethena-usde",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png",
+      },
+    },
+    {
+      description: "In-game currency of Battle for Blockchain",
+      denom_units: [
+        {
+          denom:
+            "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
+          exponent: 0,
+        },
+        {
+          denom: "BFB",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
+      display: "BFB",
+      name: "BFB",
+      symbol: "BFB",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "bfb",
+            base_denom: "evm/6922eF1A57aA7F4475dc2E03604923faC4001661",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-60",
+            path: "transfer/channel-60/evm/6922eF1A57aA7F4475dc2E03604923faC4001661",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png",
+      },
+    },
+    {
+      description: "ONYX",
+      denom_units: [
+        {
+          denom:
+            "ibc/74CDBCE5F520CD29B32692645382E168032121F7DC3B3FDC79B0D37FB4E0916D",
+          exponent: 0,
+        },
+        {
+          denom: "ONYX",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/74CDBCE5F520CD29B32692645382E168032121F7DC3B3FDC79B0D37FB4E0916D",
+      display: "ONYX",
+      name: "ONYX",
+      symbol: "ONYX",
+      coingecko_id: "",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "yominet",
+            base_denom: "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-25",
+            path: "transfer/channel-25/evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
+      },
+    },
   ],
 };
 export default info;
