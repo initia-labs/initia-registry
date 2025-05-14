@@ -9,7 +9,6 @@ import * as _minievm from "./minievm";
 import * as _milkyway from "./milkyway";
 import * as _inertia_legacy from "./inertia_legacy";
 import * as _embr_old from "./embr_old";
-import * as _embr from "./embr";
 
 const assets: AssetList[] = [
   _zaar.assets,
@@ -21,7 +20,6 @@ const assets: AssetList[] = [
   _milkyway.assets,
   _inertia_legacy.assets,
   _embr_old.assets,
-  _embr.assets,
 ];
 
 export default assets;

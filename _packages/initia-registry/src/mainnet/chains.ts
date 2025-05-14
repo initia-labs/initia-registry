@@ -9,6 +9,7 @@ import * as _intergaze from "./intergaze";
 import * as _initia from "./initia";
 import * as _ingnetwork from "./ingnetwork";
 import * as _inertia from "./inertia";
+import * as _embr from "./embr";
 import * as _echelon from "./echelon";
 import * as _civitia from "./civitia";
 import * as _bfb from "./bfb";
@@ -23,6 +24,7 @@ const chains: Chain[] = [
   _initia.chain,
   _ingnetwork.chain,
   _inertia.chain,
+  _embr.chain,
   _echelon.chain,
   _civitia.chain,
   _bfb.chain,
