@@ -4,6 +4,9 @@ const info: Chain = {
   chain_name: "rave",
   pretty_name: "Rave",
   chain_id: "rave-1",
+  description:
+    "The pioneer quanto perpetuals protocol: trade anything with everything.",
+  website: "https://www.rave.trade",
   evm_chain_id: 555110192329996,
   bech32_prefix: "init",
   network_type: "mainnet",
