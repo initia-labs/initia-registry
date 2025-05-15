@@ -4,6 +4,7 @@
   "pretty_name": "ING Network",
   "chain_id": "ingnetwork-1",
   "website": "https://www.infinityg.ai",
+  "description": "Enabling everyone to create interactive entertainment.",
   "evm_chain_id": 2780922216980457,
   "bech32_prefix": "init",
   "network_type": "mainnet",

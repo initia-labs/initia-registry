@@ -4,6 +4,7 @@
   "pretty_name": "Embr.fun",
   "chain_id": "embrmainnet-1",
   "website": "https://embr.fun",
+  "description": "A novel launchpad where users can win big by focusing liquidity into the best memes.",
   "evm_chain_id": 2598901095158506,
   "bech32_prefix": "init",
   "network_type": "mainnet",

@@ -4,6 +4,7 @@
   "pretty_name": "Battle for Blockchain",
   "chain_id": "bfb-1",
   "website": "https://battleforblockchain.com",
+  "description": "Fully onchain battle world, where value gets redistributed based on players performance.",
   "evm_chain_id": 3920262608331171,
   "bech32_prefix": "init",
   "network_type": "mainnet",

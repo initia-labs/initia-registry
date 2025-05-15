@@ -4,6 +4,7 @@
   "pretty_name": "Zaar",
   "chain_id": "zaar-mainnet-1",
   "website": "https://flip.zaar.gg/",
+  "description": "The Fun Network, where Degeneracy comes to play.",
   "evm_chain_id": 1335097526422335,
   "bech32_prefix": "init",
   "network_type": "mainnet",
