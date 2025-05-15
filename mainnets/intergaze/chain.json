@@ -3,6 +3,8 @@
   "chain_name": "intergaze",
   "pretty_name": "Intergaze",
   "chain_id": "intergaze-1",
+  "website": "https://intergaze.xyz",
+  "description": "The Launchpad and Marketplace for Interwoven NFTs",
   "bech32_prefix": "init",
   "network_type": "mainnet",
   "codebase": {

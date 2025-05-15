@@ -3,6 +3,7 @@
   "chain_name": "initia",
   "chain_id": "interwoven-1",
   "website": "https://initia.xyz",
+  "description": "Initia Mainnet",
   "pretty_name": "Initia",
   "status": "live",
   "network_type": "mainnet",
@@ -84,7 +85,6 @@
       }
     ]
   },
-  "description": "Initia Mainnet",
   "peers": {
     "seeds": [
       {

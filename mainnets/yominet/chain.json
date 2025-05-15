@@ -3,6 +3,8 @@
   "chain_name": "yominet",
   "pretty_name": "Yominet",
   "chain_id": "yominet-1",
+  "website": "https://kamigotchi.io",
+  "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",
   "evm_chain_id": 428962654539583,
   "bech32_prefix": "init",
   "network_type": "mainnet",

@@ -3,6 +3,7 @@
   "chain_name": "inertia",
   "chain_id": "inertia-2",
   "website": "https://app.inrt.fi",
+  "description": "The interwoven lending protocol for the modular ecosystem.",
   "pretty_name": "Inertia",
   "status": "live",
   "network_type": "mainnet",
@@ -19,7 +20,6 @@
       }
     ]
   },
-  "description": "The interwoven lending protocol for the modular ecosystem.",
   "peers": {
     "seeds": [],
     "persistent_peers": []
