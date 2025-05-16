@@ -191,6 +191,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
       }
+    },
+    {
+      "description": "Drop staked INIT-USDC LPT",
+      "denom_units": [
+        {
+          "denom": "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
+          "exponent": 0
+        },
+        {
+          "denom": "deINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
+      "display": "deINIT",
+      "name": "Drop Staked INIT-USDC LPT",
+      "symbol": "deINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+      }
     }
   ]
 }

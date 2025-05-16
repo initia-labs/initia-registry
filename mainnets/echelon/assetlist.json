@@ -279,6 +279,46 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
       }
+    },
+    {
+      "description": "Drop staked INIT-USDC LPT",
+      "denom_units": [
+        {
+          "denom": "ibc/DA24509E9B80C7D40D2F97E422BD983EB2FA3AAA500E35F3157D41FABA645E79",
+          "exponent": 0
+        },
+        {
+          "denom": "deINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/DA24509E9B80C7D40D2F97E422BD983EB2FA3AAA500E35F3157D41FABA645E79",
+      "display": "deINIT",
+      "name": "Drop Staked INIT-USDC LPT",
+      "symbol": "deINIT",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+            "channel_id": "channel-35"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+      }
     }
   ]
 }

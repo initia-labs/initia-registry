@@ -464,6 +464,33 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
       }
+    },
+    {
+      "description": "Ethena Staked USD",
+      "denom_units": [
+        {
+          "denom": "move/568c845ab36c54a0ea1e75cacfd6addadfa6c7241aa7774bb5263ef701f8f70e",
+          "exponent": 0
+        },
+        {
+          "denom": "sUSDe",
+          "exponent": 6
+        }
+      ],
+      "base": "move/568c845ab36c54a0ea1e75cacfd6addadfa6c7241aa7774bb5263ef701f8f70e",
+      "display": "sUSDe",
+      "name": "Ethena Staked USD",
+      "symbol": "sUSDe",
+      "coingecko_id": "ethena-staked-usde",
+      "traces": [],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sUSDe.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sUSDe.png"
+      }
     }
   ]
 }
