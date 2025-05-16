@@ -284,7 +284,7 @@
       "description": "Drop staked INIT-USDC LPT",
       "denom_units": [
         {
-          "denom": "ibc/DA24509E9B80C7D40D2F97E422BD983EB2FA3AAA500E35F3157D41FABA645E79",
+          "denom": "ibc/2BFE577D4A154A360D7BEC8D5FECC433ACAE6EF44A460F2D36A61410D9ADE6ED",
           "exponent": 0
         },
         {
@@ -292,7 +292,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/DA24509E9B80C7D40D2F97E422BD983EB2FA3AAA500E35F3157D41FABA645E79",
+      "base": "ibc/2BFE577D4A154A360D7BEC8D5FECC433ACAE6EF44A460F2D36A61410D9ADE6ED",
       "display": "deINIT",
       "name": "Drop Staked INIT-USDC LPT",
       "symbol": "deINIT",

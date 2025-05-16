@@ -201,7 +201,7 @@
         },
         {
           "denom": "deINIT",
-          "exponent": 6
+          "exponent": 18
         }
       ],
       "base": "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
