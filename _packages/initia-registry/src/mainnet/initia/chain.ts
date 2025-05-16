@@ -4,6 +4,7 @@ const info: Chain = {
   chain_name: "initia",
   chain_id: "interwoven-1",
   website: "https://initia.xyz",
+  description: "Initia Mainnet",
   pretty_name: "Initia",
   status: "live",
   network_type: "mainnet",
@@ -35,7 +36,6 @@ const info: Chain = {
     ],
   },
   codebase: {},
-  description: "Initia Mainnet",
   apis: {
     rpc: [
       {
@@ -206,6 +206,18 @@ const info: Chain = {
         chain_id: "rave-1",
         port_id: "transfer",
         channel_id: "channel-38",
+        version: "ics20-1",
+      },
+      {
+        chain_id: "bfb-1",
+        port_id: "nft-transfer",
+        channel_id: "channel-61",
+        version: "ics721-1",
+      },
+      {
+        chain_id: "bfb-1",
+        port_id: "transfer",
+        channel_id: "channel-60",
         version: "ics20-1",
       },
     ],
