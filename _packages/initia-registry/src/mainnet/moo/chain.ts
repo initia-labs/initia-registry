@@ -4,6 +4,8 @@ const info: Chain = {
   chain_name: "moo",
   pretty_name: "MilkyWay",
   chain_id: "moo-1",
+  website: "https://www.milkyway.zone",
+  description: "The Modular Staking Portal",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},
@@ -53,7 +55,7 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "13",
-    op_denoms: ["uinit"],
+    op_denoms: [],
     executor_uri: "https://opinit-api-moo-1.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
       {
