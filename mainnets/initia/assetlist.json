@@ -500,14 +500,14 @@
           "exponent": 0
         },
         {
-          "denom": "Battle for Blockchain.INIT",
+          "denom": "INIT.bfb",
           "exponent": 6
         }
       ],
       "base": "ibc/D849A493141115109EE163DDB1046074EC094BCDF80DBCFFF8562BB144EC245D",
-      "display": "Battle for Blockchain.INIT",
-      "name": "Battle for Blockchain.INIT",
-      "symbol": "Battle for Blockchain.INIT",
+      "display": "INIT.bfb",
+      "name": "INIT.bfb",
+      "symbol": "INIT.bfb",
       "traces": [
         {
           "type": "op",
@@ -549,14 +549,14 @@
           "exponent": 0
         },
         {
-          "denom": "Civitia.INIT",
+          "denom": "INIT.civitia",
           "exponent": 6
         }
       ],
       "base": "ibc/9055D784E46926951D1FF95AA41245B291FA9AAFFAE5C9D0D515877F647D5226",
-      "display": "Civitia.INIT",
-      "name": "Civitia.INIT",
-      "symbol": "Civitia.INIT",
+      "display": "INIT.civitia",
+      "name": "INIT.civitia",
+      "symbol": "INIT.civitia",
       "traces": [
         {
           "type": "op",
@@ -598,14 +598,14 @@
           "exponent": 0
         },
         {
-          "denom": "Echelon.INIT",
+          "denom": "INIT.echelon",
           "exponent": 6
         }
       ],
       "base": "ibc/EE8CC845631408C84289BA2CA423DAD0B43E22E07524248F20DCB93D04FF9839",
-      "display": "Echelon.INIT",
-      "name": "Echelon.INIT",
-      "symbol": "Echelon.INIT",
+      "display": "INIT.echelon",
+      "name": "INIT.echelon",
+      "symbol": "INIT.echelon",
       "traces": [
         {
           "type": "op",
@@ -647,14 +647,14 @@
           "exponent": 0
         },
         {
-          "denom": "Embr.fun.INIT",
+          "denom": "INIT.embr",
           "exponent": 6
         }
       ],
       "base": "ibc/DD8FC719EAD3D69D116D64281DD9AB03ECA90105204AD4F5BF87D23807FE8BF6",
-      "display": "Embr.fun.INIT",
-      "name": "Embr.fun.INIT",
-      "symbol": "Embr.fun.INIT",
+      "display": "INIT.embr",
+      "name": "INIT.embr",
+      "symbol": "INIT.embr",
       "traces": [
         {
           "type": "op",
@@ -696,14 +696,14 @@
           "exponent": 0
         },
         {
-          "denom": "ING Network.INIT",
+          "denom": "INIT.ingnetwork",
           "exponent": 6
         }
       ],
       "base": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
-      "display": "ING Network.INIT",
-      "name": "ING Network.INIT",
-      "symbol": "ING Network.INIT",
+      "display": "INIT.ingnetwork",
+      "name": "INIT.ingnetwork",
+      "symbol": "INIT.ingnetwork",
       "traces": [
         {
           "type": "op",
@@ -745,14 +745,14 @@
           "exponent": 0
         },
         {
-          "denom": "Inertia.INIT",
+          "denom": "INIT.inertia",
           "exponent": 6
         }
       ],
       "base": "ibc/AE001D9DB0EA8B0A892DEBF1E1FDC9E82C3F685E82B774009A21D5DA33C712C5",
-      "display": "Inertia.INIT",
-      "name": "Inertia.INIT",
-      "symbol": "Inertia.INIT",
+      "display": "INIT.inertia",
+      "name": "INIT.inertia",
+      "symbol": "INIT.inertia",
       "traces": [
         {
           "type": "op",
@@ -794,14 +794,14 @@
           "exponent": 0
         },
         {
-          "denom": "Intergaze.INIT",
+          "denom": "INIT.intergaze",
           "exponent": 6
         }
       ],
       "base": "ibc/F0B8D6CA62D884AA1DAB0DC07190A40B55CF50FBDFBB37BE84036BBBCC283836",
-      "display": "Intergaze.INIT",
-      "name": "Intergaze.INIT",
-      "symbol": "Intergaze.INIT",
+      "display": "INIT.intergaze",
+      "name": "INIT.intergaze",
+      "symbol": "INIT.intergaze",
       "traces": [
         {
           "type": "op",
@@ -843,14 +843,14 @@
           "exponent": 0
         },
         {
-          "denom": "Rave.INIT",
+          "denom": "INIT.rave",
           "exponent": 6
         }
       ],
       "base": "ibc/8AA222DB08C98AB83CD791EDFC4899079CD5AD2E300435184C6FC1F5CC77E3A7",
-      "display": "Rave.INIT",
-      "name": "Rave.INIT",
-      "symbol": "Rave.INIT",
+      "display": "INIT.rave",
+      "name": "INIT.rave",
+      "symbol": "INIT.rave",
       "traces": [
         {
           "type": "op",
@@ -892,14 +892,14 @@
           "exponent": 0
         },
         {
-          "denom": "Rena.INIT",
+          "denom": "INIT.renanuwa",
           "exponent": 6
         }
       ],
       "base": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
-      "display": "Rena.INIT",
-      "name": "Rena.INIT",
-      "symbol": "Rena.INIT",
+      "display": "INIT.renanuwa",
+      "name": "INIT.renanuwa",
+      "symbol": "INIT.renanuwa",
       "traces": [
         {
           "type": "op",
@@ -941,14 +941,14 @@
           "exponent": 0
         },
         {
-          "denom": "Yominet.INIT",
+          "denom": "INIT.yominet",
           "exponent": 6
         }
       ],
       "base": "ibc/07FFEEEE36370551554531FF7189EB2D3353B187CB6CE715DA1291C3A4B4EAC2",
-      "display": "Yominet.INIT",
-      "name": "Yominet.INIT",
-      "symbol": "Yominet.INIT",
+      "display": "INIT.yominet",
+      "name": "INIT.yominet",
+      "symbol": "INIT.yominet",
       "traces": [
         {
           "type": "op",
@@ -990,14 +990,14 @@
           "exponent": 0
         },
         {
-          "denom": "Zaar.INIT",
+          "denom": "INIT.zaar",
           "exponent": 6
         }
       ],
       "base": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
-      "display": "Zaar.INIT",
-      "name": "Zaar.INIT",
-      "symbol": "Zaar.INIT",
+      "display": "INIT.zaar",
+      "name": "INIT.zaar",
+      "symbol": "INIT.zaar",
       "traces": [
         {
           "type": "op",
