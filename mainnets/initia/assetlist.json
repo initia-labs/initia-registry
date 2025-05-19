@@ -491,6 +491,545 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sUSDe.png"
       }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Battle for Blockchain",
+      "denom_units": [
+        {
+          "denom": "ibc/D849A493141115109EE163DDB1046074EC094BCDF80DBCFFF8562BB144EC245D",
+          "exponent": 0
+        },
+        {
+          "denom": "Battle for Blockchain.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/D849A493141115109EE163DDB1046074EC094BCDF80DBCFFF8562BB144EC245D",
+      "display": "Battle for Blockchain.INIT",
+      "name": "Battle for Blockchain.INIT",
+      "symbol": "Battle for Blockchain.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "28"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "bfb",
+            "base_denom": "l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-60",
+            "path": "transfer/channel-60/l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bfb.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bfb.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Civitia",
+      "denom_units": [
+        {
+          "denom": "ibc/9055D784E46926951D1FF95AA41245B291FA9AAFFAE5C9D0D515877F647D5226",
+          "exponent": 0
+        },
+        {
+          "denom": "Civitia.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/9055D784E46926951D1FF95AA41245B291FA9AAFFAE5C9D0D515877F647D5226",
+      "display": "Civitia.INIT",
+      "name": "Civitia.INIT",
+      "symbol": "Civitia.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "12"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "civitia",
+            "base_denom": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-27",
+            "path": "transfer/channel-27/l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Echelon",
+      "denom_units": [
+        {
+          "denom": "ibc/EE8CC845631408C84289BA2CA423DAD0B43E22E07524248F20DCB93D04FF9839",
+          "exponent": 0
+        },
+        {
+          "denom": "Echelon.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/EE8CC845631408C84289BA2CA423DAD0B43E22E07524248F20DCB93D04FF9839",
+      "display": "Echelon.INIT",
+      "name": "Echelon.INIT",
+      "symbol": "Echelon.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "16"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "echelon",
+            "base_denom": "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-35",
+            "path": "transfer/channel-35/l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Embr.fun",
+      "denom_units": [
+        {
+          "denom": "ibc/DD8FC719EAD3D69D116D64281DD9AB03ECA90105204AD4F5BF87D23807FE8BF6",
+          "exponent": 0
+        },
+        {
+          "denom": "Embr.fun.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/DD8FC719EAD3D69D116D64281DD9AB03ECA90105204AD4F5BF87D23807FE8BF6",
+      "display": "Embr.fun.INIT",
+      "name": "Embr.fun.INIT",
+      "symbol": "Embr.fun.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "29"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "embr",
+            "base_denom": "l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-62",
+            "path": "transfer/channel-62/l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of ING Network",
+      "denom_units": [
+        {
+          "denom": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
+          "exponent": 0
+        },
+        {
+          "denom": "ING Network.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
+      "display": "ING Network.INIT",
+      "name": "ING Network.INIT",
+      "symbol": "ING Network.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "27"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "ingnetwork",
+            "base_denom": "l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-58",
+            "path": "transfer/channel-58/l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/AE001D9DB0EA8B0A892DEBF1E1FDC9E82C3F685E82B774009A21D5DA33C712C5",
+          "exponent": 0
+        },
+        {
+          "denom": "Inertia.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/AE001D9DB0EA8B0A892DEBF1E1FDC9E82C3F685E82B774009A21D5DA33C712C5",
+      "display": "Inertia.INIT",
+      "name": "Inertia.INIT",
+      "symbol": "Inertia.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "32"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "inertia",
+            "base_denom": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-69",
+            "path": "transfer/channel-69/l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Intergaze",
+      "denom_units": [
+        {
+          "denom": "ibc/F0B8D6CA62D884AA1DAB0DC07190A40B55CF50FBDFBB37BE84036BBBCC283836",
+          "exponent": 0
+        },
+        {
+          "denom": "Intergaze.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/F0B8D6CA62D884AA1DAB0DC07190A40B55CF50FBDFBB37BE84036BBBCC283836",
+      "display": "Intergaze.INIT",
+      "name": "Intergaze.INIT",
+      "symbol": "Intergaze.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "31"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "intergaze",
+            "base_denom": "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-66",
+            "path": "transfer/channel-66/l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Rave",
+      "denom_units": [
+        {
+          "denom": "ibc/8AA222DB08C98AB83CD791EDFC4899079CD5AD2E300435184C6FC1F5CC77E3A7",
+          "exponent": 0
+        },
+        {
+          "denom": "Rave.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/8AA222DB08C98AB83CD791EDFC4899079CD5AD2E300435184C6FC1F5CC77E3A7",
+      "display": "Rave.INIT",
+      "name": "Rave.INIT",
+      "symbol": "Rave.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "17"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-38",
+            "path": "transfer/channel-38/l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Rena",
+      "denom_units": [
+        {
+          "denom": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
+          "exponent": 0
+        },
+        {
+          "denom": "Rena.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
+      "display": "Rena.INIT",
+      "name": "Rena.INIT",
+      "symbol": "Rena.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "30"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "renanuwa",
+            "base_denom": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-64",
+            "path": "transfer/channel-64/l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Yominet",
+      "denom_units": [
+        {
+          "denom": "ibc/07FFEEEE36370551554531FF7189EB2D3353B187CB6CE715DA1291C3A4B4EAC2",
+          "exponent": 0
+        },
+        {
+          "denom": "Yominet.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/07FFEEEE36370551554531FF7189EB2D3353B187CB6CE715DA1291C3A4B4EAC2",
+      "display": "Yominet.INIT",
+      "name": "Yominet.INIT",
+      "symbol": "Yominet.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "11"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "yominet",
+            "base_denom": "l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-25",
+            "path": "transfer/channel-25/l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.ibcopinit.png"
+      }
+    },
+    {
+      "description": "OP-IBC bridged INIT of Zaar",
+      "denom_units": [
+        {
+          "denom": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
+          "exponent": 0
+        },
+        {
+          "denom": "Zaar.INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
+      "display": "Zaar.INIT",
+      "name": "Zaar.INIT",
+      "symbol": "Zaar.INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "15"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "zaarmainnet",
+            "base_denom": "l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-33",
+            "path": "transfer/channel-33/l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zar.ibcopinit.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zar.ibcopinit..png"
+      }
     }
   ]
 }
