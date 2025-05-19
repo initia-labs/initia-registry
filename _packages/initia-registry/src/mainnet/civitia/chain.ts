@@ -4,6 +4,9 @@ const info: Chain = {
   chain_name: "civitia",
   pretty_name: "Civitia",
   chain_id: "civitia-1",
+  website: "https://www.civitia.org",
+  description:
+    "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},

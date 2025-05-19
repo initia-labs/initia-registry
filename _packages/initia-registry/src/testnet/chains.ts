@@ -14,7 +14,6 @@ import * as _inertia_legacy from "./inertia_legacy";
 import * as _inertia from "./inertia";
 import * as _embr_old from "./embr_old";
 import * as _embr from "./embr";
-import * as _civitia from "./civitia";
 
 const chains: Chain[] = [
   _zaar.chain,
@@ -31,7 +30,6 @@ const chains: Chain[] = [
   _inertia.chain,
   _embr_old.chain,
   _embr.chain,
-  _civitia.chain,
 ];
 
 export default chains;

@@ -4,6 +4,9 @@ const info: Chain = {
   chain_name: "echelon",
   pretty_name: "Echelon",
   chain_id: "echelon-1",
+  website: "https://echelon.market",
+  description:
+    "A highly efficient money market connecting liquidity and supercharging yields with LST, RWA, and stablecoin backed lending strategies.",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},

@@ -4,6 +4,8 @@ const info: Chain = {
   chain_name: "intergaze",
   pretty_name: "Intergaze",
   chain_id: "intergaze-1",
+  website: "https://intergaze.xyz",
+  description: "The Launchpad and Marketplace for Interwoven NFTs",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},
@@ -54,7 +56,10 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "31",
-    op_denoms: ["uinit"],
+    op_denoms: [
+      "uinit",
+      "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+    ],
     executor_uri: "https://executor.intergaze-apis.com",
     ibc_channels: [
       {
