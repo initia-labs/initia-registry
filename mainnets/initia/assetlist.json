@@ -990,14 +990,14 @@
           "exponent": 0
         },
         {
-          "denom": "INIT.zaar",
+          "denom": "INIT.zaarmainnet",
           "exponent": 6
         }
       ],
       "base": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
-      "display": "INIT.zaar",
-      "name": "INIT.zaar",
-      "symbol": "INIT.zaar",
+      "display": "INIT.zaarmainnet",
+      "name": "INIT.zaarmainnet",
+      "symbol": "INIT.zaarmainnet",
       "traces": [
         {
           "type": "op",
