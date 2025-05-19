@@ -289,18 +289,6 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "landlord-2",
-        "port_id": "transfer",
-        "channel_id": "channel-222",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "landlord-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-223",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "culinaris-2",
         "port_id": "transfer",
         "channel_id": "channel-2415",
