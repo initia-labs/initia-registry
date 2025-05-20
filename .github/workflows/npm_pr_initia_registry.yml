@@ -1,11 +1,8 @@
 name: NPM create initia-registry pull request
 
 on:
-  push:
-    branches: ['main']
-    paths:
-      - '*/*/assetlist.json'
-      - '*/*/chain.json'
+  release:
+    types: ['published']
 
 permissions:
   contents: write

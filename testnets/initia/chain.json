@@ -217,12 +217,6 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "minimove-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-3",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "minievm-2",
         "port_id": "transfer",
         "channel_id": "channel-0",
@@ -232,78 +226,6 @@
         "chain_id": "minievm-2",
         "port_id": "nft-transfer",
         "channel_id": "channel-1",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "transfer",
-        "channel_id": "channel-132",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-134",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-139",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-140",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-137",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-141",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-138",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "preyominet-1",
-        "port_id": "transfer",
-        "channel_id": "channel-1629",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "preyominet-1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-178",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "culinaris-2",
-        "port_id": "transfer",
-        "channel_id": "channel-2415",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "zaar-testnet-4",
-        "port_id": "transfer",
-        "channel_id": "channel-1781",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "zaar-testnet-4",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1782",
         "version": "ics721-1"
       },
       {
