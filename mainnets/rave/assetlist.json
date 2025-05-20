@@ -118,7 +118,7 @@
       "description": "The LST of INIT by Inertia",
       "denom_units": [
         {
-          "denom": "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
+          "denom": "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
           "exponent": 0
         },
         {
@@ -126,7 +126,7 @@
           "exponent": 18
         }
       ],
-      "base": "evm/9b51c105b768dF44d78bE80B53aD45579b7ee103",
+      "base": "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
       "display": "sINIT",
       "name": "sINIT",
       "symbol": "sINIT",
