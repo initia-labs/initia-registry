@@ -1,6 +1,6 @@
 {
   "$schema": "../../chain.schema.json",
-  "chain_name": "zaarmainnet",
+  "chain_name": "zaar",
   "pretty_name": "Zaar",
   "chain_id": "zaar-mainnet-1",
   "website": "https://flip.zaar.gg/",
@@ -92,7 +92,7 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/zaarmainnet/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/zaar/assetlist.json",
     "minitia": {
       "type": "minievm",
       "version": "v1.0.3"
