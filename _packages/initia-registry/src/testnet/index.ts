@@ -12,4 +12,3 @@ export * as inertia_legacy from "./inertia_legacy";
 export * as inertia from "./inertia";
 export * as embr_old from "./embr_old";
 export * as embr from "./embr";
-export * as civitia from "./civitia";

@@ -1,9 +1,12 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "renanuwa",
+  chain_name: "rena",
   pretty_name: "Rena",
   chain_id: "rena-nuwa-1",
+  website: "https://renalabs.xyz",
+  description:
+    "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
   bech32_prefix: "init",
   network_type: "mainnet",
   codebase: {},
@@ -72,7 +75,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/renanuwa/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/rena/assetlist.json",
     minitia: {
       type: "minimove",
       version: "v1.0.2",
