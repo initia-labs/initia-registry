@@ -1,15 +1,36 @@
-{
+{  
   "$schema": "../profile.schema.json",
   "name": "embr",
-  "pretty_name": "Embr",
+  "pretty_name": "Embr.fun",
   "category": "DeFi",
   "l2": true,
   "description": "A novel launchpad where users can win big by focusing liquidity into the best memes.",
   "summary": "Launchpad that evolves memecoin payout structures.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.png",
   "color": "#F56E0F",
-  "status": "upcoming",
-  "social": {
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-embr-on-vip/112",
+    "actions": [
+      {
+        "title": "Create top tokens",
+        "description": "Create meme with high trading volume for VIP."
+      },
+      {
+        "title": "Enter the Chains of Chaos",
+        "description": "Use memes as collateral in Chains of Chaos for VIP."
+      },
+      {
+        "title": "Rack up Embr points",
+        "description": "Trade to grow your Embr point stash for VIP."
+      },
+      {
+        "title": "Keep your capy level",
+        "description": "Maintain your level for VIP"
+      },
+
+    ]
+  },  "social": {
     "website": "https://embr.fun",
     "twitter": "https://x.com/embr_labs"
   }
