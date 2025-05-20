@@ -4,6 +4,7 @@ const info: Chain = {
   chain_name: "inertia",
   chain_id: "inertia-2",
   website: "https://app.inrt.fi",
+  description: "The interwoven lending protocol for the modular ecosystem.",
   pretty_name: "Inertia",
   status: "live",
   network_type: "mainnet",
@@ -21,7 +22,6 @@ const info: Chain = {
       },
     ],
   },
-  description: "The interwoven lending protocol for the modular ecosystem.",
   apis: {
     rpc: [
       {
@@ -61,7 +61,13 @@ const info: Chain = {
   },
   metadata: {
     op_bridge_id: "32",
-    op_denoms: ["uinit"],
+    op_denoms: [
+      "uinit",
+      "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+      "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+      "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+      "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
+    ],
     executor_uri: "https://op-executor.inrt.fi",
     ibc_channels: [
       {
