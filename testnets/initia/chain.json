@@ -257,6 +257,18 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-1586",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "landlord-3",
+        "port_id": "transfer",
+        "channel_id": "channel-2605",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "landlord-3",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2606",
+        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
