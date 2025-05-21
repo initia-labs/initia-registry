@@ -892,14 +892,14 @@
           "exponent": 0
         },
         {
-          "denom": "INIT.renanuwa",
+          "denom": "INIT.rena",
           "exponent": 6
         }
       ],
       "base": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
-      "display": "INIT.renanuwa",
-      "name": "INIT.renanuwa",
-      "symbol": "INIT.renanuwa",
+      "display": "INIT.rena",
+      "name": "INIT.rena",
+      "symbol": "INIT.rena",
       "traces": [
         {
           "type": "op",
@@ -914,7 +914,7 @@
         {
           "type": "ibc",
           "counterparty": {
-            "chain_name": "renanuwa",
+            "chain_name": "rena",
             "base_denom": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
             "channel_id": "channel-0"
           },
@@ -990,14 +990,14 @@
           "exponent": 0
         },
         {
-          "denom": "INIT.zaarmainnet",
+          "denom": "INIT.zaar",
           "exponent": 6
         }
       ],
       "base": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
-      "display": "INIT.zaarmainnet",
-      "name": "INIT.zaarmainnet",
-      "symbol": "INIT.zaarmainnet",
+      "display": "INIT.zaar",
+      "name": "INIT.zaar",
+      "symbol": "INIT.zaar",
       "traces": [
         {
           "type": "op",
@@ -1012,7 +1012,7 @@
         {
           "type": "ibc",
           "counterparty": {
-            "chain_name": "zaarmainnet",
+            "chain_name": "zaar",
             "base_denom": "l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b",
             "channel_id": "channel-0"
           },
