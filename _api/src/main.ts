@@ -58,4 +58,4 @@ aggregateProfiles(profileJsonPaths, path.join(distDir, "profiles.json"))
 optimizeImages(distImagesDir)
 
 // Create a deployment file
-createDeployment(path.join(distDir, "deployment"))
+createDeployment(path.join(distDir, "deployment.json"))
