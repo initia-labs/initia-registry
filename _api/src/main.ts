@@ -5,6 +5,7 @@ import { updateUrls, replaceUrl } from "./replaceUrls"
 import { aggregateChainData, aggregateProfiles } from "./aggregateChains"
 import { traverseFiles } from "./traverseFiles"
 import { optimizeImages } from "./optimizeImages"
+import { createDeployment } from "./deployment"
 
 const __filename = url.fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -55,3 +56,6 @@ aggregateProfiles(profileJsonPaths, path.join(distDir, "profiles.json"))
 
 // Optimize images in the directory
 optimizeImages(distImagesDir)
+
+// Create a deployment file
+createDeployment(path.join(distDir, "deployment"))
