@@ -570,6 +570,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
       }
+    },
+    {
+      "description": "USDN is a yielding stablecoin collateral-backed by short-duration U.S. Treasury Bills.",
+      "denom_units": [
+        {
+          "denom": "ibc/AFD330AF02EE72512BCAE1BDDDDBFA98C7D0D78711360333825E90636C32FEB8",
+          "exponent": 0
+        },
+        {
+          "denom": "USDN",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/AFD330AF02EE72512BCAE1BDDDDBFA98C7D0D78711360333825E90636C32FEB8",
+      "display": "USDN",
+      "name": "Noble Dollar",
+      "symbol": "USDN",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDN.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDN.png"
+      }
     }
   ]
 }
