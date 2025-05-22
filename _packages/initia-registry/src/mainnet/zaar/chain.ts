@@ -1,9 +1,11 @@
 import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
-  chain_name: "zaarmainnet",
+  chain_name: "zaar",
   pretty_name: "Zaar",
   chain_id: "zaar-mainnet-1",
+  website: "https://flip.zaar.gg/",
+  description: "The Fun Network, where Degeneracy comes to play.",
   evm_chain_id: 1335097526422335,
   bech32_prefix: "init",
   network_type: "mainnet",
@@ -84,7 +86,7 @@ const info: Chain = {
       },
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/zaarmainnet/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/zaar/assetlist.json",
     minitia: {
       type: "minievm",
       version: "v1.0.3",

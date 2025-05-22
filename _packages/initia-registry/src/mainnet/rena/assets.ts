@@ -1,7 +1,7 @@
 import { AssetList } from "@initia/initia-registry-types";
 const info: AssetList = {
   $schema: "../../assetlist.schema.json",
-  chain_name: "renanuwa",
+  chain_name: "rena",
   assets: [
     {
       description: "The native token of Initia",
