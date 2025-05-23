@@ -256,7 +256,7 @@
       "display": "milkTIA",
       "name": "milkTIA",
       "symbol": "milkTIA",
-      "coingecko_id": "",
+      "coingecko_id": "milkyway-staked-tia",
       "traces": [
         {
           "type": "ibc",
