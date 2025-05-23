@@ -287,6 +287,30 @@
         "port_id": "transfer",
         "channel_id": "channel-60",
         "version": "ics20-1"
+      },
+      {
+        "chain_id": "embrmainnet-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-63",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "embrmainnet-1",
+        "port_id": "transfer",
+        "channel_id": "channel-62",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "rena-nuwa-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-65",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "rena-nuwa-1",
+        "port_id": "transfer",
+        "channel_id": "channel-64",
+        "version": "ics20-1"
       }
     ]
   }
