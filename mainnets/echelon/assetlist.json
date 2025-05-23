@@ -30,7 +30,7 @@
       ],
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": "",
+      "coingecko_id": "initia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -96,7 +96,7 @@
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
-      "coingecko_id": "",
+      "coingecko_id": "usd-coin",
       "traces": [
         {
           "type": "ibc",
@@ -136,7 +136,7 @@
       "display": "TIA",
       "name": "Celestia Native Token",
       "symbol": "TIA",
-      "coingecko_id": "",
+      "coingecko_id": "celestia",
       "traces": [
         {
           "type": "ibc",
@@ -176,7 +176,7 @@
       "display": "ETH",
       "name": "Ethereum Native Token",
       "symbol": "ETH",
-      "coingecko_id": "",
+      "coingecko_id": "ethereum",
       "traces": [
         {
           "type": "ibc",
@@ -216,7 +216,7 @@
       "display": "WEETH",
       "name": "Ether.Fi Wrapped eETH LRT",
       "symbol": "WEETH",
-      "coingecko_id": "",
+      "coingecko_id": "wrapped-eeth",
       "traces": [
         {
           "type": "ibc",

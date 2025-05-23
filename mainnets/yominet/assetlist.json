@@ -20,7 +20,7 @@
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": "",
+      "coingecko_id": "initia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -76,7 +76,7 @@
       "display": "ETH",
       "name": "Ethereum Native Token",
       "symbol": "ETH",
-      "coingecko_id": "",
+      "coingecko_id": "ethereum",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
@@ -104,7 +104,7 @@
       "display": "TIA",
       "name": "Celestia TIA",
       "symbol": "TIA",
-      "coingecko_id": "",
+      "coingecko_id": "celestia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
