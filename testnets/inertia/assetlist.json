@@ -1,0 +1,234 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "inertia",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/01a7a1ea004c23bad7ff1772ab739c0818c881faa1e11383ed8d549d0069f617",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/01a7a1ea004c23bad7ff1772ab739c0818c881faa1e11383ed8d549d0069f617",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "USD Coin on Initia",
+      "denom_units": [
+        {
+          "denom": "l2/1547e3dfcc5b14c1d58ad78a11c63a9b530ee0024c8eb91d8f7a4319bf60758a",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/1547e3dfcc5b14c1d58ad78a11c63a9b530ee0024c8eb91d8f7a4319bf60758a",
+      "display": "USDC",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uusdc",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "Fake USDC Token",
+      "symbol": "USDC",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    },
+    {
+      "description": "The fake TIA",
+      "denom_units": [
+        {
+          "denom": "l2/a6a022522d3f23b5d83c04addfb7e9a5beea36e0be29f682f97b4db43f42a606",
+          "exponent": 0
+        },
+        {
+          "denom": "TIA",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/a6a022522d3f23b5d83c04addfb7e9a5beea36e0be29f682f97b4db43f42a606",
+      "display": "TIA",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "utia",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "Fake TIA Token",
+      "symbol": "TIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
+    },
+    {
+      "description": "The fake ETH",
+      "denom_units": [
+        {
+          "denom": "l2/462fc78b402d34e3c0bde9bd2dc0ad0ee3ae02b77333141de2f5d8c6ba1a1940",
+          "exponent": 0
+        },
+        {
+          "denom": "ETH",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/462fc78b402d34e3c0bde9bd2dc0ad0ee3ae02b77333141de2f5d8c6ba1a1940",
+      "display": "ETH",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "ueth",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "Fake ETH Token",
+      "symbol": "ETH",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "l2/02465abfb96a7308e7711fbc688b983b58c079cac29c7465438bce650505331a",
+          "exponent": 0
+        },
+        {
+          "denom": "sINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/02465abfb96a7308e7711fbc688b983b58c079cac29c7465438bce650505331a",
+      "display": "sINIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "sINIT",
+      "symbol": "sINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+      }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "l2/025d738e475781bd17df835f5713141a94a712ef3e1839bd08457d8a8d1211ee",
+          "exponent": 0
+        },
+        {
+          "denom": "nINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/025d738e475781bd17df835f5713141a94a712ef3e1839bd08457d8a8d1211ee",
+      "display": "nINIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "1171"
+          }
+        }
+      ],
+      "name": "nINIT",
+      "symbol": "nINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+      }
+    }
+  ]
+}

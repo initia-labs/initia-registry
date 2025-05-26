@@ -1,0 +1,224 @@
+import { AssetList } from "@initia/initia-registry-types";
+const info: AssetList = {
+  $schema: "../../assetlist.schema.json",
+  chain_name: "rave",
+  assets: [
+    {
+      description: "The native token of Initia",
+      denom_units: [
+        {
+          denom: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+          exponent: 0,
+        },
+        {
+          denom: "INIT",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0x4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+      base: "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+      display: "INIT",
+      name: "Initia Native Token",
+      symbol: "INIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+      },
+    },
+    {
+      description: "USDC on Initia",
+      denom_units: [
+        {
+          denom: "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+          exponent: 0,
+        },
+        {
+          denom: "USDC",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0x7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+      base: "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+      display: "USDC",
+      name: "USD Coin",
+      symbol: "USDC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked milkINIT",
+      denom_units: [
+        {
+          denom: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0xf0c644D9636b83E7491404d8D826321e44E23d15",
+      base: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+      display: "milkINIT",
+      name: "milkINIT",
+      symbol: "milkINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked TIA",
+      denom_units: [
+        {
+          denom: "evm/c8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
+          exponent: 0,
+        },
+        {
+          denom: "milkTIA",
+          exponent: 18,
+        },
+      ],
+      type_asset: "erc20",
+      address: "0xc8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
+      base: "evm/c8b9427c116Dc51FeDA4c59c3E05C465609F6f4a",
+      display: "milkTIA",
+      name: "milkTIA",
+      symbol: "milkTIA",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+      },
+    },
+    {
+      description: "The LST of INIT by Inertia",
+      denom_units: [
+        {
+          denom: "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
+          exponent: 0,
+        },
+        {
+          denom: "sINIT",
+          exponent: 18,
+        },
+      ],
+      base: "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
+      display: "sINIT",
+      name: "sINIT",
+      symbol: "sINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked INIT",
+      denom_units: [
+        {
+          denom: "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
+          exponent: 0,
+        },
+        {
+          denom: "milkINIT",
+          exponent: 18,
+        },
+      ],
+      base: "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
+      display: "milkINIT",
+      name: "MilkyWay's INIT LST",
+      symbol: "milkINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
+      },
+    },
+    {
+      description: "MilkyWay's Liquid Staked TIA",
+      denom_units: [
+        {
+          denom: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          exponent: 0,
+        },
+        {
+          denom: "milkTIA",
+          exponent: 18,
+        },
+      ],
+      base: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      display: "milkTIA",
+      name: "milkTIA",
+      symbol: "milkTIA",
+      coingecko_id: "milkyway-staked-tia",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png",
+      },
+    },
+    {
+      description: "Drop staked INIT-USDC LPT",
+      denom_units: [
+        {
+          denom: "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
+          exponent: 0,
+        },
+        {
+          denom: "deINIT",
+          exponent: 18,
+        },
+      ],
+      base: "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
+      display: "deINIT",
+      name: "Drop Staked INIT-USDC LPT",
+      symbol: "deINIT",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png",
+      },
+    },
+  ],
+};
+export default info;

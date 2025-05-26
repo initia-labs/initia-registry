@@ -16,7 +16,7 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v1
         with:
-          credentials_json: ${{ secrets.TESTNET_GCP_CREDENTIALS }}
+          credentials_json: ${{ secrets.INIT_TESTNET_GCP_CREDENTIALS }}
 
       - name: Setup GCP SDK
         id: setup-sdk
@@ -24,7 +24,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v44
+        uses: step-security/changed-files@v45
         with:
           files: testnets/**
           files_ignore: testnets/initia/**

@@ -9,8 +9,8 @@
   "bech32_prefix": "init",
   "daemon_name": "initiad",
   "node_home": "$HOME/.initia",
-  "key_algos": ["secp256k1"],
-  "slip44": 118,
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
   "fees": {
     "fee_tokens": [
       {
@@ -31,13 +31,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/initia",
-    "recommended_version": "v0.6.4",
-    "compatible_versions": ["v0.6.4"],
+    "recommended_version": "v1.0.0",
+    "compatible_versions": ["v1.0.0"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/initiation-2/genesis.json"
@@ -90,6 +90,28 @@
           "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Linux_aarch64.tar.gz",
           "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Darwin_x86_64.tar.gz",
           "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v0.6.4/initia_v0.6.4_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.0.0-rc.0",
+        "compatible_versions": ["v1.0.0-rc.1", "v1.0.0-rc.0"],
+        "height": 7200000,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-rc.1/initia_v1.0.0-rc.1_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-rc.1/initia_v1.0.0-rc.1_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-rc.1/initia_v1.0.0-rc.1_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0-rc.1/initia_v1.0.0-rc.1_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.0.0",
+        "compatible_versions": ["v1.0.0"],
+        "height": 7993333,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/initia/releases/download/v1.0.0/initia_v1.0.0_Darwin_aarch64.tar.gz"
         }
       }
     ]
@@ -161,13 +183,11 @@
   "faucets": [],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-      "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-    "svg": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
   },
   "metadata": {
     "is_l1": true,
@@ -197,12 +217,6 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "minimove-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-3",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "minievm-2",
         "port_id": "transfer",
         "channel_id": "channel-0",
@@ -215,96 +229,6 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "glados-2.1",
-        "port_id": "transfer",
-        "channel_id": "channel-132",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-134",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-139",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-140",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-137",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-141",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "glados-2.1",
-        "port_id": "icahost",
-        "channel_id": "channel-138",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "preyominet-1",
-        "port_id": "transfer",
-        "channel_id": "channel-177",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "preyominet-1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-178",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "landlord-2",
-        "port_id": "transfer",
-        "channel_id": "channel-222",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "landlord-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-223",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "culinaris-2",
-        "port_id": "transfer",
-        "channel_id": "channel-713",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "culinaris-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-714",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "zaar-testnet-3",
-        "port_id": "transfer",
-        "channel_id": "channel-1341",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "zaar-testnet-3",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1342",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "rave-test4",
         "port_id": "transfer",
         "channel_id": "channel-1317",
@@ -314,6 +238,36 @@
         "chain_id": "rave-test4",
         "port_id": "nft-transfer",
         "channel_id": "channel-1318",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "nuwa-rollup-1",
+        "port_id": "transfer",
+        "channel_id": "channel-2453",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "nuwa-rollup-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2454",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "virgaze-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1586",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "landlord-3",
+        "port_id": "transfer",
+        "channel_id": "channel-2605",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "landlord-3",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-2606",
         "version": "ics721-1"
       }
     ],

@@ -403,9 +403,9 @@ const initIBC = (obj, ibcFieldName) => {
 const NON_INFO_DIRS = ["_packages", "_scripts", "_template", ".github"];
 
 const chainPaths = glob(`${__dirname}/../../../*/*/chain.json`).filter((a) => {
-  const spliter = "initia-registry";
-  const index = a.indexOf(spliter);
-  const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
+  const splitter = "initia-registry";
+  const index = a.indexOf(splitter);
+  const splitedDirs = [a.slice(0, index), a.slice(index + splitter.length)];
   let dir = splitedDirs.pop();
 
   if (dir.includes("devnets")) {
@@ -417,9 +417,9 @@ const chainPaths = glob(`${__dirname}/../../../*/*/chain.json`).filter((a) => {
 });
 
 const paths = glob(`${__dirname}/../../../*/*/*.json`).filter((a) => {
-  const spliter = "initia-registry";
-  const index = a.indexOf(spliter);
-  const splitedDirs = [a.slice(0, index), a.slice(index + spliter.length)];
+  const splitter = "initia-registry";
+  const index = a.indexOf(splitter);
+  const splitedDirs = [a.slice(0, index), a.slice(index + splitter.length)];
   console.log(splitedDirs);
   const filePath = splitedDirs.pop();
   if (filePath.includes("devnets")) {

@@ -94,7 +94,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["secp256k1", "ethsecp256k1", "ed25519", "sr25519", "bn254"],
+        "enum": ["secp256k1", "initia_ethsecp256k1", "ed25519", "sr25519", "bn254"],
         "uniqueItems": true
       }
     },
@@ -225,7 +225,7 @@
         },
         "cosmwasm_path": {
           "type": "string",
-          "description": "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm",
+          "description": "Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm",
           "pattern": "^\\$HOME.*$"
         },
         "ibc_go_version": {
@@ -327,7 +327,7 @@
               },
               "cosmwasm_path": {
                 "type": "string",
-                "description": "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm",
+                "description": "Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm",
                 "pattern": "^\\$HOME.*$"
               },
               "ibc_go_version": {
@@ -392,11 +392,6 @@
             "format": "uri-reference",
             "pattern": "^https://.+\\.png$"
           },
-          "svg": {
-            "type": "string",
-            "format": "uri-reference",
-            "pattern": "^https://.+\\.svg$"
-          },
           "theme": {
             "type": "object",
             "properties": {
@@ -437,9 +432,6 @@
         "anyOf": [
           {
             "required": ["png"]
-          },
-          {
-            "required": ["svg"]
           }
         ],
         "additionalProperties": false
@@ -452,11 +444,6 @@
           "type": "string",
           "format": "uri-reference",
           "pattern": "^https://.+\\.png$"
-        },
-        "svg": {
-          "type": "string",
-          "format": "uri-reference",
-          "pattern": "^https://.+\\.svg$"
         }
       },
       "additionalProperties": false

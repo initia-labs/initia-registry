@@ -1,0 +1,17 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "minity",
+  "pretty_name": "Minity",
+  "category": "Portfolio",
+  "tags": ["Tooling"],
+  "l2": false,
+  "description": "Track your assets, DeFi Positions, and NFTs across every interwoven rollup.",
+  "summary": "Track your assets and positions across L1 and L2s",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minity.png",
+  "color": "#FFD700",
+  "status": "live",
+  "social": {
+    "website": "https://minity.xyz",
+    "twitter": "https://x.com/minity_xyz"
+  }
+}

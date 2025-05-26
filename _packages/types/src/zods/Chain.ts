@@ -48,7 +48,13 @@ export const ChainSchema = z
     node_home: z.string().optional(),
     key_algos: z
       .array(
-        z.enum(["secp256k1", "ethsecp256k1", "ed25519", "sr25519", "bn254"])
+        z.enum([
+          "secp256k1",
+          "initia_ethsecp256k1",
+          "ed25519",
+          "sr25519",
+          "bn254",
+        ])
       )
       .optional(),
     slip44: z.number().optional(),
@@ -143,7 +149,7 @@ export const ChainSchema = z
           .string()
           .regex(new RegExp("^\\$HOME.*$"))
           .describe(
-            "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm"
+            "Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm"
           )
           .optional(),
         ibc_go_version: z.string().optional(),
@@ -207,7 +213,7 @@ export const ChainSchema = z
                   .string()
                   .regex(new RegExp("^\\$HOME.*$"))
                   .describe(
-                    "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm"
+                    "Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm"
                   )
                   .optional(),
                 ibc_go_version: z.string().optional(),
@@ -263,7 +269,6 @@ export const ChainSchema = z
               )
               .optional(),
             png: z.string().regex(new RegExp("^https://.+\\.png$")).optional(),
-            svg: z.string().regex(new RegExp("^https://.+\\.svg$")).optional(),
             theme: z
               .object({
                 primary_color_hex: z
@@ -289,13 +294,12 @@ export const ChainSchema = z
               .optional(),
           })
           .strict()
-          .and(z.union([z.any(), z.any()]))
+          .and(z.any())
       )
       .optional(),
     logo_URIs: z
       .object({
         png: z.string().regex(new RegExp("^https://.+\\.png$")).optional(),
-        svg: z.string().regex(new RegExp("^https://.+\\.svg$")).optional(),
       })
       .strict()
       .optional(),

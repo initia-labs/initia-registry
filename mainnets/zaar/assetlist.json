@@ -1,0 +1,62 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "zaar",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
+      "base": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "USDC on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      "display": "USDC",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "coingecko_id": "usd-coin",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    }
+  ]
+}

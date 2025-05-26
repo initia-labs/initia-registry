@@ -1,0 +1,25 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "rena",
+  "pretty_name": "Rena",
+  "category": "AI",
+  "tags": ["TEE", "Infra"],
+  "l2": true,
+  "description": "Building the first Trusted Execution Environment (TEE) abstraction middleware to supercharge verifiable on-chain AI use cases.",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.png",
+  "color": "#FB408D",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-rena-on-vip/113",
+    "actions": [
+      {
+        "title": "Upload TEE Attestation",
+        "description": "Validate data privacy and confirm the integrity of execution within a secure environment"
+      }
+    ]
+  },
+  "social": {
+    "website": "https://renalabs.xyz",
+    "twitter": "https://x.com/Rena_labs"
+  }
+}

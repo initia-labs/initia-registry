@@ -57,7 +57,7 @@ export interface Chain {
   };
   daemon_name?: string;
   node_home?: string;
-  key_algos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
+  key_algos?: ("secp256k1" | "initia_ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
   slip44?: number;
   alternative_slip44s?: number[];
   fees: {
@@ -100,7 +100,7 @@ export interface Chain {
     cosmwasm_version?: string;
     cosmwasm_enabled?: boolean;
     /**
-     * Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm
+     * Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm
      */
     cosmwasm_path?: string;
     ibc_go_version?: string;
@@ -152,7 +152,7 @@ export interface Chain {
       cosmwasm_version?: string;
       cosmwasm_enabled?: boolean;
       /**
-       * Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm
+       * Relative path to the cosmwasm directory. ex. $HOME/.initia/data/wasm
        */
       cosmwasm_path?: string;
       ibc_go_version?: string;
@@ -170,17 +170,11 @@ export interface Chain {
       };
     }[];
   };
-  images?: (
-    | {
-        [k: string]: unknown;
-      }
-    | {
-        [k: string]: unknown;
-      }
-  )[];
+  images?: {
+    [k: string]: unknown;
+  }[];
   logo_URIs?: {
     png?: string;
-    svg?: string;
   };
   description?: string;
   peers?: {

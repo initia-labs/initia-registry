@@ -1,0 +1,91 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "intergaze",
+  "pretty_name": "Intergaze",
+  "chain_id": "intergaze-1",
+  "website": "https://intergaze.xyz",
+  "description": "The Launchpad and Marketplace for Interwoven NFTs",
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "codebase": {
+    "git_repo": "https://github.com/public-awesome/intergaze",
+    "recommended_version": "v1.0.0-rc.5",
+    "genesis": {
+      "genesis_url": "https://rpc.intergaze-apis.com/genesis"
+    }
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.intergaze-apis.com"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest.intergaze-apis.com"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc.intergaze-apis.com:443"
+      }
+    ]
+  },
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
+        "fixed_min_gas_price": 0.03
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/intergaze-1",
+      "tx_page": "https://scan.initia.xyz/intergaze-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/intergaze-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.png"
+  },
+  "metadata": {
+    "op_bridge_id": "31",
+    "op_denoms": [
+      "uinit",
+      "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4"
+    ],
+    "executor_uri": "https://executor.intergaze-apis.com",
+    "ibc_channels": [
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/intergaze/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "v1.0.2"
+    }
+  }
+}

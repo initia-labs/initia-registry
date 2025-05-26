@@ -1,0 +1,29 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "zaar",
+  "pretty_name": "Zaar",
+  "category": "Gaming",
+  "l2": true,
+  "description": "The Fun Network, where Degeneracy comes to play.",
+  "summary": "The Fun Network of Degeneracy",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ZAAR.png",
+  "color": "#DDBA00",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-zaar-on-vip/59",
+    "actions": [
+      {
+        "title": "Flip and Stake on Zaar",
+        "description": "Play the Flip game and stake tokens."
+      },
+      {
+        "title": "Swap on Zaar",
+        "description": "Swap on SudoSwap."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://flip.zaar.gg/",
+    "twitter": "https://x.com/zaar_gg"
+  }
+}

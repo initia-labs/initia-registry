@@ -1,0 +1,25 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "echelon",
+  "pretty_name": "Echelon",
+  "category": "DeFi",
+  "l2": true,
+  "description": "A highly efficient money market connecting liquidity and supercharging yields with LST, RWA, and stablecoin backed lending strategies.",
+  "summary": "Money market connecting liquidity with strategies.",
+  "color": "#9AF8FB",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.png",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-echelon-on-vip/62",
+    "actions": [
+      {
+        "title": "Enter the Upper Echelon",
+        "description": "Supply and borrow on Echelon with boosted esINIT emissions."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://echelon.market",
+    "twitter": "https://x.com/echelonmarket"
+  }
+}

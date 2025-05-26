@@ -1,0 +1,25 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "civitia",
+  "pretty_name": "Civitia",
+  "category": "Gaming",
+  "l2": true,
+  "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",
+  "summary": "Mint cities, collect yield, and control the planet",
+  "color": "#FFFFFF",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-civitia-on-vip/58",
+    "actions": [
+      {
+        "title": "Earn SILVER",
+        "description": "The VIP score in each epoch is equal to the SILVER accrued during the epoch, except referral earnings"
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.civitia.org",
+    "twitter": "https://x.com/civitiaorg"
+  }
+}

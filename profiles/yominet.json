@@ -1,0 +1,25 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "yominet",
+  "pretty_name": "Yominet",
+  "category": "Gaming",
+  "l2": true,
+  "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",
+  "summary": "Economically independent, onchain virtual world",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.png",
+  "color": "#42F771",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-kamigotchi-on-vip/64",
+    "actions": [
+      {
+        "title": "Burn VIP Paper.",
+        "description": "Players can gather VIPP ingame in the VIP zone. VIPP tickets can be burned in order to claim VIP points."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://kamigotchi.io",
+    "twitter": "https://x.com/kamigotchiworld"
+  }
+}

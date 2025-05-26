@@ -1,6 +1,6 @@
 {
   "name": "@initia/initia-registry",
-  "version": "0.2.3",
+  "version": "1.0.6",
   "description": "Initia chain registry",
   "main": "main/index.js",
   "module": "esm/index.js",
@@ -37,9 +37,10 @@
   "devDependencies": {
     "glob": "^10.3.12",
     "mkdirp": "^3.0.1",
+    "prettier": "^3.5.3",
     "rimraf": "^5.0.5"
   },
   "dependencies": {
-    "@initia/initia-registry-types": "^0.0.22"
+    "@initia/initia-registry-types": "^1.0.5"
   }
 }

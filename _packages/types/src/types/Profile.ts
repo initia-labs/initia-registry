@@ -6,9 +6,9 @@
  */
 
 export interface ChainProfile {
-  name?: string;
-  pretty_name?: string;
-  category?: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "Other";
+  name: string;
+  pretty_name: string;
+  category: "DeFi" | "Social" | "NFT" | "Gaming" | "Portfolio" | "AI" | "Others";
   /**
    * @maxItems 3
    */
@@ -16,22 +16,24 @@ export interface ChainProfile {
   /**
    * A longer description for the landing page
    */
-  description?: string;
+  description: string;
   /**
    * A short description for the onboarding page (less than or equal to 50 characters)
    */
   summary?: string;
+  logo: string;
   /**
    * Modify saturation and luminance for the ecosystem or the vip
    */
   color?: string;
-  status?: "live" | "upcoming";
+  status: "live" | "upcoming" | "hidden";
   vip?: {
     actions?: {
       title?: string;
       description?: string;
       [k: string]: unknown;
     }[];
+    forum_url?: string;
     [k: string]: unknown;
   };
   social?: {

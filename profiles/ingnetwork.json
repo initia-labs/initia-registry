@@ -1,0 +1,26 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "ingnetwork",
+  "pretty_name": "ING Network",
+  "category": "AI",
+  "tags": [],
+  "l2": true,
+  "description": "Enabling everyone to create interactive entertainment.",
+  "summary": "Enabling everyone to create using AI & blockchain",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/infinityg.png",
+  "color": "#b387eb",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-infinity-ground-on-vip/65",
+    "actions": [
+      {
+        "title": "Onchain Play",
+        "description": "Measured by how many times the user pays the $INIT entry fee to play."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.infinityg.ai",
+    "twitter": "https://x.com/infinityg_ai"
+  }
+}

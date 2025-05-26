@@ -1,0 +1,29 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "intergaze",
+  "pretty_name": "Intergaze",
+  "category": "NFT",
+  "l2": true,
+  "description": "The Launchpad and Marketplace for Interwoven NFTs",
+  "summary": "Purpose-built chain optimized for creators & NFTs",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.png",
+  "color": "#FFFFFF",
+  "status": "live",
+  "social": {
+    "website": "https://intergaze.xyz",
+    "twitter": "https://x.com/intergaze_xyz"
+  },
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-intergaze-on-vip/60",
+    "actions": [
+      {
+        "title": "Mint NFTs",
+        "description": "Mint NFTs on Intergaze Launchpad."
+      },
+      {
+        "title": "Trade NFTs",
+        "description": "Trade NFTs on Intergaze Marketplace."
+      }
+    ]
+  }
+}

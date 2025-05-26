@@ -4,38 +4,32 @@ const info: AssetList = {
   chain_name: "milkyway",
   assets: [
     {
-      description: "The native token of MilkyWay",
+      description: "Gas token of MilkyWay",
       denom_units: [
         {
-          denom: "umilk",
+          denom: "GAS",
           exponent: 0,
         },
-        {
-          denom: "MILK",
-          exponent: 6,
-        },
       ],
-      base: "umilk",
-      display: "MILK",
-      name: "MilkyWay Native Token",
-      symbol: "MILK",
+      base: "GAS",
+      display: "GAS",
+      name: "MilkyWay Gas Token",
+      symbol: "GAS",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MILK.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MILK.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MILK.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/MILK.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png",
       },
     },
     {
-      description: "The INIT Liquid Staking Token",
+      description: "MilkyWay's Liquid Staked INIT",
       denom_units: [
         {
-          denom: "milkuinit",
+          denom: "umilkinit",
           exponent: 0,
         },
         {
@@ -43,28 +37,26 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "milkuinit",
+      base: "umilkinit",
       display: "milkINIT",
-      name: "INIT Liquid Staking Token",
+      name: "MilkyWay's INIT LST",
       symbol: "milkINIT",
       coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/milkyway/images/milkINIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png",
       },
     },
     {
-      description: "The native token of Initia (IBC-Bridged)",
+      description: "The native token of Initia",
       denom_units: [
         {
           denom:
-            "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
+            "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
           exponent: 0,
         },
         {
@@ -72,76 +64,71 @@ const info: AssetList = {
           exponent: 6,
         },
       ],
-      base: "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
+      base: "l2/306fc5bda5e7718e56b1d7e62d305d3fe7eee6b3cd223b7201c9171cc541aba9",
       display: "INIT",
-      name: "Initia IBC INIT",
-      symbol: "INIT",
-      coingecko_id: "",
       traces: [
         {
-          type: "ibc",
+          type: "op",
           counterparty: {
-            chain_name: "initia",
             base_denom: "uinit",
-            channel_id: "channel-310",
+            chain_name: "initia",
           },
           chain: {
-            channel_id: "channel-0",
-            path: "transfer/channel-0/uinit",
+            bridge_id: "822",
           },
         },
       ],
+      name: "Initia Native Token",
+      symbol: "INIT",
+      coingecko_id: "",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-          svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.png",
-        svg: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/INIT.svg",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
       },
     },
     {
-      description: "BSC LayerZero Test Token",
+      description: "USD Coin on Initia",
       denom_units: [
         {
           denom:
-            "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
+            "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
           exponent: 0,
         },
         {
-          denom: "TEST LZ",
-          exponent: 8,
+          denom: "USDC",
+          exponent: 6,
         },
       ],
-      base: "ibc/665CCAFA2768242D74D8CB2E9F5167261B6B75646E2EF2546E0707C0BFC7CDAF",
-      display: "TEST LZ",
-      name: "BSC LayerZero Test Token",
-      symbol: "TEST LZ",
+      base: "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+      display: "USDC",
+      name: "USDC",
+      symbol: "USDC",
       coingecko_id: "",
       traces: [
         {
           type: "ibc",
           counterparty: {
             chain_name: "initia",
-            base_denom:
-              "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
+            base_denom: "uusdc",
             channel_id: "channel-0",
           },
           chain: {
             channel_id: "channel-0",
-            path: "transfer/channel-0/move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
+            path: "transfer/channel-0/uusdc",
           },
         },
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/images/bsc-test-lz.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
       },
     },
   ],

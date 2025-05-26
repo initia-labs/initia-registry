@@ -1,0 +1,28 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "rave",
+  "pretty_name": "Rave",
+  "category": "DeFi",
+  "l2": true,
+  "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
+  "color": "#2962ff",
+  "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-rave-on-vip/61",
+    "actions": [
+      {
+        "title": "RAVE Trade",
+        "description": "Earn esINIT by trading volume with VIP collateral, and earn multiplier boosts for using leverage."
+      },
+      {
+        "title": "RAVE Cave",
+        "description": "Earn esINIT by depositing whitelisted tokens into a Rave Cave."
+      }
+    ]
+  },
+  "social": {
+    "website": "https://www.rave.trade",
+    "twitter": "https://x.com/@RAVE__Trade"
+  }
+}
