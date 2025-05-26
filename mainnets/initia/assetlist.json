@@ -1030,6 +1030,58 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar.ibcopinit.png"
       }
+    },
+    {
+      "description": "Cabal xINIT",
+      "denom_units": [
+        {
+          "denom": "xINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "move/979ee341ad65efb486ed1b68b060e6a97cdd6bec9014c62aa1fc3563933daa4a",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "move/979ee341ad65efb486ed1b68b060e6a97cdd6bec9014c62aa1fc3563933daa4a",
+      "display": "xINIT",
+      "name": "xINIT",
+      "symbol": "xINIT",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT.png"
+      }
+    },
+    {
+      "description": "Cabal sxINIT",
+      "denom_units": [
+        {
+          "denom": "sxINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb",
+      "display": "sxINIT",
+      "name": "sxINIT",
+      "symbol": "sxINIT",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+      }
     }
   ]
 }
