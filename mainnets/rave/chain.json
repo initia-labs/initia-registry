@@ -78,7 +78,8 @@
     "op_bridge_id": "17",
     "op_denoms": [
       "uinit",
-      "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e"
+      "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+      "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4"
     ],
     "executor_uri": "https://opinit-api-rave-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
