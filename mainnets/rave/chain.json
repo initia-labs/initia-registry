@@ -76,7 +76,10 @@
   },
   "metadata": {
     "op_bridge_id": "17",
-    "op_denoms": ["uinit"],
+    "op_denoms": [
+      "uinit",
+      "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e"
+    ],
     "executor_uri": "https://opinit-api-rave-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
