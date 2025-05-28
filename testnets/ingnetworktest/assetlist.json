@@ -18,18 +18,6 @@
       "address": "0x6ed1637781269560b204c27cd42d95e057c4be44",
       "base": "evm/6ed1637781269560b204c27cd42d95e057c4be44",
       "display": "INIT",
-      "traces": [
-        {
-          "type": "op",
-          "counterparty": {
-            "base_denom": "uinit",
-            "chain_name": "initia"
-          },
-          "chain": {
-            "bridge_id": "1199"
-          }
-        }
-      ],
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "",
