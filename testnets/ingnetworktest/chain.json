@@ -1,0 +1,103 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "ingnetworktest",
+  "pretty_name": "Ingnetwork",
+  "chain_id": "ingnetwork-test-1",
+  "evm_chain_id": 410870215468298,
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.0.7-rc.1",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.1/minievm_v1.0.7-rc.1_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.1/minievm_v1.0.7-rc.1_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.1/minievm_v1.0.7-rc.1_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.1/minievm_v1.0.7-rc.1_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc-ingnetwork-test-1.anvil.asia-southeast.initia.xyz/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-ingnetwork-test-1.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://jsonrpc-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://jsonrpc-ws-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/ingnetwork-test-1",
+      "tx_page": "https://scan.testnet.initia.xyz/ingnetwork-test-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/ingnetwork-test-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 15000000000000000
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ingnetworktest.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ingnetworktest.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1199",
+    "op_denoms": [
+      "uinit"
+    ],
+    "executor_uri": "https://opinit-api-ingnetwork-test-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/ingnetworktest/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v1.0.7-rc.1"
+    }
+  }
+}
