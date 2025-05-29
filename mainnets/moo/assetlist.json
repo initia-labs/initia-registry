@@ -53,6 +53,46 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
       }
+    },
+    {
+      "description": "The native token of MilkyWay on Initia via IBC",
+      "denom_units": [
+        {
+          "denom": "ibc/31DE4445E2BD6142E020EBDE6B1BD617C71B89F767E89D286919AC12AA3EF559",
+          "exponent": 0
+        },
+        {
+          "denom": "MILK",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/31DE4445E2BD6142E020EBDE6B1BD617C71B89F767E89D286919AC12AA3EF559",
+      "display": "MILK",
+      "name": "MilkyWay Native Token",
+      "symbol": "MILK",
+      "coingecko_id": "milkyway",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/991E01AB189A00585E4BBBE04D7B7C8654D16BF612C7B795F175679164114642",
+            "channel_id": "channel-29"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-80/umilk"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png"
+      }
     }
   ]
 }
