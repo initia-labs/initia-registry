@@ -13,8 +13,12 @@
     "forum_url": "https://forum.initia.xyz/t/whitelist-echelon-on-vip/62",
     "actions": [
       {
-        "title": "Enter the Upper Echelon",
-        "description": "Supply and borrow on Echelon with boosted esINIT emissions."
+        "title": "Supply",
+        "description": "Supply USDC, INIT and milkINIT"
+      },
+      {
+        "title": "Borrow",
+        "description": "Borrow USDC"
       }
     ]
   },
