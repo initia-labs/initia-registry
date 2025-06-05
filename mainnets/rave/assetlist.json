@@ -141,32 +141,6 @@
       }
     },
     {
-      "description": "MilkyWay's Liquid Staked INIT",
-      "denom_units": [
-        {
-          "denom": "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
-          "exponent": 0
-        },
-        {
-          "denom": "milkINIT",
-          "exponent": 18
-        }
-      ],
-      "base": "evm/bB4d87cB72E9a515D0846A8801F07d887eeF1C13",
-      "display": "milkINIT",
-      "name": "MilkyWay's INIT LST",
-      "symbol": "milkINIT",
-      "coingecko_id": "",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
-      }
-    },
-    {
       "description": "MilkyWay's Liquid Staked TIA",
       "denom_units": [
         {
