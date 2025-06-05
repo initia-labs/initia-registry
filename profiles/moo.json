@@ -14,7 +14,11 @@
     "actions": [
       {
         "title": "Liquid stake",
-        "description": "Hold milkINIT inside your wallet on either the MilkyWay Rollup (moo-1) or Initia mainnet (interwoven-1) chains."
+        "description": "Hold milkINIT inside your wallet on either the MilkWay Rollup (moo-1) or Initia mainnet (interwoven-1) chains."
+      },
+      {
+        "title": "Supply on Echelon",
+        "description": "Supply milkINIT on Echelon"
       }
     ]
   },
