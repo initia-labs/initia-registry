@@ -36,7 +36,7 @@
       {
         "name": "v1.0.2",
         "recommended_version": "v1.0.3",
-        "compatible_versions": ["v1.0.3","v1.0.8"],
+        "compatible_versions": ["v1.0.3", "v1.0.8"],
         "height": 544760,
         "binaries": {
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.3/minievm_v1.0.3_Linux_aarch64.tar.gz"
@@ -45,12 +45,18 @@
       {
         "name": "v1.1.0",
         "recommended_version": "v1.1.4",
-        "compatible_versions": ["v1.1.0", "v1.1.1", "v1.1.2", "v1.1.3", "v1.1.4"],
+        "compatible_versions": [
+          "v1.1.0",
+          "v1.1.1",
+          "v1.1.2",
+          "v1.1.3",
+          "v1.1.4"
+        ],
         "height": 1938900,
         "binaries": {
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.4/minievm_v1.1.4_Linux_aarch64.tar.gz"
         }
-      },
+      }
     ],
     "genesis": {
       "genesis_url": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz/genesis"
