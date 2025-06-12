@@ -319,6 +319,46 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
       }
+    },
+    {
+      "description": "Cabal sxINIT",
+      "denom_units": [
+        {
+          "denom": "sxINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "ibc/8CF7B9771291D1596B6A6A7F812BC043A5E1A903E6E6D4D41CE9C7486B338AC6",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "ibc/8CF7B9771291D1596B6A6A7F812BC043A5E1A903E6E6D4D41CE9C7486B338AC6",
+      "display": "sxINIT",
+      "name": "sxINIT",
+      "symbol": "sxINIT",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb",
+            "channel_id": "channel-35"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+      }
     }
   ]
 }
