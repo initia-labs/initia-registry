@@ -10,10 +10,54 @@
   "network_type": "mainnet",
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
-    "recommended_version": "v1.0.3",
+    "recommended_version": "v1.1.4",
     "binaries": {
-      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.3/minievm_v1.0.3_Linux_aarch64.tar.gz"
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.4/minievm_v1.1.4_Linux_aarch64.tar.gz"
     },
+    "versions": [
+      {
+        "name": "v1.0.0-beta.16",
+        "recommended_version": "v1.0.0-beta.16",
+        "compatible_versions": ["v1.0.0-beta.16"],
+        "height": 1,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-beta.16/minievm_v1.0.0-beta.16_Linux_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.0.0-rc.0-kami.1",
+        "recommended_version": "v1.0.0-rc.0-kami.1",
+        "compatible_versions": ["v1.0.0-rc.0-kami.1"],
+        "height": 528600,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0-kami.1/minievm_v1.0.0-rc.0-kami.1_Linux_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.0.2",
+        "recommended_version": "v1.0.3",
+        "compatible_versions": ["v1.0.3", "v1.0.8"],
+        "height": 544760,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.3/minievm_v1.0.3_Linux_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.1.0",
+        "recommended_version": "v1.1.4",
+        "compatible_versions": [
+          "v1.1.0",
+          "v1.1.1",
+          "v1.1.2",
+          "v1.1.3",
+          "v1.1.4"
+        ],
+        "height": 1938900,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.4/minievm_v1.1.4_Linux_aarch64.tar.gz"
+        }
+      }
+    ],
     "genesis": {
       "genesis_url": "https://rpc-yominet-1.anvil.asia-southeast.initia.xyz/genesis"
     }
