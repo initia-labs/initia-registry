@@ -34,7 +34,7 @@
       "description": "USDC on Initia",
       "denom_units": [
         {
-          "denom": "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+          "denom": "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
           "exponent": 0
         },
         {
@@ -43,8 +43,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
-      "base": "evm/7A52fbedb032a685Ce10a82E076A21C2AD7849c7",
+      "address": "0x4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+      "base": "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
