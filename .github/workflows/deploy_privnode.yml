@@ -48,12 +48,12 @@ jobs:
         if: steps.changed.outputs.files != ''
         run: |
           if [[ "${{ matrix.env }}" == "staging" ]]; then
-            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY_STAGING }}" >> $GITHUB_ENV
-            echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING }}' >> sa.json
+            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_ANVIL_API_KEY_STAGING }}" >> $GITHUB_ENV
+            echo '${{ secrets.FIREBASE_ANVIL_SERVICE_ACCOUNT_STAGING }}' >> sa.json
             ENV_SUFFIX=".staging"
           else
-            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY_PROD }}" >> $GITHUB_ENV
-            echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROD }}' >> sa.json
+            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_ANVIL_API_KEY_PROD }}" >> $GITHUB_ENV
+            echo '${{ secrets.FIREBASE_ANVIL_SERVICE_ACCOUNT_PROD }}' >> sa.json
             ENV_SUFFIX=""
           fi
           echo "BASE_URL=https://api.anvil.${{ matrix.region }}${ENV_SUFFIX}.initia.xyz" >> $GITHUB_ENV
