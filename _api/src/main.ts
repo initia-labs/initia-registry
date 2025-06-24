@@ -1,61 +1,56 @@
+import { getConfig, getBuildPaths } from "./config"
+import { copyDirectory, removeDirectory, readJsonFile, writeJsonFile } from "./utils/file"
+import { updateUrlsInDirectory } from "./url-replacer"
+import { aggregateChains, aggregateProfiles } from "./aggregators"
+import { createDeploymentInfo } from "./deployment"
 import path from "path"
-import url from "url"
-import fs from "fs-extra"
-import { updateUrls, replaceUrl } from "./replaceUrls"
-import { aggregateChainData, aggregateProfiles } from "./aggregateChains"
-import { traverseFiles } from "./traverseFiles"
-import { optimizeImages } from "./optimizeImages"
-import { createDeployment } from "./deployment"
 
-const __filename = url.fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+/**
+ * Main build function that processes the Initia registry files
+ * Handles cleaning, copying, URL replacement, aggregation, and optimization
+ */
+async function main() {
+  const config = getConfig()
+  const paths = getBuildPaths(config)
+  
+  console.log(`Building registry for ${config.networkType}...`)
+  
+  try {
+    // Clean the distribution directory to start fresh
+    await removeDirectory(config.distDir)
+    
+    // Copy chain directories while filtering out internal files (starting with underscore)
+    await copyDirectory(paths.srcChainsDir, paths.distChainsDir, (src) => {
+      const basename = path.basename(src)
+      return !basename.startsWith("_")
+    })
+    
+    // Copy static assets (images and profiles) to distribution directory
+    await copyDirectory(paths.srcImagesDir, paths.distImagesDir)
+    await copyDirectory(paths.srcProfilesDir, paths.distProfilesDir)
+    
+    // Replace placeholder URLs with actual base URLs in all JSON files
+    await updateUrlsInDirectory(paths.distChainsDir, config)
+    await updateUrlsInDirectory(paths.distProfilesDir, config)
+    
+    // Generate consolidated chain and profile files for easier consumption
+    await aggregateChains(paths.distChainsDir, path.join(config.distDir, "chains.json"))
+    await aggregateProfiles(paths.distProfilesDir, path.join(config.distDir, "profiles.json"))
+    
+    // Conditionally optimize images to reduce file sizes (dynamic import to avoid loading issues)
+    if (!config.skipImageOptimization) {
+      const { optimizeImagesInDirectory } = await import("./image-optimizer")
+      await optimizeImagesInDirectory(paths.distImagesDir)
+    }
+    
+    // Generate deployment metadata for tracking build information
+    await createDeploymentInfo(path.join(config.distDir, "deployment.json"))
+    
+    console.log("Build completed successfully!")
+  } catch (error) {
+    console.error("Build failed:", error)
+    process.exit(1)
+  }
+}
 
-const srcDir = path.resolve(__dirname, "../..")
-const distDir = path.resolve(__dirname, "../dist")
-
-// Delete the dist directory
-fs.removeSync(distDir)
-
-// Copy all files from the network directory to the dist directory
-const networkDir = (process.env.NETWORK_DIR || "mainnets") as "mainnets" | "testnets" | "devnets"
-const srcChainsDir = path.resolve(srcDir, networkDir)
-const distChainsDir = path.resolve(distDir, "chains")
-fs.copySync(srcChainsDir, distChainsDir, {
-  // Do not copy files starting with an underscore
-  filter: (src) => !path.basename(src).startsWith("_"),
-})
-
-// Copy the images directory to the dist directory
-const srcImagesDir = path.resolve(srcDir, "images")
-const distImagesDir = path.resolve(distDir, "images")
-fs.copySync(srcImagesDir, distImagesDir)
-
-// Copy the profiles directory to the dist directory
-const srcProfilesDir = path.resolve(srcDir, "profiles")
-const distProfilesDir = path.resolve(distDir, "profiles")
-fs.copySync(srcProfilesDir, distProfilesDir)
-
-// Update URLs in chain.json, assetlist.json and profile.json files
-// Example:
-// "https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png"
-// will be replaced with
-// "https://registry.initia.xyz/initia/images/INIT.png"
-traverseFiles(distChainsDir, (file) => updateUrls(file, (url) => replaceUrl(url, networkDir)))
-traverseFiles(distProfilesDir, (file) => updateUrls(file, (url) => replaceUrl(url, networkDir)))
-
-// Aggregate all chains into a single chains.json file
-// Only specific properties are included in the aggregation.
-// const chainJsonPaths = fs.readdirSync(distChainsDir).map((file) => path.join(dir, file))
-// dirs.map((dir) => path.join(dir, "chain.json")).filter(isJsonFile)
-const chainJsonPaths = fs.readdirSync(distChainsDir).map((chainDir) => path.join(distChainsDir, chainDir, "chain.json"))
-aggregateChainData(chainJsonPaths, path.join(distDir, "chains.json"))
-
-// Aggregate all profiles into a single profiles.json file
-const profileJsonPaths = fs.readdirSync(distProfilesDir).map((file) => path.join(distProfilesDir, file))
-aggregateProfiles(profileJsonPaths, path.join(distDir, "profiles.json"))
-
-// Optimize images in the directory
-optimizeImages(distImagesDir)
-
-// Create a deployment file
-createDeployment(path.join(distDir, "deployment.json"))
+main()

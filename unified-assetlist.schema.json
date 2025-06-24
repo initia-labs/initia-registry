@@ -1,0 +1,406 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Unified Asset List",
+  "description": "Unified asset list containing assets from multiple chains in the Initia ecosystem",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/unified_asset"
+  },
+  "$defs": {
+    "unified_asset": {
+      "type": "object",
+      "required": ["name", "symbol", "display", "description", "denom_units", "chains", "images"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The project name of the asset. For example Bitcoin.",
+          "maxLength": 42
+        },
+        "symbol": {
+          "type": "string",
+          "description": "The symbol of an asset. For example BTC."
+        },
+        "display": {
+          "type": "string",
+          "description": "The human friendly unit of the asset."
+        },
+        "description": {
+          "type": "string",
+          "description": "A short description of the asset"
+        },
+        "denom_units": {
+          "type": "array",
+          "description": "Standard denomination units for the asset across all chains",
+          "items": {
+            "$ref": "#/$defs/denom_unit"
+          },
+          "minContains": 1
+        },
+        "type_asset": {
+          "type": "string",
+          "enum": ["sdk.coin", "cw20", "erc20", "ics20", "snip20", "snip25"],
+          "default": "sdk.coin",
+          "description": "The type of asset"
+        },
+        "coingecko_id": {
+          "type": "string",
+          "description": "The coingecko id to fetch asset data from coingecko v3 api"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/image"
+          },
+          "minItems": 1
+        },
+        "logo_URIs": {
+          "type": "object",
+          "description": "Legacy logo URIs field",
+          "properties": {
+            "png": {
+              "type": "string",
+              "format": "uri-reference",
+              "pattern": "^https://.+\\.png$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minContains": 1,
+          "maxContains": 20
+        },
+        "chains": {
+          "type": "object",
+          "description": "Chain-specific information for this asset",
+          "additionalProperties": {
+            "$ref": "#/$defs/chain_info"
+          },
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "chain_info": {
+      "type": "object",
+      "required": ["chain_name", "base"],
+      "properties": {
+        "chain_name": {
+          "type": "string",
+          "description": "The name of the chain"
+        },
+        "base": {
+          "type": "string",
+          "description": "The base unit of the asset on this chain"
+        },
+        "address": {
+          "type": "string",
+          "description": "The contract address for cw20, erc20, snip20 assets"
+        },
+        "traces": {
+          "type": "array",
+          "description": "The origin and transfer history of the asset",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ibc_transition"
+              },
+              {
+                "$ref": "#/$defs/ibc_cw20_transition"
+              },
+              {
+                "$ref": "#/$defs/non_ibc_transition"
+              },
+              {
+                "$ref": "#/$defs/op_transition"
+              }
+            ]
+          }
+        },
+        "ibc": {
+          "type": "object",
+          "description": "Legacy IBC channel information",
+          "required": ["source_channel", "dst_channel", "source_denom"],
+          "properties": {
+            "source_channel": {
+              "type": "string"
+            },
+            "dst_channel": {
+              "type": "string"
+            },
+            "source_denom": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "denom_unit": {
+      "type": "object",
+      "required": ["denom", "exponent"],
+      "properties": {
+        "denom": {
+          "type": "string"
+        },
+        "exponent": {
+          "type": "integer"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minContains": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "image_sync": {
+          "$ref": "#/$defs/pointer"
+        },
+        "png": {
+          "type": "string",
+          "format": "uri-reference",
+          "pattern": "^https://.+\\.png$"
+        },
+        "svg": {
+          "type": "string",
+          "format": "uri-reference",
+          "pattern": "^https://.+\\.svg$"
+        },
+        "theme": {
+          "type": "object",
+          "properties": {
+            "primary_color_hex": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            },
+            "circle": {
+              "type": "boolean"
+            },
+            "dark_mode": {
+              "type": "boolean"
+            }
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "pointer": {
+      "type": "object",
+      "description": "The (primary) key used to identify an object within the Chain Registry.",
+      "required": ["chain_name"],
+      "properties": {
+        "chain_name": {
+          "type": "string",
+          "description": "The chain name or platform from which the object resides"
+        },
+        "base_denom": {
+          "type": "string",
+          "description": "The base denom of the asset from which the object originates"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ibc_transition": {
+      "type": "object",
+      "required": ["type", "counterparty", "chain"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["ibc"]
+        },
+        "counterparty": {
+          "type": "object",
+          "required": ["chain_name", "base_denom", "channel_id"],
+          "properties": {
+            "chain_name": {
+              "type": "string",
+              "description": "The name of the counterparty chain"
+            },
+            "base_denom": {
+              "type": "string",
+              "description": "The base unit of the asset on its source platform"
+            },
+            "channel_id": {
+              "type": "string",
+              "pattern": "^channel-\\d+$",
+              "description": "The counterparty IBC transfer channel"
+            }
+          },
+          "additionalProperties": false
+        },
+        "chain": {
+          "type": "object",
+          "required": ["channel_id", "path"],
+          "properties": {
+            "channel_id": {
+              "type": "string",
+              "pattern": "^channel-\\d+$",
+              "description": "The chain's IBC transfer channel"
+            },
+            "path": {
+              "type": "string",
+              "description": "The port/channel/denom input string that generates the 'ibc/...' denom"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "ibc_cw20_transition": {
+      "type": "object",
+      "required": ["type", "counterparty", "chain"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["ibc-cw20"]
+        },
+        "counterparty": {
+          "type": "object",
+          "required": ["chain_name", "base_denom", "port", "channel_id"],
+          "properties": {
+            "chain_name": {
+              "type": "string",
+              "description": "The name of the counterparty chain"
+            },
+            "base_denom": {
+              "type": "string",
+              "description": "The base unit of the asset on its source platform"
+            },
+            "port": {
+              "type": "string",
+              "description": "The port used to transfer IBC assets"
+            },
+            "channel_id": {
+              "type": "string",
+              "pattern": "^channel-\\d+$",
+              "description": "The counterparty IBC transfer channel"
+            }
+          },
+          "additionalProperties": false
+        },
+        "chain": {
+          "type": "object",
+          "required": ["port", "channel_id", "path"],
+          "properties": {
+            "port": {
+              "type": "string",
+              "description": "The port used to transfer IBC assets"
+            },
+            "channel_id": {
+              "type": "string",
+              "pattern": "^channel-\\d+$",
+              "description": "The chain's IBC transfer channel"
+            },
+            "path": {
+              "type": "string",
+              "description": "The port/channel/denom input string that generates the 'ibc/...' denom"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "op_transition": {
+      "type": "object",
+      "required": ["type", "counterparty", "chain"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["op"]
+        },
+        "counterparty": {
+          "type": "object",
+          "required": ["chain_name", "base_denom"],
+          "properties": {
+            "chain_name": {
+              "type": "string",
+              "description": "The name of the counterparty chain"
+            },
+            "base_denom": {
+              "type": "string",
+              "description": "The base unit of the asset on its source platform"
+            }
+          },
+          "additionalProperties": false
+        },
+        "chain": {
+          "type": "object",
+          "required": ["bridge_id"],
+          "properties": {
+            "bridge_id": {
+              "type": "string",
+              "description": "The identifier of the OPinit bridge"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "non_ibc_transition": {
+      "type": "object",
+      "required": ["type", "counterparty", "provider"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "bridge",
+            "liquid-stake",
+            "synthetic",
+            "wrapped",
+            "additional-mintage",
+            "test-mintage"
+          ]
+        },
+        "counterparty": {
+          "type": "object",
+          "required": ["chain_name", "base_denom"],
+          "properties": {
+            "chain_name": {
+              "type": "string",
+              "description": "The chain or platform from which the asset originates"
+            },
+            "base_denom": {
+              "type": "string"
+            },
+            "contract": {
+              "type": "string",
+              "description": "The contract address where the transition takes place"
+            }
+          },
+          "additionalProperties": false
+        },
+        "chain": {
+          "type": "object",
+          "required": ["contract"],
+          "properties": {
+            "contract": {
+              "type": "string",
+              "description": "The contract address where the transition takes place"
+            }
+          },
+          "additionalProperties": false
+        },
+        "provider": {
+          "type": "string",
+          "description": "The entity offering the service"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
