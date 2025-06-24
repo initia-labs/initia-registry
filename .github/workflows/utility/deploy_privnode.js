@@ -4,13 +4,17 @@ const axios = require('axios');
 const admin = require('firebase-admin');
 
 async function getFirebaseIdToken() {
-    const serviceAccount = JSON.parse(fs.readFileSync('sa.json'));
-    const uid = "ci-user";
+    let serviceAccount;
+    try {
+        serviceAccount = JSON.parse(fs.readFileSync('sa.json'));
+    } catch (error) {
+        throw new Error('Failed to read service account file');
+    }
 
+    const uid = "ci-user";
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
     });
-
     const customToken = await admin.auth().createCustomToken(uid);
 
     const body = JSON.stringify({
@@ -33,9 +37,13 @@ async function getFirebaseIdToken() {
             let data = "";
             res.on("data", chunk => data += chunk);
             res.on("end", () => {
-                const parsed = JSON.parse(data);
-                if (!parsed.idToken) return reject(new Error("Failed to get ID token"));
-                resolve(parsed.idToken);
+                try {
+                    const parsed = JSON.parse(data);
+                    if (!parsed.idToken) return reject(new Error("Failed to get ID token"));
+                    resolve(parsed.idToken);
+                } catch (error) {
+                    reject(new Error("Invalid response from Firebase API"));
+                }
             });
         });
 
