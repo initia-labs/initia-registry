@@ -13,7 +13,7 @@ jobs:
 
       - name: Validate Assetlist.json schema
         run: |
-          for file in $(find . -name 'assetlist.json' | grep -v '_template/' | grep -v 'mainnet/assetlist.json' | grep -v 'testnet/assetlist.json' | grep -v 'devnet/assetlist.json'); do
+          for file in $(find . -name 'assetlist.json' | grep -v '_template/' | grep -v 'mainnets/assetlist.json' | grep -v 'testnets/assetlist.json' | grep -v 'devnets/assetlist.json'); do
             if ! jsonschema -i "$file" ./assetlist.schema.json; then
               exit 1
             fi
