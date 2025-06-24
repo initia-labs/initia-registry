@@ -1,0 +1,66 @@
+name: Deploy Anvil Privnode
+
+on:
+  push:
+    paths:
+      - 'testnets/**/chain.json'
+      - 'mainnets/**/chain.json'
+    branches:
+      - main
+
+jobs:
+  deploy-privnode:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        region: [ asia-southeast, europe-west ]
+        env: [ staging, prod ]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed chain.json files
+        id: changed
+        run: |
+          CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '^testnets/.*/chain\.json$|^mainnets/.*/chain\.json$' || true)
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Setup Node.js
+        if: steps.changed.outputs.files != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        if: steps.changed.outputs.files != ''
+        run: npm install firebase-admin axios
+
+      - name: Set env vars & service account JSON
+        if: steps.changed.outputs.files != ''
+        run: |
+          if [[ "${{ matrix.env }}" == "staging" ]]; then
+            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY_STAGING }}" >> $GITHUB_ENV
+            echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING }}' >> sa.json
+            ENV_SUFFIX=".staging"
+          else
+            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY_PROD }}" >> $GITHUB_ENV
+            echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROD }}' >> sa.json
+            ENV_SUFFIX=""
+          fi
+          echo "BASE_URL=https://api.anvil.${{ matrix.region }}${ENV_SUFFIX}.initia.xyz" >> $GITHUB_ENV
+
+      - name: Deploy Privnode in ${{ matrix.region }}
+        if: steps.changed.outputs.files != ''
+        env:
+          FIREBASE_API_KEY: ${{ env.FIREBASE_API_KEY }}
+          BASE_URL: ${{ env.BASE_URL }}
+          REGION: ${{ matrix.region }}
+          ENV_NAME: ${{ matrix.env }}
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: node ./.github/workflows/utility/deploy_privnode.js
