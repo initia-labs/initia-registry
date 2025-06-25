@@ -1,0 +1,12 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "split",
+  "pretty_name": "Split Finance",
+  "category": "DeFi",
+  "l2": true,
+  "description": "",
+  "summary": "",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/culinaris.png",
+  "color": "#46BEFF",
+  "status": "testnet"
+}
