@@ -11,7 +11,7 @@ async function getFirebaseIdToken() {
         throw new Error('Failed to read service account file');
     }
 
-    const uid = "ci-user";
+    const uid = "registry-ci-user";
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
     });
