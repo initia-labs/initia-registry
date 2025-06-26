@@ -18,7 +18,6 @@ jobs:
     strategy:
       matrix:
         region: [ asia-southeast, europe-west ]
-        env: [ staging, prod ]
 
     steps:
       - name: Checkout code
@@ -44,26 +43,16 @@ jobs:
         if: steps.changed.outputs.files != ''
         run: npm install firebase-admin axios
 
-      - name: Set env vars & service account JSON
+      - name: Write service account JSON
         if: steps.changed.outputs.files != ''
         run: |
-          if [[ "${{ matrix.env }}" == "staging" ]]; then
-            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_ANVIL_API_KEY_STAGING }}" >> $GITHUB_ENV
-            echo '${{ secrets.FIREBASE_ANVIL_SERVICE_ACCOUNT_STAGING }}' >> sa.json
-            ENV_SUFFIX=".staging"
-          else
-            echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_ANVIL_API_KEY_PROD }}" >> $GITHUB_ENV
-            echo '${{ secrets.FIREBASE_ANVIL_SERVICE_ACCOUNT_PROD }}' >> sa.json
-            ENV_SUFFIX=""
-          fi
-          echo "BASE_URL=https://api.anvil.${{ matrix.region }}${ENV_SUFFIX}.initia.xyz" >> $GITHUB_ENV
+          echo '${{ secrets.FIREBASE_ANVIL_SERVICE_ACCOUNT }}' >> sa.json
 
       - name: Deploy Privnode in ${{ matrix.region }}
         if: steps.changed.outputs.files != ''
         env:
-          FIREBASE_API_KEY: ${{ env.FIREBASE_API_KEY }}
-          BASE_URL: ${{ env.BASE_URL }}
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_ANVIL_API_KEY }}
+          BASE_URL: "https://api.anvil.${{ matrix.region }}.initia.xyz"
           REGION: ${{ matrix.region }}
-          ENV_NAME: ${{ matrix.env }}
           CHANGED_FILES: ${{ steps.changed.outputs.files }}
         run: node ./.github/workflows/utility/deploy_privnode.js

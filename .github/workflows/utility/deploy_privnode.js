@@ -86,13 +86,12 @@ async function deployPrivnodes(idToken) {
             const p2pPeers = data.peer_infos || [];
             const trustedPeers = p2pPeers.map(p => p.split('@')[0]);
             const baseRegion = data.base_region || process.env.REGION;
-            const envSuffix = process.env.ENV_NAME === 'staging' ? '.staging' : '';
 
             const payload = {
                 image: { privnode: image },
                 privnode_config: {
                     replicas: 1,
-                    rpc_url: `https://sequencer-rpc-${chainId}.anvil.${baseRegion}${envSuffix}.initia.xyz`,
+                    rpc_url: `https://sequencer-rpc-${chainId}.anvil.${baseRegion}.initia.xyz`,
                     p2p_peers: p2pPeers,
                     trusted_peer_ids: trustedPeers,
                     state_sync: true,
@@ -100,13 +99,13 @@ async function deployPrivnodes(idToken) {
                 },
                 resources: {
                     privnode: {
-                        cpu: "2",
-                        memory: "2Gi"
+                        cpu: "8",
+                        memory: "32Gi"
                     }
                 },
                 storage: {
                     privnode: {
-                        requests: "20Gi"
+                        requests: "50Gi"
                     }
                 }
             };
