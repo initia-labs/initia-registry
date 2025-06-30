@@ -1,0 +1,1838 @@
+[
+  {
+    "name": "BFB",
+    "symbol": "BFB",
+    "display": "BFB",
+    "description": "In-game currency of Battle for Blockchain",
+    "denom_units": [
+      {
+        "denom": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a",
+        "exponent": 0
+      },
+      {
+        "denom": "BFB",
+        "exponent": 18
+      }
+    ],
+    "type_asset": "erc20",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
+    },
+    "keywords": [],
+    "chains": {
+      "bfb": {
+        "chain_name": "bfb",
+        "base": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a",
+        "address": "0x6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a"
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/A5376B6C69C98C5FA0C3834A5F74966DF98AEEA758BA35104A5BAF095FB49789",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "bfb",
+              "base_denom": "evm/6922eF1A57aA7F4475dc2E03604923faC4001661",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-60",
+              "path": "transfer/channel-60/evm/6922eF1A57aA7F4475dc2E03604923faC4001661"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Drop Staked INIT-USDC LPT",
+    "symbol": "deINIT",
+    "display": "deINIT",
+    "description": "Drop staked INIT-USDC LPT",
+    "denom_units": [
+      {
+        "denom": "ibc/2BFE577D4A154A360D7BEC8D5FECC433ACAE6EF44A460F2D36A61410D9ADE6ED",
+        "exponent": 0
+      },
+      {
+        "denom": "deINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/2BFE577D4A154A360D7BEC8D5FECC433ACAE6EF44A460F2D36A61410D9ADE6ED",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "neutron",
+              "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
+              "channel_id": "channel-6885"
+            },
+            "chain": {
+              "channel_id": "channel-37",
+              "path": "transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+            }
+          }
+        ]
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE"
+      }
+    }
+  },
+  {
+    "name": "Ethereum Native Token",
+    "symbol": "ETH",
+    "display": "ETH",
+    "description": "ETH token via LayerZero",
+    "denom_units": [
+      {
+        "denom": "ibc/39026A3BC5B3135CAC7FA5551C286A05E215FDA2C3C79195EB73F6699696F4FF",
+        "exponent": 0
+      },
+      {
+        "denom": "ETH",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "ethereum",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/39026A3BC5B3135CAC7FA5551C286A05E215FDA2C3C79195EB73F6699696F4FF",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
+        "traces": []
+      },
+      "yominet": {
+        "chain_name": "yominet",
+        "base": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+        "address": "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546"
+      }
+    }
+  },
+  {
+    "name": "Initia Native Token",
+    "symbol": "INIT",
+    "display": "INIT",
+    "description": "The native token of Initia",
+    "denom_units": [
+      {
+        "denom": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT",
+        "exponent": 18
+      }
+    ],
+    "type_asset": "erc20",
+    "coingecko_id": "initia",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "bfb": {
+        "chain_name": "bfb",
+        "base": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+        "address": "0x6ed1637781269560b204c27Cd42d95e057C4BE44"
+      },
+      "civitia": {
+        "chain_name": "civitia",
+        "base": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "12"
+            }
+          }
+        ]
+      },
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "16"
+            }
+          }
+        ]
+      },
+      "embr": {
+        "chain_name": "embr",
+        "base": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+        "address": "0x4f7566f67941283a30cf65de7b9c6fdf2c04FCA1"
+      },
+      "inertia": {
+        "chain_name": "inertia",
+        "base": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          }
+        ]
+      },
+      "ingnetwork": {
+        "chain_name": "ingnetwork",
+        "base": "evm/6ed1637781269560b204c27Cd42d95e057C4BE44",
+        "address": "0x6ed1637781269560b204c27Cd42d95e057C4BE44"
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "uinit"
+      },
+      "intergaze": {
+        "chain_name": "intergaze",
+        "base": "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "31"
+            }
+          }
+        ]
+      },
+      "moo": {
+        "chain_name": "moo",
+        "base": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50"
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+        "address": "0x4f7566f67941283a30cf65de7b9c6fdf2c04FCA1"
+      },
+      "rena": {
+        "chain_name": "rena",
+        "base": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "30"
+            }
+          }
+        ]
+      },
+      "yominet": {
+        "chain_name": "yominet",
+        "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+        "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96"
+      },
+      "zaar": {
+        "chain_name": "zaar",
+        "base": "evm/7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B",
+        "address": "0x7Fb2A94A13186E3C338f0DA9728B4835D86b1a7B"
+      }
+    }
+  },
+  {
+    "name": "INIT.bfb",
+    "symbol": "INIT.bfb",
+    "display": "INIT.bfb",
+    "description": "OP-IBC bridged INIT of Battle for Blockchain",
+    "denom_units": [
+      {
+        "denom": "ibc/D849A493141115109EE163DDB1046074EC094BCDF80DBCFFF8562BB144EC245D",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.bfb",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bfb.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/bfb.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/D849A493141115109EE163DDB1046074EC094BCDF80DBCFFF8562BB144EC245D",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "28"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "bfb",
+              "base_denom": "l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-60",
+              "path": "transfer/channel-60/l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.civitia",
+    "symbol": "INIT.civitia",
+    "display": "INIT.civitia",
+    "description": "OP-IBC bridged INIT of Civitia",
+    "denom_units": [
+      {
+        "denom": "ibc/9055D784E46926951D1FF95AA41245B291FA9AAFFAE5C9D0D515877F647D5226",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.civitia",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/9055D784E46926951D1FF95AA41245B291FA9AAFFAE5C9D0D515877F647D5226",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "12"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "civitia",
+              "base_denom": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-27",
+              "path": "transfer/channel-27/l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.echelon",
+    "symbol": "INIT.echelon",
+    "display": "INIT.echelon",
+    "description": "OP-IBC bridged INIT of Echelon",
+    "denom_units": [
+      {
+        "denom": "ibc/EE8CC845631408C84289BA2CA423DAD0B43E22E07524248F20DCB93D04FF9839",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.echelon",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/echelon.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/EE8CC845631408C84289BA2CA423DAD0B43E22E07524248F20DCB93D04FF9839",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "16"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "echelon",
+              "base_denom": "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-35",
+              "path": "transfer/channel-35/l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.embr",
+    "symbol": "INIT.embr",
+    "display": "INIT.embr",
+    "description": "OP-IBC bridged INIT of Embr.fun",
+    "denom_units": [
+      {
+        "denom": "ibc/DD8FC719EAD3D69D116D64281DD9AB03ECA90105204AD4F5BF87D23807FE8BF6",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.embr",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/embr.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/DD8FC719EAD3D69D116D64281DD9AB03ECA90105204AD4F5BF87D23807FE8BF6",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "29"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "embr",
+              "base_denom": "l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-62",
+              "path": "transfer/channel-62/l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.inertia",
+    "symbol": "INIT.inertia",
+    "display": "INIT.inertia",
+    "description": "OP-IBC bridged INIT of Inertia",
+    "denom_units": [
+      {
+        "denom": "ibc/AE001D9DB0EA8B0A892DEBF1E1FDC9E82C3F685E82B774009A21D5DA33C712C5",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.inertia",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/inertia.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/AE001D9DB0EA8B0A892DEBF1E1FDC9E82C3F685E82B774009A21D5DA33C712C5",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "inertia",
+              "base_denom": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-69",
+              "path": "transfer/channel-69/l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.ingnetwork",
+    "symbol": "INIT.ingnetwork",
+    "display": "INIT.ingnetwork",
+    "description": "OP-IBC bridged INIT of ING Network",
+    "denom_units": [
+      {
+        "denom": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.ingnetwork",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "27"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "ingnetwork",
+              "base_denom": "l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-58",
+              "path": "transfer/channel-58/l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.intergaze",
+    "symbol": "INIT.intergaze",
+    "display": "INIT.intergaze",
+    "description": "OP-IBC bridged INIT of Intergaze",
+    "denom_units": [
+      {
+        "denom": "ibc/F0B8D6CA62D884AA1DAB0DC07190A40B55CF50FBDFBB37BE84036BBBCC283836",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.intergaze",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/intergaze.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/F0B8D6CA62D884AA1DAB0DC07190A40B55CF50FBDFBB37BE84036BBBCC283836",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "31"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "intergaze",
+              "base_denom": "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-66",
+              "path": "transfer/channel-66/l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.rave",
+    "symbol": "INIT.rave",
+    "display": "INIT.rave",
+    "description": "OP-IBC bridged INIT of Rave",
+    "denom_units": [
+      {
+        "denom": "ibc/8AA222DB08C98AB83CD791EDFC4899079CD5AD2E300435184C6FC1F5CC77E3A7",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.rave",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/8AA222DB08C98AB83CD791EDFC4899079CD5AD2E300435184C6FC1F5CC77E3A7",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "17"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "rave",
+              "base_denom": "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-38",
+              "path": "transfer/channel-38/l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.rena",
+    "symbol": "INIT.rena",
+    "display": "INIT.rena",
+    "description": "OP-IBC bridged INIT of Rena",
+    "denom_units": [
+      {
+        "denom": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.rena",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "30"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "rena",
+              "base_denom": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-64",
+              "path": "transfer/channel-64/l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.yominet",
+    "symbol": "INIT.yominet",
+    "display": "INIT.yominet",
+    "description": "OP-IBC bridged INIT of Yominet",
+    "denom_units": [
+      {
+        "denom": "ibc/07FFEEEE36370551554531FF7189EB2D3353B187CB6CE715DA1291C3A4B4EAC2",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.yominet",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/yominet.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/07FFEEEE36370551554531FF7189EB2D3353B187CB6CE715DA1291C3A4B4EAC2",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "11"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "yominet",
+              "base_denom": "l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-25",
+              "path": "transfer/channel-25/l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "INIT.zaar",
+    "symbol": "INIT.zaar",
+    "display": "INIT.zaar",
+    "description": "OP-IBC bridged INIT of Zaar",
+    "denom_units": [
+      {
+        "denom": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT.zaar",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar.ibcopinit.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/zaar.ibcopinit.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/F558BFFC8F6DBCD97DE22D9AA814A6EB6580D04F82EA0C11806B5916BBC36EA5",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "uinit",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "15"
+            }
+          },
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "zaar",
+              "base_denom": "l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-33",
+              "path": "transfer/channel-33/l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "MilkyWay Native Token",
+    "symbol": "MILK",
+    "display": "MILK",
+    "description": "The native token of MilkyWay on Initia via IBC",
+    "denom_units": [
+      {
+        "denom": "ibc/991E01AB189A00585E4BBBE04D7B7C8654D16BF612C7B795F175679164114642",
+        "exponent": 0
+      },
+      {
+        "denom": "MILK",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "milkyway",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/MILK.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/991E01AB189A00585E4BBBE04D7B7C8654D16BF612C7B795F175679164114642",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "milkyway",
+              "base_denom": "umilk",
+              "channel_id": "channel-5"
+            },
+            "chain": {
+              "channel_id": "channel-80",
+              "path": "transfer/channel-80/umilk"
+            }
+          }
+        ]
+      },
+      "moo": {
+        "chain_name": "moo",
+        "base": "ibc/31DE4445E2BD6142E020EBDE6B1BD617C71B89F767E89D286919AC12AA3EF559",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/991E01AB189A00585E4BBBE04D7B7C8654D16BF612C7B795F175679164114642",
+              "channel_id": "channel-29"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-80/umilk"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "milkINIT",
+    "symbol": "milkINIT",
+    "display": "milkINIT",
+    "description": "MilkyWay's Liquid Staked INIT",
+    "denom_units": [
+      {
+        "denom": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
+        "exponent": 0
+      },
+      {
+        "denom": "milkINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+            }
+          }
+        ]
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+        "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15"
+      }
+    }
+  },
+  {
+    "name": "MilkyWay's INIT LST",
+    "symbol": "milkINIT",
+    "display": "milkINIT",
+    "description": "MilkyWay's Liquid Staked INIT",
+    "denom_units": [
+      {
+        "denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+        "exponent": 0
+      },
+      {
+        "denom": "milkINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "moo",
+              "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-29",
+              "path": "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+            }
+          }
+        ]
+      },
+      "moo": {
+        "chain_name": "moo",
+        "base": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+      }
+    }
+  },
+  {
+    "name": "milkTIA",
+    "symbol": "milkTIA",
+    "display": "milkTIA",
+    "description": "MilkyWay's Liquid Staked TIA",
+    "denom_units": [
+      {
+        "denom": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206",
+        "exponent": 0
+      },
+      {
+        "denom": "milkTIA",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "milkyway-staked-tia",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "osmosis",
+              "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+              "channel_id": "channel-102129"
+            },
+            "chain": {
+              "channel_id": "channel-71",
+              "path": "transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+            }
+          }
+        ]
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96"
+      }
+    }
+  },
+  {
+    "name": "nINIT",
+    "symbol": "nINIT",
+    "display": "nINIT",
+    "description": "The LST of INIT by Inertia",
+    "denom_units": [
+      {
+        "denom": "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
+        "exponent": 0
+      },
+      {
+        "denom": "nINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "inertia": {
+        "chain_name": "inertia",
+        "base": "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3"
+      }
+    }
+  },
+  {
+    "name": "omniINIT",
+    "symbol": "oINIT",
+    "display": "oINIT",
+    "description": "Minitswap staked INIT",
+    "denom_units": [
+      {
+        "denom": "uoinit",
+        "exponent": 0
+      },
+      {
+        "denom": "oINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "uoinit"
+      }
+    }
+  },
+  {
+    "name": "ONYX",
+    "symbol": "ONYX",
+    "display": "ONYX",
+    "description": "ONYX",
+    "denom_units": [
+      {
+        "denom": "ibc/74CDBCE5F520CD29B32692645382E168032121F7DC3B3FDC79B0D37FB4E0916D",
+        "exponent": 0
+      },
+      {
+        "denom": "ONYX",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/74CDBCE5F520CD29B32692645382E168032121F7DC3B3FDC79B0D37FB4E0916D",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "yominet",
+              "base_denom": "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
+              "channel_id": "channel-0"
+            },
+            "chain": {
+              "channel_id": "channel-25",
+              "path": "transfer/channel-25/evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0"
+            }
+          }
+        ]
+      },
+      "yominet": {
+        "chain_name": "yominet",
+        "base": "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
+        "address": "0x4BaDFb501Ab304fF11217C44702bb9E9732E7CF4"
+      }
+    }
+  },
+  {
+    "name": "sINIT",
+    "symbol": "sINIT",
+    "display": "sINIT",
+    "description": "The LST of INIT by Inertia",
+    "denom_units": [
+      {
+        "denom": "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
+        "exponent": 0
+      },
+      {
+        "denom": "sINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "inertia": {
+        "chain_name": "inertia",
+        "base": "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
+        "traces": [
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e"
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9"
+      }
+    }
+  },
+  {
+    "name": "Ethena Staked USD",
+    "symbol": "sUSDe",
+    "display": "sUSDe",
+    "description": "Ethena Staked USD",
+    "denom_units": [
+      {
+        "denom": "move/568c845ab36c54a0ea1e75cacfd6addadfa6c7241aa7774bb5263ef701f8f70e",
+        "exponent": 0
+      },
+      {
+        "denom": "sUSDe",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "ethena-staked-usde",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sUSDe.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sUSDe.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/568c845ab36c54a0ea1e75cacfd6addadfa6c7241aa7774bb5263ef701f8f70e",
+        "traces": []
+      }
+    }
+  },
+  {
+    "name": "sxINIT",
+    "symbol": "sxINIT",
+    "display": "sxINIT",
+    "description": "Cabal sxINIT",
+    "denom_units": [
+      {
+        "denom": "sxINIT",
+        "exponent": 6
+      },
+      {
+        "denom": "ibc/8CF7B9771291D1596B6A6A7F812BC043A5E1A903E6E6D4D41CE9C7486B338AC6",
+        "exponent": 0
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/8CF7B9771291D1596B6A6A7F812BC043A5E1A903E6E6D4D41CE9C7486B338AC6",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb"
+      }
+    }
+  },
+  {
+    "name": "Celestia Native Token",
+    "symbol": "TIA",
+    "display": "TIA",
+    "description": "The native token of Celestia on Initia via IBC",
+    "denom_units": [
+      {
+        "denom": "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E",
+        "exponent": 0
+      },
+      {
+        "denom": "TIA",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "celestia",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-10/utia"
+            }
+          }
+        ]
+      },
+      "inertia": {
+        "chain_name": "inertia",
+        "base": "l2/1f79a9647aca83c63014709b7d4a69dd0f017b87ce9adf7417a2e2aa1c49044f",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "celestia",
+              "base_denom": "utia",
+              "channel_id": "channel-78"
+            },
+            "chain": {
+              "channel_id": "channel-10",
+              "path": "transfer/channel-10/utia"
+            }
+          },
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "celestia",
+              "base_denom": "utia",
+              "channel_id": "channel-78"
+            },
+            "chain": {
+              "channel_id": "channel-10",
+              "path": "transfer/channel-10/utia"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Celestia TIA",
+    "symbol": "TIA",
+    "display": "TIA",
+    "description": "The native token of Celestia on Initia via IBC",
+    "denom_units": [
+      {
+        "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+        "exponent": 0
+      },
+      {
+        "denom": "TIA",
+        "exponent": 18
+      }
+    ],
+    "type_asset": "erc20",
+    "coingecko_id": "celestia",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+    },
+    "keywords": [],
+    "chains": {
+      "yominet": {
+        "chain_name": "yominet",
+        "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+        "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15"
+      }
+    }
+  },
+  {
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "display": "USDC",
+    "description": "USDC on Initia",
+    "denom_units": [
+      {
+        "denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE",
+        "exponent": 0
+      },
+      {
+        "denom": "USDC",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "usd-coin",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/transfer/channel-3/uusdc"
+            }
+          }
+        ]
+      },
+      "inertia": {
+        "chain_name": "inertia",
+        "base": "l2/93c226659c42299f98bdca46cf151a604a70be2e6391a61b67ae2311d556a46a",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "noble",
+              "base_denom": "uusdc",
+              "channel_id": "channel-129"
+            },
+            "chain": {
+              "channel_id": "channel-3",
+              "path": "transfer/channel-3/uusdc"
+            }
+          },
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "32"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "noble",
+              "base_denom": "uusdc",
+              "channel_id": "channel-129"
+            },
+            "chain": {
+              "channel_id": "channel-3",
+              "path": "transfer/channel-3/uusdc"
+            }
+          }
+        ]
+      },
+      "intergaze": {
+        "chain_name": "intergaze",
+        "base": "l2/db147f1ded7ffcc336f5f8d1eff83c4feb95fcfff5c84f1b9c135444b816e48e",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "noble",
+              "base_denom": "uusdc",
+              "channel_id": "channel-129"
+            },
+            "chain": {
+              "channel_id": "channel-3",
+              "path": "transfer/channel-3/uusdc"
+            }
+          },
+          {
+            "type": "op",
+            "counterparty": {
+              "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+              "chain_name": "initia"
+            },
+            "chain": {
+              "bridge_id": "31"
+            }
+          }
+        ]
+      },
+      "rave": {
+        "chain_name": "rave",
+        "base": "evm/4E5f559ff873D84834e4338950d4Bb05121f8EFc",
+        "address": "0x4E5f559ff873D84834e4338950d4Bb05121f8EFc"
+      },
+      "zaar": {
+        "chain_name": "zaar",
+        "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+        "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96"
+      }
+    }
+  },
+  {
+    "name": "Ethena USDe",
+    "symbol": "USDe",
+    "display": "USDe",
+    "description": "Ethena USDe",
+    "denom_units": [
+      {
+        "denom": "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294",
+        "exponent": 0
+      },
+      {
+        "denom": "USDe",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "ethena-usde",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDe.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/495824d57a4f31ca1c05af6c3fccdcb5c1681749ae49a0715797e1168eef3294"
+      }
+    }
+  },
+  {
+    "name": "Ether.Fi Wrapped eETH LRT",
+    "symbol": "WEETH",
+    "display": "WEETH",
+    "description": "Ether.Fi's Wrapped eETH LRT",
+    "denom_units": [
+      {
+        "denom": "ibc/BAF588B34262B74DEE24652CA2C78C1A2C14B3124381D3C4AB16902A86F759B0",
+        "exponent": 0
+      },
+      {
+        "denom": "WEETH",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "wrapped-eeth",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png"
+    },
+    "keywords": [],
+    "chains": {
+      "echelon": {
+        "chain_name": "echelon",
+        "base": "ibc/BAF588B34262B74DEE24652CA2C78C1A2C14B3124381D3C4AB16902A86F759B0",
+        "traces": [
+          {
+            "type": "ibc",
+            "counterparty": {
+              "chain_name": "initia",
+              "base_denom": "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
+              "channel_id": "channel-35"
+            },
+            "chain": {
+              "channel_id": "channel-0",
+              "path": "transfer/channel-0/move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7"
+            }
+          }
+        ]
+      },
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7"
+      }
+    }
+  },
+  {
+    "name": "xINIT",
+    "symbol": "xINIT",
+    "display": "xINIT",
+    "description": "Cabal xINIT",
+    "denom_units": [
+      {
+        "denom": "xINIT",
+        "exponent": 6
+      },
+      {
+        "denom": "move/979ee341ad65efb486ed1b68b060e6a97cdd6bec9014c62aa1fc3563933daa4a",
+        "exponent": 0
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/979ee341ad65efb486ed1b68b060e6a97cdd6bec9014c62aa1fc3563933daa4a"
+      }
+    }
+  }
+]
