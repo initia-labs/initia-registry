@@ -1,0 +1,64 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "split",
+  "pretty_name": "Split Finance",
+  "chain_id": "split-1",
+  "evm_chain_id": 3058650596999145,
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.0.7-rc.0",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.0/minievm_v1.0.7-rc.0_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.0/minievm_v1.0.7-rc.0_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.0/minievm_v1.0.7-rc.0_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.7-rc.0/minievm_v1.0.7-rc.0_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://node.split-fi.xyz/rpc/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://node.split-fi.xyz/rpc"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://api.split-fi.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "node.split-fi.xyz:443/grpc"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://node.split-fi.xyz/json"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://node.split-fi.xyz/ws"
+      }
+    ]
+  },
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 15000000000.0,
+        "low_gas_price": 15000000000.0,
+        "average_gas_price": 15000000000.0,
+        "high_gas_price": 40000000000.0
+      }
+    ]
+  }
+}
