@@ -94,7 +94,7 @@
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "tranfser/channel-0/channel-3/uusdc"
+            "path": "transfer/channel-0/transfer/channel-3/uusdc"
           }
         },
         {

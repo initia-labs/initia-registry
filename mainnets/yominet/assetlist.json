@@ -150,7 +150,7 @@
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "tranfser-channel-0/channel-10/utia"
+            "path": "transfer/channel-0/transfer/channel-10/utia"
           }
         },
         {
