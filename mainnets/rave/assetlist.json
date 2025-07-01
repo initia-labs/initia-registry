@@ -21,6 +21,29 @@
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "initia",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "17"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -49,6 +72,43 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "coingecko_id": "usd-coin",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "base_denom": "uusdc",
+            "channel_id": "channel-129"
+          },
+          "chain": {
+            "channel_id": "channel-3",
+            "path": "transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+            "channel_id": "channel-38"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "tranfser/channel-0/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
@@ -77,6 +137,43 @@
       "name": "milkINIT",
       "symbol": "milkINIT",
       "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "moo",
+            "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-29",
+            "path": "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
+            "channel_id": "channel-38"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkINIT.png"
@@ -105,6 +202,43 @@
       "name": "milkTIA",
       "symbol": "milkTIA",
       "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "osmosis",
+            "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+            "channel_id": "channel-102129"
+          },
+          "chain": {
+            "channel_id": "channel-71",
+            "path": "transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
+            "channel_id": "channel-38"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "tranfser/channel-0/transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
@@ -126,11 +260,35 @@
           "exponent": 18
         }
       ],
+      "address": "0x52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
       "base": "evm/52cc0C83EcE8C806a3482520b61BC4e933eF64b9",
       "display": "sINIT",
       "name": "sINIT",
       "symbol": "sINIT",
       "coingecko_id": "",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e"
+          },
+          "chain": {
+            "bridge_id": "17"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "l2/48809a59e7b6ace3bf181720a1426d143995441a3178dc1f1b9ec5e176bd422c"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
@@ -138,32 +296,6 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
-      }
-    },
-    {
-      "description": "MilkyWay's Liquid Staked TIA",
-      "denom_units": [
-        {
-          "denom": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-          "exponent": 0
-        },
-        {
-          "denom": "milkTIA",
-          "exponent": 18
-        }
-      ],
-      "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-      "display": "milkTIA",
-      "name": "milkTIA",
-      "symbol": "milkTIA",
-      "coingecko_id": "milkyway-staked-tia",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkTIA.png"
       }
     },
     {
@@ -178,11 +310,49 @@
           "exponent": 18
         }
       ],
+      "address": "0xAa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
       "base": "evm/Aa350de597Ac4eE3e0a165DBe0aab8154f5a1fbE",
       "display": "deINIT",
       "name": "Drop Staked INIT-USDC LPT",
       "symbol": "deINIT",
       "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "neutron",
+            "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
+            "channel_id": "channel-6885"
+          },
+          "chain": {
+            "channel_id": "channel-37",
+            "path": "transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "base_denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
+            "channel_id": "channel-38"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/deINIT.png"

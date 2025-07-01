@@ -61,6 +61,18 @@
         {
           "type": "ibc",
           "counterparty": {
+            "chain_name": "moo",
+            "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-29",
+            "path": "transfer/channel-29/factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
             "chain_name": "initia",
             "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
             "channel_id": "channel-35"
@@ -101,6 +113,18 @@
         {
           "type": "ibc",
           "counterparty": {
+            "chain_name": "noble",
+            "base_denom": "uusdc",
+            "channel_id": "channel-129"
+          },
+          "chain": {
+            "channel_id": "channel-3",
+            "path": "transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
             "chain_name": "initia",
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
             "channel_id": "channel-35"
@@ -138,6 +162,18 @@
       "symbol": "TIA",
       "coingecko_id": "celestia",
       "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "celestia",
+            "base_denom": "utia",
+            "channel_id": "channel-78"
+          },
+          "chain": {
+            "channel_id": "channel-10",
+            "path": "transfer/channel-10/utia"
+          }
+        },
         {
           "type": "ibc",
           "counterparty": {
@@ -261,6 +297,18 @@
         {
           "type": "ibc",
           "counterparty": {
+            "chain_name": "osmosis",
+            "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
+            "channel_id": "channel-102129"
+          },
+          "chain": {
+            "channel_id": "channel-71",
+            "path": "transfer/channel-71/factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
             "chain_name": "initia",
             "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
             "channel_id": "channel-35"
@@ -298,6 +346,18 @@
       "symbol": "deINIT",
       "coingecko_id": "",
       "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "neutron",
+            "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
+            "channel_id": "channel-6885"
+          },
+          "chain": {
+            "channel_id": "channel-37",
+            "path": "transfer/channel-37/factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+          }
+        },
         {
           "type": "ibc",
           "counterparty": {
