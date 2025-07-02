@@ -1,0 +1,320 @@
+[
+  {
+    "name": "Fake ETH Token",
+    "symbol": "ETH",
+    "display": "ETH",
+    "description": "The fake ETH",
+    "denom_units": [
+      {
+        "denom": "ueth",
+        "exponent": 0
+      },
+      {
+        "denom": "ETH",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ueth"
+      }
+    }
+  },
+  {
+    "name": "ETH-INIT LP Token",
+    "symbol": "ETH-INIT LP",
+    "display": "ETH-INIT LP",
+    "description": "The LP token of ETH-INIT",
+    "denom_units": [
+      {
+        "denom": "move/a2b0d3c8e53e379ede31f3a361ff02716d50ec53c6b65b8c48a81d5b06548200",
+        "exponent": 0
+      },
+      {
+        "denom": "ETH-INIT LP",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH-INIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH-INIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/a2b0d3c8e53e379ede31f3a361ff02716d50ec53c6b65b8c48a81d5b06548200"
+      }
+    }
+  },
+  {
+    "name": "Initia Native Token",
+    "symbol": "INIT",
+    "display": "INIT",
+    "description": "The native token of Initia",
+    "denom_units": [
+      {
+        "denom": "uinit",
+        "exponent": 0
+      },
+      {
+        "denom": "INIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      },
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/images/INIT.png"
+      },
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/INIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "uinit"
+      },
+      "stonemove": {
+        "chain_name": "stonemove",
+        "base": "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd"
+      },
+      "stonewasm": {
+        "chain_name": "stonewasm",
+        "base": "l2/2588fd87a8e081f6a557f43ff14f05dddf5e34cb27afcefd6eaf81f1daea30d0"
+      }
+    }
+  },
+  {
+    "name": "Minimove IBC INIT",
+    "symbol": "minimoveINIT",
+    "display": "minimoveINIT",
+    "description": "Minimove IBC bridged INIT",
+    "denom_units": [
+      {
+        "denom": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802",
+        "exponent": 0
+      },
+      {
+        "denom": "minimoveINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimoveINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimoveINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "ibc/82EB1C694C571F954E68BFD68CFCFCD6123B0EBB69AAA8BAB7A082939B45E802"
+      }
+    }
+  },
+  {
+    "name": "minimoveINIT-INIT LP Token",
+    "symbol": "minimoveINIT-INIT LP",
+    "display": "minimoveINIT-INIT LP",
+    "description": "Minitswap Minimove IBC INIT Pool Token",
+    "denom_units": [
+      {
+        "denom": "move/e8ff49e574990e63682d93c2e804bc7249d672cc43bd66ee6c1ad2db2f49f933",
+        "exponent": 0
+      },
+      {
+        "denom": "minimoveINIT-INIT LP",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimoveINIT-INIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimoveINIT-INIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/e8ff49e574990e63682d93c2e804bc7249d672cc43bd66ee6c1ad2db2f49f933"
+      }
+    }
+  },
+  {
+    "name": "omniINIT",
+    "symbol": "oINIT",
+    "display": "oINIT",
+    "description": "Minitswap staked INIT",
+    "denom_units": [
+      {
+        "denom": "uoinit",
+        "exponent": 0
+      },
+      {
+        "denom": "oINIT",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/omniINIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "uoinit"
+      }
+    }
+  },
+  {
+    "name": "Fake USDC Token",
+    "symbol": "USDC",
+    "display": "USDC",
+    "description": "The fake USDC",
+    "denom_units": [
+      {
+        "denom": "uusdc",
+        "exponent": 0
+      },
+      {
+        "denom": "USDC",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "uusdc"
+      }
+    }
+  },
+  {
+    "name": "USDC",
+    "symbol": "USDC",
+    "display": "USDC",
+    "description": "The fake USDC",
+    "denom_units": [
+      {
+        "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
+        "exponent": 0
+      },
+      {
+        "denom": "USDC",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/images/USDC.png"
+      },
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonewasm/images/USDC.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/devnets/stonemove/images/USDC.png"
+    },
+    "keywords": [],
+    "chains": {
+      "stonemove": {
+        "chain_name": "stonemove",
+        "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
+      },
+      "stonewasm": {
+        "chain_name": "stonewasm",
+        "base": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
+      }
+    }
+  },
+  {
+    "name": "USDC-INIT LP Token",
+    "symbol": "USDC-INIT LP",
+    "display": "USDC-INIT LP",
+    "description": "The LP token of USDC-INIT",
+    "denom_units": [
+      {
+        "denom": "move/dbf06c48af3984ec6d9ae8a9aa7dbb0bb1e784aa9b8c4a5681af660cf8558d7d",
+        "exponent": 0
+      },
+      {
+        "denom": "USDC-INIT LP",
+        "exponent": 6
+      }
+    ],
+    "type_asset": "sdk.coin",
+    "coingecko_id": "",
+    "images": [
+      {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT.png"
+      }
+    ],
+    "logo_URIs": {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT.png"
+    },
+    "keywords": [],
+    "chains": {
+      "initia": {
+        "chain_name": "initia",
+        "base": "move/dbf06c48af3984ec6d9ae8a9aa7dbb0bb1e784aa9b8c4a5681af660cf8558d7d"
+      }
+    }
+  }
+]
