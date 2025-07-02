@@ -404,6 +404,17 @@
       "coingecko_id": "",
       "traces": [
         {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "bfb",
+            "base_denom": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        },
+        {
           "type": "ibc",
           "counterparty": {
             "chain_name": "bfb",
@@ -443,6 +454,17 @@
       "symbol": "ONYX",
       "coingecko_id": "",
       "traces": [
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "yominet",
+            "base_denom": "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        },
         {
           "type": "ibc",
           "counterparty": {

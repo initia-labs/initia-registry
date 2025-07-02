@@ -21,6 +21,29 @@
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "initia",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia"
+          },
+          "chain": {
+            "bridge_id": "28"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "bfb",
+            "base_denom": "l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
