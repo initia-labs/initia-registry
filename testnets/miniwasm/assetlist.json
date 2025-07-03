@@ -30,7 +30,7 @@
       ],
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": "",
+      "coingecko_id": "initia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -134,7 +134,7 @@
       "display": "ibcUSDC",
       "name": "IBC bridged USDC",
       "symbol": "ibcUSDC",
-      "coingecko_id": "",
+      "coingecko_id": "usd-coin",
       "traces": [
         {
           "type": "ibc",
@@ -174,7 +174,7 @@
       "display": "TIA",
       "name": "Fake TIA Token",
       "symbol": "TIA",
-      "coingecko_id": "",
+      "coingecko_id": "celestia",
       "traces": [
         {
           "type": "ibc",
