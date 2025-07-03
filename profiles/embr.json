@@ -10,23 +10,19 @@
   "color": "#F56E0F",
   "status": "live",
   "vip": {
-    "forum_url": "https://forum.initia.xyz/t/whitelist-embr-on-vip/112",
+    "forum_url": "https://forum.initia.xyz/t/epoch-5-embr-vip-update/",
     "actions": [
       {
-        "title": "Create top tokens",
-        "description": "Create meme with high trading volume for VIP."
-      },
-      {
         "title": "Enter the Chains of Chaos",
-        "description": "Use memes as collateral in Chains of Chaos for VIP."
+        "description": "Compete in Chains of Chaos. M-F, 15:00 UTC."
       },
       {
-        "title": "Rack up Embr points",
-        "description": "Trade to grow your Embr point stash for VIP."
+        "title": "Create the winning Chains of Chaos memes",
+        "description": "Ten rounds, ten winners. Make the winning meme, win VIP."
       },
       {
-        "title": "Keep your capy level",
-        "description": "Maintain your level for VIP"
+        "title": "Trade the winning Chains of Chaos memes",
+        "description": "Trade the winning memes, earn VIP."
       }
     ]
   },  "social": {
