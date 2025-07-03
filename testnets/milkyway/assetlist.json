@@ -78,7 +78,7 @@
       ],
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": "",
+      "coingecko_id": "initia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -104,7 +104,7 @@
       "display": "USDC",
       "name": "USDC",
       "symbol": "USDC",
-      "coingecko_id": "",
+      "coingecko_id": "usd-coin",
       "traces": [
         {
           "type": "ibc",

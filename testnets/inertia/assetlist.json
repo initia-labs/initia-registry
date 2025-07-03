@@ -30,7 +30,7 @@
       ],
       "name": "Initia Native Token",
       "symbol": "INIT",
-      "coingecko_id": "",
+      "coingecko_id": "initia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -68,7 +68,7 @@
       ],
       "name": "Fake USDC Token",
       "symbol": "USDC",
-      "coingecko_id": "",
+      "coingecko_id": "usd-coin",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
@@ -106,7 +106,7 @@
       ],
       "name": "Fake TIA Token",
       "symbol": "TIA",
-      "coingecko_id": "",
+      "coingecko_id": "celestia",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
@@ -144,7 +144,7 @@
       ],
       "name": "Fake ETH Token",
       "symbol": "ETH",
-      "coingecko_id": "",
+      "coingecko_id": "ethereum",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
