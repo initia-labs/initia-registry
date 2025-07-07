@@ -63,6 +63,9 @@ export const AssetListSchema = z
                           .describe(
                             "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
                           ),
+                        chain_id: z
+                          .string()
+                          .describe("The chain id of the counterparty chain."),
                         base_denom: z
                           .string()
                           .describe(
@@ -103,6 +106,9 @@ export const AssetListSchema = z
                           .describe(
                             "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
                           ),
+                        chain_id: z
+                          .string()
+                          .describe("The chain id of the counterparty chain."),
                         base_denom: z
                           .string()
                           .describe(
@@ -160,6 +166,9 @@ export const AssetListSchema = z
                           .describe(
                             "The chain or platform from which the asset originates. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'"
                           ),
+                        chain_id: z
+                          .string()
+                          .describe("The chain id of the counterparty chain."),
                         base_denom: z.string(),
                         contract: z
                           .string()
@@ -196,6 +205,9 @@ export const AssetListSchema = z
                           .describe(
                             "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
                           ),
+                        chain_id: z
+                          .string()
+                          .describe("The chain id of the counterparty chain."),
                         base_denom: z
                           .string()
                           .describe(
