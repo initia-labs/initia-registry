@@ -21,7 +21,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"
@@ -59,7 +60,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uusdc",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"
@@ -97,7 +99,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "utia",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"
@@ -135,7 +138,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "ueth",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"
@@ -173,7 +177,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"
@@ -211,7 +216,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1171"

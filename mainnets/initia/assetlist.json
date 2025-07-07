@@ -50,6 +50,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "noble",
+            "chain_id": "noble-1",
             "base_denom": "uusdc",
             "channel_id": "channel-129"
           },
@@ -90,6 +91,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "osmosis",
+            "chain_id": "osmosis-1",
             "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
             "channel_id": "channel-102129"
           },
@@ -130,6 +132,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "moo",
+            "chain_id": "moo-1",
             "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
             "channel_id": "channel-0"
           },
@@ -170,6 +173,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "celestia",
+            "chain_id": "celestia",
             "base_denom": "utia",
             "channel_id": "channel-78"
           },
@@ -341,6 +345,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "neutron",
+            "chain_id": "neutron-1",
             "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
             "channel_id": "channel-6885"
           },
@@ -407,6 +412,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "bfb",
+            "chain_id": "bfb-1",
             "base_denom": "evm/6f7Ff6916Ea4ab0159a469388C6bD6C17b40041a"
           },
           "chain": {
@@ -418,6 +424,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "bfb",
+            "chain_id": "bfb-1",
             "base_denom": "evm/6922eF1A57aA7F4475dc2E03604923faC4001661",
             "channel_id": "channel-0"
           },
@@ -458,6 +465,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "yominet",
+            "chain_id": "yominet-1",
             "base_denom": "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4"
           },
           "chain": {
@@ -469,6 +477,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "yominet",
+            "chain_id": "yominet-1",
             "base_denom": "evm/44CFAaB1cF49996540A6B6A87d1f0a604267E6b0",
             "channel_id": "channel-0"
           },
@@ -535,7 +544,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "28"
@@ -545,6 +555,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "bfb",
+            "chain_id": "bfb-1",
             "base_denom": "l2/5d3ed5b0870d4c8d8715a1bf92d8e99b8e49fbc1c0a29a0572485c7ff783b23b",
             "channel_id": "channel-0"
           },
@@ -584,7 +595,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "12"
@@ -594,6 +606,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "civitia",
+            "chain_id": "civitia-1",
             "base_denom": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
             "channel_id": "channel-0"
           },
@@ -633,7 +646,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "16"
@@ -643,6 +657,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "echelon",
+            "chain_id": "echelon-1",
             "base_denom": "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
             "channel_id": "channel-0"
           },
@@ -682,7 +697,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "29"
@@ -692,6 +708,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "embr",
+            "chain_id": "embrmainnet-1",
             "base_denom": "l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3",
             "channel_id": "channel-0"
           },
@@ -731,7 +748,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "27"
@@ -741,6 +759,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "ingnetwork",
+            "chain_id": "ingnetwork-1",
             "base_denom": "l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009",
             "channel_id": "channel-0"
           },
@@ -780,7 +799,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"
@@ -790,6 +810,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "inertia",
+            "chain_id": "inertia-2",
             "base_denom": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
             "channel_id": "channel-0"
           },
@@ -829,7 +850,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "31"
@@ -839,6 +861,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "intergaze",
+            "chain_id": "intergaze-1",
             "base_denom": "l2/fb936ffef4eb4019d82941992cc09ae2788ce7197fcb08cb00c4fe6f5e79184e",
             "channel_id": "channel-0"
           },
@@ -878,7 +901,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "17"
@@ -888,6 +912,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea",
             "channel_id": "channel-0"
           },
@@ -927,7 +952,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "30"
@@ -937,6 +963,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "rena",
+            "chain_id": "rena-nuwa-1",
             "base_denom": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
             "channel_id": "channel-0"
           },
@@ -976,7 +1003,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "11"
@@ -986,6 +1014,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "yominet",
+            "chain_id": "yominet-1",
             "base_denom": "l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06",
             "channel_id": "channel-0"
           },
@@ -1025,7 +1054,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "15"
@@ -1035,6 +1065,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "zaar",
+            "chain_id": "zaar-mainnet-1",
             "base_denom": "l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b",
             "channel_id": "channel-0"
           },
@@ -1127,6 +1158,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "milkyway",
+            "chain_id": "milkyway",
             "base_denom": "umilk",
             "channel_id": "channel-5"
           },

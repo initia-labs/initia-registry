@@ -372,7 +372,7 @@ main().catch((error) => {
 | `assets[].name`          | `string`                 | Yes           | The human-readable name of the asset (e.g., “Initia Native Token”).                                                                                                                                                                 |
 | `assets[].symbol`        | `string`                 | Yes           | The short symbol for the asset (e.g., `INIT`, `USDC`, “ONYX”).                                                                                                                                                                      |
 | `assets[].coingecko_id`  | `string`                 | Optional      | Reference ID for CoinGecko, if the asset is or will be listed.                                                                                                                                                                      |
-| `assets[].traces`        | `object[]`               | Optional      | IBC or OP bridging info. Contains nested fields like `type` (`ibc`, `op`), a `counterparty` object (chain_name, base_denom, channel_id), and a `chain` object (channel_id, path, bridge_id).                                       |
+| `assets[].traces`        | `object[]`               | Optional      | IBC or OP bridging info. Contains nested fields like `type` (`ibc`, `op`), a `counterparty` object (chain_name, chain_id, base_denom, channel_id), and a `chain` object (channel_id, path, bridge_id).                                       |
 | `assets[].images`        | `object[]`               | Optional      | Array of image objects with links to PNG for the asset’s logo.                                                                                                                                                                 |
 | `assets[].images[].png`  | `string (URL)`           | Optional      | PNG logo URL.                                                                                                                                                                                                                       |
 | `assets[].logo_URIs`     | `object`                 | Optional      | Simplified or alternative object containing the `png` fields for direct image references.      
@@ -433,6 +433,7 @@ An example assetlist json contains the following structure:
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "uusdc",
             "channel_id": "channel-1629"
           },
@@ -470,7 +471,8 @@ An example assetlist json contains the following structure:
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "80"

@@ -21,7 +21,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "16"
@@ -62,6 +63,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "moo",
+            "chain_id": "moo-1",
             "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
             "channel_id": "channel-0"
           },
@@ -74,6 +76,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
             "channel_id": "channel-35"
           },
@@ -114,6 +117,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "noble",
+            "chain_id": "noble-1",
             "base_denom": "uusdc",
             "channel_id": "channel-129"
           },
@@ -126,6 +130,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
             "channel_id": "channel-35"
           },
@@ -166,6 +171,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "celestia",
+            "chain_id": "celestia",
             "base_denom": "utia",
             "channel_id": "channel-78"
           },
@@ -178,6 +184,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
             "channel_id": "channel-35"
           },
@@ -218,6 +225,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "move/edfcddacac79ab86737a1e9e65805066d8be286a37cb94f4884b892b0e39f954",
             "channel_id": "channel-35"
           },
@@ -258,6 +266,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
             "channel_id": "channel-35"
           },
@@ -298,6 +307,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "osmosis",
+            "chain_id": "osmosis-1",
             "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
             "channel_id": "channel-102129"
           },
@@ -310,6 +320,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
             "channel_id": "channel-35"
           },
@@ -350,6 +361,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "neutron",
+            "chain_id": "neutron-1",
             "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
             "channel_id": "channel-6885"
           },
@@ -362,6 +374,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
             "channel_id": "channel-35"
           },
@@ -402,6 +415,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "move/08e72bfc8d55d9705e4cea82ddb68ad84e5b7a16ec4ef4bb0d3c95bf729569fb",
             "channel_id": "channel-35"
           },

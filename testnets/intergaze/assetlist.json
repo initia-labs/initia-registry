@@ -47,6 +47,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "uinit",
             "channel_id": "channel-1585"
           },

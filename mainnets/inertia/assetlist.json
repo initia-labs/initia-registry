@@ -32,7 +32,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"
@@ -62,6 +63,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "celestia",
+            "chain_id": "celestia",
             "base_denom": "utia",
             "channel_id": "channel-78"
           },
@@ -74,7 +76,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"
@@ -112,6 +115,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "noble",
+            "chain_id": "noble-1",
             "base_denom": "uusdc",
             "channel_id": "channel-129"
           },
@@ -124,7 +128,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"
@@ -159,7 +164,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"
@@ -197,7 +203,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "32"

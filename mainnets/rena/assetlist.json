@@ -21,7 +21,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "30"

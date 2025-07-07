@@ -69,7 +69,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "822"
@@ -110,6 +111,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "uusdc",
             "channel_id": "channel-0"
           },

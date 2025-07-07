@@ -26,7 +26,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "17"
@@ -36,6 +37,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "l2/ffea49d63cbadcfd749b4f635eca198b2f3b44cb1f6b580f5d201d58f3bf7aea"
           },
           "chain": {
@@ -77,6 +79,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "noble",
+            "chain_id": "noble-1",
             "base_denom": "uusdc",
             "channel_id": "channel-129"
           },
@@ -89,6 +92,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
             "channel_id": "channel-38"
           },
@@ -101,6 +105,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
           },
           "chain": {
@@ -142,6 +147,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "moo",
+            "chain_id": "moo-1",
             "base_denom": "factory/init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj/umilkINIT",
             "channel_id": "channel-0"
           },
@@ -154,6 +160,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/39B55F22F15FB09189045A993817CDF0D388D3FF8773B2E22B6DE7B222636EEA",
             "channel_id": "channel-38"
           },
@@ -166,6 +173,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "ibc/D1FAD67CE0EF5A303EDC29F3730BF904B77817F4B8A515ABC3AD0FA21B6AA180"
           },
           "chain": {
@@ -207,6 +215,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "osmosis",
+            "chain_id": "osmosis-1",
             "base_denom": "factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA",
             "channel_id": "channel-102129"
           },
@@ -219,6 +228,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/297A4DE88667929480EBE6659B264C5683838CF313C61FE889F6B8D8DC6E071D",
             "channel_id": "channel-38"
           },
@@ -231,6 +241,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "ibc/405E48C8163CB9AB41A00CAEA19BB8D33D5C5818D3F3CCF3B1967C3A06D17206"
           },
           "chain": {
@@ -271,7 +282,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "17"
@@ -281,6 +293,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "l2/48809a59e7b6ace3bf181720a1426d143995441a3178dc1f1b9ec5e176bd422c"
           },
           "chain": {
@@ -321,6 +334,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "neutron",
+            "chain_id": "neutron-1",
             "base_denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit",
             "channel_id": "channel-6885"
           },
@@ -333,6 +347,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/6190D58F741F1313A7B8F07E34E5603B03C1CC4490F54474986BC97A55EADE92",
             "channel_id": "channel-38"
           },
@@ -345,6 +360,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "rave",
+            "chain_id": "rave-1",
             "base_denom": "ibc/2BFE577D4A154A360D7BEC8D5FECC433ACAE6EF44A460F2D36A61410D9ADE6ED"
           },
           "chain": {

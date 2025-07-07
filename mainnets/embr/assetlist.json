@@ -26,7 +26,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "29"
@@ -36,6 +37,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "embr",
+            "chain_id": "embrmainnet-1",
             "base_denom": "l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3"
           },
           "chain": {

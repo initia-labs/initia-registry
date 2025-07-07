@@ -26,7 +26,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "15"
@@ -36,6 +37,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "zaar",
+            "chain_id": "zaar-mainnet-1",
             "base_denom": "l2/a36904f28371e1718a83a0e6df4bb3db33decaacfca67aa702b3a66f2c89d61b"
           },
           "chain": {
@@ -77,6 +79,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "noble",
+            "chain_id": "noble-1",
             "base_denom": "uusdc",
             "channel_id": "channel-129"
           },
@@ -89,6 +92,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
             "channel_id": "channel-33"
           },
@@ -101,6 +105,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "zaar",
+            "chain_id": "zaar-mainnet-1",
             "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
           },
           "chain": {
