@@ -24,6 +24,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "uinit",
             "channel_id": "channel-29"
           },
@@ -90,6 +91,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "milkyway",
+            "chain_id": "milkyway",
             "base_denom": "umilk",
             "channel_id": "channel-5"
           },
@@ -102,6 +104,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/991E01AB189A00585E4BBBE04D7B7C8654D16BF612C7B795F175679164114642",
             "channel_id": "channel-29"
           },

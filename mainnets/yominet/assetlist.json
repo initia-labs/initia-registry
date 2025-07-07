@@ -26,7 +26,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
           "chain": {
             "bridge_id": "11"
@@ -36,6 +37,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "yominet",
+            "chain_id": "yominet-1",
             "base_denom": "l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06"
           },
           "chain": {
@@ -133,6 +135,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "celestia",
+            "chain_id": "celestia",
             "base_denom": "utia",
             "channel_id": "channel-78"
           },
@@ -145,6 +148,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "interwoven-1",
             "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
             "channel_id": "channel-25"
           },
@@ -157,6 +161,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "yominet",
+            "chain_id": "yominet-1",
             "base_denom": "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E"
           },
           "chain": {

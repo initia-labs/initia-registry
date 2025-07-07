@@ -220,11 +220,15 @@
         },
         "counterparty": {
           "type": "object",
-          "required": ["chain_name", "base_denom", "channel_id"],
+          "required": ["chain_name", "chain_id", "base_denom", "channel_id"],
           "properties": {
             "chain_name": {
               "type": "string",
               "description": "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
+            },
+            "chain_id": {
+              "type": "string",
+              "description": "The chain id of the counterparty chain."
             },
             "base_denom": {
               "type": "string",
@@ -267,11 +271,21 @@
         },
         "counterparty": {
           "type": "object",
-          "required": ["chain_name", "base_denom", "port", "channel_id"],
+          "required": [
+            "chain_name",
+            "chain_id",
+            "base_denom",
+            "port",
+            "channel_id"
+          ],
           "properties": {
             "chain_name": {
               "type": "string",
               "description": "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
+            },
+            "chain_id": {
+              "type": "string",
+              "description": "The chain id of the counterparty chain."
             },
             "base_denom": {
               "type": "string",
@@ -322,11 +336,15 @@
         },
         "counterparty": {
           "type": "object",
-          "required": ["chain_name", "base_denom"],
+          "required": ["chain_name", "chain_id", "base_denom"],
           "properties": {
             "chain_name": {
               "type": "string",
               "description": "The name of the counterparty chain. (must match exactly the chain name used in the Chain Registry)"
+            },
+            "chain_id": {
+              "type": "string",
+              "description": "The chain id of the counterparty chain."
             },
             "base_denom": {
               "type": "string",
@@ -366,11 +384,15 @@
         },
         "counterparty": {
           "type": "object",
-          "required": ["chain_name", "base_denom"],
+          "required": ["chain_name", "chain_id", "base_denom"],
           "properties": {
             "chain_name": {
               "type": "string",
               "description": "The chain or platform from which the asset originates. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'"
+            },
+            "chain_id": {
+              "type": "string",
+              "description": "The chain id of the counterparty chain."
             },
             "base_denom": {
               "type": "string"

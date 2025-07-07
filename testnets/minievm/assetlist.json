@@ -23,7 +23,8 @@
           "type": "op",
           "counterparty": {
             "base_denom": "uinit",
-            "chain_name": "initia"
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
           },
           "chain": {
             "bridge_id": "1"
@@ -90,6 +91,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "ueth",
             "channel_id": "channel-0"
           },
@@ -132,6 +134,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "uusdc",
             "channel_id": "channel-0"
           },
@@ -174,6 +177,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "utia",
             "channel_id": "channel-0"
           },
@@ -216,6 +220,7 @@
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
+            "chain_id": "initiation-2",
             "base_denom": "move/7dfcccb8d69af29d585165531eae5c558061d3e3bded2a121be3ef5e189e6b01",
             "channel_id": "channel-0"
           },
