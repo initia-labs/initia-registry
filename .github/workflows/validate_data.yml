@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Fetch base and current commits
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,12 +31,13 @@ jobs:
       - name: Validate changes
         if: steps.changed.outputs.files != ''
         run: |
-          for file in ${{ steps.changed.outputs.files }}; do
+          while IFS= read -r file; do
             echo "Validating $file"
+            git show origin/${{ github.base_ref }}:$file > old.json || echo
             base_name=$(basename "$file")
             if [[ "$base_name" == "chain.json" ]]; then
-              node ./.github/workflowxs/utility/validaote_chain.js
+              node ./.github/workflows/utility/validate_chain.js "$file" old.json
             elif [[ "$base_name" == "assetlist.json" ]]; then
-              node ./.github/workflowxs/utility/validaote_assetlist.js
+              node ./.github/workflows/utility/validate_assetlist.js "$file" old.json
             fi
-          done
+          done <<< "${{ steps.changed.outputs.files }}"

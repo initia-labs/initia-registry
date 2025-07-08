@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { keccak_256 } = require('js-sha3');
+const { keccak256 } = require('ethers');
 
 const changedFile = process.argv[2];
 const baseFile = process.argv[3];
@@ -30,7 +30,7 @@ async function validate() {
             try {
               const parsed = JSON.parse(data);
               const chainId = parsed.default_node_info.network;
-              if (chainId !== newChainJson.chainId) {
+              if (chainId !== newChainJson.chain_id) {
                 throw new Error('Chain id mismatch');
               }
               resolve();
@@ -62,10 +62,8 @@ async function validate() {
     }
   }
 
-  for (const image of newChainJson.logo_URIs ?? []) {
-    if (image.png) {
-      validateRawGithubContent(image.png, true);
-    }
+  if (newChainJson.logo_URIs?.png) {
+    validateRawGithubContent(newChainJson.logo_URIs.png, true);
   }
 
   // Validate assetlist
@@ -76,37 +74,33 @@ async function validate() {
 
 function convertCosmosChainIDToEthereumChainID(chainID) {
   // Compute Keccak-256 hash
-  const hashHex = keccak_256(new TextEncoder().encode(chainID));
-  const first16Hex = hashHex.substring(0, 16);
+  const hashHex = keccak256(new TextEncoder().encode(chainID));
+  const first16Hex = hashHex.substring(0, 18);
 
   // Parse as BigInt (big-endian)
-  const bigIntValue = BigInt('0x' + first16Hex);
+  const bigIntValue = BigInt(first16Hex);
 
   // Modulo with Metamask Max
   const metamaskMax = BigInt(4503599627370476);
-  return bigIntValue % metamaskMax;
+  return Number(bigIntValue % metamaskMax);
 }
 
 function validateRawGithubContent(uri, isImage) {
-  prefix =
+  const prefix =
     'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
   // Check only if initia-registry main branch
-  if (!uri.startswith(prefix)) return;
+  if (!uri.startsWith(prefix)) return;
 
   // Get file path
-  const filePath = path.join([
-    __dirname,
-    '../../../',
-    uri.slice(prefix.length),
-  ]);
+  const filePath = path.join(__dirname, '../../../', uri.slice(prefix.length));
 
   if (!fs.existsSync(filePath)) {
     throw new Error(`File(${filePath}) doesn't exists`);
   }
 
-  // check imgae size
+  // check image size
   if (isImage) {
-    const sizeLimit = uri.endswith('.svg') ? 50 * 1024 : 100 * 1024;
+    const sizeLimit = uri.endsWith('.svg') ? 50 * 1024 : 100 * 1024;
     const stats = fs.statSync(filePath);
     if (stats.size > sizeLimit) {
       throw new Error(`image(${filePath}) size exceeds limit`);
