@@ -1,27 +1,42 @@
-on: [pull_request, workflow_dispatch]
-name: PR Workflow
+name: Validate Data
+on: [pull_request]
+
 jobs:
   jobname:
     name: Validate Data
     runs-on: ubuntu-latest
     steps:
-      - name: checkout the repo
-        uses: actions/checkout@v3 #Checks out the registry; sets up python
-
-      - name: Set up Python
-        uses: actions/setup-python@v3
+      - uses: actions/checkout@v4
         with:
-          python-version: 3.11.6
+          fetch-depth: 2 # Fetch base and current commits
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          cd .github/workflows/utility
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-      - name: Run Data Validation python script
-        shell: python
+      - name: Get changed files (chain.json / assetlist.json)
+        id: changed
         run: |
-          import sys
-          sys.path.insert(1, '.github/workflows/utility')
-          import validate_data
-          validate_data.checkChains()
+          files=$(git diff --name-only origin/${{ github.base_ref }} | while read file; do
+            case "$(basename "$file")" in
+              chain.json|assetlist.json) echo "$file";;
+            esac
+          done)
+          echo "files=$files" >> $GITHUB_OUTPUT
+
+      - name: Install dependencies
+        run: npm install js-sha3 ethers
+
+      - name: Validate changes
+        if: steps.changed.outputs.files != ''
+        run: |
+          for file in ${{ steps.changed.outputs.files }}; do
+            echo "Validating $file"
+            base_name=$(basename "$file")
+            if [[ "$base_name" == "chain.json" ]]; then
+              node ./.github/workflowxs/utility/validaote_chain.js
+            elif [[ "$base_name" == "assetlist.json" ]]; then
+              node ./.github/workflowxs/utility/validaote_assetlist.js
+            fi
+          done
