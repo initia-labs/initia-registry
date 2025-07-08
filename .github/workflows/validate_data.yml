@@ -33,7 +33,7 @@ jobs:
         run: |
           while IFS= read -r file; do
             echo "Validating $file"
-            git show origin/${{ github.base_ref }}:$file > old.json || echo
+            git show origin/${{ github.base_ref }}:$file > old.json 2>/dev/null || echo '{}' > old.json
             base_name=$(basename "$file")
             if [[ "$base_name" == "chain.json" ]]; then
               node ./.github/workflows/utility/validate_chain.js "$file" old.json

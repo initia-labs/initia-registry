@@ -3,6 +3,7 @@ const path = require('path');
 const https = require('https');
 const crypto = require('crypto');
 const { Interface, JsonRpcProvider } = require('ethers');
+const { validateRawGithubContent } = require('./validate_githubcontent');
 
 const changedFile = process.argv[2];
 const baseFile = process.argv[3];
@@ -27,13 +28,13 @@ async function validate() {
     if (asset.images) {
       asset.images.map((image) => {
         if (image.png) {
-          validateRawGithubContent(image.png);
+          validateRawGithubContent(image.png, true);
         }
       });
     }
 
     if (asset.logo_URIs?.png) {
-      validateRawGithubContent(asset.logo_URIs?.png);
+      validateRawGithubContent(asset.logo_URIs?.png, true);
     }
 
     // check base and display are in denom units
@@ -103,29 +104,6 @@ async function validate() {
       throw Error(
         `Trace result(${baseDenom}) is not match with base(${asset.base})`,
       );
-    }
-  }
-}
-
-function validateRawGithubContent(uri, isImage) {
-  const prefix =
-    'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
-  // Check only if initia-registry main branch
-  if (!uri.startsWith(prefix)) return;
-
-  // Get file path
-  const filePath = path.join(__dirname, '../../../', uri.slice(prefix.length));
-
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`File(${filePath}) doesn't exists`);
-  }
-
-  // check imgae size
-  if (isImage) {
-    const sizeLimit = uri.endsWith('.svg') ? 50 * 1024 : 100 * 1024;
-    const stats = fs.statSync(filePath);
-    if (stats.size > sizeLimit) {
-      throw new Error(`image(${filePath}) size exceeds limit`);
     }
   }
 }
