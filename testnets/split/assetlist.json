@@ -1,0 +1,28 @@
+{
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "split",
+    "assets": [
+      {
+        "description": "The gas token of split",
+        "denom_units": [
+          { "denom": "ugas", "exponent": 0 },
+          { "denom": "GAS",  "exponent": 18 }
+        ],
+        "type_asset": "erc20",
+        "address": "0x042adD9e80f7a23Ab71D5e1d392af1d3928B7D05",
+        "base": "ugas",
+        "display": "GAS",
+        "name": "Split Gas Token",
+        "symbol": "GAS",
+        "coingecko_id": "",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png"
+          }
+        ],
+        "logo_URIs": {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png"
+        }
+      }
+    ]
+  }

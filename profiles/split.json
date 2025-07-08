@@ -1,0 +1,12 @@
+{
+    "$schema": "../profile.schema.json",
+    "name": "split",
+    "pretty_name": "Split Finance",
+    "category": "DeFi",
+    "l2": true,
+    "description": "Strip yield from any supported asset and speculate on PT/YT using our purpose-built AMM",
+    "summary": "The yield stripping protocol",
+    "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/splitfi.png",
+    "color": "#46BEFF",
+    "status": "testnet"
+  }
