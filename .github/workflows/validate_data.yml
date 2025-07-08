@@ -33,10 +33,11 @@ jobs:
         run: |
           for file in ${{ steps.changed.outputs.files }}; do
             echo "Validating $file"
+            git show origin/${{ github.base_ref }}:$file > old.json || echo "
             base_name=$(basename "$file")
             if [[ "$base_name" == "chain.json" ]]; then
-              node ./.github/workflows/utility/validate_chain.js
+              node ./.github/workflows/utility/validate_chain.js "$file" old.json
             elif [[ "$base_name" == "assetlist.json" ]]; then
-              node ./.github/workflows/utility/validate_assetlist.js
+              node ./.github/workflows/utility/validate_assetlist.js" $file" old.json
             fi
           done
