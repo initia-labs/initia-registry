@@ -30,7 +30,7 @@ async function validate() {
             try {
               const parsed = JSON.parse(data);
               const chainId = parsed.default_node_info.network;
-              if (chainId !== newChainJson.chainId) {
+              if (chainId !== newChainJson.chain_id) {
                 throw new Error('Chain id mismatch');
               }
               resolve();
@@ -88,10 +88,10 @@ function convertCosmosChainIDToEthereumChainID(chainID) {
 }
 
 function validateRawGithubContent(uri, isImage) {
-  prefix =
+  const prefix =
     'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
   // Check only if initia-registry main branch
-  if (!uri.startswith(prefix)) return;
+  if (!uri.startsWith(prefix)) return;
 
   // Get file path
   const filePath = path.join([
@@ -104,9 +104,9 @@ function validateRawGithubContent(uri, isImage) {
     throw new Error(`File(${filePath}) doesn't exists`);
   }
 
-  // check imgae size
+  // check image size
   if (isImage) {
-    const sizeLimit = uri.endswith('.svg') ? 50 * 1024 : 100 * 1024;
+    const sizeLimit = uri.endsWith('.svg') ? 50 * 1024 : 100 * 1024;
     const stats = fs.statSync(filePath);
     if (stats.size > sizeLimit) {
       throw new Error(`image(${filePath}) size exceeds limit`);

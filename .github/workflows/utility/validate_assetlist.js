@@ -74,7 +74,8 @@ async function validate() {
 
       const type = trace.type;
       switch (type) {
-        case ('ibc', 'ibc-cw20'):
+        case 'ibc':
+        case 'ibc-cw20':
           baseDenom = ibcDenom(trace.chain.path);
           break;
         case 'op':
@@ -104,17 +105,13 @@ async function validate() {
 }
 
 function validateRawGithubContent(uri, isImage) {
-  prefix =
+  const prefix =
     'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
   // Check only if initia-registry main branch
-  if (!uri.startswith(prefix)) return;
+  if (!uri.startsWith(prefix)) return;
 
   // Get file path
-  const filePath = path.join([
-    __dirname,
-    '../../../',
-    uri.slice(prefix.length),
-  ]);
+  const filePath = path.join(__dirname, '../../../', uri.slice(prefix.length));
 
   if (!fs.existsSync(filePath)) {
     throw new Error(`File(${filePath}) doesn't exists`);
@@ -122,7 +119,7 @@ function validateRawGithubContent(uri, isImage) {
 
   // check imgae size
   if (isImage) {
-    const sizeLimit = uri.endswith('.svg') ? 50 * 1024 : 100 * 1024;
+    const sizeLimit = uri.endsWith('.svg') ? 50 * 1024 : 100 * 1024;
     const stats = fs.statSync(filePath);
     if (stats.size > sizeLimit) {
       throw new Error(`image(${filePath}) size exceeds limit`);
@@ -173,12 +170,12 @@ async function getWrappedDenom(
   counterpartyDenom,
 ) {
   // get rest and jsonrpc
-  const chainJsonPath = path.join([
+  const chainJsonPath = path.join(
     changedFile,
     '../',
     counterpartyChainName,
     'chain.json',
-  ]);
+  );
 
   const chainJson = JSON.parse(fs.readFileSync(chainJsonPath, 'utf8'));
 
@@ -191,7 +188,7 @@ async function getWrappedDenom(
     : await getErc20Contract(restUri, counterpartyDenom);
 
   // fetch remote or local addresss
-  const provider = JsonRpcProvider(jsonrpcUri);
+  const provider = new JsonRpcProvider(jsonrpcUri);
 
   // select function
   const func = counterpartyDenom.startsWith('evm/')
