@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 export function validateRawGithubContent(uri, isImage) {
   const prefix =
     'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
