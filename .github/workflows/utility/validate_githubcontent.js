@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-export function validateRawGithubContent(uri, isImage) {
+function validateRawGithubContent(uri, isImage) {
   const prefix =
     'https://raw.githubusercontent.com/initia-labs/initia-registry/main/';
   // Check only if initia-registry main branch
@@ -23,3 +23,5 @@ export function validateRawGithubContent(uri, isImage) {
     }
   }
 }
+
+module.exports = { validateRawGithubContent };

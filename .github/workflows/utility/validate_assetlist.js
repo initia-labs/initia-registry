@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 const crypto = require('crypto');
 const { Interface, JsonRpcProvider } = require('ethers');
 const { validateRawGithubContent } = require('./validate_githubcontent');
@@ -12,100 +11,45 @@ const oldAssetlistJson = JSON.parse(fs.readFileSync(baseFile, 'utf8'));
 const newAssetlistJson = JSON.parse(fs.readFileSync(changedFile, 'utf8'));
 const folderName = path.basename(path.dirname(changedFile));
 
-async function validate() {
-  // Validate folder name
-  if (newAssetlistJson.chain_name !== folderName) {
-    throw new Error('Chain name must be same with folder name');
+// denom computations
+
+async function computeNextDenom(baseDenom, trace) {
+  const counterpartyDenom = trace.counterparty.base_denom;
+
+  // base denom before is not matched with counterparty base denom
+  if (baseDenom !== '' && baseDenom !== counterpartyDenom) {
+    throw new Error(
+      `Trace mislinked, base denom before(${baseDenom}), counterparty base denom(${counterpartyDenom})`,
+    );
   }
 
-  const oldAssets = oldAssetlistJson.assets ?? [];
-
-  for (const asset of newAssetlistJson.assets) {
-    const base = asset.base;
-    const before = oldAssets.find((asset) => asset.base === base);
-
-    // validate images
-    if (asset.images) {
-      asset.images.map((image) => {
-        if (image.png) {
-          validateRawGithubContent(image.png, true);
-        }
-      });
-    }
-
-    if (asset.logo_URIs?.png) {
-      validateRawGithubContent(asset.logo_URIs?.png, true);
-    }
-
-    // check base and display are in denom units
-    if (
-      asset.denom_units.find((denomUnit) => denomUnit.denom === asset.base) ===
-      undefined
-    ) {
-      throw Error('`base` is not in `denom_units`');
-    }
-
-    if (
-      asset.denom_units.find(
-        (denomUnit) => denomUnit.denom === asset.display,
-      ) === undefined
-    ) {
-      throw Error('`display` is not in `denom_units`');
-    }
-
-    // if trace doesn't exists skip validation
-    if (asset.traces === undefined || asset.traces.length === 0) continue;
-    // if trace doesn't change, skip validation
-    if (
-      before &&
-      JSON.stringify(before.traces) === JSON.stringify(asset.traces)
-    )
-      continue;
-
-    console.log(`Validating Traces (${asset.base})`);
-    let baseDenom = asset.traces[0].counterparty.base_denom;
-    console.log(baseDenom);
-    for (const trace of asset.traces) {
-      const counterpartyDenom = trace.counterparty.base_denom;
-
-      // base denom before is not matched with counterparty base denom
-      if (baseDenom !== '' && baseDenom !== counterpartyDenom) {
-        throw new Error(
-          `Trace mislinked, base denom before(${baseDenom}), counterparty base denom(${counterpartyDenom})`,
-        );
-      }
-
-      const type = trace.type;
-      switch (type) {
-        case 'ibc':
-        case 'ibc-cw20':
-          baseDenom = ibcDenom(trace.chain.path);
-          break;
-        case 'op':
-          baseDenom = opdenom(BigInt(trace.chain.bridge_id), counterpartyDenom);
-          break;
-        case 'wrapped':
-          // only handle deciaml wrapper
-          if (trace.provider !== 'Decimal Wrapper') break;
-          baseDenom = await getWrappedDenom(
-            trace.chain.contract,
-            trace.counterparty.chain_name,
-            counterpartyDenom,
-          );
-          break;
-        default: // unknown trace
-          baseDenom = '';
-      }
-      console.log(baseDenom);
-    }
-
-    // check the trace result
-    if (baseDenom !== '' && asset.base !== baseDenom) {
-      throw Error(
-        `Trace result(${baseDenom}) is not match with base(${asset.base})`,
+  const type = trace.type;
+  switch (type) {
+    case 'ibc':
+    case 'ibc-cw20':
+      baseDenom = computeIbcDenom(trace.chain.path);
+      break;
+    case 'op':
+      baseDenom = computeOpDenom(
+        BigInt(trace.chain.bridge_id),
+        counterpartyDenom,
       );
-    }
+      break;
+    case 'wrapped':
+      // only handle deciaml wrapper
+      if (trace.provider !== 'Decimal Wrapper') break;
+      baseDenom = await getWrappedDenom(
+        trace.chain.contract,
+        trace.counterparty.chain_name,
+        counterpartyDenom,
+      );
+      break;
+    default: // unknown trace
+      baseDenom = '';
   }
+  console.log(baseDenom);
+
+  return baseDenom;
 }
 
 function sha2_256(input) {
@@ -113,11 +57,21 @@ function sha2_256(input) {
 }
 
 // return ibc bridged denom
-function ibcDenom(fullTrace) {
+function computeIbcDenom(fullTrace) {
   const hex = sha2_256(new TextEncoder().encode(fullTrace))
     .toString('hex')
     .toUpperCase();
   return `ibc/${hex}`;
+}
+
+// return op bridged denom
+function computeOpDenom(id, l1Denom) {
+  const hash = crypto.createHash('SHA3-256');
+
+  const sum = hash
+    .update(Buffer.from([...u64BE(id), ...Buffer.from(l1Denom)]))
+    .digest('hex');
+  return `l2/${sum}`;
 }
 
 // return u64 big endian
@@ -135,16 +89,7 @@ function be(num) {
   return num ? be(num >> 8n).concat([Number(num % 256n)]) : [];
 }
 
-// return op bridged denom
-function opdenom(id, l1Denom) {
-  const hash = crypto.createHash('SHA3-256');
-
-  const sum = hash
-    .update(Buffer.from([...u64BE(id), ...Buffer.from(l1Denom)]))
-    .digest('hex');
-  return `l2/${sum}`;
-}
-
+// decimal wrapper resolver
 async function getWrappedDenom(
   wrapperContract,
   counterpartyChainName,
@@ -198,50 +143,105 @@ async function getWrappedDenom(
   return getDenom(restUri, tokenAddr);
 }
 
-async function getErc20Contract(restUri, denom) {
-  return new Promise((resolve, reject) => {
-    const req = https.request(
-      new URL(`/minievm/evm/v1/contracts/by_denom?denom=${denom}`, restUri),
-      (res) => {
-        let data = '';
-        res.on('data', (chunk) => (data += chunk));
-        res.on('end', () => {
-          try {
-            const parsed = JSON.parse(data);
-            resolve(parsed.address);
-          } catch (error) {
-            reject(error);
-          }
-        });
-      },
-    );
+// minievm queries
 
-    req.on('error', reject);
-    req.end();
-  });
+// get erc20 contract address from denom
+async function getErc20Contract(restUri, denom) {
+  const res = await fetch(
+    new URL(`/minievm/evm/v1/contracts/by_denom?denom=${denom}`, restUri),
+  );
+  const data = await res.json();
+  return data.address;
 }
 
+// get denom from erc20 contrace address
 async function getDenom(restUri, contractAddr) {
-  return new Promise((resolve, reject) => {
-    const req = https.request(
-      new URL(`/minievm/evm/v1/denoms/${contractAddr}`, restUri),
-      (res) => {
-        let data = '';
-        res.on('data', (chunk) => (data += chunk));
-        res.on('end', () => {
-          try {
-            const parsed = JSON.parse(data);
-            resolve(parsed.denom);
-          } catch (error) {
-            reject(error);
-          }
-        });
-      },
-    );
+  const res = await fetch(
+    new URL(`/minievm/evm/v1/denoms/${contractAddr}`, restUri),
+  );
+  const data = await res.json();
+  return data.denom;
+}
 
-    req.on('error', reject);
-    req.end();
-  });
+// validate functions
+
+async function validateTraces(asset, before) {
+  // if trace doesn't exists skip validation
+  if (asset.traces === undefined || asset.traces.length === 0) return;
+  // if trace doesn't change, skip validation
+  if (
+    before &&
+    JSON.stringify(before.traces) === JSON.stringify(asset.traces)
+  ) {
+    return;
+  }
+
+  console.log(`Validating Traces (${asset.base})`);
+  let baseDenom = asset.traces[0].counterparty.base_denom;
+  console.log(baseDenom);
+
+  for (const trace of asset.traces) {
+    baseDenom = await computeNextDenom(baseDenom, trace);
+  }
+
+  // check the trace result
+  if (baseDenom !== '' && asset.base !== baseDenom) {
+    throw Error(
+      `Trace result(${baseDenom}) is not match with base(${asset.base})`,
+    );
+  }
+}
+
+function validateImages(asset) {
+  if (asset.images) {
+    asset.images.forEach((image) => {
+      if (image.png) {
+        validateRawGithubContent(image.png, true);
+      }
+    });
+  }
+
+  if (asset.logo_URIs?.png) {
+    validateRawGithubContent(asset.logo_URIs?.png, true);
+  }
+}
+
+function validateDenomUnits(asset) {
+  if (
+    asset.denom_units.find((denomUnit) => denomUnit.denom === asset.base) ===
+    undefined
+  ) {
+    throw Error('`base` is not in `denom_units`');
+  }
+
+  if (
+    asset.denom_units.find((denomUnit) => denomUnit.denom === asset.display) ===
+    undefined
+  ) {
+    throw Error('`display` is not in `denom_units`');
+  }
+}
+
+async function validate() {
+  // Validate folder name
+  if (newAssetlistJson.chain_name !== folderName) {
+    throw new Error('Chain name must be same with folder name');
+  }
+
+  const oldAssets = oldAssetlistJson.assets ?? [];
+
+  for (const asset of newAssetlistJson.assets) {
+    // validate images
+    validateImages(asset);
+
+    // check base and display are in denom units
+    validateDenomUnits(asset);
+
+    // validate traces
+    const base = asset.base;
+    const before = oldAssets.find((asset) => asset.base === base);
+    await validateTraces(asset, before);
+  }
 }
 
 validate();

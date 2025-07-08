@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 const { keccak256 } = require('ethers');
 const { validateRawGithubContent } = require('./validate_githubcontent');
 
@@ -21,30 +20,14 @@ async function validate() {
 
   // Validate Chain id
   if (newChainJson.chain_id !== oldChainJson.chain_id) {
-    await new Promise((resolve, reject) => {
-      const req = https.request(
-        new URL('/cosmos/base/tendermint/v1beta1/node_info', restUri),
-        (res) => {
-          let data = '';
-          res.on('data', (chunk) => (data += chunk));
-          res.on('end', () => {
-            try {
-              const parsed = JSON.parse(data);
-              const chainId = parsed.default_node_info.network;
-              if (chainId !== newChainJson.chain_id) {
-                throw new Error('Chain id mismatch');
-              }
-              resolve();
-            } catch (error) {
-              reject(error);
-            }
-          });
-        },
-      );
-
-      req.on('error', reject);
-      req.end();
-    });
+    const res = await fetch(
+      new URL('/cosmos/base/tendermint/v1beta1/node_info', restUri),
+    );
+    const data = await res.json();
+    const chainId = data.default_node_info.network;
+    if (chainId !== newChainJson.chain_id) {
+      throw new Error('Chain id mismatch');
+    }
   }
 
   // Validate EVM chain id
