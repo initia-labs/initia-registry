@@ -32,7 +32,7 @@
       "description": "USDC on Initia",
       "denom_units": [
         {
-          "denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+          "denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF3",
           "exponent": 0
         },
         {
@@ -40,7 +40,7 @@
           "exponent": 6
         }
       ],
-      "base": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+      "base": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF3",
       "display": "USDC",
       "name": "USD Coin",
       "symbol": "USDC",
