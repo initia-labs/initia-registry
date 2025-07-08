@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Fetch base and current commits
+          fetch-depth: 3 # Fetch base and current commits
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
