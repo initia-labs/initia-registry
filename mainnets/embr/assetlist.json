@@ -94,7 +94,7 @@
             "chain_name": "initia",
             "chain_id": "interwoven-1",
             "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
-            "channel_id": "channel-1779"
+            "channel_id": "channel-62"
           },
           "chain": {
             "channel_id": "channel-0",
