@@ -11,11 +11,11 @@
   "color": "#b387eb",
   "status": "live",
   "vip": {
-    "forum_url": "https://forum.initia.xyz/t/whitelist-infinity-ground-on-vip/65",
+    "forum_url": "https://forum.initia.xyz/t/epoch-7-infinity-ground-vip-update/334",
     "actions": [
       {
-        "title": "Onchain Play",
-        "description": "Measured by how many times the user pays the $INIT entry fee to play."
+        "title": "Leaderboard Rank",
+        "description": "Measured by the user's overall ranking across all games in Infinity Ground Arcade."
       }
     ]
   },
