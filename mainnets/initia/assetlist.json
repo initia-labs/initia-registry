@@ -539,6 +539,7 @@
       "display": "INIT.bfb",
       "name": "INIT.bfb",
       "symbol": "INIT.bfb",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -590,6 +591,7 @@
       "display": "INIT.civitia",
       "name": "INIT.civitia",
       "symbol": "INIT.civitia",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -641,6 +643,7 @@
       "display": "INIT.echelon",
       "name": "INIT.echelon",
       "symbol": "INIT.echelon",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -692,6 +695,7 @@
       "display": "INIT.embr",
       "name": "INIT.embr",
       "symbol": "INIT.embr",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -743,6 +747,7 @@
       "display": "INIT.ingnetwork",
       "name": "INIT.ingnetwork",
       "symbol": "INIT.ingnetwork",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -794,6 +799,7 @@
       "display": "INIT.inertia",
       "name": "INIT.inertia",
       "symbol": "INIT.inertia",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -845,6 +851,7 @@
       "display": "INIT.intergaze",
       "name": "INIT.intergaze",
       "symbol": "INIT.intergaze",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -896,6 +903,7 @@
       "display": "INIT.rave",
       "name": "INIT.rave",
       "symbol": "INIT.rave",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -947,6 +955,7 @@
       "display": "INIT.rena",
       "name": "INIT.rena",
       "symbol": "INIT.rena",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -998,6 +1007,7 @@
       "display": "INIT.yominet",
       "name": "INIT.yominet",
       "symbol": "INIT.yominet",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
@@ -1049,6 +1059,7 @@
       "display": "INIT.zaar",
       "name": "INIT.zaar",
       "symbol": "INIT.zaar",
+      "coingecko_id": "initia",
       "traces": [
         {
           "type": "op",
