@@ -4,7 +4,7 @@
   "pretty_name": "Drop",
   "category": "DeFi",
   "l2": false,
-  "description": "Drop is a liquid staking protocol for the Interchain, backed by Lido & deployed as an Integrated App on Neutron. Drop enables secure, trust-minimized staking with dAssets across the modular ecosystem.",
+  "description": "A liquid staking protocol for the Interchain that enables secure, trust-minimized staking with dAssets across the modular ecosystem.",
   "summary": "Lido-backed liquid staking for the Interchain",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/drop.png",
   "color": "#6039FF",
