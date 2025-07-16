@@ -1,0 +1,94 @@
+{
+  "$schema": "../../error.schema.json",
+  "chain_name": "initia",
+  "module_address": "0x3a886b32a802582f2e446e74d4a24d1d7ed01adf46d2a8f65c5723887e708789",
+  "errors": {
+    "lock_staking": {
+      "65543": "Staking account doesn't have enough balance",
+      "65544": "Release time less than former release timestamp or does not met minimum lock period",
+      "65547": "Not enough delegation",
+      "65548": "Can not lock more thatn maximum lock period",
+      "65550": "Zero amount",
+      "65551": "Minimum lock period must be smaller than Maximum lock period",
+      "65552": "Arguments length mismatch",
+      "196617": "Delegation not relaesed",
+      "196618": "Can not re-enter",
+      "196621": "Exceeded max slot",
+      "327681": "Unauthorized",
+      "393218": "Delegation not found",
+      "720900": "Delegation creation height mismatch",
+      "720901": "Lock staking only support single coin interface",
+      "720902": "Denom mismatch",
+      "852224": "Deprecated"
+    },
+    "operator": {
+      "65539": "Commission rate change exceeds the allowed maximum change rate(`commission_max_change_rate`)",
+      "65540": "Commission rate exceeds the maximum allowed rate(`commission_max_rate`)",
+      "65541": "Commission rate can be updated once per a stage",
+      "65542": "Commission rate can not exceed 1(100%)",
+      "327687": "Unauthorized",
+      "393218": "Operator store not found",
+      "524289": "Operator store already exists"
+    },
+    "tvl_manager": {
+      "393217": "TVL data not found"
+    },
+    "utils": {
+      "327681": "Unauthorized"
+    },
+    "vault": {
+      "65537": "Can not deposit zero amounts",
+      "65538": "Reward per zero is not initialized",
+      "196610": "Can not update reward per stage to 0"
+    },
+    "vesting": {
+      "65540": "Can not withdraw more than remaining",
+      "65541": "Invalid vesting type",
+      "393219": "Vesting not found",
+      "393222": "Vesting not found in given stage",
+      "524289": "Vesting store already exists",
+      "524290": "Vesting already claimed"
+    },
+    "vip": {
+      "65546": "Merkle proof verification failed",
+      "65547": "Invalid merkle proof length",
+      "65548": "Vesting period can not be 0",
+      "65550": "Ratio must be less than or equal to 1(100%)",
+      "65552": "Can not claim this stage before claiming the previous one",
+      "65553": "Batch arguments length mismatch",
+      "65555": "Weight must be less than or equal to 1(100%)",
+      "65556": "Stage order must be sequencial",
+      "65560": "Stage interval can not be 0",
+      "65561": "Snapshot stage must be less than current stage",
+      "65566": "Can not lock stake zero amount",
+      "65567": "Lock staking period cannot be 0 or the release time does not meet the minimum lock period requirement.",
+      "65568": "Invalid lock staking pool",
+      "196635": "Can not fund reward before the stage end",
+      "196636": "Vesting already finalized",
+      "327681": "Unauthorized",
+      "327701": "Can not claim before the challenge period end",
+      "327702": "Can not execute challenge after challenge period end",
+      "327703": "Can not challenge for past stages",
+      "393220": "Stage data not found",
+      "393221": "Bridge is not registered",
+      "393222": "Snapshot not found",
+      "393224": "Previoud stage's snapshot not found",
+      "393225": "Funded reward not found",
+      "524291": "Snapshot already exists",
+      "786465": "Claime reward before lock staking",
+      "851970": "Bridge already reigstered",
+      "851975": "Bridge is not registered",
+      "851994": "Invalid VM type",
+      "852002": "TVL is less than eligible TVL"
+    },
+    "weight_vote": {
+      "65542": "Invalid parameter",
+      "65543": "Invalid bridge",
+      "196611": "Voting ended",
+      "327682": "Unauthorized",
+      "393226": "Cycle not found",
+      "524289": "Module store already exists",
+      "851976": "Invalid voting power"
+    }
+  }
+}

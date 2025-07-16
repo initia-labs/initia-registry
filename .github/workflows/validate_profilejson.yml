@@ -1,7 +1,7 @@
 on: [pull_request, workflow_dispatch]
 name: PR workflow
 jobs:
-  validate_chainjson:
+  validate_profilejson:
     name: Validate edited profile.json
     runs-on: ubuntu-latest
     steps:
