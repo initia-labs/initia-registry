@@ -31,7 +31,8 @@
     },
     "description": {
       "type": "string",
-      "description": "A longer description for the landing page"
+      "description": "A longer description for the landing page",
+      "maxLength": 140
     },
     "summary": {
       "type": "string",
