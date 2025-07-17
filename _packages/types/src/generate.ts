@@ -7,12 +7,14 @@ const schemata: Record<string, string> = {
   assetlist: "AssetList",
   chain: "Chain",
   profile: "Profile",
+  error: "Error",
 };
 
 const schemaTitle: Record<string, string> = {
   assetlist: "AssetLists",
   chain: "CosmosChain",
   profile: "Profile",
+  error: "Error",
 };
 
 async function main() {

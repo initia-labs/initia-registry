@@ -1,0 +1,352 @@
+{
+  "$schema": "../error.schema.json",
+  "module_address": "0x1",
+  "errors": {
+    "account": {
+      "65636": "Unknown account type",
+      "65637": "Unable to parse address",
+      "393317": "Account not found",
+      "524388": "Account already exists"
+    },
+    "account_abstraction": {
+      "65539": "Authenticator function signature mismatch",
+      "196613": "Inconsistent signer address, account does not match with signer data",
+      "327684": "Not a master signer",
+      "327690": "Unauthorized, need chain permission",
+      "393217": "Dispatchable authenticator is not used",
+      "393218": "Authenticator function info not found",
+      "393223": "Derivable AA not initialized",
+      "524290": "Authenticator function already exists"
+    },
+    "auth_data": {
+      "65537": "Not regular auth data",
+      "65538": "Not derivable auth data"
+    },
+    "address": {
+      "65636": "Invalid bech32 address"
+    },
+    "any": {
+      "65537": "Type name mismatch"
+    },
+    "base64": {
+      "65636": "Unable to decode"
+    },
+    "bcs_stream": {
+      "65537": "Malformed data",
+      "131074": "Out of bytes"
+    },
+    "bech32": {
+      "65636": "Unable to encode address",
+      "65637": "Unable to decode address",
+      "65638": "Invalid bech32 prefix",
+      "65639": "Invalid bech32 address"
+    },
+    "big_ordered_map": {
+      "65537": "Key already exists",
+      "65538": "Key not found",
+      "65539": "Iter out of bounds",
+      "65547": "Invalid config parameter",
+      "65548": "Map not empty",
+      "65549": "Argument bytes too large",
+      "65550": "Iterator borrow mut requires constant kv size",
+      "196628": "Internal invariant broken"
+    },
+    "bigdecimal": {
+      "65636": "Negative result",
+      "65637": "Division by zero"
+    },
+    "biguint": {
+      "65636": "Negative result",
+      "65637": "Division by zero",
+      "65638": "Cast overflow",
+      "65639": "Invalid numeric type"
+    },
+    "code": {
+      "65537": "Can not upgrade immutable package",
+      "65538": "Cannot downgrade a package's upgradability policy",
+      "65539": "Upgrade policy is not specified",
+      "65541": "The operation is expected to be executed by chain signer",
+      "65542": "The module ID is duplicated",
+      "65546": "A dependency cannot have a weaker upgrade policy",
+      "65636": "Already requested",
+      "65637": "Invalid upgrade policy",
+      "327684": "The operation is expected to be executed by chain signer",
+      "327687": "Not the owner of the package registry",
+      "393224": "Code object does not exist",
+      "393225": "Dependency could not be resolved to any published package"
+    },
+    "coin": {
+      "327681": "Only chain signer can execute sudo functions"
+    },
+    "timestamp": {
+      "65538": "Invalid timestamp"
+    },
+    "copyable_any": {
+      "65536": "Type name mismatch"
+    },
+    "cosmos": {
+      "65537": "Invalid callback id",
+      "65538": "Invalid callback fid"
+    },
+    "dex": {
+      "65538": "Can not withdraw zero liquidity",
+      "65542": "Base must be in the range of 0 < base < 2",
+      "65544": "Fee rate must be smaller than max fee rate (5%)",
+      "65545": "Weight end timestamp must be larger than start timestamp",
+      "65546": "Wrong coin type given",
+      "65547": "Exceed max price impact",
+      "65552": "LBP is not started, can not swap yet",
+      "65555": "Cannot create pair with the same coin type",
+      "65556": "Zero amount in the swap simulation is not allowed",
+      "65559": "Failed to repay flash swap",
+      "196610": "Can not do single asset provide to empty pool",
+      "196611": "Return amount is smaller than the `min_return`",
+      "196612": "Return liquidity amount is smaller than the `min_liquidity_amount`",
+      "196613": "Returning coin amount of the result of the liquidity withdraw is smaller than min return",
+      "196622": "LBP is not started, can not swap yet",
+      "196623": "LBP is not ended, only swap allowed",
+      "196630": "Pool is locked by flash swap",
+      "327687": "Only chain signer can execute"
+    },
+    "event": {
+      "65537": "Unable to emit event delayed field"
+    },
+    "dispatchable_fungible_asset": {
+      "393217": "`TransferRefStore` doesn't exist on the fungible asset type",
+      "458754": "Recipient is not getting the guaranteed value"
+    },
+    "fungible_asset": {
+      "65538": "The transfer ref and the fungible asset do not match.",
+      "65540": "Insufficient balance to withdraw or transfer",
+      "65542": "Fungible asset do not match when merging",
+      "65545": "Transfer ref and store do not match",
+      "65546": "Burn ref and store do not match",
+      "65547": "Fungible asset and store do not match",
+      "65548": "Cannot destroy non-empty fungible assets",
+      "65549": "Burn ref and fungible asset do not match",
+      "65554": "Fungibility is only available for non-deletable objects",
+      "65561": "Provided withdraw function type doesn't meet the signature requirement",
+      "65562": "Provided deposit function type doesn't meet the signature requirement",
+      "65563": "Provided derived_balance function type doesn't meet the signature requirement",
+      "65564": "This token has a dispatchable function hook, Need to invoke dispatchable function",
+      "65569": "Provided derived_supply function type doesn't meet the signature requirement",
+      "65627": "Module account store cannot be manipulated",
+      "65628": "Deposit to a blocked account is not allowed",
+      "131077": "The fungible asset's supply has exceeded maximum",
+      "131087": "Name of the fungible asset metadata is too long",
+      "131088": "Symbol of the fungible asset metadata is too long",
+      "131089": "Decimals is over the maximum of 32",
+      "131091": "URI for the icon of the fungible asset metadata is too long",
+      "196628": "The fungible asset's supply will be negative which should be impossible",
+      "327683": "Can not deposit to or withdraw from frozen fungible asset store",
+      "327688": "Account is not the store's owner",
+      "327694": "Cannot destroy fungible stores with a non-zero balance",
+      "393237": "Supply resource is not found for a metadata object",
+      "393239": "Fungible store not found",
+      "393246": "Not a fungible asset",
+      "524317": "Already registered"
+    },
+    "from_bcs": {
+      "1": "Invalid utf8",
+      "65636": "Failed to deserialize bcs bytes"
+    },
+    "hex": {
+      "65537": "Not a hex string"
+    },
+    "json": {
+      "65539": "Unable to marshal, delayed field",
+      "65540": "Unable to unmarshal, delayed field",
+      "65541": "Unable to marshal, serialization error",
+      "65542": "Unable to unmarshal, deserialization error"
+    },
+    "managed_coin": {
+      "327682": "Only chain signer can execute sudo functions",
+      "393217": "Metadata has no capabilities (burn/mint)",
+      "393218": "Account is not a owner of metadata object"
+    },
+    "minitswap": {
+      "65538": "Pool not found",
+      "65539": "Only INIT can be deposited",
+      "65542": "Not a share token",
+      "65544": "Exceeed max change rate",
+      "65546": "Pool size can not be zero",
+      "65548": "Invalid VM type",
+      "65552": "Given metadtaa is not match with computed metadata",
+      "65553": "Min arb profit must be larger than trigger fee",
+      "196612": "Can not finalize in-house arb, not enough balance",
+      "196613": "Pool inactive",
+      "196615": "Ibc op init price too low",
+      "196617": "Return amount is less than minimum return amount",
+      "196622": "Emergency state",
+      "196623": "Can not claim, release time not reached",
+      "327681": "Unauthorized",
+      "524306": "Virtual pool already exists",
+      "851987": "Deprecated"
+    },
+    "multisig": {
+      "65537": "Threshold must less than or equal to member length",
+      "65545": "Proposal not found",
+      "196611": "Old config version",
+      "196612": "Proposal already executed",
+      "196613": "Proposal expired",
+      "196616": "Proposal did not pass",
+      "327682": "Not a multisig member"
+    },
+    "multisig_v2": {
+      "65537": "Threshold must less than or equal to member total weight",
+      "65542": "Proposal not found",
+      "65543": "Length of tiers must be same with length of tier_weights",
+      "65544": "Length of memebers must be same with length of member_tiers",
+      "65545": "Invalid member tier, unknown tier",
+      "65548": "Message length mismatch",
+      "131083": "Multisig name too long",
+      "196611": "Proposal already executed",
+      "196612": "Proposal expired",
+      "196613": "Proposal did not pass",
+      "327682": "Not a multisig member"
+    },
+    "object": {
+      "131078": "Maximum nesting",
+      "327683": "No ungated transfers",
+      "327684": "Not object owner",
+      "327685": "Cannot delete",
+      "327689": "Version mismatch",
+      "393218": "Object does not exist",
+      "393223": "Resource does not exist",
+      "524289": "Object already exists"
+    },
+    "object_code_deployment": {
+      "327682": "Not code object owner",
+      "393219": "Code object does not exist"
+    },
+    "ordered_map": {
+      "65537": "Key already exists",
+      "65538": "Key not found",
+      "65539": "Iter out of bounds",
+      "65540": "New key not in order"
+    },
+    "permissioned_signer": {
+      "327681": "Not master signer",
+      "327682": "Cannot authorize",
+      "327685": "Permission expired",
+      "327687": "Permission revoked",
+      "327688": "Not active",
+      "327689": "Permission signer disabled"
+    },
+    "query": {
+      "65636": "Unable to parse string",
+      "65646": "Unknown query"
+    },
+    "simple_map": {
+      "65537": "Key already exists",
+      "65538": "Key not found"
+    },
+    "stableswap": {
+      "65538": "Can not withdraw zero liquidity",
+      "65544": "Fee rate must be smaller than max fee rate",
+      "65546": "Wrong coin type given",
+      "65555": "Can not create with same coins",
+      "65556": "Coin type must be less than max n coins",
+      "196610": "Can not withdraw zero liquidity",
+      "196611": "Return amount is smaller than the `min_return`",
+      "196612": "Return liquidity amount is smaller than the `min_liquidity_amount`",
+      "196613": "Returning coin amount of the result of the liquidity withdraw is smaller than min return",
+      "196629": "Burn liquidity amount is larger than `max_liquidity`",
+      "327687": "Unauthorized"
+    },
+    "staking": {
+      "65541": "Metadata mismatch",
+      "65543": "Not empty",
+      "65544": "Validator mismatch",
+      "65545": "`release_time` of the `source_unbonding` must be sooner than or equal to the one of `dst_unbonding`",
+      "65547": "Insufficient amount or share",
+      "65550": "Both `start_after_validator` and `start_after_release_time` either given or not given",
+      "65551": "Length mismatch",
+      "65553": "Invalid slash fraction",
+      "196614": "Insufficient unbonding delegation total share",
+      "196618": "Can not claim before `release_time`",
+      "327683": "Only Chai can execute",
+      "393218": "Delegation store not exists",
+      "393220": "Staking state not exists",
+      "393228": "Unbonding not found",
+      "393229": "Delegation not found",
+      "524289": "Delegation store already exists",
+      "524304": "Staking state already exists"
+    },
+    "storage_slots_allocator": {
+      "65538": "Cannot have spares without reuse"
+    },
+    "string_utils": {
+      "1": "Args mismatch",
+      "2": "Invalid format",
+      "3": "Unable to format delayed field"
+    },
+    "table": {
+      "65636": "Already exists",
+      "65637": "Not found",
+      "196710": "Not empty"
+    },
+    "collection": {
+      "65542": "Max supply cannot be zero",
+      "65543": "Invalid collection name",
+      "131074": "Collection supply exceed max supply",
+      "131075": "Collection name too long",
+      "131076": "Uri too long",
+      "131077": "Description too long",
+      "393217": "Collection does not exist"
+    },
+    "initia_nft": {
+      "196614": "Can not burn",
+      "327683": "Only creator can execute",
+      "327684": "Field is not mutable",
+      "327685": "Only owner can execute",
+      "393217": "Collection does not exist",
+      "393218": "Nft does not exist"
+    },
+    "nft": {
+      "65544": "Query length too long",
+      "65545": "Invalid token id",
+      "131076": "Nft token id too long",
+      "131078": "Uri too long",
+      "131079": "Description too long",
+      "262154": "Only owner can execute",
+      "393217": "Nft does not exist"
+    },
+    "property_map": {
+      "65539": "Too many properties",
+      "65540": "Key value length mismatch",
+      "65541": "Key type length mismatch",
+      "65542": "Type mismatch",
+      "65543": "Type invalid",
+      "65544": "Property map key too long",
+      "393217": "Property map does not exist"
+    },
+    "royalty": {
+      "131074": "Royalty exceeds maximum",
+      "393217": "Royalty does not exist"
+    },
+    "simple_nft": {
+      "327683": "Only creator can execute",
+      "327684": "Only owner can execute",
+      "327685": "Properties is not mutable",
+      "393217": "Collection does not exist",
+      "393218": "Nft does not exist"
+    },
+    "soul_bound_token": {
+      "327683": "Only creator can execute",
+      "327684": "Field is not mutable",
+      "327685": "Properties is not mutable",
+      "393217": "Collection does not exist",
+      "393218": "Nft does not exist"
+    },
+    "transaction_context": {
+      "393216": "Transaction context not available"
+    },
+    "type_info": {
+      "65636": "Expected struct type tag"
+    },
+    "vector": {
+      "131072": "Index out of bounds"
+    }
+  }
+}

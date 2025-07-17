@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Error Schema",
+  "type": "object",
+  "required": ["errors", "module_address"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "pattern": "^(\\.\\./)+error\\.schema\\.json$"
+    },
+    "chain_name": {
+      "type": "string"
+    },
+    "module_address": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]+$"
+    },
+    "errors": {
+      "patternProperties": {
+        "^.*$": {
+          "type": "object",
+          "patternProperties": {
+            "^[0-9]+$": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

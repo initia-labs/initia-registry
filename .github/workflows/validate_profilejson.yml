@@ -1,12 +1,12 @@
 on: [pull_request, workflow_dispatch]
 name: PR workflow
 jobs:
-  validate_chainjson:
+  validate_profilejson:
     name: Validate edited profile.json
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install JSON-Schema-Validator
         run: npm install -g jsonschema

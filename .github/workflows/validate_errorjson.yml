@@ -1,8 +1,10 @@
 on: [pull_request, workflow_dispatch]
 name: PR workflow
+permissions:
+  contents: read
 jobs:
-  validate_chainjson:
-    name: Validate edited chains.json
+  validate_errorjson:
+    name: Validate edited error json
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -11,10 +13,10 @@ jobs:
       - name: Install JSON-Schema-Validator
         run: npm install -g jsonschema
 
-      - name: Validate Chain.json schema
+      - name: Validate error json schema
         run: |
-          for file in $(find . -name 'chain.json' | grep -v '_template/'); do
-            if ! jsonschema -i "$file" ./chain.schema.json; then
+          for file in $(find ./errors -name '*.json' 2>/dev/null || true); do
+            if ! jsonschema -i "$file" ./error.schema.json; then
               exit 1
             fi
           done

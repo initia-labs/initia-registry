@@ -1,0 +1,24 @@
+{
+  "$schema": "../../error.schema.json",
+  "chain_name": "initia",
+  "module_address": "0x72ed9b26ecdcd6a21d304df50f19abfdbe31d2c02f60c84627844620a45940ef",
+  "errors": {
+    "metadata": {
+      "65536": "Arguments length mismatch",
+      "196609": "Exceeded maximum number of records",
+      "393218": "Key not found"
+    },
+    "usernames": {
+      "65536": "Unauthorized",
+      "65538": "Exceed max expiration",
+      "65541": "Name is too short (below minimum length)",
+      "65542": "Name is too long (exceeds maximum length)",
+      "65543": "Name contains invalid characters",
+      "196617": "Username has expired",
+      "327688": "You are not the username owner",
+      "327689": "Username has expired",
+      "524289": "Module store already exists",
+      "524292": "Username already exists"
+    }
+  }
+}
