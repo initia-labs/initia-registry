@@ -22,8 +22,12 @@ jobs:
             case "$(basename "$file")" in
               chain.json|assetlist.json) echo "$file";;
             esac
-          done)
-          echo "files=$files" >> $GITHUB_OUTPUT
+          done)          
+          {
+            echo "files<<EOF"
+            echo "$files"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Install dependencies
         run: npm install js-sha3 ethers
