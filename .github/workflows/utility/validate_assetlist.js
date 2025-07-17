@@ -7,8 +7,6 @@ const { validateRawGithubContent } = require('./validate_githubcontent');
 const changedFile = process.argv[2];
 const baseFile = process.argv[3];
 
-const oldAssetlistJson = JSON.parse(fs.readFileSync(baseFile, 'utf8'));
-const newAssetlistJson = JSON.parse(fs.readFileSync(changedFile, 'utf8'));
 const folderName = path.basename(path.dirname(changedFile));
 
 // denom computations
@@ -223,6 +221,13 @@ function validateDenomUnits(asset) {
 }
 
 async function validate() {
+  // file deleted
+  if (!fs.existsSync(changedFile)) {
+    return;
+  }
+
+  const oldAssetlistJson = JSON.parse(fs.readFileSync(baseFile, 'utf8'));
+  const newAssetlistJson = JSON.parse(fs.readFileSync(changedFile, 'utf8'));
   // Validate folder name
   if (newAssetlistJson.chain_name !== folderName) {
     throw new Error('Chain name must be same with folder name');
