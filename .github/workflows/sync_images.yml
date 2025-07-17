@@ -1,5 +1,7 @@
 on: [workflow_dispatch]
 name: Sync Images
+permissions:
+  contents: read
 jobs:
   sync_images:
     name: Sync Images

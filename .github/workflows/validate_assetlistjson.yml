@@ -1,5 +1,7 @@
 on: [pull_request, workflow_dispatch]
 name: PR workflow
+permissions:
+  contents: read
 jobs:
   validate_chainjson:
     name: Validate edited assetlist.json
