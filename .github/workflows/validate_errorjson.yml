@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install JSON-Schema-Validator
         run: npm install -g jsonschema
 
       - name: Validate error json schema
         run: |
-          for file in $(find . -name './errors/**/*.json'); do
+          for file in $(find ./errors -name '*.json' 2>/dev/null || true); do
             if ! jsonschema -i "$file" ./error.schema.json; then
               exit 1
             fi
