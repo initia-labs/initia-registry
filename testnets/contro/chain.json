@@ -36,7 +36,7 @@
       "genesis_url": "https://rpc-contro-testnet-1.anvil.europe-west.initia.xyz/genesis"
     }
   },
-  "description": "Contro Public Testnet",
+  "description": "The chain for ultrafair DEXes powered by revolutionary GLOB p2p markets.",
   "peers": {
     "seeds": [],
     "persistent_peers": []
@@ -68,11 +68,11 @@
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/contro.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/contro.png"
   },
   "metadata": {
     "op_bridge_id": "1250",
