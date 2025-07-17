@@ -4,28 +4,27 @@ jobs:
   sync_images:
     name: Sync Images
     runs-on: ubuntu-latest
-    
+
     defaults:
       run:
         shell: bash
-    
+
     steps:
-    
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
-          
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 19.6.0
-          
+
       - name: Run code to Sync Images
         working-directory: ./.github/workflows/utility
         run: node sync_images.mjs
-      
+
       - name: Add Commit Push
         uses: devops-infra/action-commit-push@master
         with:
@@ -35,7 +34,7 @@ jobs:
           commit_message: "Sync Images"
           force: false
           target_branch: update/images
-      
+
       - name: Create A PR
         uses: devops-infra/action-pull-request@v0.4.2
         with:

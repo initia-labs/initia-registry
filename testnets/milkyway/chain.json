@@ -24,8 +24,8 @@
   },
   "description": "MilkyWay milkINIT Testnet",
   "peers": {
-      "seeds": [],
-      "persistent_peers": []
+    "seeds": [],
+    "persistent_peers": []
   },
   "apis": {
     "rpc": [

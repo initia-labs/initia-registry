@@ -3,8 +3,8 @@ name: Deploy Anvil Privnode
 on:
   push:
     paths:
-      - 'testnets/**/chain.json'
-      - 'mainnets/**/chain.json'
+      - "testnets/**/chain.json"
+      - "mainnets/**/chain.json"
     branches:
       - main
 
@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        region: [ asia-southeast, europe-west ]
+        region: [asia-southeast, europe-west]
 
     steps:
       - name: Checkout code

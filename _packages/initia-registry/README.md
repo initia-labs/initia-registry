@@ -15,6 +15,6 @@ import { assets, chains, ibc } from "@initia/initia-registry";
 import { Chain } from "@initia/initia-registry-types";
 
 const assetList: Chain = assets.find(
-  ({ chain_name }) => chain_name === "initia"
+  ({ chain_name }) => chain_name === "initia",
 );
 ```
