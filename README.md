@@ -174,7 +174,7 @@ We have two scenarios for calculating the denom:
 ### OP Denom
 
 ```ts
-import { RESTClient } from '@initia/initia.js';
+import { RESTClient } from "@initia/initia.js";
 
 /**
  *
@@ -218,12 +218,12 @@ export async function opDenomByL2Denom(
 
 async function main() {
   // Example usage of opDenomByL1Denom and opDenomByL2Denom
-  const uri = 'https://rest.testnet.initia.xyz';
+  const uri = "https://rest.testnet.initia.xyz";
   const bridge_id = 1;
 
-  const l1_denom = 'uinit';
+  const l1_denom = "uinit";
   const l2_denom =
-    'l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd';
+    "l2/771d639f30fbe45e3fbca954ffbe2fcc26f915f5513c67a4a2d0bc1d635bdefd";
 
   const l2_denom_for_l1_denom = await opDenomByL1Denom(
     uri,
@@ -241,14 +241,14 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error('Error in main:', error);
+  console.error("Error in main:", error);
 });
 ```
 
 ### IBC Denom
 
 ```ts
-import { RESTClient, sha256 } from '@initia/initia.js';
+import { RESTClient, sha256 } from "@initia/initia.js";
 
 interface DenomTrace {
   denom_trace: {
@@ -267,7 +267,7 @@ interface DenomTrace {
  */
 function makeIBCHash(fullTrace: string): string {
   const shaSum = sha256(Buffer.from(fullTrace));
-  const hash = Buffer.from(shaSum).toString('hex').toUpperCase();
+  const hash = Buffer.from(shaSum).toString("hex").toUpperCase();
   return `ibc/${hash}`;
 }
 
@@ -282,8 +282,8 @@ function makeIBCHash(fullTrace: string): string {
  * @returns {Promise<string>} - The combined path and base denom (e.g., "transfer/channel-0/uinit").
  */
 async function getFullTrace(chain: RESTClient, denom: string): Promise<string> {
-  if (!denom.startsWith('ibc/')) {
-    throw Error('Not an IBC denom');
+  if (!denom.startsWith("ibc/")) {
+    throw Error("Not an IBC denom");
   }
 
   const trace = await chain.apiRequester.get<DenomTrace>(
@@ -321,7 +321,7 @@ export async function ibcDenom(
   let fullTrace = denom;
 
   // If denom starts with "ibc/", retrieve the original trace
-  if (denom.startsWith('ibc/')) {
+  if (denom.startsWith("ibc/")) {
     fullTrace = await getFullTrace(chainA, denom);
 
     // If the token's trace starts with "transfer/chainAChannel/", token originated from chain B
@@ -341,7 +341,7 @@ export async function ibcDenom(
   }
 
   // If it starts with "transfer/", convert to an IBC hash; otherwise, return as is
-  const denomInChainB = fullTraceOnChainB.startsWith('transfer/')
+  const denomInChainB = fullTraceOnChainB.startsWith("transfer/")
     ? makeIBCHash(fullTraceOnChainB)
     : fullTraceOnChainB;
 
@@ -350,17 +350,17 @@ export async function ibcDenom(
 
 async function main() {
   // Example usage of ibcDenom
-  const denom = 'uinit'; // or "ibc/..."
-  const chainAclient = new RESTClient('https://rest.testnet.initia.xyz');
-  const channelA = 'channel-132'; // Example channel ID for chain A
-  const channelB = 'channel-0'; // Example channel ID for chain B
+  const denom = "uinit"; // or "ibc/..."
+  const chainAclient = new RESTClient("https://rest.testnet.initia.xyz");
+  const channelA = "channel-132"; // Example channel ID for chain A
+  const channelB = "channel-0"; // Example channel ID for chain B
 
   const ibcDenomStr = await ibcDenom(chainAclient, denom, channelA, channelB);
-  console.log('Calculated IBC Denom:', ibcDenomStr);
+  console.log("Calculated IBC Denom:", ibcDenomStr);
 }
 
 main().catch((error) => {
-  console.error('Error in main:', error);
+  console.error("Error in main:", error);
 });
 ```
 

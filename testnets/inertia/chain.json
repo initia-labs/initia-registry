@@ -21,8 +21,8 @@
   },
   "description": "The interwoven lending protocol for the modular ecosystem.",
   "peers": {
-      "seeds": [],
-      "persistent_peers": []
+    "seeds": [],
+    "persistent_peers": []
   },
   "apis": {
     "rpc": [

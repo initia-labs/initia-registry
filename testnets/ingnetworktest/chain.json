@@ -54,9 +54,7 @@
       "account_page": "https://scan.testnet.initia.xyz/ingnetwork-test-1/accounts/${accountAddress}"
     }
   ],
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -76,9 +74,7 @@
   },
   "metadata": {
     "op_bridge_id": "1199",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-ingnetwork-test-1.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {

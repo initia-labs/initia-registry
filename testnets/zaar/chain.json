@@ -9,9 +9,7 @@
   "bech32_prefix": "init",
   "daemon_name": "minitiad",
   "node_home": "$HOME/.minitia",
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "website": "https://www.zaar.market",
   "slip44": 60,
   "fees": {
@@ -74,9 +72,7 @@
   },
   "metadata": {
     "op_bridge_id": "1048",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-zaar-testnet-5.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {

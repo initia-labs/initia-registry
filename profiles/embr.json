@@ -1,4 +1,4 @@
-{  
+{
   "$schema": "../profile.schema.json",
   "name": "embr",
   "pretty_name": "Embr.fun",
@@ -25,7 +25,8 @@
         "description": "Trade the winning memes, earn VIP."
       }
     ]
-  },  "social": {
+  },
+  "social": {
     "website": "https://embr.fun",
     "twitter": "https://x.com/embrdotfun"
   }

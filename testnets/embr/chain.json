@@ -46,9 +46,7 @@
       }
     ]
   },
-  "key_algos": [
-    "secp256k1"
-  ],
+  "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -68,9 +66,7 @@
   },
   "metadata": {
     "op_bridge_id": "1175",
-    "op_denoms": [
-      "uinit"
-    ],
+    "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-embr-testnet-2.anvil.asia-southeast.initia.xyz",
     "ibc_channels": [
       {
