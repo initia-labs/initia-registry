@@ -9,6 +9,8 @@ on:
       - "devnets/**"
       - "testnets/**"
       - "mainnets/**"
+permissions:
+  contents: read
 
 jobs:
   trigger-initia-scan-configs:

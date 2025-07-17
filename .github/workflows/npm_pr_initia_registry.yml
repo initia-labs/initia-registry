@@ -2,7 +2,7 @@ name: NPM create initia-registry pull request
 
 on:
   release:
-    types: ['published']
+    types: ["published"]
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: "20.x"
       - name: Install semver
         run: npm install -g semver
       - name: Update version
@@ -46,8 +46,8 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
-          title: '[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}'
-          commit-message: '[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}'
-          body: 'Update initia-registry to ${{ steps.version.outputs.new_version }}'
-          branch: 'bump/initia-registry-${{steps.version.outputs.commit}}'
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          title: "[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}"
+          commit-message: "[BOT] Update initia-registry to ${{ steps.version.outputs.new_version }}"
+          body: "Update initia-registry to ${{ steps.version.outputs.new_version }}"
+          branch: "bump/initia-registry-${{steps.version.outputs.commit}}"
