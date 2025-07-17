@@ -1,6 +1,7 @@
 name: Validate Data
 on: [pull_request]
-
+permissions:
+  contents: read
 jobs:
   jobname:
     name: Validate Data

@@ -1,41 +1,42 @@
 on: [workflow_dispatch]
+permissions:
+  contents: read
 name: Sync Images
 jobs:
   sync_images:
     name: Sync Images
     runs-on: ubuntu-latest
-    
+
     defaults:
       run:
         shell: bash
-    
+
     steps:
-    
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
-          
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 19.6.0
-          
+
       - name: Run code to Sync Images
         working-directory: ./.github/workflows/utility
         run: node sync_images.mjs
-      
+
       - name: Add Commit Push
         uses: devops-infra/action-commit-push@master
         with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
           add_timestamp: false
-          commit_prefix: "[AUTO]"
-          commit_message: "Sync Images"
+          commit_prefix: '[AUTO]'
+          commit_message: 'Sync Images'
           force: false
           target_branch: update/images
-      
+
       - name: Create A PR
         uses: devops-infra/action-pull-request@v0.4.2
         with:
@@ -43,8 +44,8 @@ jobs:
           source_branch: update/images
           target_branch: main
           title: Sync Images
-          body: "**Automated pull request**"
-          old_string: "**THIS IS AN AUTOMATED UPDATE OF IMAGES**"
-          new_string: "** Automatic pull request**"
+          body: '**Automated pull request**'
+          old_string: '**THIS IS AN AUTOMATED UPDATE OF IMAGES**'
+          new_string: '** Automatic pull request**'
           get_diff: true
-          ignore_users: "dependabot"
+          ignore_users: 'dependabot'
