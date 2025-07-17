@@ -13,7 +13,10 @@ export const ProfileSchema = z.object({
     "Others",
   ]),
   tags: z.array(z.string().max(10)).max(3).optional(),
-  description: z.string().describe("A longer description for the landing page"),
+  description: z
+    .string()
+    .max(140)
+    .describe("A longer description for the landing page"),
   summary: z
     .string()
     .max(50)
