@@ -1148,6 +1148,32 @@
       }
     },
     {
+      "description": "The LP token of cabal USDC-INIT",
+      "denom_units": [
+        {
+          "denom": "cabal USDC-INIT LP",
+          "exponent": 6
+        },
+        {
+          "denom": "move/a335e0ffb9c3a5ed0d0fb33f0faa0caed9091128d4ea3f93c452446f6f7ad73b",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "move/a335e0ffb9c3a5ed0d0fb33f0faa0caed9091128d4ea3f93c452446f6f7ad73b",
+      "display": "cabal USDC-INIT LP",
+      "name": "cabal USDC-INIT LP token",
+      "symbol": "cabal USDC-INIT LP",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cbl-USDC-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cbl-USDC-INIT.png"
+      }
+    },
+    {
       "description": "The native token of MilkyWay on Initia via IBC",
       "denom_units": [
         {
