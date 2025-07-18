@@ -1151,7 +1151,7 @@
       "description": "The LP token of cabal USDC-INIT",
       "denom_units": [
         {
-          "denom": "cbl USDC-INIT LP",
+          "denom": "cabal USDC-INIT LP",
           "exponent": 6
         },
         {
@@ -1163,7 +1163,7 @@
       "base": "move/a335e0ffb9c3a5ed0d0fb33f0faa0caed9091128d4ea3f93c452446f6f7ad73b",
       "display": "cabal USDC-INIT LP",
       "name": "cabal USDC-INIT LP token",
-      "symbol": "cbl USDC-INIT LP",
+      "symbol": "cabal USDC-INIT LP",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cbl-USDC-INIT.png"
