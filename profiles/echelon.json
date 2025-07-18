@@ -14,11 +14,11 @@
     "actions": [
       {
         "title": "Supply",
-        "description": "Supply USDC, INIT and milkINIT"
+        "description": "Supply USDC, INIT milkINIT, deINIT, or sxINIT"
       },
       {
         "title": "Borrow",
-        "description": "Borrow USDC"
+        "description": "Borrow USDC or INIT"
       }
     ]
   },
