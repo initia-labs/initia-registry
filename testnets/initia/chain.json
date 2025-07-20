@@ -19,7 +19,10 @@
         "low_gas_price": 0.15,
         "average_gas_price": 0.15,
         "high_gas_price": 0.4
-      }
+      },
+      { "denom": "uusdc" },
+      { "denom": "ueth" },
+      { "denom": "utia" }
     ]
   },
   "staking": {
