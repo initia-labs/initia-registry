@@ -2,7 +2,7 @@
   "$schema": "../../chain.schema.json",
   "chain_name": "split",
   "chain_id": "split-1",
-  "evm_chain_id": 2052437230810000,
+  "evm_chain_id": 3281045990352784,
   "pretty_name": "Split Finance",
   "status": "live",
   "network_type": "testnet",
