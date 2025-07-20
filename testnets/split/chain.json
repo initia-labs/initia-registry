@@ -55,7 +55,7 @@
     ],
     "grpc": [
       {
-        "address": "gprc.split-fi.xyz:443",
+        "address": "grpc.split-fi.xyz:443",
         "provider": "Initia Labs"
       }
     ],
