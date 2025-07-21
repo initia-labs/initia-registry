@@ -43,26 +43,22 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.split-fi.xyz",
-        "provider": "Initia Labs"
+        "address": "https://rpc.split-fi.xyz"
       }
     ],
     "rest": [
       {
-        "address": "https://api.split-fi.xyz",
-        "provider": "Initia Labs"
+        "address": "https://api.split-fi.xyz"
       }
     ],
     "grpc": [
       {
-        "address": "grpc.split-fi.xyz:443",
-        "provider": "Initia Labs"
+        "address": "grpc.split-fi.xyz:443"
       }
     ],
     "json-rpc": [
       {
-        "address": "https://node.split-fi.xyz/json",
-        "provider": "Initia Labs"
+        "address": "https://node.split-fi.xyz/json"
       }
     ],
     "json-rpc-websocket": [
