@@ -1,0 +1,115 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "split",
+  "chain_id": "split-1",
+  "evm_chain_id": 3281045990352784,
+  "pretty_name": "Split Finance",
+  "status": "live",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "daemon_name": "minitiad",
+  "node_home": "$HOME/.minitia",
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 0,
+        "low_gas_price": 0,
+        "average_gas_price": 0,
+        "high_gas_price": 0
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.1.7",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.7/minievm_v1.1.7_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.7/minievm_v1.1.7_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.7/minievm_v1.1.7_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.7/minievm_v1.1.7_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc.split-fi.xyz/genesis.json"
+    }
+  },
+  "description": "Split Finance Testnet",
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.split-fi.xyz",
+        "provider": "Initia Labs"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://api.split-fi.xyz",
+        "provider": "Initia Labs"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc.split-fi.xyz:443",
+        "provider": "Initia Labs"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://node.split-fi.xyz/json",
+        "provider": "Initia Labs"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://node.split-fi.xyz/ws",
+        "provider": "Initia Labs"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/split-1",
+      "tx_page": "https://scan.testnet.initia.xyz/split-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/split-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/splitfi.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/splitfi.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1304",
+    "op_denoms": [],
+    "executor_uri": "https://node.split-fi.xyz/executor",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/split/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v1.1.7"
+    }
+  }
+}
