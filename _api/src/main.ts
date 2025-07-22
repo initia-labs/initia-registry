@@ -35,6 +35,11 @@ const srcProfilesDir = path.resolve(srcDir, "profiles")
 const distProfilesDir = path.resolve(distDir, "profiles")
 fs.copySync(srcProfilesDir, distProfilesDir)
 
+// Copy the errors directory to the dist directory
+const srcErrorsDir = path.resolve(srcDir, "errors")
+const distErrorsDir = path.resolve(distDir, "errors")
+fs.copySync(srcErrorsDir, distErrorsDir)
+
 // Update URLs in chain.json, assetlist.json and profile.json files
 // Example:
 // "https://raw.githubusercontent.com/initia-labs/initia-registry/main/initia/images/INIT.png"
