@@ -77,7 +77,7 @@
   "metadata": {
     "op_bridge_id": "1250",
     "op_denoms": ["uinit"],
-    "executor_uri": "https://opinit-api-contro-testnet-1.anvil.europe-west.initia.xyz/status",
+    "executor_uri": "https://opinit-api-contro-testnet-1.anvil.europe-west.initia.xyz",
     "ibc_channels": [
       {
         "chain_id": "initiation-2",
