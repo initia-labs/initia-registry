@@ -152,6 +152,10 @@
           "type": "string",
           "description": "[OPTIONAL] The coingecko id to fetch asset data from coingecko v3 api. See https://api.coingecko.com/api/v3/coins/list"
         },
+        "oracle_symbol": {
+          "type": "string",
+          "description": "[OPTIONAL] The onchain oracle symbol of connect module"
+        },
         "keywords": {
           "type": "array",
           "items": {

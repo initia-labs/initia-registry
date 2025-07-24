@@ -19,6 +19,7 @@
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
@@ -45,6 +46,7 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "coingecko_id": "usd-coin",
+      "oracle_symbol": "USDC",
       "traces": [
         {
           "type": "ibc",
@@ -168,6 +170,7 @@
       "name": "Celestia Native Token",
       "symbol": "TIA",
       "coingecko_id": "celestia",
+      "oracle_symbol": "TIA",
       "traces": [
         {
           "type": "ibc",
@@ -209,6 +212,7 @@
       "name": "Ethereum Native Token",
       "symbol": "ETH",
       "coingecko_id": "ethereum",
+      "oracle_symbol": "ETH",
       "traces": [],
       "images": [
         {
@@ -540,6 +544,7 @@
       "name": "INIT.bfb",
       "symbol": "INIT.bfb",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -592,6 +597,7 @@
       "name": "INIT.civitia",
       "symbol": "INIT.civitia",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -644,6 +650,7 @@
       "name": "INIT.echelon",
       "symbol": "INIT.echelon",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -696,6 +703,7 @@
       "name": "INIT.embr",
       "symbol": "INIT.embr",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -748,6 +756,7 @@
       "name": "INIT.ingnetwork",
       "symbol": "INIT.ingnetwork",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -800,6 +809,7 @@
       "name": "INIT.inertia",
       "symbol": "INIT.inertia",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -852,6 +862,7 @@
       "name": "INIT.intergaze",
       "symbol": "INIT.intergaze",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -904,6 +915,7 @@
       "name": "INIT.rave",
       "symbol": "INIT.rave",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -956,6 +968,7 @@
       "name": "INIT.rena",
       "symbol": "INIT.rena",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -1008,6 +1021,7 @@
       "name": "INIT.yominet",
       "symbol": "INIT.yominet",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
@@ -1060,6 +1074,7 @@
       "name": "INIT.zaar",
       "symbol": "INIT.zaar",
       "coingecko_id": "initia",
+      "oracle_symbol": "INIT",
       "traces": [
         {
           "type": "op",
