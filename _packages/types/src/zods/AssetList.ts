@@ -301,6 +301,10 @@ export const AssetListSchema = z
               "[OPTIONAL] The coingecko id to fetch asset data from coingecko v3 api. See https://api.coingecko.com/api/v3/coins/list"
             )
             .optional(),
+          oracle_symbol: z
+            .string()
+            .describe("[OPTIONAL] The onchain oracle symbol of connect module")
+            .optional(),
           keywords: z.array(z.string()).optional(),
         })
         .strict()

@@ -85,6 +85,10 @@ export interface Asset {
    * [OPTIONAL] The coingecko id to fetch asset data from coingecko v3 api. See https://api.coingecko.com/api/v3/coins/list
    */
   coingecko_id?: string;
+  /**
+   * [OPTIONAL] The onchain oracle symbol of connect module
+   */
+  oracle_symbol?: string;
   keywords?: string[];
 }
 export interface DenomUnit {
