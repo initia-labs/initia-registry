@@ -25,13 +25,13 @@
   },
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
-    "recommended_version": "v1.0.2",
-    "compatible_versions": ["v1.0.2"],
+    "recommended_version": "v1.1.10",
+    "compatible_versions": ["v1.1.10"],
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://storage.googleapis.com/init-common-genesis/minievm-2/genesis.json"
@@ -191,6 +191,18 @@
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Linux_aarch64.tar.gz",
           "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Darwin_x86_64.tar.gz",
           "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.1.9",
+        "recommended_version": "v1.1.10",
+        "compatible_versions": ["v1.1.10", "v1.1.9"],
+        "height": 9956720,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_aarch64.tar.gz"
         }
       }
     ]
