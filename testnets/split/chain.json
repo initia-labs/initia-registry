@@ -1,0 +1,103 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "split",
+  "pretty_name": "Split",
+  "chain_id": "split-2",
+  "evm_chain_id": 2262157454060356,
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.1.10",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc-split-2.anvil.asia-southeast.initia.xyz/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-split-2.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-split-2.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-split-2.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://jsonrpc-split-2.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://jsonrpc-ws-split-2.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/split-2",
+      "tx_page": "https://scan.testnet.initia.xyz/split-2/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/split-2/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "GAS",
+        "fixed_min_gas_price": 15000000000000000
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/split.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/split.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1322",
+    "op_denoms": [
+      "uinit"
+    ],
+    "executor_uri": "https://opinit-api-split-2.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/split/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v1.1.10"
+    }
+  }
+}
