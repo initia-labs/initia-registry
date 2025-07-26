@@ -1,0 +1,71 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "split",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/d211718de1c5677ba92f63646a53b5920c9817d0083454afeafd6bbca47dd72b",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x8b3702C183bFF5b126aAfe997eacD14e49203dBB",
+      "base": "l2/d211718de1c5677ba92f63646a53b5920c9817d0083454afeafd6bbca47dd72b",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1322"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "The gas token of split",
+      "denom_units": [
+        {
+          "denom": "GAS",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x042adD9e80f7a23Ab71D5e1d392af1d3928B7D05",
+      "base": "GAS",
+      "display": "GAS",
+      "name": "Split Gas Token",
+      "symbol": "GAS",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/GAS.png"
+      }
+    }
+  ]
+}
