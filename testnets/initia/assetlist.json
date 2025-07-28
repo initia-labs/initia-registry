@@ -602,6 +602,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDN.png"
       }
+    },
+    {
+      "description": "The LST of Init-Usdc LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "move/571223eb8b5988399e69cffcdacb6c1fd04a3372bd49234f9362fbed219ff0a5",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC-INIT sLP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/571223eb8b5988399e69cffcdacb6c1fd04a3372bd49234f9362fbed219ff0a5",
+      "display": "USDC-INIT sLP",
+      "name": "USDC-INIT sLP",
+      "symbol": "USDC-INIT sLP",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "inertia",
+            "chain_id": "inertiation-12",
+            "base_denom": "ibc/7A8888D642DCD07D74F98844BBC239F2C12293FA4C94F38CBC7A8CD75BFC293A",
+            "channel_id": "channel-2"
+          },
+          "chain": {
+            "channel_id": "channel-2776",
+            "path": "transfer/channel-2776/ibc/7A8888D642DCD07D74F98844BBC239F2C12293FA4C94F38CBC7A8CD75BFC293A"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT-sLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT-sLP.png"
+      }
     }
   ]
 }
