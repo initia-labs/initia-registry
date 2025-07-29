@@ -176,6 +176,10 @@
             "type": "string"
           }
         },
+        "docker_image": {
+          "type": "string",
+          "pattern": "^[\\w.-]+(?:/[\\w.-]+)+(?::[\\w.-]+)?$"
+        },
         "binaries": {
           "type": "object",
           "properties": {
@@ -347,6 +351,10 @@
                   "description": "IBC app or ICS standard.",
                   "enum": ["ics20-1", "ics27-1", "mauth"]
                 }
+              },
+              "docker_image": {
+                "type": "string",
+                "pattern": "^[\\w.-]+(?:/[\\w.-]+)+(?::[\\w.-]+)?$"
               },
               "binaries": {
                 "type": "object",

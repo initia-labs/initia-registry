@@ -27,6 +27,7 @@
     "git_repo": "https://github.com/initia-labs/minievm",
     "recommended_version": "v1.1.10",
     "compatible_versions": ["v1.1.10"],
+    "docker_image": "ghcr.io/initia-labs/minievm:v1.1.10",
     "binaries": {
       "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_x86_64.tar.gz",
       "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_aarch64.tar.gz",
@@ -42,6 +43,7 @@
         "recommended_version": "v0.5.2",
         "compatible_versions": ["v0.5.2"],
         "height": 1,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.5.2",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.2/minievm_v0.5.2_Linux_aarch64.tar.gz",
@@ -54,6 +56,7 @@
         "recommended_version": "v0.5.5",
         "compatible_versions": ["v0.5.5"],
         "height": 238760,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.5.5",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.5.5/minievm_v0.5.5_Linux_aarch64.tar.gz",
@@ -66,6 +69,7 @@
         "recommended_version": "v0.6.0",
         "compatible_versions": ["v0.6.0"],
         "height": 2111500,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.0",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.0/minievm_v0.6.0_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.0/minievm_v0.6.0_Linux_aarch64.tar.gz",
@@ -78,6 +82,7 @@
         "recommended_version": "v0.6.3",
         "compatible_versions": ["v0.6.3"],
         "height": 2174700,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.3",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.3/minievm_v0.6.3_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.3/minievm_v0.6.3_Linux_aarch64.tar.gz",
@@ -90,6 +95,7 @@
         "recommended_version": "v0.6.5",
         "compatible_versions": ["v0.6.5"],
         "height": 2562110,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.5",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.5/minievm_v0.6.5_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.5/minievm_v0.6.5_Linux_aarch64.tar.gz",
@@ -102,6 +108,7 @@
         "recommended_version": "v0.6.6",
         "compatible_versions": ["v0.6.6"],
         "height": 2882650,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.6",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.6/minievm_v0.6.6_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.6/minievm_v0.6.6_Linux_aarch64.tar.gz",
@@ -114,6 +121,7 @@
         "recommended_version": "v0.6.7-1",
         "compatible_versions": ["v0.6.7-1", "v0.6.7"],
         "height": 3370850,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.7-1",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.7-1/minievm_v0.6.7-1_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.7-1/minievm_v0.6.7-1_Linux_aarch64.tar.gz",
@@ -126,6 +134,7 @@
         "recommended_version": "v0.6.8",
         "compatible_versions": ["v0.6.8"],
         "height": 4631450,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.8",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.8/minievm_v0.6.8_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.8/minievm_v0.6.8_Linux_aarch64.tar.gz",
@@ -138,6 +147,7 @@
         "recommended_version": "v0.6.9",
         "compatible_versions": ["v0.6.9"],
         "height": 4635130,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.9",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.9/minievm_v0.6.9_Linux_aarch64.tar.gz",
@@ -150,6 +160,7 @@
         "recommended_version": "v0.6.10-1",
         "compatible_versions": ["v0.6.10"],
         "height": 5338220,
+        "docker_image": "ghcr.io/initia-labs/minievm:v0.6.10-1",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v0.6.10-1/minievm_v0.6.10-1_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v0.6.10-1/minievm_v0.6.10-1_Linux_aarch64.tar.gz",
@@ -162,6 +173,7 @@
         "recommended_version": "v1.0.0-rc.0",
         "compatible_versions": ["v1.0.0-rc.0"],
         "height": 7424440,
+        "docker_image": "ghcr.io/initia-labs/minievm:v1.0.0-rc.0",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0/minievm_v1.0.0-rc.0_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0-rc.0/minievm_v1.0.0-rc.0_Linux_aarch64.tar.gz",
@@ -174,6 +186,7 @@
         "recommended_version": "v1.0.0",
         "compatible_versions": ["v1.0.0"],
         "height": 7483750,
+        "docker_image": "ghcr.io/initia-labs/minievm:v1.0.0",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0/minievm_v1.0.0_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.0/minievm_v1.0.0_Linux_aarch64.tar.gz",
@@ -186,6 +199,7 @@
         "recommended_version": "v1.0.2",
         "compatible_versions": ["v1.0.2"],
         "height": 7484050,
+        "docker_image": "ghcr.io/initia-labs/minievm:v1.0.2",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.0.2/minievm_v1.0.2_Linux_aarch64.tar.gz",
@@ -198,6 +212,7 @@
         "recommended_version": "v1.1.10",
         "compatible_versions": ["v1.1.10", "v1.1.9"],
         "height": 9956720,
+        "docker_image": "ghcr.io/initia-labs/minievm:v1.1.10",
         "binaries": {
           "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_x86_64.tar.gz",
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.10/minievm_v1.1.10_Linux_aarch64.tar.gz",
