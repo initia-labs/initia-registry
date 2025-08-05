@@ -45,6 +45,14 @@
       }
     ]
   },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/landlord-3",
+      "tx_page": "https://scan.testnet.initia.xyz/landlord-3/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/landlord-3/accounts/${accountAddress}"
+    }
+  ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/civitia.png"
