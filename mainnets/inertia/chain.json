@@ -87,7 +87,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/inertia/assetlist.json",
     "minitia": {
       "type": "miniwasm",
-      "version": "v1.0.2"
+      "version": "v1.1.1"
     }
   }
 }
