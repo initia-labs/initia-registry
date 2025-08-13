@@ -14,11 +14,25 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "umin",
-        "fixed_min_gas_price": 0,
-        "low_gas_price": 0,
-        "average_gas_price": 0,
-        "high_gas_price": 0
+        "denom": "factory/init1gv48lux006f8uxtp8jf78hy5r8nd9t0zgh7gws/uglob",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.015
+      },
+      {
+        "denom": "factory/init1rqwg7q5zst64yeutelfgjmmhlpzfdw0xfud6ru/uglob",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.015
+      },
+      {
+        "denom": "uinit",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.015
       }
     ]
   },
