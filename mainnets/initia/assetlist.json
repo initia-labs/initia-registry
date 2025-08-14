@@ -1237,14 +1237,14 @@
           "exponent": 0
         },
         {
-          "denom": "USDC-INIT sLP",
+          "denom": "INIT sLP",
           "exponent": 6
         }
       ],
       "base": "move/18a6cfe6562ccddd9dd2043364d3fc1a4f5991470abeb77e83f0640e6e6138ec",
-      "display": "USDC-INIT sLP",
-      "name": "USDC-INIT sLP",
-      "symbol": "USDC-INIT sLP",
+      "display": "INIT sLP",
+      "name": "INIT sLP",
+      "symbol": "INIT sLP",
       "coingecko_id": "",
       "images": [
         {
@@ -1263,14 +1263,14 @@
           "exponent": 0
         },
         {
-          "denom": "USDC-INIT nLP",
+          "denom": "INIT nLP",
           "exponent": 6
         }
       ],
       "base": "move/e49a30a322f0ea6e6847fa19536abe2a0bcc729b7666c0d7d6c90b1fedfe4744",
-      "display": "USDC-INIT nLP",
-      "name": "USDC-INIT nLP",
-      "symbol": "USDC-INIT nLP",
+      "display": "INIT nLP",
+      "name": "INIT nLP",
+      "symbol": "INIT nLP",
       "coingecko_id": "",
       "images": [
         {
