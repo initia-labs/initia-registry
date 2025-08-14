@@ -85,7 +85,7 @@
       "display": "MILK",
       "name": "MilkyWay Native Token",
       "symbol": "MILK",
-      "coingecko_id": "milkyway",
+      "coingecko_id": "milkyway-2",
       "traces": [
         {
           "type": "ibc",
