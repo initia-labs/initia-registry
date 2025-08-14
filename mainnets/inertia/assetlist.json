@@ -222,6 +222,88 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
       }
+    },
+    {
+      "description": "The yield bearing LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/C0C7C15994386A50ADC7F0610C99C1AEC4BE55C61D1237B33FCDA732E9C453DB",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC-INIT sLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/C0C7C15994386A50ADC7F0610C99C1AEC4BE55C61D1237B33FCDA732E9C453DB",
+      "display": "USDC-INIT sLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/18a6cfe6562ccddd9dd2043364d3fc1a4f5991470abeb77e83f0640e6e6138ec",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/18a6cfe6562ccddd9dd2043364d3fc1a4f5991470abeb77e83f0640e6e6138ec"
+          }
+        }
+      ],
+      "name": "USDC-INIT sLP",
+      "symbol": "USDC-INIT sLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+      }
+    },
+    {
+      "description": "The pegged LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/4DB85501D505033B9735F9BD514407F91F22F2AF7638F9B73451CDBDE4832BAA",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC-INIT nLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/4DB85501D505033B9735F9BD514407F91F22F2AF7638F9B73451CDBDE4832BAA",
+      "display": "USDC-INIT nLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/e49a30a322f0ea6e6847fa19536abe2a0bcc729b7666c0d7d6c90b1fedfe4744",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/e49a30a322f0ea6e6847fa19536abe2a0bcc729b7666c0d7d6c90b1fedfe4744"
+          }
+        }
+      ],
+      "name": "USDC-INIT nLP",
+      "symbol": "USDC-INIT nLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+      }
     }
   ]
 }
