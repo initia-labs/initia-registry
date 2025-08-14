@@ -70,6 +70,11 @@
       {
         "address": "grpc-contro-testnet-1.anvil.europe-west.initia.xyz:443"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-contro-testnet-1.anvil.europe-west.initia.xyz"
+      }
     ]
   },
   "explorers": [

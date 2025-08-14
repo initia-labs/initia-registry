@@ -260,6 +260,11 @@
         "address": "https://json-rpc-websocket.minievm-2.initia.xyz",
         "provider": "Initia Labs"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rest.minievm-2.initia.xyz"
+      }
     ]
   },
   "explorers": [

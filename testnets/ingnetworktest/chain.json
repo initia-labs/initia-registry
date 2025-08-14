@@ -44,6 +44,11 @@
       {
         "address": "wss://jsonrpc-ws-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-ingnetwork-test-1.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "explorers": [

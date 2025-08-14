@@ -35,6 +35,11 @@
       {
         "address": "grpc-moo-1.anvil.asia-southeast.initia.xyz:443"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-moo-1.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "key_algos": ["initia_ethsecp256k1", "secp256k1"],

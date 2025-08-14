@@ -63,6 +63,11 @@
       {
         "address": "wss://jsonrpc-ws-embr-1.anvil.asia-southeast.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-embr-1.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "explorers": [

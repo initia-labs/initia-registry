@@ -91,6 +91,11 @@
       {
         "address": "wss://jsonrpc-ws-yominet-1.anvil.asia-southeast.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-yominet-1.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "key_algos": ["initia_ethsecp256k1", "secp256k1"],

@@ -72,6 +72,11 @@
       {
         "address": "wss://jsonrpc-ws-bfb-1.anvil.europe-west.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rest-bfb-1.anvil.europe-west.initia.xyz"
+      }
     ]
   },
   "key_algos": ["initia_ethsecp256k1", "secp256k1"],
