@@ -42,6 +42,11 @@
         "address": "grpc.inrt.fi:443",
         "provider": "Inertia"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rest.inrt.fi"
+      }
     ]
   },
   "explorers": [

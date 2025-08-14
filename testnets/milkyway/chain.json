@@ -45,6 +45,11 @@
         "address": "grpc-glados-4.anvil.asia-southeast.initia.xyz:443",
         "provider": "Initia Labs"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-glados-4.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "explorers": [

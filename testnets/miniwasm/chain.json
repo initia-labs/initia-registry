@@ -151,6 +151,11 @@
         "authorizedUser": "skip",
         "indexForSkip": 0
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rest.miniwasm-2.initia.xyz"
+      }
     ]
   },
   "explorers": [

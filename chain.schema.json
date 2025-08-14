@@ -533,6 +533,14 @@
           },
           "minContains": 1,
           "description": "Evm json rpc websocket uri"
+        },
+        "indexer": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/secureEndpoint"
+          },
+          "minContains": 1,
+          "description": "Indexer uri"
         }
       },
       "additionalProperties": false

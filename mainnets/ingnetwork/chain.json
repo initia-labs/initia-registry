@@ -46,6 +46,11 @@
       {
         "address": "wss://jsonrpc-ws-ingnetwork-1.anvil.asia-southeast.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-ingnetwork-1.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "key_algos": ["initia_ethsecp256k1", "secp256k1"],

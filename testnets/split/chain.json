@@ -44,6 +44,11 @@
       {
         "address": "wss://jsonrpc-ws-split-2.anvil.asia-southeast.initia.xyz"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-split-2.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "explorers": [

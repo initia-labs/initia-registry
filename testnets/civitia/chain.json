@@ -33,6 +33,11 @@
       {
         "address": "grpc-landlord-3.anvil.asia-southeast.initia.xyz:443"
       }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-landlord-3.anvil.asia-southeast.initia.xyz"
+      }
     ]
   },
   "key_algos": ["secp256k1"],
