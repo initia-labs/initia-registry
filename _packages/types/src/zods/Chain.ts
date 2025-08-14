@@ -435,6 +435,20 @@ export const ChainSchema = z
           )
           .describe("Evm json rpc websocket uri")
           .optional(),
+        indexer: z
+          .array(
+            z
+              .object({
+                address: z.string().url().regex(new RegExp("^https://.")),
+                provider: z.string().optional(),
+                archive: z.boolean().default(false),
+                authorizedUser: z.string().optional(),
+                indexForSkip: z.number().optional(),
+              })
+              .strict()
+          )
+          .describe("Indexer uri")
+          .optional(),
       })
       .strict(),
     explorers: z

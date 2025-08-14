@@ -196,6 +196,10 @@ export interface Chain {
      * Evm json rpc websocket uri
      */
     "json-rpc-websocket"?: Endpoint[];
+    /**
+     * Indexer uri
+     */
+    indexer?: SecureEndpoint[];
   };
   explorers?: Explorer[];
   faucets?: Faucet[];
