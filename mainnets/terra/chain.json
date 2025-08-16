@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "terra",
-  "pretty_name": "Terra",
+  "pretty_name": "Terra Classic",
   "chain_id": "columbus-5",
   "website": "https://www.terra-classic.money/",
   "description": "Terra Classic is the original Terra blockchain, focused on algorithmic stablecoins and decentralized finance.",
