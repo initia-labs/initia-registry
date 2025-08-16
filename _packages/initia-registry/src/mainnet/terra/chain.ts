@@ -68,9 +68,20 @@ const info: Chain = {
   metadata: {
     op_bridge_id: "16",
     op_denoms: ["uinit"],
-    executor_uri:
-      "https://opinit-api-echelon-1.anvil.asia-southeast.initia.xyz",
+    executor_uri:"https://opinit-api-columbus-5.anvil.asia-southeast.initia.xyz",
     ibc_channels: [
+      {
+        chain_id: "axelar-dojo-1",
+        port_id: "transfer",
+        channel_id: "channel-19",
+        version: "ics20-1"
+      },
+      {
+        chain_id: "noble-1",
+        port_id: "transfer",
+        channel_id: "channel-113",
+        version: "ics20-1"
+      }
     ],
     assetlist:
       "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/terra/assetlist.json",
