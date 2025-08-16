@@ -92,7 +92,7 @@ const info: Chain = {
       }
     ],
     assetlist:
-      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/terra/assetlist.json",
+      "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnet/terra/assetlist.json"",
     minitia: {
       type: "minimove",
       version: "v1.0.0-beta.14",
