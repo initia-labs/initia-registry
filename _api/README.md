@@ -1,6 +1,6 @@
 # Initia Registry API
 
-TypeScript-based build system that transforms blockchain chain metadata, asset lists, and profiles into an optimized format for API consumption. It handles data aggregation, URL transformation, and image optimization.
+A TypeScript-based build system that transforms blockchain chain metadata, asset lists, and profiles into an optimized format for API consumption. It handles data aggregation, URL transformation, and image optimization.
 
 ## Installation
 
@@ -19,13 +19,15 @@ NETWORK_DIR=testnets pnpm build  # Build for testnet
 
 The built files will be generated in the `dist/` directory.
 
-### The build process performs:
+### Build Process
+
+The build process performs the following steps:
 
 1. Copies chain data from the network directory to `dist`
 2. Transforms GitHub raw URLs to `registry.initia.xyz` URLs
 3. Aggregates all `chain.json` files into `chains.json`
 4. Aggregates all `profile.json` files into `profiles.json`
-5. Optimizes images using `Sharp` compression
+5. Optimizes images using Sharp compression
 6. Generates `deployment.json` with timestamp metadata
 
 ## Project Structure
