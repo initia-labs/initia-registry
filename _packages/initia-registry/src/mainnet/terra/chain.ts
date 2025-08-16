@@ -33,12 +33,12 @@ const info: Chain = {
     fee_tokens: [
       {
         denom:
-          "LUNC",
+          "uluna",
         fixed_min_gas_price: 28.325,
       },
       {
         denom:
-          "USTC",
+          "uusd",
         fixed_min_gas_price: 0.75,
       },
     ],
