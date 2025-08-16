@@ -102,6 +102,6 @@
         "version": "ics20-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/assetlist.json"
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/terra/assetlist.json"
   }
 }
