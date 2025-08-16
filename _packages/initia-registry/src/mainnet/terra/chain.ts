@@ -48,15 +48,13 @@ const info: Chain = {
       kind: "Galaxy Finder",
       url: "https://finder.terra-classic.hexxagon.io/",
       tx_page: "https://finder.terra-classic.hexxagon.io/mainnet/tx/${txHash}",
-      account_page:
-        "https://finder.terra-classic.hexxagon.io/mainnet/address/${accountAddress}",
+      account_page: "https://finder.terra-classic.hexxagon.io/mainnet/address/${accountAddress}",
     }, 
     {
       kind: "initia scan",
       url: "https://scan.initia.xyz/columbus-5",
       tx_page: "https://scan.initia.xyz/columbus-5/txs/${txHash}",
-      account_page:
-        "https://scan.initia.xyz/columbus-5/accounts/${accountAddress}",
+      account_page: "https://scan.initia.xyz/columbus-5/accounts/${accountAddress}",
     },
   ],
   images: [
