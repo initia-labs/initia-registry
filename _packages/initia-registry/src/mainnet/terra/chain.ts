@@ -8,6 +8,14 @@ const info: Chain = {
   description:
     "Terra Classic (LUNC) is the original native governance token of the Terra ecosystem. It was previously known as Terra (LUNA) before the UST/Luna collapse and the establishment of a new Terra chain. LUNC is a Proof of Stake blockchain network token that was used for staking, governance, and minting stablecoins.",
   bech32_prefix: "terra",
+  bech32_config: {
+    bech32PrefixAccAddr: "terra",
+    bech32PrefixAccPub: "terrapub",
+    bech32PrefixValAddr: "terravaloper",
+    bech32PrefixValPub: "terravaloperpub",
+    bech32PrefixConsAddr: "terravalcons",
+    bech32PrefixConsPub: "terravalconspub",
+  },
   network_type: "mainnet",
   codebase: {},
   apis: {
