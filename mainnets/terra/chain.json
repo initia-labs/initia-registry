@@ -6,6 +6,14 @@
   "website": "https://www.terra-classic.money/",
   "description": "Terra Classic is the original Terra blockchain, focused on algorithmic stablecoins and decentralized finance.",
   "bech32_prefix": "terra",
+  "bech32_config": {
+    "bech32PrefixAccAddr": "terra",
+    "bech32PrefixAccPub": "terrapub",
+    "bech32PrefixValAddr": "terravaloper",
+    "bech32PrefixValPub": "terravaloperpub",
+    "bech32PrefixConsAddr": "terravalcons",
+    "bech32PrefixConsPub": "terravalconspub",
+  },
   "network_type": "mainnet",
   "codebase": {
     "git_repo": "https://github.com/classic-terra/core",
