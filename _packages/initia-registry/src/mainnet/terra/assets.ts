@@ -1,0 +1,236 @@
+import { AssetList } from "@initia/initia-registry-types";
+
+const info: AssetList = {
+  $schema: "../../assetlist.schema.json",
+  chain_name: "terra",
+  assets: [
+    {
+      description: "The native staking coin of Terra Classic.",
+      denom_units: [
+        {
+          denom: "uluna",
+          exponent: 0,
+        },
+        {
+          denom: "LUNC",
+          exponent: 6,
+        },
+      ],
+      base: "uluna",
+      display: "LUNC",
+      name: "Lunc",
+      symbol: "LUNC",
+      coingecko_id: "terra-luna",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lunc.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lunc.png",
+      },
+    },
+    {
+      description: "The USD stablecoin of Terra Classic.",
+      denom_units: [
+        {
+          denom: "uusd",
+          exponent: 0,
+        },
+        {
+          denom: "USTC",
+          exponent: 6,
+        },
+      ],
+      base: "uusd",
+      display: "USTC",
+      name: "USTC",
+      symbol: "USTC",
+      coingecko_id: "terrausd",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ustc.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ustc.png",
+      },
+    },
+    {
+      description: "The KRW stablecoin of Terra Classic.",
+      denom_units: [
+        {
+          denom: "ukrw",
+          exponent: 0,
+        },
+        {
+          denom: "KRTC",
+          exponent: 6,
+        },
+      ],
+      base: "ukrw",
+      display: "KRTC",
+      name: "KRTC",
+      symbol: "KRTC",
+      coingecko_id: "",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/krt.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/krt.png",
+      },
+    },
+    {
+      description: "Wrapped USDC imported to Cosmos from Ethereum via Axelar.",
+      denom_units: [
+        {
+          denom: "ibc/E1E3674A0E4E1EF9C69646F9AF8D9497173821826074622D831BAB73CCB99A2D",
+          exponent: 0,
+        },
+        {
+          denom: "USDC.axl",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/E1E3674A0E4E1EF9C69646F9AF8D9497173821826074622D831BAB73CCB99A2D",
+      display: "USDC.axl",
+      name: "USD Coin (Axelar)",
+      symbol: "USDC.axl",
+      coingecko_id: "axlusdc",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "axelar",
+            base_denom: "uusdc",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-19",
+            path: "transfer/channel-19/uusdc",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/usdc.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/usdc.png",
+      },
+    },
+    {
+      description: "Wrapped USDT imported to Cosmos from Ethereum via Axelar.",
+      denom_units: [
+        {
+          denom: "ibc/386A4031D68DE6370B85F9FF7E89CEF8DE7CDE01CC193CBD87BD3ED60F6662CE",
+          exponent: 0,
+        },
+        {
+          denom: "USDT.axl",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/386A4031D68DE6370B85F9FF7E89CEF8DE7CDE01CC193CBD87BD3ED60F6662CE",
+      display: "USDT.axl",
+      name: "Tether USD (Axelar)",
+      symbol: "USDT.axl",
+      coingecko_id: "axelar-usdt",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "axelar",
+            base_denom: "uusdt",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-19",
+            path: "transfer/channel-19/uusdt",
+          },
+        },
+      ],
+      images: [
+        {
+          svg: "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.axl.svg",
+        },
+      ],
+      logo_URIs: {
+        svg: "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.axl.svg",
+      },
+    },
+    {
+      description: "Wrapped USDC imported to Cosmos from Ethereum via Noble.",
+      denom_units: [
+        {
+          denom: "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5",
+          exponent: 0,
+        },
+        {
+          denom: "USDC.nbl",
+          exponent: 6,
+        },
+      ],
+      base: "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5",
+      display: "USDC.nbl",
+      name: "USD Coin (Noble)",
+      symbol: "USDC.nbl",
+      coingecko_id: "noble-usdc",
+      traces: [
+        {
+          type: "ibc",
+          counterparty: {
+            chain_name: "noble",
+            base_denom: "uusdc",
+            channel_id: "channel-0",
+          },
+          chain: {
+            channel_id: "channel-113",
+            path: "transfer/channel-113/uusdc",
+          },
+        },
+      ],
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/usdc.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/usdc.png",
+      },
+    },
+    {
+      description: "Juris Protocol is the Lending Platform for the Terra Ecosystem.",
+      type_asset: "cw20",
+      address: "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+      denom_units: [
+        {
+          denom: "cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+          exponent: 0,
+        },
+        {
+          denom: "juris",
+          exponent: 6,
+        },
+      ],
+      base: "cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+      display: "juris",
+      name: "Juris Protocol",
+      symbol: "JURIS",
+      coingecko_id: "juris-protocol",
+      images: [
+        {
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/juris.png",
+        },
+      ],
+      logo_URIs: {
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/juris.png",
+      },
+    },
+  ],
+};
+
+export default info;
