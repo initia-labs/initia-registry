@@ -2,7 +2,7 @@ import { Chain } from "@initia/initia-registry-types";
 const info: Chain = {
   $schema: "../../chain.schema.json",
   chain_name: "terra",
-  pretty_name: "Terra",
+  pretty_name: "Terra Classic",
   chain_id: "columbus-5",
   website: "https://www.terra-classic.money/",
   description:
@@ -35,7 +35,7 @@ const info: Chain = {
       },
     ],
   },
-  key_algos: ["initia_ethsecp256k1", "secp256k1"],
+  key_algos: ["secp256k1"],
   slip44: 330,
   fees: {
     fee_tokens: [
