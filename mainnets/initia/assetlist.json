@@ -328,6 +328,33 @@
       }
     },
     {
+      "description": "Liquidity Pool Token for USDC-INIT trading pair on Initia DEX",
+      "denom_units": [
+        {
+          "denom": "USDC-INIT LP",
+          "exponent": 6
+        },
+        {
+          "denom": "move/543b35a39cfadad3da3c23249c474455d15efd2f94f849473226dee8a3c7a9e1",
+          "exponent": 0
+        }
+      ],
+      "base": "move/543b35a39cfadad3da3c23249c474455d15efd2f94f849473226dee8a3c7a9e1",
+      "display": "USDC-INIT LP",
+      "name": "USDC-INIT LP",
+      "symbol": "USDC-INIT LP",
+      "token_type": "lp",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC-INIT.png"
+      }
+    },
+    {
       "description": "Drop staked INIT-USDC LPT",
       "denom_units": [
         {

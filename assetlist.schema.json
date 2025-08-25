@@ -47,6 +47,11 @@
           "type": "string",
           "description": "[OPTIONAL] The address of the asset. Only required for type_asset : cw20, snip20"
         },
+        "token_type": {
+          "type": "string",
+          "enum": ["lp"],
+          "description": "[OPTIONAL] The type of token."
+        },
         "base": {
           "type": "string",
           "description": "The base unit of the asset. Must be in denom_units."
