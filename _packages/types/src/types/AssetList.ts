@@ -28,6 +28,10 @@ export interface Asset {
    */
   address?: string;
   /**
+   * [OPTIONAL] The type of token.
+   */
+  token_type?: "lp";
+  /**
    * The base unit of the asset. Must be in denom_units.
    */
   base: string;

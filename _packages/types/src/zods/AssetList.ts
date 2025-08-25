@@ -35,6 +35,10 @@ export const AssetListSchema = z
               "[OPTIONAL] The address of the asset. Only required for type_asset : cw20, snip20"
             )
             .optional(),
+          token_type: z
+            .literal("lp")
+            .describe("[OPTIONAL] The type of token.")
+            .optional(),
           base: z
             .string()
             .describe("The base unit of the asset. Must be in denom_units."),
