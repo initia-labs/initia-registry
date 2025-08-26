@@ -36,7 +36,7 @@
     ],
     "indexer": [
       {
-        "address": "https://rollytics-api-intergaze-1.anvil.asia-southeast.initia.xyz"
+        "address": "https://rest.intergaze-apis.com"
       }
     ]
   },
