@@ -575,6 +575,10 @@
     "metadata": {
       "type": "object",
       "properties": {
+        "deprecated": {
+          "type": "boolean",
+          "description": "[Optional] Indicates if the chain will be deprecated soon"
+        },
         "is_l1": {
           "type": "boolean",
           "description": "[Optional] Indicates if the chain is a layer 1 chain."
