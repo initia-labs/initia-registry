@@ -477,6 +477,10 @@ export const ChainSchema = z
     extra_codecs: z.array(z.enum(["ethermint", "injective"])).optional(),
     metadata: z
       .object({
+        deprecated: z
+          .boolean()
+          .describe("[Optional] Indicates if the chain will be deprecated soon")
+          .optional(),
         is_l1: z
           .boolean()
           .describe("[Optional] Indicates if the chain is a layer 1 chain.")

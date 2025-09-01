@@ -207,6 +207,10 @@ export interface Chain {
   extra_codecs?: ("ethermint" | "injective")[];
   metadata?: {
     /**
+     * [Optional] Indicates if the chain will be deprecated soon
+     */
+    deprecated?: boolean;
+    /**
      * [Optional] Indicates if the chain is a layer 1 chain.
      */
     is_l1?: boolean;
