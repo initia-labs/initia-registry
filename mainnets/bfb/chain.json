@@ -106,6 +106,7 @@
     "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/BFB.png"
   },
   "metadata": {
+    "deprecated": true,
     "op_bridge_id": "28",
     "op_denoms": ["uinit"],
     "executor_uri": "https://opinit-api-bfb-1.anvil.europe-west.initia.xyz",
