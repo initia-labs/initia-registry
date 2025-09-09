@@ -56,6 +56,22 @@
         "binaries": {
           "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.4/minievm_v1.1.4_Linux_aarch64.tar.gz"
         }
+      },
+      {
+        "name": "v1.1.9",
+        "recommended_version": "v1.1.14",
+        "compatible_versions": [
+          "v1.1.14",
+          "v1.1.13",
+          "v1.1.12",
+          "v1.1.11",
+          "v1.1.10",
+          "v1.1.9"
+        ],
+        "height": 10204383,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.14/minievm_v1.1.14_Linux_aarch64.tar.gz"
+        }
       }
     ],
     "genesis": {
