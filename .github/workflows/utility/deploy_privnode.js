@@ -86,6 +86,7 @@ async function deployPrivnodes(idToken) {
             const p2pPeers = data.peer_infos || [];
             const trustedPeers = p2pPeers.map(p => p.split('@')[0]);
             const baseRegion = data.base_region || process.env.REGION;
+            const isMainnet = data.l1_chain_id === "interwoven-1";
 
             const payload = {
                 image: { privnode: image },
@@ -99,8 +100,8 @@ async function deployPrivnodes(idToken) {
                 },
                 resources: {
                     privnode: {
-                        cpu: "8",
-                        memory: "32Gi"
+                        cpu: "4",
+                        memory: "8Gi"
                     }
                 },
                 storage: {
@@ -109,6 +110,12 @@ async function deployPrivnodes(idToken) {
                     }
                 }
             };
+
+            // use more resources for mainnet deployments
+            if (isMainnet) {
+                payload.resources.privnode.cpu = "6";
+                payload.resources.privnode.memory = "16Gi";
+            }
 
             const postUrl = `${url}/privnode`;
             await axios.post(postUrl, payload, { headers });
