@@ -9,13 +9,49 @@
   "network_type": "mainnet",
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minimove",
-    "recommended_version": "v1.0.0-beta.14",
+    "recommended_version": "v1.0.7",
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-beta.14/minimove_v1.0.0-beta.14_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-beta.14/minimove_v1.0.0-beta.14_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-beta.14/minimove_v1.0.0-beta.14_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-beta.14/minimove_v1.0.0-beta.14_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Darwin_aarch64.tar.gz"
     },
+    "versions": [
+      {
+        "name": "v1.0.0-beta.14",
+        "recommended_version": "v1.0.0-beta.14",
+        "compatible_versions": ["v1.0.0-beta.14"],
+        "height": 1,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-beta.14/minimove_v1.0.0-beta.14_Linux_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "1.0.0-rc.0",
+        "recommended_version": "v1.0.0-rc.1",
+        "compatible_versions": ["v1.0.0-rc.1", "v1.0.0-rc.0"],
+        "height": 572200,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.0-rc.1/minimove_v1.0.0-rc.1_Linux_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "1.0.2",
+        "recommended_version": "v1.0.7",
+        "compatible_versions": [
+          "v1.0.7",
+          "v1.0.6",
+          "v1.0.5",
+          "v1.0.4",
+          "v1.0.3",
+          "v1.0.2"
+        ],
+        "height": 1243321,
+        "binaries": {
+          "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Linux_aarch64.tar.gz"
+        }
+      }
+    ],
     "genesis": {
       "genesis_url": "https://rpc-echelon-1.anvil.asia-southeast.initia.xyz/genesis"
     }
