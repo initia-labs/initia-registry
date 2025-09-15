@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "evm/2ee7007df876084d4c74685e90bb7f4cd7c86e22",
+          "denom": "evm/2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
           "exponent": 0
         },
         {
