@@ -55,11 +55,11 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/testwasm.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/testwasm.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
   },
   "metadata": {
     "op_bridge_id": "1457",
@@ -79,7 +79,7 @@
         "version": "ics721-1"
       }
     ],
-    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/testwasm/assetlist.json",
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/wasm/assetlist.json",
     "minitia": {
       "type": "miniwasm",
       "version": "v1.1.1"

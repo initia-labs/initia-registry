@@ -55,11 +55,11 @@
   },
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/move.png"
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
     }
   ],
   "logo_URIs": {
-    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/move.png"
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
   },
   "metadata": {
     "op_bridge_id": "1458",
