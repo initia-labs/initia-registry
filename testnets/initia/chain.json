@@ -316,7 +316,6 @@
         "channel_id": "channel-3076",
         "version": "ics721-1"
       },
-
       {
         "chain_id": "wasm-1",
         "port_id": "transfer",
@@ -329,7 +328,6 @@
         "channel_id": "channel-3074",
         "version": "ics721-1"
       },
-
       {
         "chain_id": "evm-1",
         "port_id": "transfer",
