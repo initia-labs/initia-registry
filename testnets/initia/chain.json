@@ -302,6 +302,43 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-2798",
         "version": "ics721-1"
+      },
+
+      {
+        "chain_id": "move-1",
+        "port_id": "transfer",
+        "channel_id": "channel-3075",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "move-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-3076",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "wasm-1",
+        "port_id": "transfer",
+        "channel_id": "channel-3073",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "wasm-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-3074",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "evm-1",
+        "port_id": "transfer",
+        "channel_id": "channel-3077",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "evm-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-3078",
+        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"

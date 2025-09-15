@@ -1,0 +1,59 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "evm",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "evm/2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
+      "base": "evm/2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1459"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "evm",
+            "chain_id": "evm-1",
+            "base_denom": "l2/22f29f9e38a602c229cf6f3e8673dfd49c2f86cb83249513f436ff35ea317cca"
+          },
+          "chain": {
+            "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    }
+  ]
+}

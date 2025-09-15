@@ -1,0 +1,88 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "move",
+  "pretty_name": "Move",
+  "chain_id": "move-1",
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v1.0.7",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.0.7/minimove_v1.0.7_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc-move-1.anvil.asia-southeast.initia.xyz/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-move-1.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/move-1",
+      "tx_page": "https://scan.testnet.initia.xyz/move-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/move-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": []
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1458",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-move-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/move/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v1.0.7"
+    }
+  }
+}

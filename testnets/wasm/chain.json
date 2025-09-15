@@ -1,0 +1,88 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "wasm",
+  "pretty_name": "wasm-1",
+  "chain_id": "wasm-1",
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/miniwasm",
+    "recommended_version": "v1.1.1",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v1.1.1/miniwasm_v1.1.1_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v1.1.1/miniwasm_v1.1.1_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/miniwasm/releases/download/v1.1.1/miniwasm_v1.1.1_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/miniwasm/releases/download/v1.1.1/miniwasm_v1.1.1_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc-wasm-1.anvil.asia-southeast.initia.xyz/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-wasm-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-wasm-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-wasm-1.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-wasm-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/wasm-1",
+      "tx_page": "https://scan.testnet.initia.xyz/wasm-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/wasm-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": []
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/miniwasm.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1457",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-wasm-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/wasm/assetlist.json",
+    "minitia": {
+      "type": "miniwasm",
+      "version": "v1.1.1"
+    }
+  }
+}

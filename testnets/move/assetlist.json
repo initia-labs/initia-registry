@@ -1,0 +1,45 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "move",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/07b129ceb9c4b0bdef7db171ce1e22f90d34bc930058b23e21adf8cc938d8145",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/07b129ceb9c4b0bdef7db171ce1e22f90d34bc930058b23e21adf8cc938d8145",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1458"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    }
+  ]
+}
