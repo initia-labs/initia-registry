@@ -15,8 +15,8 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x2ee7007df876084d4c74685e90bb7f4cd7c86e22",
-      "base": "evm/2ee7007df876084d4c74685e90bb7f4cd7c86e22",
+      "address": "0x2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
+      "base": "evm/2eE7007DF876084d4C74685e90bB7f4cd7c86e22",
       "display": "INIT",
       "traces": [
         {
@@ -29,6 +29,18 @@
           "chain": {
             "bridge_id": "1459"
           }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "evm",
+            "chain_id": "evm-1",
+            "base_denom": "l2/22f29f9e38a602c229cf6f3e8673dfd49c2f86cb83249513f436ff35ea317cca"
+          },
+          "chain": {
+            "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
+          },
+          "provider": "Decimal Wrapper"
         }
       ],
       "name": "Initia Native Token",
