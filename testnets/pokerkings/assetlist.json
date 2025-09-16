@@ -42,6 +42,33 @@
           }
         }
       ]
+    },
+    {
+      "description": "pINIT is the in-game currency of Poker Kings, used as playing chips instead of real INIT tokens",
+      "denom_units": [
+        {
+          "denom": "init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
+          "exponent": 0
+        },
+        {
+          "denom": "pINIT",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "cw20",
+      "address": "init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
+      "base": "init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
+      "display": "pINIT",
+      "name": "pINIT",
+      "symbol": "pINIT",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/pINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/pINIT.png"
+      }
     }
   ]
 }
