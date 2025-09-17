@@ -6,17 +6,17 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "evm/0Fd3D572f3AFE6C7b995b13a9D5c12Dd90211FF2",
+          "denom": "l2/1cc67cafab39b8e070ed6fe3d21749e77ef797984a7939eedde26649248d0986",
           "exponent": 0
         },
         {
           "denom": "INIT",
-          "exponent": 18
+          "exponent": 6
         }
       ],
       "type_asset": "erc20",
       "address": "0x0Fd3D572f3AFE6C7b995b13a9D5c12Dd90211FF2",
-      "base": "evm/0Fd3D572f3AFE6C7b995b13a9D5c12Dd90211FF2",
+      "base": "l2/1cc67cafab39b8e070ed6fe3d21749e77ef797984a7939eedde26649248d0986",
       "display": "INIT",
       "traces": [
         {
@@ -29,18 +29,6 @@
           "chain": {
             "bridge_id": "1463"
           }
-        },
-        {
-          "type": "wrapped",
-          "counterparty": {
-            "chain_name": "monogatari",
-            "chain_id": "monogatari-1",
-            "base_denom": "l2/1cc67cafab39b8e070ed6fe3d21749e77ef797984a7939eedde26649248d0986"
-          },
-          "chain": {
-            "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
-          },
-          "provider": "Decimal Wrapper"
         }
       ],
       "name": "Initia Native Token",
