@@ -80,9 +80,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.testnet.initia.xyz/monogatari-1",
-      "tx_page": "https://scan.testnet.initia.xyz/monogatari-1/txs/${txHash}",
-      "account_page": "https://scan.testnet.initia.xyz/monogatari-1/accounts/${accountAddress}"
+      "url": "https://scan.testnet.initia.xyz/test-monogatari-1",
+      "tx_page": "https://scan.testnet.initia.xyz/test-monogatari-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/test-monogatari-1/accounts/${accountAddress}"
     }
   ],
   "key_algos": ["secp256k1"],
