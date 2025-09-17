@@ -1,0 +1,125 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "monogatari",
+  "pretty_name": "Monogatari",
+  "chain_id": "test-monogatari-1",
+  "evm_chain_id": 1408136350774680,
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minievm",
+    "recommended_version": "v1.2.0-alpha.0",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.05/minievm_v1.2.0-alpha.0_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc.moonlightcube.com/genesis"
+    },
+    "versions": [
+      {
+        "name": "v1.1.15",
+        "recommended_version": "v1.1.15",
+        "compatible_versions": ["v1.1.15"],
+        "height": 1,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.15/minievm_v1.1.15_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.15/minievm_v1.1.15_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.1.15/minievm_v1.1.15_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.1.15/minievm_v1.1.15_Darwin_aarch64.tar.gz"
+        }
+      },
+      {
+        "name": "v1.2.0-alpha.0",
+        "recommended_version": "v1.2.0-alpha.0",
+        "compatible_versions": ["v1.2.0-alpha.0"],
+        "height": 184500,
+        "binaries": {
+          "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Linux_x86_64.tar.gz",
+          "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Linux_aarch64.tar.gz",
+          "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Darwin_x86_64.tar.gz",
+          "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.0-alpha.0/minievm_v1.2.0-alpha.0_Darwin_aarch64.tar.gz"
+        }
+      }
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.moonlightcube.com"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://api.moonlightcube.com"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-direct.moonlightcube.com:443"
+      }
+    ],
+    "json-rpc": [
+      {
+        "address": "https://node.moonlightcube.com/json"
+      }
+    ],
+    "json-rpc-websocket": [
+      {
+        "address": "wss://https://node.moonlightcube.com/ws"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://api.moonlightcube.com"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/monogatari-1",
+      "tx_page": "https://scan.testnet.initia.xyz/monogatari-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/monogatari-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": []
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minievm.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1463",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://executor.moonlightcube.com",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/monogatari/assetlist.json",
+    "minitia": {
+      "type": "minievm",
+      "version": "v1.1.11"
+    }
+  }
+}
