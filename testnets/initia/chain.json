@@ -339,6 +339,18 @@
         "port_id": "nft-transfer",
         "channel_id": "channel-3078",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "test-monogatari-1",
+        "port_id": "transfer",
+        "channel_id": "channel-3085",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "test-monogatari-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-3086",
+        "version": "ics721-1"
       }
     ],
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/initia/assetlist.json"
