@@ -68,7 +68,7 @@
     ],
     "json-rpc-websocket": [
       {
-        "address": "wss://https://node.moonlightcube.com/ws"
+        "address": "wss://node.moonlightcube.com/ws"
       }
     ],
     "indexer": [
