@@ -17,7 +17,7 @@
     },
     "genesis": {
       "genesis_url": "https://rpc-evm-1.anvil.asia-southeast.initia.xyz/genesis"
-    }
+    },
     "versions": [
       {
         "name": "v1.1.15",
