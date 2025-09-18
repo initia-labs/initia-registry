@@ -34,7 +34,7 @@
           "type": "wrapped",
           "counterparty": {
             "chain_name": "monogatari",
-            "chain_id": "monogatari-1",
+            "chain_id": "test-monogatari-1",
             "base_denom": "l2/1cc67cafab39b8e070ed6fe3d21749e77ef797984a7939eedde26649248d0986"
           },
           "chain": {
