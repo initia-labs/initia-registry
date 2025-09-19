@@ -1,7 +1,7 @@
 {
   "$schema": "../../chain.schema.json",
   "chain_name": "wasm",
-  "pretty_name": "wasm-1",
+  "pretty_name": "Wasm",
   "chain_id": "wasm-1",
   "bech32_prefix": "init",
   "network_type": "testnet",
