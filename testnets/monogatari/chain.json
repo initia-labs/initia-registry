@@ -90,8 +90,8 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "l2/1cc67cafab39b8e070ed6fe3d21749e77ef797984a7939eedde26649248d0986",
-        "fixed_min_gas_price": 0.015
+        "denom": "evm/0Fd3D572f3AFE6C7b995b13a9D5c12Dd90211FF2",
+        "fixed_min_gas_price": 15000000000000000
       }
     ]
   },
