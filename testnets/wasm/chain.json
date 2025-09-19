@@ -51,7 +51,12 @@
   "key_algos": ["secp256k1"],
   "slip44": 118,
   "fees": {
-    "fee_tokens": []
+    "fee_tokens": [
+      {
+        "denom": "l2/8b3e1fc559b327a35335e3f26ff657eaee5ff8486ccd3c1bc59007a93cf23156",
+        "fixed_min_gas_price": 0.015
+      }
+    ]
   },
   "images": [
     {
