@@ -48,32 +48,32 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.moonlightcube.com"
+        "address": "https://rpc-cf.moonlightcube.com/"
       }
     ],
     "rest": [
       {
-        "address": "https://api.moonlightcube.com"
+        "address": "https://rest-cf.moonlightcube.com/"
       }
     ],
     "grpc": [
       {
-        "address": "grpc-direct.moonlightcube.com:443"
+        "address": "grpc-cf.moonlightcube.com:443"
       }
     ],
     "json-rpc": [
       {
-        "address": "https://node.moonlightcube.com/json"
+        "address": "https://json-rpc-cf.moonlightcube.com/"
       }
     ],
     "json-rpc-websocket": [
       {
-        "address": "wss://node.moonlightcube.com/ws"
+        "address": "wss://json-rpc-ws-cf.moonlightcube.com/"
       }
     ],
     "indexer": [
       {
-        "address": "https://api.moonlightcube.com"
+        "address": "https://rest-cf.moonlightcube.com/"
       }
     ]
   },
