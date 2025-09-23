@@ -29,16 +29,14 @@
       },
       "traces": [
         {
-          "type": "ibc",
+          "type": "op",
           "counterparty": {
             "chain_name": "initia",
             "chain_id": "initiation-2",
-            "base_denom": "uinit",
-            "channel_id": "channel-2803"
+            "base_denom": "uinit"
           },
           "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/uinit"
+            "bridge_id": "1325"
           }
         }
       ]
