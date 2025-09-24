@@ -127,7 +127,7 @@
       "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15",
       "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
       "display": "TIA",
-      "name": "Celestia TIA",
+      "name": "Celestia Native Token",
       "symbol": "TIA",
       "coingecko_id": "celestia",
       "traces": [
