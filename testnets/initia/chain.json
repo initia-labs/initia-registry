@@ -202,84 +202,6 @@
     "is_l1": true,
     "ibc_channels": [
       {
-        "chain_id": "minimove-2",
-        "port_id": "transfer",
-        "channel_id": "channel-4",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "minimove-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-5",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "miniwasm-2",
-        "port_id": "transfer",
-        "channel_id": "channel-2",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "miniwasm-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-3",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "minievm-2",
-        "port_id": "transfer",
-        "channel_id": "channel-0",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "minievm-2",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "rave-test4",
-        "port_id": "transfer",
-        "channel_id": "channel-1317",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "rave-test4",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1318",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "nuwa-rollup-1",
-        "port_id": "transfer",
-        "channel_id": "channel-2453",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "nuwa-rollup-1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-2454",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "virgaze-1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-1586",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "landlord-3",
-        "port_id": "transfer",
-        "channel_id": "channel-2605",
-        "version": "ics20-1"
-      },
-      {
-        "chain_id": "landlord-3",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-2606",
-        "version": "ics721-1"
-      },
-      {
         "chain_id": "contro-testnet-1",
         "port_id": "transfer",
         "channel_id": "channel-2648",
@@ -338,6 +260,18 @@
         "chain_id": "evm-1",
         "port_id": "nft-transfer",
         "channel_id": "channel-3078",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "macau-1",
+        "port_id": "transfer",
+        "channel_id": "channel-2803",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "macau-1",
+        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "channel_id": "channel-2804",
         "version": "ics721-1"
       }
     ],
