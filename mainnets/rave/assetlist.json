@@ -124,7 +124,7 @@
       }
     },
     {
-      "description": "MilkyWay's Liquid Staked milkINIT",
+      "description": "MilkyWay's Liquid Staked INIT",
       "denom_units": [
         {
           "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
@@ -139,7 +139,7 @@
       "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15",
       "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
       "display": "milkINIT",
-      "name": "milkINIT",
+      "name": "MilkyWay's INIT LST",
       "symbol": "milkINIT",
       "coingecko_id": "",
       "traces": [
