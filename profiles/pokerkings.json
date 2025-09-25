@@ -1,0 +1,27 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "pokerkings",
+  "pretty_name": "PokerKings",
+  "category": "Gaming",
+  "l2": true,
+  "description": "The new paradigm of risk free on-chain poker on Initia",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/pokerkings.png",
+  "color": "#EC3D45",
+  "status": "live",
+  "vip": {
+    "actions": [
+      {
+        "title": "Capital Contribution",
+        "description": "VIP rewards for INIT deposits providing liquidity, vested gradually over time"
+      },
+      {
+        "title": "Gameplay Contribution",
+        "description": "Tier-based VIP rewards from pure pINIT earned in games, with higher tiers receiving larger shares"
+      }
+    ]
+  },
+  "social": {
+    "website": "https://pokerkings.games",
+    "twitter": "https://x.com/_PokerKings"
+  }
+}
