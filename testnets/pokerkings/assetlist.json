@@ -57,7 +57,7 @@
       ],
       "type_asset": "cw20",
       "address": "init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
-      "base": "init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
+      "base": "cw20:init1rdh85tx0hc8mrvkr5y7tg90khtrw5pjss5gjtvsdrvl4umg8srnqgk9kcf",
       "display": "pINIT",
       "name": "pINIT",
       "symbol": "pINIT",
