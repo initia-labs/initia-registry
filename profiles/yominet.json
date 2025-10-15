@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "yominet",
   "pretty_name": "Yominet",
+  "chain_id": "yominet-1",
   "category": "Gaming",
   "l2": true,
   "description": "The first economically independent virtual world living onchain. Home to the Kamigotchi.",

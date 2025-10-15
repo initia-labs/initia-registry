@@ -520,6 +520,7 @@ An example assetlist json contains the following structure:
 | `$schema`                   | `string (URL/path)` | Yes           | Path or URL to the profile schema (e.g. `../../profile.schema.json`).               |
 | `name`                      | `string`            | Yes           | The chain name matching `chain_name` in other JSON files.                           |
 | `pretty_name`               | `string`            | Yes           | A human-readable chain name (e.g. “Kamigotchi”).                                    |
+| `chain_id`                  | `string`            | Optional      | Mainnet chain id                                                                    |
 | `category`                  | `string`            | Optional      | Broad classification of the chain (e.g. “Gaming”, “DeFi”, “Infrastructure”).        |
 | `l2`                        | `boolean`           | Optional      | Indicates whether this chain is a Layer 2 chain.                                    |
 | `description`               | `string`            | Optional      | A detailed description or tagline for the chain.                                    |

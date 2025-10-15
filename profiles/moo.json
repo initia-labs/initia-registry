@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "moo",
   "pretty_name": "MilkyWay",
+  "chain_id": "moo-1",
   "category": "DeFi",
   "l2": true,
   "description": "The Modular Staking Portal",

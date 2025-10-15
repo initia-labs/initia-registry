@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "bfb",
   "pretty_name": "Battle for Blockchain",
+  "chain_id": "bfb-1",
   "category": "Gaming",
   "l2": true,
   "description": "Fully onchain battle world, where value gets redistributed based on players performance.",

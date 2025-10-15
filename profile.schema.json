@@ -17,6 +17,9 @@
     "pretty_name": {
       "type": "string"
     },
+    "chain_id": {
+      "type": "string"
+    },
     "category": {
       "type": "string",
       "enum": ["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Others"]
