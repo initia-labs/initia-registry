@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "zaar",
   "pretty_name": "Zaar",
+  "chain_id": "zaar-mainnet-1",
   "category": "Gaming",
   "l2": true,
   "description": "The Fun Network, where Degeneracy comes to play.",

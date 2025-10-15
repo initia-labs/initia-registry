@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "embr",
   "pretty_name": "Embr.fun",
+  "chain_id": "embrmainnet-1",
   "category": "DeFi",
   "l2": true,
   "description": "A novel launchpad where users can win big by focusing liquidity into the best memes.",

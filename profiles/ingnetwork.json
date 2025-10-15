@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "ingnetwork",
   "pretty_name": "ING Network",
+  "chain_id": "ingnetwork-1",
   "category": "AI",
   "tags": [],
   "l2": true,

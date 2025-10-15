@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "civitia",
   "pretty_name": "Civitia",
+  "chain_id": "civitia-1",
   "category": "Gaming",
   "l2": true,
   "description": "Mint cities, collect yield, and collaborate within communities to acquire control of the planet.",

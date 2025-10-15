@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "rave",
   "pretty_name": "Rave",
+  "chain_id": "rave-1",
   "category": "DeFi",
   "l2": true,
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",

@@ -2,6 +2,7 @@
   "$schema": "../profile.schema.json",
   "name": "intergaze",
   "pretty_name": "Intergaze",
+  "chain_id": "intergaze-1",
   "category": "NFT",
   "l2": true,
   "description": "The Launchpad and Marketplace for Interwoven NFTs",
