@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 19.6.0
+          node-version: 22
 
       - name: Run code to Sync Images
         working-directory: ./.github/workflows/utility
