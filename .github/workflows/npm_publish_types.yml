@@ -6,6 +6,10 @@ on:
     paths:
       - _packages/types/package.json
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   publish_types:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "24"
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
         working-directory: ./_packages/types
@@ -22,5 +26,3 @@ jobs:
         working-directory: ./_packages/types
       - run: npm publish
         working-directory: ./_packages/types
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
