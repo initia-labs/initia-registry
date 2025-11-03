@@ -6,7 +6,7 @@
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+          "denom": "evm/62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
           "exponent": 0
         },
         {
@@ -15,22 +15,24 @@
         }
       ],
       "type_asset": "erc20",
-      "address": "0x4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
-      "base": "evm/4f7566f67941283a30cf65de7b9c6fdf2c04FCA1",
+      "address": "0x62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
+      "base": "evm/62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
       "display": "INIT",
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "initia",
       "traces": [
         {
-          "type": "op",
+          "type": "ibc",
           "counterparty": {
             "base_denom": "uinit",
             "chain_name": "initia",
-            "chain_id": "interwoven-1"
+            "chain_id": "interwoven-1",
+            "channel_id": "channel-89"
           },
           "chain": {
-            "bridge_id": "29"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uinit"
           }
         },
         {
@@ -38,7 +40,7 @@
           "counterparty": {
             "chain_name": "counter",
             "chain_id": "counter-1",
-            "base_denom": "l2/5c7570d305b2d43f6cf33b41043d9429daa5d2a1038095a894febdc308966ff3"
+            "base_denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50"
           },
           "chain": {
             "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
