@@ -1,0 +1,129 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "counter",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "evm/62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
+      "base": "evm/62Dcd6133e2Cc7B8b196d32d141266F65fC547cD",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "channel_id": "channel-89"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uinit"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "counter",
+            "chain_id": "counter-1",
+            "base_denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50"
+          },
+          "chain": {
+            "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "USDC on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/b85f7ce801cB37F46B34C3cD3D44B2c9FBFC0c15",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xb85f7ce801cB37F46B34C3cD3D44B2c9FBFC0c15",
+      "base": "evm/b85f7ce801cB37F46B34C3cD3D44B2c9FBFC0c15",
+      "display": "USDC",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "coingecko_id": "usd-coin",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "chain_id": "noble-1",
+            "base_denom": "uusdc",
+            "channel_id": "channel-129"
+          },
+          "chain": {
+            "channel_id": "channel-3",
+            "path": "transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+            "channel_id": "channel-89"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "counter",
+            "chain_id": "counter-0",
+            "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
+          },
+          "chain": {
+            "contract": "0x7FD385d69908247436f49de2A1AFf6438d75C3c0"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    }
+  ]
+}
