@@ -22,7 +22,16 @@
     },
     "category": {
       "type": "string",
-      "enum": ["DeFi", "Social", "NFT", "Gaming", "Portfolio", "AI", "Others"]
+      "enum": [
+        "DeFi",
+        "Social",
+        "NFT",
+        "Gaming",
+        "Portfolio",
+        "AI",
+        "Consumer",
+        "Others"
+      ]
     },
     "tags": {
       "type": "array",
