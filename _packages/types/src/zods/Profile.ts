@@ -11,6 +11,7 @@ export const ProfileSchema = z.object({
     "Gaming",
     "Portfolio",
     "AI",
+    "Consumer",
     "Others",
   ]),
   tags: z.array(z.string().max(10)).max(3).optional(),
