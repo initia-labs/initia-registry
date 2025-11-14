@@ -450,7 +450,7 @@
       "description": "The native token of Inertia",
       "denom_units": [
         {
-          "denom": "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+          "denom": "move/a3c0200a7f978d169c648387144aad50db6d89ceb2029cf171e647e62a6a859b",
           "exponent": 0
         },
         {
@@ -458,7 +458,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/cb27ce9341af0b9e8ac1a4a83a8788efb9bcc74a41d0cf7c1f44ba3141025484",
+      "base": "move/a3c0200a7f978d169c648387144aad50db6d89ceb2029cf171e647e62a6a859b",
       "display": "INRT",
       "name": "INRT",
       "symbol": "INRT",
@@ -476,7 +476,7 @@
       "description": "The LST of INIT by Inertia",
       "denom_units": [
         {
-          "denom": "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
+          "denom": "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
           "exponent": 0
         },
         {
@@ -484,7 +484,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/39be751fb1af0a64eda97ce59f569ef903ac7a90d0d44d40287b059024f363c0",
+      "base": "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
       "display": "sINIT",
       "name": "sINIT",
       "symbol": "sINIT",
@@ -502,7 +502,7 @@
       "description": "The LST of INIT by Inertia",
       "denom_units": [
         {
-          "denom": "move/9017f312a3df7e612d3ca453bee0bbc6c93b040861d235b8ad0406d3674e1abe",
+          "denom": "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
           "exponent": 0
         },
         {
@@ -510,7 +510,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/9017f312a3df7e612d3ca453bee0bbc6c93b040861d235b8ad0406d3674e1abe",
+      "base": "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
       "display": "nINIT",
       "name": "nINIT",
       "symbol": "nINIT",
@@ -601,6 +601,58 @@
       ],
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDN.png"
+      }
+    },
+    {
+      "description": "The yield bearing LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT sLP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0",
+      "display": "INIT sLP",
+      "name": "INIT sLP",
+      "symbol": "INIT sLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+      }
+    },
+    {
+      "description": "The pegged LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT nLP",
+          "exponent": 6
+        }
+      ],
+      "base": "move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336",
+      "display": "INIT nLP",
+      "name": "INIT nLP",
+      "symbol": "INIT nLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
       }
     }
   ]

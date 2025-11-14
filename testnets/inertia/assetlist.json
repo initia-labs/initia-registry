@@ -1,0 +1,283 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "inertia",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/9a832b0c7d5e0c523e2bba61afbe23c44cc6633a8ccbbed417b0eff18f11394c",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/9a832b0c7d5e0c523e2bba61afbe23c44cc6633a8ccbbed417b0eff18f11394c",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      },
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1487"
+          }
+        }
+      ]
+    },
+    {
+      "description": "The fake TIA",
+      "denom_units": [
+        {
+          "denom": "l2/62a4b11e4797be5c83d020e4d7f1a1abb7cd745db42db26314842a613e57a075",
+          "exponent": 0
+        },
+        {
+          "denom": "TIA",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/62a4b11e4797be5c83d020e4d7f1a1abb7cd745db42db26314842a613e57a075",
+      "display": "TIA",
+      "name": "Fake TIA Token",
+      "symbol": "TIA",
+      "coingecko_id": "celestia",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "utia",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1487"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
+    },
+    {
+      "description": "USDC on Initia",
+      "denom_units": [
+        {
+          "denom": "l2/3638298c3c703312f70a9968f9f858bcb9c7c35affd88de22d3e5bcbcd8b62c8",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/3638298c3c703312f70a9968f9f858bcb9c7c35affd88de22d3e5bcbcd8b62c8",
+      "display": "USDC",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "coingecko_id": "usd-coin",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uusdc",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1487"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "l2/4da29cfeb9c478076cf75686f2c6adf80472d78b2d124880834fbf6704a34172",
+          "exponent": 0
+        },
+        {
+          "denom": "sINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/4da29cfeb9c478076cf75686f2c6adf80472d78b2d124880834fbf6704a34172",
+      "display": "sINIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/2742a2f1ae087b1ade570bd02a78a81d2e629e764f5179f95367b7a3086aed36",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1487"
+          }
+        }
+      ],
+      "name": "sINIT",
+      "symbol": "sINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+      }
+    },
+    {
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
+        {
+          "denom": "l2/8ca50a1a35aa49a424942b3b7e68226bcaf11d2e9a9751c59b183fcbaa709279",
+          "exponent": 0
+        },
+        {
+          "denom": "nINIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/8ca50a1a35aa49a424942b3b7e68226bcaf11d2e9a9751c59b183fcbaa709279",
+      "display": "nINIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/4a39f845c36fa8f9f4a200579a8d92aab2fbdb345dab7a110cf14d7d00760748",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1487"
+          }
+        }
+      ],
+      "name": "nINIT",
+      "symbol": "nINIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+      }
+    },
+    {
+      "description": "The yield bearing LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/7C2D8CBB040F84D86D531773D86ABAEE358C9535AAB683A4BB5782A8265C9540",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT sLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/7C2D8CBB040F84D86D531773D86ABAEE358C9535AAB683A4BB5782A8265C9540",
+      "display": "INIT sLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "initiation-2",
+            "base_denom": "move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0",
+            "channel_id": "channel-3300"
+          },
+          "chain": {
+            "channel_id": "channel-2",
+            "path": "transfer/channel-2/move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0"
+          }
+        }
+      ],
+      "name": "INIT sLP",
+      "symbol": "INIT sLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+      }
+    },
+    {
+      "description": "The pegged LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/512BCD54E2DF9E038192E86E0721F561B147C8962BEF58CF29D0B7A20C3DA09A",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT nLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/512BCD54E2DF9E038192E86E0721F561B147C8962BEF58CF29D0B7A20C3DA09A",
+      "display": "INIT nLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "initiation-2",
+            "base_denom": "move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336",
+            "channel_id": "channel-3300"
+          },
+          "chain": {
+            "channel_id": "channel-2",
+            "path": "transfer/channel-2/move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336"
+          }
+        }
+      ],
+      "name": "INIT nLP",
+      "symbol": "INIT nLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+      }
+    }
+  ]
+}
