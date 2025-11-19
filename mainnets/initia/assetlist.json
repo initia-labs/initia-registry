@@ -1189,7 +1189,7 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
       }
     },
-{
+    {
       "description": "Liquidity Pool Token for xINIT-INIT trading pair on Initia DEX",
       "denom_units": [
         {
