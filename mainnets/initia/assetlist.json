@@ -1190,6 +1190,33 @@
       }
     },
     {
+      "description": "Liquidity Pool Token for xINIT-INIT trading pair on Initia DEX",
+      "denom_units": [
+        {
+          "denom": "xINIT-INIT LP",
+          "exponent": 6
+        },
+        {
+          "denom": "move/c71aa9c25976a1070ccf16b6b74ec611912212d805a2575cddff875d49872151",
+          "exponent": 0
+        }
+      ],
+      "base": "move/c71aa9c25976a1070ccf16b6b74ec611912212d805a2575cddff875d49872151",
+      "display": "xINIT-INIT LP",
+      "name": "xINIT-INIT LP",
+      "symbol": "xINIT-INIT LP",
+      "token_type": "lp",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT-INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xINIT-INIT.png"
+      }
+    },
+    {
       "description": "The LP token of cabal USDC-INIT",
       "denom_units": [
         {
