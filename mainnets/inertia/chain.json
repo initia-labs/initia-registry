@@ -45,7 +45,7 @@
     ],
     "indexer": [
       {
-        "address": "https://rest.inrt.fi"
+        "address": "https://indexer.inrt.fi"
       }
     ]
   },
