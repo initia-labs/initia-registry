@@ -1339,7 +1339,7 @@
       "description": "AUSD0 on Initia",
       "denom_units": [
         {
-          "denom": "move/d48ab034edc5139824678e8519cebb6e032db57999ebc36b582cd26af1af992e",
+          "denom": "move/8078cf9fee50e15069402e9d1d9db70b28fc0d5197d79e8a2b41e2ade432efef",
           "exponent": 0
         },
         {
@@ -1347,7 +1347,7 @@
           "exponent": 6
         }
       ],
-      "base": "move/d48ab034edc5139824678e8519cebb6e032db57999ebc36b582cd26af1af992e",
+      "base": "move/8078cf9fee50e15069402e9d1d9db70b28fc0d5197d79e8a2b41e2ade432efef",
       "display": "AUSD0",
       "name": "AUSD0",
       "symbol": "AUSD0",
