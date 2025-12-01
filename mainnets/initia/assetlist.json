@@ -1334,6 +1334,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
       }
+    },
+    {
+      "description": "AUSD0 on Initia",
+      "denom_units": [
+        {
+          "denom": "move/8078cf9fee50e15069402e9d1d9db70b28fc0d5197d79e8a2b41e2ade432efef",
+          "exponent": 0
+        },
+        {
+          "denom": "AUSD0",
+          "exponent": 6
+        }
+      ],
+      "base": "move/8078cf9fee50e15069402e9d1d9db70b28fc0d5197d79e8a2b41e2ade432efef",
+      "display": "AUSD0",
+      "name": "AUSD0",
+      "symbol": "AUSD0",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/AUSD0.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/AUSD0.png"
+      }
     }
   ]
 }
