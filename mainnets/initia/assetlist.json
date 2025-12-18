@@ -1138,6 +1138,32 @@
       }
     },
     {
+      "description": "Cabal INIT",
+      "denom_units": [
+        {
+          "denom": "cabalINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
+      "display": "cabalINIT",
+      "name": "cabalINIT",
+      "symbol": "cabalINIT",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cabalINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cabalINIT.png"
+      }
+    },
+    {
       "description": "Cabal xINIT",
       "denom_units": [
         {
