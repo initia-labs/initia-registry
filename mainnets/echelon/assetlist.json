@@ -433,6 +433,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
       }
+    },
+     {
+      "description": "Cabal LST-as-a-service token cabalINIT via IBC",
+      "denom_units": [
+        {
+          "denom": "eINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+      "display": "eINIT",
+      "name": "eINIT",
+      "symbol": "eINIT",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
+            "channel_id": "channel-35"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/eINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/eINIT.png"
+      }
     }
   ]
 }
