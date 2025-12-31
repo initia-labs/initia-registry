@@ -434,7 +434,7 @@
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
       }
     },
-     {
+    {
       "description": "Cabal LST-as-a-service token cabalINIT via IBC",
       "denom_units": [
         {
