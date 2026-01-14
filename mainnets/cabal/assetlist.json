@@ -29,20 +29,20 @@
           "chain": {
             "bridge_id": "42"
           }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "cabal",
+            "chain_id": "cabal-1",
+            "base_denom": "l2/fe807d454c86db0d3f2b1c5ee5108b9440b5dcb98947585e3dc25ed3d6dfa900"
+          },
+          "chain": {
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
+          },
+          "provider": "Decimal Wrapper"
         }
       ],
-      "wrapped": {
-        "type": "wrapped",
-        "counterparty": {
-          "chain_name": "cabal",
-          "chain_id": "cabal-1",
-          "base_denom": "l2/fe807d454c86db0d3f2b1c5ee5108b9440b5dcb98947585e3dc25ed3d6dfa900"
-        },
-        "chain": {
-          "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
-        },
-        "provider": "Decimal Wrapper"
-      },
       "name": "Initia Native Token",
       "symbol": "INIT",
       "coingecko_id": "",
