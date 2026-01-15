@@ -45,7 +45,7 @@
     ],
     "indexer": [
       {
-        "address": "https://rest.testnet.inrt.fi"
+        "address": "https://indexer.testnet.inrt.fi"
       }
     ]
   },
