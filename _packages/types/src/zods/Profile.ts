@@ -57,4 +57,10 @@ export const ProfileSchema = z.object({
     })
     .optional(),
   l2: z.boolean().optional(),
+  op_bridge_id: z
+    .string()
+    .describe(
+      "[Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2."
+    )
+    .optional(),
 });

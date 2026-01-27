@@ -43,5 +43,9 @@ export interface ChainProfile {
     [k: string]: unknown;
   };
   l2?: boolean;
+  /**
+   * [Optional] The identifier of the OPinit bridge used to transfer assets between L1 and L2.
+   */
+  op_bridge_id?: string;
   [k: string]: unknown;
 }

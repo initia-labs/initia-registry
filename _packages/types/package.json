@@ -1,6 +1,6 @@
 {
   "name": "@initia/initia-registry-types",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "The package provides TypeScript type definitions and Zod integration for initia-registry.",
   "types": "./dist/types/index.d.ts",
   "exports": {
