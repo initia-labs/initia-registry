@@ -26,5 +26,6 @@
         "description": "Trade NFTs on Intergaze Marketplace."
       }
     ]
-  }
+  },
+  "op_bridge_id": "31"
 }
