@@ -180,14 +180,14 @@
       }
     },
     {
-      "description": "The native token of Celestia on Initia via IBC",
+      "description": "iUSD on Initia",
       "denom_units": [
         {
-          "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+          "denom": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
           "exponent": 0
         },
         {
-          "denom": "TIA",
+          "denom": "iUSD",
           "exponent": 18
         }
       ],
@@ -195,7 +195,7 @@
       "address": "0xbDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
       "base": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
       "display": "iUSD",
-      "name": "iUSD on Initia",
+      "name": "iUSD",
       "symbol": "iUSD",
       "coingecko_id": "",
       "traces": [
