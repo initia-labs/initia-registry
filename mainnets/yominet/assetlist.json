@@ -205,7 +205,7 @@
             "chain_name": "initia",
             "chain_id": "interwoven-1",
             "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
-            "channel_id": "channel-35"
+            "channel_id": "channel-25"
           },
           "chain": {
             "channel_id": "channel-0",
