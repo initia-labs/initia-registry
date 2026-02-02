@@ -495,6 +495,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
       }
+    },
+    {
+      "description": "iUSD",
+      "denom_units": [
+        {
+          "denom": "ibc/47AF4A6CDA325C23BD5ED7EE43835B74AB5D51AD398F7F559DD6A67B7BE41E63",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/47AF4A6CDA325C23BD5ED7EE43835B74AB5D51AD398F7F559DD6A67B7BE41E63",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "strat",
+            "chain_id": "strat-testnet-1",
+            "base_denom": "move/8009f4738c51127e82a2f298d4a687bb85e4138ceee150a4bd3b6e4735d666d1",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-3101",
+            "path": "transfer/channel-3101/move/8009f4738c51127e82a2f298d4a687bb85e4138ceee150a4bd3b6e4735d666d1"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
     }
   ]
 }

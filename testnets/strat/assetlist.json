@@ -1,0 +1,71 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "strat",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "l2/4c36dd009abe4c252c3e13087fcc66978460523fad35be544c962bce760ac0c4",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 6
+        }
+      ],
+      "base": "l2/4c36dd009abe4c252c3e13087fcc66978460523fad35be544c962bce760ac0c4",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "initiation-2"
+          },
+          "chain": {
+            "bridge_id": "1471"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "iUSD",
+      "denom_units": [
+        {
+          "denom": "move/8009f4738c51127e82a2f298d4a687bb85e4138ceee150a4bd3b6e4735d666d1",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 6
+        }
+      ],
+      "base": "move/8009f4738c51127e82a2f298d4a687bb85e4138ceee150a4bd3b6e4735d666d1",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    }
+  ]
+}
