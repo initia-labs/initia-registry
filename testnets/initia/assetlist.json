@@ -523,7 +523,7 @@
             "channel_id": "channel-0"
           },
           "chain": {
-            "channel_id": "channel-3",
+            "channel_id": "channel-3101",
             "path": "transfer/channel-3101/move/8009f4738c51127e82a2f298d4a687bb85e4138ceee150a4bd3b6e4735d666d1"
           }
         }
