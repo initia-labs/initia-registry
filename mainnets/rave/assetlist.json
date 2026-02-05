@@ -431,6 +431,61 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sxINIT.png"
       }
+    },
+    {
+      "description": "iUSD on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xbDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+      "base": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-38"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "rave",
+            "chain_id": "rave-1",
+            "base_denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
     }
   ]
 }
