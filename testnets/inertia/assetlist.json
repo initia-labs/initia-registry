@@ -218,7 +218,7 @@
             "chain_name": "initia",
             "chain_id": "initiation-2",
             "base_denom": "move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0",
-            "channel_id": "channel-3300"
+            "channel_id": "channel-3079"
           },
           "chain": {
             "channel_id": "channel-2",
@@ -259,7 +259,7 @@
             "chain_name": "initia",
             "chain_id": "initiation-2",
             "base_denom": "move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336",
-            "channel_id": "channel-3300"
+            "channel_id": "channel-3079"
           },
           "chain": {
             "channel_id": "channel-2",
