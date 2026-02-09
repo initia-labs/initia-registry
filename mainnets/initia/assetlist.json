@@ -873,59 +873,6 @@
       }
     },
     {
-      "description": "OP-IBC bridged INIT of Rena",
-      "denom_units": [
-        {
-          "denom": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
-          "exponent": 0
-        },
-        {
-          "denom": "INIT.rena",
-          "exponent": 6
-        }
-      ],
-      "base": "ibc/C45CE5517A9292A36B014274A643AF7FF85941422C03A146758742D891CCEAA8",
-      "display": "INIT.rena",
-      "name": "INIT.rena",
-      "symbol": "INIT.rena",
-      "coingecko_id": "initia",
-      "oracle_symbol": "INIT",
-      "traces": [
-        {
-          "type": "op",
-          "counterparty": {
-            "base_denom": "uinit",
-            "chain_name": "initia",
-            "chain_id": "interwoven-1"
-          },
-          "chain": {
-            "bridge_id": "30"
-          }
-        },
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "rena",
-            "chain_id": "rena-nuwa-1",
-            "base_denom": "l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-64",
-            "path": "transfer/channel-64/l2/9d3d65bf3329e45ad659f9cbee7d6dc7b6246b001e32131a9b465215eab90562"
-          }
-        }
-      ],
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rena.ibcopinit.png"
-      }
-    },
-    {
       "description": "OP-IBC bridged INIT of Yominet",
       "denom_units": [
         {
