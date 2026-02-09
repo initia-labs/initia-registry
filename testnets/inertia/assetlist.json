@@ -221,8 +221,8 @@
             "channel_id": "channel-3079"
           },
           "chain": {
-            "channel_id": "channel-2",
-            "path": "transfer/channel-2/move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/f3718591c10dbebe4891b242e03fddaaaf24ccc2b6bf6d8606d3c5828898ace0"
           }
         }
       ],
@@ -262,8 +262,8 @@
             "channel_id": "channel-3079"
           },
           "chain": {
-            "channel_id": "channel-2",
-            "path": "transfer/channel-2/move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/c7387e7bff428eac4ed0f29695f40180f6d6f432d862ce5f14d9032b1e9c1336"
           }
         }
       ],

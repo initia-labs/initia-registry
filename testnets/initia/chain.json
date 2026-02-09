@@ -270,7 +270,7 @@
       },
       {
         "chain_id": "inertiation-13",
-        "port_id": "wasm.init1wug8sewp6cedgkmrmvhl3lf3tulagm9hnvy8p0rppz9yjw0g4wtq7947m6",
+        "port_id": "nft-transfer",
         "channel_id": "channel-3080",
         "version": "{\"fee_version\":\"ics29-1\",\"app_version\":\"ics721-1\"}"
       }
