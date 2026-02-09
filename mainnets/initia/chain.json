@@ -301,18 +301,6 @@
         "version": "ics20-1"
       },
       {
-        "chain_id": "rena-nuwa-1",
-        "port_id": "nft-transfer",
-        "channel_id": "channel-65",
-        "version": "ics721-1"
-      },
-      {
-        "chain_id": "rena-nuwa-1",
-        "port_id": "transfer",
-        "channel_id": "channel-64",
-        "version": "ics20-1"
-      },
-      {
         "chain_id": "milkyway",
         "port_id": "transfer",
         "channel_id": "channel-80",
@@ -331,15 +319,15 @@
         "version": "ics721-1"
       },
       {
-        "chain_id": "counter-0",
+        "chain_id": "cabal-1",
+        "channel_id": "channel-97",
         "port_id": "transfer",
-        "channel_id": "channel-89",
         "version": "ics20-1"
       },
       {
-        "chain_id": "counter-0",
+        "chain_id": "cabal-1",
+        "channel_id": "channel-98",
         "port_id": "nft-transfer",
-        "channel_id": "channel-90",
         "version": "ics721-1"
       }
     ]
