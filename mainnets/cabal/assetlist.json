@@ -164,7 +164,7 @@
             "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
           },
           "chain": {
-            "contract": "0x1A5e2698191cF736317325D781A5B7A8Fe102CF4"
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
           },
           "provider": "Decimal Wrapper"
         }
