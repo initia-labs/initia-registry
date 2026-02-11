@@ -8,12 +8,12 @@
   "network_type": "mainnet",
   "codebase": {
     "git_repo": "https://github.com/initia-labs/minievm",
-    "recommended_version": "v1.2.11",
+    "recommended_version": "v1.2.14",
     "binaries": {
-      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.11/minievm_v1.2.11_Linux_x86_64.tar.gz",
-      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.11/minievm_v1.2.11_Linux_aarch64.tar.gz",
-      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.11/minievm_v1.2.11_Darwin_x86_64.tar.gz",
-      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.11/minievm_v1.2.11_Darwin_aarch64.tar.gz"
+      "linux/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.14/minievm_v1.2.14_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.14/minievm_v1.2.14_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minievm/releases/download/v1.2.14/minievm_v1.2.14_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minievm/releases/download/v1.2.14/minievm_v1.2.14_Darwin_aarch64.tar.gz"
     },
     "genesis": {
       "genesis_url": "https://rpc-cabal-1.anvil.asia-southeast.initia.xyz/genesis"
@@ -64,8 +64,12 @@
   "fees": {
     "fee_tokens": [
       {
+        "denom": "evm/58918f9E58662058Cb36Cc60d7E124C90872C7C0",
+        "fixed_min_gas_price": 20000000000
+      },
+      {
         "denom": "evm/df5A85F89731fEB77d7EEaaCe627EB135eDB46DB",
-        "fixed_min_gas_price": 15000000000000000
+        "fixed_min_gas_price": 15000000000
       }
     ]
   },
@@ -98,7 +102,7 @@
     "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/cabal/assetlist.json",
     "minitia": {
       "type": "minievm",
-      "version": "v1.2.11"
+      "version": "v1.2.14"
     }
   }
 }
