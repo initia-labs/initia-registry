@@ -127,32 +127,57 @@
       "description": "Cabal LST-as-a-service token cabalINIT via IBC",
       "denom_units": [
         {
-          "denom": "embrINIT",
-          "exponent": 6
+          "denom": "evm/6e3c89a391faa45bb1255e5d7401b57ca044a425",
+          "exponent": 0
         },
         {
-          "denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
-          "exponent": 0
+          "denom": "embrINIT",
+          "exponent": 18
         }
       ],
-      "coingecko_id": "",
-      "base": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+      "type_asset": "erc20",
+      "address": "0x6e3c89a391faa45bb1255e5d7401b57ca044a425",
+      "base": "evm/6e3c89a391faa45bb1255e5d7401b57ca044a425",
       "display": "embrINIT",
       "name": "embrINIT",
       "symbol": "embrINIT",
+      "coingecko_id": "",
       "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
+          },
+          "chain": {
+            "bridge_id": "29"
+          }
+        },
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
             "chain_id": "interwoven-1",
-            "base_denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
+            "base_denom": "l2/81aa0d38b44cbb9c43aa0222ad41a799f78e7513276d070117feb10a17bb94fe",
             "channel_id": "channel-62"
           },
           "chain": {
             "channel_id": "channel-0",
-            "path": "transfer/channel-0/move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
+            "path": "transfer/channel-0/l2/81aa0d38b44cbb9c43aa0222ad41a799f78e7513276d070117feb10a17bb94fe"
           }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "embr",
+            "chain_id": "embrmainnet-1",
+            "base_denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
         }
       ],
       "images": [
