@@ -124,22 +124,24 @@
       }
     },
     {
-      "description": "Cabal LST-as-a-service token cabalINIT via IBC",
+      "description": "Cabal LST-as-a-service token cabalINIT",
       "denom_units": [
         {
-          "denom": "embrINIT",
-          "exponent": 6
+          "denom": "evm/811352628E8befb92E0bE986F30e0649C0e58b02",
+          "exponent": 0
         },
         {
-          "denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
-          "exponent": 0
+          "denom": "embrINIT",
+          "exponent": 18
         }
       ],
-      "coingecko_id": "",
-      "base": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+      "type_asset": "erc20",
+      "address": "0x811352628E8befb92E0bE986F30e0649C0e58b02",
+      "base": "evm/811352628E8befb92E0bE986F30e0649C0e58b02",
       "display": "embrINIT",
       "name": "embrINIT",
       "symbol": "embrINIT",
+      "coingecko_id": "",
       "traces": [
         {
           "type": "ibc",
@@ -153,6 +155,18 @@
             "channel_id": "channel-0",
             "path": "transfer/channel-0/move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
           }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "embr",
+            "chain_id": "embrmainnet-1",
+            "base_denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
         }
       ],
       "images": [
