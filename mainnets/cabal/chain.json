@@ -54,9 +54,9 @@
   "explorers": [
     {
       "kind": "initia scan",
-      "url": "https://scan.falseinitia.xyz/cabal-1",
-      "tx_page": "https://scan.falseinitia.xyz/cabal-1/txs/${txHash}",
-      "account_page": "https://scan.falseinitia.xyz/cabal-1/accounts/${accountAddress}"
+      "url": "https://scan.initia.xyz/cabal-1",
+      "tx_page": "https://scan.initia.xyz/cabal-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/cabal-1/accounts/${accountAddress}"
     }
   ],
   "key_algos": ["initia_ethsecp256k1"],
