@@ -1191,7 +1191,7 @@
       "display": "iUSD",
       "name": "iUSD",
       "symbol": "iUSD",
-      "coingecko_id": "",
+      "coingecko_id": "agora-dollar",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
