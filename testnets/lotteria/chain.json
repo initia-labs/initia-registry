@@ -1,0 +1,53 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "lotteria",
+  "pretty_name": "Lotteria",
+  "chain_id": "lotteria-1",
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "website": "https://lotteria-five.vercel.app",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://sequencer-rpc-lotteria-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://sequencer-rest-lotteria-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/fbee3e5792cd4f22153623725eabd4aeac56fe1093abb39ed05403bfcdd3c15f",
+        "fixed_min_gas_price": 0.015,
+        "low_gas_price": 0.015,
+        "average_gas_price": 0.015,
+        "high_gas_price": 0.02
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lotteria.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lotteria.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1616",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-lotteria-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/lotteria/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v0.6.5"
+    }
+  }
+}
