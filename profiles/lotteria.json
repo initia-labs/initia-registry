@@ -1,15 +1,15 @@
 {
-    "$schema": "../profile.schema.json",
-    "name": "lotteria",
-    "pretty_name": "Lotteria",
-    "category": "Gaming",
-    "l2": true,
-    "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lotteria.png",
-    "description": "Korean-style lottery dApp on Initia. Pick 6 numbers from 1-45 and win prizes.",
-    "summary": "Onchain lottery game",
-    "color": "#000000",
-    "status": "hidden",
-    "social": {
-        "website": "https://lotteria-five.vercel.app"
-    }
+  "$schema": "../profile.schema.json",
+  "name": "lotteria",
+  "pretty_name": "Lotteria",
+  "category": "Gaming",
+  "l2": true,
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/lotteria.png",
+  "description": "Korean-style lottery dApp on Initia. Pick 6 numbers from 1-45 and win prizes.",
+  "summary": "Onchain lottery game",
+  "color": "#000000",
+  "status": "hidden",
+  "social": {
+    "website": "https://lotteria-five.vercel.app"
+  }
 }
