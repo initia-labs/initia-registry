@@ -89,6 +89,10 @@
       {
         "denom": "l2/23c8396041db74441f4268d0c7e0533177dc3e028a47a8e584318f2d0c46fbe9",
         "fixed_min_gas_price": 0.015
+      },
+      {
+        "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+        "fixed_min_gas_price": 0.02
       }
     ]
   },
