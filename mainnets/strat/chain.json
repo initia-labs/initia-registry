@@ -1,0 +1,88 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "strat",
+  "pretty_name": "Strat",
+  "chain_id": "strat-1",
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v1.1.10-rocksdb",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.1.10-rocksdb/minimove_v1.1.10-rocksdb_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.1.10-rocksdb/minimove_v1.1.10-rocksdb_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.1.10-rocksdb/minimove_v1.1.10-rocksdb_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.1.10-rocksdb/minimove_v1.1.10-rocksdb_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://rpc-strat-1.anvil.asia-northeast.initia.xyz/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-strat-1.anvil.asia-northeast.initia.xyz:443"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.falseinitia.xyz/strat-1",
+      "tx_page": "https://scan.falseinitia.xyz/strat-1/txs/${txHash}",
+      "account_page": "https://scan.falseinitia.xyz/strat-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": ["initia_ethsecp256k1"],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": []
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/strat.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/strat.png"
+  },
+  "metadata": {
+    "op_bridge_id": "43",
+    "op_denoms": ["uinit"],
+    "executor_uri": "https://opinit-api-strat-1.anvil.asia-northeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/strat/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v1.1.10-rocksdb"
+    }
+  }
+}
