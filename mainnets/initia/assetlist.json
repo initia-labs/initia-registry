@@ -1200,6 +1200,33 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
       }
+    },
+    {
+      "description": "SEI token via LayerZero",
+      "denom_units": [
+        {
+          "denom": "move/1c340d7dda052f096929afbf9133a4d3dc4bfd938187bddbab7055aad185d407",
+          "exponent": 0
+        },
+        {
+          "denom": "SEI",
+          "exponent": 6
+        }
+      ],
+      "base": "move/1c340d7dda052f096929afbf9133a4d3dc4bfd938187bddbab7055aad185d407",
+      "display": "SEI",
+      "name": "Sei Native Token",
+      "symbol": "SEI",
+      "coingecko_id": "sei",
+      "traces": [],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/SEI.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/SEI.png"
+      }
     }
   ]
 }
