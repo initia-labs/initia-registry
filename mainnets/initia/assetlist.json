@@ -1165,7 +1165,7 @@
       "display": "AUSD0",
       "name": "AUSD0",
       "symbol": "AUSD0",
-      "coingecko_id": "",
+      "coingecko_id": "agora-dollar",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/AUSD0.png"
@@ -1217,7 +1217,7 @@
       "display": "SEI",
       "name": "Sei Native Token",
       "symbol": "SEI",
-      "coingecko_id": "sei",
+      "coingecko_id": "sei-network",
       "traces": [],
       "images": [
         {
