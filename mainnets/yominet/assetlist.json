@@ -197,7 +197,7 @@
       "display": "iUSD",
       "name": "iUSD",
       "symbol": "iUSD",
-      "coingecko_id": "",
+      "coingecko_id": "agora-dollar",
       "traces": [
         {
           "type": "ibc",
