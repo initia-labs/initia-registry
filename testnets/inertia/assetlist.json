@@ -278,6 +278,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
       }
+    },
+    {
+      "description": "The yield bearing LST of TIA",
+      "denom_units": [
+        {
+          "denom": "ibc/144A37C830C8266FC315D1E491FCA78B1BA64369F4812331C0FFB69D502C94DC",
+          "exponent": 0
+        },
+        {
+          "denom": "roTIA",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/144A37C830C8266FC315D1E491FCA78B1BA64369F4812331C0FFB69D502C94DC",
+      "display": "roTIA",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "initiation-2",
+            "base_denom": "move/a421ffb1b6a274710630b805c3f9851bd1181e118286e40cd318cb285a9210c6",
+            "channel_id": "channel-3300"
+          },
+          "chain": {
+            "channel_id": "channel-2",
+            "path": "transfer/channel-2/move/a421ffb1b6a274710630b805c3f9851bd1181e118286e40cd318cb285a9210c6"
+          }
+        }
+      ],
+      "name": "roTIA",
+      "symbol": "roTIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+      }
     }
   ]
 }
