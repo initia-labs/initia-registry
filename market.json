@@ -1,0 +1,140 @@
+[
+  {
+    "symbol": "BTCUSD",
+    "group": "crypto",
+    "asset_id": 1,
+    "decimal": 2
+  },
+  {
+    "symbol": "ETHUSD",
+    "group": "crypto",
+    "asset_id": 2,
+    "decimal": 2
+  },
+  {
+    "symbol": "SOLUSD",
+    "group": "crypto",
+    "asset_id": 3,
+    "decimal": 2
+  },
+  {
+    "symbol": "INITUSD",
+    "group": "crypto",
+    "asset_id": 4,
+    "decimal": 4
+  },
+  {
+    "symbol": "NVDA_24_5",
+    "group": "stock",
+    "asset_id": 5,
+    "decimal": 2
+  },
+  {
+    "symbol": "TSLA_24_5",
+    "group": "stock",
+    "asset_id": 6,
+    "decimal": 2
+  },
+  {
+    "symbol": "COIN_24_5",
+    "group": "stock",
+    "asset_id": 7,
+    "decimal": 2
+  },
+  {
+    "symbol": "CRCL_24_5",
+    "group": "stock",
+    "asset_id": 8,
+    "decimal": 2
+  },
+  {
+    "symbol": "HOOD_24_5",
+    "group": "stock",
+    "asset_id": 9,
+    "decimal": 2
+  },
+  {
+    "symbol": "AMD_24_5",
+    "group": "stock",
+    "asset_id": 10,
+    "decimal": 2
+  },
+  {
+    "symbol": "META_24_5",
+    "group": "stock",
+    "asset_id": 11,
+    "decimal": 2
+  },
+  {
+    "symbol": "AAPL_24_5",
+    "group": "stock",
+    "asset_id": 12,
+    "decimal": 2
+  },
+  {
+    "symbol": "MSFT_24_5",
+    "group": "stock",
+    "asset_id": 13,
+    "decimal": 2
+  },
+  {
+    "symbol": "PLTR_24_5",
+    "group": "stock",
+    "asset_id": 14,
+    "decimal": 2
+  },
+  {
+    "symbol": "OPEN_24_5",
+    "group": "stock",
+    "asset_id": 15,
+    "decimal": 2
+  },
+  {
+    "symbol": "MSTR_24_5",
+    "group": "stock",
+    "asset_id": 16,
+    "decimal": 2
+  },
+  {
+    "symbol": "BMNR_24_5",
+    "group": "stock",
+    "asset_id": 17,
+    "decimal": 2
+  },
+  {
+    "symbol": "EURUSD",
+    "group": "fx",
+    "asset_id": 18,
+    "decimal": 2
+  },
+  {
+    "symbol": "USDJPY",
+    "group": "fx",
+    "asset_id": 19,
+    "decimal": 2
+  },
+  {
+    "symbol": "XAUUSD",
+    "group": "commodity",
+    "asset_id": 20,
+    "decimal": 2
+  },
+  {
+    "symbol": "XAGUSD",
+    "group": "commodity",
+    "asset_id": 21,
+    "decimal": 2
+  },
+  {
+    "symbol": "USDKRW",
+    "group": "fx",
+    "asset_id": 22,
+    "decimal": 2
+  },
+  {
+    "symbol": "USO_24_5",
+    "group": "commodity",
+    "asset_id": 23,
+    "decimal": 2
+  }
+]
