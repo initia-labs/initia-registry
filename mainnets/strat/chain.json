@@ -53,8 +53,8 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "gas",
-        "fixed_min_gas_price": 0
+        "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+        "fixed_min_gas_price": 0.015
       }
     ]
   },
