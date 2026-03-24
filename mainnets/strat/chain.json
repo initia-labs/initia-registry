@@ -3,6 +3,7 @@
   "chain_name": "strat",
   "pretty_name": "Strat",
   "chain_id": "strat-1",
+  "website": "https://strat.trade",
   "bech32_prefix": "init",
   "network_type": "mainnet",
   "codebase": {
