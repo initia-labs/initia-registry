@@ -31,7 +31,7 @@
     ],
     "grpc": [
       {
-        "address": "grpc-strat-1.anvil.asia-northeast.initia.xyz:443"
+        "address": "sequencer-grpc-strat-1.anvil.asia-northeast.initia.xyz:443"
       }
     ],
     "indexer": [
