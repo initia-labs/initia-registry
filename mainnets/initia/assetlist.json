@@ -1253,6 +1253,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
       }
+    },
+    {
+      "description": "The yield bearing LST of ETH via LayerZero",
+      "denom_units": [
+        {
+          "denom": "move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926",
+          "exponent": 0
+        },
+        {
+          "denom": "roETH",
+          "exponent": 6
+        }
+      ],
+      "base": "move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926",
+      "display": "roETH",
+      "name": "roETH",
+      "symbol": "roETH",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+      }
     }
   ]
 }
