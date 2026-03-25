@@ -386,6 +386,88 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/SEI.png"
       }
+    },
+    {
+      "description": "The yield bearing LST of TIA",
+      "denom_units": [
+        {
+          "denom": "ibc/0C9E1A3CE3A7E06A6113BC9421DDD6A092770F8FFE344D5A3ADDEB8408EE0F12",
+          "exponent": 0
+        },
+        {
+          "denom": "roTIA",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/0C9E1A3CE3A7E06A6113BC9421DDD6A092770F8FFE344D5A3ADDEB8408EE0F12",
+      "display": "roTIA",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6e4147b599fc203bd147c83e1262d500c4cb688e816f0b59a3251f14240c7dab",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6e4147b599fc203bd147c83e1262d500c4cb688e816f0b59a3251f14240c7dab"
+          }
+        }
+      ],
+      "name": "roTIA",
+      "symbol": "roTIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+      }
+    },
+    {
+      "description": "The yield bearing LST of ETH via LayerZero",
+      "denom_units": [
+        {
+          "denom": "ibc/7E77C01AD8A90099B391F9EE0976A341ECA500D68D7F44849B57C08D7A9249B1",
+          "exponent": 0
+        },
+        {
+          "denom": "roETH",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/7E77C01AD8A90099B391F9EE0976A341ECA500D68D7F44849B57C08D7A9249B1",
+      "display": "roETH",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926"
+          }
+        }
+      ],
+      "name": "roETH",
+      "symbol": "roETH",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+      }
     }
   ]
 }
