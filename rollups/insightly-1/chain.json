@@ -1,0 +1,32 @@
+{
+  "chain_id": "insightly-1",
+  "chain_name": "Insightly",
+  "pretty_name": "Insightly - Social Prediction Markets",
+  "status": "testnet",
+  "network_type": "testnet",
+  "bech32_prefix": "init",
+  "slip44": 4,
+  "chain_type": "rollup",
+  "description": "Insightly is a social-first prediction market platform built on Initia that enables friend groups and communities to create and participate in real-world prediction markets together with flexible risk levels.",
+  "website": "https://insightly.social",
+  "github_repository": "https://github.com/YOUR_ORG/insightly-app",
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "stake",
+        "fixed_min_gas_price": 0.1,
+        "low_gas_price": 0.1,
+        "avg_gas_price": 0.1,
+        "high_gas_price": 0.1
+      }
+    ]
+  },
+  "key_images": [
+    {
+      "image_sync": {
+        "chain_name": "initia",
+        "base_denom": "init"
+      }
+    }
+  ]
+}
