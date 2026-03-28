@@ -19,7 +19,7 @@ Insightly is a social-first prediction market platform built on Initia that enab
 
 ## Resources
 - Website: https://insightly.social
-- GitHub: https://github.com/YOUR_ORG/insightly-app
+- GitHub: https://github.com/RionAsari/Initiate
 - Documentation: See project README
 
 ## Validator
@@ -27,6 +27,6 @@ Insightly is a social-first prediction market platform built on Initia that enab
 - Address: init1kesar5jdad44z4scn84lepvwscmmq6hchwla06
 
 ## Endpoints
-- RPC: http://localhost:26657
-- REST: http://localhost:1317
-- gRPC: localhost:9090
+- RPC: https://rpc.testnet.initia.xyz:443
+- REST: https://lcd.testnet.initia.xyz:443
+- gRPC: https://grpc.testnet.initia.xyz:443

@@ -1,20 +1,20 @@
 {
   "rpc": [
     {
-      "address": "http://localhost:26657",
-      "provider": "local"
+      "address": "https://rpc.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
     }
   ],
   "rest": [
     {
-      "address": "http://localhost:1317",
-      "provider": "local"
+      "address": "https://lcd.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
     }
   ],
   "grpc": [
     {
-      "address": "localhost:9090",
-      "provider": "local"
+      "address": "https://grpc.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
     }
   ]
 }

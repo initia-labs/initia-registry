@@ -9,7 +9,7 @@
   "chain_type": "rollup",
   "description": "Insightly is a social-first prediction market platform built on Initia that enables friend groups and communities to create and participate in real-world prediction markets together with flexible risk levels.",
   "website": "https://insightly.social",
-  "github_repository": "https://github.com/YOUR_ORG/insightly-app",
+  "github_repository": "https://github.com/RionAsari/Initiate",
   "fees": {
     "fee_tokens": [
       {
@@ -21,7 +21,7 @@
       }
     ]
   },
-  "key_images": [
+  "images": [
     {
       "image_sync": {
         "chain_name": "initia",

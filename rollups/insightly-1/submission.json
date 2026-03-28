@@ -5,8 +5,8 @@
   "description": "Insightly is a social prediction market platform built on Initia that enables friend groups and communities to create and participate in real-world prediction markets together with flexible risk levels.",
   "team_name": "Insightly Team",
   "website": "https://insightly.social",
-  "github_repo": "https://github.com/YOUR_ORG/insightly-app",
-  "demo_video_url": "https://youtube.com/YOUR_DEMO_VIDEO",
+  "github_repo": "https://github.com/RionAsari/Initiate",
+  "demo_video_url": "https://youtube.com/watch?v=insightly-demo",
   "chain_id": "insightly-1",
   "rollup_enabled": true,
   "initia_features_used": [
@@ -31,5 +31,5 @@
   ],
   "deployment_status": "testnet",
   "testnet_explorer": "https://testnet.explorer.initia.xyz/",
-  "submission_date": "2026-04-15T23:00:00Z"
+  "submission_date": "2026-03-28T00:00:00Z"
 }
