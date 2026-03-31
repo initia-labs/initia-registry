@@ -1,0 +1,18 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "strat",
+  "pretty_name": "Strat",
+  "chain_id": "strat-1",
+  "category": "DeFi",
+  "l2": true,
+  "description": "Trade the World's Markets. Equities, Commodities, and Crypto. One account. Every market on Earth.",
+  "summary": "Trade the world's markets",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/strat.png",
+  "color": "#6AC6F7",
+  "status": "live",
+  "social": {
+    "website": "https://strat.trade",
+    "twitter": "https://x.com/tradeonstrat"
+  },
+  "op_bridge_id": "43"
+}

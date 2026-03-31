@@ -9,7 +9,7 @@
   "summary": "The Modular Staking Portal",
   "color": "#6550fc",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/milkyway.png",
-  "status": "live",
+  "status": "hidden",
   "vip": {
     "forum_url": "https://forum.initia.xyz/t/whitelist-milkyway-on-vip/56",
     "actions": [
