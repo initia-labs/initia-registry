@@ -8,7 +8,7 @@
   "summary": "Lido-backed liquid staking for the Interchain",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/drop.png",
   "color": "#6039FF",
-  "status": "live",
+  "status": "hidden",
   "social": {
     "website": "https://www.drop.money",
     "twitter": "https://x.com/dropdotmoney"
