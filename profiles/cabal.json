@@ -9,6 +9,19 @@
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cabal.png",
   "color": "#54EEE7",
   "status": "live",
+  "vip": {
+    "forum_url": "https://forum.initia.xyz/t/whitelist-cabal-on-vip/426",
+    "actions": [
+      {
+        "title": "Hold sxINIT",
+        "description": "Stake xINIT to mint sxINIT and earn boosted staking and bribe rewards"
+      },
+      {
+        "title": "Hold dnIUSD",
+        "description": "Deposit iUSD into the Delta Neutral INIT vault"
+      }
+    ]
+  },
   "social": {
     "website": "https://thecabal.xyz",
     "twitter": "https://x.com/CabalFDN"
