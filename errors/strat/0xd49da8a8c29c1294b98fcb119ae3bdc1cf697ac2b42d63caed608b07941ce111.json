@@ -1,0 +1,121 @@
+{
+  "$schema": "../../error.schema.json",
+  "chain_name": "strat",
+  "module_address": "0xd49da8a8c29c1294b98fcb119ae3bdc1cf697ac2b42d63caed608b07941ce111",
+  "errors": {
+    "gov": {
+      "327681": "Signer is not the governance address",
+      "327682": "Signer is not the governance or protocol fee address"
+    },
+    "oracle_aggregator": {
+      "65538": "Unknown oracle type index provided",
+      "65540": "Invalid market status oracle configuration",
+      "65541": "Market status oracle type is not Stork",
+      "65542": "Timestamp mismatch between market status oracle values",
+      "65543": "Market status oracle data is outdated or not updated",
+      "65545": "Cannot update market status within transition buffer window",
+      "327680": "Signer is not the governance address",
+      "393219": "Oracle is not registered for the given asset or collateral",
+      "393224": "Asset ID not found in oracle aggregator",
+      "524289": "Oracle aggregator module is already initialized"
+    },
+    "order": {
+      "65541": "Cannot update or cancel a market order; only limit and stop orders can be modified",
+      "65543": "Invalid take-profit price: must be above entry price for long, below for short",
+      "65544": "Invalid stop-loss price: must be below entry price for long, above for short",
+      "65546": "Position value (collateral x leverage) is below the minimum required",
+      "65547": "Requested close collateral amount exceeds the position's available collateral",
+      "65548": "Leverage exceeds the maximum allowed for this pair",
+      "65550": "Close ratio exceeds 1 (100%)",
+      "65552": "Leverage is below the minimum required for this pair",
+      "65553": "Invalid close order type",
+      "196623": "Market order has not yet reached the timeout period for cancellation",
+      "196624": "Position leverage dropped below the minimum leverage after execution",
+      "327680": "Signer is not the governance address",
+      "327686": "Only the order creator can cancel or update this order",
+      "327693": "Only the position owner can close, add/remove collateral, or update TP/SL",
+      "393219": "Order with the specified ID does not exist",
+      "524289": "Order module is already initialized",
+      "524292": "A close order or remove collateral order already exists for this position"
+    },
+    "order_executor": {
+      "196610": "Oracle price data is too old; exceeded the oracle TTL",
+      "196611": "Oracle timestamp is earlier than the order creation time",
+      "327680": "Signer is not the governance address",
+      "524289": "Order executor module is already initialized"
+    },
+    "pair": {
+      "65538": "Maximum leverage cannot be zero",
+      "65539": "Fee or rate parameter exceeds 1 (100%) or is otherwise invalid",
+      "65541": "Pair parameter exceeds the global limit configuration",
+      "65542": "Pair max leverage exceeds the group max leverage limit",
+      "65543": "Invalid funding fee configuration: hill inflection, spring factor, or other parameters out of bounds",
+      "65544": "Invalid rollover fee configuration: pure_long_fee_rate + broker_premium exceeds max_rollover_fee",
+      "196619": "Adding collateral would exceed the group's maximum collateral capacity",
+      "327680": "Signer is not the governance address",
+      "327690": "Signer is not an authorized rollover fee feeder",
+      "393220": "Trading pair not found for the given asset and collateral combination",
+      "524289": "Pair module is already initialized",
+      "524297": "Trading pair group already exists"
+    },
+    "position": {
+      "65538": "Max PnL ratio cannot be zero",
+      "65539": "Collateral amount cannot be zero",
+      "65540": "Invalid TP/SL configuration: for long TP must be above SL, for short TP must be below SL",
+      "327680": "Signer is not the governance address",
+      "393221": "Position not found for the given user, asset, collateral, and direction",
+      "524289": "Position module is already initialized"
+    },
+    "pre_deposit": {
+      "65541": "Close timestamp cannot be set to a past time",
+      "65542": "Pagination limit must be greater than zero",
+      "196611": "Pre-deposit is closed and no longer accepting deposits",
+      "196612": "Total pre-deposit amount would exceed the amount cap",
+      "196615": "Pre-deposit is not closed yet; cannot auto-withdraw before close",
+      "327681": "Signer is not the pre-deposit admin",
+      "327682": "Signer is not the point module publisher"
+    },
+    "referral": {
+      "65539": "Referral code signature verification failed",
+      "65540": "Referral code does not exist or is invalid",
+      "196610": "User has not reached the minimum trading volume required to generate a referral code",
+      "327680": "Signer is not the governance address",
+      "524289": "Referral module is already initialized"
+    },
+    "signed_bigdecimal": {
+      "196609": "Cannot convert a negative value to unsigned BigDecimal"
+    },
+    "utils": {
+      "65537": "Pagination limit must be greater than zero"
+    },
+    "vault": {
+      "65540": "Deposit share amount exceeds the maximum mint limit",
+      "65541": "Withdrawal share amount exceeds the maximum burn limit",
+      "65543": "Withdrawal amount exceeds the previously requested unlock amount",
+      "65546": "Invalid epoch configuration: start time, duration, or cooldown parameters are out of bounds",
+      "65548": "Insufficient LP token balance for the requested withdrawal",
+      "65549": "Cannot merge liquidity balances from different collateral types",
+      "196611": "Insufficient vault liquidity to support the PnL adjustment",
+      "196614": "Cooldown period is active; cannot request unlock now",
+      "196617": "Epoch system is not yet initialized",
+      "196619": "Accumulated PnL per token delta exceeds the maximum allowed",
+      "196623": "Insufficient liquidity buffer available",
+      "327680": "Signer is not the governance address",
+      "327688": "Only the owner can manually burn vault shares",
+      "327694": "Signer is not an authorized liquidity buffer provider",
+      "393218": "Collateral token is not registered in the vault",
+      "524289": "Vault module is already initialized"
+    },
+    "vip_score": {
+      "65538": "Insufficient score to deduct the requested amount",
+      "65539": "Score stage does not exist or is not initialized",
+      "65540": "Deployer address is already in the authorized list",
+      "65541": "Deployer address not found in the authorized list",
+      "65544": "Cannot update scores in a stage that has already been finalized",
+      "65545": "Stage number cannot be zero",
+      "65547": "Trade factor or deposit factor cannot be zero",
+      "327681": "Signer is not the vip_score publisher or authorized deployer",
+      "524298": "Initial stage has already been configured"
+    }
+  }
+}
