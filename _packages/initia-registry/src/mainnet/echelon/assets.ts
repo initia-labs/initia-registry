@@ -219,14 +219,14 @@ const info: AssetList = {
           exponent: 0,
         },
         {
-          denom: "WEETH",
+          denom: "weETH",
           exponent: 6,
         },
       ],
       base: "ibc/BAF588B34262B74DEE24652CA2C78C1A2C14B3124381D3C4AB16902A86F759B0",
-      display: "WEETH",
+      display: "weETH",
       name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
+      symbol: "weETH",
       coingecko_id: "",
       traces: [
         {
@@ -245,11 +245,11 @@ const info: AssetList = {
       ],
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
       },
     },
     {
