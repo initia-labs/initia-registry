@@ -312,22 +312,22 @@ const info: AssetList = {
           exponent: 0,
         },
         {
-          denom: "WEETH",
+          denom: "weETH",
           exponent: 6,
         },
       ],
       base: "move/0eba36d73e4f8d0c10b36323fbd28ab8b3783b003ba7b86c0f3ead32a1caf7f7",
-      display: "WEETH",
+      display: "weETH",
       name: "Ether.Fi Wrapped eETH LRT",
-      symbol: "WEETH",
+      symbol: "weETH",
       coingecko_id: "wrapped-eeth",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
       },
     },
     {
