@@ -323,11 +323,11 @@ const info: AssetList = {
       coingecko_id: "wrapped-eeth",
       images: [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
+          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
         },
       ],
       logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/weETH.png",
+        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/WEETH.png",
       },
     },
     {
