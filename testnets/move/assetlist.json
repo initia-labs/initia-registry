@@ -40,6 +40,32 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
       }
+    },
+    {
+      "description": "iUSD",
+      "denom_units": [
+        {
+          "denom": "move/89ee7fcbbf00b439ce42b5f263a3d38c66ab02b70f4fe9dff4a163bf720d6246",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 6
+        }
+      ],
+      "base": "move/89ee7fcbbf00b439ce42b5f263a3d38c66ab02b70f4fe9dff4a163bf720d6246",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
     }
   ]
 }
