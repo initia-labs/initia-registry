@@ -55,12 +55,6 @@ const info: Chain = {
         authorizedUser: "skip",
       },
     ],
-    api: [
-      {
-        address: "https://api.testnet.initia.xyz",
-        provider: "Initia Labs",
-      },
-    ],
     grpc: [
       {
         address: "grpc.testnet.initia.xyz:443",
