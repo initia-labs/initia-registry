@@ -59,9 +59,7 @@
       "account_page": "https://scan.initia.xyz/hotake-1/accounts/${accountAddress}"
     }
   ],
-  "key_algos": [
-    "initia_ethsecp256k1"
-  ],
+  "key_algos": ["initia_ethsecp256k1"],
   "slip44": 60,
   "fees": {
     "fee_tokens": [
