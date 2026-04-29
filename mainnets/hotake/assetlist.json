@@ -1,0 +1,50 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "hotake",
+  "assets": [
+    {
+      "description": "iUSD bridged from Initia (interwoven-1) via OPinit bridge_id 46. Canonical 18-decimal ERC20 wrapper on hotake-1; serves as the rollup's fee_denom.",
+      "denom_units": [
+        { "denom": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA", "exponent": 0 },
+        { "denom": "iUSD", "exponent": 18 }
+      ],
+      "type_asset": "erc20",
+      "address": "0x71a64e2885069d70B0d576a9Ed1017575Afb62CA",
+      "base": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          },
+          "chain": {
+            "bridge_id": "46"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "hotake",
+            "chain_id": "hotake-1",
+            "base_denom": "l2/6308260ae1daf98ab7b70432ffe25286427b16c553a5f849df2bc6499b442d49"
+          },
+          "chain": {
+            "contract": "0x71a64e2885069d70B0d576a9Ed1017575Afb62CA"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        { "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png" }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    }
+  ]
+}
