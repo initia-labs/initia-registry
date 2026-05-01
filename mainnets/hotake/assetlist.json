@@ -37,7 +37,7 @@
             "base_denom": "l2/6308260ae1daf98ab7b70432ffe25286427b16c553a5f849df2bc6499b442d49"
           },
           "chain": {
-            "contract": "0x71a64e2885069d70B0d576a9Ed1017575Afb62CA"
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
           },
           "provider": "Decimal Wrapper"
         }
