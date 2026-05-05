@@ -3,30 +3,33 @@
   "chain_name": "hotake",
   "assets": [
     {
-      "description": "iUSD bridged from Initia (interwoven-1) via OPinit bridge_id 46. Canonical 18-decimal ERC20 wrapper on hotake-1; serves as the rollup's fee_denom.",
+      "description": "iUSD on Initia",
       "denom_units": [
         {
-          "denom": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA",
+          "denom": "evm/58918f9E58662058Cb36Cc60d7E124C90872C7C0",
           "exponent": 0
         },
         { "denom": "iUSD", "exponent": 18 }
       ],
       "type_asset": "erc20",
-      "address": "0x71a64e2885069d70B0d576a9Ed1017575Afb62CA",
-      "base": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA",
+      "address": "0x58918f9E58662058Cb36Cc60d7E124C90872C7C0",
+      "base": "evm/58918f9E58662058Cb36Cc60d7E124C90872C7C0",
       "display": "iUSD",
       "name": "iUSD",
       "symbol": "iUSD",
+      "coingecko_id": "agora-dollar",
       "traces": [
         {
-          "type": "op",
+          "type": "ibc",
           "counterparty": {
             "chain_name": "initia",
             "chain_id": "interwoven-1",
-            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-108"
           },
           "chain": {
-            "bridge_id": "46"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
           }
         },
         {
@@ -34,7 +37,7 @@
           "counterparty": {
             "chain_name": "hotake",
             "chain_id": "hotake-1",
-            "base_denom": "l2/6308260ae1daf98ab7b70432ffe25286427b16c553a5f849df2bc6499b442d49"
+            "base_denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A"
           },
           "chain": {
             "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
