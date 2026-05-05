@@ -3,32 +3,43 @@
   "chain_name": "hotake",
   "assets": [
     {
-      "description": "iUSD on hotake via IBC transfer from Initia (interwoven-1).",
+      "description": "iUSD bridged from Initia (interwoven-1) via OPinit bridge_id 46. Canonical 18-decimal ERC20 wrapper on hotake-1; serves as the rollup's fee_denom.",
       "denom_units": [
         {
-          "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+          "denom": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA",
           "exponent": 0
         },
-        { "denom": "iUSD", "exponent": 6 }
+        { "denom": "iUSD", "exponent": 18 }
       ],
-      "base": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+      "type_asset": "erc20",
+      "address": "0x71a64e2885069d70B0d576a9Ed1017575Afb62CA",
+      "base": "evm/71a64e2885069d70B0d576a9Ed1017575Afb62CA",
       "display": "iUSD",
       "name": "iUSD",
       "symbol": "iUSD",
-      "coingecko_id": "agora-dollar",
       "traces": [
         {
-          "type": "ibc",
+          "type": "op",
           "counterparty": {
             "chain_name": "initia",
             "chain_id": "interwoven-1",
-            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
-            "channel_id": "channel-108"
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
           },
           "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+            "bridge_id": "46"
           }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "hotake",
+            "chain_id": "hotake-1",
+            "base_denom": "l2/6308260ae1daf98ab7b70432ffe25286427b16c553a5f849df2bc6499b442d49"
+          },
+          "chain": {
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
+          },
+          "provider": "Decimal Wrapper"
         }
       ],
       "images": [
