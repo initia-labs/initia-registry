@@ -323,6 +323,18 @@
         "channel_id": "channel-100",
         "port_id": "nft-transfer",
         "version": "ics721-1"
+      },
+      {
+        "chain_id": "hotake-1",
+        "channel_id": "channel-108",
+        "port_id": "transfer",
+        "version": "ics20-1"
+      },
+      {
+        "chain_id": "hotake-1",
+        "channel_id": "channel-109",
+        "port_id": "nft-transfer",
+        "version": "ics721-1"
       }
     ]
   }
