@@ -14,6 +14,7 @@
       "65542": "Timestamp mismatch between market status oracle values",
       "65543": "Market status oracle data is outdated or not updated",
       "65545": "Cannot update market status within transition buffer window",
+      "65546": "Market status value reported by the oracle is outside the valid range",
       "327680": "Signer is not the governance address",
       "393219": "Oracle is not registered for the given asset or collateral",
       "393224": "Asset ID not found in oracle aggregator",
@@ -52,11 +53,16 @@
       "65543": "Invalid funding fee configuration: hill inflection, spring factor, or other parameters out of bounds",
       "65544": "Invalid rollover fee configuration: pure_long_fee_rate + broker_premium exceeds max_rollover_fee",
       "196619": "Adding collateral would exceed the group's maximum collateral capacity",
+      "196622": "Trading pair has been deregistered; opening positions or adding collateral is not allowed",
       "327680": "Signer is not the governance address",
       "327690": "Signer is not an authorized rollover fee feeder",
       "393220": "Trading pair not found for the given asset and collateral combination",
+      "393225": "Trading pair group not found",
+      "393229": "Trading pair is not deregistered; cannot reregister",
       "524289": "Pair module is already initialized",
-      "524297": "Trading pair group already exists"
+      "524292": "Trading pair already exists for the given asset and collateral combination",
+      "524297": "Trading pair group already exists",
+      "524300": "Trading pair is already deregistered"
     },
     "position": {
       "65538": "Max PnL ratio cannot be zero",
@@ -95,6 +101,8 @@
       "65546": "Invalid epoch configuration: start time, duration, or cooldown parameters are out of bounds",
       "65548": "Insufficient LP token balance for the requested withdrawal",
       "65549": "Cannot merge liquidity balances from different collateral types",
+      "65551": "Withdrawal amount exceeds the provider's deposited liquidity buffer",
+      "196609": "Epoch system has already been initialized",
       "196611": "Insufficient vault liquidity to support the PnL adjustment",
       "196614": "Cooldown period is active; cannot request unlock now",
       "196617": "Epoch system is not yet initialized",
@@ -107,6 +115,7 @@
       "524289": "Vault module is already initialized"
     },
     "vip_score": {
+      "65537": "Signer is not an authorized deployer",
       "65538": "Insufficient score to deduct the requested amount",
       "65539": "Score stage does not exist or is not initialized",
       "65540": "Deployer address is already in the authorized list",
