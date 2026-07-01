@@ -17,6 +17,15 @@ Additionally, the registry includes `*.schema.json` files in the root directory,
 
 4. **Create a Pull Request**: Submit your modifications for review to merge them into the main repository.
 
+## Sunsetting a Rollup
+
+When a rollup stops operating, its registry entry is retired so that historical references (such as bridge IDs and previously issued assets) stay resolvable while the chain disappears from active tooling and ecosystem UIs. Retirement happens in two steps:
+
+1. **Remove the network entry**: Delete the chain's `{mainnets,testnets}/<chain>/` directory (`chain.json` and `assetlist.json`). The chain is no longer served as an active, interactable network.
+2. **Hide the profile**: Keep `profiles/<chain>.json`, but change its `status` to `hidden`. The profile stays in the registry, retaining metadata such as `op_bridge_id`, while being excluded from ecosystem listings.
+
+Once a profile no longer needs to be referenced at all, it can be deleted outright.
+
 ## `chain.json`
 
 `chain.json` contains metadata about the chain, such as the chain name, chain ID, EVM chain ID, and network type. This information is essential for users to interact with the chain and its associated assets.
@@ -526,7 +535,7 @@ An example assetlist json contains the following structure:
 | `description`               | `string`            | Optional      | A detailed description or tagline for the chain.                                    |
 | `summary`                   | `string`            | Optional      | Short summary of the chain’s purpose.                                               |
 | `color`                     | `string (hex code)` | Optional      | Color code (e.g., `#42F771`) often used for branding or UI theming.                 |
-| `status`                    | `string`            | Optional      | The status of the chain (e.g., “live”, “testnet”, “devnet”).                        |
+| `status`                    | `string`            | Yes           | Lifecycle state of the chain: `live`, `upcoming`, or `hidden` (see note below).     |
 | `vip`                       | `object`            | Optional      | Contains VIP program details, including `actions`.                                  |
 | `vip.actions`               | `object[]`          | Optional      | An array of VIP-related actions (e.g., “Complete Quest”).                           |
 | `vip.actions[].title`       | `string`            | Optional      | Action title (e.g., “Complete Quest”).                                              |
@@ -534,6 +543,8 @@ An example assetlist json contains the following structure:
 | `vip.forum_url`             | `string (URL)`      | Optional      | The URL linking to the forum of the VIP registration proposal.                      |
 | `social`                    | `object`            | Optional      | Contains links or handles for the chain’s social media or website.                  |
 | `social.website`            | `string (URL)`      | Optional      | Official website link.                                                              |
+
+> **Note on `status`**: `live` marks a chain that is operating and listed; `upcoming` an announced chain that is not yet live; `hidden` a chain that has been sunset (retired), or is otherwise hidden from ecosystem listings. See [Sunsetting a Rollup](#sunsetting-a-rollup) for how a retired chain's profile is set to `hidden`.
 
 ```json
 {
