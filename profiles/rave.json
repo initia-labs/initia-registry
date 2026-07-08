@@ -8,7 +8,7 @@
   "description": "The pioneer quanto perpetuals protocol: trade anything with everything.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/rave.png",
   "color": "#2962ff",
-  "status": "live",
+  "status": "hidden",
   "vip": {
     "forum_url": "https://forum.initia.xyz/t/whitelist-rave-on-vip/61",
     "actions": [
