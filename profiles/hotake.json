@@ -9,5 +9,8 @@
   "summary": "Opinions are free. This gets settled.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/hotake.png",
   "status": "upcoming",
+  "social": {
+    "website": "https://usehottake.app/"
+  },
   "op_bridge_id": "46"
 }
