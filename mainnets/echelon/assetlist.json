@@ -515,6 +515,60 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
       }
+    },
+    {
+      "description": "Cabal xSLP",
+      "denom_units": [
+        {
+          "denom": "ibc/9742047547D5E09BEF5D86F5747945E885AB34AEC1B17E41822E58FE8E64F4CA",
+          "exponent": 0
+        },
+        {
+          "denom": "xSLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/9742047547D5E09BEF5D86F5747945E885AB34AEC1B17E41822E58FE8E64F4CA",
+      "display": "xSLP",
+      "name": "xSLP",
+      "symbol": "xSLP",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "strat",
+            "chain_id": "strat-1",
+            "base_denom": "move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-99",
+            "path": "transfer/channel-99/move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "ibc/E83CADB214A42915005A5D06637AA89B92D1E51021049C79BD8CDB64FFF89724",
+            "channel_id": "channel-35"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-99/move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
+      }
     }
   ]
 }
