@@ -10,7 +10,8 @@
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/hotake.png",
   "status": "upcoming",
   "social": {
-    "website": "https://usehottake.app/"
+    "website": "https://usehottake.app/",
+    "twitter": "https://x.com/UseHotTake"
   },
   "op_bridge_id": "46"
 }
