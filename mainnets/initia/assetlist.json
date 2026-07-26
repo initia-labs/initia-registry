@@ -1279,6 +1279,47 @@
       "logo_URIs": {
         "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
       }
+    },
+    {
+      "description": "Cabal xSLP",
+      "denom_units": [
+        {
+          "denom": "ibc/E83CADB214A42915005A5D06637AA89B92D1E51021049C79BD8CDB64FFF89724",
+          "exponent": 0
+        },
+        {
+          "denom": "xSLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/E83CADB214A42915005A5D06637AA89B92D1E51021049C79BD8CDB64FFF89724",
+      "display": "xSLP",
+      "name": "xSLP",
+      "symbol": "xSLP",
+      "coingecko_id": "",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "strat",
+            "chain_id": "strat-1",
+            "base_denom": "move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-99",
+            "path": "transfer/channel-99/move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
+      }
     }
   ]
 }
