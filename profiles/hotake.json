@@ -2,12 +2,14 @@
   "$schema": "../profile.schema.json",
   "name": "hotake",
   "pretty_name": "Hot Take",
-  "chain_id": "hotake-1",
   "category": "Social",
-  "l2": true,
   "description": "A social wagering app on Initia where opinions are settled onchain.",
   "summary": "Opinions are free. This gets settled.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/hotake.png",
   "status": "upcoming",
+  "social": {
+    "website": "https://usehottake.app/",
+    "twitter": "https://x.com/UseHotTake"
+  },
   "op_bridge_id": "46"
 }
