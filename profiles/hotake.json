@@ -3,7 +3,6 @@
   "name": "hotake",
   "pretty_name": "Hot Take",
   "category": "Social",
-  "l2": true,
   "description": "A social wagering app on Initia where opinions are settled onchain.",
   "summary": "Opinions are free. This gets settled.",
   "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/hotake.png",
