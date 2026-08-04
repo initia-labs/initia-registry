@@ -1,0 +1,15 @@
+{
+  "$schema": "../profile.schema.json",
+  "name": "glyph universe",
+  "pretty_name": "Glyph Universe",
+  "category": "Gaming",
+  "description": "Create your character, throw it in the void, and let the AI judge.",
+  "summary": "AI character battle ecosystem",
+  "logo": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/glyph.png",
+  "color": "#FFFF7C",
+  "status": "live",
+  "social": {
+    "website": "https://glyph-universe.ai",
+    "twitter": "https://x.com/glyphuniverseai"
+  }
+}
