@@ -1,0 +1,54 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "gridzero",
+  "assets": [
+    {
+      "description": "Native INIT token on gridZERO (gridzero-1). Genesis-allocated and used as gas + game entry currency.",
+      "denom_units": [
+        { "denom": "uinit", "exponent": 0 },
+        { "denom": "INIT", "exponent": 6 }
+      ],
+      "base": "uinit",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
+          },
+          "chain": {
+            "bridge_id": "47"
+          }
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
+        { "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png" }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "gridZERO reward token. Minted to round winners on resolve_round (100 per round; 1000 in motherlode bonus rounds, 1-in-100 odds).",
+      "denom_units": [
+        { "denom": "move/1ed4c19b0f2410cc1773bf82d5b6d378bb61caeb821ce060018e456e72915924", "exponent": 0 },
+        { "denom": "ZERO", "exponent": 6 }
+      ],
+      "base": "move/1ed4c19b0f2410cc1773bf82d5b6d378bb61caeb821ce060018e456e72915924",
+      "display": "ZERO",
+      "name": "GridZero",
+      "symbol": "ZERO",
+      "images": [
+        { "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/gridzero.png" }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/gridzero.png"
+      }
+    }
+  ]
+}
