@@ -1,0 +1,20 @@
+{
+  "rpc": [
+    {
+      "address": "https://rpc.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
+    }
+  ],
+  "rest": [
+    {
+      "address": "https://lcd.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
+    }
+  ],
+  "grpc": [
+    {
+      "address": "https://grpc.testnet.initia.xyz:443",
+      "provider": "Initia Foundation"
+    }
+  ]
+}
