@@ -1,231 +1,475 @@
-import { AssetList } from "@initia/initia-registry-types";
+import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
-  $schema: "../../assetlist.schema.json",
-  chain_name: "inertia",
-  assets: [
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "inertia",
+  "assets": [
     {
-      description: "The native token of Initia",
-      denom_units: [
+      "description": "The native token of Initia",
+      "denom_units": [
         {
-          denom:
-            "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
-          exponent: 0,
+          "denom": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+          "exponent": 0
         },
         {
-          denom: "INIT",
-          exponent: 6,
-        },
+          "denom": "INIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
-      display: "INIT",
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
-      images: [
+      "base": "l2/c88b68df2060ba982a80d3001afcb2d354031f6901df2391acb4f0e2f545c770",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
       },
-      traces: [
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom: "uinit",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "32",
-          },
-        },
-      ],
+          "chain": {
+            "bridge_id": "32"
+          }
+        }
+      ]
     },
     {
-      description: "The native token of Celestia on Initia via IBC",
-      denom_units: [
+      "description": "The native token of Celestia on Initia via IBC",
+      "denom_units": [
         {
-          denom:
-            "l2/1f79a9647aca83c63014709b7d4a69dd0f017b87ce9adf7417a2e2aa1c49044f",
-          exponent: 0,
+          "denom": "l2/1f79a9647aca83c63014709b7d4a69dd0f017b87ce9adf7417a2e2aa1c49044f",
+          "exponent": 0
         },
         {
-          denom: "TIA",
-          exponent: 6,
-        },
+          "denom": "TIA",
+          "exponent": 6
+        }
       ],
-      base: "l2/1f79a9647aca83c63014709b7d4a69dd0f017b87ce9adf7417a2e2aa1c49044f",
-      display: "TIA",
-      name: "Celestia Native Token",
-      symbol: "TIA",
-      coingecko_id: "",
-      traces: [
+      "base": "l2/1f79a9647aca83c63014709b7d4a69dd0f017b87ce9adf7417a2e2aa1c49044f",
+      "display": "TIA",
+      "name": "Celestia Native Token",
+      "symbol": "TIA",
+      "coingecko_id": "celestia",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "celestia",
-            base_denom: "utia",
-            channel_id: "channel-78",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "celestia",
+            "chain_id": "celestia",
+            "base_denom": "utia",
+            "channel_id": "channel-78"
           },
-          chain: {
-            channel_id: "channel-10",
-            path: "transfer/channel-10/utia",
-          },
+          "chain": {
+            "channel_id": "channel-10",
+            "path": "transfer/channel-10/utia"
+          }
         },
         {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "32",
-          },
-        },
+          "chain": {
+            "bridge_id": "32"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
     },
     {
-      description: "USDC on Initia",
-      denom_units: [
+      "description": "USDC on Initia",
+      "denom_units": [
         {
-          denom:
-            "l2/93c226659c42299f98bdca46cf151a604a70be2e6391a61b67ae2311d556a46a",
-          exponent: 0,
+          "denom": "l2/93c226659c42299f98bdca46cf151a604a70be2e6391a61b67ae2311d556a46a",
+          "exponent": 0
         },
         {
-          denom: "USDC",
-          exponent: 6,
-        },
+          "denom": "USDC",
+          "exponent": 6
+        }
       ],
-      base: "l2/93c226659c42299f98bdca46cf151a604a70be2e6391a61b67ae2311d556a46a",
-      display: "USDC",
-      name: "USD Coin",
-      symbol: "USDC",
-      coingecko_id: "",
-      traces: [
+      "base": "l2/93c226659c42299f98bdca46cf151a604a70be2e6391a61b67ae2311d556a46a",
+      "display": "USDC",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "coingecko_id": "usd-coin",
+      "traces": [
         {
-          type: "ibc",
-          counterparty: {
-            chain_name: "noble",
-            base_denom: "uusdc",
-            channel_id: "channel-129",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "chain_id": "noble-1",
+            "base_denom": "uusdc",
+            "channel_id": "channel-129"
           },
-          chain: {
-            channel_id: "channel-3",
-            path: "transfer/channel-3/uusdc",
-          },
+          "chain": {
+            "channel_id": "channel-3",
+            "path": "transfer/channel-3/uusdc"
+          }
         },
         {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "32",
-          },
-        },
+          "chain": {
+            "bridge_id": "32"
+          }
+        }
       ],
-      images: [
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
     },
     {
-      description: "The LST of INIT by Inertia",
-      denom_units: [
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
         {
-          denom:
-            "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
-          exponent: 0,
+          "denom": "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
+          "exponent": 0
         },
         {
-          denom: "sINIT",
-          exponent: 6,
-        },
+          "denom": "sINIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
-      display: "sINIT",
-      traces: [
+      "base": "l2/6f04a5de88d7587507e4b93e03999bfabce6e8a4131d94d226ac3a020196bc3d",
+      "display": "sINIT",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/d08cf4d36d8a70cc6efe8791dc5b3d4f928df4fe41468bc138439d55ed132c3e",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "32",
-          },
-        },
+          "chain": {
+            "bridge_id": "32"
+          }
+        }
       ],
-      name: "sINIT",
-      symbol: "sINIT",
-      coingecko_id: "",
-      images: [
+      "name": "sINIT",
+      "symbol": "sINIT",
+      "coingecko_id": "",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/sINIT.png"
+      }
     },
     {
-      description: "The LST of INIT by Inertia",
-      denom_units: [
+      "description": "The LST of INIT by Inertia",
+      "denom_units": [
         {
-          denom:
-            "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
-          exponent: 0,
+          "denom": "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
+          "exponent": 0
         },
         {
-          denom: "nINIT",
-          exponent: 6,
-        },
+          "denom": "nINIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
-      display: "nINIT",
-      traces: [
+      "base": "l2/d2b5185c527f117629618249cfa95b8a90a70357bab21d750f15dc69c1c754bf",
+      "display": "nINIT",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom:
-              "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "move/b4fd0119fa43bb5a208256e92977d6552fef31191fe24299fe45f6e64dd5c6f3",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "32",
-          },
-        },
+          "chain": {
+            "bridge_id": "32"
+          }
+        }
       ],
-      name: "nINIT",
-      symbol: "nINIT",
-      coingecko_id: "",
-      images: [
+      "name": "nINIT",
+      "symbol": "nINIT",
+      "coingecko_id": "",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/nINIT.png"
+      }
     },
-  ],
+    {
+      "description": "The yield bearing LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/C0C7C15994386A50ADC7F0610C99C1AEC4BE55C61D1237B33FCDA732E9C453DB",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT sLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/C0C7C15994386A50ADC7F0610C99C1AEC4BE55C61D1237B33FCDA732E9C453DB",
+      "display": "INIT sLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/18a6cfe6562ccddd9dd2043364d3fc1a4f5991470abeb77e83f0640e6e6138ec",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/18a6cfe6562ccddd9dd2043364d3fc1a4f5991470abeb77e83f0640e6e6138ec"
+          }
+        }
+      ],
+      "name": "INIT sLP",
+      "symbol": "INIT sLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_SLP.png"
+      }
+    },
+    {
+      "description": "The pegged LST of USDC-INIT LP by Inertia",
+      "denom_units": [
+        {
+          "denom": "ibc/4DB85501D505033B9735F9BD514407F91F22F2AF7638F9B73451CDBDE4832BAA",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT nLP",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/4DB85501D505033B9735F9BD514407F91F22F2AF7638F9B73451CDBDE4832BAA",
+      "display": "INIT nLP",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/e49a30a322f0ea6e6847fa19536abe2a0bcc729b7666c0d7d6c90b1fedfe4744",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/e49a30a322f0ea6e6847fa19536abe2a0bcc729b7666c0d7d6c90b1fedfe4744"
+          }
+        }
+      ],
+      "name": "INIT nLP",
+      "symbol": "INIT nLP",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC_INIT_NLP.png"
+      }
+    },
+    {
+      "description": "iUSD on Initia",
+      "denom_units": [
+        {
+          "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "agora-dollar",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    },
+    {
+      "description": "SEI token via LayerZero",
+      "denom_units": [
+        {
+          "denom": "ibc/5CEC519FC40FB0BD95E6E3B0465F6C9A9E8CA3B98D4D1CBC7E7D4B53197C8FB6",
+          "exponent": 0
+        },
+        {
+          "denom": "SEI",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/5CEC519FC40FB0BD95E6E3B0465F6C9A9E8CA3B98D4D1CBC7E7D4B53197C8FB6",
+      "display": "SEI",
+      "name": "SEI",
+      "symbol": "SEI",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/1c340d7dda052f096929afbf9133a4d3dc4bfd938187bddbab7055aad185d407",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/1c340d7dda052f096929afbf9133a4d3dc4bfd938187bddbab7055aad185d407"
+          }
+        }
+      ],
+      "coingecko_id": "sei-network",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/SEI.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/SEI.png"
+      }
+    },
+    {
+      "description": "The yield bearing LST of TIA",
+      "denom_units": [
+        {
+          "denom": "ibc/0C9E1A3CE3A7E06A6113BC9421DDD6A092770F8FFE344D5A3ADDEB8408EE0F12",
+          "exponent": 0
+        },
+        {
+          "denom": "roTIA",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/0C9E1A3CE3A7E06A6113BC9421DDD6A092770F8FFE344D5A3ADDEB8408EE0F12",
+      "display": "roTIA",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6e4147b599fc203bd147c83e1262d500c4cb688e816f0b59a3251f14240c7dab",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6e4147b599fc203bd147c83e1262d500c4cb688e816f0b59a3251f14240c7dab"
+          }
+        }
+      ],
+      "name": "roTIA",
+      "symbol": "roTIA",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roTIA.png"
+      }
+    },
+    {
+      "description": "The yield bearing LST of ETH via LayerZero",
+      "denom_units": [
+        {
+          "denom": "ibc/7E77C01AD8A90099B391F9EE0976A341ECA500D68D7F44849B57C08D7A9249B1",
+          "exponent": 0
+        },
+        {
+          "denom": "roETH",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/7E77C01AD8A90099B391F9EE0976A341ECA500D68D7F44849B57C08D7A9249B1",
+      "display": "roETH",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926",
+            "channel_id": "channel-69"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/1382178672d3d13de3665c4e94d3181fdf0feedcc217a44b57e79dc34c42e926"
+          }
+        }
+      ],
+      "name": "roETH",
+      "symbol": "roETH",
+      "coingecko_id": "",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/roETH.png"
+      }
+    }
+  ]
 };
 export default info;
