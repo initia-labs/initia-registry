@@ -138,7 +138,7 @@ const info: AssetList = {
             "chain_name": "celestia",
             "chain_id": "celestia",
             "base_denom": "utia",
-            "channel_id": "channel-78"
+            "channel_id": "channel-86"
           },
           "chain": {
             "channel_id": "channel-10",
