@@ -661,59 +661,6 @@
       }
     },
     {
-      "description": "OP-IBC bridged INIT of ING Network",
-      "denom_units": [
-        {
-          "denom": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
-          "exponent": 0
-        },
-        {
-          "denom": "INIT.ingnetwork",
-          "exponent": 6
-        }
-      ],
-      "base": "ibc/68C9D3FE5D7FAC95A435D49C448432AD9CB35FC4062758943DFBD4D3A53C6FDF",
-      "display": "INIT.ingnetwork",
-      "name": "INIT.ingnetwork",
-      "symbol": "INIT.ingnetwork",
-      "coingecko_id": "initia",
-      "oracle_symbol": "INIT",
-      "traces": [
-        {
-          "type": "op",
-          "counterparty": {
-            "base_denom": "uinit",
-            "chain_name": "initia",
-            "chain_id": "interwoven-1"
-          },
-          "chain": {
-            "bridge_id": "27"
-          }
-        },
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "ingnetwork",
-            "chain_id": "ingnetwork-1",
-            "base_denom": "l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009",
-            "channel_id": "channel-0"
-          },
-          "chain": {
-            "channel_id": "channel-58",
-            "path": "transfer/channel-58/l2/4daa1ce1a1956bf454f4a22bd6ecc7932737c88e1c3868dcd208684e0d432009"
-          }
-        }
-      ],
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
-        }
-      ],
-      "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ing.ibcopinit.png"
-      }
-    },
-    {
       "description": "OP-IBC bridged INIT of Inertia",
       "denom_units": [
         {
@@ -1047,6 +994,7 @@
       "display": "cbl USDC-INIT LP",
       "name": "cbl USDC-INIT LP",
       "symbol": "cbl USDC-INIT LP",
+      "token_type": "lp",
       "images": [
         {
           "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cbl-USDC-INIT.png"
