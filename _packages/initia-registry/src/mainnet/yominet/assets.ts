@@ -1,120 +1,240 @@
-import { AssetList } from "@initia/initia-registry-types";
+import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
-  $schema: "../../assetlist.schema.json",
-  chain_name: "yominet",
-  assets: [
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "yominet",
+  "assets": [
     {
-      description: "The native token of Initia",
-      denom_units: [
+      "description": "The native token of Initia",
+      "denom_units": [
         {
-          denom: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-          exponent: 0,
+          "denom": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+          "exponent": 0
         },
         {
-          denom: "INIT",
-          exponent: 18,
-        },
+          "denom": "INIT",
+          "exponent": 18
+        }
       ],
-      type_asset: "erc20",
-      address: "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-      base: "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
-      display: "INIT",
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
-      images: [
+      "type_asset": "erc20",
+      "address": "0x856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      "base": "evm/856aB2c9F35B9187aB3eB0Fcd11DCc6160427e96",
+      "display": "INIT",
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "traces": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
+          },
+          "chain": {
+            "bridge_id": "11"
+          }
         },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "yominet",
+            "chain_id": "yominet-1",
+            "base_denom": "l2/8f73cfaf153520f511b4fc0bd71d60d64b4e19eff04a350e642718a3c1ab3b06"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
     },
     {
-      description: "ONYX",
-      denom_units: [
+      "description": "ONYX",
+      "denom_units": [
         {
-          denom: "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
-          exponent: 0,
+          "denom": "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
+          "exponent": 0
         },
         {
-          denom: "ONYX",
-          exponent: 18,
-        },
+          "denom": "ONYX",
+          "exponent": 18
+        }
       ],
-      type_asset: "erc20",
-      address: "0x4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
-      base: "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
-      display: "ONYX",
-      name: "ONYX",
-      symbol: "ONYX",
-      coingecko_id: "",
-      images: [
+      "type_asset": "erc20",
+      "address": "0x4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
+      "base": "evm/4BaDFb501Ab304fF11217C44702bb9E9732E7CF4",
+      "display": "ONYX",
+      "name": "ONYX",
+      "symbol": "ONYX",
+      "coingecko_id": "",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/onyx.png"
+      }
     },
     {
-      description: "ETH token via LayerZero",
-      denom_units: [
+      "description": "ETH token via LayerZero",
+      "denom_units": [
         {
-          denom: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-          exponent: 0,
+          "denom": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+          "exponent": 0
         },
         {
-          denom: "ETH",
-          exponent: 18,
-        },
+          "denom": "ETH",
+          "exponent": 18
+        }
       ],
-      type_asset: "erc20",
-      address: "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546",
-      base: "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
-      display: "ETH",
-      name: "Ethereum Native Token",
-      symbol: "ETH",
-      coingecko_id: "",
-      images: [
+      "type_asset": "erc20",
+      "address": "0xE1Ff7038eAAAF027031688E1535a055B2Bac2546",
+      "base": "evm/E1Ff7038eAAAF027031688E1535a055B2Bac2546",
+      "display": "ETH",
+      "name": "Ethereum Native Token",
+      "symbol": "ETH",
+      "coingecko_id": "ethereum",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/ETH.png"
+      }
     },
     {
-      description: "The native token of Celestia on Initia via IBC",
-      denom_units: [
+      "description": "The native token of Celestia on Initia via IBC",
+      "denom_units": [
         {
-          denom: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
-          exponent: 0,
+          "denom": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+          "exponent": 0
         },
         {
-          denom: "TIA",
-          exponent: 18,
-        },
+          "denom": "TIA",
+          "exponent": 18
+        }
       ],
-      type_asset: "erc20",
-      address: "0xf0c644D9636b83E7491404d8D826321e44E23d15",
-      base: "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
-      display: "TIA",
-      name: "Celestia TIA",
-      symbol: "TIA",
-      coingecko_id: "",
-      images: [
+      "type_asset": "erc20",
+      "address": "0xf0c644D9636b83E7491404d8D826321e44E23d15",
+      "base": "evm/f0c644D9636b83E7491404d8D826321e44E23d15",
+      "display": "TIA",
+      "name": "Celestia Native Token",
+      "symbol": "TIA",
+      "coingecko_id": "celestia",
+      "traces": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "celestia",
+            "chain_id": "celestia",
+            "base_denom": "utia",
+            "channel_id": "channel-86"
+          },
+          "chain": {
+            "channel_id": "channel-10",
+            "path": "transfer/channel-10/utia"
+          }
         },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+            "channel_id": "channel-25"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-10/utia"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "yominet",
+            "chain_id": "yominet-1",
+            "base_denom": "ibc/05060A29687D6CA94E2CCD17A9C57AA0F2086DEC0964D677509DC2EBFE324D9E"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png",
-      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/TIA.png"
+      }
     },
-  ],
+    {
+      "description": "iUSD on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xbDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+      "base": "evm/bDEC10C2eDa096b3b0C06cD8AF45865b82CfdEBA",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "agora-dollar",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-25"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "yominet",
+            "chain_id": "yominet-1",
+            "base_denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A"
+          },
+          "chain": {
+            "contract": "0x4eb08D5c1B0A821303A86C7b3AC805c2793dE783"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    }
+  ]
 };
 export default info;

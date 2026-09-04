@@ -1,6 +1,6 @@
-import { IBCInfo } from "@initia/initia-registry-types";
+import { IBCInfo } from '@initia/initia-registry-types';
 
-import * as _initia from "./initia";
+import * as _initia from './initia'
 
 const ibc: IBCInfo[] = [..._initia.ibc_chain1];
 

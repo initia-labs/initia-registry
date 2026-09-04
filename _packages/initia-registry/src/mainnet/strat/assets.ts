@@ -1,13 +1,13 @@
 import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
   "$schema": "../../assetlist.schema.json",
-  "chain_name": "civitia",
+  "chain_name": "strat",
   "assets": [
     {
       "description": "The native token of Initia",
       "denom_units": [
         {
-          "denom": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+          "denom": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
           "exponent": 0
         },
         {
@@ -15,18 +15,20 @@ const info: AssetList = {
           "exponent": 6
         }
       ],
-      "base": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+      "base": "ibc/37A3FB4FED4CA04ED6D9E5DA36C6D27248645F0E22F585576A1488B8A89C5A50",
       "display": "INIT",
       "traces": [
         {
-          "type": "op",
+          "type": "ibc",
           "counterparty": {
             "base_denom": "uinit",
             "chain_name": "initia",
+            "channel_id": "channel-3101",
             "chain_id": "interwoven-1"
           },
           "chain": {
-            "bridge_id": "12"
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/uinit"
           }
         }
       ],
@@ -66,7 +68,7 @@ const info: AssetList = {
             "chain_name": "initia",
             "chain_id": "interwoven-1",
             "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
-            "channel_id": "channel-27"
+            "channel_id": "channel-99"
           },
           "chain": {
             "channel_id": "channel-0",
@@ -84,44 +86,29 @@ const info: AssetList = {
       }
     },
     {
-      "description": "Cabal LST-as-a-service token cabalINIT via IBC",
+      "description": "Cabal xSLP",
       "denom_units": [
         {
-          "denom": "cINIT",
-          "exponent": 6
+          "denom": "move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb",
+          "exponent": 0
         },
         {
-          "denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
-          "exponent": 0
+          "denom": "xSLP",
+          "exponent": 6
         }
       ],
       "coingecko_id": "",
-      "base": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
-      "display": "cINIT",
-      "name": "cINIT",
-      "symbol": "cINIT",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "initia",
-            "chain_id": "interwoven-1",
-            "base_denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
-            "channel_id": "channel-27"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
-          }
-        }
-      ],
+      "base": "move/4e11c0a219f362e4d0e1f131699aa83bee40ebc8701b424373a8517d0c9e85fb",
+      "display": "xSLP",
+      "name": "xSLP",
+      "symbol": "xSLP",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cINIT.png"
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
         }
       ],
       "logo_URIs": {
-        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cINIT.png"
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/xSLP.png"
       }
     }
   ]
