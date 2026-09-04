@@ -72,6 +72,48 @@
       }
     },
     {
+      "description": "USDC from Injective",
+      "denom_units": [
+        {
+          "denom": "ibc/A64E1233F240D4B886413A12CF0300D6EC6FA0554DBD176119C399D0E2CA8048",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC.inj",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/A64E1233F240D4B886413A12CF0300D6EC6FA0554DBD176119C399D0E2CA8048",
+      "display": "USDC.inj",
+      "name": "USD Coin (Injective)",
+      "symbol": "USDC.inj",
+      "coingecko_id": "usd-coin",
+      "oracle_symbol": "USDC",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "injective",
+            "chain_id": "injective-1",
+            "base_denom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+            "channel_id": "channel-488"
+          },
+          "chain": {
+            "channel_id": "channel-113",
+            "path": "transfer/channel-113/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    },
+    {
       "description": "MilkyWay's Liquid Staked TIA",
       "denom_units": [
         {
