@@ -150,6 +150,60 @@
       }
     },
     {
+      "description": "USDC from Injective",
+      "denom_units": [
+        {
+          "denom": "ibc/66AD18D1572EF88D509E831201FDFAFC109CED28E17929B422B47CAEB6836792",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC.inj",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/66AD18D1572EF88D509E831201FDFAFC109CED28E17929B422B47CAEB6836792",
+      "display": "USDC.inj",
+      "name": "USD Coin (Injective)",
+      "symbol": "USDC.inj",
+      "coingecko_id": "usd-coin",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "injective",
+            "chain_id": "injective-1",
+            "base_denom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+            "channel_id": "channel-488"
+          },
+          "chain": {
+            "channel_id": "channel-113",
+            "path": "transfer/channel-113/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "ibc/A64E1233F240D4B886413A12CF0300D6EC6FA0554DBD176119C399D0E2CA8048",
+            "channel_id": "channel-35"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-113/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    },
+    {
       "description": "The native token of Celestia on Initia via IBC",
       "denom_units": [
         {
