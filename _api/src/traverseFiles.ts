@@ -17,9 +17,9 @@ export function traverseFiles(folderPath: string, callback: (filePath: string) =
     if (isDirectory(fullPath)) {
       // If the entry is a directory, recursively traverse it
       traverseFiles(fullPath, callback)
+    } else {
+      // Execute the callback only for files
+      callback(fullPath)
     }
-
-    // Execute the callback
-    callback(fullPath)
   }
 }
