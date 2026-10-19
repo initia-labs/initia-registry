@@ -1,0 +1,91 @@
+import { Chain } from '@initia/initia-registry-types';
+const info: Chain = {
+  "$schema": "../../chain.schema.json",
+  "chain_name": "move",
+  "pretty_name": "Move",
+  "chain_id": "move-1",
+  "bech32_prefix": "init",
+  "network_type": "testnet",
+  "codebase": {},
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-move-1.anvil.asia-southeast.initia.xyz:443"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-move-1.anvil.asia-southeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.testnet.initia.xyz/move-1",
+      "tx_page": "https://scan.testnet.initia.xyz/move-1/txs/${txHash}",
+      "account_page": "https://scan.testnet.initia.xyz/move-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "l2/07b129ceb9c4b0bdef7db171ce1e22f90d34bc930058b23e21adf8cc938d8145",
+        "fixed_min_gas_price": 0.015
+      },
+      {
+        "denom": "move/89ee7fcbbf00b439ce42b5f263a3d38c66ab02b70f4fe9dff4a163bf720d6246",
+        "fixed_min_gas_price": 0.0015
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/minimove.png"
+  },
+  "metadata": {
+    "op_bridge_id": "1458",
+    "op_denoms": [
+      "uinit"
+    ],
+    "executor_uri": "https://opinit-api-move-1.anvil.asia-southeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "initiation-2",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "initiation-2",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/testnets/move/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v1.0.7"
+    }
+  }
+};
+export default info;

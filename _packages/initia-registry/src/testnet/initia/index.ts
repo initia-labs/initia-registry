@@ -1,3 +1,3 @@
-import _chain from "./chain";
+import _chain from './chain';
 
 export const chain = _chain;
