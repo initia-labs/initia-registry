@@ -1,0 +1,84 @@
+{
+  "$schema": "../../chain.schema.json",
+  "chain_name": "gridzero",
+  "pretty_name": "gridZERO",
+  "chain_id": "gridzero-1",
+  "website": "https://gridzero-initia.vercel.app",
+  "description": "On-chain 5x5 lottery game on Initia. Pick a cell, the round resolves a winner from occupied cells every 60s. Native INIT entry, $ZERO emission, 1-in-100 motherlode bonus rounds.",
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "codebase": {
+    "git_repo": "https://github.com/initia-labs/minimove",
+    "recommended_version": "v1.1.12",
+    "binaries": {
+      "linux/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.1.12/minimove_v1.1.12_Linux_x86_64.tar.gz",
+      "linux/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.1.12/minimove_v1.1.12_Linux_aarch64.tar.gz",
+      "darwin/amd64": "https://github.com/initia-labs/minimove/releases/download/v1.1.12/minimove_v1.1.12_Darwin_x86_64.tar.gz",
+      "darwin/arm64": "https://github.com/initia-labs/minimove/releases/download/v1.1.12/minimove_v1.1.12_Darwin_aarch64.tar.gz"
+    },
+    "genesis": {
+      "genesis_url": "https://gridzero-sequencer-production.up.railway.app/genesis"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://gridzero-sequencer-production.up.railway.app"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://gridzero-rest-production.up.railway.app"
+      }
+    ]
+  },
+  "key_algos": ["initia_ethsecp256k1", "secp256k1"],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uinit",
+        "fixed_min_gas_price": 0
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/gridzero-1",
+      "tx_page": "https://scan.initia.xyz/gridzero-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/gridzero-1/accounts/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/gridzero.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/gridzero.png"
+  },
+  "metadata": {
+    "op_bridge_id": "47",
+    "op_denoms": ["uinit"],
+    "ibc_channels": [
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/gridzero/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v1.1.12"
+    }
+  }
+}
