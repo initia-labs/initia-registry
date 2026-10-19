@@ -1,0 +1,18 @@
+{
+  "chain_id": "insightly-1",
+  "assets": [
+    {
+      "description": "Staking coin for Insightly rollup",
+      "denom_units": [
+        {
+          "denom": "stake",
+          "exponent": 0
+        }
+      ],
+      "base": "stake",
+      "name": "Stake",
+      "display": "stake",
+      "symbol": "STAKE"
+    }
+  ]
+}
