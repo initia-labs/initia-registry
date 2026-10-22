@@ -111,23 +111,23 @@
       }
     },
     {
-      "description": "USDC on Initia",
+      "description": "Legacy Noble USDC (USDC.n). Redeemable 1:1 for USDC on Initia.",
       "denom_units": [
         {
           "denom": "evm/A1Bc0977Bab93D507A89C108fa21820809e6869D",
           "exponent": 0
         },
         {
-          "denom": "USDC",
+          "denom": "USDC.n",
           "exponent": 18
         }
       ],
       "type_asset": "erc20",
       "address": "0xA1Bc0977Bab93D507A89C108fa21820809e6869D",
       "base": "evm/A1Bc0977Bab93D507A89C108fa21820809e6869D",
-      "display": "USDC",
-      "name": "USDC",
-      "symbol": "USDC",
+      "display": "USDC.n",
+      "name": "USD Coin (Noble)",
+      "symbol": "USDC.n",
       "coingecko_id": "usd-coin",
       "traces": [
         {
@@ -179,23 +179,23 @@
       }
     },
     {
-      "description": "USDC from Injective",
+      "description": "USDC on Initia",
       "denom_units": [
         {
           "denom": "evm/f27248Fc3C306cd9F9C72BDb768bc131C98694Cc",
           "exponent": 0
         },
         {
-          "denom": "USDC.inj",
+          "denom": "USDC",
           "exponent": 18
         }
       ],
       "type_asset": "erc20",
       "address": "0xf27248Fc3C306cd9F9C72BDb768bc131C98694Cc",
       "base": "evm/f27248Fc3C306cd9F9C72BDb768bc131C98694Cc",
-      "display": "USDC.inj",
-      "name": "USD Coin (Injective)",
-      "symbol": "USDC.inj",
+      "display": "USDC",
+      "name": "USD Coin",
+      "symbol": "USDC",
       "coingecko_id": "usd-coin",
       "traces": [
         {
