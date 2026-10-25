@@ -14,7 +14,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24
+          # This job fetches PR-supplied URLs, so bypass the runner tool cache that can lag behind security releases.
+          check-latest: true
 
       - name: Get changed files (chain.json / assetlist.json)
         id: changed
