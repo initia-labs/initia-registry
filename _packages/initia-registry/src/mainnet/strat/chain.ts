@@ -1,0 +1,88 @@
+import { Chain } from '@initia/initia-registry-types';
+const info: Chain = {
+  "$schema": "../../chain.schema.json",
+  "chain_name": "strat",
+  "pretty_name": "Strat",
+  "chain_id": "strat-1",
+  "website": "https://strat.trade",
+  "bech32_prefix": "init",
+  "network_type": "mainnet",
+  "codebase": {},
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "grpc-strat-1.anvil.asia-northeast.initia.xyz:443"
+      }
+    ],
+    "indexer": [
+      {
+        "address": "https://rollytics-api-strat-1.anvil.asia-northeast.initia.xyz"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "initia scan",
+      "url": "https://scan.initia.xyz/strat-1",
+      "tx_page": "https://scan.initia.xyz/strat-1/txs/${txHash}",
+      "account_page": "https://scan.initia.xyz/strat-1/accounts/${accountAddress}"
+    }
+  ],
+  "key_algos": [
+    "initia_ethsecp256k1"
+  ],
+  "slip44": 60,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+        "fixed_min_gas_price": 0.0015
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/strat.png"
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/strat.png"
+  },
+  "metadata": {
+    "op_bridge_id": "43",
+    "op_denoms": [
+      "uinit"
+    ],
+    "executor_uri": "https://opinit-api-strat-1.anvil.asia-northeast.initia.xyz",
+    "ibc_channels": [
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "nft-transfer",
+        "channel_id": "channel-1",
+        "version": "ics721-1"
+      },
+      {
+        "chain_id": "interwoven-1",
+        "port_id": "transfer",
+        "channel_id": "channel-0",
+        "version": "ics20-1"
+      }
+    ],
+    "assetlist": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/mainnets/strat/assetlist.json",
+    "minitia": {
+      "type": "minimove",
+      "version": "v1.1.10-rocksdb"
+    }
+  }
+};
+export default info;

@@ -1,47 +1,129 @@
-import { AssetList } from "@initia/initia-registry-types";
+import { AssetList } from '@initia/initia-registry-types';
 const info: AssetList = {
-  $schema: "../../assetlist.schema.json",
-  chain_name: "civitia",
-  assets: [
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "civitia",
+  "assets": [
     {
-      description: "The native token of Initia",
-      denom_units: [
+      "description": "The native token of Initia",
+      "denom_units": [
         {
-          denom:
-            "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
-          exponent: 0,
+          "denom": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+          "exponent": 0
         },
         {
-          denom: "INIT",
-          exponent: 6,
-        },
+          "denom": "INIT",
+          "exponent": 6
+        }
       ],
-      base: "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
-      display: "INIT",
-      traces: [
+      "base": "l2/2b2d36f666e98b9eecf70d6ec24b882b79f2c8e2af73f54f97b8b670dbb87605",
+      "display": "INIT",
+      "traces": [
         {
-          type: "op",
-          counterparty: {
-            base_denom: "uinit",
-            chain_name: "initia",
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
           },
-          chain: {
-            bridge_id: "12",
-          },
-        },
+          "chain": {
+            "bridge_id": "12"
+          }
+        }
       ],
-      name: "Initia Native Token",
-      symbol: "INIT",
-      coingecko_id: "",
-      images: [
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
         {
-          png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-        },
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
       ],
-      logo_URIs: {
-        png: "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png",
-      },
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
     },
-  ],
+    {
+      "description": "iUSD on Initia",
+      "denom_units": [
+        {
+          "denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "agora-dollar",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-27"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    },
+    {
+      "description": "Cabal LST-as-a-service token cabalINIT via IBC",
+      "denom_units": [
+        {
+          "denom": "cINIT",
+          "exponent": 6
+        },
+        {
+          "denom": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+          "exponent": 0
+        }
+      ],
+      "coingecko_id": "",
+      "base": "ibc/749ECC13174B58CB9BFED2C8608670DBD3AF3EFE767E8AE671C1AFFB97F75116",
+      "display": "cINIT",
+      "name": "cINIT",
+      "symbol": "cINIT",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb",
+            "channel_id": "channel-27"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/2fe94c664cbbe8093203e887b6fb9b9462c56917c34bd9f8fd14a3b40d0044cb"
+          }
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cINIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/cINIT.png"
+      }
+    }
+  ]
 };
 export default info;

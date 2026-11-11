@@ -1,0 +1,184 @@
+import { AssetList } from '@initia/initia-registry-types';
+const info: AssetList = {
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "cabal",
+  "assets": [
+    {
+      "description": "The native token of Initia",
+      "denom_units": [
+        {
+          "denom": "evm/df5A85F89731fEB77d7EEaaCe627EB135eDB46DB",
+          "exponent": 0
+        },
+        {
+          "denom": "INIT",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xdf5A85F89731fEB77d7EEaaCe627EB135eDB46DB",
+      "base": "evm/df5A85F89731fEB77d7EEaaCe627EB135eDB46DB",
+      "display": "INIT",
+      "traces": [
+        {
+          "type": "op",
+          "counterparty": {
+            "base_denom": "uinit",
+            "chain_name": "initia",
+            "chain_id": "interwoven-1"
+          },
+          "chain": {
+            "bridge_id": "42"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "cabal",
+            "chain_id": "cabal-1",
+            "base_denom": "l2/fe807d454c86db0d3f2b1c5ee5108b9440b5dcb98947585e3dc25ed3d6dfa900"
+          },
+          "chain": {
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "name": "Initia Native Token",
+      "symbol": "INIT",
+      "coingecko_id": "initia",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/INIT.png"
+      }
+    },
+    {
+      "description": "iUSD on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/58918f9E58662058Cb36Cc60d7E124C90872C7C0",
+          "exponent": 0
+        },
+        {
+          "denom": "iUSD",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0x58918f9E58662058Cb36Cc60d7E124C90872C7C0",
+      "base": "evm/58918f9E58662058Cb36Cc60d7E124C90872C7C0",
+      "display": "iUSD",
+      "name": "iUSD",
+      "symbol": "iUSD",
+      "coingecko_id": "agora-dollar",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e",
+            "channel_id": "channel-97"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/move/6c69733a9e722f3660afb524f89fce957801fa7e4408b8ef8fe89db9627b570e"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "cabal",
+            "chain_id": "cabal-1",
+            "base_denom": "ibc/B82A5B2051D2296EE838D076218D4F852A629C69B99E7430C4D388F37DB16A3A"
+          },
+          "chain": {
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/iUSD.png"
+      }
+    },
+    {
+      "description": "USDC on Initia",
+      "denom_units": [
+        {
+          "denom": "evm/A1Bc0977Bab93D507A89C108fa21820809e6869D",
+          "exponent": 0
+        },
+        {
+          "denom": "USDC",
+          "exponent": 18
+        }
+      ],
+      "type_asset": "erc20",
+      "address": "0xA1Bc0977Bab93D507A89C108fa21820809e6869D",
+      "base": "evm/A1Bc0977Bab93D507A89C108fa21820809e6869D",
+      "display": "USDC",
+      "name": "USDC",
+      "symbol": "USDC",
+      "coingecko_id": "usd-coin",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "noble",
+            "chain_id": "noble-1",
+            "base_denom": "uusdc",
+            "channel_id": "channel-129"
+          },
+          "chain": {
+            "channel_id": "channel-3",
+            "path": "transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "initia",
+            "chain_id": "interwoven-1",
+            "base_denom": "ibc/6490A7EAB61059BFC1CDDEB05917DD70BDF3A611654162A1A47DB930D40D8AF4",
+            "channel_id": "channel-97"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/transfer/channel-3/uusdc"
+          }
+        },
+        {
+          "type": "wrapped",
+          "counterparty": {
+            "chain_name": "cabal",
+            "chain_id": "cabal-1",
+            "base_denom": "ibc/AA4E7DF065DC4D4B29B8662A919295F525B19251FB2618C41C0DED3BD1128FEE"
+          },
+          "chain": {
+            "contract": "0xB24905344757Bf9CE80442fE1245A9019ee2d749"
+          },
+          "provider": "Decimal Wrapper"
+        }
+      ],
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/initia-labs/initia-registry/main/images/USDC.png"
+      }
+    }
+  ]
+};
+export default info;
