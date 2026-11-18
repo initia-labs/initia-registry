@@ -5,6 +5,19 @@ const path = require("path");
 
 const NON_COSMOS_NETWORK_TYPE = "noncosmos";
 
+// chain_name and network_type come from contributed JSON and are interpolated into
+// generated import/export statements and used as directory names. Restricting them to
+// this character set keeps them from terminating a statement or leaving the src folder.
+const VALID_NAME = /^[a-z0-9][a-z0-9_]*$/;
+
+const assertValidName = (name, field, file) => {
+  if (typeof name !== "string" || !VALID_NAME.test(name)) {
+    throw new Error(
+      `Invalid ${field} ${JSON.stringify(name)} in ${file}: only lowercase letters, digits and underscores are allowed`
+    );
+  }
+};
+
 const getValidVarName = (varName) => {
   if (!/^[a-zA-Z_$]/.test(varName)) {
     return `_${varName}`;
@@ -459,6 +472,9 @@ chainPaths.forEach((file) => {
       return;
     }
 
+    assertValidName(data.chain_name, "chain_name", file);
+    assertValidName(data.network_type, "network_type", file);
+
     initChainBlock(result, data.network_type, data.chain_name);
 
     result[data.network_type][data.chain_name].chain = data;
@@ -476,6 +492,8 @@ paths.forEach((file) => {
   }
 
   if (data.$schema.endsWith("assetlist.schema.json")) {
+    assertValidName(data.chain_name, "chain_name", file);
+
     const network_type = chainNetworkMap[data.chain_name];
 
     if (!network_type) {
@@ -487,6 +505,9 @@ paths.forEach((file) => {
   }
 
   if (data.$schema.endsWith("ibc_data.schema.json")) {
+    assertValidName(data.chain_1.chain_name, "chain_1.chain_name", file);
+    assertValidName(data.chain_2.chain_name, "chain_2.chain_name", file);
+
     const network_type1 = chainNetworkMap[data.chain_1.chain_name];
 
     if (!network_type1) {
