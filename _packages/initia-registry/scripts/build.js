@@ -467,11 +467,6 @@ chainPaths.forEach((file) => {
     }
     delete data.peers;
 
-    if (!data.chain_name) {
-      console.log(`problematic file: ${file}`);
-      return;
-    }
-
     assertValidName(data.chain_name, "chain_name", file);
     assertValidName(data.network_type, "network_type", file);
 
